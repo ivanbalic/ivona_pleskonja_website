@@ -1,15 +1,15 @@
 const seoData = {
   title:
-    "LaunchPad - Your content delivery partner for large scale applications",
-  description: `A platform integrating Aceternity with Strapi for seamless content management.`,
+    "Ivona Pleskonja",
+  description: `Personal portfolio website`,
   image: "https://ui.aceternity.com/banner.png",
   openGraph: {
     type: "website",
-    title: `LaunchPad - Your content delivery partner for large scale applications`,
-    url: "https://ui.aceternity.com", // TODO: Fix this
-    description: `A platform integrating Aceternity with Strapi for seamless content management.`,
+    title: `Ivona Pleskonja`,
+    url: "https://ivona-pleskonja.com",
+    description: `Personal portfolio website`,
     locale: "en_EN",
-    keywords: "content, delivery, web, hosting",
+    keywords: "art, delivery, web, hosting",
     images: [
       {
         width: 1200,
@@ -17,7 +17,7 @@ const seoData = {
         url: `https://ui.aceternity.com/banner.png`, // TODO: Fix this
       },
     ],
-    site_name: "launchpad",
+    site_name: "ivoan_pleskonja",
   },
   twitter: {
     handle: "@mannupaaji",

@@ -1,25 +1,43 @@
 "use client";
-import { DesktopNavbar } from "./desktop-navbar";
-import { MobileNavbar } from "./mobile-navbar";
-import { motion } from "framer-motion";
+import React, {useState} from "react";
+import Image from "next/image";
+
+import logoBlue from '../../public/images/navbar-logo-blue.svg';
+import closeMenuIcon from '../../public/images/closeMenuIcon.svg';
+import logoWhite from '../../public/images/navbar-logo-white.svg';
 
 
 export function Navbar({ data, locale }: { data: any, locale: string }) {
-  return (
-    <motion.nav
-      className="max-w-7xl  fixed top-4  mx-auto inset-x-0 z-50 w-[95%] lg:w-full"
-    >
-      <div className="hidden lg:block w-full">
-        {data?.left_navbar_items && (
-          <DesktopNavbar locale={locale} leftNavbarItems={data?.left_navbar_items} rightNavbarItems={data?.right_navbar_items} logo={data?.logo} />
-        )}
+    const [isOpen, setIsOpen] = useState(false);
 
-      </div>
-      <div className="flex h-full w-full items-center lg:hidden ">
-        {data?.left_navbar_items && (
-          <MobileNavbar locale={locale} leftNavbarItems={data?.left_navbar_items} rightNavbarItems={data?.right_navbar_items} logo={data?.logo} />
-        )}
-      </div>
-    </motion.nav>
-  );
+    return (
+            isOpen
+                ? <div className="bg-[#3242C0]/75 w-full h-screen absolute z-20 flex flex-col justify-between items-center">
+                    <div className="flex justify-center py-[4px]">
+                        <Image className="flex-1" src={logoWhite} alt="Ivona Pleskonja logo" width={105} height={115}/>
+                        <div className="w-[40px] flex flex-col p-[5px] gap-[6px] justify-center"></div>
+                    </div>
+                    <div className="text-[62px] flex flex-col justify-center items-center">
+                        <div>O MENI</div>
+                        <div>MOJI RADOVI</div>
+                        <div>NOVOSTI</div>
+                        <div>PRESS</div>
+                        <div>KONTAKT</div>
+                    </div>
+                    <div className="mb-[50px]" onClick={() => setIsOpen(false)}>
+                        <Image src={closeMenuIcon} alt="Close Menu" width={28} height={28} />
+                    </div>
+                </div>
+                : (<div className="flex justify-between w-full fixed z-10 align-center px-[20px] bg-transparent">
+                    <div className="flex flex-1 justify-center">
+                        <Image src={logoBlue} alt="Ivona Pleskonja logo" width={105} height={115} />
+                    </div>
+                    <div className="w-[40px] flex flex-col p-[5px] gap-[6px] justify-center"
+                         onClick={() => setIsOpen(true)}>
+                        <span className=" w-[30px] border-b-2 border-white"></span>
+                        <span className=" w-[30px] border-b-2 border-white"></span>
+                        <span className=" w-[30px] border-b-2 border-white"></span>
+                    </div>
+                </div>)
+    );
 }

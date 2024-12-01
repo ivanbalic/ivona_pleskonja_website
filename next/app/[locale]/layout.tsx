@@ -45,20 +45,15 @@ export default async function LocaleLayout({
     const pageData = await fetchContentType('global', `filters[locale][$eq]=${locale}`, true);
     return (
         <html lang={locale}>
-            <ViewTransitions>
-                <CartProvider>
-                    <body
-                        className={cn(
-                            inter.className,
-                            "bg-charcoal antialiased h-full w-full"
-                        )}
-                    >
+            {/*<ViewTransitions>*/}
+                {/*<CartProvider>*/}
+                    <body>
                         <Navbar data={pageData.navbar} locale={locale} />
                         {children}
-                        <Footer data={pageData.footer} locale={locale} />
+                        {/*<Footer data={pageData.footer} locale={locale} />*/}
                     </body>
-                </CartProvider>
-            </ViewTransitions>
+                {/*</CartProvider>*/}
+            {/*</ViewTransitions>*/}
         </html>
     );
 }
