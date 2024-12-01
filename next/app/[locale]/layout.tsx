@@ -48,7 +48,7 @@ export default async function LocaleLayout({
             {/*<ViewTransitions>*/}
                 {/*<CartProvider>*/}
                     <body>
-                        <Navbar data={pageData.navbar} locale={locale} />
+                        <Navbar locale={locale} />
                         {children}
                         {/*<Footer data={pageData.footer} locale={locale} />*/}
                     </body>
