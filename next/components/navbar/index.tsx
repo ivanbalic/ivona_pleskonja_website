@@ -1,25 +1,21 @@
 "use client";
-import { DesktopNavbar } from "./desktop-navbar";
-import { MobileNavbar } from "./mobile-navbar";
-import { motion } from "framer-motion";
+import React, {useState} from "react";
+
+import {usePathname} from "next/navigation";
+
+import {NavMenuExpanded} from "@/components/navbar/NavMenuExpanded";
+import {NavMenuCollapsed} from "@/components/navbar/NavMenuCollapsed";
 
 
-export function Navbar({ data, locale }: { data: any, locale: string }) {
-  return (
-    <motion.nav
-      className="max-w-7xl  fixed top-4  mx-auto inset-x-0 z-50 w-[95%] lg:w-full"
-    >
-      <div className="hidden lg:block w-full">
-        {data?.left_navbar_items && (
-          <DesktopNavbar locale={locale} leftNavbarItems={data?.left_navbar_items} rightNavbarItems={data?.right_navbar_items} logo={data?.logo} />
-        )}
+export function Navbar({ locale }: { locale: string }) {
+    const pathName = usePathname();
+    const [isOpen, setIsOpen] = useState(false);
 
-      </div>
-      <div className="flex h-full w-full items-center lg:hidden ">
-        {data?.left_navbar_items && (
-          <MobileNavbar locale={locale} leftNavbarItems={data?.left_navbar_items} rightNavbarItems={data?.right_navbar_items} logo={data?.logo} />
-        )}
-      </div>
-    </motion.nav>
-  );
+    const isHomePage = pathName === `/${locale}`;
+
+    return (
+            isOpen
+                ? <NavMenuExpanded onClose={()=> setIsOpen(false)} locale={locale} />
+                : <NavMenuCollapsed onOpen={() => setIsOpen(true)} hideLogo={isHomePage} />
+    );
 }

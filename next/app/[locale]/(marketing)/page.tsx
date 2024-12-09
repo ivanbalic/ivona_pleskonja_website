@@ -1,8 +1,10 @@
+import React from "react";
 import { Metadata } from 'next';
 
-import PageContent from '@/lib/shared/PageContent';
 import fetchContentType from '@/lib/strapi/fetchContentType';
 import { generateMetadataObject } from '@/lib/shared/metadata';
+import {HomePageCoverCarousel} from "@/components/HomePageCoverCarousel";
+import {SignatureLogo} from "@/components/SignatureLogo";
 
 export async function generateMetadata({
   params,
@@ -21,11 +23,8 @@ export async function generateMetadata({
 }
 
 export default async function HomePage({ params }: { params: { locale: string } }) {
-  const pageData = await fetchContentType(
-    'pages',
-    `filters[slug][$eq]=homepage&filters[locale][$eq]=${params.locale}`,
-    true
-  );
-
-  return <PageContent pageData={pageData} />;
+  return <div className="relative w-full h-screen">
+      <HomePageCoverCarousel />
+      <SignatureLogo />
+  </div>;
 }
