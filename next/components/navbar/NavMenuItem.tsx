@@ -6,14 +6,14 @@ import { ReactNode } from "react";
 import { usePathname } from "next/navigation";
 
 type Props = {
-  href: never;
+  href: string;
   children: ReactNode;
   active?: boolean;
   className?: string;
   target?: string;
 };
 
-export function NavbarItem({
+export function NavMenuItem({
   children,
   href,
   active,
@@ -26,8 +26,8 @@ export function NavbarItem({
     <Link
       href={href}
       className={cn(
-        "flex items-center justify-center  text-sm leading-[110%] px-4 py-2 rounded-md  hover:bg-neutral-800 hover:text-white/80 text-white hover:shadow-[0px_1px_0px_0px_var(--neutral-600)_inset] transition duration-200",
-        (active || pathname?.includes(href)) && "bg-transparent text-white",
+        "",
+        (active || pathname?.includes(href)) && "text-white",
         className
       )}
       target={target}

@@ -4,12 +4,13 @@ import { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { generateMetadataObject } from '@/lib/shared/metadata';
 
-import { Footer } from '@/components/footer';
 import { Navbar } from '@/components/navbar';
-import { CartProvider } from '@/context/cart-context';
-import { cn } from '@/lib/utils';
-import { ViewTransitions } from 'next-view-transitions';
 import fetchContentType from '@/lib/strapi/fetchContentType';
+
+// import { cn } from '@/lib/utils';
+// import { Footer } from '@/components/footer';
+// import { CartProvider } from '@/context/cart-context';
+// import { ViewTransitions } from 'next-view-transitions';
 
 const inter = Inter({
     subsets: ["latin"],
@@ -42,13 +43,13 @@ export default async function LocaleLayout({
     params: { locale: string };
 }) {
 
-    const pageData = await fetchContentType('global', `filters[locale][$eq]=${locale}`, true);
+    // const pageData = await fetchContentType('global', `filters[locale][$eq]=${locale}`, true);
     return (
         <html lang={locale}>
             {/*<ViewTransitions>*/}
                 {/*<CartProvider>*/}
                     <body>
-                        <Navbar data={pageData.navbar} locale={locale} />
+                        <Navbar locale={locale} />
                         {children}
                         {/*<Footer data={pageData.footer} locale={locale} />*/}
                     </body>

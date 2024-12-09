@@ -1,14 +1,13 @@
 import React from "react";
 
-
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { i18n } from '@/i18n.config'
 
 import { cn } from "@/lib/utils";
 
-export function LocaleSwitcher() {
-  const pathName = usePathname()
+export function LanguagePicker() {
+  const pathName = usePathname();
   const currentLocale = pathName.split('/')[1]
 
   const redirectedPathName = (locale: string) => {
@@ -19,7 +18,7 @@ export function LocaleSwitcher() {
   }
 
   return (
-    <div className="flex gap-2  p-1 rounded-md">
+    <div className="flex justify-center items-center gap-5 rounded-md">
       {i18n.locales.map((locale) => (
         <Link
           key={locale}
@@ -28,13 +27,13 @@ export function LocaleSwitcher() {
           <React.Fragment >
             <div
               className={cn(
-                "flex cursor-pointer items-center justify-center  text-sm leading-[110%] w-8 py-1 rounded-md  hover:bg-neutral-800 hover:text-white/80 text-white hover:shadow-[0px_1px_0px_0px_var(--neutral-600)_inset] transition duration-200",
+                "flex cursor-pointer items-center justify-center font-light pb-1 text-2xl tracking-[.15em] text-white transition duration-200",
                 locale === currentLocale
-                  ? "bg-neutral-800 text-white shadow-[0px_1px_0px_0px_var(--neutral-600)_inset]"
+                  ? "border-b-2 font-bold border-white"
                   : ""
               )}
             >
-              {locale}
+              {locale.toUpperCase()}
             </div>
           </React.Fragment>
         </Link>

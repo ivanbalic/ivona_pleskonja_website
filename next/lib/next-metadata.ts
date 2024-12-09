@@ -17,7 +17,7 @@ const seoData = {
         url: `https://ui.aceternity.com/banner.png`, // TODO: Fix this
       },
     ],
-    site_name: "ivoan_pleskonja",
+    site_name: "ivona_pleskonja",
   },
   twitter: {
     handle: "@mannupaaji",
