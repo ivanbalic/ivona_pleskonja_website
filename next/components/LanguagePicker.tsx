@@ -1,12 +1,12 @@
 import React from "react";
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { i18n } from '@/i18n.config'
+import Link from 'next/link';
+import { i18n } from '@/i18n.config';
+import { usePathname } from 'next/navigation';
 
 import { cn } from "@/lib/utils";
 
-export function LanguagePicker() {
+export function LanguagePicker({ isPrimary }: { isPrimary: boolean }) {
   const pathName = usePathname();
   const currentLocale = pathName.split('/')[1]
 
@@ -16,7 +16,7 @@ export function LanguagePicker() {
     segments[1] = locale
     return segments.join('/')
   }
-
+  console.log('LAG: ',isPrimary);
   return (
     <div className="flex justify-center items-center gap-5 rounded-md">
       {i18n.locales.map((locale) => (
@@ -27,10 +27,11 @@ export function LanguagePicker() {
           <React.Fragment >
             <div
               className={cn(
-                "flex cursor-pointer items-center justify-center font-light pb-1 text-2xl tracking-[.15em] text-white transition duration-200",
+                'flex cursor-pointer items-center justify-center font-light pb-1 text-2xl tracking-[.15em] transition duration-200',
                 locale === currentLocale
-                  ? "border-b-2 font-bold border-white"
-                  : ""
+                  ? 'border-b-2 font-bold'
+                  : "",
+                  isPrimary ? 'text-primaryBlue border-primaryBlue' : 'text-white border-white',
               )}
             >
               {locale.toUpperCase()}

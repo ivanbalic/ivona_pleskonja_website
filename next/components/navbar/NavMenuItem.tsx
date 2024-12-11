@@ -1,16 +1,16 @@
 "use client";
-
-import { cn } from "@/lib/utils";
-import { Link } from "next-view-transitions";
 import { ReactNode } from "react";
+
+import Link from "next/link";
+import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 
 type Props = {
   href: string;
-  children: ReactNode;
+  target?: string;
   active?: boolean;
   className?: string;
-  target?: string;
+  children: ReactNode;
 };
 
 export function NavMenuItem({

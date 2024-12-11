@@ -18,6 +18,8 @@ const config: Config = {
         lightblack: "#1C1C1C",
         secondary: "#E6E6E6",
         muted: "var(--neutral-200)",
+        primaryBlue: '#3769E6',
+        overlayBlue: '#3242C0',
       },
       boxShadow: {
         derek: `0px 0px 0px 1px rgb(0 0 0 / 0.06),
@@ -48,6 +50,9 @@ const config: Config = {
         },
       },
     },
+    fontFamily: {
+      'text': ['Helvetica Neue'],
+    }
   },
   plugins: [
     require("tailwindcss-animate"),

@@ -10,7 +10,7 @@ import coverSlide2 from '../public/images/cover-slide-2.png';
 import coverSlide3 from '../public/images/cover-slide-3.png';
 
 export function HomePageCoverCarousel() {
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
+    const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
     return (
         <section className="embla">

@@ -7,11 +7,6 @@ import { generateMetadataObject } from '@/lib/shared/metadata';
 import { Navbar } from '@/components/navbar';
 import fetchContentType from '@/lib/strapi/fetchContentType';
 
-// import { cn } from '@/lib/utils';
-// import { Footer } from '@/components/footer';
-// import { CartProvider } from '@/context/cart-context';
-// import { ViewTransitions } from 'next-view-transitions';
-
 const inter = Inter({
     subsets: ["latin"],
     display: "swap",
@@ -42,19 +37,12 @@ export default async function LocaleLayout({
     children: React.ReactNode;
     params: { locale: string };
 }) {
-
-    // const pageData = await fetchContentType('global', `filters[locale][$eq]=${locale}`, true);
     return (
         <html lang={locale}>
-            {/*<ViewTransitions>*/}
-                {/*<CartProvider>*/}
-                    <body>
-                        <Navbar locale={locale} />
-                        {children}
-                        {/*<Footer data={pageData.footer} locale={locale} />*/}
-                    </body>
-                {/*</CartProvider>*/}
-            {/*</ViewTransitions>*/}
+            <body>
+                <Navbar locale={locale} />
+                {children}
+            </body>
         </html>
     );
 }
