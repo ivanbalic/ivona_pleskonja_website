@@ -289,7 +289,7 @@ const getContent = (page: string, locale: string)=> {
 export default async function AboutMeSubPage({ params: { locale, slug} }: { params: { locale: string, slug: string } }) {
     return (
         <Container>
-            <div className='px-[100px] pt-[115px] text-black'>
+            <div className='px-[100px] pt-[125px] text-black'>
                 <div className='flex justify-center gap-5 mt-5 font-text font-light text-[16px] leading-[19.4px] tracking-[.15em]'>
                     {Object.values(PAGE_CONTENT).map(
                         (content, index) => (
