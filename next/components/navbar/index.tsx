@@ -7,7 +7,10 @@ import {NavMenuExpanded} from "@/components/navbar/NavMenuExpanded";
 import {NavMenuCollapsed} from "@/components/navbar/NavMenuCollapsed";
 
 function getPage(pathName: string){
-    return pathName.split("/").slice(2)[0];
+    const parsedPathName = pathName.split("/").slice(2);
+    if (parsedPathName[0] === "my_works" && parsedPathName.length > 1) return 'my_works_details';
+
+    return parsedPathName[0];
 }
 
 export function Navbar({ locale }: { locale: string }) {
@@ -17,7 +20,6 @@ export function Navbar({ locale }: { locale: string }) {
     const isHomePage = pathName === `/${locale}`;
 
     const page = isHomePage ? 'home' : getPage(pathName);
-
     return (
             isOpen
                 ? <NavMenuExpanded onClose={()=> setIsOpen(false)} locale={locale} />
