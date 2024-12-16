@@ -10,20 +10,26 @@ export interface SubNavItem {
     TITLE: Translations;
 }
 
-export function SubNavBredCrumbs( { navItems, locale, page }: { navItems: SubNavItem[], locale: string, page: string }) {
+export function SubNavBredCrumbs( { navItems, locale, page, subItemClass = '' }: { navItems: SubNavItem[], locale: string, page: string, subItemClass?: string }) {
 
     return (
         <div
-            className='flex justify-center gap-5 mt-5 font-text font-light text-[16px] leading-[19.4px] tracking-[.15em]'>
+            className='w-full flex justify-center items-center gap-2 sm:gap-5 mt-5 font-text font-light text-xs sm:text-[16px] sm:leading-[19.4px] tracking-[.15em]'>
             {navItems.map(
                 (content, index) => (
-                    <Link href={`/${locale}/${content.LINK}`} key={content.ID} className={cn(
-                        'hover:underline cursor-pointer', content.ID === page ? 'font-bold underline' : '',
-                        index ? 'border-l-2 border-black pl-5' : '')}
-                    >
-                        {/* @ts-ignore */}
-                        {content.TITLE[locale.toUpperCase()]}
-                    </Link>
+                    <div className={cn(index ? 'border-l border-black' : '', 'pl-2 sm:pl-5', subItemClass)}>
+                        <Link
+                            key={content.ID}
+                            href={`/${locale}/${content.LINK}`}
+                            className={cn(
+                                'hover:underline cursor-pointer',
+                                content.ID === page ? 'font-bold' : '',
+                            )}
+                        >
+                            {/* @ts-ignore */}
+                            {content.TITLE[locale.toUpperCase()]}
+                        </Link>
+                    </div>
                 )
             )}
         </div>

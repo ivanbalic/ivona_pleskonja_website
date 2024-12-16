@@ -277,8 +277,8 @@ export default function WorkDetailsPage({ params: { locale, slug } }: { params: 
     if (!page) return null;
 
     return (
-        <Container className={cn('pt-[75px] md:pt-[100px] lg:pt-[125px] text-black min-h-screen', selected && 'bg-secondaryBackground max-w-full')}>
-            <SubNavBredCrumbs navItems={page.HISTORY ?? []} locale={locale} page={slug} />
+        <Container className={cn('pt-[75px] md:pt-[100px] lg:pt-[125px] text-black min-h-screen', selected && 'bg-backgroundSecondary max-w-full')}>
+            <SubNavBredCrumbs navItems={page.HISTORY ?? []} locale={locale} page={slug} subItemClass='max-[480px]:max-w-[250px] truncate' />
             { selected
                 ?
                 <Container className="flex flex-col lg:flex-row gap-20 px-[72px] pt-10 pb-[135px] h-full">
@@ -295,7 +295,7 @@ export default function WorkDetailsPage({ params: { locale, slug } }: { params: 
                             <div>{selected.DETAILS.TECHNIQUE[locale.toUpperCase() as keyof Translations]}</div>
                         </div>
                         <div className="text-black font-text text-[16px] leading-[19px] mb-20">{selected.DETAILS.DESCRIPTION[locale.toUpperCase() as keyof Translations]}</div>
-                        <Link href={'/'} className="text-[16px] leading-[21px] font-bold">ODVEDI ME NA IZLOŽBU</Link>
+                        {/*<Link href={'/'} className="text-[16px] leading-[21px] font-bold">ODVEDI ME NA IZLOŽBU</Link>*/}
                     </div>
                 </Container>
                 : <MyWorks data={page} locale={locale} onSelect={setSelected} />

@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import hoverBorder from '@/public/images/my-work-hover-border.svg';
 import {cn} from "@/lib/utils";
+import hoverBorder from '@/public/images/my-work-hover-border.svg';
 
 type Title = {
     SER: string,
@@ -20,13 +20,13 @@ const PAGE_CONTENT = Object.freeze({
     CONTENT: {
         SER: [
             { ID: 'creating_of_light', TITLE: '2023 Stvaranje svetla / Nežni smo rodjeni'},
-            { ID: 'mural_life', TITLE: '2020 mural,Life'},
-            { ID: '11_strengths', TITLE: '2019 11 Snaga' },
+            // { ID: 'mural_life', TITLE: '2020 mural,Life'},
+            // { ID: '11_strengths', TITLE: '2019 11 Snaga' },
         ],
         ENG: [
             { ID: 'creating_of_light', TITLE: '2023 Creating Of Light / We Are Born Tender'},
-            { ID: 'mural_life', TITLE: '2020 mural,Life'},
-            { ID: '11_strengths', TITLE: '2019 11 Strengths'},
+            // { ID: 'mural_life', TITLE: '2020 mural,Life'},
+            // { ID: '11_strengths', TITLE: '2019 11 Strengths'},
         ]
     },
 });
