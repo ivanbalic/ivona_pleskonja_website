@@ -281,8 +281,8 @@ export default function WorkDetailsPage({ params: { locale, slug } }: { params: 
             <SubNavBredCrumbs navItems={page.HISTORY ?? []} locale={locale} page={slug} />
             { selected
                 ?
-                <Container className="flex flex-col md:flex-row gap-20 px-[72px] pt-10 pb-[135px] h-full">
-                    <div className="flex justify-center items-center h-[715px] max-h-full w-[739px] max-w-full bg-white">
+                <Container className="flex flex-col lg:flex-row gap-20 px-[72px] pt-10 pb-[135px] h-full">
+                    <div className="flex justify-center items-center h-[715px] max-h-full w-full lg:w-[739px] max-w-full bg-white">
                         <Image src={selected.SRC.FULL} alt={selected.ALT} />
                     </div>
                     <div className="flex flex-1 flex-col justify-end items-start text-primaryBlue tracking-[.15em]">
