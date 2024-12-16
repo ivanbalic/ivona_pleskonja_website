@@ -17,9 +17,8 @@ export function SubNavBredCrumbs( { navItems, locale, page, subItemClass = '' }:
             className='w-full flex justify-center items-center gap-2 sm:gap-5 mt-5 font-text font-light text-xs sm:text-[16px] sm:leading-[19.4px] tracking-[.15em]'>
             {navItems.map(
                 (content, index) => (
-                    <div className={cn(index ? 'border-l border-black' : '', 'pl-2 sm:pl-5', subItemClass)}>
+                    <div key={content.ID} className={cn(index ? 'border-l border-black' : '', 'pl-2 sm:pl-5', subItemClass)}>
                         <Link
-                            key={content.ID}
                             href={`/${locale}/${content.LINK}`}
                             className={cn(
                                 'hover:underline cursor-pointer',
