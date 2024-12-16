@@ -295,7 +295,7 @@ export default function WorkDetailsPage({ params: { locale, slug } }: { params: 
                             <div>{selected.DETAILS.TECHNIQUE[locale.toUpperCase() as keyof Translations]}</div>
                         </div>
                         <div className="text-black font-text text-[16px] leading-[19px] mb-20">{selected.DETAILS.DESCRIPTION[locale.toUpperCase() as keyof Translations]}</div>
-                        {/*<Link href={'/'} className="text-[16px] leading-[21px] font-bold">ODVEDI ME NA IZLOŽBU</Link>*/}
+                        <Link href={'/'} className="text-[16px] leading-[21px] font-bold">ODVEDI ME NA IZLOŽBU</Link>
                     </div>
                 </Container>
                 : <MyWorks data={page} locale={locale} onSelect={setSelected} />
