@@ -43,16 +43,14 @@ export interface MyWorks {
 }
 
 export function MyWorks({ data, locale, onSelect }: { data?: MyWorks, locale: string, onSelect: Dispatch<SetStateAction<GalleryRowItem | null>>}) {
-    if (!data) return null;
+    const title = useMemo(() => data?.TITLE?.[locale.toUpperCase() as keyof Translations], [locale]);
 
-    const title = useMemo(() => data.TITLE[locale.toUpperCase() as keyof Translations], [locale]);
-
-    const description = useMemo(() => data.DESCRIPTION.map(
+    const description = useMemo(() => data?.DESCRIPTION?.map(
         (section) => section[locale.toUpperCase() as keyof Translations] ), [locale]
     );
 
     const gallery = useMemo(() => {
-        return data.GALLERY.reduce(
+        return data?.GALLERY?.reduce(
             (map, row, key) => {
                 map[`row_${key + 1}` as keyof GalleryRowItem] = row;
                 return map;
@@ -60,6 +58,8 @@ export function MyWorks({ data, locale, onSelect }: { data?: MyWorks, locale: st
             {} as GalleryRowMap
         );
     }, [locale]);
+
+    if (!title || !description || !gallery) return null;
 
     return (
         <div className={cn(
