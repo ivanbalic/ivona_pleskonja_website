@@ -17,7 +17,8 @@ const config: Config = {
       colors: {
         primaryBlue: '#3769E6',
         overlayBlue: '#3242C0',
-        secondaryBackground: '#F8F8F8',
+        borderSecondary: '#D9D9D9',
+        backgroundSecondary: '#F8F8F8',
       },
     },
     fontFamily: {
