@@ -3,8 +3,8 @@ import { Metadata } from 'next';
 
 import fetchContentType from '@/lib/strapi/fetchContentType';
 import { generateMetadataObject } from '@/lib/shared/metadata';
-import {HomePageCoverCarousel} from "@/components/HomePageCoverCarousel";
-import {SignatureLogo} from "@/components/SignatureLogo";
+import {HomePageCoverCarousel} from "@/components/home/HomePageCoverCarousel";
+import {SignatureLogo} from "@/components/home/SignatureLogo";
 
 export async function generateMetadata({
   params,

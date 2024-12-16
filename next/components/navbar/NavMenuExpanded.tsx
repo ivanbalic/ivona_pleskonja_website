@@ -1,6 +1,8 @@
-import React from "react";
-import Image from "next/image";
+'use client';
+import React, { useEffect } from "react";
+
 import Link from "next/link";
+import Image from "next/image";
 
 import {NavMenuItem} from "@/components/navbar/NavMenuItem";
 import logoWhite from "@/public/images/navbar-logo-white.svg";
@@ -21,7 +23,7 @@ const MENU_ITEMS_CONFIG = Object.freeze({
             SER: 'MOJI RADOVI',
             ENG: 'MY WORK'
         },
-        LINK: 'my_work',
+        LINK: 'my_works',
         HIDE: false,
     },
     NEWS: {
@@ -51,28 +53,33 @@ const MENU_ITEMS_CONFIG = Object.freeze({
 });
 
 export const NavMenuExpanded = ({ onClose, locale }: { onClose: () => void, locale: string }) => {
+    useEffect(() => {
+        document.body.classList.add('overflow-hidden');
+
+        return () => {
+            document.body.classList.remove('overflow-hidden');
+        };
+    },[]);
   return (
-      <div className="">
-          <Image src={menuBackground} alt='menu-background' className="absolute w-full h-screen z-20" />
+      <div>
+          <Image src={menuBackground} alt='menu-background' className="absolute w-full h-screen z-20 object-cover" />
           <div className="absolute top-0 bg-overlayBlue/85 w-full h-screen absolute z-20 flex flex-col justify-between items-center">
-              <Link href={`/${locale}`} className="flex justify-center pt-[10px]" onClick={onClose}>
-                  <Image className="flex-1" src={logoWhite} alt="Ivona Pleskonja logo" width={105} height={115}/>
+              <Link href={`/${locale}`} className="flex justify-center pt-2.5 h-[65px] md:h-[85px] lg:h-[110px]" onClick={onClose}>
+                  <Image className="w-full flex-1" src={logoWhite} alt="Ivona Pleskonja logo"/>
               </Link>
               <div
-                  className="text-[62px] leading-[82px] tracking-[.15em] text-white/50 flex flex-col gap-5 font-normal justify-center items-center">
+                  className="flex flex-col gap-5 font-normal justify-center items-center">
                   {Object.values(MENU_ITEMS_CONFIG).map(
                       (CONFIG) =>
-                          CONFIG.HIDE
-                              ? <></>
-                              : <NavMenuItem key={CONFIG.LINK} href={`/${locale}/${CONFIG.LINK}`}  className="hover:text-white cursor-pointer">
-                                  <span onClick={onClose}>
-                                      {CONFIG.LABEL[locale.toUpperCase() as keyof typeof CONFIG.LABEL]}
-                                  </span>
-                                </NavMenuItem>
+                          <NavMenuItem key={CONFIG.LINK} href={`/${locale}/${CONFIG.LINK}`} hide={CONFIG.HIDE}>
+                              <span onClick={onClose}>
+                                  {CONFIG.LABEL[locale.toUpperCase() as keyof typeof CONFIG.LABEL]}
+                              </span>
+                          </NavMenuItem>
                   )}
               </div>
-              <div className="mb-[50px]" onClick={onClose}>
-                  <Image src={closeMenuIcon} alt="Close Menu" width={28} height={28}/>
+              <div className="mb-[50px] w-5 md:w-6 lg:w-7" onClick={onClose}>
+                  <Image className="w-full" src={closeMenuIcon} alt="Close Menu" />
               </div>
           </div>
       </div>
