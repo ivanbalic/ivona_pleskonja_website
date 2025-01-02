@@ -1,8 +1,12 @@
 import React from "react";
 
+import Link from "next/link";
+import Image from 'next/image';
+
 import {cn} from "@/lib/utils";
 import { Translations } from "@/types/types";
 import { Container } from "@/components/container";
+import arrowLeft from '@/public/images/arrow-left.svg';
 import { SubNavBredCrumbs  } from "@/components/subnav-bredcrumbs/SubNavBredCrumbs";
 import { MENU_ITEMS_CONFIG } from "@/app/[locale]/(marketing)/about_me/pageContent";
 
@@ -26,6 +30,9 @@ export default function AboutMeSubPage({ params: { locale, slug} }: { params: { 
             )}
         >
             <SubNavBredCrumbs navItems={Object.values(MENU_ITEMS_CONFIG)} locale={locale} page={slug} subItemClass="max-[521px]:flex-1 max-[521px]:truncate" />
+            <Link href={`/${locale}/about_me`} className="flex items-center cursor-pointer">
+                <Image src={arrowLeft} alt="arrowLeft" className="border-primaryBlue hover:border-b-2" />
+            </Link>
             <div className="my-6 sm:my-7 md:my-8 lg:my-9 xl:my-10 font-bold text-[22px] sm:text-[26px] md:text-[30px] lg:text-[34px] xl:text-[36px] leading-[25px] sm:leading-[29px] md:leading-[33px] lg:leading-[37px] xl:leading-[39px] tracking-[.15em]">
                 <span className="text-primaryBlue">{getTitle(slug, locale)}</span>
             </div>

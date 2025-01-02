@@ -21,7 +21,7 @@ export function GridImage({ data, locale, onSelect }: { data: GalleryRowItem, lo
                 <span>{DETAILS.TECHNIQUE[locale.toUpperCase() as keyof Translations]}</span>
                 <span>{DETAILS.CREATED_AT}</span>
             </div>
-            <Image src={SRC.PREVIEW} alt={ALT} className="w-full h-full object-cover outline-0 border-0 p-0 m-0 border-0 shadow-none"/>
+            <Image src={SRC.PREVIEW} alt={ALT} className="w-full h-full object-cover outline-0 border-0 p-0 m-0 shadow-none"/>
         </div>
     );
 }

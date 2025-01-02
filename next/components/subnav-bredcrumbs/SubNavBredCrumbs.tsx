@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
-import { Translations } from "@/types/types";
+import { Title, Translations } from "@/types/types";
 
 export interface SubNavItem {
     LINK: string;
@@ -28,8 +28,7 @@ export function SubNavBredCrumbs( { navItems, locale, page, subItemClass = '' }:
                                 content.ID === page ? 'font-bold' : '',
                             )}
                         >
-                            {/* @ts-ignore */}
-                            {content.TITLE[locale.toUpperCase()]}
+                            {content.TITLE[locale.toUpperCase() as keyof Title]}
                         </Link>
                     </div>
                 )
