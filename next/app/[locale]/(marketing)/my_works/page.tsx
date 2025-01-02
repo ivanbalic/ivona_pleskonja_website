@@ -4,32 +4,10 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import {cn} from "@/lib/utils";
+import { cn } from "@/lib/utils";
+import { Title } from "@/types/types";
 import hoverBorder from '@/public/images/my-work-hover-border.svg';
-
-type Title = {
-    SER: string,
-    ENG: string,
-};
-
-const PAGE_CONTENT = Object.freeze({
-    TITLE: {
-        SER: "MOJI RADOVI",
-        ENG: "MY WORKS"
-    },
-    CONTENT: {
-        SER: [
-            { ID: 'creating_of_light', TITLE: '2023 Stvaranje svetla / Nežni smo rodjeni'},
-            // { ID: 'mural_life', TITLE: '2020 mural,Life'},
-            // { ID: '11_strengths', TITLE: '2019 11 Snaga' },
-        ],
-        ENG: [
-            { ID: 'creating_of_light', TITLE: '2023 Creating Of Light / We Are Born Tender'},
-            // { ID: 'mural_life', TITLE: '2020 mural,Life'},
-            // { ID: '11_strengths', TITLE: '2019 11 Strengths'},
-        ]
-    },
-});
+import {PAGE_CONTENT} from "@/app/[locale]/(marketing)/my_works/pageContent";
 
 const getTitle = ( locale: string) => {
     return PAGE_CONTENT?.TITLE[locale.toUpperCase() as keyof Title];
@@ -53,7 +31,10 @@ export default function MyWorksPage({ params: { locale } }: { params: { locale: 
                         href={`/${locale}/my_works/${item.ID}`}
                         onMouseLeave={() => setHovered(null)}
                         onMouseEnter={() => setHovered(item.ID)}
-                        className="relative cursor-pointer w-fit bg-origin-border bg-contain bg-no-repeat bg-clip-border bg-top-left"
+                        className={cn(
+                            item.DISABLED ? "pointer-events-none opacity-60" : "pointer-events-auto opacity-100",
+                            "relative cursor-pointer w-fit bg-origin-border bg-contain bg-no-repeat bg-clip-border bg-top-left",
+                        )}
                     >
                         <Image
                             src={hoverBorder}

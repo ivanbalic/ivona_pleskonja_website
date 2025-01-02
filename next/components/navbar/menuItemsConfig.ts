@@ -10,7 +10,7 @@ export const MENU_ITEMS_CONFIG = Object.freeze({
     MY_WORK: {
         LABEL: {
             SER: 'MOJI RADOVI',
-            ENG: 'MY WORK'
+            ENG: 'MY WORKS'
         },
         LINK: 'my_works',
         HIDE: false,
