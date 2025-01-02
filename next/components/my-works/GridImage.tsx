@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 import { cn } from "@/lib/utils";
+import { Translations } from "@/types/types";
 import { GalleryRowItem } from "@/components/my-works/MyWorks";
-import { Translations } from "@/app/[locale]/(marketing)/my_works/[slug]/page";
 
 export function GridImage({ data, locale, onSelect }: { data: GalleryRowItem, locale: string, onSelect: () => void }) {
     const { SRC, ALT, DETAILS } = data || {};
