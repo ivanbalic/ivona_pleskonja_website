@@ -40,7 +40,9 @@ export const NavMenuCollapsed = ({ hideLogo, onOpen, page, locale }: { hideLogo:
       <div className="flex justify-between w-full fixed z-10 align-center px-2 md:px-6 lg:px-10 bg-transparent h-[75px] md:h-[100px] lg:h-[125px]">
         <div className="hidden min-[430px]:block w-[144.2px] md:w-[160.2px] lg:w-[248.3px]"/>
         <div className={cn(
-            "flex justify-center flex-1 h-[75px] md:h-[100px] lg:h-[125px]",
+            "min-[430px]:flex-1",
+            "mr-0 max-[429px]:mr-[50vw]",
+            "flex justify-center h-[75px] md:h-[100px] lg:h-[125px]",
         )}>
           {!hideLogo && <Link href={`/${locale}`}>
               <Image className="h-full object-contain" src={color === 'white' ? logoWhite : logoBlue} alt="Ivona Pleskonja logo" />
