@@ -1,19 +1,19 @@
 import React from "react";
 
 import {cn} from "@/lib/utils";
-import { PAGE_CONTENT } from "./pageContent";
+import { Translations } from "@/types/types";
 import { Container } from "@/components/container";
-import {Translations} from "@/app/[locale]/(marketing)/my_works/[slug]/page";
-import {SubNavBredCrumbs } from "@/components/subnav-bredcrumbs/SubNavBredCrumbs";
+import { SubNavBredCrumbs  } from "@/components/subnav-bredcrumbs/SubNavBredCrumbs";
+import { MENU_ITEMS_CONFIG } from "@/app/[locale]/(marketing)/about_me/pageContent";
 
 const getTitle = (page: string, locale: string) => {
-    const pageContent = PAGE_CONTENT[page.toUpperCase() as keyof typeof PAGE_CONTENT];
+    const pageContent = MENU_ITEMS_CONFIG[page.toUpperCase() as keyof typeof MENU_ITEMS_CONFIG];
     const pageTitle = pageContent?.TITLE[locale.toUpperCase() as keyof Translations];
     return pageTitle?.toUpperCase();
 };
 
 const getContent = (page: string, locale: string)=> {
-    const pageContent = PAGE_CONTENT[page.toUpperCase() as keyof typeof PAGE_CONTENT];
+    const pageContent = MENU_ITEMS_CONFIG[page.toUpperCase() as keyof typeof MENU_ITEMS_CONFIG];
     return pageContent?.CONTENT[locale.toUpperCase() as keyof Translations];
 };
 
@@ -25,7 +25,7 @@ export default function AboutMeSubPage({ params: { locale, slug} }: { params: { 
             'px-5 sm:px-[30px] md:px-[65px] lg:px-[100px] xl:px-[135px]',
             )}
         >
-            <SubNavBredCrumbs navItems={Object.values(PAGE_CONTENT)} locale={locale} page={slug} subItemClass="max-[513px]:flex-1 max-[513px]:truncate" />
+            <SubNavBredCrumbs navItems={Object.values(MENU_ITEMS_CONFIG)} locale={locale} page={slug} subItemClass="max-[521px]:flex-1 max-[521px]:truncate" />
             <div className="my-10 font-bold text-[36px] leading-[39px] tracking-[.15em]">
                 <span className="text-primaryBlue">{getTitle(slug, locale)}</span>
             </div>

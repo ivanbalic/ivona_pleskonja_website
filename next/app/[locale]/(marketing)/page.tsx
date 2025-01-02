@@ -1,30 +1,31 @@
+'use client';
 import React from "react";
-import { Metadata } from 'next';
 
-import fetchContentType from '@/lib/strapi/fetchContentType';
-import { generateMetadataObject } from '@/lib/shared/metadata';
-import {HomePageCoverCarousel} from "@/components/home/HomePageCoverCarousel";
-import {SignatureLogo} from "@/components/home/SignatureLogo";
+import Link from "next/link";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { locale: string };
-}): Promise<Metadata> {
-  const pageData = await fetchContentType(
-    'pages',
-    `filters[slug][$eq]=homepage&filters[locale][$eq]=${params.locale}&populate=seo.metaImage`,
-    true
+import {MetaIcon} from "@/components/icons/MetaIcon";
+import {useActiveSlide} from "@/context/ActiveSlideContext";
+import {InstagramIcon} from "@/components/icons/InstagramIcon";
+import { SignatureLogo } from "@/components/home/SignatureLogo";
+import { HomePageCoverCarousel } from "@/components/home/HomePageCoverCarousel";
+
+export default function HomePage() {
+    const { activeSlide } = useActiveSlide();
+
+    const color = activeSlide ? '#3769E6' : '#ffffff';
+
+    return (
+      <div className="relative w-full h-screen">
+        <HomePageCoverCarousel/>
+        <SignatureLogo />
+          <div className="absolute z-10 bottom-0 right-0 flex flex-col gap-2 md:gap-3 lg:gap-5 items-center px-2 md:px-6 lg:px-10 pb-2 md:pb-6 lg:pb-10">
+              <Link href="https://www.instagram.com/ivonapleskonja?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" >
+                  <InstagramIcon color={color} className="transition duration-200 w-6 lg:w-10 max-w-[40px]" />
+              </Link>
+              <Link href="https://www.facebook.com/share/1AvuPnJMQ2/?mibextid=wwXIfr" target="_blank" >
+                  <MetaIcon color={color} className="transition duration-200 w-6 lg:w-10 max-w-[40px]" />
+              </Link>
+          </div>
+      </div>
   );
-
-  const seo = pageData?.seo;
-  const metadata = generateMetadataObject(seo);
-  return metadata;
-}
-
-export default async function HomePage({ params }: { params: { locale: string } }) {
-  return <div className="relative w-full h-screen">
-      <HomePageCoverCarousel />
-      <SignatureLogo />
-  </div>;
 }

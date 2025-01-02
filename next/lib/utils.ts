@@ -19,3 +19,10 @@ export const formatNumber = (
     maximumFractionDigits: 2,
   }).format(number);
 };
+
+export function getPage(pathName: string){
+  const parsedPathName = pathName.split("/").slice(2);
+  if (parsedPathName[0] === "my_works" && parsedPathName.length > 1) return 'my_works_details';
+
+  return parsedPathName[0];
+}

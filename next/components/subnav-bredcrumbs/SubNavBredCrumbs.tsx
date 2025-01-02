@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
-import { Translations } from "@/app/[locale]/(marketing)/my_works/[slug]/page";
+import { Translations } from "@/types/types";
 
 export interface SubNavItem {
     LINK: string;
@@ -14,10 +14,13 @@ export function SubNavBredCrumbs( { navItems, locale, page, subItemClass = '' }:
 
     return (
         <div
-            className='w-full flex justify-center items-center gap-2 sm:gap-5 mt-5 font-text font-light text-xs sm:text-[16px] sm:leading-[19.4px] tracking-[.15em]'>
+            className={cn(
+                'flex justify-center items-center gap-2 md:gap-3 lg:gap-5 mt-5 px-2 md:px-3 lg:px-5',
+                'font-text font-light text-xs sm:text-sm lg:text-[16px] lg:leading-[19.4px] tracking-[.15em]'
+            )}>
             {navItems.map(
                 (content, index) => (
-                    <div key={content.ID} className={cn(index ? 'border-l border-black' : '', 'pl-2 sm:pl-5', subItemClass)}>
+                    <div key={content.ID} className={cn(index ? 'border-l border-black pl-2 md:pl-3 lg:pl-5' : '', subItemClass)}>
                         <Link
                             href={`/${locale}/${content.LINK}`}
                             className={cn(

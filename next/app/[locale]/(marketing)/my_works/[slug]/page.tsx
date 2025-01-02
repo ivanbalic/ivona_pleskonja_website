@@ -1,9 +1,11 @@
 'use client';
 import React, { useCallback, useState} from "react";
 
+import Link from "next/link";
 import Image from 'next/image';
 
 import { cn } from "@/lib/utils";
+import {Translations} from "@/types/types";
 import IVFull from '@/public/images/IV-full.png';
 import { Container } from "@/components/container";
 import IVPreview from '@/public/images/IV-preview.png';
@@ -21,12 +23,6 @@ import gabrielAndPanPreview from '@/public/images/gabriel-and-pan-preview.png';
 import skyOverPanamaPreview from '@/public/images/sky-over-panama-preview.png';
 import mahavatarBabajiPreview from '@/public/images/mahavatar-babaji-preview.png';
 import { SubNavBredCrumbs } from "@/components/subnav-bredcrumbs/SubNavBredCrumbs";
-import Link from "next/link";
-
-export type Translations = {
-    SER: string;
-    ENG: string;
-}
 
 const PAGE_CONTENT = Object.freeze({
     CREATING_OF_LIFE: {
@@ -265,14 +261,14 @@ export default function WorkDetailsPage({ params: { locale, slug } }: { params: 
         if (!prev) return;
 
         setSelected(prev);
-    }, [selected]);
+    }, [page?.GALLERY, selected?.ID]);
     const onNext = useCallback(() => {
         const next = page?.GALLERY.flat()[(selected?.ID ?? 0)];
 
         if (!next) return;
 
         setSelected(next);
-    }, [selected]);
+    }, [page?.GALLERY, selected?.ID]);
 
     if (!page) return null;
 

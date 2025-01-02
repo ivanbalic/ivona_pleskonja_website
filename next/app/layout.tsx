@@ -1,7 +1,9 @@
 import type { Viewport } from "next";
-import { Locale, i18n } from '@/i18n.config'
+import { Locale, i18n } from '@/i18n.config';
 
 import "./globals.css";
+
+import { ActiveSlideProvider } from "@/context/ActiveSlideContext";
 
 export const viewport: Viewport = {
   themeColor: [
@@ -23,8 +25,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang={params.lang}>
-      <body>
+      <body className="antialiased">
+      <ActiveSlideProvider>
         {children}
+      </ActiveSlideProvider>
       </body>
     </html>
   );

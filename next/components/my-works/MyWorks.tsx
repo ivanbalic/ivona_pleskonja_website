@@ -1,11 +1,11 @@
-import React, {Dispatch, SetStateAction, useMemo} from "react";
+import React, { Dispatch, SetStateAction, useMemo } from "react";
 
-import {StaticImageData} from "next/image";
+import { StaticImageData } from "next/image";
 
-import {cn} from "@/lib/utils";
-import { Translations } from "@/app/[locale]/(marketing)/my_works/[slug]/page";
+import { cn } from "@/lib/utils";
+import {Translations} from "@/types/types";
+import { GridImage } from "@/components/my-works/GridImage";
 import { SubNavItem } from "../subnav-bredcrumbs/SubNavBredCrumbs";
-import {GridImage} from "@/components/my-works/GridImage";
 
 export interface GalleryRowItem {
     ID: number;
@@ -43,7 +43,7 @@ export interface MyWorks {
 }
 
 export function MyWorks({ data, locale, onSelect }: { data?: MyWorks, locale: string, onSelect: Dispatch<SetStateAction<GalleryRowItem | null>>}) {
-    const title = useMemo(() => data?.TITLE?.[locale.toUpperCase() as keyof Translations], [locale]);
+    const title = useMemo(() => data?.TITLE?.[locale.toUpperCase() as keyof Translations], [data?.TITLE, locale]);
 
     const description = useMemo(() => data?.DESCRIPTION?.map(
         (section) => section[locale.toUpperCase() as keyof Translations] ), [locale]

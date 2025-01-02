@@ -25,6 +25,8 @@ body {
 }
 
 .embla {
+  overflow: hidden;
+  height: 100vh;
   max-width: 100%;
   --slide-height: 100vh;
   --slide-spacing: 0rem;
@@ -32,14 +34,19 @@ body {
 }
 .embla__viewport {
   overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 .embla__container {
   display: flex;
+  height: 100%;
+  flex-direction: column;
   touch-action: pan-y pinch-zoom;
 }
 .embla__slide {
   transform: translate3d(0, 0, 0);
   flex: 0 0 var(--slide-size);
+  height: 100vh;
 }
 .embla__slide__number {
   height: var(--slide-height);

@@ -1,16 +1,26 @@
 "use client";
-import React from "react";
+import React, {useEffect} from "react";
 
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 
-import coverSlide1 from '../../public/images/cover-slide-1.png';
-import coverSlide2 from '../../public/images/cover-slide-2.png';
-import coverSlide3 from '../../public/images/cover-slide-3.png';
+import coverSlide3 from '../../public/images/chiron.png';
+import coverSlide2 from '../../public/images/gabriel.png';
+import {useActiveSlide} from "@/context/ActiveSlideContext";
+import coverSlide1 from '../../public/images/auto-portrait.png';
 
 export function HomePageCoverCarousel() {
-    const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
+    const { activeSlide, onSlideChange } = useActiveSlide();
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, axis:'y' }, [Autoplay()]);
+
+    useEffect(() => {
+        if(!emblaApi) return;
+
+        emblaApi.on('select', () => {
+            onSlideChange(activeSlide + 1);
+        });
+    }, [activeSlide, emblaApi, onSlideChange]);
 
     return (
         <section className="embla">
