@@ -6,7 +6,7 @@ import Image from "next/image";
 
 import { MENU_ITEMS_CONFIG } from './menuItemsConfig'
 import { NavMenuItem } from "@/components/navbar/NavMenuItem";
-import logoWhite from "@/public/images/navbar-logo-white.svg";
+import logoWhite from "@/public/images/navbar-logo-white.png";
 import closeMenuIcon from "@/public/images/close-menu-icon.svg";
 
 export const NavMenuExpanded = ({ onClose, locale }: { onClose: () => void, locale: string }) => {
@@ -20,10 +20,9 @@ export const NavMenuExpanded = ({ onClose, locale }: { onClose: () => void, loca
     },[]);
 
   return (
-      <div>
           <div className="absolute top-0 bg-overlayBlue/85 w-full h-screen z-20 flex flex-col justify-between items-center">
-              <Link href={`/${locale}`} className="flex justify-center pt-2.5 h-[65px] md:h-[85px] lg:h-[110px]" onClick={onClose}>
-                  <Image className="w-full flex-1" src={logoWhite} alt="Ivona Pleskonja logo"/>
+              <Link href={`/${locale}`} className="flex justify-center h-[75px] md:h-[100px] lg:h-[125px]" onClick={onClose}>
+                  <Image className="object-contain" src={logoWhite} alt="Ivona Pleskonja logo"/>
               </Link>
               <div
                   className="flex flex-col gap-5 font-normal justify-center items-center">
@@ -40,6 +39,5 @@ export const NavMenuExpanded = ({ onClose, locale }: { onClose: () => void, loca
                   <Image className="w-full" src={closeMenuIcon} alt="Close Menu" />
               </div>
           </div>
-      </div>
   );
 };

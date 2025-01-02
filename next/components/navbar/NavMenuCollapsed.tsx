@@ -7,9 +7,9 @@ import Image from "next/image";
 import {cn} from "@/lib/utils";
 import { LanguagePicker } from './LanguagePicker';
 import {SpeakerIcon} from '@/components/icons/SpeakerIcon';
-import logoBlue from '@/public/images/navbar-logo-blue.svg';
+import logoBlue from '@/public/images/navbar-logo-blue.png';
 import {useActiveSlide} from "@/context/ActiveSlideContext";
-import logoWhite from '@/public/images/navbar-logo-white.svg';
+import logoWhite from '@/public/images/navbar-logo-white.png';
 import {BurgerMenuIcon} from "@/components/icons/BurgerMenuIcon";
 
 const BRAND_COLOR = '#3769E6';
@@ -40,11 +40,10 @@ export const NavMenuCollapsed = ({ hideLogo, onOpen, page, locale }: { hideLogo:
       <div className="flex justify-between w-full fixed z-10 align-center px-2 md:px-6 lg:px-10 bg-transparent h-[75px] md:h-[100px] lg:h-[125px]">
         <div className="hidden min-[430px]:block w-[144.2px] md:w-[160.2px] lg:w-[248.3px]"/>
         <div className={cn(
-            "flex justify-center h-[75px] md:h-[100px] lg:h-[125px]",
-            color === 'white' && 'pt-2.5 h-[65px] md:h-[85px] lg:h-[110px]'
+            "flex justify-center flex-1 h-[75px] md:h-[100px] lg:h-[125px]",
         )}>
           {!hideLogo && <Link href={`/${locale}`}>
-              <Image className="h-full" src={color === 'white' ? logoWhite : logoBlue} alt="Ivona Pleskonja logo" />
+              <Image className="h-full object-contain" src={color === 'white' ? logoWhite : logoBlue} alt="Ivona Pleskonja logo" />
           </Link>}
         </div>
         <div className="flex gap-2 md:gap-3 lg:gap-5">
