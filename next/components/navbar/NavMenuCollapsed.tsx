@@ -41,7 +41,7 @@ export const NavMenuCollapsed = ({ hideLogo, onOpen, page, locale }: { hideLogo:
         <div className="hidden min-[430px]:block w-[144.2px] md:w-[160.2px] lg:w-[248.3px]"/>
         <div className={cn(
             "min-[430px]:flex-1",
-            "mr-0 max-[429px]:mr-[50vw]",
+            "max-[429px]:ml-[calc(50px-50vw)]",
             "flex justify-center h-[75px] md:h-[100px] lg:h-[125px]",
         )}>
           {!hideLogo && <Link href={`/${locale}`}>
