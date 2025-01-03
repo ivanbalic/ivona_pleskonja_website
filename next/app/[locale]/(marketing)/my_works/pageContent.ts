@@ -1,17 +1,17 @@
-import gabrielAndPanFull from "@/public/images/gabriel-and-pan-full.png";
-import gabrielAndPanPreview from "@/public/images/gabriel-and-pan-preview.png";
 import IVFull from "@/public/images/IV-full.png";
 import IVPreview from "@/public/images/IV-preview.png";
 import holyDustFull from "@/public/images/holy-dust-full.png";
 import holyDustPreview from "@/public/images/holy-dust-preview.png";
 import creatingLifeFull from "@/public/images/creating-life-full.png";
-import creatingLifePreview from "@/public/images/creating-life-preview.png";
-import skyOverPanamaFull from "@/public/images/sky-over-panama-full.png";
-import skyOverPanamaPreview from "@/public/images/sky-over-panama-preview.png";
-import mahavatarBabajiFull from "@/public/images/mahavatar-babaji-full.png";
-import mahavatarBabajiPreview from "@/public/images/mahavatar-babaji-preview.png";
 import creatingAngelFull from "@/public/images/creating-angel-full.png";
+import gabrielAndPanFull from "@/public/images/gabriel-and-pan-full.png";
+import skyOverPanamaFull from "@/public/images/sky-over-panama-full.png";
+import creatingLifePreview from "@/public/images/creating-life-preview.png";
+import mahavatarBabajiFull from "@/public/images/mahavatar-babaji-full.png";
 import creatingAngelPreview from "@/public/images/creating-angel-preview.png";
+import gabrielAndPanPreview from "@/public/images/gabriel-and-pan-preview.png";
+import skyOverPanamaPreview from "@/public/images/sky-over-panama-preview.png";
+import mahavatarBabajiPreview from "@/public/images/mahavatar-babaji-preview.png";
 
 export const PAGE_CONTENT = Object.freeze({
     TITLE: {
@@ -55,6 +55,7 @@ export const PAGE_CONTENT = Object.freeze({
 export const SUBPAGE_CONTENT = Object.freeze({
     CREATING_OF_LIFE: {
         ID: 'creating_of_light',
+        TEMPLATE_ID: 'TEMPLATE_ID',
         HISTORY: [
             {
                 ID: 'home',

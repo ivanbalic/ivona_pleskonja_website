@@ -30,7 +30,7 @@ export default function AboutMeSubPage({ params: { locale, slug} }: { params: { 
             )}
         >
             <SubNavBredCrumbs navItems={Object.values(MENU_ITEMS_CONFIG)} locale={locale} page={slug} subItemClass="max-[521px]:flex-1 max-[521px]:truncate" />
-            <Link href={`/${locale}/about_me`} className="flex items-center cursor-pointer">
+            <Link href={`/${locale}/about_me`} className="flex items-center cursor-pointer mt-2 w-6 md:w-8 lg:w-10 max-w-[40px]">
                 <Image src={arrowLeft} alt="arrowLeft" className="border-primaryBlue hover:border-b-2" />
             </Link>
             <div className="my-6 sm:my-7 md:my-8 lg:my-9 xl:my-10 font-bold text-[22px] sm:text-[26px] md:text-[30px] lg:text-[34px] xl:text-[36px] leading-[25px] sm:leading-[29px] md:leading-[33px] lg:leading-[37px] xl:leading-[39px] tracking-[.15em]">

@@ -43,9 +43,9 @@ export default function WorkDetailsPage({ params: { locale, slug } }: { params: 
             <SubNavBredCrumbs navItems={page.HISTORY ?? []} locale={locale} page={slug} subItemClass='max-[480px]:max-w-[250px] truncate' />
             { selected
                 ?
-                <Container className="flex flex-col lg:flex-row gap-20 px-[72px] pt-10 pb-[135px] h-full">
-                    <div className="flex justify-center items-center h-[715px] max-h-full w-full lg:w-[739px] max-w-full bg-white">
-                        <Image src={selected.SRC.FULL} alt={selected.ALT} />
+                <Container className="flex flex-col lg:flex-row gap-5 lg:gap-20 px-[20px] sm:px-[30px] md:px-[65px] lg:px-[100px] xl:px-[135px] pt-10 pb-10 lg:pb-[135px] h-full">
+                    <div className="flex justify-center items-center lg:h-[715px] max-h-full w-full lg:w-[739px] max-w-full bg-white">
+                        <Image src={selected.SRC.FULL} alt={selected.ALT} className="object-cover" />
                     </div>
                     <div className="flex flex-1 flex-col justify-end items-start text-primaryBlue tracking-[.15em]">
                         <div className="text-black font-bold text-[16px] leading-[21px] mb-5">
@@ -56,7 +56,7 @@ export default function WorkDetailsPage({ params: { locale, slug } }: { params: 
                             <div>{selected.DETAILS.CREATED_AT} | {selected.DETAILS.DIMENSIONS}</div>
                             <div>{selected.DETAILS.TECHNIQUE[locale.toUpperCase() as keyof Translations]}</div>
                         </div>
-                        <div className="text-black font-text text-[16px] leading-[19px] mb-20">{selected.DETAILS.DESCRIPTION[locale.toUpperCase() as keyof Translations]}</div>
+                        <div className="text-black font-text text-[16px] leading-[19px] mb-10 lg:mb-20">{selected.DETAILS.DESCRIPTION[locale.toUpperCase() as keyof Translations]}</div>
                         <Link href={'/'} className="text-[16px] leading-[21px] font-bold">{locale === 'ser' ? 'ODVEDI ME NA IZLOŽBU' : 'TAKE ME TO EXIBITION'}</Link>
                     </div>
                 </Container>
