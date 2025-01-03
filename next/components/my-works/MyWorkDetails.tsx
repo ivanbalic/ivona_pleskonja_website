@@ -1,52 +1,19 @@
-import React, { Dispatch, SetStateAction, useMemo } from "react";
-
-import { StaticImageData } from "next/image";
+'use client';
+import React, { useMemo } from "react";
 
 import { cn } from "@/lib/utils";
-import {Translations} from "@/types/types";
 import { GridImage } from "@/components/my-works/GridImage";
-import { SubNavItem } from "../subnav-bredcrumbs/SubNavBredCrumbs";
-
-export interface GalleryRowItem {
-    ID: number;
-    ALT: string;
-    SRC: {
-        FULL: StaticImageData;
-        PREVIEW: StaticImageData;
-    };
-    DETAILS: {
-        CREATED_AT: string;
-        DIMENSIONS: string;
-        NAME: {
-            SER: string;
-            ENG: string;
-        };
-        TECHNIQUE: {
-            SER: string;
-            ENG: string;
-        };
-        DESCRIPTION: {
-            SER: string;
-            ENG: string;
-        };
-    };
-}
+import { useSelectedImage } from "@/context/SelectedImageContext";
+import { GalleryRowItem, Translations, IMyWorks } from "@/types/types";
 
 type GalleryRowMap = Record<string, GalleryRowItem[]>;
 
-export interface MyWorks {
-    ID: string;
-    TITLE: Translations;
-    HISTORY: SubNavItem[];
-    DESCRIPTION: Translations[];
-    GALLERY: GalleryRowItem[][];
-}
-
-export function MyWorks({ data, locale, onSelect }: { data?: MyWorks, locale: string, onSelect: Dispatch<SetStateAction<GalleryRowItem | null>>}) {
+export function MyWorkDetails({ data, locale }: { data: IMyWorks, locale: string }) {
+    const { onImageSelect: onSelect } = useSelectedImage();
     const title = useMemo(() => data?.TITLE?.[locale.toUpperCase() as keyof Translations], [data?.TITLE, locale]);
 
     const description = useMemo(() => data?.DESCRIPTION?.map(
-        (section) => section[locale.toUpperCase() as keyof Translations] ), [locale]
+        (section) => section[locale.toUpperCase() as keyof Translations] ), [data?.DESCRIPTION, locale]
     );
 
     const gallery = useMemo(() => {
@@ -57,7 +24,7 @@ export function MyWorks({ data, locale, onSelect }: { data?: MyWorks, locale: st
             },
             {} as GalleryRowMap
         );
-    }, [locale]);
+    }, [data?.GALLERY]);
 
     if (!title || !description || !gallery) return null;
 
@@ -80,15 +47,15 @@ export function MyWorks({ data, locale, onSelect }: { data?: MyWorks, locale: st
             </div>
             <div className="w-full mt-6 sm:mt-7 md:mt-8 lg:mt-10 mb-6 sm:mb-7 md:mb-8 lg:mb-9 xl:mb-10 grid" style={{gridTemplateAreas: '"first" "second" "third"'}}>
                 <div style={{gridArea: 'first'}} className="grid grid-cols-[1fr] grid-rows-[1fr] gap-0">
-                    {gallery.row_1.map((col) => <GridImage key={col.ID} data={col} locale={locale} onSelect={() => onSelect(col)}/>)}
+                    {gallery.row_1.map((col) => <GridImage key={col.ID} data={col} locale={locale} onSelect={() => onSelect(col.ID)}/>)}
                 </div>
                 <div style={{gridArea: 'second'}}
                      className="grid grid-cols-[1fr_1fr_2fr] grid-rows-[1fr] gap-0">
-                    {gallery.row_2.map((col) => <GridImage key={col.ID} data={col} locale={locale} onSelect={() => onSelect(col)}/>)}
+                    {gallery.row_2.map((col) => <GridImage key={col.ID} data={col} locale={locale} onSelect={() => onSelect(col.ID)}/>)}
                 </div>
                 <div style={{gridArea: 'third'}}
                      className="grid grid-cols-[2fr_1fr_1fr] grid-rows-[1fr] gap-0">
-                    {gallery.row_3.map((col) => <GridImage key={col.ID} data={col} locale={locale} onSelect={() => onSelect(col)}/>)}
+                    {gallery.row_3.map((col) => <GridImage key={col.ID} data={col} locale={locale} onSelect={() => onSelect(col.ID)}/>)}
                 </div>
             </div>
         </div>

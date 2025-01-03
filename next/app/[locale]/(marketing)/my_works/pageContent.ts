@@ -55,6 +55,7 @@ export const PAGE_CONTENT = Object.freeze({
 export const SUBPAGE_CONTENT = Object.freeze({
     CREATING_OF_LIFE: {
         ID: 'creating_of_light',
+        EXHIBITION_ID: 1,
         TEMPLATE_ID: 'TEMPLATE_ID',
         HISTORY: [
             {

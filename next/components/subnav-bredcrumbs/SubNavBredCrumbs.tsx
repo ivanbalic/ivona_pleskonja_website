@@ -2,13 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
-import { Title, Translations } from "@/types/types";
-
-export interface SubNavItem {
-    LINK: string;
-    ID: string | number;
-    TITLE: Translations;
-}
+import { SubNavItem, Title } from "@/types/types";
 
 export function SubNavBredCrumbs( { navItems, locale, page, subItemClass = '' }: { navItems: SubNavItem[], locale: string, page: string, subItemClass?: string }) {
 

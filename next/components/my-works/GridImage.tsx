@@ -4,8 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 import { cn } from "@/lib/utils";
-import { Translations } from "@/types/types";
-import { GalleryRowItem } from "@/components/my-works/MyWorks";
+import { GalleryRowItem, Translations} from "@/types/types";
 
 export function GridImage({ data, locale, onSelect }: { data: GalleryRowItem, locale: string, onSelect: () => void }) {
     const { SRC, ALT, DETAILS } = data || {};
@@ -21,7 +20,7 @@ export function GridImage({ data, locale, onSelect }: { data: GalleryRowItem, lo
                 <span>{DETAILS.TECHNIQUE[locale.toUpperCase() as keyof Translations]}</span>
                 <span>{DETAILS.CREATED_AT}</span>
             </div>
-            <Image src={SRC.PREVIEW} alt={ALT} className="w-full h-full object-cover outline-0 border-0 p-0 m-0 shadow-none"/>
+            <Image src={SRC.PREVIEW} alt={ALT} className="w-full h-full object-cover outline-0 border-0 p-0 m-0 shadow-none" />
         </div>
     );
 }

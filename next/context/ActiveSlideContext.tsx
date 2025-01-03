@@ -1,9 +1,9 @@
 'use client';
-import {createContext, ReactNode, useCallback, useContext, useEffect, useMemo, useState} from "react";
+import { createContext, ReactNode, useCallback, useContext, useEffect, useMemo, useState } from "react";
 
-import {IActiveSlide} from "@/types/types";
-import {usePathname} from "next/navigation";
-import {getPage} from "@/lib/utils";
+import { getPage } from "@/lib/utils";
+import { IActiveSlide } from "@/types/types";
+import { usePathname } from "next/navigation";
 
 const ActiveSlideContext = createContext<IActiveSlide | undefined>(undefined);
 
