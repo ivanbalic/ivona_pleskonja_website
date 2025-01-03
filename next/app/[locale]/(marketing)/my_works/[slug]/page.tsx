@@ -21,7 +21,7 @@ export default function WorkDetailsPage({ params: { locale, slug } }: { params: 
 
     const page = getPageContentById(slug);
 
-    const showGallery = useMemo(() => Boolean(searchParams.get("gallery")), [searchParams]);
+    const showGallery = useMemo(() => searchParams.has("gallery"), [searchParams]);
 
     if (!page) return null;
 

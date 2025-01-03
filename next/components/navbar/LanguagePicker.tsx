@@ -2,18 +2,22 @@ import React from "react";
 
 import Link from 'next/link';
 import { i18n } from '@/i18n.config';
-import { usePathname } from 'next/navigation';
+import { usePathname, useSearchParams } from 'next/navigation';
 
 import { cn } from "@/lib/utils";
 
 export function LanguagePicker({ isPrimary }: { isPrimary: boolean }) {
   const pathName = usePathname();
+  const searchParams = useSearchParams();
+
   const currentLocale = pathName.split('/')[1];
 
   const redirectedPathName = (locale: string) => {
     if (!pathName) return '/';
+
     const segments = pathName.split('/');
     segments[1] = locale;
+
     return segments.join('/');
   }
 
@@ -22,7 +26,7 @@ export function LanguagePicker({ isPrimary }: { isPrimary: boolean }) {
       {i18n.locales.map((locale) => (
         <Link
           key={locale}
-          href={redirectedPathName(locale)}
+          href={`${redirectedPathName(locale)}?${searchParams.toString()}`}
         >
           <React.Fragment >
             <div
