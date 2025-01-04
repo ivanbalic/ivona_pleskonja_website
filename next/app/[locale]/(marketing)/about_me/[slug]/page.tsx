@@ -36,7 +36,7 @@ export default function AboutMeSubPage({ params: { locale, slug} }: { params: { 
             <div className="my-6 sm:my-7 md:my-8 lg:my-9 xl:my-10 font-bold text-[22px] sm:text-[26px] md:text-[30px] lg:text-[34px] xl:text-[36px] leading-[25px] sm:leading-[29px] md:leading-[33px] lg:leading-[37px] xl:leading-[39px] tracking-[.15em]">
                 <span className="text-primaryBlue">{getTitle(slug, locale)}</span>
             </div>
-            <div className="flex flex-col gap-0 sm:gap-0.5 md:gap-1 lg:gap-1.5 xl:gap-2 mb-20 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] leading-[31px] sm:leading-[33px] md:leading-[35px] lg:leading-[37px] xl:leading-[39px] font-text tracking-[.15em]">
+            <div className="flex flex-col gap-0 sm:gap-0.5 md:gap-1 lg:gap-1.5 xl:gap-2 mb-20 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] leading-[31px] sm:leading-[33px] md:leading-[35px] lg:leading-[37px] xl:leading-[39px] font-helvetica tracking-[.15em]">
                 {getContent(slug, locale).map((item, index) => (
                     <span key={index}>{item}</span>
                 ))}

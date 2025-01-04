@@ -20,11 +20,11 @@ const getContent = (locale: string)=> {
 export default function MyWorksPage({ params: { locale } }: { params: { locale: string } }) {
     const [hovered, setHovered] = useState<string | null>(null);
     return (
-        <div className='pt-[75px] md:pt-[100px] lg:pt-[125px] px-[30px] md:px-[65px] lg:px-[100px] xl:px-[135px]  bg-overlayBlue h-screen'>
+        <div className='pt-[75px] md:pt-[100px] lg:pt-[125px] px-[30px] md:px-[65px] lg:px-[100px] xl:px-[135px] bg-overlayBlue h-screen'>
             <div className="my-10 font-bold text-[30px] leading-[33px] md:text-[33px] md:leading-[36px] lg:text-[36px] lg:leading-[39px] tracking-[.15em]">
                 <span>{getTitle(locale)}</span>
             </div>
-            <div className="flex flex-col gap-2 mb-20 text-[20px] leading-[27px] md:text-[22px] md:leading-[29px] lg:text-[24px] lg:leading-[31px] font-text tracking-[.15em]">
+            <div className="flex flex-col gap-2 mb-20 text-[20px] leading-[27px] md:text-[22px] md:leading-[29px] lg:text-[24px] lg:leading-[31px] font-helvetica tracking-[.15em]">
                 {getContent(locale).map((item) => (
                     <Link
                         key={item.ID}

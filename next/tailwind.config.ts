@@ -17,12 +17,15 @@ const config: Config = {
       colors: {
         primaryBlue: '#3769E6',
         overlayBlue: '#3242C0',
+        externalLink: '#E3F407',
+        articleBgBlue: '#1643B2',
         borderSecondary: '#D9D9D9',
         backgroundSecondary: '#F8F8F8',
       },
     },
     fontFamily: {
-      'text': ['Helvetica Neue'],
+      'helvetica': ['Helvetica Neue'],
+      'roboto-serif': ['var(--font-roboto-serif)'],
     },
     backgroundImage: {
       "work-item-hover-bg": `url("${svgToDataUri(

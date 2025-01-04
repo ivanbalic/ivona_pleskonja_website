@@ -1,3 +1,5 @@
+import React from "react";
+
 import { Locale, i18n } from '@/i18n.config';
 
 import { ActiveSlideProvider } from "@/context/ActiveSlideContext";
@@ -17,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang={params.lang}>
-      <body className="antialiased">
+      <body>
       <ActiveSlideProvider>
         {children}
       </ActiveSlideProvider>

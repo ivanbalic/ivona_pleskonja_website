@@ -10,7 +10,7 @@ export function SubNavBredCrumbs( { navItems, locale, page, subItemClass = '' }:
         <div
             className={cn(
                 'flex justify-center items-center gap-2 md:gap-3 lg:gap-5 mt-5 px-2 md:px-3 lg:px-5',
-                'font-text font-light text-xs sm:text-sm lg:text-[16px] lg:leading-[19.4px] tracking-[.15em]'
+                'font-helvetica font-light text-black text-xs sm:text-sm lg:text-[16px] lg:leading-[19.4px] tracking-[.15em]'
             )}>
             {navItems.map(
                 (content, index) => (

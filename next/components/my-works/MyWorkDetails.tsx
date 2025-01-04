@@ -42,7 +42,7 @@ export function MyWorkDetails({ data, locale }: { data: IMyWorks, locale: string
                 {title}
             </div>
             <div
-                className="flex flex-col gap-3 sm:gap-5 font-text text-[11px] leading-[14px] sm:text-[12px] sm:leading-[15px] md:text-[13px] md:leading-[16px] lg:text-[14px] lg:leading-[17px] xl:text-[15px] xl:leading-[18px] tracking-[.15em]">
+                className="flex flex-col gap-3 sm:gap-5 font-helvetica text-[11px] leading-[14px] sm:text-[12px] sm:leading-[15px] md:text-[13px] md:leading-[16px] lg:text-[14px] lg:leading-[17px] xl:text-[15px] xl:leading-[18px] tracking-[.15em]">
                 {description.map((text, index) => <span key={`description-section-${index}`}>{text}</span>)}
             </div>
             <div className="w-full mt-6 sm:mt-7 md:mt-8 lg:mt-10 mb-6 sm:mb-7 md:mb-8 lg:mb-9 xl:mb-10 grid" style={{gridTemplateAreas: '"first" "second" "third"'}}>

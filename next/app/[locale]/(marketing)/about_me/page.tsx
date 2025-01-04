@@ -25,7 +25,7 @@ export default function AboutMePage({ params: { locale } }: { params: { locale: 
                     <span className="text-primaryBlue">{getTextBySectionName('title')}</span>
                     <Image className="w-3 sm:w-4 md:w-5 lg:w-6 xl:w-7" src={arrowDown} alt="arrow_down"/>
                 </div>
-                <div className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[24px] leading-[18px] sm:leading-[20px] md:leading-[22px] lg:leading-[24px] xl:leading-[30px] tracking-[.15em] text-black font-text">
+                <div className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[24px] leading-[18px] sm:leading-[20px] md:leading-[22px] lg:leading-[24px] xl:leading-[30px] tracking-[.15em] text-black font-helvetica">
                     <span className={locale === 'ser' ? 'block' : 'inline'}><span className="font-bold">{getTextBySectionName('name')}</span>{getTextBySectionName('born')}</span>
                     <span>{getTextBySectionName('graduated')}</span><span className="font-bold text-primaryBlue">{getTextBySectionName('faculty')}</span>{getTextBySectionName('graduated_at')}<span className="font-bold text-primaryBlue">{getTextBySectionName('department')}</span>
 

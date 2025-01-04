@@ -4,22 +4,17 @@ import React, { useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 
 import { cn } from "@/lib/utils";
-import { IMyWorks } from "@/types/types";
 import { Container } from "@/components/container";
 import { ArtGallery } from "@/components/art-gallery/ArtGallery";
 import { MyWorkDetails } from "@/components/my-works/MyWorkDetails";
 import { SelectedImageProvider } from "@/context/SelectedImageContext";
-import { SUBPAGE_CONTENT } from "@/app/[locale]/(marketing)/my_works/pageContent";
 import { SubNavBredCrumbs } from "@/components/subnav-bredcrumbs/SubNavBredCrumbs";
-
-function getPageContentById(id: string): IMyWorks | undefined {
-    return Object.values(SUBPAGE_CONTENT).find((PAGE) => PAGE.ID === id);
-}
+import {getSubPageContentById } from "@/app/[locale]/(marketing)/my_works/pageContent";
 
 export default function WorkDetailsPage({ params: { locale, slug } }: { params: { locale: string, slug: string } }) {
     const searchParams = useSearchParams();
 
-    const page = getPageContentById(slug);
+    const page = getSubPageContentById(slug);
 
     const showGallery = useMemo(() => searchParams.has("gallery"), [searchParams]);
 

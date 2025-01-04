@@ -1,11 +1,11 @@
 "use client";
-import React, {useState} from "react";
+import React, { useState } from "react";
 
-import {usePathname} from "next/navigation";
+import { usePathname } from "next/navigation";
 
-import {getPage} from "@/lib/utils";
-import {NavMenuExpanded} from "@/components/navbar/NavMenuExpanded";
-import {NavMenuCollapsed} from "@/components/navbar/NavMenuCollapsed";
+import { getPage } from "@/lib/utils";
+import { NavMenuExpanded } from "@/components/navbar/NavMenuExpanded";
+import { NavMenuCollapsed } from "@/components/navbar/NavMenuCollapsed";
 
 
 export function Navbar({ locale }: { locale: string }) {

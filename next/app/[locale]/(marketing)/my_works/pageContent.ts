@@ -1,3 +1,4 @@
+import { IMyWorks } from "@/types/types";
 import IVFull from "@/public/images/IV-full.png";
 import IVPreview from "@/public/images/IV-preview.png";
 import holyDustFull from "@/public/images/holy-dust-full.png";
@@ -275,3 +276,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
         ],
     },
 });
+
+export function getSubPageContentById(id: string): IMyWorks | undefined {
+    return Object.values(SUBPAGE_CONTENT).find((PAGE) => PAGE.ID === id);
+}

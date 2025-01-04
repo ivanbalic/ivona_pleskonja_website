@@ -47,7 +47,7 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
                     <div>{selected.DETAILS.CREATED_AT} | {selected.DETAILS.DIMENSIONS}</div>
                     <div>{selected.DETAILS.TECHNIQUE[locale.toUpperCase() as keyof Translations]}</div>
                 </div>
-                <div className="text-black font-text text-[16px] leading-[19px] mb-10 lg:mb-20">{selected.DETAILS.DESCRIPTION[locale.toUpperCase() as keyof Translations]}</div>
+                <div className="text-black font-helvetica text-[16px] leading-[19px] mb-10 lg:mb-20">{selected.DETAILS.DESCRIPTION[locale.toUpperCase() as keyof Translations]}</div>
                 <Link href={`/${locale}/exhibitions/${exhibitionId}`} className="text-[16px] leading-[21px] font-bold">{locale === 'ser' ? 'ODVEDI ME NA IZLOŽBU' : 'TAKE ME TO EXIBITION'}</Link>
             </div>
         </Container>

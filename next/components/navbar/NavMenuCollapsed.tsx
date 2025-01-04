@@ -19,6 +19,7 @@ const NAVBAR_COLORS_MAP = Object.freeze({
     CONTACT: 'white',
     MY_WORKS: 'white',
     ABOUT_ME: BRAND_COLOR,
+    EXHIBITIONS: BRAND_COLOR,
     MY_WORKS_DETAILS: BRAND_COLOR,
 });
 
