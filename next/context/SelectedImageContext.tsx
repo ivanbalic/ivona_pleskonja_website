@@ -23,7 +23,9 @@ export function SelectedImageProvider({ children }: { children: ReactNode }) {
     const [selectedImageId, setSelectedImageId] = useState<number | null>(null);
     const [selectedGalleryId, setSelectedGalleryId] = useState<number | null>(null);
 
-    const onImageSelect = useCallback((galleryId: number | null, imageId: number) => {
+    const onImageSelect = useCallback((galleryId: number | null, imageId: number | null) => {
+        if (!imageId || !galleryId) return;
+
         router.push(`?gallery=${galleryId}&image=${imageId}`);
 
         setSelectedImageId(imageId);
