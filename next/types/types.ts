@@ -7,56 +7,77 @@ export interface IActiveSlide {
 
 export interface ISelectedImage {
     selectedImageId: number | null;
-    onImageSelect: (selected: number) => void;
+    selectedGalleryId: number | null;
+    onImageSelect: (galleryId: number | null, imageId: number | null) => void;
 }
 
-export type Translations = {
+export type ITranslations = {
     SER: string;
     ENG: string;
 }
 
-export type Title = {
-    SER: string,
-    ENG: string,
-};
-
-export interface SubNavItem {
+export interface ISubNavItem {
     LINK: string;
     ID: string | number;
-    TITLE: Translations;
+    TITLE: ITranslations;
+}
+
+export interface IGallery {
+    ID: number;
+    TITLE: ITranslations | null;
+    CONTENT: IGalleryRowItem[][];
 }
 
 export interface IMyWorks {
     ID: string;
-    TITLE: Translations;
     TEMPLATE_ID: string;
+    GALLERY: IGallery[];
+    TITLE: ITranslations;
     EXHIBITION_ID: number;
-    HISTORY: SubNavItem[];
-    DESCRIPTION: Translations[];
-    GALLERY: GalleryRowItem[][];
+    HISTORY: ISubNavItem[];
+    DESCRIPTION: ITranslations[];
 }
 
-export interface GalleryRowItem {
-    ID: number;
+type TSrc = {
+    FULL: StaticImageData;
+    PREVIEW: StaticImageData;
+};
+
+interface IDescription {
+    CREATED_AT: string;
+    DIMENSIONS: string;
+    NAME: {
+        SER: string;
+        ENG: string;
+    };
+    TECHNIQUE: {
+        SER: string;
+        ENG: string;
+    };
+    DESCRIPTION: {
+        SER: string;
+        ENG: string;
+    };
+}
+
+export interface IGalleryRowItem {
+    ID: number | null;
     ALT: string;
-    SRC: {
-        FULL: StaticImageData;
-        PREVIEW: StaticImageData;
-    };
-    DETAILS: {
-        CREATED_AT: string;
-        DIMENSIONS: string;
-        NAME: {
-            SER: string;
-            ENG: string;
-        };
-        TECHNIQUE: {
-            SER: string;
-            ENG: string;
-        };
-        DESCRIPTION: {
-            SER: string;
-            ENG: string;
-        };
-    };
+    GRID_PLACES: number;
+    SRC: TSrc | null;
+    DETAILS: IDescription | null;
+}
+
+export interface IArticleCover {
+    AUTHOR: ITranslations,
+    YEAR: number,
+    TEXT: ITranslations,
+    IMAGE: {
+        ALT: string,
+        SRC: StaticImageData,
+    },
+    EXTERNAL_LINK: {
+        URL: string,
+        LABEL: ITranslations
+    },
 }

@@ -2,9 +2,9 @@ import React from "react";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
-import { SubNavItem, Title } from "@/types/types";
+import { ISubNavItem, TTitle } from "@/types/types";
 
-export function SubNavBredCrumbs( { navItems, locale, page, subItemClass = '' }: { navItems: SubNavItem[], locale: string, page: string, subItemClass?: string }) {
+export function SubNavBredCrumbs( { navItems, locale, page, subItemClass = '' }: { navItems: ISubNavItem[], locale: string, page: string, subItemClass?: string }) {
 
     return (
         <div
@@ -22,7 +22,7 @@ export function SubNavBredCrumbs( { navItems, locale, page, subItemClass = '' }:
                                 content.ID === page ? 'font-bold' : '',
                             )}
                         >
-                            {content.TITLE[locale.toUpperCase() as keyof Title]}
+                            {content.TITLE[locale.toUpperCase() as keyof TTitle]}
                         </Link>
                     </div>
                 )

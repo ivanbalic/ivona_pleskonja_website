@@ -16,7 +16,11 @@ export default function WorkDetailsPage({ params: { locale, slug } }: { params: 
 
     const page = getSubPageContentById(slug);
 
-    const showGallery = useMemo(() => searchParams.has("gallery"), [searchParams]);
+    const galleryId = useMemo(() => searchParams.get("gallery"), [searchParams]);
+
+    const showGallery = Boolean(galleryId);
+
+    const gallery = useMemo(() => page?.GALLERY.find((g) => g.ID === parseInt(galleryId || '')), [galleryId, page?.GALLERY]);
 
     if (!page) return null;
 
@@ -25,7 +29,7 @@ export default function WorkDetailsPage({ params: { locale, slug } }: { params: 
             <Container className={cn('pt-[75px] md:pt-[100px] lg:pt-[125px] text-black min-h-screen', showGallery && 'bg-backgroundSecondary max-w-full')}>
                 <SubNavBredCrumbs navItems={page.HISTORY ?? []} locale={locale} page={slug} subItemClass='max-[480px]:max-w-[250px] truncate' />
                 { showGallery
-                    ? <ArtGallery locale={locale} gallery={page.GALLERY} exhibitionId={page.EXHIBITION_ID} />
+                    ? <ArtGallery locale={locale} gallery={gallery?.CONTENT} exhibitionId={page.EXHIBITION_ID} />
                     : <MyWorkDetails data={page} locale={locale} />
                 }
             </Container>

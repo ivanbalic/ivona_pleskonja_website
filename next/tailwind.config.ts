@@ -12,6 +12,19 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+    safelist: [
+        'xl:w-[35%]',
+        'xl:w-[38%]',
+        'xl:w-[41%]',
+        'xl:w-[42%]',
+        'xl:w-[58%]',
+        'xl:w-[59%]',
+        'xl:w-[62%]',
+        'xl:w-[65%]',
+        'max-h-[448px]',
+        'max-h-[561px]',
+        'max-h-[574px]',
+    ],
   theme: {
     extend: {
       colors: {

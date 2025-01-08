@@ -6,8 +6,8 @@ import Image from "next/image";
 
 import { MENU_ITEMS_CONFIG } from './menuItemsConfig'
 import { NavMenuItem } from "@/components/navbar/NavMenuItem";
-import logoWhite from "@/public/images/navbar-logo-white.png";
-import closeMenuIcon from "@/public/images/close-menu-icon.svg";
+import logoWhite from "@/public/images/navbar/navbar-logo-white.png";
+import closeMenuIcon from "@/public/images/navbar/close-menu-icon.svg";
 
 export const NavMenuExpanded = ({ onClose, locale }: { onClose: () => void, locale: string }) => {
 

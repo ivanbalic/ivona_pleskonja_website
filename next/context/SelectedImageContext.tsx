@@ -21,21 +21,29 @@ export function SelectedImageProvider({ children }: { children: ReactNode }) {
     const router = useRouter();
     const searchParams = useSearchParams();
     const [selectedImageId, setSelectedImageId] = useState<number | null>(null);
+    const [selectedGalleryId, setSelectedGalleryId] = useState<number | null>(null);
 
-    const onImageSelect = useCallback((selectedId: number) => {
-        router.push(`?gallery=${selectedId}`);
-        setSelectedImageId(selectedId);
+    const onImageSelect = useCallback((galleryId: number | null, imageId: number) => {
+        router.push(`?gallery=${galleryId}&image=${imageId}`);
+
+        setSelectedImageId(imageId);
+        setSelectedGalleryId(galleryId);
     }, [router]);
 
     useEffect(() => {
-        const selectedId = searchParams.get('gallery');
+        const selectedImage = searchParams.get('image');
+        const selectedGallery = searchParams.get('gallery');
 
-        if(!selectedId) return;
+        if(!selectedGallery || !selectedImage) return;
 
-        setSelectedImageId(parseInt(selectedId));
+        setSelectedImageId(parseInt(selectedImage));
+        setSelectedGalleryId(parseInt(selectedGallery));
     }, [searchParams]);
 
-    const value = useMemo(() => ({ selectedImageId, onImageSelect }), [onImageSelect, selectedImageId])
+    const value = useMemo(
+        () => ({ selectedImageId, selectedGalleryId, onImageSelect }),
+        [onImageSelect, selectedGalleryId, selectedImageId]
+    );
 
     return <SelectedImageContext.Provider value={value}>{children}</SelectedImageContext.Provider>
 }

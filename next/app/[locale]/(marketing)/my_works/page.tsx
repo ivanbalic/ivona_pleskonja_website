@@ -5,16 +5,16 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { cn } from "@/lib/utils";
-import { Title } from "@/types/types";
+import { ITranslations } from "@/types/types";
 import hoverBorder from '@/public/images/my-work-hover-border.svg';
 import {PAGE_CONTENT} from "@/app/[locale]/(marketing)/my_works/pageContent";
 
 const getTitle = ( locale: string) => {
-    return PAGE_CONTENT?.TITLE[locale.toUpperCase() as keyof Title];
+    return PAGE_CONTENT?.TITLE[locale.toUpperCase() as keyof ITranslations];
 };
 
 const getContent = (locale: string)=> {
-    return PAGE_CONTENT.CONTENT[locale.toUpperCase() as keyof Title];
+    return PAGE_CONTENT.CONTENT[locale.toUpperCase() as keyof ITranslations];
 };
 
 export default function MyWorksPage({ params: { locale } }: { params: { locale: string } }) {
@@ -28,7 +28,7 @@ export default function MyWorksPage({ params: { locale } }: { params: { locale: 
                 {getContent(locale).map((item) => (
                     <Link
                         key={item.ID}
-                        href={`/${locale}/my_works/${item.ID}`}
+                        href={`/${locale}/${item.LINK ?? `my_works/${item.ID}`}`}
                         onMouseLeave={() => setHovered(null)}
                         onMouseEnter={() => setHovered(item.ID)}
                         className={cn(

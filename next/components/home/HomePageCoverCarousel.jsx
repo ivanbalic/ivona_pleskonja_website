@@ -5,10 +5,10 @@ import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 
-import coverSlide3 from '../../public/images/chiron.png';
-import coverSlide2 from '../../public/images/gabriel.png';
+import coverSlide3 from '../../public/images/home/chiron.png';
+import coverSlide2 from '../../public/images/home/gabriel.png';
 import {useActiveSlide} from "@/context/ActiveSlideContext";
-import coverSlide1 from '../../public/images/auto-portrait.png';
+import coverSlide1 from '../../public/images/home/auto-portrait.png';
 
 export function HomePageCoverCarousel() {
     const { activeSlide, onSlideChange } = useActiveSlide();
@@ -23,7 +23,7 @@ export function HomePageCoverCarousel() {
     }, [activeSlide, emblaApi, onSlideChange]);
 
     return (
-        <section className="embla">
+        <section className="embla home-page-cover-carousel">
             <div className="embla__viewport" ref={emblaRef}>
                 <div className="embla__container">
                     <div key={1} className="embla__slide">
@@ -40,3 +40,5 @@ export function HomePageCoverCarousel() {
         </section>
     );
 }
+
+

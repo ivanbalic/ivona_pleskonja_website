@@ -14,6 +14,9 @@
 }
 
 body {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: rgb(var(--foreground-rgb));
   font-family: Robot Mono, monospace;
 }
@@ -24,31 +27,167 @@ body {
   }
 }
 
-.embla {
-  overflow: hidden;
-  height: 100vh;
-  max-width: 100%;
-  --slide-height: 100vh;
-  --slide-spacing: 0rem;
-  --slide-size: 100%;
+.article-carousel {
+  &.embla {
+    height: 550px;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1440px;
+    --slide-height: 448px;
+    --slide-spacing: 20px;
+    --slide-size: fit-content;
+    --text-body: rgb(54, 49, 61);
+    --text-high-contrast: rgb(49, 49, 49);
+    --background-site: rgb(255, 255, 255);
+    --detail-high-contrast: rgb(192, 192, 192);
+    --text-high-contrast-rgb-value: 49, 49, 49;
+    --detail-medium-contrast: rgb(234, 234, 234);
+    background-color: var(--background-site);
+    color: var(--text-high-contrast);
+  }
+  .embla__viewport {
+    overflow: hidden;
+    height: 458px;
+  }
+  .embla__container {
+    display: flex;
+    height: 100%;
+    touch-action: pan-y pinch-zoom;
+    margin-left: calc(var(--slide-spacing) * -1);
+  }
+  .embla__slide {
+    transform: translate3d(0, 0, 0);
+    flex: 0 0 var(--slide-size);
+    height: 100vh;
+    padding-left: var(--slide-spacing);
+  }
+  .embla__slide__number {
+    height: var(--slide-height);
+    user-select: none;
+  }
+
+  .embla__controls {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .embla__buttons {
+    width: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+    align-items: center;
+  }
+  .embla__button {
+    -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    touch-action: manipulation;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 64px;
+    height: 64px;
+    z-index: 1;
+    border-radius: 50%;
+    color: var(--text-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .embla__button--prev {
+    bottom: 275px;
+    left: 20px;
+  }
+  .embla__button--next {
+    bottom: 265px;
+    left: calc(100vw - 154px);
+  }
+
+  .embla__button:disabled {
+    color: var(--detail-high-contrast);
+  }
+
+  .embla__button__svg {
+    width: 35%;
+    height: 35%;
+  }
+  .embla__dots {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: calc((2.6rem - 1.4rem) / 2 * -1);
+  }
+  .embla__dot {
+    -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    touch-action: manipulation;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 2.6rem;
+    height: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .embla__dot:after {
+    /*box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);*/
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    content: '';
+    background-color: #3769E69E;
+    opacity: 0.62;
+  }
+  .embla__dot--selected:after {
+    background-color: #3242C0;
+    width: 13px;
+    height: 13px;
+    opacity: 1;
+  }
 }
-.embla__viewport {
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-}
-.embla__container {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  touch-action: pan-y pinch-zoom;
-}
-.embla__slide {
-  transform: translate3d(0, 0, 0);
-  flex: 0 0 var(--slide-size);
-  height: 100vh;
-}
-.embla__slide__number {
-  height: var(--slide-height);
-  user-select: none;
+
+.home-page-cover-carousel {
+  &.embla {
+    overflow: hidden;
+    height: 100vh;
+    max-width: 100%;
+    --slide-height: 100vh;
+    --slide-spacing: 0rem;
+    --slide-size: 100%;
+  }
+  .embla__viewport {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
+  .embla__container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    touch-action: pan-y pinch-zoom;
+  }
+  .embla__slide {
+    transform: translate3d(0, 0, 0);
+    flex: 0 0 var(--slide-size);
+    height: 100vh;
+  }
+  .embla__slide__number {
+    height: var(--slide-height);
+    user-select: none;
+  }
 }

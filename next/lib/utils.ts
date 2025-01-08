@@ -26,3 +26,8 @@ export function getPage(pathName: string){
 
   return parsedPathName[0];
 }
+
+export function getPercentWidth(fixedWidth: number | undefined = 0, containerWidth: number | undefined = 1){
+
+  return Math.round(fixedWidth / (containerWidth / 100));
+}

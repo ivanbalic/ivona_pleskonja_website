@@ -1,11 +1,11 @@
-import awardsSer from '@/public/images/awards-ser.png';
-import awardsEng from '@/public/images/awards-eng.png';
-import collectionsSer from '@/public/images/collections-ser.png';
-import collectionsEng from '@/public/images/collections-eng.png';
-import soloExhibitionsSer from '@/public/images/solo-exhibitions-ser.png';
-import soloExhibitionsEng from '@/public/images/solo-exhibitions-eng.png';
-import groupExhibitionsSer from '@/public/images/group-exhibitions-ser.png';
-import groupExhibitionsEng from '@/public/images/group-exhibitions-eng.png';
+import awardsSer from '@/public/images/about-me/awards-ser.png';
+import awardsEng from '@/public/images/about-me/awards-eng.png';
+import collectionsSer from '@/public/images/about-me/collections-ser.png';
+import collectionsEng from '@/public/images/about-me/collections-eng.png';
+import soloExhibitionsSer from '@/public/images/about-me/solo-exhibitions-ser.png';
+import soloExhibitionsEng from '@/public/images/about-me/solo-exhibitions-eng.png';
+import groupExhibitionsSer from '@/public/images/about-me/group-exhibitions-ser.png';
+import groupExhibitionsEng from '@/public/images/about-me/group-exhibitions-eng.png';
 
 
 export const PAGE_CONTENT = Object.freeze({

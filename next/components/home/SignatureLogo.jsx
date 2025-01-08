@@ -3,7 +3,7 @@ import React, {useEffect, useRef, useState} from "react";
 
 import Image from "next/image";
 
-import signature from '@/public/images/signature.svg';
+import signature from '@/public/images/home/signature.svg';
 
 export function SignatureLogo() {
     const [height, setHeight] = useState(0);

@@ -7,9 +7,9 @@ import Image from "next/image";
 import {cn} from "@/lib/utils";
 import { LanguagePicker } from './LanguagePicker';
 import {SpeakerIcon} from '@/components/icons/SpeakerIcon';
-import logoBlue from '@/public/images/navbar-logo-blue.png';
+import logoBlue from '@/public/images/navbar/navbar-logo-blue.png';
 import {useActiveSlide} from "@/context/ActiveSlideContext";
-import logoWhite from '@/public/images/navbar-logo-white.png';
+import logoWhite from '@/public/images/navbar/navbar-logo-white.png';
 import {BurgerMenuIcon} from "@/components/icons/BurgerMenuIcon";
 
 const BRAND_COLOR = '#3769E6';

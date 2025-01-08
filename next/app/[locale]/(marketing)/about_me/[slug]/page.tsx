@@ -4,21 +4,21 @@ import Link from "next/link";
 import Image from 'next/image';
 
 import {cn} from "@/lib/utils";
-import { Translations } from "@/types/types";
+import { ITranslations } from "@/types/types";
 import { Container } from "@/components/container";
-import arrowLeft from '@/public/images/arrow-left.svg';
+import arrowLeft from '@/public/images/about-me/arrow-left.svg';
 import { SubNavBredCrumbs  } from "@/components/subnav-bredcrumbs/SubNavBredCrumbs";
 import { MENU_ITEMS_CONFIG } from "@/app/[locale]/(marketing)/about_me/pageContent";
 
 const getTitle = (page: string, locale: string) => {
     const pageContent = MENU_ITEMS_CONFIG[page.toUpperCase() as keyof typeof MENU_ITEMS_CONFIG];
-    const pageTitle = pageContent?.TITLE[locale.toUpperCase() as keyof Translations];
+    const pageTitle = pageContent?.TITLE[locale.toUpperCase() as keyof ITranslations];
     return pageTitle?.toUpperCase();
 };
 
 const getContent = (page: string, locale: string)=> {
     const pageContent = MENU_ITEMS_CONFIG[page.toUpperCase() as keyof typeof MENU_ITEMS_CONFIG];
-    return pageContent?.CONTENT[locale.toUpperCase() as keyof Translations];
+    return pageContent?.CONTENT[locale.toUpperCase() as keyof ITranslations];
 };
 
 export default function AboutMeSubPage({ params: { locale, slug} }: { params: { locale: string, slug: string } }) {

@@ -3,16 +3,16 @@ import React, { useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { Translations } from "@/types/types";
+import { ITranslations } from "@/types/types";
 import { Container } from "@/components/container";
-import arrowDown from '@/public/images/arrow-down.svg';
-import aboutMeCover from '@/public/images/about-me-cover.png';
+import arrowDown from '@/public/images/about-me/arrow-down.svg';
+import aboutMeCover from '@/public/images/about-me/about-me-cover.png';
 import { PAGE_CONTENT } from "@/app/[locale]/(marketing)/about_me/pageContent";
 import { MENU_ITEMS_CONFIG } from "@/app/[locale]/(marketing)/about_me/pageContent";
 
 export default function AboutMePage({ params: { locale } }: { params: { locale: string } }) {
     const getTextBySectionName = useCallback(function (sectionName: string){
-        return PAGE_CONTENT[sectionName.toUpperCase() as keyof typeof PAGE_CONTENT][locale.toUpperCase() as keyof Translations];
+        return PAGE_CONTENT[sectionName.toUpperCase() as keyof typeof PAGE_CONTENT][locale.toUpperCase() as keyof ITranslations];
     }, [locale]);
 
     return (
@@ -41,7 +41,7 @@ export default function AboutMePage({ params: { locale } }: { params: { locale: 
             <div className="flex flex-row border border-borderSecondary text-overlayBlue h-[100px] sm:h-[125px] md:h-[150px] my-10 sm:my-12 md:my-14 lg:my-16 xl:my-20">
                 {Object.values(MENU_ITEMS_CONFIG).map((item) => (
                     <Link key={item.ID} href={`/${locale}/${item.LINK}`} replace className='border-r flex-1 flex justify-center items-center'>
-                        <Image className="w-[90%] object-cover" src={item.BUTTON[locale.toUpperCase() as keyof Translations]} alt={item.ALT} />
+                        <Image className="w-[90%] object-cover" src={item.BUTTON[locale.toUpperCase() as keyof ITranslations]} alt={item.ALT} />
                     </Link>
                 ))}
             </div>
