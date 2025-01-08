@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/container";
-import { getSectionComponentByType } from "@/app/[locale]/(marketing)/exhibitions/[slug]/page";
+import { getSectionComponentByType } from "@/components/exhibitions/sectionComponentMap";
 
 export function ArticleInvertedTextGrid({ locale = 'ser', section }: {locale: string, section: { TYPE: 'text_grid', CONTENT: Record<string, any>[][]}}) {
 

@@ -1,34 +1,8 @@
 'use client';
-import { ArticleText } from "@/components/exhibitions/ArticleText";
 import { ArticleCover } from "@/components/exhibitions/ArticleCover";
-import { ArticleTitle } from "@/components/exhibitions/ArticleTitle";
-import { ArticleImage } from "@/components/exhibitions/ArticleImage";
-import { ArticleQuote } from "@/components/exhibitions/ArticleQuote";
-import { ArticleTextGrid } from "@/components/exhibitions/ArticleTextGrid";
-import { ArticleCarousel } from "@/components/exhibitions/article-carousel/ArticleCarousel";
-import { ArticleImageGrid } from "@/components/exhibitions/ArticleImageGrid";
 import { SubNavBredCrumbs } from "@/components/subnav-bredcrumbs/SubNavBredCrumbs";
-import { ArticleInvertedQuote } from "@/components/exhibitions/ArticleInvertedQuote";
-import {ArticleInvertedTextGrid} from "@/components/exhibitions/ArticleInvertedTextGrid";
 import { getExhibitionById } from "@/app/[locale]/(marketing)/exhibitions/[slug]/pageContent";
-import { ArticleContainedImageGrid } from "@/components/exhibitions/ArticleContainedImageGrid";
-
-const SECTION_COMPONENT_MAP = Object.freeze({
-    TEXT: ArticleText,
-    TITLE: ArticleTitle,
-    IMAGE: ArticleImage,
-    QUOTE: ArticleQuote,
-    CAROUSEL: ArticleCarousel,
-    TEXT_GRID: ArticleTextGrid,
-    IMAGE_GRID: ArticleImageGrid,
-    INVERTED_QUOTE: ArticleInvertedQuote,
-    INVERTED_TEXT_GRID: ArticleInvertedTextGrid,
-    CONTAINED_IMAGE_GRID: ArticleContainedImageGrid,
-});
-
-export function getSectionComponentByType(type: string){
-    return SECTION_COMPONENT_MAP[type.toUpperCase() as keyof typeof SECTION_COMPONENT_MAP];
-}
+import {getSectionComponentByType} from "@/components/exhibitions/sectionComponentMap";
 
 export default function ExhibitionDetails({ params: { locale, slug } }: { params: { locale: string, slug: string }}) {
     const exhibition = getExhibitionById(parseInt(slug));

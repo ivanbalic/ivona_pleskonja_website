@@ -1,6 +1,6 @@
 'use client';
 import { Container } from "@/components/container";
-import { getSectionComponentByType } from "@/app/[locale]/(marketing)/exhibitions/[slug]/page";
+import { getSectionComponentByType } from "@/components/exhibitions/sectionComponentMap";
 
 const CONTAINED_GRID_WIDTH = 1360;
 
