@@ -7,14 +7,10 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { ITranslations } from "@/types/types";
 import hoverBorder from '@/public/images/my-work-hover-border.svg';
-import {PAGE_CONTENT} from "@/app/[locale]/(marketing)/my_works/pageContent";
+import { PAGE_CONTENT } from "@/app/[locale]/(marketing)/exhibitions/pageContent";
 
 const getTitle = ( locale: string) => {
     return PAGE_CONTENT?.TITLE[locale.toUpperCase() as keyof ITranslations];
-};
-
-const getContent = (locale: string)=> {
-    return PAGE_CONTENT.CONTENT[locale.toUpperCase() as keyof ITranslations];
 };
 
 export default function MyWorksPage({ params: { locale } }: { params: { locale: string } }) {
@@ -25,10 +21,10 @@ export default function MyWorksPage({ params: { locale } }: { params: { locale: 
                 <span>{getTitle(locale)}</span>
             </div>
             <div className="flex flex-col gap-2 mb-20 text-[20px] leading-[27px] md:text-[22px] md:leading-[29px] lg:text-[24px] lg:leading-[31px] font-helvetica tracking-[.15em]">
-                {getContent(locale).map((item) => (
+                {PAGE_CONTENT.CONTENT.map((item) => (
                     <Link
                         key={item.ID}
-                        href={`/${locale}/${item.LINK ?? `my_works/${item.ID}`}`}
+                        href={`/${locale}/${item.LINK ?? `exhibitions/${item.ID}`}`}
                         onMouseLeave={() => setHovered(null)}
                         onMouseEnter={() => setHovered(item.ID)}
                         className={cn(
@@ -41,7 +37,7 @@ export default function MyWorksPage({ params: { locale } }: { params: { locale: 
                             alt='scatched-elipse'
                             className={cn("absolute right-[-10%] w-[120%] max-w-[120%]", hovered === item.ID ?  'block' : 'hidden')}
                         />
-                        {item.TITLE}
+                        {item.TITLE[locale.toUpperCase() as keyof ITranslations]}
                     </Link>
                 ))}
             </div>

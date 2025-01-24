@@ -3,10 +3,10 @@ import React, { useCallback, useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+import { cn } from "@/lib/utils";
 import { Container } from "@/components/container";
 import { IGalleryRowItem, ITranslations } from "@/types/types";
 import { useSelectedImage } from "@/context/SelectedImageContext";
-import {cn} from "@/lib/utils";
 
 export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string, gallery?: IGalleryRowItem[][], exhibitionId: number }) {
     const { selectedImageId, selectedGalleryId, onImageSelect } = useSelectedImage();
@@ -32,6 +32,10 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
         onImageSelect(selectedGalleryId, next.ID);
     }, [gallery, selected?.ID, onImageSelect, selectedGalleryId]);
 
+    const nextLabel = locale === 'ser' ? 'SLEDEĆA' : 'NEXT';
+    const prevLabel = locale === 'ser' ? 'PRETHODNA' : 'PREV';
+    const articleLinkLabel = locale === 'ser' ? 'ODVEDI ME NA IZLOŽBU' : 'TAKE ME TO EXIBITION';
+
     if(!selected) return null;
 
     return (
@@ -45,7 +49,7 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
             </div>
             <div className="flex flex-1 flex-col justify-end items-start text-primaryBlue tracking-[.15em]">
                 <div className="text-black font-bold text-[16px] leading-[21px] mb-5">
-                    <span className="cursor-pointer hover:underline" onClick={onPrev}>PREV</span> / <span className="cursor-pointer hover:underline" onClick={onNext}>NEXT</span>
+                    <span className="cursor-pointer hover:underline" onClick={onPrev}>{prevLabel}</span> / <span className="cursor-pointer hover:underline" onClick={onNext}>{nextLabel}</span>
                 </div>
                 <div className="text-[30px] xl:text-[32px] leading-[40.2px] xl:leading-[42.2px] font-bold">{selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}</div>
                 <div className="flex flex-col text-[20px] xl:text-[22px] leading-[27px] xl:leading-[29px] font-bold mb-5">
@@ -53,7 +57,7 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
                     <div>{selected.DETAILS?.TECHNIQUE[locale.toUpperCase() as keyof ITranslations]}</div>
                 </div>
                 <div className="text-black font-helvetica text-[16px] leading-[19px] mb-10 lg:mb-20">{selected.DETAILS?.DESCRIPTION[locale.toUpperCase() as keyof ITranslations]}</div>
-                <Link href={`/${locale}/exhibitions/${exhibitionId}`} className="text-[16px] leading-[21px] font-bold">{locale === 'ser' ? 'ODVEDI ME NA IZLOŽBU' : 'TAKE ME TO EXIBITION'}</Link>
+                <Link href={`/${locale}/articles/${exhibitionId}`} className="text-[16px] leading-[21px] font-bold">{articleLinkLabel}</Link>
             </div>
         </Container>
     );

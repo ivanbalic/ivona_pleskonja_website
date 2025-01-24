@@ -35,12 +35,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'my_works',
+                ID: 'exhibitions',
                 TITLE: {
-                    SER: "Moji Radovi",
-                    ENG: 'My Works',
+                    SER: "Izložbe",
+                    ENG: 'Exhibitions',
                 },
-                LINK: 'my_works'
+                LINK: 'exhibitions'
             },
             {
                 ID: 'creating_of_light',
@@ -48,7 +48,7 @@ export const PAGE_CONTENT = Object.freeze({
                     SER: '„Stvaranje svetla – Nežni smo rođeni“',
                     ENG: '„Creating Of Light - We Are Born Tender“'
                 },
-                LINK: 'my_works/creating_of_light'
+                LINK: 'exhibitions/creating_of_light'
             },
             {
                 ID: 'exhibition',
@@ -56,7 +56,7 @@ export const PAGE_CONTENT = Object.freeze({
                     SER: 'O izložbi',
                     ENG: 'About Exhibition',
                 },
-                LINK: 'exhibitions/1'
+                LINK: 'articles/1'
             }
         ],
         COVER: {
@@ -74,7 +74,7 @@ export const PAGE_CONTENT = Object.freeze({
                 ALT: 'exhibition-cover',
             },
             EXTERNAL_LINK: {
-                URL: '#',
+                URL: '',
                 LABEL: {
                     SER: 'POGLEDAJ CEO INTERVJU OVDE',
                     ENG: 'WATCH INTERVIEW HERE'
@@ -291,12 +291,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'my_works',
+                ID: 'exhibitions',
                 TITLE: {
-                    SER: "Moji Radovi",
-                    ENG: 'My Works',
+                    SER: "Izložbe",
+                    ENG: 'Exhibitions',
                 },
-                LINK: 'my_works'
+                LINK: 'exhibitions'
             },
             {
                 ID: '11-powers',
@@ -304,7 +304,7 @@ export const PAGE_CONTENT = Object.freeze({
                     SER: '„11 snaga“',
                     ENG: '„11 powers“'
                 },
-                LINK: 'my_works/11_powers'
+                LINK: 'exhibitions/11_powers'
             },
             {
                 ID: 'exhibition',
@@ -312,7 +312,7 @@ export const PAGE_CONTENT = Object.freeze({
                     SER: 'O izložbi',
                     ENG: 'About Exhibition',
                 },
-                LINK: 'exhibitions/2'
+                LINK: 'articles/2'
             }
         ],
         COVER: {
@@ -330,7 +330,7 @@ export const PAGE_CONTENT = Object.freeze({
                 SRC: exhibition11Powers1,
             },
             EXTERNAL_LINK: {
-                URL: '#',
+                URL: '',
                 LABEL: {
                     SER: 'POGLEDAJ CEO INTERVJU OVDE',
                     ENG: 'WATCH INTERVIEW HERE'
@@ -513,12 +513,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'my_works',
+                ID: 'exhibitions',
                 TITLE: {
                     SER: "Moji Radovi",
                     ENG: 'My Works',
                 },
-                LINK: 'my_works'
+                LINK: 'exhibitions'
             },
             {
                 ID: 'mural-life',
@@ -526,8 +526,16 @@ export const PAGE_CONTENT = Object.freeze({
                     SER: 'Mural life',
                     ENG: 'Mural life'
                 },
-                LINK: 'exhibitions/3'
+                LINK: 'articles/3'
             },
+            {
+                ID: 'exhibition',
+                TITLE: {
+                    SER: 'O izložbi',
+                    ENG: 'About Exhibition',
+                },
+                LINK: 'articles/3'
+            }
         ],
         COVER: {
             AUTHOR: {
@@ -545,7 +553,7 @@ export const PAGE_CONTENT = Object.freeze({
                 SRC: muralLife1,
             },
             EXTERNAL_LINK: {
-                URL: '#',
+                URL: '',
                 LABEL: {
                     SER: 'POGLEDAJ CEO INTERVJU OVDE',
                     ENG: 'WATCH INTERVIEW HERE'

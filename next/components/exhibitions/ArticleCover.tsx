@@ -73,7 +73,7 @@ export function ArticleCover({ cover, locale }: { cover?: IArticleCover, locale:
                 <Container className="absolute md:px-10">
                     <Image ref={coverRef} src={cover.IMAGE.SRC ?? ''}
                            alt={cover.IMAGE.ALT ?? ''} className={cn('min-h-[150px] object-cover', maxHeightClass)} />
-                    {cover?.EXTERNAL_LINK &&
+                    {cover?.EXTERNAL_LINK.URL &&
                         <Link className={cn(
                             'absolute top-[0] left-[calc(100%-80px)]',
                             'md:top-[calc(50%-10px)] md:left-[calc(100%-110px)]',

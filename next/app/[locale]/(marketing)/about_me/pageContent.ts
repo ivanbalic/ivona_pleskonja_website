@@ -11,7 +11,7 @@ import groupExhibitionsEng from '@/public/images/about-me/group-exhibitions-eng.
 export const PAGE_CONTENT = Object.freeze({
     TITLE: {
         SER: 'UMETNIČKA BIOGRAFIJA',
-        ENG: 'ARTISTIC BIOGRAPHY',
+        ENG: 'CV',
     },
     NAME: {
         SER: 'Ivona Pleskonja, ',
@@ -63,7 +63,7 @@ export const PAGE_CONTENT = Object.freeze({
     },
     SCHOLARSHIP_AND_ASSOCIATIONS_DETAILS: {
         SER: 'Madlena Janković kao ',
-        ENG: 'She was a scholarship holder of the "Madlena Janković" Foundation as a young talent. She is a member of the ULUS artists\' association, with the status of a freelance artist since 1998. The work "Amazons" has been in the collection of The Belgrade City Museum since 2006. Participated in many solo and group exhibitions in Serbia and abroad.'
+        ENG: 'She was a scholarship holder of the "Madlena Janković" Foundation as a young talent. She is a member of the ULUS artists\' association, with the status of a freelance artist since 1998. The work "Amazons" has been in the collection of The Belgrade City Museum since 2006. Participated in many solo and group articles in Serbia and abroad.'
     },
     SCHOLARSHIP_END: {
         SER: 'mladi talenat.',
@@ -111,7 +111,7 @@ export const MENU_ITEMS_CONFIG = Object.freeze({
             SER: soloExhibitionsSer,
             ENG: soloExhibitionsEng,
         },
-        ALT: 'solo exhibitions',
+        ALT: 'solo articles',
         LINK: 'about_me/solo_exhibitions',
         TITLE: {
             SER: "Samostalne Izložbe",
@@ -177,7 +177,7 @@ export const MENU_ITEMS_CONFIG = Object.freeze({
             SER: groupExhibitionsSer,
             ENG: groupExhibitionsEng,
         },
-        ALT: 'group exhibitions',
+        ALT: 'group articles',
         LINK: 'about_me/group_exhibitions',
         TITLE: {
             SER: "Grupne Izložbe",
