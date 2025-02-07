@@ -21,7 +21,6 @@ function getGridColumns(row: IGalleryRowItem[]){
 }
 
 export function MyWorkDetails({ data, locale }: { data: IMyWorks, locale: string }) {
-    const { onImageSelect: onSelect } = useSelectedImage();
     const title = useMemo(() => data?.TITLE?.[locale.toUpperCase() as keyof ITranslations], [data?.TITLE, locale]);
 
     const description = useMemo(() => data?.DESCRIPTION?.map(

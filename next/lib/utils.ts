@@ -22,7 +22,7 @@ export const formatNumber = (
 
 export function getPage(pathName: string){
   const parsedPathName = pathName.split("/").slice(2);
-  if (parsedPathName[0] === "exhibitions" && parsedPathName.length > 1) return 'exhibition_details';
+  if (parsedPathName[0] === "artworks" && parsedPathName.length > 1) return 'artwork_details';
 
   return parsedPathName[0];
 }

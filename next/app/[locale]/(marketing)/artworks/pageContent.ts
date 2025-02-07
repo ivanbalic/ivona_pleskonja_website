@@ -67,22 +67,23 @@ import weAreNotAloneTheLightIsHereThumb from '@/public/images/eleven-powers/we-a
 export const PAGE_CONTENT = Object.freeze({
     TITLE: {
         SER: "IZLOŽBE",
-        ENG: "EXHIBITIONS"
+        ENG: "ARTWORKS"
     },
     CONTENT: [
         { ID: 'creating_of_light', TITLE: { SER: '2023 Stvaranje svetla / Nežni smo rodjeni', ENG: '2023 Creating Of Light / We Are Born Tender' }, DISABLED: false, LINK: null },
-        { ID: 'mural_life', TITLE: { SER: '2020 mural,Life', ENG: '2020 mural,Life' }, DISABLED: false, LINK:'articles/3' },
+        { ID: 'mural_life', TITLE: { SER: '2020 Mural Life', ENG: '2020 Mural Life' }, DISABLED: false, LINK:'articles/3' },
         { ID: '11_powers', TITLE: { SER: '2019 11 Snaga', ENG: '2019 11 Powers' }, DISABLED: false, LINK: null },
         { ID: 'strong_people', TITLE: { SER: '2016 Jaki ljudi', ENG: '2016 Strong People' }, DISABLED: true, LINK: null },
-        { ID: 'time_stations', TITLE: { SER: '2015 Vremenske stanice', ENG: '2015 Time Stations' }, DISABLED: true, LINK: null },
+        { ID: 'stops_in_time', TITLE: { SER: '2015 Vremenske stanice', ENG: '2015 Stops In Time' }, DISABLED: true, LINK: null },
         { ID: 'children_of_the_sun', TITLE: { SER: '2014 Deca Sunca', ENG: '2014 Children of the Sun' }, DISABLED: true, LINK: null },
         { ID: 'spirit', TITLE: { SER: '2011 Duh', ENG: '2011 Spirit' }, DISABLED: true, LINK: null },
         { ID: 'one_world', TITLE: { SER: '2009 Jedan Svet', ENG: '2009 One World' }, DISABLED: true, LINK: null },
-        { ID: 'the_source', TITLE: { SER: '2007 Izvor', ENG: '2007 The Source' }, DISABLED: true, LINK: null },
+        { ID: 'origin', TITLE: { SER: '2007 Izvor', ENG: '2007 Origin' }, DISABLED: true, LINK: null },
         { ID: 'heroes', TITLE: { SER: '2007 Heroji', ENG: '2007 Heroes' }, DISABLED: true, LINK: null },
         { ID: 'le_soleil', TITLE: { SER: '2003 Le Soleil', ENG: '2003 Le Soleil' }, DISABLED: true, LINK: null },
         { ID: 'the_first_light', TITLE: { SER: '2000 Prvo Svetlo', ENG: '2000 The First Light' }, DISABLED: true, LINK: null },
         { ID: 'taki', TITLE: { SER: '2000 Taki', ENG: '2000 Taki' }, DISABLED: true, LINK: null },
+        { ID: 'portraits', TITLE: { SER: 'Portreti', ENG: 'Portraits' }, DISABLED: true, LINK: null },
     ],
 });
 
@@ -101,25 +102,25 @@ export const SUBPAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'exhibitions',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Izložbe",
-                    ENG: 'Exhibitions',
+                    ENG: 'Artworks',
                 },
-                LINK: 'exhibitions'
+                LINK: 'artworks'
             },
             {
                 ID: 'creating_of_light',
                 TITLE: {
-                    SER: '„Stvaranje svetla – Nežni smo rođeni“',
-                    ENG: '„Creating Of Light - We Are Born Tender“'
+                    SER: '„Stvaranje svetla / Nežni smo rođeni“',
+                    ENG: '„Creating Of Light / We Are Born Tender“'
                 },
-                LINK: 'exhibitions/creating_of_light'
+                LINK: 'artworks/creating_of_light'
             },
         ],
         TITLE: {
-            SER: '„Stvaranje svetla – Nežni smo rođeni“',
-            ENG: '„CREATING OF LIGHT - WE ARE BORN TENDER“'
+            SER: '„Stvaranje svetla / Nežni smo rođeni“',
+            ENG: '„CREATING OF LIGHT  / WE ARE BORN TENDER“'
         },
         DESCRIPTION: [
             {
@@ -335,12 +336,12 @@ export const SUBPAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'exhibitions',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Izložbe",
-                    ENG: 'Exhibitions',
+                    ENG: 'Artworks',
                 },
-                LINK: 'exhibitions'
+                LINK: 'artworks'
             },
             {
                 ID: '11_powers',
@@ -348,7 +349,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                     SER: '„11 snaga“',
                     ENG: '„11 powers“'
                 },
-                LINK: 'exhibitions/11_powers'
+                LINK: 'artworks/11_powers'
             },
         ],
         TITLE: {

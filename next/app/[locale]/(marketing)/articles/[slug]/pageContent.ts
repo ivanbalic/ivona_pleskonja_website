@@ -35,12 +35,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'exhibitions',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Izložbe",
-                    ENG: 'Exhibitions',
+                    ENG: 'Artworks',
                 },
-                LINK: 'exhibitions'
+                LINK: 'artworks'
             },
             {
                 ID: 'creating_of_light',
@@ -48,7 +48,7 @@ export const PAGE_CONTENT = Object.freeze({
                     SER: '„Stvaranje svetla – Nežni smo rođeni“',
                     ENG: '„Creating Of Light - We Are Born Tender“'
                 },
-                LINK: 'exhibitions/creating_of_light'
+                LINK: 'artworks/creating_of_light'
             },
             {
                 ID: 'exhibition',
@@ -291,12 +291,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'exhibitions',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Izložbe",
-                    ENG: 'Exhibitions',
+                    ENG: 'Artworks',
                 },
-                LINK: 'exhibitions'
+                LINK: 'artworks'
             },
             {
                 ID: '11-powers',
@@ -304,7 +304,7 @@ export const PAGE_CONTENT = Object.freeze({
                     SER: '„11 snaga“',
                     ENG: '„11 powers“'
                 },
-                LINK: 'exhibitions/11_powers'
+                LINK: 'artworks/11_powers'
             },
             {
                 ID: 'exhibition',
@@ -513,12 +513,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'exhibitions',
+                ID: 'artworks',
                 TITLE: {
-                    SER: "Moji Radovi",
-                    ENG: 'My Works',
+                    SER: "Izložbe",
+                    ENG: 'Artworks',
                 },
-                LINK: 'exhibitions'
+                LINK: 'artworks'
             },
             {
                 ID: 'mural-life',

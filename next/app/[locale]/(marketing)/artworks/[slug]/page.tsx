@@ -9,7 +9,7 @@ import { ArtGallery } from "@/components/art-gallery/ArtGallery";
 import { MyWorkDetails } from "@/components/my-works/MyWorkDetails";
 import { SelectedImageProvider } from "@/context/SelectedImageContext";
 import { SubNavBredCrumbs } from "@/components/subnav-bredcrumbs/SubNavBredCrumbs";
-import {getSubPageContentById } from "@/app/[locale]/(marketing)/exhibitions/pageContent";
+import {getSubPageContentById } from "@/app/[locale]/(marketing)/artworks/pageContent";
 
 export default function WorkDetailsPage({ params: { locale, slug } }: { params: { locale: string, slug: string } }) {
     const searchParams = useSearchParams();
