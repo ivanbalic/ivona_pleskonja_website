@@ -54,7 +54,7 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
 
             const next = gallery?.flat()[(currentImageId ?? 0)];
 
-            if(!next) {
+            if(!next || !next.ID) {
                 onImageSelect(currentGalleryId, 1);
                 return;
             }
@@ -149,7 +149,7 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
                             {prevLabel}
                         </span>
                         /
-                        <span className={cn("hover:underline", next ? "cursor-pointer" : 'pointer-events-none opacity-40 cursor-not-allowed')} onClick={onNext}>
+                        <span className={cn("hover:underline", next && next.ID ? "cursor-pointer" : 'pointer-events-none opacity-40 cursor-not-allowed')} onClick={onNext}>
                             {nextLabel}
                         </span>
                     </div>
