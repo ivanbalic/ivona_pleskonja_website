@@ -18,7 +18,7 @@ export function ArticleInvertedQuote({ locale, section, containerWidth = 1 }: {
     }, [containerWidth, section?.WIDTH]);
 
     if (!section) return null;
-    console.log('percentWidth', percentWidth);
+
     return (
         <div className={cn(
             'font-helvetica italic max-xl:text-center',

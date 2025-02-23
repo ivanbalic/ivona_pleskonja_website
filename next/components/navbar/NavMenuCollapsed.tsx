@@ -6,11 +6,11 @@ import Image from "next/image";
 
 import {cn} from "@/lib/utils";
 import { LanguagePicker } from './LanguagePicker';
-import {SpeakerIcon} from '@/components/icons/SpeakerIcon';
+import { SpeakerIcon } from '@/components/icons/SpeakerIcon';
 import logoBlue from '@/public/images/navbar/navbar-logo-blue.png';
-import {useActiveSlide} from "@/context/ActiveSlideContext";
+import { useActiveSlide } from "@/context/ActiveSlideContext";
 import logoWhite from '@/public/images/navbar/navbar-logo-white.png';
-import {BurgerMenuIcon} from "@/components/icons/BurgerMenuIcon";
+import { BurgerMenuIcon } from "@/components/icons/BurgerMenuIcon";
 
 const BRAND_COLOR = '#3769E6';
 
@@ -46,7 +46,7 @@ export const NavMenuCollapsed = ({ hideLogo, onOpen, page, locale }: { hideLogo:
             "flex justify-center h-[75px] md:h-[100px] lg:h-[125px]",
         )}>
           {!hideLogo && <Link href={`/${locale}`}>
-              <Image className="h-full object-contain" src={color === 'white' ? logoWhite : logoBlue} alt="Ivona Pleskonja logo" />
+              <Image className="h-full object-contain" src={color === 'white' ? logoWhite : logoBlue} alt="Ivona Pleskonja logo" priority={true} />
           </Link>}
         </div>
         <div className="flex gap-2 md:gap-3 lg:gap-5">

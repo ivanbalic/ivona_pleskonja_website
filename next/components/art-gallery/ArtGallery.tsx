@@ -11,14 +11,10 @@ import { useSelectedImage } from "@/context/SelectedImageContext";
 
 export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string, gallery?: IGalleryRowItem[][], exhibitionId: number }) {
     const [autoModeStatus, setAutoModeStatus] = useState<boolean>(true);
+    const [selected, setSelected] = useState<IGalleryRowItem | null>(null);
     const intervalIdRef = useRef<number | null>(null);
+
     const { selectedImageIdRef, selectedGalleryIdRef, onImageSelect } = useSelectedImage();
-
-    const selected = useMemo(() => {
-        const selectedImage = gallery?.flat().find((item) => item.ID === selectedImageIdRef.current);
-
-        return selectedImage ? selectedImage : null;
-    }, [gallery, selectedImageIdRef.current]);
 
     const next = useMemo(() => gallery?.flat()[(selected?.ID ?? 0)], [selected]);
     const prev = useMemo(() => gallery?.flat()[(selected?.ID ?? 0) - 2], [selected]);
@@ -92,6 +88,14 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
         };
     }, []);
 
+    useEffect(function onSelectedImageChange(){
+            const selectedImage = gallery?.flat().find((item) => item.ID === selectedImageIdRef.current);
+
+            if(!selectedImage) return;
+
+            setSelected(selectedImage);
+    }, [selectedImageIdRef.current, selectedGalleryIdRef.current]);
+
     const nextLabel = locale === 'ser' ? 'SLEDEĆA' : 'NEXT';
     const prevLabel = locale === 'ser' ? 'PRETHODNA' : 'PREV';
     const articleLinkLabel = locale === 'ser' ? 'ODVEDI ME NA IZLOŽBU' : 'TAKE ME TO EXIBITION';
@@ -99,10 +103,11 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
     if(!selected) return null;
 
     return (
-        <Container className={cn(
-            "h-full pt-10 pb-10 lg:pb-[135px]",
-            "flex flex-col lg:flex-row gap-5 lg:gap-10 xl:gap-[72px]",
-            "px-[20px] sm:px-[30px] md:px-[45px] lg:px-[60px] xl:px-[72px]"
+        <Container
+            className={cn(
+                "h-full pt-10 pb-10 lg:pb-[135px]",
+                "flex flex-col lg:flex-row gap-5 lg:gap-10 xl:gap-[72px]",
+                "px-[20px] sm:px-[30px] md:px-[45px] lg:px-[60px] xl:px-[72px]"
         )}>
             <div className="flex justify-center items-center min-h-[200px] xl:h-[715px] max-h-full w-full xl:w-[739px] max-w-full lg:max-w-[60%] xl:max-w-full bg-white">
                 <AnimatePresence mode="wait">
@@ -114,7 +119,7 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
                         transition={{ duration: 1, ease: "easeInOut" }}
                         className="w-full h-full flex items-center justify-center"
                     >
-                        <Image src={selected.SRC?.FULL ?? ''} alt={selected.ALT} className="max-h-full object-cover" />
+                        <Image src={selected.SRC?.FULL ?? ''} alt={selected.ALT} className="max-h-full object-cover" placeholder="blur"/>
                     </motion.div>
                 </AnimatePresence>
             </div>

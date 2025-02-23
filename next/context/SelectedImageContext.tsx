@@ -32,7 +32,7 @@ export function SelectedImageProvider({ children }: { children: ReactNode }) {
         selectedGalleryIdRef.current = galleryId;
     }, [router]);
 
-    useEffect(() => {
+    const getImageAndGalleryFromParams = () => {
         const selectedImage = searchParams.get('image');
         const selectedGallery = searchParams.get('gallery');
 
@@ -40,7 +40,15 @@ export function SelectedImageProvider({ children }: { children: ReactNode }) {
 
         selectedImageIdRef.current = parseInt(selectedImage);
         selectedGalleryIdRef.current = parseInt(selectedGallery);
+    };
+
+    useEffect(() => {
+        getImageAndGalleryFromParams();
     }, [searchParams]);
+
+    useEffect(() => {
+        getImageAndGalleryFromParams();
+    }, []);
 
     const value = useMemo(
         () => ({ selectedImageIdRef, selectedGalleryIdRef, onImageSelect }),
