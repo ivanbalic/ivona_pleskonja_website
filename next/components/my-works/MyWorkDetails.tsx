@@ -3,7 +3,6 @@ import React, { useMemo } from "react";
 
 import { cn } from "@/lib/utils";
 import { GridImage } from "@/components/my-works/GridImage";
-import { useSelectedImage } from "@/context/SelectedImageContext";
 import { IGalleryRowItem, ITranslations, IMyWorks } from "@/types/types";
 
 type GalleryRowMap = Record<string, IGalleryRowItem[]>;

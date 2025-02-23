@@ -1,3 +1,4 @@
+import { MutableRefObject } from "react";
 import { StaticImageData } from "next/image";
 
 export interface IActiveSlide {
@@ -6,8 +7,8 @@ export interface IActiveSlide {
 }
 
 export interface ISelectedImage {
-    selectedImageId: number | null;
-    selectedGalleryId: number | null;
+    selectedImageIdRef: MutableRefObject<number | null>;
+    selectedGalleryIdRef: MutableRefObject<number | null>;
     onImageSelect: (galleryId: number | null, imageId: number | null) => void;
 }
 

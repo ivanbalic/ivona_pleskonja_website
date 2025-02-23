@@ -1,5 +1,5 @@
 'use client';
-import { createContext, ReactNode, useCallback, useContext, useEffect, useMemo, useState } from "react";
+import { createContext, ReactNode, useCallback, useContext, useEffect, useMemo, useRef } from "react";
 
 import { useRouter, useSearchParams } from "next/navigation";
 
@@ -20,16 +20,16 @@ export function useSelectedImage() {
 export function SelectedImageProvider({ children }: { children: ReactNode }) {
     const router = useRouter();
     const searchParams = useSearchParams();
-    const [selectedImageId, setSelectedImageId] = useState<number | null>(null);
-    const [selectedGalleryId, setSelectedGalleryId] = useState<number | null>(null);
+    const selectedImageIdRef = useRef<number | null>(null);
+    const selectedGalleryIdRef = useRef<number | null>(null);
 
     const onImageSelect = useCallback((galleryId: number | null, imageId: number | null) => {
         if (!imageId || !galleryId) return;
 
         router.push(`?gallery=${galleryId}&image=${imageId}`);
 
-        setSelectedImageId(imageId);
-        setSelectedGalleryId(galleryId);
+        selectedImageIdRef.current = imageId;
+        selectedGalleryIdRef.current = galleryId;
     }, [router]);
 
     useEffect(() => {
@@ -38,13 +38,13 @@ export function SelectedImageProvider({ children }: { children: ReactNode }) {
 
         if(!selectedGallery || !selectedImage) return;
 
-        setSelectedImageId(parseInt(selectedImage));
-        setSelectedGalleryId(parseInt(selectedGallery));
+        selectedImageIdRef.current = parseInt(selectedImage);
+        selectedGalleryIdRef.current = parseInt(selectedGallery);
     }, [searchParams]);
 
     const value = useMemo(
-        () => ({ selectedImageId, selectedGalleryId, onImageSelect }),
-        [onImageSelect, selectedGalleryId, selectedImageId]
+        () => ({ selectedImageIdRef, selectedGalleryIdRef, onImageSelect }),
+        [onImageSelect, selectedGalleryIdRef.current, selectedImageIdRef.current]
     );
 
     return <SelectedImageContext.Provider value={value}>{children}</SelectedImageContext.Provider>

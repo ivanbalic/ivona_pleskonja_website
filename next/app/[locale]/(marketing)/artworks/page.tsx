@@ -5,8 +5,8 @@ import Link from "next/link";
 
 import { cn } from "@/lib/utils";
 import { ITranslations } from "@/types/types";
+import { Container } from "@/components/container";
 import { PAGE_CONTENT } from "@/app/[locale]/(marketing)/artworks/pageContent";
-import {Container} from "@/components/container";
 
 const getTitle = ( locale: string) => {
     return PAGE_CONTENT?.TITLE[locale.toUpperCase() as keyof ITranslations];
