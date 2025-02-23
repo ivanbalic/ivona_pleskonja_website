@@ -16,11 +16,11 @@ const BRAND_COLOR = '#3769E6';
 
 const NAVBAR_COLORS_MAP = Object.freeze({
     HOME: 'white',
+    WORKS: 'white',
     CONTACT: 'white',
-    ARTWORKS: 'white',
     ABOUT_ME: BRAND_COLOR,
     ARTICLES: BRAND_COLOR,
-    ARTWORK_DETAILS: BRAND_COLOR,
+    WORK_DETAILS: BRAND_COLOR,
 });
 
 function getColor(page: string): string {

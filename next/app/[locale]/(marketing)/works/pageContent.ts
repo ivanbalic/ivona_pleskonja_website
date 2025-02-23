@@ -66,8 +66,8 @@ import weAreNotAloneTheLightIsHereThumb from '@/public/images/eleven-powers/we-a
 
 export const PAGE_CONTENT = Object.freeze({
     TITLE: {
-        SER: "IZLOŽBE",
-        ENG: "ARTWORKS"
+        SER: "RADOVI",
+        ENG: "WORKS"
     },
     CONTENT: [
         { ID: 'creating_of_light', TITLE: { SER: '2023 Stvaranje svetla / Nežni smo rodjeni', ENG: '2023 Creating Of Light / We Are Born Tender' }, DISABLED: false, LINK: null },
@@ -102,12 +102,12 @@ export const SUBPAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'artworks',
+                ID: 'works',
                 TITLE: {
-                    SER: "Izložbe",
-                    ENG: 'Artworks',
+                    SER: "Radovi",
+                    ENG: 'Works',
                 },
-                LINK: 'artworks'
+                LINK: 'works'
             },
             {
                 ID: 'creating_of_light',
@@ -115,7 +115,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                     SER: '„Stvaranje svetla / Nežni smo rođeni“',
                     ENG: '„Creating Of Light / We Are Born Tender“'
                 },
-                LINK: 'artworks/creating_of_light'
+                LINK: 'works/creating_of_light'
             },
         ],
         TITLE: {
@@ -336,12 +336,12 @@ export const SUBPAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'artworks',
+                ID: 'works',
                 TITLE: {
-                    SER: "Izložbe",
-                    ENG: 'Artworks',
+                    SER: "Radovi",
+                    ENG: 'Works',
                 },
-                LINK: 'artworks'
+                LINK: 'works'
             },
             {
                 ID: '11_powers',
@@ -349,7 +349,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                     SER: '„11 snaga“',
                     ENG: '„11 powers“'
                 },
-                LINK: 'artworks/11_powers'
+                LINK: 'works/11_powers'
             },
         ],
         TITLE: {

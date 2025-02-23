@@ -9,10 +9,10 @@ export const MENU_ITEMS_CONFIG = Object.freeze({
     },
     MY_WORK: {
         LABEL: {
-            SER: 'IZLOŽBE',
-            ENG: 'ARTWORKS'
+            SER: 'RADOVI',
+            ENG: 'WORKS'
         },
-        LINK: 'artworks',
+        LINK: 'works',
         HIDE: false,
     },
     NEWS: {

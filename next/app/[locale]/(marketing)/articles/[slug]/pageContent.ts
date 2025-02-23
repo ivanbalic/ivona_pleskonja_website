@@ -35,12 +35,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'artworks',
+                ID: 'works',
                 TITLE: {
-                    SER: "Izložbe",
-                    ENG: 'Artworks',
+                    SER: "Radovi",
+                    ENG: 'Works',
                 },
-                LINK: 'artworks'
+                LINK: 'works'
             },
             {
                 ID: 'creating_of_light',
@@ -48,7 +48,7 @@ export const PAGE_CONTENT = Object.freeze({
                     SER: '„Stvaranje svetla – Nežni smo rođeni“',
                     ENG: '„Creating Of Light - We Are Born Tender“'
                 },
-                LINK: 'artworks/creating_of_light'
+                LINK: 'works/creating_of_light'
             },
             {
                 ID: 'exhibition',
@@ -227,7 +227,7 @@ export const PAGE_CONTENT = Object.freeze({
                             TYPE: 'text',
                             TEXT: {
                                 SER: 'Ivonini radovi nisu klasični portreti, oni su kompleksne studije duše koju možete da čujete i osetite, a čija telesnost traži proučavanje i posvećenost. Umetnica se samo oslanja na ikoničko predstavljanje koje svojim gabaritom pruža snagu i mir. Njena bića u sebi nose kosmičku ljubav.',
-                                ENG: 'Ivona\'s artworks are not typical portraits. They are complex studies of a soul that one can hear and feel, and whose physicality demands study and dedication. The artist relies only on an iconic representation that provides strength and peace with its dimensions. Her beings carry cosmic love within them.',
+                                ENG: 'Ivona\'s works are not typical portraits. They are complex studies of a soul that one can hear and feel, and whose physicality demands study and dedication. The artist relies only on an iconic representation that provides strength and peace with its dimensions. Her beings carry cosmic love within them.',
                             }
                         },
                         {
@@ -291,12 +291,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'artworks',
+                ID: 'works',
                 TITLE: {
                     SER: "Izložbe",
-                    ENG: 'Artworks',
+                    ENG: '',
                 },
-                LINK: 'artworks'
+                LINK: 'works'
             },
             {
                 ID: '11-powers',
@@ -304,7 +304,7 @@ export const PAGE_CONTENT = Object.freeze({
                     SER: '„11 snaga“',
                     ENG: '„11 powers“'
                 },
-                LINK: 'artworks/11_powers'
+                LINK: 'works/11_powers'
             },
             {
                 ID: 'exhibition',
@@ -513,12 +513,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'artworks',
+                ID: 'works',
                 TITLE: {
                     SER: "Izložbe",
-                    ENG: 'Artworks',
+                    ENG: '',
                 },
-                LINK: 'artworks'
+                LINK: 'works'
             },
             {
                 ID: 'mural-life',
