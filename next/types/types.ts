@@ -75,6 +75,7 @@ export interface IArticleCover {
     TEXT: ITranslations,
     IMAGE: {
         ALT: string,
+        MAX_HEIGHT?: number,
         SRC: StaticImageData,
     },
     EXTERNAL_LINK: {

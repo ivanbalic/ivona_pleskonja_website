@@ -1,68 +1,68 @@
 import { IMyWorks } from "@/types/types";
-// CREATING OF LIGHT
-import IVFull from "@/public/images/creating-of-light/IV-full.png";
-import IVPreview from "@/public/images/creating-of-light/IV-preview.png";
-import holyDustFull from "@/public/images/creating-of-light/holy-dust-full.png";
-import holyDustPreview from "@/public/images/creating-of-light/holy-dust-preview.png";
-import creatingLifeFull from "@/public/images/creating-of-light/creating-life-full.png";
-import creatingAngelFull from "@/public/images/creating-of-light/creating-angel-full.png";
-import gabrielAndPanFull from "@/public/images/creating-of-light/gabriel-and-pan-full.png";
-import skyOverPanamaFull from "@/public/images/creating-of-light/sky-over-panama-full.png";
-import creatingLifePreview from "@/public/images/creating-of-light/creating-life-preview.png";
-import mahavatarBabajiFull from "@/public/images/creating-of-light/mahavatar-babaji-full.png";
-import creatingAngelPreview from "@/public/images/creating-of-light/creating-angel-preview.png";
-import gabrielAndPanPreview from "@/public/images/creating-of-light/gabriel-and-pan-preview.png";
-import skyOverPanamaPreview from "@/public/images/creating-of-light/sky-over-panama-preview.png";
-import mahavatarBabajiPreview from "@/public/images/creating-of-light/mahavatar-babaji-preview.png";
-// 11 POWERS
-import palWork from '@/public/images/eleven-powers/pal-work.png';
-import lazarChange from '@/public/images/eleven-powers/lazar-change.png';
-import palWorkThumb from '@/public/images/eleven-powers/pal-work-thumb.png';
-import palWorkGraph from '@/public/images/eleven-powers/pal-work-graph.png';
-import rankoTheMind from '@/public/images/eleven-powers/ranko-the-mind.png';
-import chironIdentity from '@/public/images/eleven-powers/chiron-identity.png';
-import tasjaHappiness from '@/public/images/eleven-powers/tasja-happiness.png';
-import gabrielCreation from '@/public/images/eleven-powers/gabriel-creation.png';
-import srkiPersistence from '@/public/images/eleven-powers/srki-persistence.png';
-import ivonaCompassion from '@/public/images/eleven-powers/ivona-compassion.png';
-import veronaGentleness from '@/public/images/eleven-powers/verona-gentleness.png';
-import lazarChangeGraph from '@/public/images/eleven-powers/lazar-change-graph.png';
-import lazarChangeThumb from '@/public/images/eleven-powers/lazar-change-thumb.png';
-import rankoTheMindThumb from '@/public/images/eleven-powers/ranko-the-mind-thumb.png';
-import palWorkGraphThumb from '@/public/images/eleven-powers/pal-work-graph-thumb.png';
-import rankoTheMindGraph from '@/public/images/eleven-powers/ranko-the-mind-graph.png';
-import orlandoRealisation from '@/public/images/eleven-powers/orlando-realisation.png';
-import tasjaHappinessThumb from '@/public/images/eleven-powers/tasja-happiness-thumb.png';
-import chironIdentityThumb from '@/public/images/eleven-powers/chiron-identity-thumb.png';
-import chironIdentityGraph from '@/public/images/eleven-powers/chiron-identity-graph.png';
-import tasjaHappinessGraph from '@/public/images/eleven-powers/tasja-happiness-graph.png';
-import gabrielCreationThumb from '@/public/images/eleven-powers/gabriel-creation-thumb.png';
-import srkiPersistenceThumb from '@/public/images/eleven-powers/srki-persistence-thumb.png';
-import ivonaCompassionThumb from '@/public/images/eleven-powers/ivona-compassion-thumb.png';
-import ivonaCompassionGraph from '@/public/images/eleven-powers/ivona-compassion-graph.png';
-import gabrielCreationGraph from '@/public/images/eleven-powers/gabriel-creation-graph.png';
-import srkiPersistenceGraph from '@/public/images/eleven-powers/srki-persistence-graph.png';
-import veronaGentlenessThumb from '@/public/images/eleven-powers/verona-gentleness-thumb.png';
-import veronaGentlenessGraph from '@/public/images/eleven-powers/verona-gentleness-graph.png';
-import lazarChangeGraphThumb from '@/public/images/eleven-powers/lazar-change-graph-thumb.png';
-import ksenijaLoveSmellsRose from '@/public/images/eleven-powers/ksenija-love-smells-rose.png';
-import ksenijaLoveForEveryone from '@/public/images/eleven-powers/ksenija-love-for-everyone.png';
-import rankoTheMindGraphThumb from '@/public/images/eleven-powers/ranko-the-mind-graph-thumb.png';
-import orlandoRealisationThumb from '@/public/images/eleven-powers/orlando-realisation-thumb.png';
-import orlandoRealisationGraph from '@/public/images/eleven-powers/orlando-realisation-graph.png';
-import chironIdentityGraphThumb from '@/public/images/eleven-powers/chiron-identity-graph-thumb.png';
-import tasjaHappinessGraphThumb from '@/public/images/eleven-powers/tasja-happiness-graph-thumb.png';
-import ivonaCompassionGraphThumb from '@/public/images/eleven-powers/ivona-compassion-graph-thumb.png';
-import gabrielCreationGraphThumb from '@/public/images/eleven-powers/gabriel-creation-graph-thumb.png';
-import srkiPersistenceGraphThumb from '@/public/images/eleven-powers/srki-persistence-graph-thumb.png';
-import veronaGentlenessGraphThumb from '@/public/images/eleven-powers/verona-gentleness-graph-thumb.png';
-import ksenijaLoveSmellsRoseThumb from '@/public/images/eleven-powers/ksenija-love-smells-rose-thumb.png';
-import ksenijaLoveSmellsRoseGraph from '@/public/images/eleven-powers/ksenija-love-smells-rose-graph.png';
-import ksenijaLoveForEveryoneThumb from '@/public/images/eleven-powers/ksenija-love-for-everyone-thumb.png';
-import orlandoRealisationGraphThumb from '@/public/images/eleven-powers/orlando-realisation-graph-thumb.png';
-import weAreNotAloneTheLightIsHere from '@/public/images/eleven-powers/we-are-not-alone-the-light-is-here.png';
-import ksenijaLoveSmellsRoseGraphThumb from '@/public/images/eleven-powers/ksenija-love-smells-rose-graph-thumb.png';
-import weAreNotAloneTheLightIsHereThumb from '@/public/images/eleven-powers/we-are-not-alone-the-light-is-here-thumb.png';
+// CREATING LIGHT
+import IVFull from "@/public/images/creating-light/IV-full.png";
+import IVPreview from "@/public/images/creating-light/IV-preview.png";
+import holyDustFull from "@/public/images/creating-light/holy-dust-full.png";
+import holyDustPreview from "@/public/images/creating-light/holy-dust-preview.png";
+import creatingLifeFull from "@/public/images/creating-light/creating-life-full.png";
+import creatingAngelFull from "@/public/images/creating-light/creating-angel-full.png";
+import gabrielAndPanFull from "@/public/images/creating-light/gabriel-and-pan-full.png";
+import skyOverPanamaFull from "@/public/images/creating-light/sky-over-panama-full.png";
+import creatingLifePreview from "@/public/images/creating-light/creating-life-preview.png";
+import mahavatarBabajiFull from "@/public/images/creating-light/mahavatar-babaji-full.png";
+import creatingAngelPreview from "@/public/images/creating-light/creating-angel-preview.png";
+import gabrielAndPanPreview from "@/public/images/creating-light/gabriel-and-pan-preview.png";
+import skyOverPanamaPreview from "@/public/images/creating-light/sky-over-panama-preview.png";
+import mahavatarBabajiPreview from "@/public/images/creating-light/mahavatar-babaji-preview.png";
+// 11 SNAGA
+import palWork from '@/public/images/11-snaga/pal-work.png';
+import lazarChange from '@/public/images/11-snaga/lazar-change.png';
+import palWorkThumb from '@/public/images/11-snaga/pal-work-thumb.png';
+import palWorkGraph from '@/public/images/11-snaga/pal-work-graph.png';
+import rankoTheMind from '@/public/images/11-snaga/ranko-the-mind.png';
+import chironIdentity from '@/public/images/11-snaga/chiron-identity.png';
+import tasjaHappiness from '@/public/images/11-snaga/tasja-happiness.png';
+import gabrielCreation from '@/public/images/11-snaga/gabriel-creation.png';
+import srkiPersistence from '@/public/images/11-snaga/srki-persistence.png';
+import ivonaCompassion from '@/public/images/11-snaga/ivona-compassion.png';
+import veronaGentleness from '@/public/images/11-snaga/verona-gentleness.png';
+import lazarChangeGraph from '@/public/images/11-snaga/lazar-change-graph.png';
+import lazarChangeThumb from '@/public/images/11-snaga/lazar-change-thumb.png';
+import rankoTheMindThumb from '@/public/images/11-snaga/ranko-the-mind-thumb.png';
+import palWorkGraphThumb from '@/public/images/11-snaga/pal-work-graph-thumb.png';
+import rankoTheMindGraph from '@/public/images/11-snaga/ranko-the-mind-graph.png';
+import orlandoRealisation from '@/public/images/11-snaga/orlando-realisation.png';
+import tasjaHappinessThumb from '@/public/images/11-snaga/tasja-happiness-thumb.png';
+import chironIdentityThumb from '@/public/images/11-snaga/chiron-identity-thumb.png';
+import chironIdentityGraph from '@/public/images/11-snaga/chiron-identity-graph.png';
+import tasjaHappinessGraph from '@/public/images/11-snaga/tasja-happiness-graph.png';
+import gabrielCreationThumb from '@/public/images/11-snaga/gabriel-creation-thumb.png';
+import srkiPersistenceThumb from '@/public/images/11-snaga/srki-persistence-thumb.png';
+import ivonaCompassionThumb from '@/public/images/11-snaga/ivona-compassion-thumb.png';
+import ivonaCompassionGraph from '@/public/images/11-snaga/ivona-compassion-graph.png';
+import gabrielCreationGraph from '@/public/images/11-snaga/gabriel-creation-graph.png';
+import srkiPersistenceGraph from '@/public/images/11-snaga/srki-persistence-graph.png';
+import veronaGentlenessThumb from '@/public/images/11-snaga/verona-gentleness-thumb.png';
+import veronaGentlenessGraph from '@/public/images/11-snaga/verona-gentleness-graph.png';
+import lazarChangeGraphThumb from '@/public/images/11-snaga/lazar-change-graph-thumb.png';
+import ksenijaLoveSmellsRose from '@/public/images/11-snaga/ksenija-love-smells-rose.png';
+import ksenijaLoveForEveryone from '@/public/images/11-snaga/ksenija-love-for-everyone.png';
+import rankoTheMindGraphThumb from '@/public/images/11-snaga/ranko-the-mind-graph-thumb.png';
+import orlandoRealisationThumb from '@/public/images/11-snaga/orlando-realisation-thumb.png';
+import orlandoRealisationGraph from '@/public/images/11-snaga/orlando-realisation-graph.png';
+import chironIdentityGraphThumb from '@/public/images/11-snaga/chiron-identity-graph-thumb.png';
+import tasjaHappinessGraphThumb from '@/public/images/11-snaga/tasja-happiness-graph-thumb.png';
+import ivonaCompassionGraphThumb from '@/public/images/11-snaga/ivona-compassion-graph-thumb.png';
+import gabrielCreationGraphThumb from '@/public/images/11-snaga/gabriel-creation-graph-thumb.png';
+import srkiPersistenceGraphThumb from '@/public/images/11-snaga/srki-persistence-graph-thumb.png';
+import veronaGentlenessGraphThumb from '@/public/images/11-snaga/verona-gentleness-graph-thumb.png';
+import ksenijaLoveSmellsRoseThumb from '@/public/images/11-snaga/ksenija-love-smells-rose-thumb.png';
+import ksenijaLoveSmellsRoseGraph from '@/public/images/11-snaga/ksenija-love-smells-rose-graph.png';
+import ksenijaLoveForEveryoneThumb from '@/public/images/11-snaga/ksenija-love-for-everyone-thumb.png';
+import orlandoRealisationGraphThumb from '@/public/images/11-snaga/orlando-realisation-graph-thumb.png';
+import weAreNotAloneTheLightIsHere from '@/public/images/11-snaga/we-are-not-alone-the-light-is-here.png';
+import ksenijaLoveSmellsRoseGraphThumb from '@/public/images/11-snaga/ksenija-love-smells-rose-graph-thumb.png';
+import weAreNotAloneTheLightIsHereThumb from '@/public/images/11-snaga/we-are-not-alone-the-light-is-here-thumb.png';
 
 export const PAGE_CONTENT = Object.freeze({
     TITLE: {
@@ -70,26 +70,26 @@ export const PAGE_CONTENT = Object.freeze({
         ENG: "WORKS"
     },
     CONTENT: [
-        { ID: 'creating_of_light', TITLE: { SER: '2023 Stvaranje svetla / Nežni smo rodjeni', ENG: '2023 Creating Of Light / We Are Born Tender' }, DISABLED: false, LINK: null },
-        { ID: 'mural_life', TITLE: { SER: '2020 Mural Life', ENG: '2020 Mural Life' }, DISABLED: false, LINK:'articles/3' },
-        { ID: '11_powers', TITLE: { SER: '2019 11 Snaga', ENG: '2019 11 Powers' }, DISABLED: false, LINK: null },
+        { ID: 'creating_light', TITLE: { SER: '2023 Stvaranje svetla / Nežni smo rodjeni', ENG: '2023 Creating Light / We Are Born Gentle' }, DISABLED: false, LINK: null },
+        { ID: 'mural_life', TITLE: { SER: '2020 Mural, Life', ENG: '2020 Mural, Life' }, DISABLED: false, LINK:'articles/3' },
+        { ID: '11_snaga', TITLE: { SER: '2019 11 Snaga', ENG: '2019 11 Snaga' }, DISABLED: false, LINK: null },
         { ID: 'strong_people', TITLE: { SER: '2016 Jaki ljudi', ENG: '2016 Strong People' }, DISABLED: true, LINK: null },
-        { ID: 'stops_in_time', TITLE: { SER: '2015 Vremenske stanice', ENG: '2015 Stops In Time' }, DISABLED: true, LINK: null },
+        { ID: 'weather_stations', TITLE: { SER: '2015 Vremenske stanice', ENG: '2015 Weather Stations' }, DISABLED: true, LINK: null },
         { ID: 'children_of_the_sun', TITLE: { SER: '2014 Deca Sunca', ENG: '2014 Children of the Sun' }, DISABLED: true, LINK: null },
         { ID: 'spirit', TITLE: { SER: '2011 Duh', ENG: '2011 Spirit' }, DISABLED: true, LINK: null },
         { ID: 'one_world', TITLE: { SER: '2009 Jedan Svet', ENG: '2009 One World' }, DISABLED: true, LINK: null },
         { ID: 'origin', TITLE: { SER: '2007 Izvor', ENG: '2007 Origin' }, DISABLED: true, LINK: null },
         { ID: 'heroes', TITLE: { SER: '2007 Heroji', ENG: '2007 Heroes' }, DISABLED: true, LINK: null },
         { ID: 'le_soleil', TITLE: { SER: '2003 Le Soleil', ENG: '2003 Le Soleil' }, DISABLED: true, LINK: null },
-        { ID: 'the_first_light', TITLE: { SER: '2000 Prvo Svetlo', ENG: '2000 The First Light' }, DISABLED: true, LINK: null },
+        { ID: 'first_light', TITLE: { SER: '2000 Prvo Svetlo', ENG: '2000 First Light' }, DISABLED: true, LINK: null },
         { ID: 'taki', TITLE: { SER: '2000 Taki', ENG: '2000 Taki' }, DISABLED: true, LINK: null },
         { ID: 'portraits', TITLE: { SER: 'Portreti', ENG: 'Portraits' }, DISABLED: true, LINK: null },
     ],
 });
 
 export const SUBPAGE_CONTENT = Object.freeze({
-    CREATING_OF_LIFE: {
-        ID: 'creating_of_light',
+    CREATING_LIGHT: {
+        ID: 'creating_light',
         EXHIBITION_ID: 1,
         TEMPLATE_ID: 'TEMPLATE_ID',
         HISTORY: [
@@ -110,17 +110,17 @@ export const SUBPAGE_CONTENT = Object.freeze({
                 LINK: 'works'
             },
             {
-                ID: 'creating_of_light',
+                ID: 'creating_light',
                 TITLE: {
                     SER: '„Stvaranje svetla / Nežni smo rođeni“',
-                    ENG: '„Creating Of Light / We Are Born Tender“'
+                    ENG: '„Creating Light / We Are Born Gentle“'
                 },
-                LINK: 'works/creating_of_light'
+                LINK: 'works/creating_light'
             },
         ],
         TITLE: {
             SER: '„Stvaranje svetla / Nežni smo rođeni“',
-            ENG: '„CREATING OF LIGHT  / WE ARE BORN TENDER“'
+            ENG: '„Creating Light / We Are Born Gentle“'
         },
         DESCRIPTION: [
             {
@@ -129,7 +129,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
             },
             {
                 SER: 'Moja namera je da predstavim publici šta se dešava nakon bljeska misteriozne blještave bele svetlosti iz svemira na planetu Zemlju, nakon što sva bića na našoj planeti dožive prosvetljenje. Ciklus slika STVARANJE SVETLA / NEŽNI SMO ROĐENI predstavlja proces kreiranja svetlosti iz tame. Svetlost probija kroz tamnu materiju i stvara Anđele.',
-                ENG: ' My intention is to present to the audience what happens after a flash of mysterious brilliant white light from space onto planet Earth, when all beings on our planet experience enlightenment. The series of paintings CREATING OF LIGHT / WE ARE BORN TENDER represents the process of creating light from darkness. Light breaks through dark matter and creates Angels.'
+                ENG: ' My intention is to present to the audience what happens after a flash of mysterious brilliant white light from space onto planet Earth, when all beings on our planet experience enlightenment. The series of paintings CREATING LIGHT / WE ARE BORN GENTLE represents the process of creating light from darkness. Light breaks through dark matter and creates Angels.'
             }
         ],
         GALLERY: [
@@ -322,8 +322,8 @@ export const SUBPAGE_CONTENT = Object.freeze({
             }
         ],
     },
-    ELEVEN_POWERS: {
-        ID: '11_powers',
+    ['11_SNAGA']: {
+        ID: '11_snaga',
         EXHIBITION_ID: 2,
         TEMPLATE_ID: 'TEMPLATE_ID',
         HISTORY: [
@@ -344,30 +344,30 @@ export const SUBPAGE_CONTENT = Object.freeze({
                 LINK: 'works'
             },
             {
-                ID: '11_powers',
+                ID: '11_snaga',
                 TITLE: {
                     SER: '„11 snaga“',
-                    ENG: '„11 powers“'
+                    ENG: '„11 snaga“'
                 },
-                LINK: 'works/11_powers'
+                LINK: 'works/11_snaga'
             },
         ],
         TITLE: {
             SER: '„11 Snaga“',
-            ENG: '„11 Powers“'
+            ENG: '„11 Snaga“'
         },
         DESCRIPTION: [
             {
                 SER: 'Centar Univerzuma šalje na planetu Zemlju 11 snaga za čovečanstvo, 11 snaga materijalizovanih u 11 divova. Divovi se spuštaju na našu planetu jedan po jedan ovim redosledom: 1. Širon IDENTITET, 2. Gabriel STVARANJE, 3. Ivona SAOSEĆAJNOST, 4. Lazar PROMENA, 5. Srki ISTRAJNOST, 6. Pal RAD, 7. Tasja SREĆA, 8. Verona BLAGOST, 9. Ranko UM, 10. Orlando REALIZACIJA, 11. Ksenija Lea je materijalizacija snage LJUBAV i dolazi u dva oblika, LJUBAV 1 1 i LJUBAV 1 2. Spuštanje ovih snaga je praćeno prodornim zvucima koji se stvaraju u atmosferi. Prvi kontakt svake snage sa tlom naše planete je snažan i stvara potres, koji se vrlo brzo pretoči u najdivniju melogiju koja se širi po celoj planeti. Tada se može reći da je život te snage na Zemlji počeo. Snage su tu za celo čovečanstvo, a spuštene u centru Beograda pravo na izložbu 11 SNAGA. Dobrodošli svi!',
-                ENG: 'Centar Univerzuma šalje na planetu Zemlju 11 snaga za čovečanstvo, 11 snaga materijalizovanih u 11 divova. Divovi se spuštaju na našu planetu jedan po jedan ovim redosledom: 1. Širon IDENTITET, 2. Gabriel STVARANJE, 3. Ivona SAOSEĆAJNOST, 4. Lazar PROMENA, 5. Srki ISTRAJNOST, 6. Pal RAD, 7. Tasja SREĆA, 8. Verona BLAGOST, 9. Ranko UM, 10. Orlando REALIZACIJA, 11. Ksenija Lea je materijalizacija snage LJUBAV i dolazi u dva oblika, LJUBAV 1 1 i LJUBAV 1 2. Spuštanje ovih snaga je praćeno prodornim zvucima koji se stvaraju u atmosferi. Prvi kontakt svake snage sa tlom naše planete je snažan i stvara potres, koji se vrlo brzo pretoči u najdivniju melogiju koja se širi po celoj planeti. Tada se može reći da je život te snage na Zemlji počeo. Snage su tu za celo čovečanstvo, a spuštene u centru Beograda pravo na izložbu 11 SNAGA. Dobrodošli svi!',
+                ENG: 'The Center of the Universe is sending to planet Earth 11 forces for humanity, 11 forces materialized in 11 giants. The giants descend on our planet one by one in this order: 1. Shiron IDENTITY, 2. Gabriel CREATION, 3. Ivona COMPASSION, 4. Lazar CHANGE, 5. Srki PERSEVERANCE, 6. Pal WORK, 7. Tasja HAPPINESS, 8. Verona KINDNESS, 9. Ranko MIND, 10. Orlando REALIZATION, 11. Ksenia Lea is the materialization of the power of LOVE and comes in two forms, LOVE 1 1 and LOVE 1 2. The descent of these forces is accompanied by piercing sounds created in the atmosphere. The first contact of any force with the ground of our planet is strong and creates an earthquake, which very quickly turns into the most wonderful melody that spreads throughout the planet. Then it can be said that the life of that force on Earth began. The forces are there for all of humanity, and they are right in the center of Belgrade for the exhibition 11 SNAGA. Welcome everyone!',
             },
             {
                 SER: 'Ova izložba se sastoji iz dva dela: slike i grafike (litografije).',
-                ENG: 'Ova izložba se sastoji iz dva dela: slike i grafike (litografije).',
+                ENG: 'This exhibition consists of two parts: paintings and graphics (lithography).',
             },
             {
                 SER: 'Zapravo sam predstavila 11 snaga i svaku tu snagu sam i naslikala i nacrtala putem grafike. Postoji i treći važan segment ove izložbe a to je muzika koju su komponovali za svaku sliku posebno Vladimir Živković (iz grupe VIS Limunada) i Marijana Dujović.',
-                ENG: 'Zapravo sam predstavila 11 snaga i svaku tu snagu sam i naslikala i nacrtala putem grafike. Postoji i treći važan segment ove izložbe a to je muzika koju su komponovali za svaku sliku posebno Vladimir Živković (iz grupe VIS Limunada) i Marijana Dujović. ',
+                ENG: 'I actually presented 11 strengths and each of these strengths I painted and drew through graphics. There is also a third important segment of this exhibition, which is the music composed for each picture especially by Vladimir Živković (from the group VIS Limunada) and Marijana Dujović.',
             }
         ],
         GALLERY: [

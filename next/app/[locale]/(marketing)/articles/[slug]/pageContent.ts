@@ -1,15 +1,15 @@
-// CREATING OF LIGHT
-import gabrielAndPan from '@/public/images/creating-of-light/gabriel-and-pan-full.png';
-import exhibitionCreatingOfLight1 from '@/public/images/creating-of-light/exhibition-creating-of-light-1.png';
-import exhibitionCreatingOfLight2 from '@/public/images/creating-of-light/exhibition-creating-of-light-2.png';
-import exhibitionCreatingOfLight3 from '@/public/images/creating-of-light/exhibition-creating-of-light-3.png';
-import exhibitionCreatingOfLight4 from '@/public/images/creating-of-light/exhibition-creating-of-light-4.png';
-// 11 POWERS
-import exhibition11Powers1 from '@/public/images/eleven-powers/exhibition-11-powers-1.png';
-import exhibition11Powers2 from '@/public/images/eleven-powers/exhibition-11-powers-2.png';
-import exhibition11Powers3 from '@/public/images/eleven-powers/exhibition-11-powers-3.png';
-import exhibition11Powers4 from '@/public/images/eleven-powers/exhibition-11-powers-4.png';
-import exhibition11Powers5 from '@/public/images/eleven-powers/exhibition-11-powers-5.png';
+// CREATING LIGHT
+import gabrielAndPan from '@/public/images/creating-light/gabriel-and-pan-full.png';
+import exhibitionCreatingOfLight1 from '@/public/images/creating-light/exhibition-creating-of-light-1.png';
+import exhibitionCreatingOfLight2 from '@/public/images/creating-light/exhibition-creating-of-light-2.png';
+import exhibitionCreatingOfLight3 from '@/public/images/creating-light/exhibition-creating-of-light-3.png';
+import exhibitionCreatingOfLight4 from '@/public/images/creating-light/exhibition-creating-of-light-4.png';
+// 11 SNAGA
+import exhibition11Snaga1 from '@/public/images/11-snaga/exhibition-11-snaga-1.png';
+import exhibition11Snaga2 from '@/public/images/11-snaga/exhibition-11-snaga-2.png';
+import exhibition11Snaga3 from '@/public/images/11-snaga/exhibition-11-snaga-3.png';
+import exhibition11Snaga4 from '@/public/images/11-snaga/exhibition-11-snaga-4.png';
+import exhibition11Snaga5 from '@/public/images/11-snaga/exhibition-11-snaga-5.png';
 // MURAL LIFE
 import muralLife1 from '@/public/images/mural-life/mural-life-1.png';
 import muralLife2 from '@/public/images/mural-life/mural-life-2.png';
@@ -23,7 +23,7 @@ import muralLifeSlide6 from '@/public/images/mural-life/mural-life-carousel-6.pn
 import muralLifeSlide7 from '@/public/images/mural-life/mural-life-carousel-7.png';
 
 export const PAGE_CONTENT = Object.freeze({
-    CREATING_OF_LIFE: {
+    CREATING_LIFE: {
         ID: 1,
         HISTORY: [
             {
@@ -43,12 +43,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: 'works'
             },
             {
-                ID: 'creating_of_light',
+                ID: 'creating_light',
                 TITLE: {
                     SER: '„Stvaranje svetla – Nežni smo rođeni“',
-                    ENG: '„Creating Of Light - We Are Born Tender“'
+                    ENG: '„Creating Light - We Are Born Gentle“'
                 },
-                LINK: 'works/creating_of_light'
+                LINK: 'works/creating_light'
             },
             {
                 ID: 'exhibition',
@@ -279,7 +279,7 @@ export const PAGE_CONTENT = Object.freeze({
             }
         ],
     },
-    ELEVEN_POWERS: {
+    ['11_SNAGA']: {
         ID: 2,
         HISTORY: [
             {
@@ -293,18 +293,18 @@ export const PAGE_CONTENT = Object.freeze({
             {
                 ID: 'works',
                 TITLE: {
-                    SER: "Izložbe",
-                    ENG: '',
+                    SER: "Radovi",
+                    ENG: 'Works',
                 },
                 LINK: 'works'
             },
             {
-                ID: '11-powers',
+                ID: '11-snaga',
                 TITLE: {
                     SER: '„11 snaga“',
-                    ENG: '„11 powers“'
+                    ENG: '„11 snaga“'
                 },
-                LINK: 'works/11_powers'
+                LINK: 'works/11_snaga'
             },
             {
                 ID: 'exhibition',
@@ -327,7 +327,7 @@ export const PAGE_CONTENT = Object.freeze({
             },
             IMAGE: {
                 ALT: 'exhibition-cover',
-                SRC: exhibition11Powers1,
+                SRC: exhibition11Snaga1,
             },
             EXTERNAL_LINK: {
                 URL: '',
@@ -377,7 +377,7 @@ export const PAGE_CONTENT = Object.freeze({
                             TYPE: 'image',
                             WIDTH: 577,
                             ALT: 'exhibition-view',
-                            SRC: exhibition11Powers2,
+                            SRC: exhibition11Snaga2,
                         },
                     ],
                     [
@@ -385,7 +385,7 @@ export const PAGE_CONTENT = Object.freeze({
                             TYPE: 'image',
                             MAX_HEIGHT: 561,
                             ALT: 'exhibition-view-wide',
-                            SRC: exhibition11Powers3,
+                            SRC: exhibition11Snaga3,
                         },
                     ]
                 ]
@@ -405,7 +405,7 @@ export const PAGE_CONTENT = Object.freeze({
                             TYPE: 'text',
                             TEXT: {
                                 SER: '11 SNAGA su bića poslata iz središa Univerzuma i manifestovana na planeti Zemlji, materijalizovana rađanjem 11 divova datih čovečanstvu, simboličnih nosilaca pojmova koji su im dodeljeni na osnovu dominantnih osobina koje čine njihovu moć.',
-                                ENG: 'The 11 POWERS are beings sent from the center of the Universe and manifested on planet Earth, materialized by the birth of 11 giants given to humanity, symbolic bearers of terms assigned to them based on the dominant features that make up their power.',
+                                ENG: 'The 11 SNAGA are beings sent from the center of the Universe and manifested on planet Earth, materialized by the birth of 11 giants given to humanity, symbolic bearers of terms assigned to them based on the dominant features that make up their power.',
                             }
                         },
                     ],
@@ -429,14 +429,14 @@ export const PAGE_CONTENT = Object.freeze({
                             WIDTH: 511,
                             MAX_HEIGHT: 448,
                             ALT: 'exhibition-view-medium',
-                            SRC: exhibition11Powers4,
+                            SRC: exhibition11Snaga4,
                         },
                         {
                             TYPE: 'image',
                             WIDTH: 929,
                             MAX_HEIGHT: 448,
                             ALT: 'exhibition-view-medium',
-                            SRC: exhibition11Powers5,
+                            SRC: exhibition11Snaga5,
                         }
                     ]
                 ]
@@ -515,16 +515,16 @@ export const PAGE_CONTENT = Object.freeze({
             {
                 ID: 'works',
                 TITLE: {
-                    SER: "Izložbe",
-                    ENG: '',
+                    SER: "Radovi",
+                    ENG: 'Works',
                 },
                 LINK: 'works'
             },
             {
                 ID: 'mural-life',
                 TITLE: {
-                    SER: 'Mural life',
-                    ENG: 'Mural life'
+                    SER: 'Mural, Life',
+                    ENG: 'Mural, Life'
                 },
                 LINK: 'articles/3'
             },
@@ -545,7 +545,7 @@ export const PAGE_CONTENT = Object.freeze({
             YEAR: 2020,
             TEXT: {
                 SER: 'Mural LIFE posvećen je vremenu u kome živimo. Ove monumentalne slike jedinstva ljudi, životinja i biljaka u urbanoj sredini pozivaju na našu povezanost sa prirodom i duboki značaj našeg jedinstva.',
-                ENG: 'Mural "Life" is dedicated to the time we live in. These vivid monumental images of the unity of humans, animals and plants in the urban environment call for our connection with nature and the profound importance of our collectiveness.'
+                ENG: 'Mural LIFE is dedicated to the time we live in. These vivid monumental images of the unity of humans, animals and plants in the urban environment call for our connection with nature and the profound importance of our collectiveness.'
             },
             IMAGE: {
                 MAX_HEIGHT: 574,
@@ -599,28 +599,30 @@ export const PAGE_CONTENT = Object.freeze({
                             TYPE: 'inverted_quote',
                             WIDTH: 522,
                             TEXT: {
-                                SER: 'Asistenti slikari:  \nBojan Dimić\n  ' +
-                                    'Relja Banović  \n' +
-                                    'David Radonjić  \n' +
-                                    'Leonora Ćormarković  \n' +
-                                    'Ananije Bešović  \n' +
-                                    'Jovan Ivanov  \n' +
-                                    'Milica Ljubić  \n' +
-                                    'Sofija Vujić  \n' +
-                                    'Marija Solujić  \n' +
-                                    'Ljubica Jovanović',
-                                ENG: 'Assistant painters:    \n' +
-                                    '\n' +
-                                    'Bojan Dimić\n' +
-                                    'Relja Banović\n' +
-                                    'David Radonjić\n' +
-                                    'Leonora Ćormarković\n' +
-                                    'Ananije Bešović\n' +
-                                    'Jovan Ivanov\n' +
-                                    'Milica Ljubić\n' +
-                                    'Sofija Vujić\n' +
-                                    'Marija Solujić\n' +
-                                    'Ljubica Jovanović',
+                                SER: "Asistenti slikari:  <br/>" +
+                                    "<br />" +
+                                    "Bojan Dimić <br/>" +
+                                    "Relja Banović  <br/>" +
+                                    "David Radonjić  <br/>" +
+                                    "Leonora Ćormarković  <br/>" +
+                                    "Ananije Bešović  <br/>" +
+                                    "Jovan Ivanov  <br/>" +
+                                    "Milica Ljubić  <br/>" +
+                                    "Sofija Vujić  <br/>" +
+                                    "Marija Solujić  <br/>" +
+                                    "Ljubica Jovanović",
+                                ENG: "Assistant painters:  <br/>" +
+                                    "<br />" +
+                                    "Bojan Dimić <br/>" +
+                                    "Relja Banović  <br/>" +
+                                    "David Radonjić  <br/>" +
+                                    "Leonora Ćormarković  <br/>" +
+                                    "Ananije Bešović  <br/>" +
+                                    "Jovan Ivanov  <br/>" +
+                                    "Milica Ljubić  <br/>" +
+                                    "Sofija Vujić  <br/>" +
+                                    "Marija Solujić  <br/>" +
+                                    "Ljubica Jovanović",
                             },
                         },
                         {
@@ -641,6 +643,34 @@ export const PAGE_CONTENT = Object.freeze({
                 ]
             },
             {
+                TYPE: 'contained_image_grid',
+                STYLE: {
+                    paddingTop: '0',
+                    position: 'relative',
+                },
+                CONTENT: [
+                    [
+                        {
+                            TYPE: 'inverted_quote',
+                            WIDTH: 351,
+                            CLASS: "right-[0px] md:right-[40px] bottom-[10px] block text-[16px] sm:text-[16px] md:text-[16px] min-[500px]:text-left w-full min-[500px]:w-fit p-[30px_40px] sm:p-[30px_40px] md:p-[30px_40px] lg:p-[30px_40px] xl:p-[30px_40px] min-[500px]:absolute",
+                            TEXT: {
+                                SER: "Posenba zahvalnost:  <br/>" +
+                                    "<br/>" +
+                                    "Skyline, Beograd<br/>" +
+                                    "Ksenija Lea Ronai<br/>" +
+                                    "Srđan Rusić<br/>",
+                                ENG: "Special thanks:  <br/>" +
+                                    "<br/>" +
+                                    "Skyline, Beograd<br/>" +
+                                    "Ksenija Lea Ronai<br/>" +
+                                    "Srđan Rusić<br/>",
+                            },
+                        }
+                    ]
+                ]
+            },
+            {
                 TYPE: 'text_grid',
                 CONTENT: [
                     [
@@ -648,8 +678,8 @@ export const PAGE_CONTENT = Object.freeze({
                             TYPE: 'quote',
                             CENTERED: true,
                             TEXT: {
-                                SER: 'MURAL LIFE, 7 x 30 m, fasadna boja na zidu, 2021. Skyline, Sarajevska ulica, Beograd',
-                                ENG: 'MURAL LIFE, 7 x 30 m, facade paint on the wall, 2021. Skyline, Sarajevska Street, Belgrade',
+                                SER: 'MURAL LIFE, 7 x 30 m, fasadna boja na zidu, 2021.',
+                                ENG: 'MURAL LIFE, 7 x 30 m, facade paint on the wall, 2021.',
                             }
                         },
                         {

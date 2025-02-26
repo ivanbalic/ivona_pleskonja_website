@@ -5,13 +5,13 @@ import { getSectionComponentByType } from "@/components/exhibitions/sectionCompo
 const CONTAINED_GRID_WIDTH = 1360;
 
 export function ArticleContainedImageGrid({ locale, section }: {
-    locale: string;
-    section: { TYPE: 'contained_image_grid', CONTENT: Record<string, any>[][] }
+    locale: string,
+    section: { TYPE: 'contained_image_grid', CONTENT: Record<string, any>[][], STYLE: Record<string, string> },
 }) {
     if (!section) return null;
 
     return (
-        <Container className="flex flex-col md:px-10 pt-10">
+        <Container containerStyle={section.STYLE} className="flex flex-col md:px-10 pt-10">
             {section.CONTENT.map((row: Record<string, any>[], rowKey: number) =>
                 <div key={`${section.TYPE}_${rowKey}`} className="flex flex-col lg:flex-row">
                     {row.map((col: Record<string, any>, colKey: number)  => {

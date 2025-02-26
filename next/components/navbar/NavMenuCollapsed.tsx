@@ -20,7 +20,7 @@ const NAVBAR_COLORS_MAP = Object.freeze({
     CONTACT: 'white',
     ABOUT_ME: BRAND_COLOR,
     ARTICLES: BRAND_COLOR,
-    WORK_DETAILS: BRAND_COLOR,
+    WORK_DETAILS: BRAND_COLOR
 });
 
 function getColor(page: string): string {

@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import {cn, getPercentWidth} from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import { Container } from "@/components/container";
 import { IArticleCover, ITranslations } from "@/types/types";
 
@@ -21,7 +21,6 @@ export function ArticleCover({ cover, locale }: { cover?: IArticleCover, locale:
     useEffect(function setMaxImageHeight() {
         if(!cover) return;
 
-        // @ts-ignore
         setMaxHeightClass(`max-h-[${cover?.IMAGE.MAX_HEIGHT}px]`);
     }, [cover]);
 
@@ -71,8 +70,11 @@ export function ArticleCover({ cover, locale }: { cover?: IArticleCover, locale:
                     </div>
                 </Container>
                 <Container className="absolute md:px-10">
-                    <Image ref={coverRef} src={cover.IMAGE.SRC ?? ''}
-                           alt={cover.IMAGE.ALT ?? ''} className={cn('min-h-[150px] object-cover', maxHeightClass)} />
+                    <Image
+                        priority
+                        ref={coverRef} src={cover.IMAGE.SRC ?? ''}
+                        alt={cover.IMAGE.ALT ?? ''} className={cn('min-h-[150px] object-cover', maxHeightClass)}
+                    />
                     {cover?.EXTERNAL_LINK.URL &&
                         <Link className={cn(
                             'absolute top-[0] left-[calc(100%-80px)]',
