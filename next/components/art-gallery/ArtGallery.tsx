@@ -124,7 +124,12 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
                 </AnimatePresence>
             </div>
             <div className="flex flex-1 justify-between flex-col">
-                <div className={"hover:underline text-black font-bold text-[16px] leading-[21px] mb-5 flex justify-end cursor-pointer"} onClick={startAutoMode}>
+                <div className={cn(
+                    !autoModeStatus ? 'opacity-40' : 'opacity-100',
+                    "hover:underline text-black font-bold text-[16px] leading-[21px] mb-5 flex justify-end cursor-pointer"
+                )}
+                     onClick={startAutoMode}
+                >
                     {`Auto: ${autoModeStatus ? 'ON' : 'OFF'}`}
                 </div>
                 <div className="flex flex-1 flex-col justify-end items-start text-primaryBlue tracking-[.15em]">
