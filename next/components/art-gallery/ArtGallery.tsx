@@ -1,34 +1,51 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 import { cn } from "@/lib/utils";
+import { ArrowLeft } from "../icons/ArrowLeft";
+import { ArrowRight } from "../icons/ArrowRight";
 import { Container } from "@/components/container";
 import { IGalleryRowItem, ITranslations } from "@/types/types";
 import { useSelectedImage } from "@/context/SelectedImageContext";
 
+function LeftArrow({onClick, className, width, height }: { onClick: () => void, className?: string, width?: string | undefined, height?: string | undefined }) {
+ return (
+     <div className={cn("flex items-center absolute left-0 top-[50%]", className)} onClick={onClick}>
+         <ArrowLeft width={width} height={height} />
+     </div>
+ );
+}
+
+function RightArrow({onClick, className, width, height }: { onClick: () => void, className?: string, width?: string | undefined, height?: string | undefined }) {
+ return (
+     <div className={cn("flex items-center absolute right-0 top-[50%]", className)} onClick={onClick}>
+         <ArrowRight width={width} height={height} />
+     </div>
+ );
+}
+
 export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string, gallery?: IGalleryRowItem[][], exhibitionId: number }) {
-    const [autoModeStatus, setAutoModeStatus] = useState<boolean>(true);
+    // const intervalIdRef = useRef<number | null>(null);
+    // const [autoModeStatus, setAutoModeStatus] = useState<boolean>(false);
     const [selected, setSelected] = useState<IGalleryRowItem | null>(null);
-    const intervalIdRef = useRef<number | null>(null);
 
     const { selectedImageIdRef, selectedGalleryIdRef, onImageSelect } = useSelectedImage();
 
     const next = useMemo(() => gallery?.flat()[(selected?.ID ?? 0)], [selected]);
     const prev = useMemo(() => gallery?.flat()[(selected?.ID ?? 0) - 2], [selected]);
 
-    const resetInterval = useCallback(function onResetInterval() {
-        if(intervalIdRef.current === null) return;
-
-        clearInterval(intervalIdRef.current);
-        intervalIdRef.current = null;
-        setAutoModeStatus(false);
-    }, [intervalIdRef]);
+    // const resetInterval = useCallback(function onResetInterval() {
+    //     if(intervalIdRef.current === null) return;
+    //
+    //     clearInterval(intervalIdRef.current);
+    //     intervalIdRef.current = null;
+    //     setAutoModeStatus(false);
+    // }, [intervalIdRef]);
 
     const onPrev = useCallback(function onPrevClick() {
-        resetInterval();
         const prev = gallery?.flat()[(selectedImageIdRef.current ?? 0) - 2];
 
         if (!prev) return;
@@ -37,7 +54,6 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
     }, [selectedImageIdRef, onImageSelect, selectedGalleryIdRef]);
 
     const onNext = useCallback(function onNextClick() {
-        resetInterval();
         const next = gallery?.flat()[(selectedImageIdRef.current ?? 0)];
 
         if (!next || !next.ID) return;
@@ -45,31 +61,31 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
         onImageSelect(selectedGalleryIdRef.current, next.ID);
     }, [selectedImageIdRef, onImageSelect, selectedGalleryIdRef]);
 
-    const startAutoMode = useCallback(function onAutoMode(){
-        function onAutoImageChange(){
-            const searchParams = new URLSearchParams(window.location.search);
-
-            const currentImageId = Number(searchParams.get("image")) || 1;
-            const currentGalleryId = Number(searchParams.get("gallery")) || 1;
-
-            const next = gallery?.flat()[(currentImageId ?? 0)];
-
-            if(!next || !next.ID) {
-                onImageSelect(currentGalleryId, 1);
-                return;
-            }
-
-            onImageSelect(currentGalleryId, next.ID);
-        }
-
-        if(intervalIdRef.current !== null) {
-            resetInterval();
-            return;
-        }
-
-        setAutoModeStatus(true);
-        intervalIdRef.current = setInterval(onAutoImageChange, 5000) as unknown as number;
-    },[next, onNext, onImageSelect, intervalIdRef]);
+    // const startAutoMode = useCallback(function onAutoMode(){
+    //     function onAutoImageChange(){
+    //         const searchParams = new URLSearchParams(window.location.search);
+    //
+    //         const currentImageId = Number(searchParams.get("image")) || 1;
+    //         const currentGalleryId = Number(searchParams.get("gallery")) || 1;
+    //
+    //         const next = gallery?.flat()[(currentImageId ?? 0)];
+    //
+    //         if(!next || !next.ID) {
+    //             onImageSelect(currentGalleryId, 1);
+    //             return;
+    //         }
+    //
+    //         onImageSelect(currentGalleryId, next.ID);
+    //     }
+    //
+    //     if(intervalIdRef.current !== null) {
+    //         resetInterval();
+    //         return;
+    //     }
+    //
+    //     setAutoModeStatus(true);
+    //     intervalIdRef.current = setInterval(onAutoImageChange, 5000) as unknown as number;
+    // },[next, onNext, onImageSelect, intervalIdRef]);
 
     const onArrowNavigation = (event: KeyboardEvent) => {
         const { key } = event;
@@ -79,11 +95,11 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
     };
 
     useEffect(function onMount(){
-        startAutoMode();
+        // startAutoMode();
         window.addEventListener('keydown', onArrowNavigation);
 
         return function unmountCleanUp() {
-            resetInterval();
+            // resetInterval();
             window.removeEventListener('keydown', onArrowNavigation);
         };
     }, []);
@@ -96,8 +112,6 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
             setSelected(selectedImage);
     }, [selectedImageIdRef.current, selectedGalleryIdRef.current]);
 
-    const nextLabel = locale === 'ser' ? 'SLEDEĆA' : 'NEXT';
-    const prevLabel = locale === 'ser' ? 'PRETHODNA' : 'PREV';
     const articleLinkLabel = locale === 'ser' ? 'ODVEDI ME NA IZLOŽBU' : 'TAKE ME TO EXIBITION';
 
     if(!selected) return null;
@@ -105,11 +119,14 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
     return (
         <Container
             className={cn(
-                "h-full pt-10 pb-10 lg:pb-[135px]",
+                "h-full mt-10 pb-10 lg:mb-[135px] relative",
                 "flex flex-col lg:flex-row gap-5 lg:gap-10 xl:gap-[72px]",
                 "px-[20px] sm:px-[30px] md:px-[45px] lg:px-[60px] xl:px-[72px]"
         )}>
-            <div className="flex justify-center items-center min-h-[200px] xl:h-[715px] max-h-full w-full xl:w-[739px] max-w-full lg:max-w-[60%] xl:max-w-full bg-white">
+            <LeftArrow className={cn("max-lg:hidden", !prev ? 'opacity-70' : '')} onClick={onPrev} />
+            <div className="max-lg:relative flex justify-center items-center min-h-[200px] xl:h-[715px] max-h-full w-full xl:w-[739px] max-w-full lg:max-w-[60%] xl:max-w-full bg-white">
+                <LeftArrow className={cn("lg:hidden top-[-35px] left-[50%)] pr-[15px]", !prev ? 'opacity-70' : '')} width="30px" height="30px" onClick={onPrev} />
+                <RightArrow className={cn("lg:hidden top-[-35px] left-[50%] pl-[15px]", !next ? 'opacity-70' : '')} width="30px" height="30px" onClick={onNext} />
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={selectedImageIdRef.current}
@@ -124,14 +141,6 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
                 </AnimatePresence>
             </div>
             <div className="flex flex-1 justify-between flex-col">
-                <div className={cn(
-                    !autoModeStatus ? 'opacity-40' : 'opacity-100',
-                    "hover:underline text-black font-bold text-[16px] leading-[21px] mb-5 flex justify-end cursor-pointer"
-                )}
-                     onClick={startAutoMode}
-                >
-                    {`Auto: ${autoModeStatus ? 'ON' : 'OFF'}`}
-                </div>
                 <div className="flex flex-1 flex-col justify-end items-start text-primaryBlue tracking-[.15em]">
                     <AnimatePresence mode="wait">
                         <motion.div
@@ -149,18 +158,10 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
                             <div className="text-black font-helvetica text-[16px] leading-[19px] mb-10 lg:mb-20">{selected.DETAILS?.DESCRIPTION[locale.toUpperCase() as keyof ITranslations]}</div>
                         </motion.div>
                     </AnimatePresence>
-                    <div className="text-black font-bold text-[16px] leading-[21px] mb-5">
-                        <span className={cn("hover:underline", prev ? "cursor-pointer" : 'pointer-events-none opacity-40 cursor-not-allowed')} onClick={onPrev}>
-                            {prevLabel}
-                        </span>
-                        /
-                        <span className={cn("hover:underline", next && next.ID ? "cursor-pointer" : 'pointer-events-none opacity-40 cursor-not-allowed')} onClick={onNext}>
-                            {nextLabel}
-                        </span>
-                    </div>
                     <Link href={`/${locale}/articles/${exhibitionId}`} className="text-[16px] leading-[21px] font-bold">{articleLinkLabel}</Link>
                 </div>
             </div>
+            <RightArrow className={cn("max-lg:hidden", !next ? 'opacity-70' : '')} onClick={onNext} />
         </Container>
     );
 }

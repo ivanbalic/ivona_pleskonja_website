@@ -333,6 +333,7 @@ export const MENU_ITEMS_CONFIG = Object.freeze({
                 "1999. Kolekcija Pinakoteke, Lamia, Grčka",
             ],
             ENG: [
+                "2020. Aleksić private collection",
                 '2020. Uroš Medan private collection',
                 '2018. Milan Beko private collection',
                 '2017. National Museum of Zaječar',
