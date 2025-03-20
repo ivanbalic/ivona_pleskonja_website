@@ -28,8 +28,6 @@ function RightArrow({onClick, className, width, height }: { onClick: () => void,
 }
 
 export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string, gallery?: IGalleryRowItem[][], exhibitionId: number }) {
-    // const intervalIdRef = useRef<number | null>(null);
-    // const [autoModeStatus, setAutoModeStatus] = useState<boolean>(false);
     const [selected, setSelected] = useState<IGalleryRowItem | null>(null);
 
     const { selectedImageIdRef, selectedGalleryIdRef, onImageSelect } = useSelectedImage();
@@ -37,13 +35,6 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
     const next = useMemo(() => gallery?.flat()[(selected?.ID ?? 0)], [selected]);
     const prev = useMemo(() => gallery?.flat()[(selected?.ID ?? 0) - 2], [selected]);
 
-    // const resetInterval = useCallback(function onResetInterval() {
-    //     if(intervalIdRef.current === null) return;
-    //
-    //     clearInterval(intervalIdRef.current);
-    //     intervalIdRef.current = null;
-    //     setAutoModeStatus(false);
-    // }, [intervalIdRef]);
 
     const onPrev = useCallback(function onPrevClick() {
         const prev = gallery?.flat()[(selectedImageIdRef.current ?? 0) - 2];
@@ -61,32 +52,6 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
         onImageSelect(selectedGalleryIdRef.current, next.ID);
     }, [selectedImageIdRef, onImageSelect, selectedGalleryIdRef]);
 
-    // const startAutoMode = useCallback(function onAutoMode(){
-    //     function onAutoImageChange(){
-    //         const searchParams = new URLSearchParams(window.location.search);
-    //
-    //         const currentImageId = Number(searchParams.get("image")) || 1;
-    //         const currentGalleryId = Number(searchParams.get("gallery")) || 1;
-    //
-    //         const next = gallery?.flat()[(currentImageId ?? 0)];
-    //
-    //         if(!next || !next.ID) {
-    //             onImageSelect(currentGalleryId, 1);
-    //             return;
-    //         }
-    //
-    //         onImageSelect(currentGalleryId, next.ID);
-    //     }
-    //
-    //     if(intervalIdRef.current !== null) {
-    //         resetInterval();
-    //         return;
-    //     }
-    //
-    //     setAutoModeStatus(true);
-    //     intervalIdRef.current = setInterval(onAutoImageChange, 5000) as unknown as number;
-    // },[next, onNext, onImageSelect, intervalIdRef]);
-
     const onArrowNavigation = (event: KeyboardEvent) => {
         const { key } = event;
 
@@ -95,11 +60,9 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
     };
 
     useEffect(function onMount(){
-        // startAutoMode();
         window.addEventListener('keydown', onArrowNavigation);
 
         return function unmountCleanUp() {
-            // resetInterval();
             window.removeEventListener('keydown', onArrowNavigation);
         };
     }, []);
@@ -119,14 +82,13 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
     return (
         <Container
             className={cn(
-                "h-full mt-10 pb-10 lg:mb-[135px] relative",
+                "h-full mt-10 pb-10 relative",
                 "flex flex-col lg:flex-row gap-5 lg:gap-10 xl:gap-[72px]",
                 "px-[20px] sm:px-[30px] md:px-[45px] lg:px-[60px] xl:px-[72px]"
         )}>
-            <LeftArrow className={cn("max-lg:hidden", !prev ? 'opacity-70' : '')} onClick={onPrev} />
+            <LeftArrow width="40px" height="40px" className={cn("max-lg:hidden", !prev ? 'opacity-70' : '')} onClick={onPrev} />
             <div className="max-lg:relative flex justify-center items-center min-h-[200px] xl:h-[715px] max-h-full w-full xl:w-[739px] max-w-full lg:max-w-[60%] xl:max-w-full bg-white">
-                <LeftArrow className={cn("lg:hidden top-[-35px] left-[50%)] pr-[15px]", !prev ? 'opacity-70' : '')} width="30px" height="30px" onClick={onPrev} />
-                <RightArrow className={cn("lg:hidden top-[-35px] left-[50%] pl-[15px]", !next ? 'opacity-70' : '')} width="30px" height="30px" onClick={onNext} />
+                <LeftArrow className={cn("lg:hidden left-[-24px]", !prev ? 'opacity-70' : '')} width="24px" height="24px" onClick={onPrev} />
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={selectedImageIdRef.current}
@@ -139,9 +101,10 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
                         <Image src={selected.SRC?.FULL ?? ''} alt={selected.ALT} className="max-h-full object-cover" placeholder="blur"/>
                     </motion.div>
                 </AnimatePresence>
+                <RightArrow className={cn("lg:hidden right-[-24px]", !next ? 'opacity-70' : '')} width="24px" height="24px" onClick={onNext} />
             </div>
             <div className="flex flex-1 justify-between flex-col">
-                <div className="flex flex-1 flex-col justify-end items-start text-primaryBlue tracking-[.15em]">
+                <div className={cn("flex flex-1 flex-col justify-end items-start text-primaryBlue tracking-[.15em]")}>
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={selectedImageIdRef.current}
@@ -161,7 +124,7 @@ export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string,
                     <Link href={`/${locale}/articles/${exhibitionId}`} className="text-[16px] leading-[21px] font-bold">{articleLinkLabel}</Link>
                 </div>
             </div>
-            <RightArrow className={cn("max-lg:hidden", !next ? 'opacity-70' : '')} onClick={onNext} />
+            <RightArrow width="40px" height="40px" className={cn("max-lg:hidden", !next ? 'opacity-70' : '')} onClick={onNext} />
         </Container>
     );
 }
