@@ -27,7 +27,7 @@ export function GridImage({ data, locale, galleryId }: { data: IGalleryRowItem, 
                 <span>{DETAILS.TECHNIQUE[locale.toUpperCase() as keyof ITranslations]}</span>
                 <span>{DETAILS.CREATED_AT}</span>
             </div>
-            <Image src={SRC.PREVIEW} alt={ALT} className="w-full h-full object-cover outline-0 border-0 p-0 m-0 shadow-none" />
+            <Image placeholder='blur' src={SRC.PREVIEW} alt={ALT} className="w-full h-full object-cover outline-0 border-0 p-0 m-0 shadow-none" />
         </div>
     );
 }

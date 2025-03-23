@@ -27,6 +27,7 @@ export function ArticleImage({ section, containerWidth }: { section?: { ALT: str
             percentWidthClass ? percentWidthClass : 'xl:w-[100%]',
         )}>
             <Image
+                placeholder='blur'
                 alt={section.ALT ?? ''}
                 className={cn(
                     maxHeightClass,

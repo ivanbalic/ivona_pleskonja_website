@@ -1,15 +1,15 @@
 'use client';
-import React, { useMemo } from "react";
+import React, { useMemo } from 'react';
 
-import { useSearchParams } from "next/navigation";
+import { useSearchParams } from 'next/navigation';
 
-import { cn } from "@/lib/utils";
-import { Container } from "@/components/container";
-import { ArtGallery } from "@/components/art-gallery/ArtGallery";
-import { MyWorkDetails } from "@/components/my-works/MyWorkDetails";
-import { SelectedImageProvider } from "@/context/SelectedImageContext";
-import { SubNavBredCrumbs } from "@/components/subnav-bredcrumbs/SubNavBredCrumbs";
-import { getSubPageContentById } from "@/app/[locale]/(marketing)/works/pageContent";
+import { cn } from '@/lib/utils';
+import { Container } from '@/components/container';
+import { ArtGallery } from '@/components/art-gallery/ArtGallery';
+import { MyWorkDetails } from '@/components/my-works/MyWorkDetails';
+import { SelectedImageProvider } from '@/context/SelectedImageContext';
+import { SubNavBredCrumbs } from '@/components/subnav-bredcrumbs/SubNavBredCrumbs';
+import { getSubPageContentById } from '@/app/[locale]/(marketing)/works/pageContent';
 
 export default function WorkDetailsPage({ params: { locale, slug } }: { params: { locale: string, slug: string } }) {
     const searchParams = useSearchParams();

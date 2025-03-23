@@ -1,5 +1,5 @@
 "use client";
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 
 import Image from 'next/image';
 import Autoplay from 'embla-carousel-autoplay';
@@ -27,7 +27,7 @@ export function HomePageCoverCarousel() {
             <div className="embla__viewport" ref={emblaRef}>
                 <div className="embla__container">
                     <div key={1} className="embla__slide">
-                        <Image src={coverSlide1} alt='hero' className='embla__slide__number w-full h-screen object-cover'/>
+                        <Image priority fetchPriority="high" src={coverSlide1} alt='hero' className='embla__slide__number w-full h-screen object-cover'/>
                     </div>
                     <div key={2} className="embla__slide">
                         <Image src={coverSlide2} alt='hero' className='embla__slide__number w-full h-screen object-cover'/>

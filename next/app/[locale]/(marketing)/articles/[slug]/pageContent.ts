@@ -70,6 +70,7 @@ export const PAGE_CONTENT = Object.freeze({
                 ENG: 'A primordial awakening of the being follows the moment of enlightenment. This is a story of a light from the depths of Universe. It is the light that illuminates us - dissolving the deptlis of darkness. It brings out angels. Before awakening these creatures, we must ask ourselves - who created them?'
             },
             IMAGE: {
+                MAX_HEIGHT: 360,
                 SRC: gabrielAndPan,
                 ALT: 'exhibition-cover',
             },
@@ -326,6 +327,7 @@ export const PAGE_CONTENT = Object.freeze({
                 ENG: 'The series of paintings and graphics 11 STRENGTH is a continuation of the work started within the doctoral art project of Ivona Pleskonje, presented at the Children of the Sun exhibition.'
             },
             IMAGE: {
+                MAX_HEIGHT: 439,
                 ALT: 'exhibition-cover',
                 SRC: exhibition11Snaga1,
             },

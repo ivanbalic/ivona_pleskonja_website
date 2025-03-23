@@ -1,12 +1,12 @@
 'use client';
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from 'react';
 
-import Link from "next/link";
-import Image from "next/image";
+import Link from 'next/link';
+import Image from'next/image';
 
-import { cn } from "@/lib/utils";
-import { Container } from "@/components/container";
-import { IArticleCover, ITranslations } from "@/types/types";
+import { cn } from '@/lib/utils';
+import { Container } from '@/components/container';
+import { IArticleCover, ITranslations } from '@/types/types';
 
 function calculateOffset(height: number) {
     return Math.round(height / 2);
@@ -15,15 +15,6 @@ function calculateOffset(height: number) {
 export function ArticleCover({ cover, locale }: { cover?: IArticleCover, locale: string }) {
     const [coverImageOffset, setCoverImageOffset] = useState<number | null>(0);
     const coverRef = useRef<HTMLImageElement | null>(null);
-
-    const [maxHeightClass, setMaxHeightClass] = useState<string>('');
-
-    useEffect(function setMaxImageHeight() {
-        if(!cover) return;
-
-        setMaxHeightClass(`max-h-[${cover?.IMAGE.MAX_HEIGHT}px]`);
-    }, [cover]);
-
 
     useEffect(() => {
         const coverElement = coverRef.current;
@@ -50,7 +41,7 @@ export function ArticleCover({ cover, locale }: { cover?: IArticleCover, locale:
 
     return (
         <div className="bg-articleBgBlue">
-            <Container containerStyle={{paddingBottom: `${coverImageOffset}px`, marginBottom: `${coverImageOffset}px`}} className="mt-5 sm:mt-10 pt-5 sm:pt-10">
+            <Container containerStyle={{paddingBottom: `${coverImageOffset || ((cover.IMAGE.MAX_HEIGHT ?? 0) / 2)}px`, marginBottom: `${coverImageOffset || ((cover.IMAGE.MAX_HEIGHT ?? 0) / 2)}px`}} className="mt-5 sm:mt-10 pt-5 sm:pt-10">
                 <Container className={cn(
                     'pb-5 sm:pb-10',
                     'flex flex-col gap-4 text-center',
@@ -72,8 +63,10 @@ export function ArticleCover({ cover, locale }: { cover?: IArticleCover, locale:
                 <Container className="absolute md:px-10">
                     <Image
                         priority
+                        placeholder='blur'
+                        fetchPriority='high'
                         ref={coverRef} src={cover.IMAGE.SRC ?? ''}
-                        alt={cover.IMAGE.ALT ?? ''} className={cn('min-h-[150px] object-cover', maxHeightClass)}
+                        alt={cover.IMAGE.ALT ?? ''} className={cn('min-h-[150px] object-cover', `max-h-[${cover?.IMAGE.MAX_HEIGHT}px]`)}
                     />
                     {cover?.EXTERNAL_LINK.URL &&
                         <Link className={cn(

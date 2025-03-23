@@ -18,7 +18,7 @@ export default function AboutMePage({ params: { locale } }: { params: { locale: 
     return (
         <Container>
             <div className="w-full">
-                <Image src={aboutMeCover} alt="about_me_cover" className="w-full object-cover" />
+                <Image src={aboutMeCover} alt="about_me_cover" className="w-full object-cover" priority placeholder="blur" />
             </div>
             <div className='px-5 sm:px-6 md:px-7 lg:px-8 xl:px-10'>
                 <div className="flex justify-between py-6 sm:py-7 md:py-8 lg:py-9 xl:py-10 font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl xl:leading-[47.5px] tracking-[.15em]">
@@ -41,7 +41,7 @@ export default function AboutMePage({ params: { locale } }: { params: { locale: 
             <div className="flex flex-row border border-borderSecondary text-overlayBlue h-[100px] sm:h-[125px] md:h-[150px] my-10 sm:my-12 md:my-14 lg:my-16 xl:my-20">
                 {Object.values(MENU_ITEMS_CONFIG).map((item) => (
                     <Link key={item.ID} href={`/${locale}/${item.LINK}`} replace className='border-r flex-1 flex justify-center items-center'>
-                        <Image className="w-[90%] object-cover" src={item.BUTTON[locale.toUpperCase() as keyof ITranslations]} alt={item.ALT} />
+                        <Image className="w-[90%] object-cover" src={item.BUTTON[locale.toUpperCase() as keyof ITranslations]} alt={item.ALT} placeholder='blur' />
                     </Link>
                 ))}
             </div>

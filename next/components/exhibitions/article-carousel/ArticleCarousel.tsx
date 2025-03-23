@@ -18,31 +18,31 @@ type PropType = {
 }
 
 export const ArticleCarousel: React.FC<PropType> = ( { section }) => {
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true}, [Autoplay()])
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true}, [Autoplay()]);
 
     const onNavButtonClick = useCallback((emblaApi: EmblaCarouselType) => {
-        const autoplay = emblaApi?.plugins()?.autoplay
-        if (!autoplay) return
+        const autoplay = emblaApi?.plugins()?.autoplay;
+        if (!autoplay) return;
 
         const resetOrStop =
             autoplay.options.stopOnInteraction === false
                 ? autoplay.reset
-                : autoplay.stop
+                : autoplay.stop;
 
-        resetOrStop()
-    }, [])
+        resetOrStop();
+    }, []);
 
     const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(
         emblaApi,
         onNavButtonClick
-    )
+    );
 
     const {
         prevBtnDisabled,
         nextBtnDisabled,
         onPrevButtonClick,
         onNextButtonClick
-    } = usePrevNextButtons(emblaApi, onNavButtonClick)
+    } = usePrevNextButtons(emblaApi, onNavButtonClick);
 
     return (
         <section className="embla article-carousel">
@@ -50,7 +50,7 @@ export const ArticleCarousel: React.FC<PropType> = ( { section }) => {
                 <div className="embla__container mt-10">
                     {section.SLIDES.map((s: { SRC: string, ALT: string }, key: number) => (
                         <div key={key} className="embla__slide">
-                            <Image src={s.SRC} alt={s.ALT} className='embla__slide__number w-full full object-contain'/>
+                            <Image src={s.SRC} alt={s.ALT} className='embla__slide__number w-full full object-contain' placeholder='blur' />
                         </div>
                     ))}
                 </div>
@@ -74,6 +74,6 @@ export const ArticleCarousel: React.FC<PropType> = ( { section }) => {
                 </div>
             </div>
         </section>
-    )
+    );
 }
 

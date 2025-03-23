@@ -1,8 +1,8 @@
 'use client';
-import { ArticleCover } from "@/components/exhibitions/ArticleCover";
-import { SubNavBredCrumbs } from "@/components/subnav-bredcrumbs/SubNavBredCrumbs";
-import {getSectionComponentByType} from "@/components/exhibitions/sectionComponentMap";
-import { getExhibitionById } from "@/app/[locale]/(marketing)/articles/[slug]/pageContent";
+import { ArticleCover } from '@/components/exhibitions/ArticleCover';
+import { SubNavBredCrumbs } from '@/components/subnav-bredcrumbs/SubNavBredCrumbs';
+import { getSectionComponentByType } from '@/components/exhibitions/sectionComponentMap';
+import { getExhibitionById } from '@/app/[locale]/(marketing)/articles/[slug]/pageContent';
 
 export default function ExhibitionDetails({ params: { locale, slug } }: { params: { locale: string, slug: string }}) {
     const exhibition = getExhibitionById(parseInt(slug));
