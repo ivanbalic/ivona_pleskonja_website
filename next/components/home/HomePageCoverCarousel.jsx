@@ -1,13 +1,13 @@
 "use client";
-import React, {useEffect} from "react";
+import React, {useEffect} from 'react';
 
-import Image from "next/image";
-import Autoplay from "embla-carousel-autoplay";
-import useEmblaCarousel from "embla-carousel-react";
+import Image from 'next/image';
+import Autoplay from 'embla-carousel-autoplay';
+import useEmblaCarousel from 'embla-carousel-react';
 
+import { useActiveSlide } from '@/context/ActiveSlideContext';
 import coverSlide3 from '../../public/images/home/chiron.png';
 import coverSlide2 from '../../public/images/home/gabriel.png';
-import {useActiveSlide} from "@/context/ActiveSlideContext";
 import coverSlide1 from '../../public/images/home/auto-portrait.png';
 
 export function HomePageCoverCarousel() {
