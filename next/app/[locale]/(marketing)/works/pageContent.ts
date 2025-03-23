@@ -712,7 +712,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             }
                         },
                         {
-                            ID: 0,
+                            ID: null,
                             SRC: null,
                             ALT: "",
                             GRID_PLACES: 1,
@@ -1011,7 +1011,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             }
                         },
                         {
-                            ID: 0,
+                            ID: null,
                             SRC: null,
                             ALT: "",
                             GRID_PLACES: 1,
