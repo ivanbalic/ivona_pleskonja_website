@@ -114,7 +114,11 @@ body {
   }
   .embla__button--next {
     bottom: 265px;
-    left: calc(100vw - 154px);
+    left: calc(1440px - 154px);
+    @media(max-width: 1440px) {
+      bottom: 265px;
+      left: calc(100vw - 154px);
+    }
     @media(max-width: 640px) {
       bottom: 245px;
       left: calc(100vw - 100px);
