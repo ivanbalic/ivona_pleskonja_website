@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Link from 'next/link';
 import { i18n } from '@/i18n.config';
 import { usePathname, useSearchParams } from 'next/navigation';
 
 import { cn } from "@/lib/utils";
+import { LanguagePickerIcon } from "@/components/icons/LanguagePickerIcon";
 
-export function LanguagePicker({ isPrimary }: { isPrimary: boolean }) {
+const LOCALE_LABEL_MAP = {
+  eng: 'English',
+  ser: 'Serbian',
+};
+
+export function LanguagePicker({ color }: { color: string }) {
   const pathName = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
   const searchParams = useSearchParams();
 
   const currentLocale = pathName.split('/')[1];
@@ -22,27 +29,34 @@ export function LanguagePicker({ isPrimary }: { isPrimary: boolean }) {
   }
 
   return (
-    <div className="flex justify-center items-center gap-2 lg:gap-5 rounded-md">
-      {i18n.locales.map((locale) => (
-        <Link
-          key={locale}
-          href={`${redirectedPathName(locale)}?${searchParams.toString()}`}
-        >
-          <React.Fragment >
-            <div
-              className={cn(
-                'flex cursor-pointer items-center justify-center font-light text-md lg:text-2xl tracking-[.15em] transition duration-200',
-                locale === currentLocale
-                  ? 'border-b-2 font-bold'
-                  : "",
-                  isPrimary ? 'text-primaryBlue border-primaryBlue' : 'text-white border-white',
-              )}
-            >
-              {locale.toUpperCase()}
+    <div className="relative flex items-center justify-center h-full">
+      <div onClick={() => setIsOpen(!isOpen)}>
+        <LanguagePickerIcon color={color} />
+      </div>
+        {isOpen
+            ? <div className="absolute flex flex-col rounded-md bg-white h-fit px-[10.615px] top-[58px] right-[10px] z-10 shadow-lg">
+                {i18n.locales.map((locale) => (
+                    <Link
+                        key={locale}
+                        href={`${redirectedPathName(locale)}?${searchParams.toString()}`}
+                    >
+                        <div
+                            className={cn(
+                                'p-2.5',
+                                'transition duration-200',
+                                'flex items-center justify-center',
+                                locale !== currentLocale
+                                    ? 'text-inactive font-normal'
+                                    : 'text-articleBgBlue font-bold',
+                                'font-helvetica text-[16px] leading-[20px] tracking-[.15em]',
+                            )}
+                        >
+                            {LOCALE_LABEL_MAP[locale]}
+                        </div>
+                    </Link>
+                ))}
             </div>
-          </React.Fragment>
-        </Link>
-      ))}
+            : <></>}
     </div>
   );
 }

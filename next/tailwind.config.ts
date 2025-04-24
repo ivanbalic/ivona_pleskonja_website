@@ -28,6 +28,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        inactive: '#CBCBCB',
         primaryBlue: '#3769E6',
         overlayBlue: '#3242C0',
         externalLink: '#E3F407',
