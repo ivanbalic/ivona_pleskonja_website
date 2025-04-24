@@ -34,7 +34,7 @@ export function LanguagePicker({ color }: { color: string }) {
         <LanguagePickerIcon color={color} />
       </div>
         {isOpen
-            ? <div className="absolute flex flex-col rounded-md bg-white h-fit px-[10.615px] top-[58px] right-[10px] z-10 shadow-lg">
+            ? <div className="absolute flex flex-col rounded-md bg-white h-fit px-[10.615px] top-[57.5px] md:top-[70px] lg:top-[82.5px] right-[10px] z-10 shadow-lg">
                 {i18n.locales.map((locale) => (
                     <Link
                         key={locale}

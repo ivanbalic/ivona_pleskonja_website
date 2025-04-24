@@ -7,10 +7,10 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { LanguagePicker } from './LanguagePicker';
 // import { SpeakerIcon } from '@/components/icons/SpeakerIcon';
-import logoBlue from '@/public/images/navbar/navbar-logo-blue.png';
 import { useActiveSlide } from "@/context/ActiveSlideContext";
-import logoWhite from '@/public/images/navbar/navbar-logo-white.png';
+import logoBlue from '@/public/images/navbar/navbar-logo-blue.png';
 import { BurgerMenuIcon } from "@/components/icons/BurgerMenuIcon";
+import logoWhite from '@/public/images/navbar/navbar-logo-white.png';
 
 const BRAND_COLOR = '#3769E6';
 
@@ -50,11 +50,11 @@ export const NavMenuCollapsed = ({ hideLogo, onOpen, page, locale }: { hideLogo:
           </Link>}
         </div>
         <div className="flex gap-2 md:gap-3 lg:gap-5">
-          {/*<div className="flex items-center cursor-pointer transition duration-200 w-6 lg:w-10 max-w-[40px]">*/}
+          {/*<div className="flex items-center cursor-pointer transition duration-200">*/}
           {/*  <SpeakerIcon color={color} />*/}
           {/*</div>*/}
           <LanguagePicker color={color} />
-          <div className="flex items-center cursor-pointer w-6 md:w-8 lg:w-10 max-w-[40px]" onClick={onOpen}>
+          <div className="flex items-center cursor-pointer" onClick={onOpen}>
             <BurgerMenuIcon color={color} />
           </div>
         </div>
