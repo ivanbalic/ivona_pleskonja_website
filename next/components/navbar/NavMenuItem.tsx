@@ -28,7 +28,7 @@ export function NavMenuItem({
     <Link
       href={href}
       className={cn(
-        "text-3xl sm:text-4xl md:text-5xl lg:text-[62px] lg:leading-[84px] tracking-[.15em] text-gray-400 hover:text-white cursor-pointer",
+        "text-[36px] leading-[42px] lg:text-[62px] lg:leading-[73px] tracking-[.15em] text-gray-400 hover:text-white hover:font-bold cursor-pointer",
         (active || pathname?.includes(href)) && "text-white",
         (hide && "hidden"),
         className

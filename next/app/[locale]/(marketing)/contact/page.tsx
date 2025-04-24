@@ -7,7 +7,7 @@ import contactBackground from '@/public/images/contact/contact-background.svg';
 export default function ContactPage() {
     return (
         <div className="relative w-full h-screen">
-            <Image className="w-full min-h-screen object-cover" src={contactBackground} alt='woman-painting' placeholder='blur' priority />
+            <Image className="w-full min-h-screen object-cover" src={contactBackground} alt='woman-painting' priority />
             <div className={cn(
                 "w-full h-screen",
                 "absolute top-0 flex flex-col justify-end gap-10",

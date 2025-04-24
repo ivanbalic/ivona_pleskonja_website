@@ -50,11 +50,11 @@ export const NavMenuCollapsed = ({ hideLogo, onOpen, page, locale }: { hideLogo:
           </Link>}
         </div>
         <div className="flex gap-2 md:gap-3 lg:gap-5">
-          {/*<div className="flex items-center cursor-pointer transition duration-200">*/}
+          {/*<div className="flex items-center cursor-pointer transition duration-200 w-6 lg:w-10 max-w-[40px]">*/}
           {/*  <SpeakerIcon color={color} />*/}
           {/*</div>*/}
           <LanguagePicker color={color} />
-          <div className="flex items-center cursor-pointer" onClick={onOpen}>
+          <div className="flex items-center cursor-pointer w-6 md:w-8 lg:w-10 max-w-[40px]" onClick={onOpen}>
             <BurgerMenuIcon color={color} />
           </div>
         </div>

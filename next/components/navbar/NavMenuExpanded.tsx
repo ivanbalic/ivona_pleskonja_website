@@ -25,7 +25,7 @@ export const NavMenuExpanded = ({ onClose, locale }: { onClose: () => void, loca
                   <Image className="object-contain" src={logoWhite} alt="Ivona Pleskonja logo" priority={true} />
               </Link>
               <div
-                  className="flex flex-col gap-5 font-normal justify-center items-center">
+                  className="flex flex-col gap-5 font-roboto-serif font-normal justify-center items-center">
                   {Object.values(MENU_ITEMS_CONFIG).map(
                       (CONFIG) =>
                           <NavMenuItem key={CONFIG.LINK} href={`/${locale}/${CONFIG.LINK}`} hide={CONFIG.HIDE}>
