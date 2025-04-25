@@ -5,7 +5,6 @@ import Image from "next/image";
 
 import { ITranslations } from "@/types/types";
 import { Container } from "@/components/container";
-import arrowDown from '@/public/images/about-me/arrow-down.svg';
 import aboutMeCover from '@/public/images/about-me/about-me-cover.png';
 import { PAGE_CONTENT } from "@/app/[locale]/(marketing)/about_me/pageContent";
 import { MENU_ITEMS_CONFIG } from "@/app/[locale]/(marketing)/about_me/pageContent";
@@ -18,14 +17,13 @@ export default function AboutMePage({ params: { locale } }: { params: { locale: 
     return (
         <Container>
             <div className="w-full">
-                <Image src={aboutMeCover} alt="about_me_cover" className="w-full object-cover" priority placeholder="blur" />
+                <Image src={aboutMeCover} alt="about_me_cover" className="w-full object-cover max-md:object-[70%] max-md:h-[615px]" priority placeholder="blur" />
             </div>
-            <div className='px-5 sm:px-6 md:px-7 lg:px-8 xl:px-10'>
-                <div className="flex justify-between py-6 sm:py-7 md:py-8 lg:py-9 xl:py-10 font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl xl:leading-[47.5px] tracking-[.15em]">
-                    <span className="text-primaryBlue">{getTextBySectionName('title')}</span>
-                    <Image className="w-3 sm:w-4 md:w-5 lg:w-6 xl:w-7" src={arrowDown} alt="arrow_down"/>
+            <div className='px-4 lg:px-10'>
+                <div className="flex justify-between py-6 sm:py-7 md:py-8 lg:py-9 xl:py-10 font-bold text-[36px] leading-[36px] md:leading-[39px] tracking-[.15em]">
+                    <span className="text-primaryBlue font-roboto-serif">{getTextBySectionName('title')}</span>
                 </div>
-                <div className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[24px] leading-[18px] sm:leading-[20px] md:leading-[22px] lg:leading-[24px] xl:leading-[30px] tracking-[.15em] text-black font-helvetica">
+                <div className="text-base lg:text-[24px] lg:leading-[30px] tracking-[.15em] text-black font-helvetica">
                     <span className={locale === 'ser' ? 'block' : 'inline'}><span className="font-bold">{getTextBySectionName('name')}</span>{getTextBySectionName('born')}</span>
                     <span>{getTextBySectionName('graduated')}</span><span className="font-bold text-primaryBlue">{getTextBySectionName('faculty')}</span>{getTextBySectionName('graduated_at')}<span className="font-bold text-primaryBlue">{getTextBySectionName('department')}</span>
 
@@ -38,10 +36,10 @@ export default function AboutMePage({ params: { locale } }: { params: { locale: 
                     <span className="font-bold text-primaryBlue block">{getTextBySectionName('ulus_details')}</span>
                 </div>
             </div>
-            <div className="flex flex-row border border-borderSecondary text-overlayBlue h-[100px] sm:h-[125px] md:h-[150px] my-10 sm:my-12 md:my-14 lg:my-16 xl:my-20">
+            <div className="flex flex-col max-md:gap-2.5 max-md:mx-4 md:flex-row md:border-y md:border-l border-borderSecondary text-overlayBlue h-fit md:h-[150px] my-10 sm:my-12 md:my-14 lg:my-16 xl:my-20">
                 {Object.values(MENU_ITEMS_CONFIG).map((item) => (
-                    <Link key={item.ID} href={`/${locale}/${item.LINK}`} replace className='border-r flex-1 flex justify-center items-center'>
-                        <Image className="w-[90%] object-cover" src={item.BUTTON[locale.toUpperCase() as keyof ITranslations]} alt={item.ALT} placeholder='blur' />
+                    <Link key={item.ID} href={`/${locale}/${item.LINK}`} replace className='border-b md:border-r md:border-b-0 flex-1 flex justify-center items-center h-[84px] md:h-[150px]'>
+                        <Image className="w-auto md:w-[90%] object-cover h-[84px] md:h-auto" src={item.BUTTON[locale.toUpperCase() as keyof ITranslations]} alt={item.ALT} placeholder='blur' priority />
                     </Link>
                 ))}
             </div>
