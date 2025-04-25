@@ -17,7 +17,7 @@ export function SignatureLogo() {
     }, []);
 
     return (
-        <div className="absolute top-[73%] lg:inset-y-1/2 w-screen">
+        <div className="absolute top-[73%] md:inset-y-1/2 w-screen">
             <Image ref={signatureRef} src={signature} alt='signature-logo' className={`relative mx-auto`} style={{ bottom: `${height/2}px` }} />
         </div>
     );

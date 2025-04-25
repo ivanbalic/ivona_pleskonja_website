@@ -27,7 +27,7 @@ export function HomePageCoverCarousel() {
             <div className="embla__viewport" ref={emblaRef}>
                 <div className="embla__container">
                     <div key={1} className="embla__slide">
-                        <Image priority fetchPriority="high" src={coverSlide1} alt='hero' className='embla__slide__number w-full h-screen object-cover'/>
+                        <Image priority fetchPriority="high" src={coverSlide1} alt='hero' className='embla__slide__number w-full h-screen object-cover max-md:object-[42%]'/>
                     </div>
                     <div key={2} className="embla__slide">
                         <Image src={coverSlide2} alt='hero' className='embla__slide__number w-full h-screen object-cover'/>
