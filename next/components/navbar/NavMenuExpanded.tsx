@@ -36,7 +36,7 @@ export const NavMenuExpanded = ({ onClose, locale }: { onClose: () => void, loca
                               </NavMenuItem>
                       )}
                   </div>
-                  <div className="mb-[50px] w-5 md:w-6 lg:w-7 mb-[120px]" onClick={onClose}>
+                  <div className="mb-[120px] w-7" onClick={onClose}>
                       <Image className="w-full" src={closeMenuIcon} alt="Close Menu" />
                   </div>
               </div>

@@ -30,7 +30,7 @@ export function LanguagePicker({ color }: { color: string }) {
 
   return (
     <div className="relative flex items-center justify-center h-full">
-      <div className="flex items-center cursor-pointer w-6 lg:w-10 max-w-[40px]" onClick={() => setIsOpen(!isOpen)}>
+      <div className="flex items-center cursor-pointer w-6 md:w-10 max-w-[40px]" onClick={() => setIsOpen(!isOpen)}>
         <LanguagePickerIcon color={color} />
       </div>
         {isOpen
