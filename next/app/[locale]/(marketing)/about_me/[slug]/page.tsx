@@ -25,7 +25,7 @@ export default function AboutMeSubPage({ params: { locale, slug} }: { params: { 
         <Container className={cn(
             'text-black',
             'px-4 lg:px-[135px]',
-            'pt-[75px] md:pt-[100px] lg:pt-[125px]',
+            'pt-[100px] md:pt-[125px]',
             )}
         >
             <SubNavBredCrumbs navItems={Object.values(MENU_ITEMS_CONFIG)} locale={locale} page={slug} />

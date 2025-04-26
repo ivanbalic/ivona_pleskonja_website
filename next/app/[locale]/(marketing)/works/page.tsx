@@ -14,7 +14,7 @@ const getTitle = ( locale: string) => {
 
 export default function MyWorksPage({ params: { locale } }: { params: { locale: string } }) {
     return (
-        <div className='pt-[75px] md:pt-[100px] lg:pt-[125px] bg-overlayBlue h-screen'>
+        <div className='pt-[85px] md:pt-[125px] bg-overlayBlue h-screen'>
             <Container className="px-[16px] md:px-[135px]">
                 <div className="my-10 font-bold text-[36px] leading-[39px] tracking-[.15em] font-roboto-serif">
                     <span>{getTitle(locale)}</span>

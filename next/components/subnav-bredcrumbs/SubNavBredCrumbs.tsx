@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { BackIcon } from "../icons/BackIcon";
 import { ISubNavItem, ITranslations } from "@/types/types";
 
-export function SubNavBredCrumbs( { navItems, locale, page, subItemClass = '' }: { navItems: ISubNavItem[], locale: string, page: string, subItemClass?: string }) {
+export function SubNavBredCrumbs( { navItems, locale, page }: { navItems: ISubNavItem[], locale: string, page: string, subItemClass?: string }) {
     const activeRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -32,7 +32,6 @@ export function SubNavBredCrumbs( { navItems, locale, page, subItemClass = '' }:
                             ref={content.ID === page ? activeRef : null}
                             key={content.ID}
                              className={cn(
-                                 subItemClass,
                                  index ? 'md:border-l md:border-black pl-0' : '',
                                  content.ID === page ? 'font-bold max-md:text-white max-md:bg-primaryBlue' : '',
                                  'px-[10px] py-[5px] max-md:rounded-[30px] hover:underline cursor-pointer text-nowrap',

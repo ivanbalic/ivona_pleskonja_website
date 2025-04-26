@@ -21,7 +21,7 @@ export const NavMenuExpanded = ({ onClose, locale }: { onClose: () => void, loca
 
   return (
           <div className="fixed top-0 left-0 bg-overlayBlue/85 w-full h-screen z-20 flex flex-col md:justify-between items-center">
-              <Link href={`/${locale}`} className="flex justify-center h-[75px] md:h-[100px] lg:h-[125px]" onClick={onClose}>
+              <Link href={`/${locale}`} className="flex justify-center h-[100px] md:h-[125px]" onClick={onClose}>
                   <Image className="object-contain" src={logoWhite} alt="Ivona Pleskonja logo" priority={true} />
               </Link>
               <div className="flex flex-col justify-between items-center h-full">
