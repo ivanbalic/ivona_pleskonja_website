@@ -8,9 +8,9 @@ import { cn } from "@/lib/utils";
 import { LanguagePicker } from './LanguagePicker';
 // import { SpeakerIcon } from '@/components/icons/SpeakerIcon';
 import { useActiveSlide } from "@/context/ActiveSlideContext";
-import logoBlue from '@/public/images/navbar/navbar-logo-blue.png';
+import logoBlue from '@/public/images/navbar/navbar-logo-blue.webp';
 import { BurgerMenuIcon } from "@/components/icons/BurgerMenuIcon";
-import logoWhite from '@/public/images/navbar/navbar-logo-white.png';
+import logoWhite from '@/public/images/navbar/navbar-logo-white.webp';
 
 const BRAND_COLOR = '#3769E6';
 

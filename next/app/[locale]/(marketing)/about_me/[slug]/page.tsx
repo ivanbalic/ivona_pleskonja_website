@@ -1,12 +1,11 @@
 import React from "react";
 
 import Link from "next/link";
-import Image from 'next/image';
 
 import {cn} from "@/lib/utils";
 import { ITranslations } from "@/types/types";
 import { Container } from "@/components/container";
-import arrowLeft from '@/public/images/about-me/arrow-left.svg';
+import { BackIcon } from "@/components/icons/BackIcon";
 import { SubNavBredCrumbs  } from "@/components/subnav-bredcrumbs/SubNavBredCrumbs";
 import { MENU_ITEMS_CONFIG } from "@/app/[locale]/(marketing)/about_me/pageContent";
 
@@ -25,22 +24,22 @@ export default function AboutMeSubPage({ params: { locale, slug} }: { params: { 
     return (
         <Container className={cn(
             'text-black',
+            'px-4 lg:px-[135px]',
             'pt-[75px] md:pt-[100px] lg:pt-[125px]',
-            'px-5 sm:px-[30px] md:px-[65px] lg:px-[100px] xl:px-[135px]',
             )}
         >
-            <SubNavBredCrumbs navItems={Object.values(MENU_ITEMS_CONFIG)} locale={locale} page={slug} subItemClass="max-[521px]:flex-1 max-[521px]:truncate" />
-            <div className="flex gap-8 items-center my-6 sm:my-7 md:my-8 lg:my-9 xl:my-10 font-bold text-[22px] sm:text-[26px] md:text-[30px] lg:text-[34px] xl:text-[36px] leading-[25px] sm:leading-[29px] md:leading-[33px] lg:leading-[37px] xl:leading-[39px] tracking-[.15em]">
-                <Link href={`/${locale}/about_me`} className="flex items-center cursor-pointer w-6 md:w-8 lg:w-10 max-w-[40px]">
-                    <Image src={arrowLeft} alt="arrowLeft" className="border-primaryBlue" />
+            <SubNavBredCrumbs navItems={Object.values(MENU_ITEMS_CONFIG)} locale={locale} page={slug} />
+            <div className="flex gap-8 items-center my-5 md:my-10 font-bold text-[36px] leading-[39px] tracking-[.15em]">
+                <Link href={`/${locale}/about_me`} className="hidden md:flex items-center cursor-pointer w-10">
+                    <BackIcon />
                 </Link>
                 <span className="text-primaryBlue font-roboto-serif">{getTitle(slug, locale)}</span>
             </div>
-            <div className="flex flex-col gap-0 sm:gap-0.5 md:gap-1 lg:gap-1.5 xl:gap-2 mb-20 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] leading-[31px] sm:leading-[33px] md:leading-[35px] lg:leading-[37px] xl:leading-[39px] font-helvetica tracking-[.15em]">
+            <div className="flex flex-col mb-20 text-base md:text-[24px] md:leading-[40px] font-helvetica tracking-[.05em]">
                 {getContent(slug, locale).map((item, index) => (
-                    <div className="flex gap-1" key={index}>
-                        <span className="text-primaryBlue">{item.YEAR}</span>
-                        <span>{item.AWARD}</span>
+                    <div key={index}>
+                        <span className="text-primaryBlue mr-1">{item.YEAR}</span>
+                        {item.AWARD}
                     </div>
                 ))}
             </div>
