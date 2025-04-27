@@ -10,7 +10,7 @@ export default function ExhibitionDetails({ params: { locale, slug } }: { params
     if(!exhibition) return null;
 
     return (
-        <div className="pt-[75px] md:pt-[100px] lg:pt-[125px] tracking-[.15em]">
+        <div className="pt-[85px] md:pt-[125px] tracking-[.15em]">
             <SubNavBredCrumbs navItems={exhibition.HISTORY ?? []} locale={locale} page={'exhibition'} subItemClass='max-[480px]:max-w-[250px] truncate' />
             <ArticleCover locale={locale} cover={exhibition.COVER} />
             {exhibition.SECTIONS.map((s, key) => {

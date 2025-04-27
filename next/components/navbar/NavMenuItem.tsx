@@ -7,29 +7,47 @@ import { usePathname } from "next/navigation";
 
 type Props = {
   href: string;
+  label: string;
   hide?: boolean;
   target?: string;
-  active?: boolean;
   className?: string;
   children: ReactNode;
+  hovered?: string | null;
+  setHovered?: (hovered: string | null) => void;
 };
 
 export function NavMenuItem({
   href,
   hide,
-  active,
+  label,
   target,
+  hovered,
   children,
   className,
+  setHovered,
 }: Props) {
   const pathname = usePathname();
+
+  const onMouseEnter = () => {
+    if(!setHovered) return;
+
+    setHovered(label);
+  };
+
+  const onMouseLeave = () => {
+    if(!setHovered) return;
+
+    setHovered(null);
+  };
 
   return (
     <Link
       href={href}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
       className={cn(
-        "text-3xl sm:text-4xl md:text-5xl lg:text-[62px] lg:leading-[84px] tracking-[.15em] text-gray-400 hover:text-white cursor-pointer",
-        (active || pathname?.includes(href)) && "text-white",
+        "text-white hover:font-bold cursor-pointer",
+        (hovered !== null && hovered !== label) && "opacity-50",
         (hide && "hidden"),
         className
       )}

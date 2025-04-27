@@ -26,8 +26,8 @@ export default function WorkDetailsPage({ params: { locale, slug } }: { params: 
 
     return (
         <SelectedImageProvider>
-            <Container className={cn('pt-[75px] md:pt-[100px] lg:pt-[125px] text-black min-h-screen', showGallery && 'bg-backgroundSecondary max-w-full')}>
-                <SubNavBredCrumbs navItems={page.HISTORY ?? []} locale={locale} page={slug} subItemClass='max-[480px]:max-w-[250px] truncate' />
+            <Container className={cn('pt-[85px] md:pt-[125px] text-black min-h-screen', showGallery && 'bg-backgroundSecondary max-w-full')}>
+                <SubNavBredCrumbs navItems={page.HISTORY ?? []} locale={locale} page={slug} />
                 { showGallery
                     ? <ArtGallery locale={locale} gallery={gallery?.CONTENT} exhibitionId={page.EXHIBITION_ID} />
                     : <MyWorkDetails data={page} locale={locale} />
