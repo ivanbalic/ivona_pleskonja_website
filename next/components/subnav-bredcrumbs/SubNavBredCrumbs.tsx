@@ -9,12 +9,18 @@ export function SubNavBredCrumbs( { navItems, locale, page, subItemClass = '' }:
     return (
         <div
             className={cn(
-                'flex justify-center items-center gap-2 md:gap-3 lg:gap-5 mt-5 px-2 md:px-3 lg:px-5',
-                'font-helvetica font-light text-black text-xs sm:text-sm lg:text-[16px] lg:leading-[19.4px] tracking-[.15em]'
-            )}>
+                'mt-5',
+                'flex flex-wrap justify-center items-center gap-2',
+                'font-helvetica font-light text-black text-[16px] leading-[16px] tracking-[.15em]',
+            )}
+        >
             {navItems.map(
                 (content, index) => (
-                    <div key={content.ID} className={cn(index ? 'border-l border-black pl-2 md:pl-3 lg:pl-5' : '', subItemClass)}>
+                    <div key={content.ID} className={cn(
+                        subItemClass,
+                        'flex items-center',
+                        index < navItems.length - 1 ? 'after:w-[1px] after:h-4 after:bg-black after:inline-block after:skew-x-[-20deg] after:ml-2' : '',
+                    )}>
                         <Link
                             href={`/${locale}/${content.LINK}`}
                             className={cn(
