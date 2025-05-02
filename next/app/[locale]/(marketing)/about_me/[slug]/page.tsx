@@ -6,8 +6,8 @@ import {cn} from "@/lib/utils";
 import { ITranslations } from "@/types/types";
 import { Container } from "@/components/container";
 import { BackIcon } from "@/components/icons/BackIcon";
-import { SubNavBredCrumbs  } from "@/components/subnav-bredcrumbs/SubNavBredCrumbs";
 import { MENU_ITEMS_CONFIG } from "@/app/[locale]/(marketing)/about_me/pageContent";
+import { CarouselBredCrumbs } from "@/components/subnav-bredcrumbs/CarouselBredCrumbs";
 
 const getTitle = (page: string, locale: string) => {
     const pageContent = MENU_ITEMS_CONFIG[page.toUpperCase() as keyof typeof MENU_ITEMS_CONFIG];
@@ -28,7 +28,7 @@ export default function AboutMeSubPage({ params: { locale, slug} }: { params: { 
             'pt-[100px] md:pt-[125px]',
             )}
         >
-            <SubNavBredCrumbs navItems={Object.values(MENU_ITEMS_CONFIG)} locale={locale} page={slug} />
+            <CarouselBredCrumbs navItems={Object.values(MENU_ITEMS_CONFIG)} locale={locale} page={slug} />
             <div className="flex gap-8 items-center my-5 md:my-10 font-bold text-[36px] leading-[39px] tracking-[.15em]">
                 <Link href={`/${locale}/about_me`} className="hidden md:flex items-center cursor-pointer w-10">
                     <BackIcon />
