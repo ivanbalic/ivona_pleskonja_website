@@ -12,7 +12,7 @@ export function SocialMedias() {
     const color = activeSlideConfig.COLOR;
 
     return (
-        <div className="absolute z-10 bottom-0 right-0 flex flex-col gap-2 md:gap-3 lg:gap-5 items-center px-2 md:px-6 lg:px-10 pb-2 md:pb-6 lg:pb-10">
+        <div className="absolute z-10 bottom-0 right-0 flex flex-col gap-2 md:gap-5 items-center px-4 md:px-6 lg:px-10 pb-4 md:pb-10">
             <Link href="https://www.instagram.com/ivonapleskonja?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" >
                 <InstagramIcon color={color} className="transition duration-200 w-6 lg:w-10 max-w-[40px]" />
             </Link>
