@@ -21,13 +21,17 @@ export const NavMenuExpanded = ({ onClose, locale }: { onClose: () => void, loca
     },[]);
 
   return (
-          <div className="fixed top-0 left-0 bg-overlayBlue/85 w-full h-screen z-20 flex flex-col md:justify-between items-center">
-              <Link href={`/${locale}`} className="flex justify-center h-[100px] md:h-[125px]" onClick={onClose}>
+      <>
+          <div className="fixed top-0 left-0 w-full h-screen z-20 flex flex-col md:justify-between items-center mix-blend-multiply">
+              <div className="fixed top-0 left-0 w-full h-screen bg-overlayBlue" />
+          </div>
+          <div className="fixed top-0 left-0 w-full h-screen z-20 flex flex-col md:justify-between items-center">
+              <Link href={`/${locale}`} className="flex justify-center h-[100px] md:h-[125px] z-20" onClick={onClose}>
                   <Image className="object-contain" src={logoWhite} alt="Ivona Pleskonja logo" priority={true} />
               </Link>
-              <div className="flex flex-col justify-between items-center h-full">
+              <div className="flex flex-col justify-between items-center h-full z-20">
                   <div
-                      className="flex flex-col font-roboto-serif font-normal justify-center items-center mt-[120px]">
+                      className="flex flex-col gap-5 font-roboto-serif font-normal justify-center items-center mt-[120px]">
                       {Object.values(MENU_ITEMS_CONFIG).map(
                           (CONFIG) =>
                               <NavMenuItem key={CONFIG.LINK} href={`/${locale}/${CONFIG.LINK}`} label={CONFIG.LABEL[locale.toUpperCase() as keyof typeof CONFIG.LABEL]} hide={CONFIG.HIDE} hovered={hovered} setHovered={setHovered}>
@@ -42,5 +46,6 @@ export const NavMenuExpanded = ({ onClose, locale }: { onClose: () => void, loca
                   </div>
               </div>
           </div>
+      </>
   );
 };

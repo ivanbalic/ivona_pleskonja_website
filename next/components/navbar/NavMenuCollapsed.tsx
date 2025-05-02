@@ -1,5 +1,5 @@
 'use client';
-import React, {useEffect, useState} from "react";
+import React from "react";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -7,7 +7,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { LanguagePicker } from './LanguagePicker';
 // import { SpeakerIcon } from '@/components/icons/SpeakerIcon';
-import { useActiveSlide } from "@/context/ActiveSlideContext";
+import { useSlideConfig } from "@/components/home/useSlideConfig";
 import logoBlue from '@/public/images/navbar/navbar-logo-blue.webp';
 import { BurgerMenuIcon } from "@/components/icons/BurgerMenuIcon";
 import logoWhite from '@/public/images/navbar/navbar-logo-white.webp';
@@ -15,7 +15,6 @@ import logoWhite from '@/public/images/navbar/navbar-logo-white.webp';
 const BRAND_COLOR = '#3769E6';
 
 const NAVBAR_COLORS_MAP = Object.freeze({
-    HOME: 'white',
     WORKS: 'white',
     CONTACT: 'white',
     ABOUT_ME: BRAND_COLOR,
@@ -28,14 +27,9 @@ function getColor(page: string): string {
 }
 
 export const NavMenuCollapsed = ({ hideLogo, onOpen, page, locale }: { hideLogo: boolean, onOpen: () => void, page: string, locale: string }) => {
-    const [color, setColor] = useState(getColor(page));
+    const activeSlideConfig = useSlideConfig();
 
-    const { activeSlide } = useActiveSlide();
-
-    useEffect(() => {
-        const newColor = activeSlide === 0 ? getColor(page) : BRAND_COLOR;
-        setColor(newColor);
-    },[activeSlide, color, page]);
+    const color = page === 'home' ? activeSlideConfig.COLOR : getColor(page);
 
     return (
       <div className="flex justify-between w-full fixed z-10 align-center px-2 md:px-6 lg:px-10 bg-transparent h-[85px] md:h-[125px]">
@@ -47,7 +41,7 @@ export const NavMenuCollapsed = ({ hideLogo, onOpen, page, locale }: { hideLogo:
               <Image className="h-full object-contain" src={color === 'white' ? logoWhite : logoBlue} alt="Ivona Pleskonja logo" priority={true} />
           </Link>}
         </div>
-        <div className="flex flex-1 gap-5 items-center justify-end">
+        <div className="flex flex-1 gap-4 md:gap-5 items-center justify-end">
             {/*<div className="flex items-center cursor-pointer transition duration-200 w-6 md:w-10 max-w-[40px]">*/}
             {/*    <SpeakerIcon color={color} />*/}
             {/*</div>*/}
