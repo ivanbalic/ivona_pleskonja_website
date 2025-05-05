@@ -6,7 +6,7 @@ import { HomePageCoverCarousel } from "@/components/home/HomePageCoverCarousel";
 
 export default function HomePage() {
     return (
-      <div className="relative w-full h-screen">
+      <div className="relative w-full h-dvh">
           <HomePageCoverCarousel/>
           <SignatureLogo />
           <SocialMedias />
