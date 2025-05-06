@@ -11,7 +11,7 @@ export default function ExhibitionDetails({ params: { locale, slug } }: { params
 
     return (
         <div className="pt-[85px] md:pt-[125px] tracking-[.15em]">
-            <SubNavBredCrumbs navItems={exhibition.HISTORY ?? []} locale={locale} page={'exhibition'} subItemClass='max-[480px]:max-w-[250px] truncate' />
+            <SubNavBredCrumbs navItems={exhibition.HISTORY ?? []} locale={locale} page={'exhibition'} />
             <ArticleCover locale={locale} cover={exhibition.COVER} />
             {exhibition.SECTIONS.map((s, key) => {
                 const Component = getSectionComponentByType(s.TYPE);

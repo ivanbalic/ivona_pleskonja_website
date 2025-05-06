@@ -32,17 +32,14 @@ export function CarouselBredCrumbs( { navItems, locale, page }: { navItems: ISub
                             ref={content.ID === page ? activeRef : null}
                             key={content.ID}
                             className={cn(
-                                index ? 'md:border-l md:border-black pl-0' : '',
                                 content.ID === page ? 'font-bold max-md:text-white max-md:bg-primaryBlue' : '',
-                                'px-[10px] py-[5px] max-md:rounded-[30px] hover:underline cursor-pointer text-nowrap',
+                                'px-[5px] py-[5px] max-md:rounded-[30px] hover:underline cursor-pointer text-nowrap',
                             )}>
                             <Link
                                 href={`/${locale}/${content.LINK}`}
-                                className={cn(
-
-                                )}
                             >
                                 {content.TITLE[locale.toUpperCase() as keyof ITranslations]}
+                                {index < navItems.length - 1 ? ' / ' : ''}
                             </Link>
                         </div>
                     )

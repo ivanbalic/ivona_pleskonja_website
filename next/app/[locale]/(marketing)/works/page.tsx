@@ -14,12 +14,12 @@ const getTitle = ( locale: string) => {
 
 export default function MyWorksPage({ params: { locale } }: { params: { locale: string } }) {
     return (
-        <div className='pt-[85px] md:pt-[125px] bg-overlayBlue h-screen'>
-            <Container className="px-[16px] md:px-[135px]">
+        <div className='pt-[85px] md:pt-[125px] pb-10 bg-overlayBlue h-screen overflow-scroll'>
+            <Container className="px-4 md:px-[135px]">
                 <div className="my-10 font-bold text-[36px] leading-[39px] tracking-[.15em] font-roboto-serif">
                     <span>{getTitle(locale)}</span>
                 </div>
-                <div className="flex flex-col gap-6 text-[16px] md:text-[24px] leading-[16px] md:leading-[24px] font-mono tracking-[.15em]">
+                <div className="flex flex-col gap-6 text-[16px] md:text-[24px] leading-[16px] md:leading-[24px] font-mono tracking-[.15em] uppercase">
                     {PAGE_CONTENT.CONTENT.map((item) => {
                         const text = item.TITLE[locale.toUpperCase() as keyof ITranslations].TEXT;
                         const year = item.TITLE[locale.toUpperCase() as keyof ITranslations].YEAR;

@@ -1,5 +1,5 @@
 'use client';
-import React, { useMemo } from 'react';
+import React, {useEffect, useMemo, useState} from 'react';
 
 import { useSearchParams } from 'next/navigation';
 
@@ -12,6 +12,12 @@ import { SubNavBredCrumbs } from '@/components/subnav-bredcrumbs/SubNavBredCrumb
 import { getSubPageContentById } from '@/app/[locale]/(marketing)/works/pageContent';
 
 export default function WorkDetailsPage({ params: { locale, slug } }: { params: { locale: string, slug: string } }) {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        setIsMobile(window.innerWidth < 768);
+    }, []);
+
     const searchParams = useSearchParams();
 
     const page = getSubPageContentById(slug);
@@ -23,11 +29,11 @@ export default function WorkDetailsPage({ params: { locale, slug } }: { params: 
     const gallery = useMemo(() => page?.GALLERY.find((g) => g.ID === parseInt(galleryId || '')), [galleryId, page?.GALLERY]);
 
     if (!page) return null;
-
+    console.log('showGallery && isMobile: ', showGallery && isMobile);
     return (
         <SelectedImageProvider>
-            <Container className={cn('pt-[85px] md:pt-[125px] text-black min-h-screen', showGallery && 'bg-backgroundSecondary max-w-full')}>
-                <SubNavBredCrumbs navItems={page.HISTORY ?? []} locale={locale} page={slug} />
+            <Container className={cn('pt-[85px] md:pt-[125px] px-4 md:px-[135px] text-black min-h-screen', showGallery && 'bg-backgroundSecondary max-w-full')}>
+                <SubNavBredCrumbs compact={showGallery && isMobile} navItems={page.HISTORY ?? []} locale={locale} page={slug} />
                 { showGallery
                     ? <ArtGallery locale={locale} gallery={gallery?.CONTENT} exhibitionId={page.EXHIBITION_ID} />
                     : <MyWorkDetails data={page} locale={locale} />

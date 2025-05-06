@@ -40,6 +40,7 @@ export interface IMyWorks {
 }
 
 type TSrc = {
+    COLOR: string;
     FULL: StaticImageData;
     PREVIEW: StaticImageData;
 };

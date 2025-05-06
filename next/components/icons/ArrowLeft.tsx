@@ -1,11 +1,11 @@
 import * as React from "react";
 
-export const ArrowLeft = ({ color='#3769E6', className, width = '40px', height = '40px' }: { color?: string, className?: string, width?: string, height?: string }) => (
+export const ArrowLeft = ({ color='#3769E6', className, width = '40px', height = '40px', viewBox = "-4.5 0 19 19" }: { color?: string, className?: string, width?: string, height?: string, viewBox?: string }) => (
     <svg
         fill="#000000"
         width={width}
         height={height}
-        viewBox="-4.5 0 19 19"
+        viewBox={viewBox}
         xmlns="http://www.w3.org/2000/svg"
         className={`cf-icon-svg ${className}`}
     >

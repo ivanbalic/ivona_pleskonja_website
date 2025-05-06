@@ -113,8 +113,8 @@ export const SUBPAGE_CONTENT = Object.freeze({
             {
                 ID: 'creating_light',
                 TITLE: {
-                    SER: '„Stvaranje svetla / Nežni smo rođeni“',
-                    ENG: '„Creating Light / We Are Born Gentle“'
+                    SER: 'Stvaranje svetla / Nežni smo rođeni',
+                    ENG: 'Creating Light / We Are Born Gentle'
                 },
                 LINK: 'works/creating_light'
             },
@@ -142,6 +142,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                         {
                             ID: 1,
                             SRC: {
+                                COLOR: '#FFFFFF',
                                 FULL: gabrielAndPanFull,
                                 PREVIEW: gabrielAndPanPreview,
                             },
@@ -169,6 +170,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                         {
                             ID: 2,
                             SRC: {
+                                COLOR: '#FFFFFF',
                                 FULL: IVFull,
                                 PREVIEW: IVPreview,
                             },
@@ -194,6 +196,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                         {
                             ID: 3,
                             SRC: {
+                                COLOR: '#FFFFFF',
                                 FULL: holyDustFull,
                                 PREVIEW: holyDustPreview,
                             },
@@ -219,6 +222,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                         {
                             ID: 4,
                             SRC: {
+                                COLOR: '#FFFFFF',
                                 FULL: creatingLifeFull,
                                 PREVIEW: creatingLifePreview
                             },
@@ -246,6 +250,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                         {
                             ID: 5,
                             SRC: {
+                                COLOR: '#FFFFFF',
                                 FULL: skyOverPanamaFull,
                                 PREVIEW: skyOverPanamaPreview,
                             },
@@ -271,6 +276,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                         {
                             ID: 6,
                             SRC: {
+                                COLOR: '#000000',
                                 FULL: mahavatarBabajiFull,
                                 PREVIEW: mahavatarBabajiPreview,
                             },
@@ -296,6 +302,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                         {
                             ID: 7,
                             SRC: {
+                                COLOR: '#000000',
                                 FULL: creatingAngelFull,
                                 PREVIEW: creatingAngelPreview,
                             },

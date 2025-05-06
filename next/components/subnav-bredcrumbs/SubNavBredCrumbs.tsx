@@ -1,28 +1,49 @@
+'use client';
 import React from "react";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
+import { ArrowLeft } from "@/components/icons/ArrowLeft";
 import { ISubNavItem, ITranslations } from "@/types/types";
 
-export function SubNavBredCrumbs( { navItems, locale, page, subItemClass = '' }: { navItems: ISubNavItem[], locale: string, page: string, subItemClass?: string }) {
+export function SubNavBredCrumbs( { navItems, locale, page, compact = false }: { navItems: ISubNavItem[], locale: string, page: string, compact?: boolean }) {
+    const items = !compact
+        ? navItems
+        : navItems.slice(navItems.length - 1, navItems.length)
 
     return (
         <div
             className={cn(
-                'flex justify-center items-center gap-2 md:gap-3 lg:gap-5 mt-5 px-2 md:px-3 lg:px-5',
-                'font-helvetica font-light text-black text-xs sm:text-sm lg:text-[16px] lg:leading-[19.4px] tracking-[.15em]'
+                'flex mt-5 flex-wrap',
+                compact ? 'justify-start font-normal' : 'justify-center font-light',
+                'font-helvetica text-black text-[16px] leading-[16px] tracking-[.15em]'
             )}>
-            {navItems.map(
+            {compact &&
+                <Link href={`/${locale}/${items?.[0]?.LINK}`}>
+                    <ArrowLeft viewBox="-8 -3 24 24" color="#000000" width="24px" height="24px" />
+                </Link>
+            }
+            {items.map(
                 (content, index) => (
-                    <div key={content.ID} className={cn(index ? 'border-l border-black pl-2 md:pl-3 lg:pl-5' : '', subItemClass)}>
+                    <div key={content.ID} className={
+                        cn(
+                            compact ? 'text-wrap' : 'text-nowrap',
+                            content.ID === page && !compact ? 'font-bold' : '',
+                            'px-[5px] max-md:rounded-[30px] hover:underline cursor-pointer',
+                        )
+                    }>
                         <Link
+                            className='flex flex-col'
                             href={`/${locale}/${content.LINK}`}
-                            className={cn(
-                                'hover:underline cursor-pointer',
-                                content.ID === page ? 'font-bold' : '',
-                            )}
                         >
-                            {content.TITLE[locale.toUpperCase() as keyof ITranslations]}
+                            {!compact
+                                ? content.TITLE[locale.toUpperCase() as keyof ITranslations]
+                                : content.TITLE[locale.toUpperCase() as keyof ITranslations]
+                                    .split('/')
+                                    .map((t, i, array) =>
+                                        <span key={t}>{`${t}`}</span>)
+                            }
+                            {index < items.length - 1 ? ' / ' : ''}
                         </Link>
                     </div>
                 )

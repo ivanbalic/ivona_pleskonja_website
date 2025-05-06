@@ -1,50 +1,18 @@
-import React, {useCallback, useEffect, useMemo, useState} from "react";
+import { useEffect } from "react";
 
 import Link from "next/link";
 import Image from "next/image";
-import {AnimatePresence, motion} from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
-import {cn} from "@/lib/utils";
-import {Container} from "@/components/container";
-import {IGalleryRowItem, ITranslations} from "@/types/types";
-import {LeftArrow} from "@/components/art-gallery/LeftArrow";
-import {RightArrow} from "@/components/art-gallery/RightArrow";
-import {useSelectedImage} from "@/context/SelectedImageContext";
+import { cn } from "@/lib/utils";
+import { Container } from "@/components/container";
+import { IGalleryRowItem, ITranslations } from "@/types/types";
+import { LeftArrow } from "@/components/art-gallery/LeftArrow";
+import { RightArrow } from "@/components/art-gallery/RightArrow";
+import { useGalleryNavigation } from "@/components/art-gallery/hooks/useGalleryNavigation";
 
 export function DesktopGallery({ locale, gallery, exhibitionId }: { locale: string, gallery?: IGalleryRowItem[][], exhibitionId: number }) {
-    const [selected, setSelected] = useState<IGalleryRowItem | null>(null);
-
-    const { selectedImageIdRef, selectedGalleryIdRef, onImageSelect } = useSelectedImage();
-
-    const lastImageId = useMemo(function getLastImageIndex() {
-        return (gallery?.flat() ?? []).length;
-    }, [gallery]);
-
-    const onPrev = useCallback(function onPrevClick() {
-        let prev = gallery?.flat()[(selectedImageIdRef.current ?? 0) - 2];
-
-        let count = 1;
-        while (!prev || prev.ID === null) {
-            prev = gallery?.flat()[lastImageId - count];
-            count++;
-        }
-
-        onImageSelect(selectedGalleryIdRef.current, prev?.ID ?? 0);
-    }, [gallery, selectedImageIdRef, onImageSelect, selectedGalleryIdRef, lastImageId]);
-
-    const onNext = useCallback(function onNextClick() {
-        let nextIndex = selectedImageIdRef.current ?? 0;
-
-        if(nextIndex === lastImageId) nextIndex = 0;
-
-        let next = gallery?.flat()[(nextIndex ?? 0)];
-
-        if (!next || next.ID === null) {
-            next = gallery?.flat()[0] as IGalleryRowItem;
-        }
-
-        onImageSelect(selectedGalleryIdRef.current, next.ID);
-    }, [selectedImageIdRef, lastImageId, gallery, onImageSelect, selectedGalleryIdRef]);
+    const { selectedImageIdRef, onPrev, onNext, selected } = useGalleryNavigation(gallery);
 
     const onArrowNavigation = (event: KeyboardEvent) => {
         const { key } = event;
@@ -61,14 +29,6 @@ export function DesktopGallery({ locale, gallery, exhibitionId }: { locale: stri
         };
     }, []);
 
-    useEffect(function onSelectedImageChange(){
-        const selectedImage = gallery?.flat().find((item) => item.ID === selectedImageIdRef.current);
-
-        if(!selectedImage) return;
-
-        setSelected(selectedImage);
-    }, [selectedImageIdRef.current, selectedGalleryIdRef.current]);
-
     const articleLinkLabel = locale === 'ser' ? 'ODVEDI ME NA IZLOŽBU' : 'TAKE ME TO EXIBITION';
 
     if(!selected) return null;
@@ -76,7 +36,7 @@ export function DesktopGallery({ locale, gallery, exhibitionId }: { locale: stri
     return (
         <Container
             className={cn(
-                "max-lg:hidden",
+                "max-md:hidden",
                 "h-full mt-10 pb-10 relative",
                 "flex flex-col lg:flex-row gap-5 lg:gap-10 xl:gap-[72px]",
                 "px-[20px] sm:px-[30px] md:px-[45px] lg:px-[60px] xl:px-[72px]"
