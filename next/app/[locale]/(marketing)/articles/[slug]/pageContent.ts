@@ -45,8 +45,8 @@ export const PAGE_CONTENT = Object.freeze({
             {
                 ID: 'creating_light',
                 TITLE: {
-                    SER: '„Stvaranje svetla – Nežni smo rođeni“',
-                    ENG: '„Creating Light - We Are Born Gentle“'
+                    SER: 'Stvaranje svetla / Nežni smo rođeni',
+                    ENG: 'Creating Light / We Are Born Gentle'
                 },
                 LINK: 'works/creating_light'
             },

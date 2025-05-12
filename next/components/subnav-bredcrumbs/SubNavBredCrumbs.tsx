@@ -9,7 +9,7 @@ import { ISubNavItem, ITranslations } from "@/types/types";
 export function SubNavBredCrumbs( { navItems, locale, page, compact = false }: { navItems: ISubNavItem[], locale: string, page: string, compact?: boolean }) {
     const items = !compact
         ? navItems
-        : navItems.slice(navItems.length - 1, navItems.length)
+        : navItems.slice(navItems.length - 1, navItems.length);
 
     return (
         <div
@@ -28,12 +28,17 @@ export function SubNavBredCrumbs( { navItems, locale, page, compact = false }: {
                     <div key={content.ID} className={
                         cn(
                             compact ? 'text-wrap' : 'text-nowrap',
+                            page === 'articles' ? 'text-white' : 'text-black',
                             content.ID === page && !compact ? 'font-bold' : '',
                             'px-[5px] max-md:rounded-[30px] hover:underline cursor-pointer',
+                            index === items.length - 1 && !compact ? 'max-md:basis-full' : '',
                         )
                     }>
                         <Link
-                            className='flex flex-col'
+                            className={cn(
+                                compact ? '' : 'items-center',
+                                "flex flex-col justify-center",
+                            )}
                             href={`/${locale}/${content.LINK}`}
                         >
                             {!compact
