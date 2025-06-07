@@ -5,8 +5,9 @@ export function ArticleQuote({ locale, section }: { locale: string, section: Rec
     return (
         <div className="flex flex-1">
             <p style={{ margin: section.CENTERED ? "0 auto" : undefined, textAlign: section.CENTERED ? "center" : "left"  }} className={cn(
+                "text-[16px] md:text-[26px] leading-[100%]",
+                "max-md:border-primaryBlue max-md:border-l max-md:pl-4",
                 "italic text-primaryBlue tracking-[.05em] mt-auto w-fit",
-                "text-[18px] sm:text-[22px] md:text-[26px] leading-[23.15px] sm:leading-[27.15px] md:leading-[31.15px]"
             )}>
                 {section?.TEXT[locale.toUpperCase() as keyof ITranslations]}
             </p>

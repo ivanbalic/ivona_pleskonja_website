@@ -5,34 +5,56 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { cn } from "@/lib/utils";
+import {useIsMobile} from "@/hooks/useIsMobile";
 import { LanguagePicker } from './LanguagePicker';
 // import { SpeakerIcon } from '@/components/icons/SpeakerIcon';
 import { useSlideConfig } from "@/components/home/useSlideConfig";
-import logoBlue from '@/public/images/navbar/navbar-logo-blue.webp';
 import { BurgerMenuIcon } from "@/components/icons/BurgerMenuIcon";
+import logoBlue from '@/public/images/navbar/navbar-logo-blue.webp';
 import logoWhite from '@/public/images/navbar/navbar-logo-white.webp';
 
 const BRAND_COLOR = '#3769E6';
 
 const NAVBAR_COLORS_MAP = Object.freeze({
-    WORKS: 'white',
-    CONTACT: 'white',
-    ABOUT_ME: BRAND_COLOR,
-    ARTICLES: BRAND_COLOR,
-    WORK_DETAILS: BRAND_COLOR
+    WORKS: {
+        DESKTOP:  'white',
+        MOBILE:  'white',
+    },
+    CONTACT: {
+        DESKTOP:  'white',
+        MOBILE:  'white',
+    },
+    ABOUT_ME: {
+        DESKTOP:  BRAND_COLOR,
+        MOBILE:  BRAND_COLOR,
+    },
+    ARTICLES: {
+        DESKTOP:  BRAND_COLOR,
+        MOBILE:  'white',
+    },
+    WORK_DETAILS: {
+        DESKTOP:  BRAND_COLOR,
+        MOBILE:  BRAND_COLOR,
+    },
 });
 
-function getColor(page: string): string {
-    return NAVBAR_COLORS_MAP[page.toUpperCase() as keyof typeof NAVBAR_COLORS_MAP];
+function getColor(page: string, isMobile: boolean): string {
+    return NAVBAR_COLORS_MAP[page.toUpperCase() as keyof typeof NAVBAR_COLORS_MAP]?.[isMobile ? 'MOBILE' : 'DESKTOP'];
 }
 
 export const NavMenuCollapsed = ({ hideLogo, onOpen, page, locale }: { hideLogo: boolean, onOpen: () => void, page: string, locale: string }) => {
+    const isMobile = useIsMobile();
     const activeSlideConfig = useSlideConfig();
 
-    const color = page === 'home' ? activeSlideConfig.COLOR : getColor(page);
+    const color = page === 'home' ? activeSlideConfig.COLOR : getColor(page, isMobile);
+    const bgColor = page === 'articles' && isMobile ? 'bg-articleBgBlue' : 'bg-transparent';
 
     return (
-      <div className="flex justify-between w-full fixed z-10 align-center px-2 md:px-6 lg:px-10 bg-transparent h-[85px] md:h-[125px]">
+      <div className={cn(
+          bgColor,
+          "flex justify-between w-full",
+          "fixed z-10 align-center px-2 md:px-6 lg:px-10 h-[85px] md:h-[125px]"
+      )}>
         <div className="invisible flex-1" />
         <div className={cn(
             "flex flex-1 justify-center h-[85px] md:h-[125px]",

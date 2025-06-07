@@ -3,20 +3,23 @@ import React from "react";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
+import { useIsMobile } from "@/hooks/useIsMobile";
 import { ArrowLeft } from "@/components/icons/ArrowLeft";
 import { ISubNavItem, ITranslations } from "@/types/types";
 
-export function SubNavBredCrumbs( { navItems, locale, page, compact = false }: { navItems: ISubNavItem[], locale: string, page: string, compact?: boolean }) {
+export function SubNavBredCrumbs({ navItems, locale, page, compact = false }: { navItems: ISubNavItem[], locale: string, page: string, compact?: boolean }) {
+    const isMobile = useIsMobile();
     const items = !compact
         ? navItems
         : navItems.slice(navItems.length - 1, navItems.length);
-
+    console.log('page: ', page);
     return (
         <div
             className={cn(
-                'flex mt-5 flex-wrap',
-                compact ? 'justify-start font-normal' : 'justify-center font-light',
-                'font-helvetica text-black text-[16px] leading-[16px] tracking-[.15em]'
+                'flex pt-5 mx-4 flex-wrap',
+                compact ? 'font-normal' : 'font-light',
+                'font-helvetica text-black text-[16px] leading-[20px] tracking-[.15em]',
+                compact || (page === 'exhibition' && isMobile) ? 'justify-start' : 'justify-center',
             )}>
             {compact &&
                 <Link href={`/${locale}/${items?.[0]?.LINK}`}>
@@ -27,17 +30,17 @@ export function SubNavBredCrumbs( { navItems, locale, page, compact = false }: {
                 (content, index) => (
                     <div key={content.ID} className={
                         cn(
-                            compact ? 'text-wrap' : 'text-nowrap',
-                            page === 'articles' ? 'text-white' : 'text-black',
                             content.ID === page && !compact ? 'font-bold' : '',
+                            compact || page === 'exhibition' ? 'text-wrap' : 'text-nowrap',
                             'px-[5px] max-md:rounded-[30px] hover:underline cursor-pointer',
-                            index === items.length - 1 && !compact ? 'max-md:basis-full' : '',
+                            page === 'exhibition' ? 'max-md:text-white text-black' : 'text-black',
+                            index === items.length - 1 && !compact && page !== 'exhibition' ? 'max-md:basis-full' : '',
                         )
                     }>
                         <Link
                             className={cn(
                                 compact ? '' : 'items-center',
-                                "flex flex-col justify-center",
+                                'flex flex-col justify-center',
                             )}
                             href={`/${locale}/${content.LINK}`}
                         >

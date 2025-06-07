@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from'next/image';
 
 import { cn } from '@/lib/utils';
+import { useIsMobile } from "@/hooks/useIsMobile";
 import { Container } from '@/components/container';
 import { IArticleCover, ITranslations } from '@/types/types';
 
@@ -13,6 +14,7 @@ function calculateOffset(height: number) {
 }
 
 export function ArticleCover({ cover, locale }: { cover?: IArticleCover, locale: string }) {
+    const isMobile = useIsMobile();
     const [coverImageOffset, setCoverImageOffset] = useState<number | null>(0);
     const coverRef = useRef<HTMLImageElement | null>(null);
 
@@ -43,10 +45,15 @@ export function ArticleCover({ cover, locale }: { cover?: IArticleCover, locale:
         <div className="bg-articleBgBlue">
             <Container containerStyle={{paddingBottom: `${coverImageOffset || ((cover.IMAGE.MAX_HEIGHT ?? 0) / 2)}px`, marginBottom: `${coverImageOffset || ((cover.IMAGE.MAX_HEIGHT ?? 0) / 2)}px`}} className="mt-5 sm:mt-10 pt-5 sm:pt-10">
                 <Container className={cn(
-                    'pb-5 sm:pb-10',
-                    'flex flex-col gap-4 text-center',
+                    'pb-5 sm:pb-10 mx-4',
+                    'flex flex-col gap-4',
+                    'text-left md:text-center',
                     'px-[5px] sm:px-[30px] md:px-[65px] lg:px-[100px] xl:px-[135px]'
                 )}>
+                    <div className={cn(
+                        'max-md:text-externalLink mb-4',
+                        'text-[32px] md:text-[33px] leading-[100%] font-roboto-serif font-bold'
+                    )}>{cover?.TITLE[locale.toUpperCase() as keyof ITranslations]}</div>
                     <div className={cn(
                         "font-roboto-serif font-bold tracking-[.15em]",
                         "text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px]",
@@ -54,10 +61,10 @@ export function ArticleCover({ cover, locale }: { cover?: IArticleCover, locale:
                     )}>
                         {cover?.TEXT[locale.toUpperCase() as keyof ITranslations]}
                     </div>
-                    <div className="flex flex-col gap-2 font-helvetica text-[16px] leading-[19.5px]">
-                        <div className="font-medium">{cover.YEAR}</div>
+                    <div className="flex flex-row md:flex-col gap-2 font-helvetica text-[16px] leading-[10px] md:leading-[19.5px] tracking-[.05em] max-md:text-externalLink">
+                        <div className="font-normal md:font-medium max-md:border-r border-externalLink max-md:pr-2">{cover.YEAR}</div>
                         <div
-                            className="font-bold">{cover.AUTHOR[locale.toUpperCase() as keyof ITranslations]}</div>
+                            className="font-normal md:font-bold">{cover.AUTHOR[locale.toUpperCase() as keyof ITranslations]}</div>
                     </div>
                 </Container>
                 <Container className="absolute md:px-10">
@@ -68,7 +75,7 @@ export function ArticleCover({ cover, locale }: { cover?: IArticleCover, locale:
                         ref={coverRef} src={cover.IMAGE.SRC ?? ''}
                         alt={cover.IMAGE.ALT ?? ''} className={cn('min-h-[150px] object-cover', `max-h-[${cover?.IMAGE.MAX_HEIGHT}px]`)}
                     />
-                    {cover?.EXTERNAL_LINK.URL &&
+                    {cover?.EXTERNAL_LINK.URL && !isMobile &&
                         <Link className={cn(
                             'absolute top-[0] left-[calc(100%-80px)]',
                             'md:top-[calc(50%-10px)] md:left-[calc(100%-110px)]',

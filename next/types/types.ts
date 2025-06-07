@@ -71,6 +71,7 @@ export interface IGalleryRowItem {
 }
 
 export interface IArticleCover {
+    TITLE: ITranslations;
     AUTHOR: ITranslations,
     YEAR: number,
     TEXT: ITranslations,

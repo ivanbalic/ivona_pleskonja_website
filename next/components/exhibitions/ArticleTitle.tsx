@@ -7,12 +7,12 @@ export function ArticleTitle({ section, locale = 'ser' }: { section?: { TYPE: 't
 
     return (
         <Container className={cn(
-            'pt-10',
+            'pt-5 md:pt-10',
             'flex flex-col gap-5',
-            'px-5 sm:px-[30px] md:px-[60px] lg:px-[100px] xl:px-[135px]',
-            'text-black max-sm:text-center font-helvetica tracking-[.05em]',
+            'px-4 md:px-[135px]',
+            'text-black font-helvetica tracking-[.05em]',
         )}>
-            <div className="text-primaryBlue text-[16px] leading-[19.5px] font-bold uppercase">
+            <div className="text-primaryBlue text-[16px] leading-[100%] font-bold uppercase">
                 {section.TEXT[locale.toUpperCase() as keyof ITranslations]}
             </div>
         </Container>

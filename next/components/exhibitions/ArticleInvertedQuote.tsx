@@ -15,14 +15,14 @@ export function ArticleInvertedQuote({ locale, section, containerWidth = 1 }: {
 
     return (
         <div className={cn(
+            'p-4 md:p-[95px]',
             'font-helvetica italic max-xl:text-center w-full',
-            'p-7 sm:p-10 md:p-[70px] lg:p-[80px] xl:p-[95px]',
+            'text-[16px] md:text-[26px] leading-[100%] tracking-[.05em]',
             'flex flex-col gap-10 bg-articleBgBlue items-center justify-center',
-            'text-[20px] sm:text-[24px] md:text-[28px] leading-[25.5px] sm:leading-[29.5px] md:leading-[33.5px] tracking-[.05em]',
             getPercentWidth(section?.WIDTH, containerWidth) ?  `xl:w-[${getPercentWidth(section?.WIDTH, containerWidth)}%]` : 'xl:w-full',
             section.CLASS
         )}>
-            <p dangerouslySetInnerHTML={{ __html: section.TEXT[locale.toUpperCase() as keyof ITranslations] }}></p>
+            <p className='max-md:text-left max-md:border-white max-md:border-l max-md:pl-4' dangerouslySetInnerHTML={{ __html: section.TEXT[locale.toUpperCase() as keyof ITranslations] }}></p>
         </div>
     );
 }

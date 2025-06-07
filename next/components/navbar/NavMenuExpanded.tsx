@@ -31,11 +31,11 @@ export const NavMenuExpanded = ({ onClose, locale }: { onClose: () => void, loca
               </Link>
               <div className="flex flex-col justify-between items-center h-full z-20">
                   <div
-                      className="flex flex-col gap-5 font-roboto-serif font-normal justify-center items-center mt-[120px]">
+                      className="flex flex-col font-roboto-serif font-normal justify-center items-center mt-[120px]">
                       {Object.values(MENU_ITEMS_CONFIG).map(
                           (CONFIG) =>
                               <NavMenuItem key={CONFIG.LINK} href={`/${locale}/${CONFIG.LINK}`} label={CONFIG.LABEL[locale.toUpperCase() as keyof typeof CONFIG.LABEL]} hide={CONFIG.HIDE} hovered={hovered} setHovered={setHovered}>
-                              <span onClick={onClose} className="text-[36px] leading-[42px] lg:text-[64px] lg:leading-[104px] tracking-[.15em]">
+                              <span onClick={onClose} className="text-[36px] leading-[62px] lg:text-[64px] lg:leading-[124px] tracking-[.15em]">
                                   {CONFIG.LABEL[locale.toUpperCase() as keyof typeof CONFIG.LABEL]}
                               </span>
                               </NavMenuItem>

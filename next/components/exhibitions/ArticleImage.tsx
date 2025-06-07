@@ -10,7 +10,7 @@ export function ArticleImage({ section, containerWidth }: { section?: { ALT: str
     const [percentWidthClass, setPercentWidthClass] = useState<string>('');
 
     useEffect(function setImageWidthClass(){
-        setPercentWidthClass(`xl:w-[${getPercentWidth(section?.WIDTH, containerWidth)}%]`);
+        setPercentWidthClass(`w-[${getPercentWidth(section?.WIDTH, containerWidth)}%]`);
     }, [containerWidth, section?.WIDTH]);
 
     useEffect(function setMaxImageHeight() {
@@ -23,8 +23,7 @@ export function ArticleImage({ section, containerWidth }: { section?: { ALT: str
 
     return (
         <div className={cn(
-            "w-full",
-            percentWidthClass ? percentWidthClass : 'xl:w-[100%]',
+            percentWidthClass ? percentWidthClass : 'md:w-[100%]',
         )}>
             <Image
                 placeholder='blur'

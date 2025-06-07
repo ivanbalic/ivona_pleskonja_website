@@ -11,7 +11,7 @@ export function ArticleImageGrid({ locale, section }: {
     if (!section) return null;
 
     return (
-        <Container className="flex flex-col pt-10">
+        <Container className="flex flex-col pt-5 md:pt-10">
             {section.CONTENT.map((row: Record<string, any>[], rowKey: number) =>
                 <div key={`${section.TYPE}_${rowKey}`} className="flex flex-col lg:flex-row">
                     {row.map((col: Record<string, any>, colKey: number)  => {
