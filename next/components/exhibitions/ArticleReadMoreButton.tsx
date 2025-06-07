@@ -37,7 +37,7 @@ export function ArticleReadMoreButton({ locale, section }: { locale: string, sec
                 {expanded
                     ? (
                         section.CONTENT.map((row: Record<string, any>[], rowKey: number) =>
-                            <div key={`${section.TYPE}_${rowKey}`} className="flex flex-col gap-5 flex-1">
+                            <div key={`${section.TYPE}_${rowKey}`} className="flex flex-col flex-1">
                                 {row.map((col: Record<string, any>, columnKey) => {
                                     const Component = getSectionComponentByType(col.TYPE);
                                     // @ts-ignore
