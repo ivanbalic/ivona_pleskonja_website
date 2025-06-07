@@ -13,7 +13,7 @@ export function ArticleTextGrid({ locale = 'ser', section }: {locale: string, se
         )}>
             <div className={cn(
                 'text-[16px] leading-[100%]',
-                'flex flex-col sm:flex-row gap-5 md:gap-[90px]',
+                'flex flex-col md:flex-row gap-5 md:gap-[90px]',
             )}>
                 {section.CONTENT.map((row: Record<string, any>[], rowKey: number) =>
                     <div key={`${section.TYPE}_${rowKey}`} className="flex flex-col gap-5 flex-1">

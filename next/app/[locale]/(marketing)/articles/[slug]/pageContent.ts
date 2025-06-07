@@ -5,6 +5,10 @@ import exhibitionCreatingOfLight2 from '@/public/images/creating-light/exhibitio
 import exhibitionCreatingOfLight3 from '@/public/images/creating-light/exhibition-creating-of-light-3.webp';
 import exhibitionCreatingOfLight4 from '@/public/images/creating-light/exhibition-creating-of-light-4.webp';
 import exhibitionCreatingOfLight5 from '@/public/images/creating-light/exhibition-creating-of-light-5.webp';
+import exhibitionCreatingOfLight6 from '@/public/images/creating-light/exhibition-creating-of-light-6.webp';
+import exhibitionCreatingOfLight7 from '@/public/images/creating-light/exhibition-creating-of-light-7.webp';
+import exhibitionCreatingOfLight8 from '@/public/images/creating-light/exhibition-creating-of-light-8.webp';
+import exhibitionCreatingOfLight9 from '@/public/images/creating-light/exhibition-creating-of-light-9.webp';
 // 11 SNAGA
 import exhibition11Snaga1 from '@/public/images/11-snaga/exhibition-11-snaga-1.webp';
 import exhibition11Snaga2 from '@/public/images/11-snaga/exhibition-11-snaga-2.webp';
@@ -135,13 +139,13 @@ export const PAGE_CONTENT = Object.freeze({
                         [
                             {
                                 TYPE: 'image',
-                                WIDTH: 189,
+                                WIDTH: 48,
                                 ALT: 'exhibition-view',
                                 SRC: exhibitionCreatingOfLight1,
                             },
                             {
                                 TYPE: 'image',
-                                WIDTH: 189,
+                                WIDTH: 48,
                                 ALT: 'exhibition-view',
                                 SRC: exhibitionCreatingOfLight5,
                             },
@@ -170,125 +174,182 @@ export const PAGE_CONTENT = Object.freeze({
                     ],
                 },
                 {
-                    TYPE: 'text_grid',
-                    CONTENT: [
-                        [
-                            {
-                                TYPE: 'text',
-                                TEXT:{
-                                    SER: 'Buđenjem polnog nagona i stvaranjem polova ugasila se svetlost koju su nosili ljudi, tada se svetlost sklonila sa planete Zemlje, a na nebu su se pojavili Sunce i Mesec. Ivona nas vraća korak nazad donoseći svetlost na Zemlju rađanjem savršenog, univerzalnog stvorenja.',
-                                    ENG: 'With the awakening of the sexual drive and the creation of the sexes, the light that people carried within was extinguished. It disappeared from the planer Earth, and the Sun and the Moon appeared in the sky. Ivona takes us a step back by invoking the light back to the Earth through creation of a perfect, universal creature.'
-                                }
-                            },
-                            {
-                                TYPE: 'text',
-                                TEXT: {
-                                    SER: 'Blještava svetlost koja se probija kroz ova bića ne bi se pokazala u svojoj snazi da nema dubine, tame, introspektivnog povlačenja. Ivona je slikarka buđenja; svi anđeli koji izranjaju iz tame doživljavaju rast, duhovnu spoznaju i susret sa vlastitim sopstvom koji je krajnja realnost. Fenomen mistične svetlosti jedan je od punktova gde umetnica posebno usmerava svoje interesovanje i ostvaruje još jedan vid komunikacije na neverbalnom, duhovnom nivou kroz profanu umetnost utemeljenu na ličnoj spiritualnosti.',
-                                    ENG: 'The dazzling light that shines through these beings would not be visible in all its power without the depth, the darkness and the introspective withdrawal. Ivona is a painter of awakening All angels who emerge from the darkness experience growth, spiritual realization and an encounter with their own self which is an ultimate reality. The phenomenon of a mystical light is of the artist\'s particular interest. She achieves another form of communication on a non - verbal, spiritual level through profane art based on personal spirituality',
-                                }
-                            },
-                            {
-                                TYPE: 'text',
-                                TEXT: {
-                                    SER: 'Mirča Elijade, Mefistofeles i Androgin, prevod Slavica Miletić, (Beograd: Gradac, 1996), 29.',
-                                    ENG: 'Mirča Elijade, Mefistofeles i Androgin, translation Slavica Miletić, (Belgrade: Gradac, 1996), 29.',
-                                }
-                            },
-                        ],
-                        [
-                            {
-                                TYPE: 'text',
-                                TEXT: {
-                                    SER: '“Rađanje svetla” se dogodilo nakon „Dece Sunca”. Bitno je napomenuti da su „Deca Sunca” Ivonin utopistički osvrt na bolji svet, koji dobija nakon predviđanja brojnih kataklizmi koje neposredno prethode prosperitetu i novoj eri. Ovo se fenomenološki može poistovetiti sa brojnim mitovima duhovnim uverenjima.',
-                                    ENG: 'The series of paintings, the "Birth of Light" was painted after the "Children of the Sun" series. It is important to note that "Children of the Sun" series represents Ivona\'s utopian vision of a better world, which comes after the prediction of numerous cataclysms that immediately precede prosperity and a new era. This can be phenomenologically identified with numerous myths and spiritual beliefs.',
-                                },
-                            },
-                            {
-                                TYPE: 'quote',
-                                TEXT: {
-                                    SER: '“Prema jednoj tradiciji (...) pošto je svet uništen u njemu su ostala samo sjajna bića (...) ona su imala eterična tela i letela su kroz vazduh zračeći sopstvenu svetlost i živela su beskonačno dugo”.2',
-                                    ENG: '“According to one legend (...) since the world was destroyed, only lustrous beings remained in it (...) they had ethereal bodies and flew through the air radiating their own light and they lived eternally”.2',
-                                },
-                            }
-                        ]
-                    ]
-                },
-                {
                     TYPE: 'image_grid',
                     CONTENT: [
                         [
                             {
                                 TYPE: 'image',
-                                WIDTH: 511,
-                                MAX_HEIGHT: 448,
                                 ALT: 'exhibition-view-medium',
                                 SRC: exhibitionCreatingOfLight3,
                             },
-                            {
-                                TYPE: 'image',
-                                WIDTH: 929,
-                                MAX_HEIGHT: 448,
-                                ALT: 'exhibition-view-medium',
-                                SRC: exhibitionCreatingOfLight4,
-                            }
                         ]
                     ]
                 },
                 {
-                    TYPE: 'text_grid',
+                    TYPE: 'read_more',
                     CONTENT: [
                         [
                             {
-                                TYPE: 'text',
-                                TEXT: {
-                                    SER: 'Ivonini radovi nisu klasični portreti, oni su kompleksne studije duše koju možete da čujete i osetite, a čija telesnost traži proučavanje i posvećenost. Umetnica se samo oslanja na ikoničko predstavljanje koje svojim gabaritom pruža snagu i mir. Njena bića u sebi nose kosmičku ljubav.',
-                                    ENG: 'Ivona\'s works are not typical portraits. They are complex studies of a soul that one can hear and feel, and whose physicality demands study and dedication. The artist relies only on an iconic representation that provides strength and peace with its dimensions. Her beings carry cosmic love within them.',
-                                }
+                                TYPE: 'image_grid',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'inverted_quote',
+                                            TEXT: {
+                                                SER: '“Prema nekim mitovima i Kosmos i Prvobitni čovek nastali su iz Svetlosti dakle u osnovi kao Svetlost. Jedna druga tradicija objašnjava kako se odigrao preobražaj Čoveka - Svetlosti u ljude kakvi postoje na Zemlji. U početku su ljudi bili bespolni i nisu imali polnih želja; oni su u sebi imali Svetlost i zračili su. Sunce i Mesec nisu postojali”.¹',
+                                                ENG: '“According to some myths, both the Universe and the Primordial Human were created from Light, therefore basically they are Light themselves. Another tradition explains how a transformation of Light People into ordinary people, as they exist on Earth, took place. In the beginning, people were sexless and had no sexual desires,they had the Light in them and they radiated. The sun and the moon did not exist”.¹',
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'image',
+                                            ALT: 'exhibition-view-medium',
+                                            SRC: exhibitionCreatingOfLight6,
+                                        },
+                                    ]
+                                ]
                             },
                             {
-                                TYPE: 'text',
-                                TEXT: {
-                                    SER: 'U jednom od svojih romana koji ujedno predstavlja jedno od najznačajnijih književnih dela koje obraduje temu androginije Balzak predstavlja to savršeno, uzvišeno biće - alegoriju serafimske ljubavi, koje je osamljeno, melanholično, erudita i u koje se zaljubljuju i muškarac i žena jer ono predstavlja savršeno, „potpuno stvorenje”. U pesmi „Reči Stalkera”, Tarkovski ističe - slabost je velika stvar, a sila je ništavna.',
-                                    ENG: 'In one of his novels, which is at the same time one of the most significant literary works dealing with the theme of androgyny, Balzac presents a perfect, sublime being an allegory of seraphim\'s love. It is solitary, melancholic, erudite, and both men and women fall in love with it because it represents a perfect, "complete creature." In the poem "Words of Stalker", Tarkovsky indicates that weakness is a good thing, while strength is nothing.',
-                                }
+                                TYPE: 'text_grid',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            TEXT:{
+                                                SER: 'Buđenjem polnog nagona i stvaranjem polova ugasila se svetlost koju su nosili ljudi, tada se svetlost sklonila sa planete Zemlje, a na nebu su se pojavili Sunce i Mesec. Ivona nas vraća korak nazad donoseći svetlost na Zemlju rađanjem savršenog, univerzalnog stvorenja.',
+                                                ENG: 'With the awakening of the sexual drive and the creation of the sexes, the light that people carried within was extinguished. It disappeared from the planer Earth, and the Sun and the Moon appeared in the sky. Ivona takes us a step back by invoking the light back to the Earth through creation of a perfect, universal creature.'
+                                            }
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Blještava svetlost koja se probija kroz ova bića ne bi se pokazala u svojoj snazi da nema dubine, tame, introspektivnog povlačenja. Ivona je slikarka buđenja; svi anđeli koji izranjaju iz tame doživljavaju rast, duhovnu spoznaju i susret sa vlastitim sopstvom koji je krajnja realnost. Fenomen mistične svetlosti jedan je od punktova gde umetnica posebno usmerava svoje interesovanje i ostvaruje još jedan vid komunikacije na neverbalnom, duhovnom nivou kroz profanu umetnost utemeljenu na ličnoj spiritualnosti.',
+                                                ENG: 'The dazzling light that shines through these beings would not be visible in all its power without the depth, the darkness and the introspective withdrawal. Ivona is a painter of awakening All angels who emerge from the darkness experience growth, spiritual realization and an encounter with their own self which is an ultimate reality. The phenomenon of a mystical light is of the artist\'s particular interest. She achieves another form of communication on a non - verbal, spiritual level through profane art based on personal spirituality',
+                                            }
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Mirča Elijade, Mefistofeles i Androgin, prevod Slavica Miletić, (Beograd: Gradac, 1996), 29.',
+                                                ENG: 'Mirča Elijade, Mefistofeles i Androgin, translation Slavica Miletić, (Belgrade: Gradac, 1996), 29.',
+                                            }
+                                        },
+                                    ]
+                                ]
                             },
-                        ],
-                        [
                             {
-                                TYPE: 'quote',
-                                TEXT: {
-                                    SER: '„Kada se čovek rodi on je slab i lomljiv, a kada umire, jak je i čvrst. Kada drvo raste nežno je i savitljivo ali kada je suvo i tvrdo tada umire. Tvrdoća i snaga su saputnici smrti. Ranjivost i nejakost su izraz svežine postojanja. Jer, nešto što je očvrsnulo nikada neće pobediti”.',
-                                    ENG: '„When a man is just born, he is weak and flexible. When he dies, he is hard and insensitive. When a tree is growing, it\'s tender and pliant. But when it\'s dry and hard, it dies. Hardness and strength are death\'s companions. Pliancy and weakness are expressions of the freshness of being. Because what has hardened will never win”. 21',
-                                }
+                                TYPE: 'image_grid',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'image',
+                                            ALT: 'exhibition-view-medium',
+                                            SRC: exhibitionCreatingOfLight7,
+                                        },
+                                    ]
+                                ]
+                            },
+                            {
+                                TYPE: 'text_grid',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: '“Rađanje svetla” se dogodilo nakon „Dece Sunca”. Bitno je napomenuti da su „Deca Sunca” Ivonin utopistički osvrt na bolji svet, koji dobija nakon predviđanja brojnih kataklizmi koje neposredno prethode prosperitetu i novoj eri. Ovo se fenomenološki može poistovetiti sa brojnim mitovima duhovnim uverenjima.',
+                                                ENG: 'The series of paintings, the "Birth of Light" was painted after the "Children of the Sun" series. It is important to note that "Children of the Sun" series represents Ivona\'s utopian vision of a better world, which comes after the prediction of numerous cataclysms that immediately precede prosperity and a new era. This can be phenomenologically identified with numerous myths and spiritual beliefs.',
+                                            },
+                                        },
+                                    ],
+                                ]
+                            },
+                            {
+                                TYPE: 'image_grid',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'inverted_quote',
+                                            TEXT: {
+                                                SER: '“Prema jednoj tradiciji (...) pošto je svet uništen u njemu su ostala samo sjajna bića (...) ona su imala eterična tela i letela su kroz vazduh zračeći sopstvenu svetlost i živela su beskonačno dugo”.2',
+                                                ENG: '“According to one legend (...) since the world was destroyed, only lustrous beings remained in it (...) they had ethereal bodies and flew through the air radiating their own light and they lived eternally”.2',
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'image',
+                                            ALT: 'exhibition-view-medium',
+                                            SRC: exhibitionCreatingOfLight8,
+                                        },
+                                    ]
+                                ]
+                            },
+                            {
+                                TYPE: 'text_grid',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Ivonini radovi nisu klasični portreti, oni su kompleksne studije duše koju možete da čujete i osetite, a čija telesnost traži proučavanje i posvećenost. Umetnica se samo oslanja na ikoničko predstavljanje koje svojim gabaritom pruža snagu i mir. Njena bića u sebi nose kosmičku ljubav.',
+                                                ENG: 'Ivona\'s works are not typical portraits. They are complex studies of a soul that one can hear and feel, and whose physicality demands study and dedication. The artist relies only on an iconic representation that provides strength and peace with its dimensions. Her beings carry cosmic love within them.',
+                                            }
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'U jednom od svojih romana koji ujedno predstavlja jedno od najznačajnijih književnih dela koje obraduje temu androginije Balzak predstavlja to savršeno, uzvišeno biće - alegoriju serafimske ljubavi, koje je osamljeno, melanholično, erudita i u koje se zaljubljuju i muškarac i žena jer ono predstavlja savršeno, „potpuno stvorenje”. U pesmi „Reči Stalkera”, Tarkovski ističe - slabost je velika stvar, a sila je ništavna.',
+                                                ENG: 'In one of his novels, which is at the same time one of the most significant literary works dealing with the theme of androgyny, Balzac presents a perfect, sublime being an allegory of seraphim\'s love. It is solitary, melancholic, erudite, and both men and women fall in love with it because it represents a perfect, "complete creature." In the poem "Words of Stalker", Tarkovsky indicates that weakness is a good thing, while strength is nothing.',
+                                            }
+                                        },
+                                        {
+                                            TYPE: 'quote',
+                                            TEXT: {
+                                                SER: '„Kada se čovek rodi on je slab i lomljiv, a kada umire, jak je i čvrst. Kada drvo raste nežno je i savitljivo ali kada je suvo i tvrdo tada umire. Tvrdoća i snaga su saputnici smrti. Ranjivost i nejakost su izraz svežine postojanja. Jer, nešto što je očvrsnulo nikada neće pobediti”.',
+                                                ENG: '„When a man is just born, he is weak and flexible. When he dies, he is hard and insensitive. When a tree is growing, it\'s tender and pliant. But when it\'s dry and hard, it dies. Hardness and strength are death\'s companions. Pliancy and weakness are expressions of the freshness of being. Because what has hardened will never win”. 21',
+                                            }
+                                        }
+                                    ]
+                                ]
+                            },
+                            {
+                                TYPE: 'image_grid',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'image',
+                                            ALT: 'exhibition-view-medium',
+                                            SRC: exhibitionCreatingOfLight9,
+                                        },
+                                    ]
+                                ]
+                            },
+                            {
+                                TYPE: 'inverted_text_grid',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Ova divovska stvorenja personifikuju svežinu postojanja i čistotu i ranjivost novorođenog. Ona su nejaka, na njima nema tragova očvrslosti, okoštalosti ili grubosti koju čini vreme i iskustvo. Ivona predstavlja šest celina. Teži da nas vrati na početak i pokaže tu nežnost iz koje smo izronili u svet koji nas je promenio. Ona skida sve oklope koje je čovek stvorio kako bi se zaštitio i opstao. Pokazuje suštinu, a to je ljubav i nežnost koja je u korenu svakog od nas.',
+                                                ENG: 'These giant creatures personify the freshness of existence and the purity and vulnerability of a time newborn. They are frail, there are no traces of hardness, ossification or roughness caused by t and experience. Ivona has six segments on display. She seeks to bring us back to the beginning and to show the tenderness from which we have emerged into the world-which has changed us subsequently. She takes off all the armor that a human being has created in order to protect itself and survive. She shows the essence the love and',
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Kroz svoj antropološko- filantropski pristup ona običnom čoveku daje snagu božanko- nebeskog stvorenja, predstavljajući ga kao te inicijalne tvorevine koje u sebi poseduju oba pola, emociju i razum. Vizuelizovanjem duhovnog i bukvalnog buđenja života, ona sugeriše na snagu nežnosti čije posedovanje stvara svetlost potpunog bića.',
+                                                ENG: 'tenderness that are at the core of each of us. Through her anthropological and philanthropic approach, she gives ordinary human beings the strength of divine, heavenly creatures, presenting them as primordial creations that possess both sexes, emotion and reason. By visualizing the spiritual and the literal awakening of life, the artist implies the power of tenderness required to bring forth the light of a complete being',
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: '* Mirča Elijade, Mefistofeles i Androgin, prevod Slavica Miletić, (Beograd: Gradac, 1996), 21.',
+                                                ENG: '* Mirča Elijade, Mefistofeles i Androgin, translation Slavica Miletić, (Belgrade: Gradac, 1996), 21.',
+                                            },
+                                        },
+                                    ]
+                                ],
+                                CLASS_NAME: 'mt-0',
                             }
-                        ]
-                    ]
-                },
-                {
-                    TYPE: 'inverted_text_grid',
-                    CONTENT: [
-                        [
-                            {
-                                TYPE: 'text',
-                                TEXT: {
-                                    SER: 'Ova divovska stvorenja personifikuju svežinu postojanja i čistotu i ranjivost novorođenog. Ona su nejaka, na njima nema tragova očvrslosti, okoštalosti ili grubosti koju čini vreme i iskustvo. Ivona predstavlja šest celina. Teži da nas vrati na početak i pokaže tu nežnost iz koje smo izronili u svet koji nas je promenio. Ona skida sve oklope koje je čovek stvorio kako bi se zaštitio i opstao. Pokazuje suštinu, a to je ljubav i nežnost koja je u korenu svakog od nas.',
-                                    ENG: 'These giant creatures personify the freshness of existence and the purity and vulnerability of a time newborn. They are frail, there are no traces of hardness, ossification or roughness caused by t and experience. Ivona has six segments on display. She seeks to bring us back to the beginning and to show the tenderness from which we have emerged into the world-which has changed us subsequently. She takes off all the armor that a human being has created in order to protect itself and survive. She shows the essence the love and',
-                                },
-                            },
-                            {
-                                TYPE: 'text',
-                                TEXT: {
-                                    SER: 'Kroz svoj antropološko- filantropski pristup ona običnom čoveku daje snagu božanko- nebeskog stvorenja, predstavljajući ga kao te inicijalne tvorevine koje u sebi poseduju oba pola, emociju i razum. Vizuelizovanjem duhovnog i bukvalnog buđenja života, ona sugeriše na snagu nežnosti čije posedovanje stvara svetlost potpunog bića.',
-                                    ENG: 'tenderness that are at the core of each of us. Through her anthropological and philanthropic approach, she gives ordinary human beings the strength of divine, heavenly creatures, presenting them as primordial creations that possess both sexes, emotion and reason. By visualizing the spiritual and the literal awakening of life, the artist implies the power of tenderness required to bring forth the light of a complete being',
-                                },
-                            },
-                            {
-                                TYPE: 'text',
-                                TEXT: {
-                                    SER: '* Mirča Elijade, Mefistofeles i Androgin, prevod Slavica Miletić, (Beograd: Gradac, 1996), 21.',
-                                    ENG: '* Mirča Elijade, Mefistofeles i Androgin, translation Slavica Miletić, (Belgrade: Gradac, 1996), 21.',
-                                },
-                            },
                         ]
                     ]
                 }
@@ -344,7 +405,7 @@ export const PAGE_CONTENT = Object.freeze({
                         [
                             {
                                 TYPE: 'inverted_quote',
-                                WIDTH: 808,
+                                WIDTH: 59,
                                 TEXT: {
                                     SER: '“Prema nekim mitovima i Kosmos i Prvobitni čovek nastali su iz Svetlosti dakle u osnovi kao Svetlost. Jedna druga tradicija objašnjava kako se odigrao preobražaj Čoveka - Svetlosti u ljude kakvi postoje na Zemlji. U početku su ljudi bili bespolni i nisu imali polnih želja; oni su u sebi imali Svetlost i zračili su. Sunce i Mesec nisu postojali”.¹',
                                     ENG: '“According to some myths, both the Universe and the Primordial Human were created from Light, therefore basically they are Light themselves. Another tradition explains how a transformation of Light People into ordinary people, as they exist on Earth, took place. In the beginning, people were sexless and had no sexual desires,they had the Light in them and they radiated. The sun and the moon did not exist”.¹',
@@ -352,7 +413,7 @@ export const PAGE_CONTENT = Object.freeze({
                             },
                             {
                                 TYPE: 'image',
-                                WIDTH: 552,
+                                WIDTH: 41,
                                 ALT: 'exhibition-view',
                                 SRC: exhibitionCreatingOfLight1,
                             },
@@ -416,14 +477,14 @@ export const PAGE_CONTENT = Object.freeze({
                         [
                             {
                                 TYPE: 'image',
-                                WIDTH: 511,
+                                WIDTH: 35,
                                 MAX_HEIGHT: 448,
                                 ALT: 'exhibition-view-medium',
                                 SRC: exhibitionCreatingOfLight3,
                             },
                             {
                                 TYPE: 'image',
-                                WIDTH: 929,
+                                WIDTH: 65,
                                 MAX_HEIGHT: 448,
                                 ALT: 'exhibition-view-medium',
                                 SRC: exhibitionCreatingOfLight4,

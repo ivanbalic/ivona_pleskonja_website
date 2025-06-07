@@ -5,6 +5,7 @@ import { ArticleQuote } from "@/components/exhibitions/ArticleQuote";
 import { ArticleTextGrid } from "@/components/exhibitions/ArticleTextGrid";
 import { ArticleImageGrid } from "@/components/exhibitions/ArticleImageGrid";
 import { ArticleInvertedQuote } from "@/components/exhibitions/ArticleInvertedQuote";
+import {ArticleReadMoreButton} from "@/components/exhibitions/ArticleReadMoreButton";
 import { ArticleInvertedTextGrid } from "@/components/exhibitions/ArticleInvertedTextGrid";
 import { ArticleCarousel } from "@/components/exhibitions/article-carousel/ArticleCarousel";
 import { ArticleContainedImageGrid } from "@/components/exhibitions/ArticleContainedImageGrid";
@@ -17,6 +18,7 @@ const SECTION_COMPONENT_MAP = Object.freeze({
     CAROUSEL: ArticleCarousel,
     TEXT_GRID: ArticleTextGrid,
     IMAGE_GRID: ArticleImageGrid,
+    READ_MORE: ArticleReadMoreButton,
     INVERTED_QUOTE: ArticleInvertedQuote,
     INVERTED_TEXT_GRID: ArticleInvertedTextGrid,
     CONTAINED_IMAGE_GRID: ArticleContainedImageGrid,

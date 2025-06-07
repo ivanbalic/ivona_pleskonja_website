@@ -15,10 +15,11 @@ export function ArticleContainedImageGrid({ locale, section }: {
     useEffect(() => {
         let width = MAX_CONTAINED_GRID_WIDTH;
 
-        if(window.innerWidth < 1360) width = window.innerWidth;
+        if(window.innerWidth < MAX_CONTAINED_GRID_WIDTH) width = window.innerWidth;
 
         setContainerWidth(width);
     },[]);
+
     if (!section) return null;
 
     return (

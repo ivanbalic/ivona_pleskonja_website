@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 
 import Image from 'next/image';
 
@@ -8,9 +8,9 @@ import { cn, getPercentWidth } from "@/lib/utils";
 export function ArticleImage({ section, containerWidth }: { section?: { ALT: string, SRC: string, TYPE: 'image', WIDTH?: number, MAX_HEIGHT?: number }, containerWidth?: number }) {
     const [maxHeightClass, setMaxHeightClass] = useState<string>('');
     const [percentWidthClass, setPercentWidthClass] = useState<string>('');
-
+    console.log(`PERCENTAGE OF ${section?.WIDTH}: `, getPercentWidth(section?.WIDTH, containerWidth));
     useEffect(function setImageWidthClass(){
-        setPercentWidthClass(`w-[${getPercentWidth(section?.WIDTH, containerWidth)}%]`);
+        setPercentWidthClass(`w-[${section?.WIDTH}%]`);
     }, [containerWidth, section?.WIDTH]);
 
     useEffect(function setMaxImageHeight() {
@@ -22,16 +22,17 @@ export function ArticleImage({ section, containerWidth }: { section?: { ALT: str
     if (!section) return null;
 
     return (
-        <div className={cn(
-            percentWidthClass ? percentWidthClass : 'md:w-[100%]',
+        <div key={percentWidthClass} className={cn(
+            getPercentWidth(section?.WIDTH, containerWidth) ? percentWidthClass : 'w-full',
         )}>
             <Image
                 placeholder='blur'
+                src={section.SRC ?? ''}
                 alt={section.ALT ?? ''}
                 className={cn(
-                    maxHeightClass,
                     'h-full object-cover',
-                )} src={section.SRC ?? ''}
+                    section?.MAX_HEIGHT ? maxHeightClass : '',
+                )}
             />
         </div>
     );

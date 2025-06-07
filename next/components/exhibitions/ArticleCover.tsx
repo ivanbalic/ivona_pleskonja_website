@@ -43,25 +43,24 @@ export function ArticleCover({ cover, locale }: { cover?: IArticleCover, locale:
 
     return (
         <div className="bg-articleBgBlue">
-            <Container containerStyle={{paddingBottom: `${coverImageOffset || ((cover.IMAGE.MAX_HEIGHT ?? 0) / 2)}px`, marginBottom: `${coverImageOffset || ((cover.IMAGE.MAX_HEIGHT ?? 0) / 2)}px`}} className="mt-5 sm:mt-10 pt-5 sm:pt-10">
+            <Container containerStyle={{paddingBottom: `${coverImageOffset || ((cover.IMAGE.MAX_HEIGHT ?? 0) / 2)}px`, marginBottom: `${coverImageOffset || ((cover.IMAGE.MAX_HEIGHT ?? 0) / 2)}px`}} className="mt-10 md:pt-10">
                 <Container className={cn(
-                    'pb-5 sm:pb-10 mx-4',
+                    'pb-5 md:pb-10',
                     'flex flex-col gap-4',
+                    'px-4 md:px-[135px]',
                     'text-left md:text-center',
-                    'px-[5px] sm:px-[30px] md:px-[65px] lg:px-[100px] xl:px-[135px]'
                 )}>
                     <div className={cn(
                         'max-md:text-externalLink mb-4',
                         'text-[32px] md:text-[33px] leading-[100%] font-roboto-serif font-bold'
                     )}>{cover?.TITLE[locale.toUpperCase() as keyof ITranslations]}</div>
                     <div className={cn(
-                        "font-roboto-serif font-bold tracking-[.15em]",
-                        "text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px]",
-                        "leading-[25px] sm:leading-[29px] md:leading-[33px] lg:leading-[37px]"
+                        "text-[20px] md:text-[32px]",
+                        "font-roboto-serif font-bold leading-[100%] tracking-[.15em]",
                     )}>
                         {cover?.TEXT[locale.toUpperCase() as keyof ITranslations]}
                     </div>
-                    <div className="flex flex-row md:flex-col gap-2 font-helvetica text-[16px] leading-[10px] md:leading-[19.5px] tracking-[.05em] max-md:text-externalLink">
+                    <div className="flex flex-row md:flex-col gap-2 font-helvetica text-[16px] leading-[10px] md:leading-[100%] tracking-[.05em] md:tracking-[.15em] max-md:text-externalLink">
                         <div className="font-normal md:font-medium max-md:border-r border-externalLink max-md:pr-2">{cover.YEAR}</div>
                         <div
                             className="font-normal md:font-bold">{cover.AUTHOR[locale.toUpperCase() as keyof ITranslations]}</div>
