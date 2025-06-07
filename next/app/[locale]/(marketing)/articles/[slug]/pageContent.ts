@@ -19,13 +19,15 @@ import exhibition11Snaga5 from '@/public/images/11-snaga/exhibition-11-snaga-5.w
 import muralLife1 from '@/public/images/mural-life/mural-life-1.webp';
 import muralLife2 from '@/public/images/mural-life/mural-life-2.webp';
 import muralLife3 from '@/public/images/mural-life/mural-life-3.webp';
-import muralLifeSlide1 from '@/public/images/mural-life/mural-life-carousel-1.webp';
-import muralLifeSlide2 from '@/public/images/mural-life/mural-life-carousel-2.webp';
-import muralLifeSlide3 from '@/public/images/mural-life/mural-life-carousel-3.webp';
-import muralLifeSlide4 from '@/public/images/mural-life/mural-life-carousel-4.webp';
-import muralLifeSlide5 from '@/public/images/mural-life/mural-life-carousel-5.webp';
-import muralLifeSlide6 from '@/public/images/mural-life/mural-life-carousel-6.webp';
-import muralLifeSlide7 from '@/public/images/mural-life/mural-life-carousel-7.webp';
+import muralLifeSlide1 from '@/public/images/mural-life/mural-life-slide-1.webp';
+import muralLifeSlide2 from '@/public/images/mural-life/mural-life-slide-2.webp';
+import muralLifeSlide3 from '@/public/images/mural-life/mural-life-slide-3.webp';
+import muralLifeSlide4 from '@/public/images/mural-life/mural-life-slide-4.webp';
+import muralLifeSlide5 from '@/public/images/mural-life/mural-life-slide-5.webp';
+import muralLifeSlide6 from '@/public/images/mural-life/mural-life-slide-6.webp';
+import muralLifeSlide7 from '@/public/images/mural-life/mural-life-slide-7.webp';
+import muralLifeSlide8 from '@/public/images/mural-life/mural-life-slide-8.webp';
+import muralLifeSlide9 from '@/public/images/mural-life/mural-life-slide-9.webp';
 
 export const PAGE_CONTENT = Object.freeze({
     CREATING_LIFE: {
@@ -1041,7 +1043,48 @@ export const PAGE_CONTENT = Object.freeze({
                     ]
                 },
                 {
-                    TYPE: 'contained_image_grid',
+                    TYPE: 'carousel',
+                    SLIDES: [
+                        {
+                            SRC: muralLifeSlide1,
+                            ALT: 'mural-life-slide-1',
+                        },
+                        {
+                            SRC: muralLifeSlide2,
+                            ALT: 'mural-life-slide-2',
+                        },
+                        {
+                            SRC: muralLifeSlide3,
+                            ALT: 'mural-life-slide-3',
+                        },
+                        {
+                            SRC: muralLifeSlide4,
+                            ALT: 'mural-life-slide-4',
+                        },
+                        {
+                            SRC: muralLifeSlide5,
+                            ALT: 'mural-life-slide-5',
+                        },
+                        {
+                            SRC: muralLifeSlide6,
+                            ALT: 'mural-life-slide-6',
+                        },
+                        {
+                            SRC: muralLifeSlide7,
+                            ALT: 'mural-life-slide-7',
+                        },
+                        {
+                            SRC: muralLifeSlide8,
+                            ALT: 'mural-life-slide-8',
+                        },
+                        {
+                            SRC: muralLifeSlide9,
+                            ALT: 'mural-life-slide-9',
+                        },
+                    ]
+                },
+                {
+                    TYPE: 'image_grid',
                     CONTENT: [
                         [
                             {
@@ -1083,6 +1126,32 @@ export const PAGE_CONTENT = Object.freeze({
                         ],
                         [
                             {
+                                TYPE: 'text_grid',
+                                CLASS_NAME: 'pb-10',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'quote',
+                                            CENTERED: true,
+                                            TEXT: {
+                                                SER: 'MURAL LIFE, 7 x 30 m, fasadna boja na zidu, 2021.',
+                                                ENG: 'MURAL LIFE, 7 x 30 m, facade paint on the wall, 2021.',
+                                            }
+                                        },
+                                        {
+                                            TYPE: 'quote',
+                                            CENTERED: true,
+                                            TEXT: {
+                                                SER: 'Skyline, Sarajevska ulica, Beograd',
+                                                ENG: 'Skyline, Sarajevska Street, Belgrade',
+                                            }
+                                        },
+                                    ]
+                                ]
+                            },
+                        ],
+                        [
+                            {
                                 TYPE: 'image',
                                 MAX_HEIGHT: 561,
                                 ALT: 'exhibition-view-wide',
@@ -1102,7 +1171,7 @@ export const PAGE_CONTENT = Object.freeze({
                             {
                                 TYPE: 'inverted_quote',
                                 WIDTH: 351,
-                                CLASS: "right-[0px] md:right-[40px] bottom-[10px] block text-[16px] sm:text-[16px] md:text-[16px] min-[500px]:text-left w-full min-[500px]:w-fit p-[30px_40px] sm:p-[30px_40px] md:p-[30px_40px] lg:p-[30px_40px] xl:p-[30px_40px] min-[500px]:absolute",
+                                CLASS: "right-[0px] bottom-[0px] block text-[16px] sm:text-[16px] md:text-[16px] min-[500px]:text-left w-full min-[500px]:w-fit p-[30px_40px] sm:p-[30px_40px] md:p-[30px_40px] lg:p-[30px_40px] xl:p-[30px_40px] min-[500px]:absolute",
                                 TEXT: {
                                     SER: "Posenba zahvalnost:  <br/>" +
                                         "<br/>" +
@@ -1119,62 +1188,6 @@ export const PAGE_CONTENT = Object.freeze({
                         ]
                     ]
                 },
-                {
-                    TYPE: 'text_grid',
-                    CONTENT: [
-                        [
-                            {
-                                TYPE: 'quote',
-                                CENTERED: true,
-                                TEXT: {
-                                    SER: 'MURAL LIFE, 7 x 30 m, fasadna boja na zidu, 2021.',
-                                    ENG: 'MURAL LIFE, 7 x 30 m, facade paint on the wall, 2021.',
-                                }
-                            },
-                            {
-                                TYPE: 'quote',
-                                CENTERED: true,
-                                TEXT: {
-                                    SER: 'Skyline, Sarajevska ulica, Beograd',
-                                    ENG: 'Skyline, Sarajevska Street, Belgrade',
-                                }
-                            },
-                        ]
-                    ]
-                },
-                {
-                    TYPE: 'carousel',
-                    SLIDES: [
-                        {
-                            SRC: muralLifeSlide1,
-                            ALT: 'mural-life-slide-1',
-                        },
-                        {
-                            SRC: muralLifeSlide2,
-                            ALT: 'mural-life-slide-2',
-                        },
-                        {
-                            SRC: muralLifeSlide3,
-                            ALT: 'mural-life-slide-3',
-                        },
-                        {
-                            SRC: muralLifeSlide4,
-                            ALT: 'mural-life-slide-4',
-                        },
-                        {
-                            SRC: muralLifeSlide5,
-                            ALT: 'mural-life-slide-5',
-                        },
-                        {
-                            SRC: muralLifeSlide6,
-                            ALT: 'mural-life-slide-6',
-                        },
-                        {
-                            SRC: muralLifeSlide7,
-                            ALT: 'mural-life-slide-7',
-                        },
-                    ]
-                }
             ],
             DESKTOP: [
                 {
@@ -1208,7 +1221,48 @@ export const PAGE_CONTENT = Object.freeze({
                     ]
                 },
                 {
-                    TYPE: 'contained_image_grid',
+                    TYPE: 'carousel',
+                    SLIDES: [
+                        {
+                            SRC: muralLifeSlide1,
+                            ALT: 'mural-life-slide-1',
+                        },
+                        {
+                            SRC: muralLifeSlide2,
+                            ALT: 'mural-life-slide-2',
+                        },
+                        {
+                            SRC: muralLifeSlide3,
+                            ALT: 'mural-life-slide-3',
+                        },
+                        {
+                            SRC: muralLifeSlide4,
+                            ALT: 'mural-life-slide-4',
+                        },
+                        {
+                            SRC: muralLifeSlide5,
+                            ALT: 'mural-life-slide-5',
+                        },
+                        {
+                            SRC: muralLifeSlide6,
+                            ALT: 'mural-life-slide-6',
+                        },
+                        {
+                            SRC: muralLifeSlide7,
+                            ALT: 'mural-life-slide-7',
+                        },
+                        {
+                            SRC: muralLifeSlide8,
+                            ALT: 'mural-life-slide-8',
+                        },
+                        {
+                            SRC: muralLifeSlide9,
+                            ALT: 'mural-life-slide-9',
+                        },
+                    ]
+                },
+                {
+                    TYPE: 'image_grid',
                     CONTENT: [
                         [
                             {
@@ -1250,6 +1304,32 @@ export const PAGE_CONTENT = Object.freeze({
                         ],
                         [
                             {
+                                TYPE: 'text_grid',
+                                CLASS_NAME: 'pb-10',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'quote',
+                                            CENTERED: true,
+                                            TEXT: {
+                                                SER: 'MURAL LIFE, 7 x 30 m, fasadna boja na zidu, 2021.',
+                                                ENG: 'MURAL LIFE, 7 x 30 m, facade paint on the wall, 2021.',
+                                            }
+                                        },
+                                        {
+                                            TYPE: 'quote',
+                                            CENTERED: true,
+                                            TEXT: {
+                                                SER: 'Skyline, Sarajevska ulica, Beograd',
+                                                ENG: 'Skyline, Sarajevska Street, Belgrade',
+                                            }
+                                        },
+                                    ]
+                                ]
+                            },
+                        ],
+                        [
+                            {
                                 TYPE: 'image',
                                 MAX_HEIGHT: 561,
                                 ALT: 'exhibition-view-wide',
@@ -1269,7 +1349,7 @@ export const PAGE_CONTENT = Object.freeze({
                             {
                                 TYPE: 'inverted_quote',
                                 WIDTH: 351,
-                                CLASS: "right-[0px] md:right-[40px] bottom-[10px] block text-[16px] sm:text-[16px] md:text-[16px] min-[500px]:text-left w-full min-[500px]:w-fit p-[30px_40px] sm:p-[30px_40px] md:p-[30px_40px] lg:p-[30px_40px] xl:p-[30px_40px] min-[500px]:absolute",
+                                CLASS: "right-[0px] bottom-[0px] block text-[16px] sm:text-[16px] md:text-[16px] min-[500px]:text-left w-full min-[500px]:w-fit p-[30px_40px] sm:p-[30px_40px] md:p-[30px_40px] lg:p-[30px_40px] xl:p-[30px_40px] min-[500px]:absolute",
                                 TEXT: {
                                     SER: "Posenba zahvalnost:  <br/>" +
                                         "<br/>" +
@@ -1286,62 +1366,6 @@ export const PAGE_CONTENT = Object.freeze({
                         ]
                     ]
                 },
-                {
-                    TYPE: 'text_grid',
-                    CONTENT: [
-                        [
-                            {
-                                TYPE: 'quote',
-                                CENTERED: true,
-                                TEXT: {
-                                    SER: 'MURAL LIFE, 7 x 30 m, fasadna boja na zidu, 2021.',
-                                    ENG: 'MURAL LIFE, 7 x 30 m, facade paint on the wall, 2021.',
-                                }
-                            },
-                            {
-                                TYPE: 'quote',
-                                CENTERED: true,
-                                TEXT: {
-                                    SER: 'Skyline, Sarajevska ulica, Beograd',
-                                    ENG: 'Skyline, Sarajevska Street, Belgrade',
-                                }
-                            },
-                        ]
-                    ]
-                },
-                {
-                    TYPE: 'carousel',
-                    SLIDES: [
-                        {
-                            SRC: muralLifeSlide1,
-                            ALT: 'mural-life-slide-1',
-                        },
-                        {
-                            SRC: muralLifeSlide2,
-                            ALT: 'mural-life-slide-2',
-                        },
-                        {
-                            SRC: muralLifeSlide3,
-                            ALT: 'mural-life-slide-3',
-                        },
-                        {
-                            SRC: muralLifeSlide4,
-                            ALT: 'mural-life-slide-4',
-                        },
-                        {
-                            SRC: muralLifeSlide5,
-                            ALT: 'mural-life-slide-5',
-                        },
-                        {
-                            SRC: muralLifeSlide6,
-                            ALT: 'mural-life-slide-6',
-                        },
-                        {
-                            SRC: muralLifeSlide7,
-                            ALT: 'mural-life-slide-7',
-                        },
-                    ]
-                }
             ],
         }
     },

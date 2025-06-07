@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { Container } from "@/components/container";
 import { getSectionComponentByType } from "@/components/exhibitions/sectionComponentMap";
 
-export function ArticleTextGrid({ locale = 'ser', section }: {locale: string, section: { TYPE: 'text_grid', CONTENT: Record<string, any>[][]}}) {
+export function ArticleTextGrid({ locale = 'ser', section }: {locale: string, section: { TYPE: 'text_grid', CLASS_NAME: string, CONTENT: Record<string, any>[][]}}) {
 
     return (
         <Container className={cn(
@@ -10,6 +10,8 @@ export function ArticleTextGrid({ locale = 'ser', section }: {locale: string, se
             'flex flex-col gap-5',
             'px-4 md:px-[135px]',
             'text-black font-helvetica tracking-[.05em]',
+            section.CLASS_NAME
+
         )}>
             <div className={cn(
                 'text-[16px] leading-[100%]',
