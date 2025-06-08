@@ -19,6 +19,8 @@ import exhibition11Snaga5 from '@/public/images/11-snaga/exhibition-11-snaga-5.w
 import muralLife1 from '@/public/images/mural-life/mural-life-1.webp';
 import muralLife2 from '@/public/images/mural-life/mural-life-2.webp';
 import muralLife3 from '@/public/images/mural-life/mural-life-3.webp';
+import muralLife4 from '@/public/images/mural-life/mural-life-4.webp';
+import muralLife5 from '@/public/images/mural-life/mural-life-5.webp';
 import muralLifeSlide1 from '@/public/images/mural-life/mural-life-slide-1.webp';
 import muralLifeSlide2 from '@/public/images/mural-life/mural-life-slide-2.webp';
 import muralLifeSlide3 from '@/public/images/mural-life/mural-life-slide-3.webp';
@@ -967,21 +969,13 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: 'works'
             },
             {
-                ID: 'mural-life',
+                ID: 'exhibition',
                 TITLE: {
                     SER: 'Mural, Life',
                     ENG: 'Mural, Life'
                 },
                 LINK: 'articles/3'
             },
-            {
-                ID: 'exhibition',
-                TITLE: {
-                    SER: 'O izložbi',
-                    ENG: 'About Exhibition',
-                },
-                LINK: 'articles/3'
-            }
         ],
         COVER: {
             TITLE: {
@@ -1031,15 +1025,6 @@ export const PAGE_CONTENT = Object.freeze({
                                 },
                             }
                         ],
-                        [
-                            {
-                                TYPE: 'quote',
-                                TEXT: {
-                                    SER: 'Svi smo jednaki i svi smo jedna porodica. Ova monumentalna slika je moj doprinos našem jedinstvu na planeti Zemlji i životu.',
-                                    ENG: 'We are all equal and we are all one family. This monumental painting is my contribution to our unity on this planet Earth and to this life.',
-                                }
-                            }
-                        ]
                     ]
                 },
                 {
@@ -1084,63 +1069,159 @@ export const PAGE_CONTENT = Object.freeze({
                     ]
                 },
                 {
+                    TYPE: 'text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'quote',
+                                TEXT: {
+                                    SER: 'Svi smo jednaki i svi smo jedna porodica. Ova monumentalna slika je moj doprinos našem jedinstvu na planeti Zemlji i životu.',
+                                    ENG: 'We are all equal and we are all one family. This monumental painting is my contribution to our unity on this planet Earth and to this life.',
+                                }
+                            }
+                        ]
+                    ]
+                },
+                {
                     TYPE: 'image_grid',
                     CONTENT: [
                         [
                             {
-                                TYPE: 'inverted_quote',
-                                WIDTH: 522,
-                                TEXT: {
-                                    SER: "Asistenti slikari:  <br/>" +
-                                        "<br />" +
-                                        "Bojan Dimić <br/>" +
-                                        "Relja Banović  <br/>" +
-                                        "David Radonjić  <br/>" +
-                                        "Leonora Ćormarković  <br/>" +
-                                        "Ananije Bešović  <br/>" +
-                                        "Jovan Ivanov  <br/>" +
-                                        "Milica Ljubić  <br/>" +
-                                        "Sofija Vujić  <br/>" +
-                                        "Marija Solujić  <br/>" +
-                                        "Ljubica Jovanović",
-                                    ENG: "Assistant painters:  <br/>" +
-                                        "<br />" +
-                                        "Bojan Dimić <br/>" +
-                                        "Relja Banović  <br/>" +
-                                        "David Radonjić  <br/>" +
-                                        "Leonora Ćormarković  <br/>" +
-                                        "Ananije Bešović  <br/>" +
-                                        "Jovan Ivanov  <br/>" +
-                                        "Milica Ljubić  <br/>" +
-                                        "Sofija Vujić  <br/>" +
-                                        "Marija Solujić  <br/>" +
-                                        "Ljubica Jovanović",
-                                },
-                            },
-                            {
                                 TYPE: 'image',
-                                WIDTH: 838,
+                                WIDTH: 100,
                                 ALT: 'exhibition-view',
                                 SRC: muralLife2,
+                            },
+                            {
+                                TYPE: 'inverted_text_grid',
+                                CLASS_NAME: 'overflow-hidden w-full flex flex-row justify-between text-[16px] leading-[100%] tracking-[.15em] font-light italic -mt-0 max-md:pr-0',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'w-[192px]',
+                                            TEXT: {
+                                                SER: "Asistenti slikari:",
+                                                ENG: "Assistant painters:"
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'w-[192px]',
+                                            TEXT: {
+                                                SER: "Bojan Dimić",
+                                                ENG: "Bojan Dimić",
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'w-[192px] -mt-[18px]',
+                                            TEXT: {
+                                                SER: "Relja Banović",
+                                                ENG: "Relja Banović",
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'w-[192px] -mt-[18px]',
+                                            TEXT: {
+                                                SER: "David Radonjić",
+                                                ENG: "David Radonjić",
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'w-[192px] -mt-[18px]',
+                                            TEXT: {
+                                                SER: "Leonora Ćormarković",
+                                                ENG: "Leonora Ćormarković",
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'w-[192px] -mt-[18px]',
+                                            TEXT: {
+                                                SER: "Ananije Bešović",
+                                                ENG: "Ananije Bešović",
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'w-[192px] -mt-[18px]',
+                                            TEXT: {
+                                                SER: "Jovan Ivanov",
+                                                ENG: "Jovan Ivanov",
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'w-[192px] -mt-[18px]',
+                                            TEXT: {
+                                                SER: "Milica Ljubić",
+                                                ENG: "Milica Ljubić",
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'w-[192px] -mt-[18px]',
+                                            TEXT: {
+                                                SER: "Sofija Vujić",
+                                                ENG: "Sofija Vujić",
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'w-[192px] -mt-[18px]',
+                                            TEXT: {
+                                                SER: "Marija Solujić",
+                                                ENG: "Marija Solujić",
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'w-[192px] -mt-[18px]',
+                                            TEXT: {
+                                                SER: "Ljubica Jovanović",
+                                                ENG: "Ljubica Jovanović",
+                                            },
+                                        },
+                                    ],
+                                    [
+                                        {
+                                            TYPE: 'image',
+                                            CLASS_NAME: 'relative max-sm:w-[246px] max-sm:h-[180px]',
+                                            ALT: 'exhibition-view',
+                                            SRC: muralLife4,
+                                        },
+                                    ]
+                                ]
+                            }
+                        ],
+                        [
+                            {
+                                TYPE: 'image',
+                                MAX_HEIGHT: 561,
+                                ALT: 'exhibition-view-wide',
+                                SRC: muralLife3,
                             },
                         ],
                         [
                             {
                                 TYPE: 'text_grid',
-                                CLASS_NAME: 'pb-10',
+                                CLASS_NAME: 'pb-5',
                                 CONTENT: [
                                     [
                                         {
-                                            TYPE: 'quote',
-                                            CENTERED: true,
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'text-primaryBlue',
                                             TEXT: {
                                                 SER: 'MURAL LIFE, 7 x 30 m, fasadna boja na zidu, 2021.',
                                                 ENG: 'MURAL LIFE, 7 x 30 m, facade paint on the wall, 2021.',
                                             }
                                         },
                                         {
-                                            TYPE: 'quote',
-                                            CENTERED: true,
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'text-primaryBlue -mt-5',
                                             TEXT: {
                                                 SER: 'Skyline, Sarajevska ulica, Beograd',
                                                 ENG: 'Skyline, Sarajevska Street, Belgrade',
@@ -1150,44 +1231,53 @@ export const PAGE_CONTENT = Object.freeze({
                                 ]
                             },
                         ],
-                        [
-                            {
-                                TYPE: 'image',
-                                MAX_HEIGHT: 561,
-                                ALT: 'exhibition-view-wide',
-                                SRC: muralLife3,
-                            },
-                        ]
+
                     ]
                 },
                 {
-                    TYPE: 'contained_image_grid',
-                    STYLE: {
-                        paddingTop: '0',
-                        position: 'relative',
-                    },
+                    TYPE: 'image',
+                    ALT: 'exhibition-view-wide',
+                    SRC: muralLife5,
+                },
+                {
+                    TYPE: 'inverted_text_grid',
+                    CLASS_NAME: '-mt-0 pb-20',
                     CONTENT: [
                         [
                             {
-                                TYPE: 'inverted_quote',
-                                WIDTH: 351,
-                                CLASS: "right-[0px] bottom-[0px] block text-[16px] sm:text-[16px] md:text-[16px] min-[500px]:text-left w-full min-[500px]:w-fit p-[30px_40px] sm:p-[30px_40px] md:p-[30px_40px] lg:p-[30px_40px] xl:p-[30px_40px] min-[500px]:absolute",
+                                TYPE: 'text',
+                                CLASS_NAME: 'text-[26px] leading-[100%] tracking-[.15em]',
                                 TEXT: {
-                                    SER: "Posenba zahvalnost:  <br/>" +
-                                        "<br/>" +
-                                        "Skyline, Beograd<br/>" +
-                                        "Ksenija Lea Ronai<br/>" +
-                                        "Srđan Rusić<br/>",
-                                    ENG: "Special thanks:  <br/>" +
-                                        "<br/>" +
-                                        "Skyline, Beograd<br/>" +
-                                        "Ksenija Lea Ronai<br/>" +
-                                        "Srđan Rusić<br/>",
+                                    SER: "Posenba zahvalnost:",
+                                    ENG: "Special thanks:",
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: "Skyline, Beograd",
+                                    ENG: "Skyline, Beograd",
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                CLASS_NAME: '-mt-5',
+                                TEXT: {
+                                    SER: "Ksenija Lea Ronai",
+                                    ENG: "Ksenija Lea Ronai",
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                CLASS_NAME: '-mt-5',
+                                TEXT: {
+                                    SER: "Srđan Rusić",
+                                    ENG: "Srđan Rusić",
                                 },
                             }
                         ]
                     ]
-                },
+                }
             ],
             DESKTOP: [
                 {
@@ -1212,6 +1302,7 @@ export const PAGE_CONTENT = Object.freeze({
                         [
                             {
                                 TYPE: 'quote',
+                                CLASS_NAME: 'flex items-center justify-center',
                                 TEXT: {
                                     SER: 'Svi smo jednaki i svi smo jedna porodica. Ova monumentalna slika je moj doprinos našem jedinstvu na planeti Zemlji i životu.',
                                     ENG: 'We are all equal and we are all one family. This monumental painting is my contribution to our unity on this planet Earth and to this life.',
@@ -1269,6 +1360,7 @@ export const PAGE_CONTENT = Object.freeze({
                             {
                                 TYPE: 'inverted_quote',
                                 WIDTH: 38,
+                                CLASS_NAME: 'md:text-[26px] font-light tracking-[.15em]',
                                 TEXT: {
                                     SER: "Asistenti slikari:  <br/>" +
                                         "<br />" +
@@ -1348,21 +1440,43 @@ export const PAGE_CONTENT = Object.freeze({
                     CONTENT: [
                         [
                             {
-                                TYPE: 'inverted_quote',
-                                WIDTH: 351,
-                                CLASS: "right-[0px] bottom-[0px] block text-[16px] sm:text-[16px] md:text-[16px] min-[500px]:text-left w-full min-[500px]:w-fit p-[30px_40px] sm:p-[30px_40px] md:p-[30px_40px] lg:p-[30px_40px] xl:p-[30px_40px] min-[500px]:absolute",
-                                TEXT: {
-                                    SER: "Posenba zahvalnost:  <br/>" +
-                                        "<br/>" +
-                                        "Skyline, Beograd<br/>" +
-                                        "Ksenija Lea Ronai<br/>" +
-                                        "Srđan Rusić<br/>",
-                                    ENG: "Special thanks:  <br/>" +
-                                        "<br/>" +
-                                        "Skyline, Beograd<br/>" +
-                                        "Ksenija Lea Ronai<br/>" +
-                                        "Srđan Rusić<br/>",
-                                },
+                                TYPE: 'inverted_text_grid',
+                                CLASS_NAME: "w-[351px] right-[0px] bottom-[0px] flex flex-col text-[16px] md:px-[50px] md:py-[50px] absolute tracking-[.15em]",
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'text-[26px] leading-[100%] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: "Posenba zahvalnost:",
+                                                ENG: "Special thanks:"
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: "Skyline, Beograd",
+                                                ENG: "Skyline, Beograd"
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: '-mt-5',
+                                            TEXT: {
+                                                SER: "Ksenija Lea Ronai",
+                                                ENG: "Ksenija Lea Ronai"
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: '-mt-5',
+                                            TEXT: {
+                                                SER: "Srđan Rusić",
+                                                ENG: "Srđan Rusić",
+                                            },
+                                        },
+                                    ]
+                                ]
                             }
                         ]
                     ]

@@ -45,13 +45,13 @@ export const ArticleCarousel: React.FC<PropType> = ( { section }) => {
     } = usePrevNextButtons(emblaApi, onNavButtonClick);
 
     return (
-        <div className="mt-10">
+        <div className="mt-5 md:mt-10">
             <section className="embla article-carousel">
                 <div className="embla__viewport" ref={emblaRef}>
                     <div className="embla__container">
                         {section.SLIDES.map((s: { SRC: string, ALT: string }, key: number) => (
                             <div key={key} className="embla__slide">
-                                <Image src={s.SRC} alt={s.ALT} className='embla__slide__number w-full full object-contain' placeholder='blur' />
+                                <Image src={s.SRC} alt={s.ALT} className='embla__slide__number w-full full object-cover md:object-contain' placeholder='blur' />
                             </div>
                         ))}
                     </div>

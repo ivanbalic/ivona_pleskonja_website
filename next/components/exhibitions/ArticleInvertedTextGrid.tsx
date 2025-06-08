@@ -1,9 +1,22 @@
+'use client';
+import { useEffect, useState } from "react";
+
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/container";
 import { getSectionComponentByType } from "@/components/exhibitions/sectionComponentMap";
 
-export function ArticleInvertedTextGrid({ locale = 'ser', section }: {locale: string, section: { TYPE: 'text_grid', CLASS_NAME: string, CONTENT: Record<string, any>[][]}}) {
+const MAX_GRID_WIDTH = 1440;
 
+export function ArticleInvertedTextGrid({ locale = 'ser', section }: {locale: string, section: { TYPE: 'inverted_text_grid', CLASS_NAME: string, CONTENT: Record<string, any>[][]}}) {
+    const [containerWidth, setContainerWidth] = useState<number>();
+
+    useEffect(() => {
+        let width = MAX_GRID_WIDTH;
+
+        if(window.innerWidth < MAX_GRID_WIDTH) width = window.innerWidth;
+
+        setContainerWidth(width);
+    },[]);
     return (
         <Container className={cn(
             'flex flex-col gap-5',
@@ -14,14 +27,14 @@ export function ArticleInvertedTextGrid({ locale = 'ser', section }: {locale: st
         )}>
             <div className={cn(
                 'text-[16px] leading-[100%]',
-                'flex flex-col md:flex-row gap-5 md:gap-[90px]'
+                'flex flex-row gap-5 md:gap-[90px] items-center justify-between w-full'
             )}>
                 {section.CONTENT.map((row: Record<string, any>[], rowKey: number) =>
-                    <div key={`${section.TYPE}_${rowKey}`} className="flex flex-col gap-5 flex-1">
+                    <div key={`${section.TYPE}_${rowKey}`} className="flex flex-col gap-5">
                         {row.map((col: Record<string, any>, columnKey) => {
                             const Component = getSectionComponentByType(col.TYPE);
                             // @ts-ignore
-                            return <Component key={`${section.TYPE}_${rowKey}_${col.TYPE}_${columnKey}`} section={col} locale={locale} />
+                            return <Component key={`${section.TYPE}_${rowKey}_${col.TYPE}_${columnKey}`} section={col} locale={locale} containerWidth={containerWidth} />
                         })}
                     </div>
                 )}

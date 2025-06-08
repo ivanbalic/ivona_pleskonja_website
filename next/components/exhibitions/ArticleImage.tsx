@@ -5,10 +5,10 @@ import Image from 'next/image';
 
 import { cn, getPercentWidth } from "@/lib/utils";
 
-export function ArticleImage({ section, containerWidth }: { section?: { ALT: string, SRC: string, TYPE: 'image', WIDTH?: number, MAX_HEIGHT?: number }, containerWidth?: number }) {
+export function ArticleImage({ section, containerWidth }: { section?: { ALT: string, SRC: string, TYPE: 'image', WIDTH?: number, MAX_HEIGHT?: number, CLASS_NAME: string }, containerWidth?: number }) {
     const [maxHeightClass, setMaxHeightClass] = useState<string>('');
     const [percentWidthClass, setPercentWidthClass] = useState<string>('');
-    console.log(`PERCENTAGE OF ${section?.WIDTH}: `, getPercentWidth(section?.WIDTH, containerWidth));
+    console.log(`PERCENTAGE OF ${section?.WIDTH} ON ${containerWidth}: `, getPercentWidth(section?.WIDTH, containerWidth));
     useEffect(function setImageWidthClass(){
         setPercentWidthClass(`w-[${section?.WIDTH}%]`);
     }, [containerWidth, section?.WIDTH]);
@@ -23,7 +23,8 @@ export function ArticleImage({ section, containerWidth }: { section?: { ALT: str
 
     return (
         <div key={percentWidthClass} className={cn(
-            getPercentWidth(section?.WIDTH, containerWidth) ? percentWidthClass : 'w-full',
+            section?.WIDTH ? percentWidthClass : 'w-full',
+            section?.CLASS_NAME
         )}>
             <Image
                 placeholder='blur'
