@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from "react";
 
+import { cn } from "@/lib/utils";
 import { Container } from "@/components/container";
 import { getSectionComponentByType } from "@/components/exhibitions/sectionComponentMap";
 
@@ -8,7 +9,7 @@ const MAX_GRID_WIDTH = 1440;
 
 export function ArticleImageGrid({ locale, section }: {
     locale: string,
-    section: { TYPE: 'image-grid', CONTENT: Record<string,any>[][] }
+    section: { TYPE: 'image-grid', CLASS_NAME: string,  CONTENT: Record<string,any>[][] }
 }) {
     const [containerWidth, setContainerWidth] = useState<number>();
 
@@ -23,7 +24,10 @@ export function ArticleImageGrid({ locale, section }: {
     if (!section) return null;
 
     return (
-        <Container className="flex flex-col pt-5 md:pt-10">
+        <Container className={cn(
+            "flex flex-col pt-5 md:pt-10",
+            section.CLASS_NAME
+        )}>
             {section.CONTENT.map((row: Record<string, any>[], rowKey: number) =>
                 <div key={`${section.TYPE}_${rowKey}`} className="flex flex-col md:flex-row">
                     {row.map((col: Record<string, any>, colKey: number)  => {

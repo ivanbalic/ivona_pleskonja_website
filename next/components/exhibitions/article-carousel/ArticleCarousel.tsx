@@ -45,25 +45,20 @@ export const ArticleCarousel: React.FC<PropType> = ( { section }) => {
     } = usePrevNextButtons(emblaApi, onNavButtonClick);
 
     return (
-        <section className="embla article-carousel">
-            <div className="embla__viewport" ref={emblaRef}>
-                <div className="embla__container mt-10">
-                    {section.SLIDES.map((s: { SRC: string, ALT: string }, key: number) => (
-                        <div key={key} className="embla__slide">
-                            <Image src={s.SRC} alt={s.ALT} className='embla__slide__number w-full full object-contain' placeholder='blur' />
-                        </div>
-                    ))}
-                </div>
-            </div>
-
-            <div className="embla__controls">
-                <div className="embla__buttons">
-                    <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled}/>
-                    <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled}/>
+        <div className="mt-10">
+            <section className="embla article-carousel">
+                <div className="embla__viewport" ref={emblaRef}>
+                    <div className="embla__container">
+                        {section.SLIDES.map((s: { SRC: string, ALT: string }, key: number) => (
+                            <div key={key} className="embla__slide">
+                                <Image src={s.SRC} alt={s.ALT} className='embla__slide__number w-full full object-contain' placeholder='blur' />
+                            </div>
+                        ))}
+                    </div>
                 </div>
                 <div className="embla__dots">
                     {scrollSnaps.map((_, index) => (
-                    <DotButton
+                        <DotButton
                             key={index}
                             onClick={() => onDotButtonClick(index)}
                             className={'embla__dot'.concat(
@@ -72,8 +67,14 @@ export const ArticleCarousel: React.FC<PropType> = ( { section }) => {
                         />
                     ))}
                 </div>
-            </div>
-        </section>
+                <div className="embla__controls">
+                    <div className="embla__buttons">
+                        <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled}/>
+                        <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled}/>
+                    </div>
+                </div>
+            </section>
+        </div>
     );
 }
 

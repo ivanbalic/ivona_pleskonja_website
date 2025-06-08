@@ -1263,11 +1263,12 @@ export const PAGE_CONTENT = Object.freeze({
                 },
                 {
                     TYPE: 'image_grid',
+                    CLASS_NAME: 'pt-0 md:pt-0',
                     CONTENT: [
                         [
                             {
                                 TYPE: 'inverted_quote',
-                                WIDTH: 522,
+                                WIDTH: 38,
                                 TEXT: {
                                     SER: "Asistenti slikari:  <br/>" +
                                         "<br />" +
@@ -1297,7 +1298,7 @@ export const PAGE_CONTENT = Object.freeze({
                             },
                             {
                                 TYPE: 'image',
-                                WIDTH: 838,
+                                WIDTH: 62,
                                 ALT: 'exhibition-view',
                                 SRC: muralLife2,
                             },
