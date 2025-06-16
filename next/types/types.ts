@@ -77,9 +77,9 @@ export interface IArticleCover {
     TEXT: ITranslations,
     MEDIA: {
         ALT: string,
-        POSTER: string,
+        TYPE: string,
+        POSTER?: string,
         MAX_HEIGHT?: number,
-        TYPE: 'image' | 'video',
         SRC: StaticImageData | string,
     },
     EXTERNAL_LINK: {
