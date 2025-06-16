@@ -5,7 +5,7 @@ import { ITranslations } from "@/types/types";
 import { Container } from "@/components/container";
 import { ChevronUp } from "@/components/icons/ChevronUp";
 import { ChevronDown } from "@/components/icons/ChevronDown";
-import { getSectionComponentByType } from "@/components/exhibitions/sectionComponentMap";
+import { getSectionComponentByType } from "@/components/articles/sectionComponentMap";
 
 const LABEL = {
     READ_MORE: {

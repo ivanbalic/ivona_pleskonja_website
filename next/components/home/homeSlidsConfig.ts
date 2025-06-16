@@ -1,5 +1,5 @@
-import signatureBlue from '@/public/images/home/signature-blue.webp';
-import signatureWhite from '@/public/images/home/signature-white.webp';
+import signatureBlue from '@/public/assets/home/signature-blue.webp';
+import signatureWhite from '@/public/assets/home/signature-white.webp';
 
 const WHITE = '#FFFFFF';
 const BRAND_COLOR = '#3769E6';

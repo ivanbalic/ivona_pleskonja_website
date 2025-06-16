@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/container";
-import { getSectionComponentByType } from "@/components/exhibitions/sectionComponentMap";
+import { getSectionComponentByType } from "@/components/articles/sectionComponentMap";
 
 const MAX_GRID_WIDTH = 1440;
 

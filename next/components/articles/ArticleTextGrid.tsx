@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/container";
-import { getSectionComponentByType } from "@/components/exhibitions/sectionComponentMap";
+import { getSectionComponentByType } from "@/components/articles/sectionComponentMap";
 
 export function ArticleTextGrid({ locale = 'ser', section }: {locale: string, section: { TYPE: 'text_grid', CLASS_NAME: string, CONTENT: Record<string, any>[][]}}) {
 

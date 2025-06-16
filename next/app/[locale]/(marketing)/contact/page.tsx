@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { cn } from "@/lib/utils";
-import contactBackground from '@/public/images/contact/contact-background.svg';
+import contactBackground from '@/public/assets/contact/contact-background.svg';
 
 export default function ContactPage() {
     return (

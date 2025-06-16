@@ -75,10 +75,12 @@ export interface IArticleCover {
     AUTHOR: ITranslations,
     YEAR: number,
     TEXT: ITranslations,
-    IMAGE: {
+    MEDIA: {
         ALT: string,
+        POSTER: string,
         MAX_HEIGHT?: number,
-        SRC: StaticImageData,
+        TYPE: 'image' | 'video',
+        SRC: StaticImageData | string,
     },
     EXTERNAL_LINK: {
         URL: string,

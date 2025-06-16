@@ -6,9 +6,9 @@ import Image, { StaticImageData } from 'next/image';
 import useEmblaCarousel from 'embla-carousel-react';
 
 import { useActiveSlide } from '@/context/ActiveSlideContext';
-import coverSlide3 from '../../public/images/home/chiron.webp';
-import coverSlide2 from '../../public/images/home/gabriel.webp';
-import coverSlide1 from '../../public/images/home/auto-portrait.webp';
+import coverSlide3 from '@/public/assets/home/chiron.webp';
+import coverSlide2 from '@/public/assets/home/gabriel.webp';
+import coverSlide1 from '@/public/assets/home/auto-portrait.webp';
 
 interface CarouselSlide {
     id: number;

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import { ITranslations } from "@/types/types";
 import { Container } from "@/components/container";
-import aboutMeCover from '@/public/images/about-me/about-me-cover.webp';
+import aboutMeCover from '@/public/assets/about-me/about-me-cover.webp';
 import { PAGE_CONTENT } from "@/app/[locale]/(marketing)/about_me/pageContent";
 import { MENU_ITEMS_CONFIG } from "@/app/[locale]/(marketing)/about_me/pageContent";
 

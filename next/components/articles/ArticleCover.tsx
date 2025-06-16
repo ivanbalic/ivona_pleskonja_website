@@ -43,7 +43,7 @@ export function ArticleCover({ cover, locale }: { cover?: IArticleCover, locale:
 
     return (
         <div className="bg-articleBgBlue">
-            <Container containerStyle={{paddingBottom: `${coverImageOffset || ((cover.IMAGE.MAX_HEIGHT ?? 0) / 2)}px`, marginBottom: `${coverImageOffset || ((cover.IMAGE.MAX_HEIGHT ?? 0) / 2)}px`}} className="mt-10 md:pt-10">
+            <Container containerStyle={{paddingBottom: `${coverImageOffset || ((cover.MEDIA.MAX_HEIGHT ?? 0) / 2)}px`, marginBottom: `${coverImageOffset || ((cover.MEDIA.MAX_HEIGHT ?? 0) / 2)}px`}} className="mt-10 md:pt-10">
                 <Container className={cn(
                     'pb-5 md:pb-10',
                     'flex flex-col gap-4',
@@ -67,13 +67,24 @@ export function ArticleCover({ cover, locale }: { cover?: IArticleCover, locale:
                     </div>
                 </Container>
                 <Container className="absolute md:px-10">
-                    <Image
-                        priority
-                        placeholder='blur'
-                        fetchPriority='high'
-                        ref={coverRef} src={cover.IMAGE.SRC ?? ''}
-                        alt={cover.IMAGE.ALT ?? ''} className={cn('min-h-[150px] object-cover', `max-h-[${cover?.IMAGE.MAX_HEIGHT}px]`)}
-                    />
+                    {cover.MEDIA.TYPE === 'image'
+                        ? <Image
+                            priority
+                            ref={coverRef}
+                            placeholder='blur'
+                            fetchPriority='high'
+                            src={cover.MEDIA.SRC ?? ''}
+                            alt={cover.MEDIA.ALT ?? ''}
+                            className={cn('min-h-[150px] object-cover', `max-h-[${cover?.MEDIA.MAX_HEIGHT}px]`)}
+                        />
+                        : (
+                            <div ref={coverRef}>
+                                <video width={1440} poster={cover.MEDIA.POSTER} controls className={cn('min-h-[150px] object-cover', `max-h-[${cover?.MEDIA.MAX_HEIGHT}px]`)}>
+                                    <source src={cover.MEDIA.SRC as string} type="video/mp4" />
+                                </video>
+                            </div>
+                        )
+                    }
                     {cover?.EXTERNAL_LINK.URL && !isMobile &&
                         <Link className={cn(
                             'absolute top-[0] left-[calc(100%-80px)]',

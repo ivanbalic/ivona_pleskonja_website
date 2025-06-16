@@ -10,8 +10,8 @@ import { LanguagePicker } from './LanguagePicker';
 // import { SpeakerIcon } from '@/components/icons/SpeakerIcon';
 import { useSlideConfig } from "@/components/home/useSlideConfig";
 import { BurgerMenuIcon } from "@/components/icons/BurgerMenuIcon";
-import logoBlue from '@/public/images/navbar/navbar-logo-blue.webp';
-import logoWhite from '@/public/images/navbar/navbar-logo-white.webp';
+import logoBlue from '@/public/assets/navbar/navbar-logo-blue.webp';
+import logoWhite from '@/public/assets/navbar/navbar-logo-white.webp';
 
 const BRAND_COLOR = '#3769E6';
 

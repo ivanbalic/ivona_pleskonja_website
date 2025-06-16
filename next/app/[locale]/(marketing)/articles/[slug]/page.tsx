@@ -1,8 +1,8 @@
 'use client';
 import {useIsMobile} from "@/hooks/useIsMobile";
-import { ArticleCover } from '@/components/exhibitions/ArticleCover';
+import { ArticleCover } from '@/components/articles/ArticleCover';
 import { SubNavBredCrumbs } from '@/components/subnav-bredcrumbs/SubNavBredCrumbs';
-import { getSectionComponentByType } from '@/components/exhibitions/sectionComponentMap';
+import { getSectionComponentByType } from '@/components/articles/sectionComponentMap';
 import { getExhibitionById } from '@/app/[locale]/(marketing)/articles/[slug]/pageContent';
 
 export default function ExhibitionDetails({ params: { locale, slug } }: { params: { locale: string, slug: string }}) {

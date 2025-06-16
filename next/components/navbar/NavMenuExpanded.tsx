@@ -6,8 +6,8 @@ import Image from "next/image";
 
 import { MENU_ITEMS_CONFIG } from "./menuItemsConfig";
 import { NavMenuItem } from "@/components/navbar/NavMenuItem";
-import logoWhite from "@/public/images/navbar/navbar-logo-white.webp";
-import closeMenuIcon from "@/public/images/navbar/close-menu-icon.svg";
+import logoWhite from "@/public/assets/navbar/navbar-logo-white.webp";
+import closeMenuIcon from "@/public/assets/navbar/close-menu-icon.svg";
 
 export const NavMenuExpanded = ({ onClose, locale }: { onClose: () => void, locale: string }) => {
     const [hovered, setHovered] = React.useState<string | null>(null);

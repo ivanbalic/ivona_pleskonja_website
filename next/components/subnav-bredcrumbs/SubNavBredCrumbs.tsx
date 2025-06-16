@@ -12,12 +12,13 @@ export function SubNavBredCrumbs({ navItems, locale, page, compact = false }: { 
     const items = !compact
         ? navItems
         : navItems.slice(navItems.length - 1, navItems.length);
-    console.log('page: ', page);
+    console.log('SubNavBredCrumbs: ', page);
     return (
         <div
             className={cn(
-                'flex pt-5 mx-4 flex-wrap',
+                'flex pt-5 flex-wrap',
                 compact ? 'font-normal' : 'font-light',
+                (page === 'exhibition' && isMobile) ? 'mx-4' : '',
                 'font-helvetica text-black text-[16px] leading-[20px] tracking-[.15em]',
                 compact || (page === 'exhibition' && isMobile) ? 'justify-start' : 'justify-center',
             )}>
@@ -31,27 +32,27 @@ export function SubNavBredCrumbs({ navItems, locale, page, compact = false }: { 
                     <div key={content.ID} className={
                         cn(
                             content.ID === page && !compact ? 'font-bold' : '',
+                            'px-[5px] max-md:rounded-[30px] cursor-pointer',
                             compact || page === 'exhibition' ? 'text-wrap' : 'text-nowrap',
-                            'px-[5px] max-md:rounded-[30px] hover:underline cursor-pointer',
                             page === 'exhibition' ? 'max-md:text-white text-black' : 'text-black',
                             index === items.length - 1 && !compact && page !== 'exhibition' ? 'max-md:basis-full' : '',
                         )
                     }>
                         <Link
                             className={cn(
-                                compact ? '' : 'items-center',
-                                'flex flex-col justify-center',
+                                compact ? 'flex-col' : 'items-center',
+                                'flex gap-2 justify-center ',
                             )}
                             href={`/${locale}/${content.LINK}`}
                         >
                             {!compact
-                                ? content.TITLE[locale.toUpperCase() as keyof ITranslations]
+                                ? <span className='hover:underline'>{content.TITLE[locale.toUpperCase() as keyof ITranslations]}</span>
                                 : content.TITLE[locale.toUpperCase() as keyof ITranslations]
                                     .split('/')
                                     .map((t, i, array) =>
                                         <span key={t}>{`${t}`}</span>)
                             }
-                            {index < items.length - 1 ? ' / ' : ''}
+                            <span>{index < items.length - 1 ? ' / ' : ''}</span>
                         </Link>
                     </div>
                 )

@@ -1,35 +1,34 @@
 // CREATING LIGHT
-import gabrielAndPan from '@/public/images/creating-light/gabriel-and-pan-full.webp';
-import exhibitionCreatingOfLight1 from '@/public/images/creating-light/exhibition-creating-of-light-1.webp';
-import exhibitionCreatingOfLight2 from '@/public/images/creating-light/exhibition-creating-of-light-2.webp';
-import exhibitionCreatingOfLight3 from '@/public/images/creating-light/exhibition-creating-of-light-3.webp';
-import exhibitionCreatingOfLight4 from '@/public/images/creating-light/exhibition-creating-of-light-4.webp';
-import exhibitionCreatingOfLight5 from '@/public/images/creating-light/exhibition-creating-of-light-5.webp';
-import exhibitionCreatingOfLight6 from '@/public/images/creating-light/exhibition-creating-of-light-6.webp';
-import exhibitionCreatingOfLight7 from '@/public/images/creating-light/exhibition-creating-of-light-7.webp';
-import exhibitionCreatingOfLight8 from '@/public/images/creating-light/exhibition-creating-of-light-8.webp';
-import exhibitionCreatingOfLight9 from '@/public/images/creating-light/exhibition-creating-of-light-9.webp';
+import gabrielAndPan from '@/public/assets/creating-light/gabriel-and-pan-full.webp';
+import exhibitionCreatingOfLight1 from '@/public/assets/creating-light/exhibition-creating-of-light-1.webp';
+import exhibitionCreatingOfLight2 from '@/public/assets/creating-light/exhibition-creating-of-light-2.webp';
+import exhibitionCreatingOfLight3 from '@/public/assets/creating-light/exhibition-creating-of-light-3.webp';
+import exhibitionCreatingOfLight4 from '@/public/assets/creating-light/exhibition-creating-of-light-4.webp';
+import exhibitionCreatingOfLight5 from '@/public/assets/creating-light/exhibition-creating-of-light-5.webp';
+import exhibitionCreatingOfLight6 from '@/public/assets/creating-light/exhibition-creating-of-light-6.webp';
+import exhibitionCreatingOfLight7 from '@/public/assets/creating-light/exhibition-creating-of-light-7.webp';
+import exhibitionCreatingOfLight8 from '@/public/assets/creating-light/exhibition-creating-of-light-8.webp';
+import exhibitionCreatingOfLight9 from '@/public/assets/creating-light/exhibition-creating-of-light-9.webp';
 // 11 SNAGA
-import exhibition11Snaga1 from '@/public/images/11-snaga/exhibition-11-snaga-1.webp';
-import exhibition11Snaga2 from '@/public/images/11-snaga/exhibition-11-snaga-2.webp';
-import exhibition11Snaga3 from '@/public/images/11-snaga/exhibition-11-snaga-3.webp';
-import exhibition11Snaga4 from '@/public/images/11-snaga/exhibition-11-snaga-4.webp';
-import exhibition11Snaga5 from '@/public/images/11-snaga/exhibition-11-snaga-5.webp';
+import exhibition11Snaga1 from '@/public/assets/11-snaga/exhibition-11-snaga-1.webp';
+import exhibition11Snaga2 from '@/public/assets/11-snaga/exhibition-11-snaga-2.webp';
+import exhibition11Snaga3 from '@/public/assets/11-snaga/exhibition-11-snaga-3.webp';
+import exhibition11Snaga4 from '@/public/assets/11-snaga/exhibition-11-snaga-4.webp';
+import exhibition11Snaga5 from '@/public/assets/11-snaga/exhibition-11-snaga-5.webp';
 // MURAL LIFE
-import muralLife1 from '@/public/images/mural-life/mural-life-1.webp';
-import muralLife2 from '@/public/images/mural-life/mural-life-2.webp';
-import muralLife3 from '@/public/images/mural-life/mural-life-3.webp';
-import muralLife4 from '@/public/images/mural-life/mural-life-4.webp';
-import muralLife5 from '@/public/images/mural-life/mural-life-5.webp';
-import muralLifeSlide1 from '@/public/images/mural-life/mural-life-slide-1.webp';
-import muralLifeSlide2 from '@/public/images/mural-life/mural-life-slide-2.webp';
-import muralLifeSlide3 from '@/public/images/mural-life/mural-life-slide-3.webp';
-import muralLifeSlide4 from '@/public/images/mural-life/mural-life-slide-4.webp';
-import muralLifeSlide5 from '@/public/images/mural-life/mural-life-slide-5.webp';
-import muralLifeSlide6 from '@/public/images/mural-life/mural-life-slide-6.webp';
-import muralLifeSlide7 from '@/public/images/mural-life/mural-life-slide-7.webp';
-import muralLifeSlide8 from '@/public/images/mural-life/mural-life-slide-8.webp';
-import muralLifeSlide9 from '@/public/images/mural-life/mural-life-slide-9.webp';
+import muralLife2 from '@/public/assets/mural-life/mural-life-2.webp';
+import muralLife3 from '@/public/assets/mural-life/mural-life-3.webp';
+import muralLife4 from '@/public/assets/mural-life/mural-life-4.webp';
+import muralLife5 from '@/public/assets/mural-life/mural-life-5.webp';
+import muralLifeSlide1 from '@/public/assets/mural-life/mural-life-slide-1.webp';
+import muralLifeSlide2 from '@/public/assets/mural-life/mural-life-slide-2.webp';
+import muralLifeSlide3 from '@/public/assets/mural-life/mural-life-slide-3.webp';
+import muralLifeSlide4 from '@/public/assets/mural-life/mural-life-slide-4.webp';
+import muralLifeSlide5 from '@/public/assets/mural-life/mural-life-slide-5.webp';
+import muralLifeSlide6 from '@/public/assets/mural-life/mural-life-slide-6.webp';
+import muralLifeSlide7 from '@/public/assets/mural-life/mural-life-slide-7.webp';
+import muralLifeSlide8 from '@/public/assets/mural-life/mural-life-slide-8.webp';
+import muralLifeSlide9 from '@/public/assets/mural-life/mural-life-slide-9.webp';
 
 export const PAGE_CONTENT = Object.freeze({
     CREATING_LIFE: {
@@ -82,7 +81,8 @@ export const PAGE_CONTENT = Object.freeze({
                 SER: 'Nakon momenta prosvetljenja sledi iskonsko buđenje bića. Ovo je priča o svetlosti iz dubine Svemira, svetlosti koja nas obasjava - rastvarajući dubine mraka, ona donosi anđele. Pre buđenja ovih stvorenja moramo se zapitati ko je onaj ko ih je stvorio?',
                 ENG: 'A primordial awakening of the being follows the moment of enlightenment. This is a story of a light from the depths of Universe. It is the light that illuminates us - dissolving the deptlis of darkness. It brings out angels. Before awakening these creatures, we must ask ourselves - who created them?'
             },
-            IMAGE: {
+            MEDIA: {
+                TYPE: 'image',
                 MAX_HEIGHT: 360,
                 SRC: gabrielAndPan,
                 ALT: 'exhibition-cover',
@@ -607,7 +607,8 @@ export const PAGE_CONTENT = Object.freeze({
                 SER: 'Serija slika i grafika 11 SNAGA nastavak je rada započetog u okviru doktorskog umetničkog projekta Ivone Pleskonje, predstavljenog na izložbi Deca Sunca.',
                 ENG: 'The series of paintings and graphics 11 STRENGTH is a continuation of the work started within the doctoral art project of Ivona Pleskonje, presented at the Children of the Sun exhibition.'
             },
-            IMAGE: {
+            MEDIA: {
+                TYPE: 'image',
                 MAX_HEIGHT: 439,
                 ALT: 'exhibition-cover',
                 SRC: exhibition11Snaga1,
@@ -740,7 +741,7 @@ export const PAGE_CONTENT = Object.freeze({
                                 TYPE: 'text',
                                 TEXT: {
                                     SER: 'Marijana Dujović navodi da je muzika inspirisana slikama osmišljena kao zvuk onostranog prostora koji snage donose sa sobom na našu planetu. Muzika doprinosi apsorbovanju unutrašnje atmosfere, spoj nestvorenog sa prisutnim kroz doživljaj harmonije Sunčevog i mističnog dolazećeg svetla.',
-                                    ENG: 'Marijana Dujović states that the music inspired by images is designed as the sound of other space that the forces bring with them to our planet. Music contributes to the absorption of the inner atmosphere, the union of the uncreated with the present through the experience of the harmony of the Sun and the mystical incoming light.',
+                                    ENG: 'Marijana Dujović states that the music inspired by assets is designed as the sound of other space that the forces bring with them to our planet. Music contributes to the absorption of the inner atmosphere, the union of the uncreated with the present through the experience of the harmony of the Sun and the mystical incoming light.',
                                 }
                             },
                         ],
@@ -903,7 +904,7 @@ export const PAGE_CONTENT = Object.freeze({
                                 TYPE: 'text',
                                 TEXT: {
                                     SER: 'Marijana Dujović navodi da je muzika inspirisana slikama osmišljena kao zvuk onostranog prostora koji snage donose sa sobom na našu planetu. Muzika doprinosi apsorbovanju unutrašnje atmosfere, spoj nestvorenog sa prisutnim kroz doživljaj harmonije Sunčevog i mističnog dolazećeg svetla.',
-                                    ENG: 'Marijana Dujović states that the music inspired by images is designed as the sound of other space that the forces bring with them to our planet. Music contributes to the absorption of the inner atmosphere, the union of the uncreated with the present through the experience of the harmony of the Sun and the mystical incoming light.',
+                                    ENG: 'Marijana Dujović states that the music inspired by assets is designed as the sound of other space that the forces bring with them to our planet. Music contributes to the absorption of the inner atmosphere, the union of the uncreated with the present through the experience of the harmony of the Sun and the mystical incoming light.',
                                 }
                             },
                         ],
@@ -989,12 +990,14 @@ export const PAGE_CONTENT = Object.freeze({
             YEAR: 2020,
             TEXT: {
                 SER: 'Mural LIFE posvećen je vremenu u kome živimo. Ove monumentalne slike jedinstva ljudi, životinja i biljaka u urbanoj sredini pozivaju na našu povezanost sa prirodom i duboki značaj našeg jedinstva.',
-                ENG: 'Mural LIFE is dedicated to the time we live in. These vivid monumental images of the unity of humans, animals and plants in the urban environment call for our connection with nature and the profound importance of our collectiveness.'
+                ENG: 'Mural LIFE is dedicated to the time we live in. These vivid monumental assets of the unity of humans, animals and plants in the urban environment call for our connection with nature and the profound importance of our collectiveness.'
             },
-            IMAGE: {
-                MAX_HEIGHT: 574,
+            MEDIA: {
+                TYPE: 'video',
+                MAX_HEIGHT: 358,
                 ALT: 'exhibition-cover',
-                SRC: muralLife1,
+                SRC: 'https://ivona-pleskonja.s3.eu-north-1.amazonaws.com/mural-life/mural-spot.mp4',
+                POSTER: 'https://ivona-pleskonja.s3.eu-north-1.amazonaws.com/mural-life/mural-life-cover-video-poster-image.png'
             },
             EXTERNAL_LINK: {
                 URL: '',

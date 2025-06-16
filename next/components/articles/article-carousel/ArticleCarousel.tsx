@@ -5,12 +5,12 @@ import Autoplay from 'embla-carousel-autoplay';
 import useEmblaCarousel from 'embla-carousel-react';
 import { EmblaOptionsType, EmblaCarouselType } from 'embla-carousel';
 
-import { DotButton, useDotButton } from '@/components/exhibitions/article-carousel/ArticleCarouselDotButtons';
 import {
     PrevButton,
     NextButton,
     usePrevNextButtons
-} from '@/components/exhibitions/article-carousel/ArticleCarousleArrowButtons';
+} from '@/components/articles/article-carousel/ArticleCarousleArrowButtons';
+import { DotButton, useDotButton } from '@/components/articles/article-carousel/ArticleCarouselDotButtons';
 
 type PropType = {
     section: Record<string, any>,
