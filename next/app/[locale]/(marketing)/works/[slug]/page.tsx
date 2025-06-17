@@ -1,9 +1,10 @@
 'use client';
-import React, {useEffect, useMemo, useState} from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 
 import { useSearchParams } from 'next/navigation';
 
 import { cn } from '@/lib/utils';
+import { ITranslations } from "@/types/types";
 import { Container } from '@/components/container';
 import { ArtGallery } from '@/components/art-gallery/ArtGallery';
 import { MyWorkDetails } from '@/components/my-works/MyWorkDetails';
@@ -35,7 +36,7 @@ export default function WorkDetailsPage({ params: { locale, slug } }: { params: 
             <Container className={cn('pt-[85px] md:pt-[125px] px-4 md:px-20 text-black min-h-screen', showGallery && 'bg-backgroundSecondary max-w-full')}>
                 <SubNavBredCrumbs compact={showGallery && isMobile} navItems={page.HISTORY ?? []} locale={locale} page={slug} />
                 { showGallery
-                    ? <ArtGallery locale={locale} gallery={gallery?.CONTENT} exhibitionId={page.EXHIBITION_ID} />
+                    ? <ArtGallery locale={locale} gallery={gallery?.CONTENT} exhibitionId={page.EXHIBITION_ID} galleryTitle={gallery?.TITLE?.[locale.toUpperCase() as keyof ITranslations] ?? null} />
                     : <MyWorkDetails data={page} locale={locale} />
                 }
             </Container>

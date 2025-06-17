@@ -4,7 +4,7 @@ import { IGalleryRowItem } from '@/types/types';
 import { MobileGallery } from "@/components/art-gallery/MobileGallery";
 import { DesktopGallery } from "@/components/art-gallery/DesktopGallery";
 
-export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string, gallery?: IGalleryRowItem[][], exhibitionId: number }) {
+export function ArtGallery ({ locale, gallery, exhibitionId }: { locale: string, gallery?: IGalleryRowItem[][], exhibitionId: number, galleryTitle: string | null }) {
     return (
         <>
             <MobileGallery locale={locale} gallery={gallery} exhibitionId={exhibitionId} />

@@ -12,7 +12,7 @@ import { LeftArrow } from "@/components/art-gallery/LeftArrow";
 import { RightArrow } from "@/components/art-gallery/RightArrow";
 import { useGalleryNavigation } from "@/components/art-gallery/hooks/useGalleryNavigation";
 
-export function MobileGallery({ locale, gallery, exhibitionId }: { locale: string, gallery?: IGalleryRowItem[][], exhibitionId: number }){
+export function MobileGallery({ locale, gallery, exhibitionId }: { locale: string, gallery?: IGalleryRowItem[][], exhibitionId: number }) {
     const [swipeDirection, setSwipeDirection] = useState<"LEFT" | "RIGHT">("LEFT");
 
     const { selectedImageIdRef, onPrev, onNext, selected } = useGalleryNavigation(gallery);

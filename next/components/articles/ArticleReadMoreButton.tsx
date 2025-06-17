@@ -23,14 +23,12 @@ export function ArticleReadMoreButton({ locale, section }: { locale: string, sec
 
     return (
         <Container>
-            <div
-                onClick={() => setExpanded(!expanded)}
-            >
+            <div>
                 <div className={cn(
                     expanded ? 'mb-0' : 'mb-5',
                     'flex justify-center items-center w-full gap-3',
                     'text-primaryBlue text-[16px] leading-[100%] tracking-[.05em] font-bold mt-5'
-                )}>
+                )} onClick={() => setExpanded(!expanded)}>
                     {LABEL[(expanded ? 'READ_LESS' : 'READ_MORE') as keyof typeof LABEL][locale.toUpperCase() as keyof ITranslations]}
                     {expanded ? <ChevronUp /> : <ChevronDown />}
                 </div>

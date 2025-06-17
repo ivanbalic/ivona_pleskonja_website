@@ -26,7 +26,7 @@ export function ArticleInvertedTextGrid({ locale = 'ser', section }: {locale: st
             section.CLASS_NAME
         )}>
             <div className={cn(
-                'text-[16px] leading-[100%]',
+                'text-[16px] leading-[24px] md-leading-[100%]',
                 'flex flex-row gap-5 md:gap-[90px] items-center justify-between w-full'
             )}>
                 {section.CONTENT.map((row: Record<string, any>[], rowKey: number) =>

@@ -1,6 +1,7 @@
-import {useCallback, useEffect, useMemo, useState} from "react";
-import {IGalleryRowItem} from "@/types/types";
-import {useSelectedImage} from "@/context/SelectedImageContext";
+import { useCallback, useEffect, useMemo, useState } from "react";
+
+import { IGalleryRowItem } from "@/types/types";
+import { useSelectedImage } from "@/context/SelectedImageContext";
 
 export function useGalleryNavigation(gallery: IGalleryRowItem[][] | null = null) {
     const [selected, setSelected] = useState<IGalleryRowItem | null>(null);

@@ -13,8 +13,13 @@ import exhibitionCreatingOfLight9 from '@/public/assets/creating-light/exhibitio
 import exhibition11Snaga1 from '@/public/assets/11-snaga/exhibition-11-snaga-1.webp';
 import exhibition11Snaga2 from '@/public/assets/11-snaga/exhibition-11-snaga-2.webp';
 import exhibition11Snaga3 from '@/public/assets/11-snaga/exhibition-11-snaga-3.webp';
-import exhibition11Snaga4 from '@/public/assets/11-snaga/exhibition-11-snaga-4.webp';
-import exhibition11Snaga5 from '@/public/assets/11-snaga/exhibition-11-snaga-5.webp';
+import exhibition11SnagaSlide1 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-1.webp';
+import exhibition11SnagaSlide2 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-2.webp';
+import exhibition11SnagaSlide3 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-3.webp';
+import exhibition11SnagaSlide4 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-4.webp';
+import exhibition11SnagaSlide5 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-5.webp';
+import exhibition11SnagaSlide6 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-6.webp';
+import exhibition11SnagaSlide7 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-7.webp';
 // MURAL LIFE
 import muralLife2 from '@/public/assets/mural-life/mural-life-2.webp';
 import muralLife3 from '@/public/assets/mural-life/mural-life-3.webp';
@@ -609,7 +614,7 @@ export const PAGE_CONTENT = Object.freeze({
             },
             MEDIA: {
                 TYPE: 'image',
-                MAX_HEIGHT: 439,
+                MAX_HEIGHT: 453,
                 ALT: 'exhibition-cover',
                 SRC: exhibition11Snaga1,
             },
@@ -635,6 +640,24 @@ export const PAGE_CONTENT = Object.freeze({
                                 },
                             }
                         ],
+                    ],
+                },
+                {
+                    TYPE: 'image_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'image',
+                                WIDTH: 100,
+                                ALT: 'exhibition-view',
+                                SRC: exhibition11Snaga2,
+                            },
+                        ],
+                    ]
+                },
+                {
+                    TYPE: 'text_grid',
+                    CONTENT: [
                         [
                             {
                                 TYPE: 'text',
@@ -647,28 +670,12 @@ export const PAGE_CONTENT = Object.freeze({
                     ]
                 },
                 {
-                    TYPE: 'contained_image_grid',
+                    TYPE: 'image_grid',
                     CONTENT: [
                         [
                             {
-                                TYPE: 'inverted_quote',
-                                WIDTH: 783,
-                                TEXT: {
-                                    SER: 'Širon IDENTITET, Gabrijel STVARANJE, Ivona SAOSEĆAJNOST, Lazar PROMENA, Srki ISTRAJNOST, Pal RAD, Tasja SREĆA, Verona BLAGOST, Ranko UM, Orlando REALIZACIJA i Ksenija Lea LJUBAV koja se javlja u dva oblika.',
-                                    ENG: 'Shiron IDENTITY, Gabriel CREATION, Ivona COMPASSION, Lazar CHANGE, Srki PERSISTENCE, Pal WORK, Tasja HAPPINESS, Verona GENTLENESS, Ranko THE MIND, Orlando REALISATION and Ksenia Lea LOVE which appears in two forms.',
-                                },
-                            },
-                            {
                                 TYPE: 'image',
-                                WIDTH: 577,
-                                ALT: 'exhibition-view',
-                                SRC: exhibition11Snaga2,
-                            },
-                        ],
-                        [
-                            {
-                                TYPE: 'image',
-                                MAX_HEIGHT: 561,
+                                MAX_HEIGHT: 143,
                                 ALT: 'exhibition-view-wide',
                                 SRC: exhibition11Snaga3,
                             },
@@ -676,111 +683,155 @@ export const PAGE_CONTENT = Object.freeze({
                     ]
                 },
                 {
-                    TYPE: 'text_grid',
+                    TYPE: 'read_more',
                     CONTENT: [
                         [
                             {
-                                TYPE: 'text',
-                                TEXT:{
-                                    SER: 'Kritički odnos usmeren je ka pojedincu od koga zavisi napredak kolektivne svesti, svesnost o individualnom nivou koji dotiče duh univerzuma i doprinosi redu i harmoniji. Poput stvaralaštva Zanga Ksiaoganga, kineskog umetnika čija dela nastaju u atmosferi kulturno političke krize 60-ih i 70-ih godina XX veka uz osećaj sputanosti pojedinca od strane tradicije i represivnog režima, Ivona pravi otklon od socijalnih tema prostora u kome egzistira i okreće se otkrivanju iskonskih ljudskih identiteta koje smatra nužnim za opstanak.',
-                                    ENG: 'The critical relationship is directed towards the individual on whom the progress of the collective consciousness depends, the awareness of the individual level that touches the spirit of the universe and contributes to order and harmony. Like the work of Zhang Xiaogang, a Chinese artist whose works were created in the atmosphere of the cultural and political crisis of the 60s and 70s of the 20th century with the feeling of the individual being constrained by tradition and a repressive regime, Yvona makes a departure from the social themes of the space in which she exists and turns to discovering primordial human identities that he considers necessary for survival.'
-                                }
+                                TYPE: 'image_grid',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'inverted_quote',
+                                            WIDTH: 100,
+                                            TEXT: {
+                                                SER: 'Širon IDENTITET, Gabrijel STVARANJE, Ivona SAOSEĆAJNOST, Lazar PROMENA, Srki ISTRAJNOST, Pal RAD, Tasja SREĆA, Verona BLAGOST, Ranko UM, Orlando REALIZACIJA i Ksenija Lea LJUBAV koja se javlja u dva oblika.',
+                                                ENG: 'Shiron IDENTITY, Gabriel CREATION, Ivona COMPASSION, Lazar CHANGE, Srki PERSISTENCE, Pal WORK, Tasja HAPPINESS, Verona GENTLENESS, Ranko THE MIND, Orlando REALISATION and Ksenia Lea LOVE which appears in two forms.',
+                                            },
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            TYPE: 'image',
+                                            MAX_HEIGHT: 260,
+                                            ALT: 'exhibition-view-wide',
+                                            SRC: exhibition11SnagaSlide5,
+                                        },
+                                    ]
+                                ]
                             },
                             {
-                                TYPE: 'text',
-                                TEXT: {
-                                    SER: '11 SNAGA su bića poslata iz središa Univerzuma i manifestovana na planeti Zemlji, materijalizovana rađanjem 11 divova datih čovečanstvu, simboličnih nosilaca pojmova koji su im dodeljeni na osnovu dominantnih osobina koje čine njihovu moć.',
-                                    ENG: 'The 11 SNAGA are beings sent from the center of the Universe and manifested on planet Earth, materialized by the birth of 11 giants given to humanity, symbolic bearers of terms assigned to them based on the dominant features that make up their power.',
-                                }
+                                TYPE: 'text_grid',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            TEXT:{
+                                                SER: 'Kritički odnos usmeren je ka pojedincu od koga zavisi napredak kolektivne svesti, svesnost o individualnom nivou koji dotiče duh univerzuma i doprinosi redu i harmoniji. Poput stvaralaštva Zanga Ksiaoganga, kineskog umetnika čija dela nastaju u atmosferi kulturno političke krize 60-ih i 70-ih godina XX veka uz osećaj sputanosti pojedinca od strane tradicije i represivnog režima, Ivona pravi otklon od socijalnih tema prostora u kome egzistira i okreće se otkrivanju iskonskih ljudskih identiteta koje smatra nužnim za opstanak.',
+                                                ENG: 'The critical relationship is directed towards the individual on whom the progress of the collective consciousness depends, the awareness of the individual level that touches the spirit of the universe and contributes to order and harmony. Like the work of Zhang Xiaogang, a Chinese artist whose works were created in the atmosphere of the cultural and political crisis of the 60s and 70s of the 20th century with the feeling of the individual being constrained by tradition and a repressive regime, Yvona makes a departure from the social themes of the space in which she exists and turns to discovering primordial human identities that he considers necessary for survival.'
+                                            }
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: '11 SNAGA su bića poslata iz središa Univerzuma i manifestovana na planeti Zemlji, materijalizovana rađanjem 11 divova datih čovečanstvu, simboličnih nosilaca pojmova koji su im dodeljeni na osnovu dominantnih osobina koje čine njihovu moć.',
+                                                ENG: 'The 11 SNAGA are beings sent from the center of the Universe and manifested on planet Earth, materialized by the birth of 11 giants given to humanity, symbolic bearers of terms assigned to them based on the dominant features that make up their power.',
+                                            }
+                                        },
+                                    ],
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Likovi koje Ivona prenosi na slike i grafike prema doživljaju linearnog protoka vremena nisu savremenici, oni se upoznaju kroz osećaj povezanosti univerzalnim vremenom koje briše razlike između prošlog i budućeg, u apsolutnom jedinstvu sa trenutkom potire se prolaznost, a osećaj za vreme prestaje da postoji jer smo transformisani u čistu svest u vanvremenu i vanprostoru – momentu koji je večan, baš kao i sama svest.',
+                                                ENG: 'The characters that Ivona transfers to pictures and graphics according to the experience of the linear passage of time are not contemporaries, they are known through a sense of connection with universal time that erases the differences between the past and the future, in absolute unity with the moment, transience is erased, and the sense of time ceases to exist because we transformed into pure consciousness outside time and space – a moment that is eternal, just like consciousness itself.',
+                                            },
+                                        },
+                                    ]
+                                ]
                             },
-                        ],
-                        [
                             {
-                                TYPE: 'text',
-                                TEXT: {
-                                    SER: 'Likovi koje Ivona prenosi na slike i grafike prema doživljaju linearnog protoka vremena nisu savremenici, oni se upoznaju kroz osećaj povezanosti univerzalnim vremenom koje briše razlike između prošlog i budućeg, u apsolutnom jedinstvu sa trenutkom potire se prolaznost, a osećaj za vreme prestaje da postoji jer smo transformisani u čistu svest u vanvremenu i vanprostoru – momentu koji je večan, baš kao i sama svest.',
-                                    ENG: 'The characters that Ivona transfers to pictures and graphics according to the experience of the linear passage of time are not contemporaries, they are known through a sense of connection with universal time that erases the differences between the past and the future, in absolute unity with the moment, transience is erased, and the sense of time ceases to exist because we transformed into pure consciousness outside time and space – a moment that is eternal, just like consciousness itself.',
-                                },
-                            },
-                        ]
-                    ]
-                },
-                {
-                    TYPE: 'image_grid',
-                    CONTENT: [
-                        [
-                            {
-                                TYPE: 'image',
-                                WIDTH: 511,
-                                MAX_HEIGHT: 448,
-                                ALT: 'exhibition-view-medium',
-                                SRC: exhibition11Snaga4,
+                                TYPE: 'image_grid',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'image',
+                                            MAX_HEIGHT: 260,
+                                            ALT: 'exhibition-view-wide',
+                                            SRC: exhibition11SnagaSlide3,
+                                        },
+                                    ]
+                                ]
                             },
                             {
-                                TYPE: 'image',
-                                WIDTH: 929,
-                                MAX_HEIGHT: 448,
-                                ALT: 'exhibition-view-medium',
-                                SRC: exhibition11Snaga5,
+                                TYPE: 'text_grid',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Dolazak snaga na Zemlju uzburkava vibracije u atmosferi, kontakt sa tlom planete stvara snažan potres, energetske strune se pokreću i melodični zvuci šire, objavljuju da je život snage na Zemlji počeo. Zvučni efekti koji prate izložbu potiču iz prirode, delo su autora Vladimira Živkovića (dizajner zvuka) i Marijane Dujović (muzikolog), dati u vidu kratke muzičke numere čine skup konkretnih i generisanih zvukova uz melodijsko-ritmičke delove koji su odsvirani na različitim instrumentima.',
+                                                ENG: 'The arrival of forces on Earth stirs up vibrations in the atmosphere, contact with the ground of the planet creates a powerful tremor, energy strings are set in motion and melodious sounds spread, announcing that the life of the force on Earth has begun. The sound effects that accompany the exhibition come from nature, they are the work of Vladimir Živković (sound designer) and Marijana Dujović (musicologist), given in the form of short musical tracks, they form a set of concrete and generated sounds with melodic and rhythmic parts played on different instruments.',
+                                            }
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Marijana Dujović navodi da je muzika inspirisana slikama osmišljena kao zvuk onostranog prostora koji snage donose sa sobom na našu planetu. Muzika doprinosi apsorbovanju unutrašnje atmosfere, spoj nestvorenog sa prisutnim kroz doživljaj harmonije Sunčevog i mističnog dolazećeg svetla.',
+                                                ENG: 'Marijana Dujović states that the music inspired by assets is designed as the sound of other space that the forces bring with them to our planet. Music contributes to the absorption of the inner atmosphere, the union of the uncreated with the present through the experience of the harmony of the Sun and the mystical incoming light.',
+                                            }
+                                        },
+                                    ],
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Vizualizacija duhovne dimenzije prosvetljenja sugeriše promenu i beleži trenutak koji sublimira vreme u beskonačnost, istovremeno objedinjuje kretanje i apsolutni mir, u kome se sve događa ali i prestaje u sinergiji uma, tela i duha.',
+                                                ENG: 'The visualization of the spiritual dimension of enlightenment suggests change and captures a moment that sublimates time into infinity, simultaneously uniting movement and absolute peace, in which everything happens but also ceases in the synergy of mind, body and spirit.',
+                                            }
+                                        },
+                                        {
+                                            TYPE: 'quote',
+                                            TEXT: {
+                                                SER: 'Fokus je na očima, medijuma razmene energije, koji efekatom ogledala uvodi u introspekciju apsorbujući okolne senzacije, dok je istovremeno slika sredstvo komunikacije sa umetnikom i nagoveštava njegovo prisustvo.',
+                                                ENG: 'The focus is on the eyes, the medium of energy exchange, which with the effect of a mirror leads to introspection by absorbing the surrounding sensations, while at the same time the painting is a means of communication with the artist and hints at his presence.',
+                                            }
+                                        }
+                                    ]
+                                ]
+                            },
+                            {
+                                TYPE: 'carousel',
+                                SLIDES: [
+                                    {
+                                        SRC: exhibition11SnagaSlide6,
+                                        ALT: '11-snaga-slide-6',
+                                    },
+                                    {
+                                        SRC: exhibition11SnagaSlide1,
+                                        ALT: '11-snaga-slide-1',
+                                    },
+                                    {
+                                        SRC: exhibition11SnagaSlide4,
+                                        ALT: '11-snaga-slide-4',
+                                    },
+                                    {
+                                        SRC: exhibition11SnagaSlide7,
+                                        ALT: '11-snaga-slide-7',
+                                    }
+                                ]
+                            },
+                            {
+                                TYPE: 'inverted_text_grid',
+                                CLASS_NAME: '-mt-0',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Filozofija zen budizma inspirisala je Ivonin rad na više nivoa, prevashodno se odnosi na način na koji umetnica stupa u odnos sa svetom kroz samospoznaju odnosno uvid, putem koga preobražava portretisane emotivnim i duhovnim procesima sopstvenog bića. U radu je prisutna redukcija, nema prostorne odrednice u pozadini slike koja bi ometala pogled, već ukazuje na prazninu, metafizičku dimenziju prostora i vremena u kojoj se prošlost, sadašnjost i budućnost sažimaju u kružnom kretanju večnosti.',
+                                                ENG: 'The philosophy of Zen Buddhism inspired Yvonne\'s work on several levels, primarily related to the way in which the artist enters into a relationship with the world through self-knowledge, i.e. insight, through which she transforms the portrayed through the emotional and spiritual processes of her own being. Reduction is present in the work, there is no spatial determinant in the background of the picture that would obstruct the view, but it points to the void, the metaphysical dimension of space and time in which the past, present and future are condensed in the circular movement of eternity.',
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Praznina je nezavisni entitet, usmerava akcenat na aktere platna i njihovu energiju u kojoj svetlost proizilazi iz same monohromne pozadine. Ekspresija pokreta u procesu stvaranja u Ivoninom radu kreira energetske vibracije nanosima boja, što se manifestuje treperenjem kontrasta u igri svetlosti i senki, transferom energetskog polja od stvaraoca ka posmatraču koje uspostavlja prisustvo duha. Uvođenje mistične svetlosti van funkcije optičkog fenomena na ravnu površinu slike predstavlja polje sile koje emituje senzacije izvan čulnosti, nagoveštava komunikaciju bića na nivou duše.',
+                                                ENG: 'The void is an independent entity, it directs the accent to the actors of the canvas and their energy in which the light emanates from the monochrome background itself. The expression of movement in the process of creation in Yvonne\'s work creates energy vibrations with the application of colors, which is manifested by flickering contrasts in the play of light and shadows, by the transfer of the energy field from the creator to the observer, which establishes the presence of the spirit. The introduction of mystical light beyond the function of an optical phenomenon onto the flat surface of the picture represents a field of force that emits sensations beyond sensibility, hinting at the communication of beings at the level of the soul.',
+                                            },
+                                        },
+                                    ]
+                                ]
                             }
-                        ]
-                    ]
-                },
-                {
-                    TYPE: 'text_grid',
-                    CONTENT: [
-                        [
-                            {
-                                TYPE: 'text',
-                                TEXT: {
-                                    SER: 'Dolazak snaga na Zemlju uzburkava vibracije u atmosferi, kontakt sa tlom planete stvara snažan potres, energetske strune se pokreću i melodični zvuci šire, objavljuju da je život snage na Zemlji počeo. Zvučni efekti koji prate izložbu potiču iz prirode, delo su autora Vladimira Živkovića (dizajner zvuka) i Marijane Dujović (muzikolog), dati u vidu kratke muzičke numere čine skup konkretnih i generisanih zvukova uz melodijsko-ritmičke delove koji su odsvirani na različitim instrumentima.',
-                                    ENG: 'The arrival of forces on Earth stirs up vibrations in the atmosphere, contact with the ground of the planet creates a powerful tremor, energy strings are set in motion and melodious sounds spread, announcing that the life of the force on Earth has begun. The sound effects that accompany the exhibition come from nature, they are the work of Vladimir Živković (sound designer) and Marijana Dujović (musicologist), given in the form of short musical tracks, they form a set of concrete and generated sounds with melodic and rhythmic parts played on different instruments.',
-                                }
-                            },
-                            {
-                                TYPE: 'text',
-                                TEXT: {
-                                    SER: 'Marijana Dujović navodi da je muzika inspirisana slikama osmišljena kao zvuk onostranog prostora koji snage donose sa sobom na našu planetu. Muzika doprinosi apsorbovanju unutrašnje atmosfere, spoj nestvorenog sa prisutnim kroz doživljaj harmonije Sunčevog i mističnog dolazećeg svetla.',
-                                    ENG: 'Marijana Dujović states that the music inspired by assets is designed as the sound of other space that the forces bring with them to our planet. Music contributes to the absorption of the inner atmosphere, the union of the uncreated with the present through the experience of the harmony of the Sun and the mystical incoming light.',
-                                }
-                            },
-                        ],
-                        [
-                            {
-                                TYPE: 'text',
-                                TEXT: {
-                                    SER: 'Vizualizacija duhovne dimenzije prosvetljenja sugeriše promenu i beleži trenutak koji sublimira vreme u beskonačnost, istovremeno objedinjuje kretanje i apsolutni mir, u kome se sve događa ali i prestaje u sinergiji uma, tela i duha.',
-                                    ENG: 'The visualization of the spiritual dimension of enlightenment suggests change and captures a moment that sublimates time into infinity, simultaneously uniting movement and absolute peace, in which everything happens but also ceases in the synergy of mind, body and spirit.',
-                                }
-                            },
-                            {
-                                TYPE: 'quote',
-                                TEXT: {
-                                    SER: 'Fokus je na očima, medijuma razmene energije, koji efekatom ogledala uvodi u introspekciju apsorbujući okolne senzacije, dok je istovremeno slika sredstvo komunikacije sa umetnikom i nagoveštava njegovo prisustvo.',
-                                    ENG: 'The focus is on the eyes, the medium of energy exchange, which with the effect of a mirror leads to introspection by absorbing the surrounding sensations, while at the same time the painting is a means of communication with the artist and hints at his presence.',
-                                }
-                            }
-                        ]
-                    ]
-                },
-                {
-                    TYPE: 'inverted_text_grid',
-                    CONTENT: [
-                        [
-                            {
-                                TYPE: 'text',
-                                TEXT: {
-                                    SER: 'Filozofija zen budizma inspirisala je Ivonin rad na više nivoa, prevashodno se odnosi na način na koji umetnica stupa u odnos sa svetom kroz samospoznaju odnosno uvid, putem koga preobražava portretisane emotivnim i duhovnim procesima sopstvenog bića. U radu je prisutna redukcija, nema prostorne odrednice u pozadini slike koja bi ometala pogled, već ukazuje na prazninu, metafizičku dimenziju prostora i vremena u kojoj se prošlost, sadašnjost i budućnost sažimaju u kružnom kretanju večnosti.',
-                                    ENG: 'The philosophy of Zen Buddhism inspired Yvonne\'s work on several levels, primarily related to the way in which the artist enters into a relationship with the world through self-knowledge, i.e. insight, through which she transforms the portrayed through the emotional and spiritual processes of her own being. Reduction is present in the work, there is no spatial determinant in the background of the picture that would obstruct the view, but it points to the void, the metaphysical dimension of space and time in which the past, present and future are condensed in the circular movement of eternity.',
-                                },
-                            },
-                            {
-                                TYPE: 'text',
-                                TEXT: {
-                                    SER: 'Praznina je nezavisni entitet, usmerava akcenat na aktere platna i njihovu energiju u kojoj svetlost proizilazi iz same monohromne pozadine. Ekspresija pokreta u procesu stvaranja u Ivoninom radu kreira energetske vibracije nanosima boja, što se manifestuje treperenjem kontrasta u igri svetlosti i senki, transferom energetskog polja od stvaraoca ka posmatraču koje uspostavlja prisustvo duha. Uvođenje mistične svetlosti van funkcije optičkog fenomena na ravnu površinu slike predstavlja polje sile koje emituje senzacije izvan čulnosti, nagoveštava komunikaciju bića na nivou duše.',
-                                    ENG: 'The void is an independent entity, it directs the accent to the actors of the canvas and their energy in which the light emanates from the monochrome background itself. The expression of movement in the process of creation in Yvonne\'s work creates energy vibrations with the application of colors, which is manifested by flickering contrasts in the play of light and shadows, by the transfer of the energy field from the creator to the observer, which establishes the presence of the spirit. The introduction of mystical light beyond the function of an optical phenomenon onto the flat surface of the picture represents a field of force that emits sensations beyond sensibility, hinting at the communication of beings at the level of the soul.',
-                                },
-                            },
                         ]
                     ]
                 }
@@ -815,7 +866,7 @@ export const PAGE_CONTENT = Object.freeze({
                         [
                             {
                                 TYPE: 'inverted_quote',
-                                WIDTH: 783,
+                                WIDTH: 59,
                                 TEXT: {
                                     SER: 'Širon IDENTITET, Gabrijel STVARANJE, Ivona SAOSEĆAJNOST, Lazar PROMENA, Srki ISTRAJNOST, Pal RAD, Tasja SREĆA, Verona BLAGOST, Ranko UM, Orlando REALIZACIJA i Ksenija Lea LJUBAV koja se javlja u dva oblika.',
                                     ENG: 'Shiron IDENTITY, Gabriel CREATION, Ivona COMPASSION, Lazar CHANGE, Srki PERSISTENCE, Pal WORK, Tasja HAPPINESS, Verona GENTLENESS, Ranko THE MIND, Orlando REALISATION and Ksenia Lea LOVE which appears in two forms.',
@@ -823,11 +874,17 @@ export const PAGE_CONTENT = Object.freeze({
                             },
                             {
                                 TYPE: 'image',
-                                WIDTH: 577,
+                                WIDTH: 41,
                                 ALT: 'exhibition-view',
                                 SRC: exhibition11Snaga2,
                             },
                         ],
+                    ]
+                },
+                {
+                    TYPE: 'image_grid',
+                    CLASS_NAME: '-mt-10',
+                    CONTENT: [
                         [
                             {
                                 TYPE: 'image',
@@ -869,24 +926,36 @@ export const PAGE_CONTENT = Object.freeze({
                     ]
                 },
                 {
-                    TYPE: 'image_grid',
-                    CONTENT: [
-                        [
-                            {
-                                TYPE: 'image',
-                                WIDTH: 511,
-                                MAX_HEIGHT: 448,
-                                ALT: 'exhibition-view-medium',
-                                SRC: exhibition11Snaga4,
-                            },
-                            {
-                                TYPE: 'image',
-                                WIDTH: 929,
-                                MAX_HEIGHT: 448,
-                                ALT: 'exhibition-view-medium',
-                                SRC: exhibition11Snaga5,
-                            }
-                        ]
+                    TYPE: 'carousel',
+                    SLIDES: [
+                        {
+                            SRC: exhibition11SnagaSlide1,
+                            ALT: '11-snaga-slide-1',
+                        },
+                        {
+                            SRC: exhibition11SnagaSlide2,
+                            ALT: '11-snaga-slide-2',
+                        },
+                        {
+                            SRC: exhibition11SnagaSlide3,
+                            ALT: '11-snaga-slide-3',
+                        },
+                        {
+                            SRC: exhibition11SnagaSlide4,
+                            ALT: '11-snaga-slide-4',
+                        },
+                        {
+                            SRC: exhibition11SnagaSlide5,
+                            ALT: '11-snaga-slide-5',
+                        },
+                        {
+                            SRC: exhibition11SnagaSlide6,
+                            ALT: '11-snaga-slide-6',
+                        },
+                        {
+                            SRC: exhibition11SnagaSlide7,
+                            ALT: '11-snaga-slide-7',
+                        }
                     ]
                 },
                 {

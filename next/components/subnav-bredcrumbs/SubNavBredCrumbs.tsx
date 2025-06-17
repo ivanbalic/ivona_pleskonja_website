@@ -1,20 +1,79 @@
 'use client';
-import React from "react";
 import Link from "next/link";
+import React, { useEffect, useState } from "react";
 
 import { cn } from "@/lib/utils";
 import { useIsMobile } from "@/hooks/useIsMobile";
+import { useSearchParams } from "next/navigation";
 import { ArrowLeft } from "@/components/icons/ArrowLeft";
 import { ISubNavItem, ITranslations } from "@/types/types";
 
+const ADDITIONAL_BREADCRUMBS_MAP_MOBILE = Object.freeze({
+    ['11_snaga']: {
+        1: {
+            ID: 'paintings',
+            TITLE: {
+                SER: '11 Snaga Slike',
+                ENG: '11 Snaga Paintings'
+            },
+            LINK: 'works/11_snaga',
+        },
+        2: {
+            ID: 'Lithographs',
+            TITLE: {
+                SER: '11 Snaga Litografije',
+                ENG: '11 Snaga Lithographs'
+            },
+            LINK: 'works/11_snaga',
+        }
+    }
+});
+const ADDITIONAL_BREADCRUMBS_MAP_DESKTOP = Object.freeze({
+    ['11_snaga']: {
+        1: {
+            ID: 'paintings',
+            TITLE: {
+                SER: 'Slike',
+                ENG: 'Paintings'
+            },
+            LINK: 'works/11_snaga?gallery=1',
+        },
+        2: {
+            ID: 'Lithographs',
+            TITLE: {
+                SER: 'Litografije',
+                ENG: 'Lithographs'
+            },
+            LINK: 'works/11_snaga?gallery=2',
+        }
+    }
+});
+
 export function SubNavBredCrumbs({ navItems, locale, page, compact = false }: { navItems: ISubNavItem[], locale: string, page: string, compact?: boolean }) {
+    const [key, setKey] = useState<string>();
+    const searchParams = useSearchParams()
+
     const isMobile = useIsMobile();
-    const items = !compact
-        ? navItems
-        : navItems.slice(navItems.length - 1, navItems.length);
-    console.log('SubNavBredCrumbs: ', page);
+    const additionalBreadcrumbsMap = isMobile ? ADDITIONAL_BREADCRUMBS_MAP_MOBILE : ADDITIONAL_BREADCRUMBS_MAP_DESKTOP;
+
+    const newItems = [...navItems];
+    const gallery = searchParams.get("gallery");
+    const pageMap = additionalBreadcrumbsMap[page as keyof typeof additionalBreadcrumbsMap];
+    const additionalBreadcrumb = pageMap?.[(gallery ?? 0) as keyof typeof pageMap];
+    if(additionalBreadcrumb) newItems.push(additionalBreadcrumb);
+
+    const breadcrumbs = !compact
+        ? newItems
+        : newItems.slice(newItems.length - 1, newItems.length);
+
+    useEffect(() => {
+        setKey(breadcrumbs.map(b => b.ID).join('-'));
+    }, [breadcrumbs]);
+
+    console.log('key: ', key);
     return (
         <div
+            key={key}
             className={cn(
                 'flex pt-5 flex-wrap',
                 compact ? 'font-normal' : 'font-light',
@@ -23,19 +82,19 @@ export function SubNavBredCrumbs({ navItems, locale, page, compact = false }: { 
                 compact || (page === 'exhibition' && isMobile) ? 'justify-start' : 'justify-center',
             )}>
             {compact &&
-                <Link href={`/${locale}/${items?.[0]?.LINK}`}>
+                <Link href={`/${locale}/${breadcrumbs?.[0]?.LINK}`}>
                     <ArrowLeft viewBox="-8 -3 24 24" color="#000000" width="24px" height="24px" />
                 </Link>
             }
-            {items.map(
+            {breadcrumbs.map(
                 (content, index) => (
                     <div key={content.ID} className={
                         cn(
-                            content.ID === page && !compact ? 'font-bold' : '',
                             'px-[5px] max-md:rounded-[30px] cursor-pointer',
+                            index === breadcrumbs.length - 1 && !compact ? 'font-bold' : '',
                             compact || page === 'exhibition' ? 'text-wrap' : 'text-nowrap',
                             page === 'exhibition' ? 'max-md:text-white text-black' : 'text-black',
-                            index === items.length - 1 && !compact && page !== 'exhibition' ? 'max-md:basis-full' : '',
+                            index === breadcrumbs.length - 1 && !compact && page !== 'exhibition' ? 'max-md:basis-full' : '',
                         )
                     }>
                         <Link
@@ -52,7 +111,7 @@ export function SubNavBredCrumbs({ navItems, locale, page, compact = false }: { 
                                     .map((t, i, array) =>
                                         <span key={t}>{`${t}`}</span>)
                             }
-                            <span>{index < items.length - 1 ? ' / ' : ''}</span>
+                            <span>{index < breadcrumbs.length - 1 ? ' / ' : ''}</span>
                         </Link>
                     </div>
                 )

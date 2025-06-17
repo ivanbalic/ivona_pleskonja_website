@@ -78,7 +78,7 @@ export function ArticleCover({ cover, locale }: { cover?: IArticleCover, locale:
                             className={cn('min-h-[150px] object-cover', `max-h-[${cover?.MEDIA.MAX_HEIGHT}px]`)}
                         />
                         : (
-                            <div ref={coverRef}>
+                            <div ref={coverRef} className='mx-4'>
                                 <video width={1440} poster={cover.MEDIA.POSTER} controls className={cn('min-h-[150px] object-cover', `max-h-[${cover?.MEDIA.MAX_HEIGHT}px]`)}>
                                     <source src={cover.MEDIA.SRC as string} type="video/mp4" />
                                 </video>
