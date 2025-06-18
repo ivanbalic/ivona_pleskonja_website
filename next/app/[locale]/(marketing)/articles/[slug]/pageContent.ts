@@ -1,3 +1,9 @@
+// MURAL FREEDOM
+import muralFreedom1 from '@/public/assets/mural-freedom/mural-freedom-1.webp';
+import muralFreedom2 from '@/public/assets/mural-freedom/mural-freedom-2.webp';
+import muralFreedom3 from '@/public/assets/mural-freedom/mural-freedom-3.webp';
+import muralFreedomCoverMobile from '@/public/assets/mural-freedom/mural-freedom-cover-mobile.webp';
+import muralFreedomCoverDesktop from '@/public/assets/mural-freedom/mural-freedom-cover-desktop.webp';
 // CREATING LIGHT
 import gabrielAndPan from '@/public/assets/creating-light/gabriel-and-pan-full.webp';
 import exhibitionCreatingOfLight1 from '@/public/assets/creating-light/exhibition-creating-of-light-1.webp';
@@ -87,10 +93,18 @@ export const PAGE_CONTENT = Object.freeze({
                 ENG: 'A primordial awakening of the being follows the moment of enlightenment. This is a story of a light from the depths of Universe. It is the light that illuminates us - dissolving the deptlis of darkness. It brings out angels. Before awakening these creatures, we must ask ourselves - who created them?'
             },
             MEDIA: {
-                TYPE: 'image',
-                MAX_HEIGHT: 360,
-                SRC: gabrielAndPan,
-                ALT: 'exhibition-cover',
+                MOBILE: {
+                    TYPE: 'image',
+                    MAX_HEIGHT: 360,
+                    SRC: gabrielAndPan,
+                    ALT: 'exhibition-cover',
+                },
+                DESKTOP: {
+                    TYPE: 'image',
+                    MAX_HEIGHT: 360,
+                    SRC: gabrielAndPan,
+                    ALT: 'exhibition-cover',
+                }
             },
             EXTERNAL_LINK: {
                 URL: '',
@@ -613,10 +627,18 @@ export const PAGE_CONTENT = Object.freeze({
                 ENG: 'The series of paintings and graphics 11 STRENGTH is a continuation of the work started within the doctoral art project of Ivona Pleskonje, presented at the Children of the Sun exhibition.'
             },
             MEDIA: {
-                TYPE: 'image',
-                MAX_HEIGHT: 453,
-                ALT: 'exhibition-cover',
-                SRC: exhibition11Snaga1,
+                MOBILE: {
+                    TYPE: 'image',
+                    MAX_HEIGHT: 453,
+                    ALT: 'exhibition-cover',
+                    SRC: exhibition11Snaga1,
+                },
+                DESKTOP: {
+                    TYPE: 'image',
+                    MAX_HEIGHT: 453,
+                    ALT: 'exhibition-cover',
+                    SRC: exhibition11Snaga1,
+                }
             },
             EXTERNAL_LINK: {
                 URL: '',
@@ -1062,11 +1084,20 @@ export const PAGE_CONTENT = Object.freeze({
                 ENG: 'Mural LIFE is dedicated to the time we live in. These vivid monumental assets of the unity of humans, animals and plants in the urban environment call for our connection with nature and the profound importance of our collectiveness.'
             },
             MEDIA: {
-                TYPE: 'video',
-                MAX_HEIGHT: 358,
-                ALT: 'exhibition-cover',
-                SRC: 'https://ivona-pleskonja.s3.eu-north-1.amazonaws.com/mural-life/mural-spot.mp4',
-                POSTER: 'https://ivona-pleskonja.s3.eu-north-1.amazonaws.com/mural-life/mural-life-cover-video-poster-image.png'
+                MOBILE: {
+                    TYPE: 'video',
+                    MAX_HEIGHT: 358,
+                    ALT: 'exhibition-cover',
+                    SRC: 'https://ivona-pleskonja.s3.eu-north-1.amazonaws.com/mural-life/mural-spot.mp4',
+                    POSTER: 'https://ivona-pleskonja.s3.eu-north-1.amazonaws.com/mural-life/mural-life-cover-video-poster-image.png'
+                },
+                DESKTOP: {
+                    TYPE: 'video',
+                    MAX_HEIGHT: 358,
+                    ALT: 'exhibition-cover',
+                    SRC: 'https://ivona-pleskonja.s3.eu-north-1.amazonaws.com/mural-life/mural-spot.mp4',
+                    POSTER: 'https://ivona-pleskonja.s3.eu-north-1.amazonaws.com/mural-life/mural-life-cover-video-poster-image.png'
+                }
             },
             EXTERNAL_LINK: {
                 URL: '',
@@ -1551,6 +1582,243 @@ export const PAGE_CONTENT = Object.freeze({
                                 ]
                             }
                         ]
+                    ]
+                },
+            ],
+        }
+    },
+    MURAL_FREEDOM: {
+        ID: 4,
+        HISTORY: [
+            {
+                ID: 'home',
+                TITLE: {
+                    SER: 'Početna',
+                    ENG: 'Home',
+                },
+                LINK: ''
+            },
+            {
+                ID: 'works',
+                TITLE: {
+                    SER: "Radovi",
+                    ENG: 'Works',
+                },
+                LINK: 'works'
+            },
+            {
+                ID: 'exhibition',
+                TITLE: {
+                    SER: 'Mural Freedom',
+                    ENG: 'Mural, Freedom'
+                },
+                LINK: 'articles/4'
+            },
+        ],
+        COVER: {
+            TITLE: {
+                SER: '„MURAL FREEDOM“',
+                ENG: '„MURAL FREEDOM“',
+            },
+            AUTHOR: {
+                SER: 'Autor murala: Ivona Pleskonja',
+                ENG: 'Mural author: Ivona Pleskonja'
+            },
+            YEAR: 2024,
+            TEXT: {
+                SER: 'U mnoštvu betona, jedan prozor u beskraj i zvuk perja na vetru.',
+                ENG: 'In the middle of concrete, one window into infinity and the sound of feathers in the wind'
+            },
+            MEDIA: {
+                MOBILE: {
+                    TYPE: 'image',
+                    MAX_HEIGHT: 178,
+                    ALT: 'exhibition-cover',
+                    SRC: muralFreedomCoverMobile,
+                },
+                DESKTOP: {
+                    TYPE: 'image',
+                    MAX_HEIGHT: 236,
+                    ALT: 'exhibition-cover',
+                    SRC: muralFreedomCoverDesktop,
+                }
+            },
+            EXTERNAL_LINK: {
+                URL: '',
+                LABEL: {
+                    SER: 'POGLEDAJ CEO INTERVJU OVDE',
+                    ENG: 'WATCH INTERVIEW HERE'
+                }
+            },
+        },
+        SECTIONS: {
+            MOBILE: [
+                {
+                    TYPE: 'text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                CLASS_NAME: 'text-primaryBlue',
+                                TEXT: {
+                                    SER: 'MURAL FREEDOM, Skyline zgrada, spoljna fasada, Beograd',
+                                    ENG: 'MURAL FREEDOM, Skyline building, facade, Belgrade',
+                                }
+                            },
+                        ]
+                    ]
+                },
+                {
+                    TYPE: 'contained_image_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'image',
+                                MAX_HEIGHT: 54,
+                                ALT: 'exhibition-view-wide',
+                                SRC: muralFreedomCoverDesktop,
+                            },
+                        ],
+                    ]
+                },
+                {
+                    TYPE: 'contained_image_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'image',
+                                WIDTH: 48,
+                                ALT: 'exhibition-view',
+                                SRC: muralFreedom2,
+                            },
+                            {
+                                TYPE: 'image',
+                                WIDTH: 48,
+                                ALT: 'exhibition-view',
+                                SRC: muralFreedom3,
+                            },
+                        ],
+                    ]
+                },
+                {
+                    TYPE: 'inverted_text_grid',
+                    CLASS_NAME: 'w-full flex flex-row justify-between text-[16px] leading-[24px] tracking-[.05em] italic',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                CLASS_NAME: 'w-[173px]',
+                                TEXT: {
+                                    SER: " ",
+                                    ENG: " "
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                CLASS_NAME: 'w-[173px]',
+                                TEXT: {
+                                    SER: " ",
+                                    ENG: " "
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                CLASS_NAME: 'w-[173px]',
+                                TEXT: {
+                                    SER: "Asistenti slikari:",
+                                    ENG: "Assistant painters:"
+                                },
+                            },
+                        ],
+                        [
+                            {
+                                TYPE: 'text',
+                                CLASS_NAME: 'w-[173px]',
+                                TEXT: {
+                                    SER: "Sofija Rakidžić",
+                                    ENG: "Sofija Rakidžić",
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                CLASS_NAME: 'w-[173px] -mt-[18px]',
+                                TEXT: {
+                                    SER: "Teodora Rkidžić",
+                                    ENG: "Teodora Rkidžić",
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                CLASS_NAME: 'w-[173px] -mt-[18px]',
+                                TEXT: {
+                                    SER: "Sofija Vujić",
+                                    ENG: "Sofija Vujić",
+                                },
+                            },
+                        ]
+                    ]
+                },
+                {
+                    TYPE: 'image_grid',
+                    CLASS_NAME: 'pt-0 md:pt-0',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'image',
+                                WIDTH: 100,
+                                ALT: 'exhibition-view',
+                                SRC: muralFreedom1,
+                            },
+                        ],
+                    ]
+                },
+            ],
+            DESKTOP: [
+                {
+                    TYPE: 'text_grid',
+                    CLASS_NAME: 'pb-10',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'quote',
+                                CENTERED: true,
+                                TEXT: {
+                                    SER: 'MURAL FREEDOM, Skyline zgrada, spoljna fasada, Beograd',
+                                    ENG: 'MURAL FREEDOM, Skyline building, facade, Belgrade',
+                                }
+                                },
+                        ]
+                    ]
+                },
+                {
+                    TYPE: 'contained_image_grid',
+                    CLASS_NAME: 'pt-0 md:pt-0',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'inverted_quote',
+                                WIDTH: 42,
+                                CLASS_NAME: 'md:text-[28px] font-light tracking-[.15em]',
+                                TEXT: {
+                                    SER: "Asistenti slikari:  <br/>" +
+                                        "<br />" +
+                                        "Sofija Rakidžić  <br/>" +
+                                        "Teodora Rkidžić  <br/>" +
+                                        "Sofija Vujić  <br/>",
+                                    ENG: "Assistant painters:  <br/>" +
+                                        "<br />" +
+                                        "Sofija Rakidžić  <br/>" +
+                                        "Teodora Rkidžić  <br/>" +
+                                        "Sofija Vujić  <br/>"
+                                },
+                            },
+                            {
+                                TYPE: 'image',
+                                WIDTH: 58,
+                                ALT: 'exhibition-view',
+                                SRC: muralFreedom1,
+                            },
+                        ],
                     ]
                 },
             ],

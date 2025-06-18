@@ -70,7 +70,7 @@ export const PAGE_CONTENT = Object.freeze({
         ENG: "WORKS"
     },
     CONTENT: [
-        { ID: 'mural_freedom', TITLE: { SER: { YEAR: '2024', TEXT: 'Mural Freedom' },  ENG: { YEAR: '2024', TEXT: 'Mural Freedom' } }, DISABLED: true, LINK: null },
+        { ID: 'mural_freedom', TITLE: { SER: { YEAR: '2024', TEXT: 'Mural Freedom' },  ENG: { YEAR: '2024', TEXT: 'Mural Freedom' } }, DISABLED: false, LINK: 'articles/4' },
         { ID: 'creating_light', TITLE: { SER: { YEAR: '2023',  TEXT: 'Stvaranje svetla / Nežni smo rodjeni' }, ENG: { YEAR: '2023', TEXT: 'Creating Light / We Are Born Gentle' } }, DISABLED: false, LINK: null },
         { ID: 'mural_life', TITLE: { SER: { YEAR: '2020', TEXT: 'Mural Life' }, ENG: { YEAR: '2020', TEXT: 'Mural Life' } }, DISABLED: false, LINK:'articles/3' },
         { ID: '11_snaga', TITLE: { SER: { YEAR: '2019', TEXT: '11 Snaga' }, ENG: { YEAR: '2019', TEXT: '11 Snaga' } }, DISABLED: false, LINK: null },

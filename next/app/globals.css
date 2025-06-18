@@ -139,7 +139,7 @@ body {
     }
     @media(max-width: 767px) {
       bottom: 119px;
-      left: calc(100vw - 99px);
+      left: calc(100vw - 68px);
     }
   }
 

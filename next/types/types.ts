@@ -76,11 +76,20 @@ export interface IArticleCover {
     YEAR: number,
     TEXT: ITranslations,
     MEDIA: {
-        ALT: string,
-        TYPE: string,
-        POSTER?: string,
-        MAX_HEIGHT?: number,
-        SRC: StaticImageData | string,
+        MOBILE: {
+            ALT: string,
+            TYPE: string,
+            POSTER?: string,
+            MAX_HEIGHT?: number,
+            SRC: StaticImageData | string,
+        },
+        DESKTOP: {
+            ALT: string,
+            TYPE: string,
+            POSTER?: string,
+            MAX_HEIGHT?: number,
+            SRC: StaticImageData | string,
+        }
     },
     EXTERNAL_LINK: {
         URL: string,

@@ -13,10 +13,11 @@ function calculateOffset(height: number) {
     return Math.round(height / 2);
 }
 
-export function ArticleCover({ cover, locale }: { cover?: IArticleCover, locale: string }) {
+export function ArticleCover({ cover, locale }: { cover: IArticleCover, locale: string }) {
     const isMobile = useIsMobile();
     const [coverImageOffset, setCoverImageOffset] = useState<number | null>(0);
     const coverRef = useRef<HTMLImageElement | null>(null);
+    const media = isMobile ? cover.MEDIA.MOBILE : cover.MEDIA.DESKTOP;
 
     useEffect(() => {
         const coverElement = coverRef.current;
@@ -43,7 +44,7 @@ export function ArticleCover({ cover, locale }: { cover?: IArticleCover, locale:
 
     return (
         <div className="bg-articleBgBlue">
-            <Container containerStyle={{paddingBottom: `${coverImageOffset || ((cover.MEDIA.MAX_HEIGHT ?? 0) / 2)}px`, marginBottom: `${coverImageOffset || ((cover.MEDIA.MAX_HEIGHT ?? 0) / 2)}px`}} className="mt-10 md:pt-10">
+            <Container containerStyle={{paddingBottom: `${coverImageOffset || ((media.MAX_HEIGHT ?? 0) / 2)}px`, marginBottom: `${coverImageOffset || ((media.MAX_HEIGHT ?? 0) / 2)}px`}} className="mt-10 md:pt-10">
                 <Container className={cn(
                     'pb-5 md:pb-10',
                     'flex flex-col gap-4',
@@ -66,25 +67,27 @@ export function ArticleCover({ cover, locale }: { cover?: IArticleCover, locale:
                             className="font-normal md:font-bold">{cover.AUTHOR[locale.toUpperCase() as keyof ITranslations]}</div>
                     </div>
                 </Container>
-                <Container className="absolute md:px-10">
-                    {cover.MEDIA.TYPE === 'image'
-                        ? <Image
-                            priority
-                            ref={coverRef}
-                            placeholder='blur'
-                            fetchPriority='high'
-                            src={cover.MEDIA.SRC ?? ''}
-                            alt={cover.MEDIA.ALT ?? ''}
-                            className={cn('min-h-[150px] object-cover', `max-h-[${cover?.MEDIA.MAX_HEIGHT}px]`)}
-                        />
-                        : (
-                            <div ref={coverRef} className='mx-4'>
-                                <video width={1440} poster={cover.MEDIA.POSTER} controls className={cn('min-h-[150px] object-cover', `max-h-[${cover?.MEDIA.MAX_HEIGHT}px]`)}>
-                                    <source src={cover.MEDIA.SRC as string} type="video/mp4" />
-                                </video>
-                            </div>
-                        )
-                    }
+                <Container className="absolute md:px-10 w-full">
+                    <div className="flex justify-center">
+                        {media?.TYPE === 'image'
+                            ? <Image
+                                priority
+                                ref={coverRef}
+                                placeholder='blur'
+                                fetchPriority='high'
+                                src={media?.SRC ?? ''}
+                                alt={media?.ALT ?? ''}
+                                className={cn('min-h-[150px] object-cover', `max-h-[${media?.MAX_HEIGHT}px]`)}
+                            />
+                            : (
+                                <div ref={coverRef} className='mx-4'>
+                                    <video width={1440} poster={media?.POSTER} controls className={cn('min-h-[150px] object-cover', `max-h-[${media?.MAX_HEIGHT}px]`)}>
+                                        <source src={media?.SRC as string} type="video/mp4" />
+                                    </video>
+                                </div>
+                            )
+                        }
+                    </div>
                     {cover?.EXTERNAL_LINK.URL && !isMobile &&
                         <Link className={cn(
                             'absolute top-[0] left-[calc(100%-80px)]',
