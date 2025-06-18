@@ -123,23 +123,23 @@ body {
     }
   }
   .embla__button--prev {
+    left: 40px;
     bottom: 282px;
-    left: 20px;
     @media(max-width: 767px) {
+      left: 16px;
       bottom: 119px;
-      left: 10px;
     }
   }
   .embla__button--next {
     bottom: 282px;
-    left: calc(1440px - 154px);
+    left: calc(1440px - 174px);
     @media(max-width: 1440px) {
       bottom: 282px;
-      left: calc(100vw - 154px);
+      left: calc(100vw - 174px);
     }
     @media(max-width: 767px) {
       bottom: 119px;
-      left: calc(100vw - 68px);
+      left: calc(100vw - 74px);
     }
   }
 

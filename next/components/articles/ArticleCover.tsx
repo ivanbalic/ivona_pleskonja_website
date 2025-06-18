@@ -63,12 +63,13 @@ export function ArticleCover({ cover, locale }: { cover: IArticleCover, locale: 
                     </div>
                     <div className="flex flex-row md:flex-col gap-2 font-helvetica text-[16px] leading-[10px] md:leading-[100%] tracking-[.05em] md:tracking-[.15em] max-md:text-externalLink">
                         <div className="font-normal md:font-medium max-md:border-r border-externalLink max-md:pr-2">{cover.YEAR}</div>
-                        <div
-                            className="font-normal md:font-bold">{cover.AUTHOR[locale.toUpperCase() as keyof ITranslations]}</div>
+                        <div className="font-normal md:font-bold">
+                            {cover.AUTHOR[locale.toUpperCase() as keyof ITranslations]}
+                        </div>
                     </div>
                 </Container>
                 <Container className="absolute md:px-10 w-full">
-                    <div className="flex justify-center">
+                    <div className="flex justify-center mx-4">
                         {media?.TYPE === 'image'
                             ? <Image
                                 priority
@@ -88,19 +89,19 @@ export function ArticleCover({ cover, locale }: { cover: IArticleCover, locale: 
                             )
                         }
                     </div>
-                    {cover?.EXTERNAL_LINK.URL && !isMobile &&
-                        <Link className={cn(
-                            'absolute top-[0] left-[calc(100%-80px)]',
-                            'md:top-[calc(50%-10px)] md:left-[calc(100%-110px)]',
-                            'lg:top-[calc(50%-35px)] lg:left-[calc(100%-146px)]'
+                    {cover?.EXTERNAL_LINK.URL &&
+                        <Link style={{ marginTop: `-${isMobile ? coverImageOffset : 0}px`}} className={cn(
+                            'z-[2] left-[calc(100%-152px)]',
+                            'block fixed md:absolute w-fit',
+                            'md:top-[calc(50%-80px)] md:left-[calc(100%-146px)]'
                         )}
                               href={cover?.EXTERNAL_LINK.URL ?? '#'}
                               target="_blank"
                         >
                             <div className={cn(
+                                'text-[12px] leading-[100%]',
+                                'bg-externalLink rounded-full w-[136px] h-[136px] px-[27.5px]',
                                 'flex items-center justify-center text-black text-center font-helvetica',
-                                'text-[8px] md:text-[10px] lg:text-[12px] leading-[10.3px] md:leading-[12.3px] lg:leading-[14.3px]',
-                                'bg-externalLink rounded-full w-[80px] md:w-[100px] lg:w-[136px] h-[80px] md:h-[100px] lg:h-[136px] px-[11px]',
                             )}>
                                 {cover?.EXTERNAL_LINK.LABEL[locale.toUpperCase() as keyof ITranslations]}
                             </div>

@@ -40,6 +40,10 @@ import muralLifeSlide6 from '@/public/assets/mural-life/mural-life-slide-6.webp'
 import muralLifeSlide7 from '@/public/assets/mural-life/mural-life-slide-7.webp';
 import muralLifeSlide8 from '@/public/assets/mural-life/mural-life-slide-8.webp';
 import muralLifeSlide9 from '@/public/assets/mural-life/mural-life-slide-9.webp';
+// STRONG PEOPLE
+import strongPeople1 from '@/public/assets/strong-people/strong-people-1.webp';
+import strongPeople2 from '@/public/assets/strong-people/strong-people-2.webp';
+import strongPeopleCover from '@/public/assets/strong-people/strong-people-cover.webp';
 
 export const PAGE_CONTENT = Object.freeze({
     CREATING_LIFE: {
@@ -641,10 +645,10 @@ export const PAGE_CONTENT = Object.freeze({
                 }
             },
             EXTERNAL_LINK: {
-                URL: '',
+                URL: 'https://www.youtube.com/watch?v=LIj_j6JuZDc&ab_channel=IvonaPleskonja',
                 LABEL: {
-                    SER: 'POGLEDAJ CEO INTERVJU OVDE',
-                    ENG: 'WATCH INTERVIEW HERE'
+                    SER: 'POGLEDAJ VIDEO OVDE',
+                    ENG: 'WATCH VIDEO HERE'
                 }
             },
         },
@@ -1822,6 +1826,184 @@ export const PAGE_CONTENT = Object.freeze({
                     ]
                 },
             ],
+        }
+    },
+    STRONG_PEOPLE: {
+        ID: 5,
+        HISTORY: [
+            {
+                ID: 'home',
+                TITLE: {
+                    SER: 'Početna',
+                    ENG: 'Home',
+                },
+                LINK: ''
+            },
+            {
+                ID: 'works',
+                TITLE: {
+                    SER: "Radovi",
+                    ENG: 'Works',
+                },
+                LINK: 'works'
+            },
+            {
+                ID: 'exhibitions',
+                TITLE: {
+                    SER: 'Jaki Ljudi',
+                    ENG: 'Strong People'
+                },
+                LINK: 'articles/5'
+            },
+        ],
+        COVER: {
+            TITLE: {
+                SER: '„JAKI LJUDI“',
+                ENG: '„STRONG PEOPLE“',
+            },
+            AUTHOR: {
+                SER: 'Miloš Milošević istoričar umetnosti',
+                ENG: 'Miloš Milošević art historian'
+            },
+            YEAR: 2016,
+            TEXT: {
+                SER: 'U slikarstvu Ivone Pleskonje dominira ljudska figura. Izložba pod nazivom "Jaki ljudi" se može pohvaliti jasnom idejom umetnice koja se očitava kroz izražajne portrete, poze i bogat kolorit. Umetnica daje prikaz, kako unutrašnjeg stanja, tako i pogleda na svet oko sebe. ',
+                ENG: 'In Ivona Pleskonja\'s painting, the human figure dominates. The exhibition titled "Strong People" boasts a clear artistic vision, evident through expressive portraits, poses, and rich colors. The artist presents both an inner state and a perspective on the world around her.'
+            },
+            MEDIA: {
+                MOBILE: {
+                    TYPE: 'image',
+                    WIDTH: 358,
+                    MAX_HEIGHT: 171,
+                    ALT: 'exhibition-cover',
+                    SRC: strongPeopleCover,
+                },
+                DESKTOP: {
+                    TYPE: 'image',
+                    MAX_HEIGHT: 559,
+                    ALT: 'exhibition-cover',
+                    SRC: strongPeopleCover,
+                }
+            },
+            EXTERNAL_LINK: {
+                URL: 'https://www.youtube.com/watch?v=atdZpocr8Fg&ab_channel=ForumInfo',
+                LABEL: {
+                    SER: 'POGLEDAJ VIDEO OVDE',
+                    ENG: 'WATCH VIDEO HERE'
+                }
+            },
+        },
+        SECTIONS: {
+            MOBILE: [
+                {
+                    TYPE: 'text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Prestanak ili nemogućnost komunikacije kao vid današnjeg stanja društva kroz percepciju umetnice i njen odgovor prikaz borbe pojednica protiv istog, bunt ali i moguća usamljenost u toj borbi. Kroz stvaralački opus umetnika vidimo jasnu borbu protiv otuđenja današnjeg društva. Gubitak komunikacije kao problem društva ali i pojedinca. Jasna unutrašnja borba prikazuje sam protest ali i poziv na otrežnjenje i samosvest.',
+                                    ENG: "The cessation or impossibility of communication as a reflection of today's societal condition is perceived by the artist and met with her response—a depiction of the individual\'s struggle against it, a rebellion, yet also the potential loneliness within that fight. Through the artist's creative opus, we witness a clear resistance against the alienation of contemporary society."
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Portret jasno izražava emocije, nem pogled upućen posmatraču, gde podseća na odraz u ogledalu, predstavlja poziv na borbu za bolji svet Facijalne ekspresije, grimase kao izraz unutrašnje borbe i nagoveštaja bolje budućnosti. Svaki autorski rad nosi pečat individue koja ga stvorila, pa tako i ovi koje nam Ivona predstavlja na pomenutoj izložbi.',
+                                    ENG: 'The loss of communication emerges as both a societal and individual issue. A profound inner struggle is depicted, serving as both a protest and a call for awareness and self-consciousness. The portrait vividly expresses emotions—a silent gaze directed at the viewer, reminiscent of a reflection in the mirror—inviting a fight for a better world. Facial expressions and grimaces convey an internal struggle while hinting at a brighter future.'
+                                },
+                            },
+                        ],
+                    ],
+                },
+                {
+                    TYPE: 'image_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'image',
+                                WIDTH: 100,
+                                ALT: 'exhibition-view',
+                                SRC: strongPeople1,
+                            },
+                        ],
+                    ]
+                },
+                {
+                    TYPE: 'text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Njena umetnost je figurativna, intimna, osobitog izraza; boraca, jakih ljudi, koje prikazuje, dolaze iz njenog unutrašnjeg sveta i njen su krik. Slike su nepredvidive, raznovrsne, složene i dovršene. Ona bez bojazni eksperimentiše sa monumentalnošću slika kojima želi da naglasi snagu ljudi koje portretira.',
+                                    ENG: "Each artistic work bears the imprint of the individual who created it, and the same holds true for the pieces Ivona presents in this exhibition. Her art is figurative, intimate, and uniquely expressive. The warriors and strong individuals she portrays emerge from her inner world—they are her cry. Her paintings are unpredictable, diverse, complex, and complete. She fearlessly experiments with the monumental nature of her works, aiming to emphasize the strength of the people she portrays."
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Pažljivim posmatranjem slika Ivone Pleskonje posmatrač će uočiti slojevitost prikazane priče, te će iz naizgled jednostavne vizuelne prezentacije prepoznavati sve više motiva i skrivenih karaktera, njeno slikarstvo je upravo jedna takva čarolija, pa je iz tih razloga aktuelno i svima nama preko potrebno.',
+                                    ENG: 'Through careful observation of Ivona Pleskonja’s paintings, the viewer will notice the layered depth of the story being told. What may seem like a simple visual presentation gradually reveals more motifs and hidden characters. Her painting is precisely that kind of magic—timeless and essential for all of us.'
+                                },
+                            },
+                        ]
+                    ]
+                },
+                {
+                    TYPE: 'image_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'image',
+                                MAX_HEIGHT: 143,
+                                ALT: 'exhibition-view-wide',
+                                SRC: strongPeople2,
+                            },
+                        ]
+                    ]
+                },
+            ],
+            DESKTOP: [
+                {
+                    TYPE: 'text_grid',
+                    CLASS_NAME: 'pb-5 md:pb-10',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Prestanak ili nemogućnost komunikacije kao vid današnjeg stanja društva kroz percepciju umetnice i njen odgovor prikaz borbe pojednica protiv istog, bunt ali i moguća usamljenost u toj borbi. Kroz stvaralački opus umetnika vidimo jasnu borbu protiv otuđenja današnjeg društva. Gubitak komunikacije kao problem društva ali i pojedinca. Jasna unutrašnja borba prikazuje sam protest ali i poziv na otrežnjenje i samosvest.',
+                                    ENG: "The cessation or impossibility of communication as a reflection of today's societal condition is perceived by the artist and met with her response—a depiction of the individual\'s struggle against it, a rebellion, yet also the potential loneliness within that fight. Through the artist's creative opus, we witness a clear resistance against the alienation of contemporary society."
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Portret jasno izražava emocije, nem pogled upućen posmatraču, gde podseća na odraz u ogledalu, predstavlja poziv na borbu za bolji svet Facijalne ekspresije, grimase kao izraz unutrašnje borbe i nagoveštaja bolje budućnosti. Svaki autorski rad nosi pečat individue koja ga stvorila, pa tako i ovi koje nam Ivona predstavlja na pomenutoj izložbi.',
+                                    ENG: 'The loss of communication emerges as both a societal and individual issue. A profound inner struggle is depicted, serving as both a protest and a call for awareness and self-consciousness. The portrait vividly expresses emotions—a silent gaze directed at the viewer, reminiscent of a reflection in the mirror—inviting a fight for a better world. Facial expressions and grimaces convey an internal struggle while hinting at a brighter future.'
+                                },
+                            },
+                        ],
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Njena umetnost je figurativna, intimna, osobitog izraza; boraca, jakih ljudi, koje prikazuje, dolaze iz njenog unutrašnjeg sveta i njen su krik. Slike su nepredvidive, raznovrsne, složene i dovršene. Ona bez bojazni eksperimentiše sa monumentalnošću slika kojima želi da naglasi snagu ljudi koje portretira.',
+                                    ENG: "Each artistic work bears the imprint of the individual who created it, and the same holds true for the pieces Ivona presents in this exhibition. Her art is figurative, intimate, and uniquely expressive. The warriors and strong individuals she portrays emerge from her inner world—they are her cry. Her paintings are unpredictable, diverse, complex, and complete. She fearlessly experiments with the monumental nature of her works, aiming to emphasize the strength of the people she portrays."
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Pažljivim posmatranjem slika Ivone Pleskonje posmatrač će uočiti slojevitost prikazane priče, te će iz naizgled jednostavne vizuelne prezentacije prepoznavati sve više motiva i skrivenih karaktera, njeno slikarstvo je upravo jedna takva čarolija, pa je iz tih razloga aktuelno i svima nama preko potrebno.',
+                                    ENG: 'Through careful observation of Ivona Pleskonja’s paintings, the viewer will notice the layered depth of the story being told. What may seem like a simple visual presentation gradually reveals more motifs and hidden characters. Her painting is precisely that kind of magic—timeless and essential for all of us.'
+                                },
+                            },
+                        ],
+                    ],
+                },
+            ]
         }
     },
 });

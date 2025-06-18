@@ -1,6 +1,7 @@
 'use client';
 import {useEffect, useState} from "react";
 
+import { cn } from "@/lib/utils";
 import { Container } from "@/components/container";
 import { getSectionComponentByType } from "@/components/articles/sectionComponentMap";
 
@@ -8,7 +9,7 @@ const MAX_CONTAINED_GRID_WIDTH = 1360;
 
 export function ArticleContainedImageGrid({ locale, section }: {
     locale: string,
-    section: { TYPE: 'contained_image_grid', CONTENT: Record<string, any>[][], STYLE: Record<string, string> },
+    section: { TYPE: 'contained_image_grid', CONTENT: Record<string, any>[][], STYLE: Record<string, string>, CLASS_NAME?: string, },
 }) {
     const [containerWidth, setContainerWidth] = useState<number>();
 
@@ -23,7 +24,10 @@ export function ArticleContainedImageGrid({ locale, section }: {
     if (!section) return null;
 
     return (
-        <Container containerStyle={section.STYLE} className="flex flex-col md:px-10 pt-5 md:pt-10">
+        <Container containerStyle={section.STYLE} className={cn(
+            "flex flex-col md:px-10 pt-5 md:pt-10",
+            section.CLASS_NAME,
+        )}>
             {section.CONTENT.map((row: Record<string, any>[], rowKey: number) =>
                 <div key={`${section.TYPE}_${rowKey}`} className="flex flex-row justify-between">
                     {row.map((col: Record<string, any>, colKey: number)  => {
