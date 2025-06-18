@@ -80,6 +80,7 @@ export interface IArticleCover {
             ALT: string,
             TYPE: string,
             POSTER?: string,
+            CLASS_NAME?: string,
             MAX_HEIGHT?: number,
             SRC: StaticImageData | string,
         },
@@ -87,6 +88,7 @@ export interface IArticleCover {
             ALT: string,
             TYPE: string,
             POSTER?: string,
+            CLASS_NAME?: string,
             MAX_HEIGHT?: number,
             SRC: StaticImageData | string,
         }

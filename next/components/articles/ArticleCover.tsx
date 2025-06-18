@@ -69,7 +69,7 @@ export function ArticleCover({ cover, locale }: { cover: IArticleCover, locale: 
                     </div>
                 </Container>
                 <Container className="absolute md:px-10 w-full">
-                    <div className="flex justify-center mx-4">
+                    <div className={cn("flex justify-center", media.CLASS_NAME)}>
                         {media?.TYPE === 'image'
                             ? <Image
                                 priority
@@ -81,8 +81,8 @@ export function ArticleCover({ cover, locale }: { cover: IArticleCover, locale: 
                                 className={cn('min-h-[150px] object-cover', `max-h-[${media?.MAX_HEIGHT}px]`)}
                             />
                             : (
-                                <div ref={coverRef} className='mx-4'>
-                                    <video width={1440} poster={media?.POSTER} controls className={cn('min-h-[150px] object-cover', `max-h-[${media?.MAX_HEIGHT}px]`)}>
+                                <div ref={coverRef}>
+                                    <video width={1440} poster={media?.POSTER} controls className='min-h-[150px] object-cover'>
                                         <source src={media?.SRC as string} type="video/mp4" />
                                     </video>
                                 </div>

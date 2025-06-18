@@ -1091,6 +1091,7 @@ export const PAGE_CONTENT = Object.freeze({
                 MOBILE: {
                     TYPE: 'video',
                     MAX_HEIGHT: 358,
+                    CLASS_NAME: 'mx-4',
                     ALT: 'exhibition-cover',
                     SRC: 'https://ivona-pleskonja.s3.eu-north-1.amazonaws.com/mural-life/mural-spot.mp4',
                     POSTER: 'https://ivona-pleskonja.s3.eu-north-1.amazonaws.com/mural-life/mural-life-cover-video-poster-image.png'
@@ -1637,6 +1638,7 @@ export const PAGE_CONTENT = Object.freeze({
                 MOBILE: {
                     TYPE: 'image',
                     MAX_HEIGHT: 178,
+                    CLASS_NAME: 'mx-4',
                     ALT: 'exhibition-cover',
                     SRC: muralFreedomCoverMobile,
                 },
@@ -1875,6 +1877,7 @@ export const PAGE_CONTENT = Object.freeze({
                     TYPE: 'image',
                     WIDTH: 358,
                     MAX_HEIGHT: 171,
+                    CLASS_NAME: 'mx-4',
                     ALT: 'exhibition-cover',
                     SRC: strongPeopleCover,
                 },
