@@ -117,7 +117,13 @@ const config: Config = {
         'max-h-[561px]',
         'max-h-[574px]',
     ],
-  theme: {
+    theme: {
+      screens: {
+          sm: '640px',
+          md: '1024px',
+          lg: '1280px',
+          xl: '1536px',
+    },
     extend: {
       colors: {
         inactive: '#CBCBCB',

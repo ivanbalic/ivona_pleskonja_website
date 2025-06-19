@@ -31,7 +31,7 @@ export function ArticleImage({ section, containerWidth }: { section?: { ALT: str
                 src={section.SRC ?? ''}
                 alt={section.ALT ?? ''}
                 className={cn(
-                    'h-full object-cover',
+                    'w-full h-full object-cover',
                     section?.MAX_HEIGHT ? maxHeightClass : '',
                 )}
             />

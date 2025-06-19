@@ -158,21 +158,16 @@ export const PAGE_CONTENT = Object.freeze({
                                 SRC: exhibitionCreatingOfLight2,
                             },
                         ],
-                    ]
-                },
-                {
-                    TYPE: 'contained_image_grid',
-                    CONTENT: [
                         [
                             {
                                 TYPE: 'image',
-                                WIDTH: 48,
+                                WIDTH: 50,
                                 ALT: 'exhibition-view',
                                 SRC: exhibitionCreatingOfLight1,
                             },
                             {
                                 TYPE: 'image',
-                                WIDTH: 48,
+                                WIDTH: 50,
                                 ALT: 'exhibition-view',
                                 SRC: exhibitionCreatingOfLight5,
                             },
@@ -1091,7 +1086,6 @@ export const PAGE_CONTENT = Object.freeze({
                 MOBILE: {
                     TYPE: 'video',
                     MAX_HEIGHT: 358,
-                    CLASS_NAME: 'mx-4',
                     ALT: 'exhibition-cover',
                     SRC: 'https://ivona-pleskonja.s3.eu-north-1.amazonaws.com/mural-life/mural-spot.mp4',
                     POSTER: 'https://ivona-pleskonja.s3.eu-north-1.amazonaws.com/mural-life/mural-life-cover-video-poster-image.png'
@@ -1638,7 +1632,7 @@ export const PAGE_CONTENT = Object.freeze({
                 MOBILE: {
                     TYPE: 'image',
                     MAX_HEIGHT: 178,
-                    CLASS_NAME: 'mx-4',
+                    CLASS_NAME: 'w-full',
                     ALT: 'exhibition-cover',
                     SRC: muralFreedomCoverMobile,
                 },
@@ -1685,21 +1679,16 @@ export const PAGE_CONTENT = Object.freeze({
                                 SRC: muralFreedomCoverDesktop,
                             },
                         ],
-                    ]
-                },
-                {
-                    TYPE: 'contained_image_grid',
-                    CONTENT: [
                         [
                             {
                                 TYPE: 'image',
-                                WIDTH: 48,
+                                WIDTH: 50,
                                 ALT: 'exhibition-view',
                                 SRC: muralFreedom2,
                             },
                             {
                                 TYPE: 'image',
-                                WIDTH: 48,
+                                WIDTH: 50,
                                 ALT: 'exhibition-view',
                                 SRC: muralFreedom3,
                             },
@@ -1708,7 +1697,7 @@ export const PAGE_CONTENT = Object.freeze({
                 },
                 {
                     TYPE: 'inverted_text_grid',
-                    CLASS_NAME: 'w-full flex flex-row justify-between text-[16px] leading-[24px] tracking-[.05em] italic',
+                    CLASS_NAME: 'w-full flex flex-row justify-between text-[16px] leading-[24px] tracking-[.05em] italic -mt-0',
                     CONTENT: [
                         [
                             {
@@ -1875,9 +1864,6 @@ export const PAGE_CONTENT = Object.freeze({
             MEDIA: {
                 MOBILE: {
                     TYPE: 'image',
-                    WIDTH: 358,
-                    MAX_HEIGHT: 171,
-                    CLASS_NAME: 'mx-4',
                     ALT: 'exhibition-cover',
                     SRC: strongPeopleCover,
                 },
@@ -1925,7 +1911,6 @@ export const PAGE_CONTENT = Object.freeze({
                         [
                             {
                                 TYPE: 'image',
-                                WIDTH: 100,
                                 ALT: 'exhibition-view',
                                 SRC: strongPeople1,
                             },

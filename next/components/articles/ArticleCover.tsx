@@ -78,7 +78,7 @@ export function ArticleCover({ cover, locale }: { cover: IArticleCover, locale: 
                                 fetchPriority='high'
                                 src={media?.SRC ?? ''}
                                 alt={media?.ALT ?? ''}
-                                className={cn('min-h-[150px] object-cover', `max-h-[${media?.MAX_HEIGHT}px]`)}
+                                className={cn('w-full min-h-[150px] object-cover', `max-h-[${media?.MAX_HEIGHT}px]`)}
                             />
                             : (
                                 <div ref={coverRef}>
