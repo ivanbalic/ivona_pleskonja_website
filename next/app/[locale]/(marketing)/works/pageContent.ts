@@ -64,6 +64,8 @@ import weAreNotAloneTheLightIsHere from '@/public/assets/11-snaga/we-are-not-alo
 import ksenijaLoveSmellsRoseGraphThumb from '@/public/assets/11-snaga/ksenija-love-smells-rose-graph-thumb.webp';
 import weAreNotAloneTheLightIsHereThumb from '@/public/assets/11-snaga/we-are-not-alone-the-light-is-here-thumb.webp';
 // CHILDREN OF THE SUN
+import fragment01Full from '@/public/assets/children-of-the-sun/fragment-01-full.webp';
+import fragment01Preview from '@/public/assets/children-of-the-sun/fragment-01-preview.webp';
 import childrenOfTheSunFull from '@/public/assets/children-of-the-sun/children-of-the-sun-full.webp';
 import childrenOfTheSunPreview from '@/public/assets/children-of-the-sun/children-of-the-sun-preview.webp';
 
@@ -1070,23 +1072,23 @@ export const SUBPAGE_CONTENT = Object.freeze({
         },
         DESCRIPTION: [
             {
-                SER: 'Centar Univerzuma šalje na planetu Zemlju 11 snaga za čovečanstvo, 11 snaga materijalizovanih u 11 divova. Divovi se spuštaju na našu planetu jedan po jedan ovim redosledom: 1. Širon IDENTITET, 2. Gabriel STVARANJE, 3. Ivona SAOSEĆAJNOST, 4. Lazar PROMENA, 5. Srki ISTRAJNOST, 6. Pal RAD, 7. Tasja SREĆA, 8. Verona BLAGOST, 9. Ranko UM, 10. Orlando REALIZACIJA, 11. Ksenija Lea je materijalizacija snage LJUBAV i dolazi u dva oblika, LJUBAV 1 1 i LJUBAV 1 2. Spuštanje ovih snaga je praćeno prodornim zvucima koji se stvaraju u atmosferi. Prvi kontakt svake snage sa tlom naše planete je snažan i stvara potres, koji se vrlo brzo pretoči u najdivniju melogiju koja se širi po celoj planeti. Tada se može reći da je život te snage na Zemlji počeo. Snage su tu za celo čovečanstvo, a spuštene u centru Beograda pravo na izložbu 11 SNAGA. Dobrodošli svi!',
+                SER: 'Polazim od intuicije i oduševljenja određenim ljudima i njihovim sposobnostima.',
                 ENG: 'I start from intuition and admiration for certain people and their abilities.',
             },
             {
-                SER: 'Ova izložba se sastoji iz dva dela: slike i grafike (litografije).',
+                SER: 'Prvo je nastala ideja o DECI SUNCA. Ideja kao rezultat traganja za prosperitetom i boljim svetom.',
                 ENG: 'The first idea that emerged was Children of the Sun. An idea born out of a search for prosperity and a better world.',
             },
             {
-                SER: 'Zapravo sam predstavila 11 snaga i svaku tu snagu sam i naslikala i nacrtala putem grafike. Postoji i treći važan segment ove izložbe a to je muzika koju su komponovali za svaku sliku posebno Vladimir Živković (iz grupe VIS Limunada) i Marijana Dujović.',
-                ENG: 'It all began in 2011, when media around the world devoted significant attention to predictions of various cataclysms or to scientific interpretations of the Mayan calendar, according to which a major cycle was supposed to end on December 21, 2012, and a new era of humanity was to begin. Many analysts of the Mayan calendar saw this date as a symbol of hope—that from that moment, the world and its people would begin to change for the better, and that spiritual advancement would occur across our planet.'
+                SER: 'Sve je počelo 2011. godine kada se u medijima širom sveta puno pažnje posvećivalo predviđanjima raznih kataklizmi ili naučnim objašnjenjima majanskog kalendara, po kome je 21. decembra 2012. godine trebalo da se završi jedan veliki ciklus i da počne nova era čovečanstva. Mnogi analitičari majanskog kalendara su ovaj datum videli kao nadu da će od tog trenutka svet i ljudi početi da se menjaju na bolje, da će doći do duhovnog napretka širom naše planete.',
+                ENG: 'It all began in 2011, when media around the world devoted significant attention to predictions of various cataclysms or to scientific interpretations of the Mayan calendar, according to which a major cycle was supposed to end on December 21, 2012, and a new era of humanity was to begin. Many analysts of the Mayan calendar saw this date as a symbol of hope—that from that moment, the world and its people would begin to change for the better, and that spiritual advancement would occur across our planet.'
             },
             {
-                SER: 'Zapravo sam predstavila 11 snaga i svaku tu snagu sam i naslikala i nacrtala putem grafike. Postoji i treći važan segment ove izložbe a to je muzika koju su komponovali za svaku sliku posebno Vladimir Živković (iz grupe VIS Limunada) i Marijana Dujović.',
+                SER: 'Na mene su sve ove informacije snažno delovale i podstakle me na maštanje o svim mogućim i nemogućim promenama čovečanstva na bolje. Tada mi se javila ideja ili slika trenutka te evolutivne promene na bolje. Scenu sam postavila u eksterijer neke pustinje/pustoši naše planete u jedan budući momenat u kome se nalaze deca Sunca, 14 likova koje sam spontano odabrala. U momentu koji slikam, u atmosferi se pojavljuje misteriozna blještava bela svetlost, koja obasjava ljude koji su se tu zadesili. Zraci ove neobične svetlosti deluju snažno na sva prisutna bića tako da svi u tom trenutku doživljavaju duhovnu spoznaju, unutrašnji rast ili prosvetljenje.',
                 ENG: 'All this information had a strong impact on me and inspired me to imagine all the possible and impossible ways humanity could change for the better. That’s when the idea or vision of a moment of such evolutionary transformation came to me. I placed the scene in an exterior—some desert or barren land on our planet—at a future moment in time, where the Children of the Sun are present: 14 figures I selected spontaneously.In the moment I depict, a mysterious, radiant white light appears in the atmosphere, illuminating the people who happen to be there. The rays of this unusual light strongly affect all beings present so that each one experiences spiritual insight, inner growth, or enlightenment.'
             },
             {
-                SER: 'Zapravo sam predstavila 11 snaga i svaku tu snagu sam i naslikala i nacrtala putem grafike. Postoji i treći važan segment ove izložbe a to je muzika koju su komponovali za svaku sliku posebno Vladimir Živković (iz grupe VIS Limunada) i Marijana Dujović.',
+                SER: 'Celokupan prizor koji sam naslikala na monumentalnom platnu dugom 19 m asocira me na zaustavljeni kadar iz naučnofantastičnog filma. Slika je postavljena u galeriji KCB-a tako da posetioci mogu biti deo te scene i osetiti na trenutak tu vibraciju kolektivne promene i prosvetljenja.',
                 ENG: 'The entire scene, which I painted on a monumental 19-meter-long canvas, reminds me of a still frame from a science fiction film. The painting was exhibited in the KCB gallery in a way that allows visitors to become part of the scene and, if only for a moment, feel that vibration of collective change and enlightenment.'
             }
         ],
@@ -1108,31 +1110,31 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "children-of-the-sun",
                             GRID_PLACES: 4,
                             DETAILS: {
-                                CREATED_AT: '2018',
-                                DIMENSIONS: '1.2 x 1.5 m',
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '2 x 1.05 m',
                                 NAME: {
-                                    SER: 'CHIRON / IDENTITET' ,
-                                    ENG: 'CHIRON / IDENTITY'
+                                    SER: '„DECA SUNCA“' ,
+                                    ENG: '„CHILDREN OF THE SUN“'
                                 },
                                 TECHNIQUE: {
-                                    SER: 'Akril i ulje na platnu',
-                                    ENG: 'Acrylic and oil on canvas'
+                                    SER: 'Akril na platnu',
+                                    ENG: 'Acrylic on canvas'
                                 },
                                 DESCRIPTION: {
-                                    SER: 'Širon je glavni lik u filmu Beri Dženkinsa, Mesečina. On je dečak koji je svojom snagom postao veći od najvećih problema u kojima je živeo. Postao je najveći srećni čovek! Predstavila sam ga u posebnom i osetljivom momentu u kome preispituje svoj identitet. Širon predstavlja snage svih identiteta koje nosimo u sebi i onih najosetljivijih delova bića koja su toliko ranjiva, a iz kojih zapravo izvire naša najveća snaga. Širon je došao da nam to kaže.',
-                                    ENG: 'Chiron is the main character in Barry Jenkins\' movie Moonlight. He is a boy who, with his strength, became bigger than the biggest problems he lived in. He became the happiest man! I presented him in a special and sensitive moment in which he is questioning his identity. Chiron represents the strength of all the identities that we carry within us and those most sensitive parts of being that are so vulnerable, and from which our greatest strength actually springs. Shiron came to tell us that.'
+                                    SER: 'Razmišljajući o toj sceni, u startu sam znala da treba da predstavim mnoštvo likova, kao i da je važno da oni budu monumentalni, kako bih im predala veliki značaj i time figurativno dočarala njihovu novu duhovnu dimenziju. U svakoj osobi koju portretišem otkrivam tananu liniju, koja je u isto vreme i granica razdvajanja i mesto spajanja dva sveta, vidljivog i nevidljivog. Ako se tokom procesa slikanja skoncentrišem na tu liniju, uspevam da kroz naslikani telesni stav, pogled, ili pokret tela naslikanog čoveka predstavim nevidljivi svet. Tako i svih 14 likova koje sam naslikala na slici DECA SUNCA za mene predstavljaju tu tananu liniju spoja dva sveta, vidljivog i nevidljivog.',
+                                    ENG: 'While reflecting on that scene, I knew from the beginning that I needed to portray a multitude of figures, and that it was important for them to be monumental in scale, in order to give them great significance and symbolically convey their new spiritual dimension. In every person I portray, I discover a delicate line that is at once the boundary between and the point of connection for two worlds—the visible and the invisible. If, during the painting process, I concentrate on that line, I manage to represent the invisible world through the painted figure’s bodily posture, gaze, or movement. Thus, all 14 figures I painted in Children of the Sun represent for me that subtle line where two worlds—visible and invisible—meet.'
                                 },
                             }
                         }
                     ],
                     [
                         {
-                            ID: 5,
+                            ID: 2,
                             SRC: {
-                                FULL: ksenijaLoveSmellsRose,
-                                PREVIEW: ksenijaLoveSmellsRoseThumb,
+                                FULL: fragment01Full,
+                                PREVIEW: fragment01Preview,
                             },
-                            ALT: "ksenija-love-smells-a-rose",
+                            ALT: "fragment-01",
                             GRID_PLACES: 1,
                             DETAILS: {
                                 CREATED_AT: '2019',
