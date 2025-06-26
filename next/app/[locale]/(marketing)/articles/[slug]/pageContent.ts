@@ -44,6 +44,106 @@ import muralLifeSlide9 from '@/public/assets/mural-life/mural-life-slide-9.webp'
 import strongPeople1 from '@/public/assets/strong-people/strong-people-1.webp';
 import strongPeople2 from '@/public/assets/strong-people/strong-people-2.webp';
 import strongPeopleCover from '@/public/assets/strong-people/strong-people-cover.webp';
+// PSYCHODRAMA
+import psychodrama1 from '@/public/assets/psychodrama/1.jpg';
+import psychodrama2 from '@/public/assets/psychodrama/2.jpg';
+import psychodrama3 from '@/public/assets/psychodrama/3.jpg';
+import psychodrama4 from '@/public/assets/psychodrama/4.jpg';
+import psychodrama5 from '@/public/assets/psychodrama/5.jpg';
+import psychodrama6 from '@/public/assets/psychodrama/6.jpg';
+import psychodrama7 from '@/public/assets/psychodrama/7.jpg';
+import psychodrama8 from '@/public/assets/psychodrama/8.jpg';
+import psychodrama9 from '@/public/assets/psychodrama/9.jpg';
+import psychodrama10 from '@/public/assets/psychodrama/10.jpg';
+import psychodrama11 from '@/public/assets/psychodrama/11.jpg';
+import psychodrama12 from '@/public/assets/psychodrama/12.jpg';
+import psychodrama13 from '@/public/assets/psychodrama/13.jpg';
+import psychodrama14 from '@/public/assets/psychodrama/14.jpg';
+import psychodrama15 from '@/public/assets/psychodrama/15.jpg';
+import psychodrama16 from '@/public/assets/psychodrama/16.jpg';
+import psychodrama17 from '@/public/assets/psychodrama/17.jpg';
+import psychodrama18 from '@/public/assets/psychodrama/18.jpg';
+import psychodrama19 from '@/public/assets/psychodrama/19.jpg';
+import psychodrama20 from '@/public/assets/psychodrama/20.jpg';
+import psychodrama21 from '@/public/assets/psychodrama/21.jpg';
+import psychodrama22 from '@/public/assets/psychodrama/22.jpg';
+import psychodrama23 from '@/public/assets/psychodrama/23.jpg';
+import psychodrama24 from '@/public/assets/psychodrama/24.jpg';
+import psychodrama25 from '@/public/assets/psychodrama/25.jpg';
+import psychodrama26 from '@/public/assets/psychodrama/26.jpg';
+import psychodrama27 from '@/public/assets/psychodrama/27.jpg';
+import psychodrama28 from '@/public/assets/psychodrama/28.jpg';
+import psychodrama29 from '@/public/assets/psychodrama/29.jpg';
+import psychodrama30 from '@/public/assets/psychodrama/30.jpg';
+import psychodrama31 from '@/public/assets/psychodrama/31.jpg';
+import psychodrama32 from '@/public/assets/psychodrama/32.jpg';
+import psychodrama33 from '@/public/assets/psychodrama/3.jpg';
+import psychodrama34 from '@/public/assets/psychodrama/34.jpg';
+import psychodrama35 from '@/public/assets/psychodrama/35.jpg';
+import psychodrama36 from '@/public/assets/psychodrama/36.jpg';
+import psychodrama37 from '@/public/assets/psychodrama/37.jpg';
+import psychodrama38 from '@/public/assets/psychodrama/38.jpg';
+import psychodrama39 from '@/public/assets/psychodrama/39.jpg';
+import psychodrama40 from '@/public/assets/psychodrama/40.jpg';
+import psychodrama41 from '@/public/assets/psychodrama/41.jpg';
+import psychodrama42 from '@/public/assets/psychodrama/42.jpg';
+import psychodrama43 from '@/public/assets/psychodrama/43.jpg';
+import psychodrama44 from '@/public/assets/psychodrama/44.jpg';
+import psychodrama45 from '@/public/assets/psychodrama/45.jpg';
+import psychodrama46 from '@/public/assets/psychodrama/46.jpg';
+import psychodrama47 from '@/public/assets/psychodrama/47.jpg';
+import psychodrama48 from '@/public/assets/psychodrama/48.jpg';
+import psychodrama49 from '@/public/assets/psychodrama/49.jpg';
+import psychodrama50 from '@/public/assets/psychodrama/50.jpg';
+import psychodrama51 from '@/public/assets/psychodrama/51.jpg';
+import psychodrama52 from '@/public/assets/psychodrama/52.jpg';
+import psychodrama53 from '@/public/assets/psychodrama/53.jpg';
+import psychodrama54 from '@/public/assets/psychodrama/54.jpg';
+import psychodrama55 from '@/public/assets/psychodrama/55.jpg';
+import psychodrama56 from '@/public/assets/psychodrama/56.jpg';
+import psychodrama57 from '@/public/assets/psychodrama/57.jpg';
+import psychodrama58 from '@/public/assets/psychodrama/58.jpg';
+import psychodrama59 from '@/public/assets/psychodrama/59.jpg';
+import psychodrama60 from '@/public/assets/psychodrama/60.jpg';
+import psychodrama60b from '@/public/assets/psychodrama/60b.jpg';
+import psychodrama61 from '@/public/assets/psychodrama/61.jpg';
+import psychodrama62 from '@/public/assets/psychodrama/62.jpg';
+import psychodrama63 from '@/public/assets/psychodrama/63.jpg';
+import psychodrama64 from '@/public/assets/psychodrama/64.jpg';
+import psychodrama64b from '@/public/assets/psychodrama/64b.jpg';
+import psychodrama65 from '@/public/assets/psychodrama/65.jpg';
+import psychodrama65b from '@/public/assets/psychodrama/65b.jpg';
+import psychodrama66 from '@/public/assets/psychodrama/66.jpg';
+import psychodrama67 from '@/public/assets/psychodrama/67.jpg';
+import psychodrama68 from '@/public/assets/psychodrama/68.jpg';
+import psychodrama69 from '@/public/assets/psychodrama/69.jpg';
+import psychodrama70 from '@/public/assets/psychodrama/70.jpg';
+import psychodrama71 from '@/public/assets/psychodrama/71.jpg';
+import psychodrama72 from '@/public/assets/psychodrama/72.jpg';
+import psychodrama73 from '@/public/assets/psychodrama/73.jpg';
+import psychodrama74 from '@/public/assets/psychodrama/74.jpg';
+import psychodrama75 from '@/public/assets/psychodrama/75.jpg';
+import psychodrama76 from '@/public/assets/psychodrama/76.jpg';
+import psychodrama77 from '@/public/assets/psychodrama/77.jpg';
+import psychodrama78 from '@/public/assets/psychodrama/78.jpg';
+import psychodrama79 from '@/public/assets/psychodrama/79.jpg';
+import psychodrama80 from '@/public/assets/psychodrama/80.jpg';
+import psychodrama81 from '@/public/assets/psychodrama/81.jpg';
+import psychodrama82 from '@/public/assets/psychodrama/82.jpg';
+import psychodrama83 from '@/public/assets/psychodrama/83.jpg';
+import psychodrama84 from '@/public/assets/psychodrama/84.jpg';
+import psychodrama85 from '@/public/assets/psychodrama/85.jpg';
+import psychodrama86 from '@/public/assets/psychodrama/86.jpg';
+import psychodrama87 from '@/public/assets/psychodrama/87.jpg';
+import psychodrama88 from '@/public/assets/psychodrama/88.jpg';
+import psychodrama89 from '@/public/assets/psychodrama/89.jpg';
+import psychodrama90 from '@/public/assets/psychodrama/90.jpg';
+import psychodrama91 from '@/public/assets/psychodrama/91.jpg';
+import psychodrama92 from '@/public/assets/psychodrama/92.jpg';
+import psychodrama93 from '@/public/assets/psychodrama/93.jpg';
+import psychodrama94 from '@/public/assets/psychodrama/94.jpg';
+import psychodrama95 from '@/public/assets/psychodrama/95.jpg';
+import psychodrama96 from '@/public/assets/psychodrama/96.jpg';
 
 export const PAGE_CONTENT = Object.freeze({
     CREATING_LIFE: {
@@ -1859,7 +1959,7 @@ export const PAGE_CONTENT = Object.freeze({
             YEAR: 2016,
             TEXT: {
                 SER: 'U slikarstvu Ivone Pleskonje dominira ljudska figura. Izložba pod nazivom "Jaki ljudi" se može pohvaliti jasnom idejom umetnice koja se očitava kroz izražajne portrete, poze i bogat kolorit. Umetnica daje prikaz, kako unutrašnjeg stanja, tako i pogleda na svet oko sebe. ',
-                ENG: 'In Ivona Pleskonja\'s painting, the human figure dominates. The exhibition titled "Strong People" boasts a clear artistic vision, evident through expressive portraits, poses, and rich colors. The artist presents both an inner state and a perspective on the world around her.'
+                ENG: 'In Ivona Pleskonja\'s painting, the human figure dominates. The exhibition titled "Strong People" boasts a clear artistic vision, evident through expressive portraits, poses, and rich colors. The artist presents both an inner state and a perspective on the world around her.'
             },
             MEDIA: {
                 MOBILE: {
@@ -1990,6 +2090,960 @@ export const PAGE_CONTENT = Object.freeze({
                             },
                         ],
                     ],
+                },
+            ]
+        }
+    },
+    PSYCHODRAMA: {
+        ID: 6,
+        HISTORY: [
+            {
+                ID: 'home',
+                TITLE: {
+                    SER: 'Početna',
+                    ENG: 'Home',
+                },
+                LINK: ''
+            },
+            {
+                ID: 'works',
+                TITLE: {
+                    SER: "Radovi",
+                    ENG: 'Works',
+                },
+                LINK: 'works'
+            },
+            {
+                ID: 'exhibitions',
+                TITLE: {
+                    SER: 'Psihodram ',
+                    ENG: 'Psychodrama'
+                },
+                LINK: 'articles/6'
+            },
+        ],
+        COVER: {
+            TITLE: {
+                SER: '„PSIHODRAMA“',
+                ENG: '„PSYCHODRAMA“',
+            },
+            AUTHOR: {
+                SER: '',
+                ENG: ''
+            },
+            YEAR: null,
+            TEXT: {
+                SER: '',
+                ENG: ''
+            },
+            MEDIA: {
+                MOBILE: null,
+                DESKTOP: null
+            },
+            EXTERNAL_LINK: {
+                URL: null,
+                LABEL: {
+                    SER: 'POGLEDAJ VIDEO OVDE',
+                    ENG: 'WATCH VIDEO HERE'
+                }
+            },
+        },
+        SECTIONS: {
+            MOBILE: [
+                {
+                    TYPE: 'inverted_text_grid',
+                    CLASS_NAME: '-mt-1 font-bold text-[20px] leading-[100%] tracking-[.15em] font-roboto-serif',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Crteži nastali na psihodramskim grupama koje vodi dr Dušan Potkonjak za potrebe knjige o psihodrami, autora dr Dušana Potkonjaka. Radovi su deo atmosfere psihodramskih procesa, nastajali su u vremenskom periodu od par meseci.',
+                                    ENG: 'Drawings created at psychodrama groups led by Dr. Dušan Potkonjak for the purposes of the book on psychodrama, authored by Dr. Dušan Potkonjak. The works are part of the atmosphere of psychodramatic processes, they were created over a period of a few months.'
+                                },
+                            },
+                        ],
+                    ],
+                },
+                {
+                    TYPE: 'inverted_carousel',
+                    SLIDES: [
+                        {
+                            SRC: psychodrama1,
+                            ALT: 'psychodrama-1',
+                        },
+                        {
+                            SRC: psychodrama2,
+                            ALT: 'psychodrama-2',
+                        },
+                        {
+                            SRC: psychodrama3,
+                            ALT: 'psychodrama-3',
+                        },{
+                            SRC: psychodrama4,
+                            ALT: 'psychodrama-4',
+                        },
+                        {
+                            SRC: psychodrama5,
+                            ALT: 'psychodrama-5',
+                        },
+                        {
+                            SRC: psychodrama6,
+                            ALT: 'psychodrama-6',
+                        },{
+                            SRC: psychodrama7,
+                            ALT: 'psychodrama-7',
+                        },
+                        {
+                            SRC: psychodrama8,
+                            ALT: 'psychodrama-8',
+                        },
+                        {
+                            SRC: psychodrama9,
+                            ALT: 'psychodrama-9',
+                        },
+                        {
+                            SRC: psychodrama10,
+                            ALT: 'psychodrama-10',
+                        },
+                        {
+                            SRC: psychodrama11,
+                            ALT: 'psychodrama-11',
+                        },
+                        {
+                            SRC: psychodrama12,
+                            ALT: 'psychodrama-12',
+                        },
+                        {
+                            SRC: psychodrama13,
+                            ALT: 'psychodrama-13',
+                        },
+                        {
+                            SRC: psychodrama14,
+                            ALT: 'psychodrama-14',
+                        },
+                        {
+                            SRC: psychodrama15,
+                            ALT: 'psychodrama-15',
+                        },
+                        {
+                            SRC: psychodrama16,
+                            ALT: 'psychodrama-16',
+                        },
+                        {
+                            SRC: psychodrama17,
+                            ALT: 'psychodrama-17',
+                        },
+                        {
+                            SRC: psychodrama18,
+                            ALT: 'psychodrama-18',
+                        },
+                        {
+                            SRC: psychodrama19,
+                            ALT: 'psychodrama-19',
+                        },
+                        {
+                            SRC: psychodrama20,
+                            ALT: 'psychodrama-20',
+                        },
+                        {
+                            SRC: psychodrama21,
+                            ALT: 'psychodrama-21',
+                        },
+                        {
+                            SRC: psychodrama22,
+                            ALT: 'psychodrama-22',
+                        },
+                        {
+                            SRC: psychodrama23,
+                            ALT: 'psychodrama-23',
+                        },
+                        {
+                            SRC: psychodrama24,
+                            ALT: 'psychodrama-24',
+                        },
+                        {
+                            SRC: psychodrama25,
+                            ALT: 'psychodrama-25',
+                        },
+                        {
+                            SRC: psychodrama26,
+                            ALT: 'psychodrama-26',
+                        },
+                        {
+                            SRC: psychodrama27,
+                            ALT: 'psychodrama-27',
+                        },
+                        {
+                            SRC: psychodrama28,
+                            ALT: 'psychodrama-28',
+                        },
+                        {
+                            SRC: psychodrama29,
+                            ALT: 'psychodrama-29',
+                        },
+                        {
+                            SRC: psychodrama30,
+                            ALT: 'psychodrama-30',
+                        },
+                        {
+                            SRC: psychodrama31,
+                            ALT: 'psychodrama-31',
+                        },
+                        {
+                            SRC: psychodrama32,
+                            ALT: 'psychodrama-32',
+                        },
+                        {
+                            SRC: psychodrama33,
+                            ALT: 'psychodrama-33',
+                        },
+                        {
+                            SRC: psychodrama34,
+                            ALT: 'psychodrama-34',
+                        },
+                        {
+                            SRC: psychodrama35,
+                            ALT: 'psychodrama-35',
+                        },
+                        {
+                            SRC: psychodrama36,
+                            ALT: 'psychodrama-36',
+                        },
+                        {
+                            SRC: psychodrama37,
+                            ALT: 'psychodrama-37',
+                        },
+                        {
+                            SRC: psychodrama38,
+                            ALT: 'psychodrama-38',
+                        },
+                        {
+                            SRC: psychodrama39,
+                            ALT: 'psychodrama-39',
+                        },
+                        {
+                            SRC: psychodrama40,
+                            ALT: 'psychodrama-40',
+                        },
+                        {
+                            SRC: psychodrama41,
+                            ALT: 'psychodrama-41',
+                        },
+                        {
+                            SRC: psychodrama42,
+                            ALT: 'psychodrama-42',
+                        },
+                        {
+                            SRC: psychodrama43,
+                            ALT: 'psychodrama-43',
+                        },
+                        {
+                            SRC: psychodrama44,
+                            ALT: 'psychodrama-44',
+                        },
+                        {
+                            SRC: psychodrama45,
+                            ALT: 'psychodrama-45',
+                        },
+                        {
+                            SRC: psychodrama46,
+                            ALT: 'psychodrama-46',
+                        },
+                        {
+                            SRC: psychodrama47,
+                            ALT: 'psychodrama-47',
+                        },
+                        {
+                            SRC: psychodrama48,
+                            ALT: 'psychodrama-48',
+                        },
+                        {
+                            SRC: psychodrama49,
+                            ALT: 'psychodrama-49',
+                        },
+
+                        {
+                            SRC: psychodrama50,
+                            ALT: 'psychodrama-50',
+                        },
+                        {
+                            SRC: psychodrama51,
+                            ALT: 'psychodrama-51',
+                        },
+                        {
+                            SRC: psychodrama52,
+                            ALT: 'psychodrama-52',
+                        },
+                        {
+                            SRC: psychodrama53,
+                            ALT: 'psychodrama-53',
+                        },
+                        {
+                            SRC: psychodrama54,
+                            ALT: 'psychodrama-54',
+                        },
+                        {
+                            SRC: psychodrama55,
+                            ALT: 'psychodrama-55',
+                        },
+                        {
+                            SRC: psychodrama56,
+                            ALT: 'psychodrama-56',
+                        },
+                        {
+                            SRC: psychodrama57,
+                            ALT: 'psychodrama-57',
+                        },
+                        {
+                            SRC: psychodrama58,
+                            ALT: 'psychodrama-58',
+                        },
+                        {
+                            SRC: psychodrama59,
+                            ALT: 'psychodrama-59',
+                        },
+                        {
+                            SRC: psychodrama60,
+                            ALT: 'psychodrama-60',
+                        },
+                        {
+                            SRC: psychodrama60b,
+                            ALT: 'psychodrama-60b',
+                        },
+                        {
+                            SRC: psychodrama61,
+                            ALT: 'psychodrama-61',
+                        },
+                        {
+                            SRC: psychodrama62,
+                            ALT: 'psychodrama-62',
+                        },
+                        {
+                            SRC: psychodrama63,
+                            ALT: 'psychodrama-63',
+                        },
+                        {
+                            SRC: psychodrama64,
+                            ALT: 'psychodrama-64',
+                        },
+                        {
+                            SRC: psychodrama64b,
+                            ALT: 'psychodrama-64b',
+                        },
+                        {
+                            SRC: psychodrama65,
+                            ALT: 'psychodrama-65',
+                        },
+                        {
+                            SRC: psychodrama65b,
+                            ALT: 'psychodrama-65b',
+                        },
+                        {
+                            SRC: psychodrama66,
+                            ALT: 'psychodrama-66',
+                        },
+                        {
+                            SRC: psychodrama67,
+                            ALT: 'psychodrama-67',
+                        },
+                        {
+                            SRC: psychodrama68,
+                            ALT: 'psychodrama-68',
+                        },
+                        {
+                            SRC: psychodrama69,
+                            ALT: 'psychodrama-69',
+                        },
+                        {
+                            SRC: psychodrama70,
+                            ALT: 'psychodrama-70',
+                        },
+                        {
+                            SRC: psychodrama71,
+                            ALT: 'psychodrama-71',
+                        },
+                        {
+                            SRC: psychodrama72,
+                            ALT: 'psychodrama-72',
+                        },
+                        {
+                            SRC: psychodrama73,
+                            ALT: 'psychodrama-73',
+                        },
+                        {
+                            SRC: psychodrama74,
+                            ALT: 'psychodrama-74',
+                        },
+                        {
+                            SRC: psychodrama75,
+                            ALT: 'psychodrama-75',
+                        },
+                        {
+                            SRC: psychodrama76,
+                            ALT: 'psychodrama-76',
+                        },
+                        {
+                            SRC: psychodrama77,
+                            ALT: 'psychodrama-77',
+                        },
+                        {
+                            SRC: psychodrama78,
+                            ALT: 'psychodrama-78',
+                        },
+                        {
+                            SRC: psychodrama79,
+                            ALT: 'psychodrama-79',
+                        },
+                        {
+                            SRC: psychodrama80,
+                            ALT: 'psychodrama-80',
+                        },
+                        {
+                            SRC: psychodrama81,
+                            ALT: 'psychodrama-81',
+                        },
+                        {
+                            SRC: psychodrama82,
+                            ALT: 'psychodrama-82',
+                        },
+                        {
+                            SRC: psychodrama83,
+                            ALT: 'psychodrama-83',
+                        },
+                        {
+                            SRC: psychodrama84,
+                            ALT: 'psychodrama-84',
+                        },
+                        {
+                            SRC: psychodrama85,
+                            ALT: 'psychodrama-85',
+                        },
+                        {
+                            SRC: psychodrama86,
+                            ALT: 'psychodrama-86',
+                        },
+                        {
+                            SRC: psychodrama87,
+                            ALT: 'psychodrama-87',
+                        },
+                        {
+                            SRC: psychodrama88,
+                            ALT: 'psychodrama-88',
+                        },
+                        {
+                            SRC: psychodrama89,
+                            ALT: 'psychodrama-89',
+                        },
+                        {
+                            SRC: psychodrama90,
+                            ALT: 'psychodrama-90',
+                        },
+                        {
+                            SRC: psychodrama91,
+                            ALT: 'psychodrama-91',
+                        },
+                        {
+                            SRC: psychodrama92,
+                            ALT: 'psychodrama-92',
+                        },
+                        {
+                            SRC: psychodrama93,
+                            ALT: 'psychodrama-93',
+                        },
+                        {
+                            SRC: psychodrama94,
+                            ALT: 'psychodrama-94',
+                        },
+                        {
+                            SRC: psychodrama95,
+                            ALT: 'psychodrama-95',
+                        },
+                        {
+                            SRC: psychodrama96,
+                            ALT: 'psychodrama-96',
+                        },
+                    ]
+                },
+                {
+                    TYPE: 'inverted_text_grid',
+                    CLASS_NAME: '-mt-1',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Dimenzije radova: 30 x 20 cm',
+                                    ENG: 'Dimensions: 30 x 20 cm',
+                                }
+                            },
+                            {
+                                TYPE: 'text',
+                                CLASS_NAME: '-mt-5 text-nowrap',
+                                TEXT: {
+                                    SER: 'Tehnika:Tuš i pero i hemijska olovka na papiru',
+                                    ENG: 'Technique: Ink and pen on paper',
+                                }
+                            },
+                            {
+                                TYPE: 'text',
+                                CLASS_NAME: '-mt-5 mb-auto',
+                                TEXT: {
+                                    SER: 'Godina nastanka: 2008.',
+                                    ENG: 'Year of creation: 2008.',
+                                }
+                            },
+                        ]
+                    ]
+                },
+            ],
+            DESKTOP: [
+                {
+                    TYPE: 'inverted_text_grid',
+                    CLASS_NAME: 'md:-mt-16 text-center',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Crteži nastali na psihodramskim grupama koje vodi dr Dušan Potkonjak za potrebe knjige o psihodrami, autora dr Dušana Potkonjaka. Radovi su deo atmosfere psihodramskih procesa, nastajali su u vremenskom periodu od par meseci.',
+                                    ENG: 'Drawings created at psychodrama groups led by Dr. Dušan Potkonjak for the purposes of the book on psychodrama, authored by Dr. Dušan Potkonjak. The works are part of the atmosphere of psychodramatic processes, they were created over a period of a few months.'
+                                },
+                            },
+                        ],
+                    ],
+                },
+                {
+                    TYPE: 'inverted_carousel',
+                    SLIDES: [
+                        {
+                            SRC: psychodrama1,
+                            ALT: 'psychodrama-1',
+                        },
+                        {
+                            SRC: psychodrama2,
+                            ALT: 'psychodrama-2',
+                        },
+                        {
+                            SRC: psychodrama3,
+                            ALT: 'psychodrama-3',
+                        },{
+                            SRC: psychodrama4,
+                            ALT: 'psychodrama-4',
+                        },
+                        {
+                            SRC: psychodrama5,
+                            ALT: 'psychodrama-5',
+                        },
+                        {
+                            SRC: psychodrama6,
+                            ALT: 'psychodrama-6',
+                        },{
+                            SRC: psychodrama7,
+                            ALT: 'psychodrama-7',
+                        },
+                        {
+                            SRC: psychodrama8,
+                            ALT: 'psychodrama-8',
+                        },
+                        {
+                            SRC: psychodrama9,
+                            ALT: 'psychodrama-9',
+                        },
+                        {
+                            SRC: psychodrama10,
+                            ALT: 'psychodrama-10',
+                        },
+                        {
+                            SRC: psychodrama11,
+                            ALT: 'psychodrama-11',
+                        },
+                        {
+                            SRC: psychodrama12,
+                            ALT: 'psychodrama-12',
+                        },
+                        {
+                            SRC: psychodrama13,
+                            ALT: 'psychodrama-13',
+                        },
+                        {
+                            SRC: psychodrama14,
+                            ALT: 'psychodrama-14',
+                        },
+                        {
+                            SRC: psychodrama15,
+                            ALT: 'psychodrama-15',
+                        },
+                        {
+                            SRC: psychodrama16,
+                            ALT: 'psychodrama-16',
+                        },
+                        {
+                            SRC: psychodrama17,
+                            ALT: 'psychodrama-17',
+                        },
+                        {
+                            SRC: psychodrama18,
+                            ALT: 'psychodrama-18',
+                        },
+                        {
+                            SRC: psychodrama19,
+                            ALT: 'psychodrama-19',
+                        },
+                        {
+                            SRC: psychodrama20,
+                            ALT: 'psychodrama-20',
+                        },
+                        {
+                            SRC: psychodrama21,
+                            ALT: 'psychodrama-21',
+                        },
+                        {
+                            SRC: psychodrama22,
+                            ALT: 'psychodrama-22',
+                        },
+                        {
+                            SRC: psychodrama23,
+                            ALT: 'psychodrama-23',
+                        },
+                        {
+                            SRC: psychodrama24,
+                            ALT: 'psychodrama-24',
+                        },
+                        {
+                            SRC: psychodrama25,
+                            ALT: 'psychodrama-25',
+                        },
+                        {
+                            SRC: psychodrama26,
+                            ALT: 'psychodrama-26',
+                        },
+                        {
+                            SRC: psychodrama27,
+                            ALT: 'psychodrama-27',
+                        },
+                        {
+                            SRC: psychodrama28,
+                            ALT: 'psychodrama-28',
+                        },
+                        {
+                            SRC: psychodrama29,
+                            ALT: 'psychodrama-29',
+                        },
+                        {
+                            SRC: psychodrama30,
+                            ALT: 'psychodrama-30',
+                        },
+                        {
+                            SRC: psychodrama31,
+                            ALT: 'psychodrama-31',
+                        },
+                        {
+                            SRC: psychodrama32,
+                            ALT: 'psychodrama-32',
+                        },
+                        {
+                            SRC: psychodrama33,
+                            ALT: 'psychodrama-33',
+                        },
+                        {
+                            SRC: psychodrama34,
+                            ALT: 'psychodrama-34',
+                        },
+                        {
+                            SRC: psychodrama35,
+                            ALT: 'psychodrama-35',
+                        },
+                        {
+                            SRC: psychodrama36,
+                            ALT: 'psychodrama-36',
+                        },
+                        {
+                            SRC: psychodrama37,
+                            ALT: 'psychodrama-37',
+                        },
+                        {
+                            SRC: psychodrama38,
+                            ALT: 'psychodrama-38',
+                        },
+                        {
+                            SRC: psychodrama39,
+                            ALT: 'psychodrama-39',
+                        },
+                        {
+                            SRC: psychodrama40,
+                            ALT: 'psychodrama-40',
+                        },
+                        {
+                            SRC: psychodrama41,
+                            ALT: 'psychodrama-41',
+                        },
+                        {
+                            SRC: psychodrama42,
+                            ALT: 'psychodrama-42',
+                        },
+                        {
+                            SRC: psychodrama43,
+                            ALT: 'psychodrama-43',
+                        },
+                        {
+                            SRC: psychodrama44,
+                            ALT: 'psychodrama-44',
+                        },
+                        {
+                            SRC: psychodrama45,
+                            ALT: 'psychodrama-45',
+                        },
+                        {
+                            SRC: psychodrama46,
+                            ALT: 'psychodrama-46',
+                        },
+                        {
+                            SRC: psychodrama47,
+                            ALT: 'psychodrama-47',
+                        },
+                        {
+                            SRC: psychodrama48,
+                            ALT: 'psychodrama-48',
+                        },
+                        {
+                            SRC: psychodrama49,
+                            ALT: 'psychodrama-49',
+                        },
+
+                        {
+                            SRC: psychodrama50,
+                            ALT: 'psychodrama-50',
+                        },
+                        {
+                            SRC: psychodrama51,
+                            ALT: 'psychodrama-51',
+                        },
+                        {
+                            SRC: psychodrama52,
+                            ALT: 'psychodrama-52',
+                        },
+                        {
+                            SRC: psychodrama53,
+                            ALT: 'psychodrama-53',
+                        },
+                        {
+                            SRC: psychodrama54,
+                            ALT: 'psychodrama-54',
+                        },
+                        {
+                            SRC: psychodrama55,
+                            ALT: 'psychodrama-55',
+                        },
+                        {
+                            SRC: psychodrama56,
+                            ALT: 'psychodrama-56',
+                        },
+                        {
+                            SRC: psychodrama57,
+                            ALT: 'psychodrama-57',
+                        },
+                        {
+                            SRC: psychodrama58,
+                            ALT: 'psychodrama-58',
+                        },
+                        {
+                            SRC: psychodrama59,
+                            ALT: 'psychodrama-59',
+                        },
+                        {
+                            SRC: psychodrama60,
+                            ALT: 'psychodrama-60',
+                        },
+                        {
+                            SRC: psychodrama60b,
+                            ALT: 'psychodrama-60b',
+                        },
+                        {
+                            SRC: psychodrama61,
+                            ALT: 'psychodrama-61',
+                        },
+                        {
+                            SRC: psychodrama62,
+                            ALT: 'psychodrama-62',
+                        },
+                        {
+                            SRC: psychodrama63,
+                            ALT: 'psychodrama-63',
+                        },
+                        {
+                            SRC: psychodrama64,
+                            ALT: 'psychodrama-64',
+                        },
+                        {
+                            SRC: psychodrama64b,
+                            ALT: 'psychodrama-64b',
+                        },
+                        {
+                            SRC: psychodrama65,
+                            ALT: 'psychodrama-65',
+                        },
+                        {
+                            SRC: psychodrama65b,
+                            ALT: 'psychodrama-65b',
+                        },
+                        {
+                            SRC: psychodrama66,
+                            ALT: 'psychodrama-66',
+                        },
+                        {
+                            SRC: psychodrama67,
+                            ALT: 'psychodrama-67',
+                        },
+                        {
+                            SRC: psychodrama68,
+                            ALT: 'psychodrama-68',
+                        },
+                        {
+                            SRC: psychodrama69,
+                            ALT: 'psychodrama-69',
+                        },
+                        {
+                            SRC: psychodrama70,
+                            ALT: 'psychodrama-70',
+                        },
+                        {
+                            SRC: psychodrama71,
+                            ALT: 'psychodrama-71',
+                        },
+                        {
+                            SRC: psychodrama72,
+                            ALT: 'psychodrama-72',
+                        },
+                        {
+                            SRC: psychodrama73,
+                            ALT: 'psychodrama-73',
+                        },
+                        {
+                            SRC: psychodrama74,
+                            ALT: 'psychodrama-74',
+                        },
+                        {
+                            SRC: psychodrama75,
+                            ALT: 'psychodrama-75',
+                        },
+                        {
+                            SRC: psychodrama76,
+                            ALT: 'psychodrama-76',
+                        },
+                        {
+                            SRC: psychodrama77,
+                            ALT: 'psychodrama-77',
+                        },
+                        {
+                            SRC: psychodrama78,
+                            ALT: 'psychodrama-78',
+                        },
+                        {
+                            SRC: psychodrama79,
+                            ALT: 'psychodrama-79',
+                        },
+                        {
+                            SRC: psychodrama80,
+                            ALT: 'psychodrama-80',
+                        },
+                        {
+                            SRC: psychodrama81,
+                            ALT: 'psychodrama-81',
+                        },
+                        {
+                            SRC: psychodrama82,
+                            ALT: 'psychodrama-82',
+                        },
+                        {
+                            SRC: psychodrama83,
+                            ALT: 'psychodrama-83',
+                        },
+                        {
+                            SRC: psychodrama84,
+                            ALT: 'psychodrama-84',
+                        },
+                        {
+                            SRC: psychodrama85,
+                            ALT: 'psychodrama-85',
+                        },
+                        {
+                            SRC: psychodrama86,
+                            ALT: 'psychodrama-86',
+                        },
+                        {
+                            SRC: psychodrama87,
+                            ALT: 'psychodrama-87',
+                        },
+                        {
+                            SRC: psychodrama88,
+                            ALT: 'psychodrama-88',
+                        },
+                        {
+                            SRC: psychodrama89,
+                            ALT: 'psychodrama-89',
+                        },
+                        {
+                            SRC: psychodrama90,
+                            ALT: 'psychodrama-90',
+                        },
+                        {
+                            SRC: psychodrama91,
+                            ALT: 'psychodrama-91',
+                        },
+                        {
+                            SRC: psychodrama92,
+                            ALT: 'psychodrama-92',
+                        },
+                        {
+                            SRC: psychodrama93,
+                            ALT: 'psychodrama-93',
+                        },
+                        {
+                            SRC: psychodrama94,
+                            ALT: 'psychodrama-94',
+                        },
+                        {
+                            SRC: psychodrama95,
+                            ALT: 'psychodrama-95',
+                        },
+                        {
+                            SRC: psychodrama96,
+                            ALT: 'psychodrama-96',
+                        },
+                    ]
+                },
+                {
+                    TYPE: 'text_grid',
+                    CLASS_NAME: 'pb-10 w-[983px]',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'quote',
+                                CLASS_NAME: 'text-white md:-mt-5',
+                                TEXT: {
+                                    SER: 'Dimenzije radova: 30 x 20 cm',
+                                    ENG: 'Dimensions: 30 x 20 cm',
+                                }
+                            },
+                            {
+                                TYPE: 'quote',
+                                CLASS_NAME: 'text-white md:-mt-5',
+                                TEXT: {
+                                    SER: 'Tehnika:Tuš i pero i hemijska olovka na papiru',
+                                    ENG: 'Technique: Ink and pen on paper',
+                                }
+                            },
+                            {
+                                TYPE: 'quote',
+                                CLASS_NAME: 'text-white md:-mt-5',
+                                TEXT: {
+                                    SER: 'Godina nastanka: 2008.',
+                                    ENG: 'Year of creation: 2008.',
+                                }
+                            },
+                        ]
+                    ]
                 },
             ]
         }
