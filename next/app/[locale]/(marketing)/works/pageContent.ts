@@ -84,7 +84,7 @@ export const PAGE_CONTENT = Object.freeze({
         { ID: 'children_of_the_sun', TITLE: { SER: { YEAR: '2014', TEXT: 'Deca Sunca' }, ENG: { YEAR: '2014', TEXT: 'Children of the Sun' } }, DISABLED: true, LINK: null },
         { ID: 'spirit', TITLE: { SER: { YEAR: '2011', TEXT: 'Duh' }, ENG: { YEAR: '2011', TEXT: 'Spirit' } }, DISABLED: true, LINK: null },
         { ID: 'one_world', TITLE: { SER: { YEAR: '2009', TEXT: 'Jedan Svet' }, ENG: { YEAR: '2009', TEXT: 'One World' } }, DISABLED: true, LINK: null },
-        { ID: 'psychodrama', TITLE: { SER: { YEAR: '2008', TEXT: 'Psihodrama' }, ENG: { YEAR: '2008', TEXT: 'Psychodrama' } }, DISABLED: true, LINK: null },
+        { ID: 'psychodrama', TITLE: { SER: { YEAR: '2008', TEXT: 'Psihodrama' }, ENG: { YEAR: '2008', TEXT: 'Psychodrama' } }, DISABLED: false, LINK: 'articles/6' },
         { ID: 'origin', TITLE: { SER: { YEAR: '2007', TEXT: 'Izvor' }, ENG: { YEAR: '2007', TEXT: 'Origin' } }, DISABLED: true, LINK: null },
         { ID: 'heroes', TITLE: { SER: { YEAR: '2007', TEXT: 'Heroji' }, ENG: { YEAR: '2007', TEXT: 'Heroes' } }, DISABLED: true, LINK: null },
         { ID: 'le_soleil', TITLE: { SER: { YEAR: '2003', TEXT: 'Le Soleil' }, ENG: { YEAR: '2003', TEXT: 'Le Soleil' } }, DISABLED: true, LINK: null },

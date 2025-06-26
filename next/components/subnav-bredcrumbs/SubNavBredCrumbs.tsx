@@ -49,7 +49,7 @@ const ADDITIONAL_BREADCRUMBS_MAP_DESKTOP = Object.freeze({
     }
 });
 
-export function SubNavBredCrumbs({ navItems, locale, page, compact = false }: { navItems: ISubNavItem[], locale: string, page: string, compact?: boolean }) {
+export function SubNavBredCrumbs({ navItems, locale, page, compact = false, inverted = false }: { inverted?: boolean, navItems: ISubNavItem[], locale: string, page: string, compact?: boolean }) {
     const [key, setKey] = useState<string>();
     const searchParams = useSearchParams()
 
@@ -70,7 +70,6 @@ export function SubNavBredCrumbs({ navItems, locale, page, compact = false }: { 
         setKey(breadcrumbs.map(b => b.ID).join('-'));
     }, [breadcrumbs]);
 
-    console.log('key: ', key);
     return (
         <div
             key={key}
@@ -91,9 +90,10 @@ export function SubNavBredCrumbs({ navItems, locale, page, compact = false }: { 
                     <div key={content.ID} className={
                         cn(
                             'px-[5px] max-md:rounded-[30px] cursor-pointer',
-                            index === breadcrumbs.length - 1 && !compact ? 'font-bold' : '',
                             compact || page === 'exhibition' ? 'text-wrap' : 'text-nowrap',
+                            index === breadcrumbs.length - 1 && !compact ? 'font-bold' : '',
                             page === 'exhibition' ? 'max-md:text-white text-black' : 'text-black',
+                            inverted ? 'text-white' : 'text-black',
                             index === breadcrumbs.length - 1 && !compact && page !== 'exhibition' ? 'max-md:basis-full' : '',
                         )
                     }>

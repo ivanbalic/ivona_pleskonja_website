@@ -16,9 +16,11 @@ export function Navbar({ locale }: { locale: string }) {
 
     const page = isHomePage ? 'home' : getPage(pathName);
 
+    const isInverted = pathName.includes('articles/6');
+
     return (
             isOpen
                 ? <NavMenuExpanded onClose={()=> setIsOpen(false)} locale={locale} />
-                : <NavMenuCollapsed onOpen={() => setIsOpen(true)} hideLogo={isHomePage} page={page} locale={locale} />
+                : <NavMenuCollapsed inverted={isInverted} onOpen={() => setIsOpen(true)} hideLogo={isHomePage} page={page} locale={locale} />
     );
 }

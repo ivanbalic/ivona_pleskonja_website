@@ -4,6 +4,7 @@ import { ArticleCover } from '@/components/articles/ArticleCover';
 import { SubNavBredCrumbs } from '@/components/subnav-bredcrumbs/SubNavBredCrumbs';
 import { getSectionComponentByType } from '@/components/articles/sectionComponentMap';
 import { getExhibitionById } from '@/app/[locale]/(marketing)/articles/[slug]/pageContent';
+import {cn} from "@/lib/utils";
 
 export default function ExhibitionDetails({ params: { locale, slug } }: { params: { locale: string, slug: string }}) {
     const isMobile = useIsMobile();
@@ -12,9 +13,12 @@ export default function ExhibitionDetails({ params: { locale, slug } }: { params
     if(!exhibition) return null;
 
     return (
-        <div className="pt-[85px] md:pt-[125px] tracking-[.15em]">
-            <div className="max-md:bg-articleBgBlue">
-                <SubNavBredCrumbs navItems={exhibition.HISTORY ?? []} locale={locale} page={'exhibition'} />
+        <div className={cn(
+            slug === '6' ? "bg-articleBgBlue min-h-[100vh] w-[100vw]" : '',
+            "pt-[85px] md:pt-[125px] tracking-[.15em]"
+        )}>
+            <div className={cn("max-md:bg-articleBgBlue")}>
+                <SubNavBredCrumbs navItems={exhibition.HISTORY ?? []} locale={locale} page={'exhibition'} inverted={slug === '6'} />
                 <ArticleCover locale={locale} cover={exhibition.COVER} />
             </div>
             {// @ts-ignore

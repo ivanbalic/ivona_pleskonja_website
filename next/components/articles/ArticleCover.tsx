@@ -44,7 +44,7 @@ export function ArticleCover({ cover, locale }: { cover: IArticleCover, locale: 
 
     return (
         <div className="bg-articleBgBlue">
-            <Container containerStyle={{paddingBottom: `${coverImageOffset || ((media.MAX_HEIGHT ?? 0) / 2)}px`, marginBottom: `${coverImageOffset || ((media.MAX_HEIGHT ?? 0) / 2)}px`}} className="mt-10 md:pt-10">
+            <Container containerStyle={{paddingBottom: `${coverImageOffset || ((media?.MAX_HEIGHT ?? 0) / 2)}px`, marginBottom: `${coverImageOffset || ((media?.MAX_HEIGHT ?? 0) / 2)}px`}} className="mt-10 md:pt-10">
                 <Container className={cn(
                     'pb-5 md:pb-10',
                     'flex flex-col gap-4',
@@ -55,21 +55,23 @@ export function ArticleCover({ cover, locale }: { cover: IArticleCover, locale: 
                         'max-md:text-externalLink mb-4',
                         'text-[32px] md:text-[33px] leading-[100%] font-roboto-serif font-bold'
                     )}>{cover?.TITLE[locale.toUpperCase() as keyof ITranslations]}</div>
-                    <div className={cn(
+                    {cover?.TEXT[locale.toUpperCase() as keyof ITranslations] && <div className={cn(
                         "text-[20px] md:text-[32px]",
                         "font-roboto-serif font-bold leading-[100%] tracking-[.15em]",
                     )}>
                         {cover?.TEXT[locale.toUpperCase() as keyof ITranslations]}
-                    </div>
-                    <div className="flex flex-row md:flex-col gap-2 font-helvetica text-[16px] leading-[10px] md:leading-[100%] tracking-[.05em] md:tracking-[.15em] max-md:text-externalLink">
-                        <div className="font-normal md:font-medium max-md:border-r border-externalLink max-md:pr-2">{cover.YEAR}</div>
+                    </div>}
+                    {cover.YEAR && cover.AUTHOR[locale.toUpperCase() as keyof ITranslations] && <div
+                        className="flex flex-row md:flex-col gap-2 font-helvetica text-[16px] leading-[10px] md:leading-[100%] tracking-[.05em] md:tracking-[.15em] max-md:text-externalLink">
+                        <div
+                            className="font-normal md:font-medium max-md:border-r border-externalLink max-md:pr-2">{cover.YEAR}</div>
                         <div className="font-normal md:font-bold">
                             {cover.AUTHOR[locale.toUpperCase() as keyof ITranslations]}
                         </div>
-                    </div>
+                    </div>}
                 </Container>
                 <Container className="absolute md:px-10 w-full">
-                    <div className={cn("flex justify-center", media.CLASS_NAME)}>
+                    {media && <div className={cn("flex justify-center", media.CLASS_NAME)}>
                         {media?.TYPE === 'image'
                             ? <Image
                                 priority
@@ -82,13 +84,14 @@ export function ArticleCover({ cover, locale }: { cover: IArticleCover, locale: 
                             />
                             : (
                                 <div ref={coverRef}>
-                                    <video width={1440} poster={media?.POSTER} controls className='min-h-[150px] object-cover'>
-                                        <source src={media?.SRC as string} type="video/mp4" />
+                                    <video width={1440} poster={media?.POSTER} controls
+                                           className='min-h-[150px] object-cover'>
+                                        <source src={media?.SRC as string} type="video/mp4"/>
                                     </video>
                                 </div>
                             )
                         }
-                    </div>
+                    </div>}
                     {cover?.EXTERNAL_LINK.URL &&
                         <Link style={{ marginTop: `-${isMobile ? coverImageOffset : 0}px`}} className={cn(
                             'z-[2] left-[calc(100%-152px)]',

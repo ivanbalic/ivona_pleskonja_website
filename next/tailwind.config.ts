@@ -13,6 +13,8 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
     safelist: [
+        'bg-[#1643B2]',
+        'bg-[#FFFFFF]',
         'w-[1%]',
         'w-[2%]',
         'w-[3%]',

@@ -23,11 +23,11 @@ export function ArticleInvertedTextGrid({ locale = 'ser', section }: {locale: st
             'px-4 md:px-[135px]',
             'py-5 md:py-10 mt-5 md:mt-10',
             'bg-articleBgBlue font-helvetica tracking-[.05em]',
+            'text-[16px] leading-[24px] md:leading-[100%]',
             section.CLASS_NAME
         )}>
             <div className={cn(
-                'text-[16px] leading-[24px] md-leading-[100%]',
-                'flex flex-row gap-5 md:gap-[90px] items-center justify-between w-full'
+                'flex flex-col md:flex-row gap-5 md:gap-[90px] items-center justify-between w-full'
             )}>
                 {section.CONTENT.map((row: Record<string, any>[], rowKey: number) =>
                     <div key={`${section.TYPE}_${rowKey}`} className="flex flex-col gap-5">
