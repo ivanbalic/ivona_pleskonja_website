@@ -73,7 +73,7 @@ export interface IGalleryRowItem {
 export interface IArticleCover {
     TITLE: ITranslations;
     AUTHOR: ITranslations,
-    YEAR: number,
+    YEAR: number | null,
     TEXT: ITranslations,
     MEDIA: {
         MOBILE: {
@@ -83,7 +83,7 @@ export interface IArticleCover {
             CLASS_NAME?: string,
             MAX_HEIGHT?: number,
             SRC: StaticImageData | string,
-        },
+        } | null,
         DESKTOP: {
             ALT: string,
             TYPE: string,
@@ -91,10 +91,10 @@ export interface IArticleCover {
             CLASS_NAME?: string,
             MAX_HEIGHT?: number,
             SRC: StaticImageData | string,
-        }
+        } | null
     },
     EXTERNAL_LINK: {
-        URL: string,
+        URL: string | null,
         LABEL: ITranslations
     },
 }
