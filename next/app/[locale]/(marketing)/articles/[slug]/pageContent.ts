@@ -2152,7 +2152,7 @@ export const PAGE_CONTENT = Object.freeze({
             MOBILE: [
                 {
                     TYPE: 'inverted_text_grid',
-                    CLASS_NAME: '-mt-1 font-bold text-[20px] leading-[100%] tracking-[.15em] font-roboto-serif',
+                    CLASS_NAME: '-mt-1 pt-0 font-bold text-[20px] leading-[100%] tracking-[.15em] font-roboto-serif',
                     CONTENT: [
                         [
                             {
