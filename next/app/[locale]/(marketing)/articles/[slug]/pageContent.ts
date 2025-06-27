@@ -2116,7 +2116,7 @@ export const PAGE_CONTENT = Object.freeze({
             {
                 ID: 'exhibitions',
                 TITLE: {
-                    SER: 'Psihodram ',
+                    SER: 'Psihodrama',
                     ENG: 'Psychodrama'
                 },
                 LINK: 'articles/6'
