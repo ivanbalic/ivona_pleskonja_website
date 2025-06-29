@@ -27,6 +27,12 @@ body {
   }
 }
 
+.article-special {
+  &>div {
+    flex-direction: row;
+  }
+}
+
 .article-carousel {
   &.embla {
     --slide-size-mobile: 100%;

@@ -22,8 +22,8 @@ export function ArticleInvertedTextGrid({ locale = 'ser', section }: {locale: st
             'flex flex-col gap-5',
             'px-4 md:px-[135px]',
             'py-5 md:py-10 mt-5 md:mt-10',
-            'bg-articleBgBlue font-helvetica tracking-[.05em]',
             'text-[16px] leading-[24px] md:leading-[100%]',
+            'bg-articleBgBlue font-helvetica tracking-[.05em]',
             section.CLASS_NAME
         )}>
             <div className={cn(

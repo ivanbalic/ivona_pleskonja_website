@@ -1797,7 +1797,7 @@ export const PAGE_CONTENT = Object.freeze({
                 },
                 {
                     TYPE: 'inverted_text_grid',
-                    CLASS_NAME: 'w-full flex flex-row justify-between text-[16px] leading-[24px] tracking-[.05em] italic -mt-0',
+                    CLASS_NAME: 'w-full flex flex-row justify-between text-[16px] leading-[24px] tracking-[.05em] italic -mt-0 article-special',
                     CONTENT: [
                         [
                             {

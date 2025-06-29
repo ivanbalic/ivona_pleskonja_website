@@ -65,7 +65,24 @@ import ksenijaLoveSmellsRoseGraphThumb from '@/public/assets/11-snaga/ksenija-lo
 import weAreNotAloneTheLightIsHereThumb from '@/public/assets/11-snaga/we-are-not-alone-the-light-is-here-thumb.webp';
 // CHILDREN OF THE SUN
 import fragment01Full from '@/public/assets/children-of-the-sun/fragment-01-full.webp';
+import fragment03Full from '@/public/assets/children-of-the-sun/fragment-03-full.webp';
+import fragment04Full from '@/public/assets/children-of-the-sun/fragment-04-full.webp';
+import fragment05Full from '@/public/assets/children-of-the-sun/fragment-05-full.webp';
+import fragment06Full from '@/public/assets/children-of-the-sun/fragment-06-full.webp';
+import fragment07Full from '@/public/assets/children-of-the-sun/fragment-07-full.webp';
+import fragment08Full from '@/public/assets/children-of-the-sun/fragment-08-full.webp';
+import fragment09Full from '@/public/assets/children-of-the-sun/fragment-09-full.webp';
+import fragment10Full from '@/public/assets/children-of-the-sun/fragment-10-full.webp';
+import fragment11Full from '@/public/assets/children-of-the-sun/fragment-11-full.webp';
+import fragment12Full from '@/public/assets/children-of-the-sun/fragment-12-full.webp';
+import fragment13Full from '@/public/assets/children-of-the-sun/fragment-13-full.webp';
+import fragment14Full from '@/public/assets/children-of-the-sun/fragment-14-full.webp';
 import fragment01Preview from '@/public/assets/children-of-the-sun/fragment-01-preview.webp';
+import fragment02Preview from '@/public/assets/children-of-the-sun/fragment-02-preview.webp';
+import fragment06Preview from '@/public/assets/children-of-the-sun/fragment-06-preview.webp';
+import fragment09Preview from '@/public/assets/children-of-the-sun/fragment-09-preview.webp';
+import fragment10Preview from '@/public/assets/children-of-the-sun/fragment-10-preview.webp';
+import fragment11Preview from '@/public/assets/children-of-the-sun/fragment-11-preview.webp';
 import childrenOfTheSunFull from '@/public/assets/children-of-the-sun/children-of-the-sun-full.webp';
 import childrenOfTheSunPreview from '@/public/assets/children-of-the-sun/children-of-the-sun-preview.webp';
 
@@ -81,7 +98,7 @@ export const PAGE_CONTENT = Object.freeze({
         { ID: '11_snaga', TITLE: { SER: { YEAR: '2019', TEXT: '11 Snaga' }, ENG: { YEAR: '2019', TEXT: '11 Snaga' } }, DISABLED: false, LINK: null },
         { ID: 'strong_people', TITLE: { SER: { YEAR: '2016', TEXT: 'Jaki ljudi' }, ENG: { YEAR: '2016', TEXT: 'Strong People' } }, DISABLED: false, LINK: 'articles/5' },
         { ID: 'weather_stations', TITLE: { SER: { YEAR: '2015', TEXT: 'Vremenske stanice' }, ENG: { YEAR: '2015', TEXT: 'Weather Stations' } }, DISABLED: true, LINK: null },
-        { ID: 'children_of_the_sun', TITLE: { SER: { YEAR: '2014', TEXT: 'Deca Sunca' }, ENG: { YEAR: '2014', TEXT: 'Children of the Sun' } }, DISABLED: true, LINK: null },
+        { ID: 'children_of_the_sun', TITLE: { SER: { YEAR: '2014', TEXT: 'Deca Sunca' }, ENG: { YEAR: '2014', TEXT: 'Children of the Sun' } }, DISABLED: false, LINK: null },
         { ID: 'spirit', TITLE: { SER: { YEAR: '2011', TEXT: 'Duh' }, ENG: { YEAR: '2011', TEXT: 'Spirit' } }, DISABLED: true, LINK: null },
         { ID: 'one_world', TITLE: { SER: { YEAR: '2009', TEXT: 'Jedan Svet' }, ENG: { YEAR: '2009', TEXT: 'One World' } }, DISABLED: true, LINK: null },
         { ID: 'psychodrama', TITLE: { SER: { YEAR: '2008', TEXT: 'Psihodrama' }, ENG: { YEAR: '2008', TEXT: 'Psychodrama' } }, DISABLED: false, LINK: 'articles/6' },
@@ -1084,13 +1101,9 @@ export const SUBPAGE_CONTENT = Object.freeze({
                 ENG: 'It all began in 2011, when media around the world devoted significant attention to predictions of various cataclysms or to scientific interpretations of the Mayan calendar, according to which a major cycle was supposed to end on December 21, 2012, and a new era of humanity was to begin. Many analysts of the Mayan calendar saw this date as a symbol of hope—that from that moment, the world and its people would begin to change for the better, and that spiritual advancement would occur across our planet.'
             },
             {
-                SER: 'Na mene su sve ove informacije snažno delovale i podstakle me na maštanje o svim mogućim i nemogućim promenama čovečanstva na bolje. Tada mi se javila ideja ili slika trenutka te evolutivne promene na bolje. Scenu sam postavila u eksterijer neke pustinje/pustoši naše planete u jedan budući momenat u kome se nalaze deca Sunca, 14 likova koje sam spontano odabrala. U momentu koji slikam, u atmosferi se pojavljuje misteriozna blještava bela svetlost, koja obasjava ljude koji su se tu zadesili. Zraci ove neobične svetlosti deluju snažno na sva prisutna bića tako da svi u tom trenutku doživljavaju duhovnu spoznaju, unutrašnji rast ili prosvetljenje.',
-                ENG: 'All this information had a strong impact on me and inspired me to imagine all the possible and impossible ways humanity could change for the better. That’s when the idea or vision of a moment of such evolutionary transformation came to me. I placed the scene in an exterior—some desert or barren land on our planet—at a future moment in time, where the Children of the Sun are present: 14 figures I selected spontaneously.In the moment I depict, a mysterious, radiant white light appears in the atmosphere, illuminating the people who happen to be there. The rays of this unusual light strongly affect all beings present so that each one experiences spiritual insight, inner growth, or enlightenment.'
+                SER: 'Na mene su sve ove informacije snažno delovale i podstakle me na maštanje o svim mogućim i nemogućim promenama čovečanstva na bolje. Tada mi se javila ideja ili slika trenutka te evolutivne promene na bolje. Scenu sam postavila u eksterijer neke pustinje/pustoši naše planete u jedan budući momenat u kome se nalaze deca Sunca, 14 likova koje sam spontano odabrala. U momentu koji slikam, u atmosferi se pojavljuje misteriozna blještava bela svetlost, koja obasjava ljude koji su se tu zadesili. Zraci ove neobične svetlosti deluju snažno na sva prisutna bića tako da svi u tom trenutku doživljavaju duhovnu spoznaju, unutrašnji rast ili prosvetljenje. Celokupan prizor koji sam naslikala na monumentalnom platnu dugom 19 m asocira me na zaustavljeni kadar iz naučnofantastičnog filma. Slika je postavljena u galeriji KCB-a tako da posetioci mogu biti deo te scene i osetiti na trenutak tu vibraciju kolektivne promene i prosvetljenja.',
+                ENG: 'All this information had a strong impact on me and inspired me to imagine all the possible and impossible ways humanity could change for the better. That’s when the idea or vision of a moment of such evolutionary transformation came to me. I placed the scene in an exterior—some desert or barren land on our planet—at a future moment in time, where the Children of the Sun are present: 14 figures I selected spontaneously.In the moment I depict, a mysterious, radiant white light appears in the atmosphere, illuminating the people who happen to be there. The rays of this unusual light strongly affect all beings present so that each one experiences spiritual insight, inner growth, or enlightenment. The entire scene, which I painted on a monumental 19-meter-long canvas, reminds me of a still frame from a science fiction film. The painting was exhibited in the KCB gallery in a way that allows visitors to become part of the scene and, if only for a moment, feel that vibration of collective change and enlightenment.'
             },
-            {
-                SER: 'Celokupan prizor koji sam naslikala na monumentalnom platnu dugom 19 m asocira me na zaustavljeni kadar iz naučnofantastičnog filma. Slika je postavljena u galeriji KCB-a tako da posetioci mogu biti deo te scene i osetiti na trenutak tu vibraciju kolektivne promene i prosvetljenja.',
-                ENG: 'The entire scene, which I painted on a monumental 19-meter-long canvas, reminds me of a still frame from a science fiction film. The painting was exhibited in the KCB gallery in a way that allows visitors to become part of the scene and, if only for a moment, feel that vibration of collective change and enlightenment.'
-            }
         ],
         GALLERY: [
             {
@@ -1137,233 +1150,351 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-01",
                             GRID_PLACES: 1,
                             DETAILS: {
-                                CREATED_AT: '2019',
-                                DIMENSIONS: '2 x 1.5 m',
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '2 x 1.05 m',
                                 NAME: {
-                                    SER: 'KSENIJA LEA / LJUBAV MIRIŠE RUŽU' ,
-                                    ENG: 'CHIRON / LOVE SMELLS A ROSE'
+                                    SER: 'FRAGMENT 01',
+                                    ENG: 'FRAGMENT 01'
                                 },
                                 TECHNIQUE: {
                                     SER: 'Akril na platnu',
                                     ENG: 'Acrylic on canvas'
                                 },
                                 DESCRIPTION: {
-                                    SER: 'Ljubav miriše ružu. Ljubav nežno hoda po laticama. Ljubav je živa. Njeno ime je Ljubav.',
-                                    ENG: 'Love smells like a rose. Love walks gently on the petals. Love is alive. Her name is Love.'
+                                    SER: 'Intuitivno sam odabrala da niz likova počne sa Dejvom iz Kjubrikovog filma „2001: Odiseja u svemiru“, i to iz čuvene scene u kojoj kosmonaut Dejv putuje kroz svemir vremenskim tunelom do tada neviđenom brzinom, u novi nepoznati svet, doživljava kompletnu transformaciju tela i duha, prelazi u drugu dimenziju i ponovo se rađa kao zvezdano dete.',
+                                    ENG: 'I intuitively chose to begin the sequence of figures with Dave from Kubrick’s film 2001: A Space Odyssey, specifically from the famous scene in which astronaut Dave travels through space in a time tunnel at an unprecedented speed, entering a new, unknown world. He undergoes a complete transformation of body and spirit, crosses into another dimension, and is reborn as the star child.'
+                                },
+                            }
+                        },
+                        {
+                            ID: 3,
+                            SRC: {
+                                FULL: fragment01Full,
+                                PREVIEW: fragment01Preview,
+                            },
+                            ALT: "fragment-02",
+                            GRID_PLACES: 0,
+                            DETAILS: {
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '2 x 1.05 m',
+                                NAME: {
+                                    SER: 'FRAGMENT 02',
+                                    ENG: 'FRAGMENT 02'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Akril na platnu',
+                                    ENG: 'Acrylic on canvas'
+                                },
+                                DESCRIPTION: {
+                                    SER: 'Nakon što sam naslikala Dejva upoznajem Helgu koja me impresionira i otkriva svoj, a za mene novi svet. Tada odlučujem da postavim Helgin portret preko Dejvovog lika, tako da Helga zauzima prostorno poziciju ispred Dejva. Njih dvoje su na neki način partneri u ovoj kompoziciji. Njihova energija je slična. Ispred njih ostavljam psihološki i svetlosni prostor.',
+                                    ENG: 'After I painted Dave, I met Helga, who impressed me and revealed her world to me—one that was new and unfamiliar. That’s when I decided to place Helga’s portrait over Dave’s figure, so that Helga occupies the spatial position in front of Dave. The two of them are, in a way, partners in this composition. Their energy is similar. In front of them, I leave psychological and light-filled space.'
+                                },
+                            }
+                        },
+                        {
+                            ID: 4,
+                            SRC: {
+                                FULL: fragment03Full,
+                                PREVIEW: fragment02Preview,
+                            },
+                            ALT: "fragment-03",
+                            GRID_PLACES: 2,
+                            DETAILS: {
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '2 x 1.05 m',
+                                NAME: {
+                                    SER: 'FRAGMENT 03',
+                                    ENG: 'FRAGMENT 03'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Akril na platnu',
+                                    ENG: 'Acrylic on canvas'
+                                },
+                                DESCRIPTION: {
+                                    SER: 'U to vreme gledajući francuski film „Divlje dete“ Fransoa Tifoa iz 1970. godine impresionirana sam i inspirisana glavnim likom iz tog filma, dečakom Viktorom, koji je odrastao u divljini bez kontakta sa ljudima. Iako to nije bio prvi put da se susrećem sa ovom temom, na mene je priča o dečaku Viktoru ostavila jak trag i podstakla me na razmišljanje o njegovoj duši, patnjama i jakoj povezanosti sa prirodom i životinjama. I pored pokušaja ljudi iz civilizacije da ga naviknu na gradski život, Viktorov zov za prirodom bi uvek pobedio.',
+                                    ENG: 'At that time, while watching the French film The Wild Child by François Truffaut from 1970, I was deeply impressed and inspired by the main character, the boy Victor, who grew up in the wilderness without any contact with people. Although it wasn’t the first time I had encountered this theme, the story of the boy Victor left a strong impression on me and prompted me to reflect on his soul, his suffering, and his deep connection with nature and animals. Despite the attempts of people from civilization to accustom him to city life, Victor’s call to nature always prevailed.'
+                                },
+                            }
+                        },
+                        {
+                            ID: 5,
+                            SRC: {
+                                FULL: fragment04Full,
+                                PREVIEW: fragment02Preview,
+                            },
+                            ALT: "fragment-04",
+                            GRID_PLACES: 0,
+                            DETAILS: {
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '2 x 1.05 m',
+                                NAME: {
+                                    SER: 'FRAGMENT 04',
+                                    ENG: 'FRAGMENT 04'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Akril na platnu',
+                                    ENG: 'Acrylic on canvas'
+                                },
+                                DESCRIPTION: {
+                                    SER: 'Uz Viktora slikam svog prijatelja, dečaka Ogija, koji se u prirodi snalazi nadprosečnim sposobnostima, a jedna od tih sposobnosti je orijentacija bez kompasa, bez mahovine i bez zvezde Severnjače. Ogi oseća strane sveta svojim posebnim čulom! ',
+                                    ENG: 'Alongside Victor, I painted my friend, a boy named Ogi, who navigates nature with exceptional abilities—one of which is finding direction without a compass, without moss, and without the North Star. Ogi senses the cardinal directions with a special instinct of his own!'
                                 },
                             }
                         },
                         {
                             ID: 6,
                             SRC: {
-                                FULL: weAreNotAloneTheLightIsHere,
-                                PREVIEW: weAreNotAloneTheLightIsHereThumb,
+                                FULL: fragment05Full,
+                                PREVIEW: fragment02Preview,
                             },
-                            ALT: "we-are-not-alone-the-light-is-here",
-                            GRID_PLACES: 3,
+                            ALT: "fragment-05",
+                            GRID_PLACES: 0,
                             DETAILS: {
-                                CREATED_AT: '2023',
-                                DIMENSIONS: '2 x 1.5 m',
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '2 x 1.05 m',
                                 NAME: {
-                                    SER: 'NISMO SAMI / SVETLOST JE TU' ,
-                                    ENG: 'WE ARE NOT ALONE / THE LIGHT IS HERE'
+                                    SER: 'FRAGMENT 05',
+                                    ENG: 'FRAGMENT 05'
                                 },
                                 TECHNIQUE: {
                                     SER: 'Akril na platnu',
                                     ENG: 'Acrylic on canvas'
                                 },
                                 DESCRIPTION: {
-                                    SER: '',
-                                    ENG: ''
-                                },
-                            }
-                        },
-                    ],
-                    [
-                        {
-                            ID: 7,
-                            SRC: {
-                                FULL: orlandoRealisation,
-                                PREVIEW: orlandoRealisationThumb,
-                            },
-                            ALT: "orlando-realisation",
-                            GRID_PLACES: 1,
-                            DETAILS: {
-                                CREATED_AT: '2019',
-                                DIMENSIONS: '2 x 1.5 m',
-                                NAME: {
-                                    SER: 'ORLANDO / REALIZACIJA' ,
-                                    ENG: 'ORLANDO / REALISATION'
-                                },
-                                TECHNIQUE: {
-                                    SER: 'Akril na platnu',
-                                    ENG: 'Acrylic on canvas'
-                                },
-                                DESCRIPTION: {
-                                    SER: 'Orlando je glavna ličnost u filmu Orlando, režiserke Seli Poter, koji je nastao po istoimenom romanu Virdžinije Vulf, a čiju ulogu u filmu tumači glumica Tilda Svinton, koju sam naslikala kao desetu snagu. Orlando je princ. Orlando je princeza. Orlando se realizuje kao princ. Orlando se realizuje kao princeza. Orlando to radi hrabro i lako.',
-                                    ENG: 'Orlando is the main character in the film Orlando, directed by Sally Potter, which was based on Virginia Woolf\'s novel of the same name, and whose role in the film is played by actress Tilda Swinton, whom I painted as the tenth force. Orlando is a prince. Orlando is a princess. Orlando realizes himself as a prince. Orlando realizes herself as a princess. Orlando does it boldly and easily.'
-                                },
-                            }
-                        },
-                        {
-                            ID: 8,
-                            SRC: {
-                                FULL: lazarChange,
-                                PREVIEW: lazarChangeThumb,
-                            },
-                            ALT: "lazar-change",
-                            GRID_PLACES: 1,
-                            DETAILS: {
-                                CREATED_AT: '2019',
-                                DIMENSIONS: '2 x 1.5 m',
-                                NAME: {
-                                    SER: 'LAZAR / PROMENA' ,
-                                    ENG: 'LAZAR / CHANGE'
-                                },
-                                TECHNIQUE: {
-                                    SER: 'Akril na platnu',
-                                    ENG: 'Acrylic on canvas'
-                                },
-                                DESCRIPTION: {
-                                    SER: 'Lazar je bokser koji pleše u ritmu celog sveta, gipko pleše kroz vreme. U svakom novom momentu je novi pokret i novi Lazar. On menja sebe u svetu koji se menja. On pleše sa promenama. Zbog toga mu je lepo.',
-                                    ENG: 'Lazar is a boxer who dances to the rhythm of the whole world, gracefully dances through time. In every new moment there is a new movement and a new Lazar. He changes himself in a changing world. He dances with change. That\'s why he likes it.'
-                                },
-                            }
-                        },
-                        {
-                            ID: 9,
-                            SRC: {
-                                FULL: palWork,
-                                PREVIEW: palWorkThumb,
-                            },
-                            ALT: "pal-work",
-                            GRID_PLACES: 1,
-                            DETAILS: {
-                                CREATED_AT: '2019',
-                                DIMENSIONS: '2 x 1.5 m',
-                                NAME: {
-                                    SER: 'PAL / RAD' ,
-                                    ENG: 'PAL / RAD'
-                                },
-                                TECHNIQUE: {
-                                    SER: 'Akril na platnu',
-                                    ENG: 'Acrylic on canvas'
-                                },
-                                DESCRIPTION: {
-                                    SER: 'Pal je sagradio pola Sente. Pal je sagradio i svoju kuću. Sam je naučio da zida. Učio je i druge kako da zidaju. Pal je sve stvorio svojim radom!',
-                                    ENG: 'Pal built half of Senta. Pal also built his own house. He taught himself to build. He also taught others how to build. Pal created everything with his work!'
-                                },
-                            }
-                        },
-                        {
-                            ID: 10,
-                            SRC: {
-                                FULL: rankoTheMind,
-                                PREVIEW: rankoTheMindThumb,
-                            },
-                            ALT: "ranko-the-mind",
-                            GRID_PLACES: 1,
-                            DETAILS: {
-                                CREATED_AT: '2019',
-                                DIMENSIONS: '2 x 1.5 m',
-                                NAME: {
-                                    SER: 'RANKO / UM' ,
-                                    ENG: 'RANKO / THE MIND '
-                                },
-                                TECHNIQUE: {
-                                    SER: 'Akril na platnu',
-                                    ENG: 'Acrylic on canvas'
-                                },
-                                DESCRIPTION: {
-                                    SER: 'Um je bistar. Rankov um je Univerzum. Rankov um radi sa svetlostima koje isijavaju beskonačno mnogo boja. Boje se u svetlostima međusobno kombinuju i stvaraju nove spektre. Ranko otvara fotonske pakete i svojim rukama širi spektre po našem nebeskom svodu, po inteligenciji planete Zemlje. Ranko mi je pokazao kako to radi. Sada svima pokazuje kako um radi.',
-                                    ENG: 'The mind is clear. Ranko\'s mind is the Universe. Ranko\'s mind works with lights that glow an infinite number of colors. Colors in light combine with each other and create new spectra. Ranko opens the photon packets and with his hands spreads the spectra across our firmament, according to the intelligence of the planet Earth. Ranko showed me how to do it. Now he\'s showing everyone how the mind works.'
+                                    SER: 'Slikajući Ogija čitala sam knjigu „Božanski heroj“ autora Šri Činmoja, na čijim koricama je fotografija (meni) nepoznatog junaka, koji se likom uklapa u profil produhovljene osobe, božanskog heroja, koji je opisan u ovoj knjizi. Ovog heroja postavljam prostorno iza Ogija, koji za mene ima ulogu Ogijevog čuvara.',
+                                    ENG: 'While painting Ogi, I was reading the book The Divine Hero by Sri Chinmoy, which features a photograph on the cover of an (to me) unknown figure whose appearance fits the profile of a spiritual person—a divine hero—as described in the book. I positioned this hero spatially behind Ogi, who, for me, takes on the role of Ogi’s guardian.'
                                 },
                             }
                         }
                     ],
                     [
                         {
-                            ID: 11,
+                            ID: 7,
                             SRC: {
-                                FULL: tasjaHappiness,
-                                PREVIEW: tasjaHappinessThumb,
+                                FULL: fragment06Full,
+                                PREVIEW: fragment06Preview,
                             },
-                            ALT: "tasja-happiness",
-                            GRID_PLACES: 1,
+                            ALT: "fragment-06",
+                            GRID_PLACES: 7,
                             DETAILS: {
-                                CREATED_AT: '2019',
-                                DIMENSIONS: '2 x 1.5 m',
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '2 x 1.05 m',
                                 NAME: {
-                                    SER: 'TASJA / SREĆA' ,
-                                    ENG: 'TASJA / HAPPINESS'
+                                    SER: 'FRAGMENT 06',
+                                    ENG: 'FRAGMENT 06'
                                 },
                                 TECHNIQUE: {
                                     SER: 'Akril na platnu',
                                     ENG: 'Acrylic on canvas'
                                 },
                                 DESCRIPTION: {
-                                    SER: 'Sreća je lepa, nežna, mudra, dobro organizovana. Sreća je prijatelj. Sreća je prijatna i nasmejana. Sreća je moja najveća sreća u životu. Sreća sluša muziku, voli veselu muziku sa radija. Sreća voli ljubav. Sreća voli dom. Sreća radi na sebi. Sreća ne prepušta sebe slučajnostima. Sreća je veoma dobro organizovana, organizovana Srećom.',
-                                    ENG: 'Happiness is beautiful, gentle, wise, well organized. Happiness is a friend. Happiness is pleasant and smiling. Happiness is my greatest happiness in life. Happiness listens to music, likes cheerful music from the radio. Happiness loves love. Happiness loves home. Happiness works on itself. Happiness does not leave itself to chance. Happiness is very well organized, organized Luckily.'
+                                    SER: 'Tutankamonov portret iz profila postavljam samostalno u prostor. Zaintrigirao me je neobičan oblik njegove lobanje u predelu potiljka i nadprosečno dug vrat. Njegov izgled i ličnost su puni mistike. Na osnovu Tutankamonovih posmrtnih ostataka, naučni timovi National Geography-a su formirali digitalni izgled ovog mladog faraona. Na osnovu ovog digitalizovanog lika sam slikala njegov portret. Tutankamonovo prvobitno ime je bilo Tut-Ank-Aton, što je značilo Živa Slika Sunca, koje je kasnije promenio u Tutankamon, sto znači Živa slika Amona (vrhovnog egipatskog boga Amona-stvoritelja duša).',
+                                    ENG: 'I am placing Tutankhamun’s portrait in profile independently in space. I was intrigued by the unusual shape of his skull in the occipital area and his unusually long neck. His appearance and personality are full of mystique. Based on Tutankhamun’s remains, National Geographic’s scientific teams created a digital reconstruction of this young pharaoh’s face. I painted his portrait based on this digitalized likeness. Tutankhamun’s original name was Tut-Ank-Aton, which meant “Living Image of the Sun,” but he later changed it to Tutankhamun, which means “Living Image of Amun” (the supreme Egyptian god Amun, creator of souls).'
+                                },
+                            }
+                        },
+                        {
+                            ID: 8,
+                            SRC: {
+                                FULL: fragment07Full,
+                                PREVIEW: fragment06Preview,
+                            },
+                            ALT: "fragment-07",
+                            GRID_PLACES: 0,
+                            DETAILS: {
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '2 x 1.05 m',
+                                NAME: {
+                                    SER: 'FRAGMENT 07',
+                                    ENG: 'FRAGMENT 07'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Akril na platnu',
+                                    ENG: 'Acrylic on canvas'
+                                },
+                                DESCRIPTION: {
+                                    SER: 'U daljem traganju za duhovnim rastom gledam dokumentarni film „Budina izgubljena deca“ holandskog režisera Mark Verkerka. Ovim filmom Verkerk predstavlja život dečaka, mladih budističkih monaha koji odrastaju u budističkom hramu Zlatni konj, u kome se vežba sklad duha i tela, kombinovanjem molitvi i tajlandskog boksa. Najjači utisak na mene ostavlja dečak Pan Sen, koga su roditelji poslali u manastir. Pan Sen je imao problema sa govorom, učenjem i komunikacijom pre dolaska u manastir. Usklađujući duh i telo svakodnevnim vežbama tajlandskog boksa i druženjem sa mladim monasima, Pan Sen tokom filma vidno napreduje kako intelektualno, tako i duhovno. Pan Sena sam na slici predstavila u momentu kada je dobio svoje duhovno ime. U tom posebnom trenutku Pan Sen zrači duhovnim mirom. Ovaj dečak je za mene simbol duhovnog rasta. U filmu ima svog konja, a ja ga slikam uz psa.',
+                                    ENG: 'In my further search for spiritual growth, I am watching the documentary “Buddha’s Lost Children” by Dutch director Mark Verkerk. In this film, Verkerk presents the life of boys — young Buddhist monks who grow up in the Golden Horse Buddhist temple, where harmony of spirit and body is practiced by combining prayers and Muay Thai boxing. The boy Pan Sen, whom his parents sent to the monastery, leaves the strongest impression on me. Before coming to the monastery, Pan Sen had problems with speech, learning, and communication. By harmonizing spirit and body through daily Muay Thai exercises and spending time with the young monks, Pan Sen visibly progresses both intellectually and spiritually throughout the film. I depicted Pan Sen in the painting at the moment he received his spiritual name. At that special moment, Pan Sen radiates spiritual peace. For me, this boy is a symbol of spiritual growth. In the film, he has his horse, and I painted him with a dog.'
+                                },
+                            }
+                        },
+                        {
+                            ID: 9,
+                            SRC: {
+                                FULL: fragment08Full,
+                                PREVIEW: fragment06Preview,
+                            },
+                            ALT: "fragment-08",
+                            GRID_PLACES: 0,
+                            DETAILS: {
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '2 x 1.05 m',
+                                NAME: {
+                                    SER: 'FRAGMENT 08',
+                                    ENG: 'FRAGMENT 08'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Akril na platnu',
+                                    ENG: 'Acrylic on canvas'
+                                },
+                                DESCRIPTION: {
+                                    SER: 'Pas koji je uz Pan Sena je moj pas Leonardo, koji je moj verni drug i koji je stekao životnu mudrost. Leonardo na slici simboliše mudrost, ljubav i neverbalnu komunikaciju.',
+                                    ENG: 'The dog next to Pan Sen is my dog Leonardo, who is my faithful companion and has gained life wisdom. In the painting, Leonardo symbolizes wisdom, love, and nonverbal communication.'
+                                },
+                            }
+                        },
+                        {
+                            ID: 10,
+                            SRC: {
+                                FULL: fragment09Full,
+                                PREVIEW: fragment09Preview,
+                            },
+                            ALT: "fragment-09",
+                            GRID_PLACES: 2,
+                            DETAILS: {
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '2 x 1.05 m',
+                                NAME: {
+                                    SER: 'FRAGMENT 09',
+                                    ENG: 'FRAGMENT 09'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Akril na platnu',
+                                    ENG: 'Acrylic on canvas'
+                                },
+                                DESCRIPTION: {
+                                    SER: 'Nefertiti /žena faraona Akenatena/ čije ime znači Lepota je lepota Sunca ili Lepotica je rođena.',
+                                    ENG: 'Nefertiti (wife of Pharaoh Akhenaten), whose name means “Beauty is the beauty of the Sun” or “The Beautiful One is born.”'
+                                },
+                            }
+                        },
+                    ],
+                    [
+                        {
+                            ID: 11,
+                            SRC: {
+                                FULL: fragment10Full,
+                                PREVIEW: fragment10Preview,
+                            },
+                            ALT: "fragment-10",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '2 x 1.05 m',
+                                NAME: {
+                                    SER: 'FRAGMENT 10',
+                                    ENG: 'FRAGMENT 10'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Akril na platnu',
+                                    ENG: 'Acrylic on canvas'
+                                },
+                                DESCRIPTION: {
+                                    SER: 'Nefertiti i sledeći portret moje ćerke Tasje simbolišu vanvremensku lepotu.',
+                                    ENG: 'Nefertiti and the next portrait of my daughter Tasja symbolize timeless beauty.'
                                 },
                             }
                         },
                         {
                             ID: 12,
                             SRC: {
-                                FULL: veronaGentleness,
-                                PREVIEW: veronaGentlenessThumb,
+                                FULL: fragment11Full,
+                                PREVIEW: fragment11Preview,
                             },
-                            ALT: "verona-gentleness",
-                            GRID_PLACES: 1,
+                            ALT: "fragment-11",
+                            GRID_PLACES: 3,
                             DETAILS: {
-                                CREATED_AT: '2019',
-                                DIMENSIONS: '2 x 1.5 m',
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '2 x 1.05 m',
                                 NAME: {
-                                    SER: 'VERONA / BLAGOST' ,
-                                    ENG: 'VERONA / GENTLENESS'
+                                    SER: 'FRAGMENT 11',
+                                    ENG: 'FRAGMENT 11'
                                 },
                                 TECHNIQUE: {
                                     SER: 'Akril na platnu',
                                     ENG: 'Acrylic on canvas'
                                 },
                                 DESCRIPTION: {
-                                    SER: 'Blagost kaže : “Nisam ni znala kako se nosi šešir.” Blagost, nežnost, ljubaznost, razumevanje... izviru iz nevinosti i čistote duše, izviru i prenose se osmehom dalje na ceo svet.',
-                                    ENG: 'Gentleness says: "I didn\'t even know how to wear a hat." Gentleness, tenderness, kindness, understanding... spring from the innocence and purity of the soul, spring and spread with a smile to the whole world.'
+                                    SER: 'U dubini prostora, kao u izmaglici slikam poprsje mog dede Pala, koji čvrstim stavom tela podseća na božanskog heroja, koji je ovde u ulozi čuvara Tasje / čuvara lepote.',
+                                    ENG: 'In the depths of the space, like in a mist, I paint the bust of my grandfather Palo, who, with his firm posture, resembles a divine hero, here in the role of Tasja’s guardian / guardian of beauty.'
                                 },
                             }
                         },
                         {
                             ID: 13,
                             SRC: {
-                                FULL: srkiPersistence,
-                                PREVIEW: srkiPersistenceThumb,
+                                FULL: fragment12Full,
+                                PREVIEW: fragment11Preview,
                             },
-                            ALT: "srki-persistence",
-                            GRID_PLACES: 1,
+                            ALT: "fragment-12",
+                            GRID_PLACES: 0,
                             DETAILS: {
-                                CREATED_AT: '2019',
-                                DIMENSIONS: '2 x 1.5 m',
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '2 x 1.05 m',
                                 NAME: {
-                                    SER: 'SRKI / ISTRAJNOST' ,
-                                    ENG: 'SRKI / PERSISTENCE'
+                                    SER: 'FRAGMENT 12',
+                                    ENG: 'FRAGMENT 12'
                                 },
                                 TECHNIQUE: {
                                     SER: 'Akril na platnu',
                                     ENG: 'Acrylic on canvas'
                                 },
                                 DESCRIPTION: {
-                                    SER: '“Moja najveća snaga je istrajnost.”, kaže Srki. Srki je moj učitelj aikidoa. Srki je dete Save. Savom plove šleperi na kojima piše njegovo ime, Istrajni 1 i Istrajni 2. I ja sam dete Save. Zbog toga je Srki moj brat. Sava nas uči da budemo istrajni kao voda koja teče. Istrajni tok u jednom smeru omogućava ogromnom broju čestica informisanje tokom kretanja, informisanje i prenošenje informacija tamo gde su informacije potrebne. U procesu kretanja i informisanja, čestice dobijaju veliku snagu koju koriste za dalje kretanje. Tako funkcioniše istrajnost. Istrajnost je potrebna u životnim misijama i dugoročnim ciljevima. Istrajnost nas dovodi do ispunjenja misije. Hvala ti Istrajnosti! Hvala ti Srki, učitelju moj!',
-                                    ENG: '"My greatest strength is perseverance," says Srki. Srki is my aikido teacher. Srki is Sava\'s child. Sava is sailed by tugboats with his name written on them, Istrajni 1 and Istrajni 2. I am also a child of Sava. That\'s why Srki is my brother. Sava teaches us to be persistent like flowing water. A continuous flow in one direction allows a huge number of particles to be informed while moving, informing and transmitting information where information is needed. In the process of movement and information, the particles get a lot of power, which they use for further movement. That\'s how perseverance works. Perseverance is needed in life\'s missions and long-term goals. Perseverance leads us to the fulfillment of the mission. Thank you Perseverance! Thank you Srki, my teacher!'
+                                    SER: 'U iščekivanju pomenutog 21. decembra 2012, dok se podizala tenzija o smaku sveta, 15. oktobra te iste godine Felix Baumgartner, heroj ekstremnih sportova skočio je slobodnim padom iz stratosfere, sa visine od 39 km, čime je oborio svetski rekord u visini skoka slobodnim padom i postao prvi svetski supersonični padobranac. Ovaj skok su uživo prenosili mnogi TV kanali. Ja sam i sam skok i pripreme za skok budno pratila. Bila sam veoma uzbuđena oko ovog događaja i Feliksove hrabrosti, zato što je takav skok pomeranje ljudskih granica i ispitivanje koliko čovek može. Još veće uzbuđenje je nastupilo kada je skok uspešno izveden, čime je Feliks dokazao da svet nije onakav kakav nam se čini, da ljudsko telo može mnogo više nego što mi mislimo. Feliksova pojava i ovaj neverovatan skok i to dan pre mog rodjendana izazvali su moju veliku pažnju. Slikam Feliksa, koji se priprema za skok i komunicira preko mikrofona sa naučnim timom u dubini prostora iza mog dede Pala. Feliks na taj način dobija novi značaj. On u slici predstavlja pilota, koji obasjan belom svetlošću, komunicira sa nekim supervizorima i pokušava da objasni svetlosnu pojavu.',
+                                    ENG: 'While tension about the end of the world was rising before December 21, 2012, on October 15 of that year, Felix Baumgartner, an extreme sports hero, made a record-breaking freefall jump from 39 km in the stratosphere. He became the first supersonic skydiver. The jump was broadcast live on many TV channels, and I followed it closely, excited by Felix’s courage and the pushing of human limits. The successful jump proved that the world is not as it seems and that the human body can achieve much more than we think. Felix’s jump, just one day before my birthday, caught my special attention. I paint Felix preparing for the jump, communicating via microphone with the scientific team, positioned in the space behind my grandfather Palo. In the painting, Felix takes on new meaning — a pilot, illuminated by white light, communicating with supervisors and trying to explain a light phenomenon.'
                                 },
                             }
                         },
                         {
-                            ID: null,
-                            SRC: null,
-                            ALT: "",
-                            GRID_PLACES: 1,
-                            DETAILS: null,
+                            ID: 14,
+                            SRC: {
+                                FULL: fragment13Full,
+                                PREVIEW: fragment11Preview,
+                            },
+                            ALT: "fragment-13",
+                            GRID_PLACES: 0,
+                            DETAILS: {
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '2 x 1.05 m',
+                                NAME: {
+                                    SER: 'FRAGMENT 13',
+                                    ENG: 'FRAGMENT 13'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Akril na platnu',
+                                    ENG: 'Acrylic on canvas'
+                                },
+                                DESCRIPTION: {
+                                    SER: '21. decembar je prošao mirno i dočekali smo 2013. godinu. 22. decembra 2013. godine umire moj tata Ranko, njegova duša napušta telo i otelotvoruje se na slici DECA SUNCA tatinim likom iz mladih dana. Imala sam snažnu potrebu da mu odam počast i da ga na simbolički način oživim. Tatinim odlaskom u drugi svet, na „onaj“ svet, osetila sam snagu života i smrti, superiornu silu, osetila sam svet duša i liniju koja spaja dva sveta, taj svet duša i našu poznatu realnost.',
+                                    ENG: 'December 21 passed peacefully, and we welcomed the year 2013. On December 22, 2013, my father Ranko passed away; his soul left the body and was embodied in the painting CHILDREN OF THE SUN as my father’s likeness from his youth. I felt a strong need to honor him and symbolically bring him to life. With my father’s passing into the other world, the “beyond,” I felt the power of life and death, a supreme force; I sensed the world of souls and the line that connects two worlds — that world of souls and our known reality.'
+                                },
+                            }
                         },
+                        {
+                            ID: 15,
+                            SRC: {
+                                FULL: fragment14Full,
+                                PREVIEW: fragment11Preview,
+                            },
+                            ALT: "fragment-14",
+                            GRID_PLACES: 0,
+                            DETAILS: {
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '2 x 1.05 m',
+                                NAME: {
+                                    SER: 'FRAGMENT 14',
+                                    ENG: 'FRAGMENT 14'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Akril na platnu',
+                                    ENG: 'Acrylic on canvas'
+                                },
+                                DESCRIPTION: {
+                                    SER: 'Indijanac kojim završavam friz likova i koji je gotovo spojen sa mojim tatom Rankom, predstavlja sve američke Indijance. Indijanac se takođe spontano pojavio u kompoziciji. Inspirisana tekstom koji se nedavno pojavio na društvenim mrežama, a koji je preuzet iz američkih vojnih tajni, govori o tome da je nakon kolonizacije Amerike rađen eksperiment od strane američke vojske nad američkim Indijancima. Cilj eksperimenta je bio naučno dokazati da se snaga, šesto čulo i izvanredna snalažljivost u prirodi Indijanaca kriju u njihovoj kosi. U toku eksperimenta, odabrane su dve grupe: prva je grupa Indijanaca kojima je kosa isečena, a drugoj grupi je ostavjena prirodna duga kosa. Obe grupe su startovale određeni zadatak kroz šumu. Rezultat eksperimenta je bio da je prva grupa indijanaca bila potpuno dezorijentisana, za razliku od druge grupe. Indijanac koga sam naslikala uz mog tatu simboliše tajnu snage, intuicije i majanskog kalendara.',
+                                    ENG: 'The Native American figure, finishing the hairstyle of the characters and almost connected to my father Ranko, represents all Native Americans. He appeared spontaneously in the composition. Inspired by a text from U.S. military secrets shared on social media, it describes an experiment on Native Americans after colonization. The goal was to prove that their strength, intuition, and survival skills come from their hair. Two groups were tested: one had their hair cut, the other kept it long. Both were sent on a task through the forest. The first group became disoriented, while the second succeeded. The Native American I painted beside my father symbolizes the secret of strength, intuition, and the Mayan calendar.'
+                                },
+                            }
+                        }
                     ]
                 ]
             },
