@@ -83,8 +83,32 @@ import fragment06Preview from '@/public/assets/children-of-the-sun/fragment-06-p
 import fragment09Preview from '@/public/assets/children-of-the-sun/fragment-09-preview.webp';
 import fragment10Preview from '@/public/assets/children-of-the-sun/fragment-10-preview.webp';
 import fragment11Preview from '@/public/assets/children-of-the-sun/fragment-11-preview.webp';
+import fragment01GraphFull from '@/public/assets/children-of-the-sun/fragment-01-graph-full.webp';
+import fragment02GraphFull from '@/public/assets/children-of-the-sun/fragment-02-graph-full.webp';
+import fragment03GraphFull from '@/public/assets/children-of-the-sun/fragment-03-graph-full.webp';
+import fragment04GraphFull from '@/public/assets/children-of-the-sun/fragment-04-graph-full.webp';
+import fragment05GraphFull from '@/public/assets/children-of-the-sun/fragment-05-graph-full.webp';
+import fragment06GraphFull from '@/public/assets/children-of-the-sun/fragment-06-graph-full.webp';
+import fragment07GraphFull from '@/public/assets/children-of-the-sun/fragment-07-graph-full.webp';
+import fragment08GraphFull from '@/public/assets/children-of-the-sun/fragment-08-graph-full.webp';
+import fragment09GraphFull from '@/public/assets/children-of-the-sun/fragment-09-graph-full.webp';
+import fragment10GraphFull from '@/public/assets/children-of-the-sun/fragment-10-graph-full.webp';
+import fragment11GraphFull from '@/public/assets/children-of-the-sun/fragment-11-graph-full.webp';
 import childrenOfTheSunFull from '@/public/assets/children-of-the-sun/children-of-the-sun-full.webp';
+import fragment01GraphPreview from '@/public/assets/children-of-the-sun/fragment-01-graph-preview.webp';
+import fragment02GraphPreview from '@/public/assets/children-of-the-sun/fragment-02-graph-preview.webp';
+import fragment03GraphPreview from '@/public/assets/children-of-the-sun/fragment-03-graph-preview.webp';
+import fragment04GraphPreview from '@/public/assets/children-of-the-sun/fragment-04-graph-preview.webp';
+import fragment05GraphPreview from '@/public/assets/children-of-the-sun/fragment-05-graph-preview.webp';
+import fragment06GraphPreview from '@/public/assets/children-of-the-sun/fragment-06-graph-preview.webp';
+import fragment07GraphPreview from '@/public/assets/children-of-the-sun/fragment-07-graph-preview.webp';
+import fragment08GraphPreview from '@/public/assets/children-of-the-sun/fragment-08-graph-preview.webp';
+import fragment09GraphPreview from '@/public/assets/children-of-the-sun/fragment-09-graph-preview.webp';
+import fragment10GraphPreview from '@/public/assets/children-of-the-sun/fragment-10-graph-preview.webp';
+import fragment11GraphPreview from '@/public/assets/children-of-the-sun/fragment-11-graph-preview.webp';
 import childrenOfTheSunPreview from '@/public/assets/children-of-the-sun/children-of-the-sun-preview.webp';
+import childrenOfTheSunGraphFull from '@/public/assets/children-of-the-sun/children-of-the-sun-graph-full.webp';
+import childrenOfTheSunGraphPreview from '@/public/assets/children-of-the-sun/children-of-the-sun-graph-preview.webp';
 
 export const PAGE_CONTENT = Object.freeze({
     TITLE: {
@@ -1116,6 +1140,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                     [
                         {
                             ID: 1,
+                            TYPE: 'vertical',
                             SRC: {
                                 FULL: childrenOfTheSunFull,
                                 PREVIEW: childrenOfTheSunPreview,
@@ -1124,10 +1149,19 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             GRID_PLACES: 4,
                             DETAILS: {
                                 CREATED_AT: '2011 2012 2013 2014',
-                                DIMENSIONS: '2 x 1.05 m',
+                                DIMENSIONS: '2 x 19 m',
+                                FRAGMENT_DIMENSIONS: '2 x 1.05 m',
+                                ADDITIONAL_DIMENSIONS_INFO: {
+                                    SER: '/ poliptih / 18 delova',
+                                    ENG: '/ polyptych / 18 parts'
+                                },
                                 NAME: {
-                                    SER: '„DECA SUNCA“' ,
-                                    ENG: '„CHILDREN OF THE SUN“'
+                                    SER: 'Deca Sunca' ,
+                                    ENG: 'Children of the Sun'
+                                },
+                                SUBTITLE: {
+                                    SER: 'Zašto baš ovih 14 likova?',
+                                    ENG: 'Why these 14 characters?'
                                 },
                                 TECHNIQUE: {
                                     SER: 'Akril na platnu',
@@ -1155,6 +1189,10 @@ export const SUBPAGE_CONTENT = Object.freeze({
                                 NAME: {
                                     SER: 'FRAGMENT 01',
                                     ENG: 'FRAGMENT 01'
+                                },
+                                ALTERNATIVE_NAME: {
+                                    SER: 'FRAGMENT 01, FRAGMENT 02',
+                                    ENG: 'FRAGMENT 01, FRAGMENT 02'
                                 },
                                 TECHNIQUE: {
                                     SER: 'Akril na platnu',
@@ -1205,6 +1243,10 @@ export const SUBPAGE_CONTENT = Object.freeze({
                                 NAME: {
                                     SER: 'FRAGMENT 03',
                                     ENG: 'FRAGMENT 03'
+                                },
+                                ALTERNATIVE_NAME: {
+                                    SER: 'FRAGMENT 03, FRAGMENT 04, FRAGMENT 05',
+                                    ENG: 'FRAGMENT 03, FRAGMENT 04, FRAGMENT 05'
                                 },
                                 TECHNIQUE: {
                                     SER: 'Akril na platnu',
@@ -1282,6 +1324,10 @@ export const SUBPAGE_CONTENT = Object.freeze({
                                 NAME: {
                                     SER: 'FRAGMENT 06',
                                     ENG: 'FRAGMENT 06'
+                                },
+                                ALTERNATIVE_NAME: {
+                                    SER: 'FRAGMENT 06, FRAGMENT 07, FRAGMENT 08',
+                                    ENG: 'FRAGMENT 06, FRAGMENT 07, FRAGMENT 08'
                                 },
                                 TECHNIQUE: {
                                     SER: 'Akril na platnu',
@@ -1410,6 +1456,10 @@ export const SUBPAGE_CONTENT = Object.freeze({
                                     SER: 'FRAGMENT 11',
                                     ENG: 'FRAGMENT 11'
                                 },
+                                ALTERNATIVE_NAME: {
+                                    SER: 'FRAGMENT 11, FRAGMENT 12, FRAGMENT 13, FRAGMENT 14',
+                                    ENG: 'FRAGMENT 11, FRAGMENT 12, FRAGMENT 13, FRAGMENT 14'
+                                },
                                 TECHNIQUE: {
                                     SER: 'Akril na platnu',
                                     ENG: 'Acrylic on canvas'
@@ -1508,76 +1558,93 @@ export const SUBPAGE_CONTENT = Object.freeze({
                     [
                         {
                             ID: 1,
+                            TYPE: 'vertical',
                             SRC: {
-                                FULL: chironIdentityGraph,
-                                PREVIEW: chironIdentityGraphThumb,
+                                FULL: childrenOfTheSunGraphFull,
+                                PREVIEW: childrenOfTheSunGraphPreview,
                             },
-                            ALT: "chiron-identity-lithography",
+                            ALT: "children-of-the-sun-graph-full",
                             GRID_PLACES: 1,
                             DETAILS: {
-                                CREATED_AT: '2018',
-                                DIMENSIONS: '50 x 50 cm',
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '33 x 70 cm',
                                 NAME: {
-                                    SER: 'CHIRON / IDENTITET',
-                                    ENG: 'CHIRON / IDENTITY'
+                                    SER: 'Deca Sunca',
+                                    ENG: 'Children of the Sun'
+                                },
+                                SUBTITLE: {
+                                    SER: 'Zašto baš ovih 14 likova?',
+                                    ENG: 'Why these 14 characters?'
                                 },
                                 TECHNIQUE: {
                                     SER: 'Litografija',
                                     ENG: 'Lithography'
                                 },
                                 DESCRIPTION: {
-                                    SER: 'Širon je glavni lik u filmu Beri Dženkinsa, Mesečina. On je dečak koji je svojom snagom postao veći od najvećih problema u kojima je živeo. Postao je najveći srećni čovek! Predstavila sam ga u posebnom i osetljivom momentu u kome preispituje svoj identitet. Širon predstavlja snage svih identiteta koje nosimo u sebi i onih najosetljivijih delova bića koja su toliko ranjiva, a iz kojih zapravo izvire naša najveća snaga. Širon je došao da nam to kaže.',
-                                    ENG: 'Chiron is the main character in Barry Jenkins\' movie Moonlight. He is a boy who, with his strength, became bigger than the biggest problems he lived in. He became the happiest man! I presented him in a special and sensitive moment in which he is questioning his identity. Chiron represents the strength of all the identities that we carry within us and those most sensitive parts of being that are so vulnerable, and from which our greatest strength actually springs. Shiron came to tell us that.'
+                                    SER: 'Razmišljajući o toj sceni, u startu sam znala da treba da predstavim mnoštvo likova, kao i da je važno da oni budu monumentalni, kako bih im predala veliki značaj i time figurativno dočarala njihovu novu duhovnu dimenziju. U svakoj osobi koju portretišem otkrivam tananu liniju, koja je u isto vreme i granica razdvajanja i mesto spajanja dva sveta, vidljivog i nevidljivog. Ako se tokom procesa slikanja skoncentrišem na tu liniju, uspevam da kroz naslikani telesni stav, pogled, ili pokret tela naslikanog čoveka predstavim nevidljivi svet. Tako i svih 14 likova koje sam naslikala na slici DECA SUNCA za mene predstavljaju tu tananu liniju spoja dva sveta, vidljivog i nevidljivog.',
+                                    ENG: 'While reflecting on that scene, I knew from the beginning that I needed to portray a multitude of figures, and that it was important for them to be monumental in scale, in order to give them great significance and symbolically convey their new spiritual dimension. In every person I portray, I discover a delicate line that is at once the boundary between and the point of connection for two worlds—the visible and the invisible. If, during the painting process, I concentrate on that line, I manage to represent the invisible world through the painted figure’s bodily posture, gaze, or movement. Thus, all 14 figures I painted in Children of the Sun represent for me that subtle line where two worlds—visible and invisible—meet.'
                                 },
                             }
                         },
+                    ],
+                    [
                         {
                             ID: 2,
+                            TYPE: 'vertical',
                             SRC: {
-                                FULL: ksenijaLoveSmellsRoseGraph,
-                                PREVIEW: ksenijaLoveSmellsRoseGraphThumb,
+                                FULL: fragment01GraphFull,
+                                PREVIEW: fragment01GraphPreview,
                             },
-                            ALT: "ksenija-love-smells-a-rose-lithography",
+                            ALT: "fragment-01-graph",
                             GRID_PLACES: 1,
                             DETAILS: {
-                                CREATED_AT: '2019',
-                                DIMENSIONS: '50 x 50 cm',
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '33 x 70 cm',
                                 NAME: {
-                                    SER: 'KSENIJA LEA / LJUBAV MIRIŠE RUŽU',
-                                    ENG: 'KSENIJA / LOVE SMELLS A ROSE'
+                                    SER: 'Deca Sunca',
+                                    ENG: 'Children of the Sun'
+                                },
+                                SUBTITLE: {
+                                    SER: 'Zašto baš ovih 14 likova?',
+                                    ENG: 'Why these 14 characters?'
                                 },
                                 TECHNIQUE: {
                                     SER: 'Litografija',
                                     ENG: 'Lithography'
                                 },
                                 DESCRIPTION: {
-                                    SER: 'Ljubav miriše ružu. Ljubav nežno hoda po laticama. Ljubav je živa. Njeno ime je Ljubav.',
-                                    ENG: 'Love smells like a rose. Love walks gently on the petals. Love is alive. Her name is Love.'
+                                    SER: 'Razmišljajući o toj sceni, u startu sam znala da treba da predstavim mnoštvo likova, kao i da je važno da oni budu monumentalni, kako bih im predala veliki značaj i time figurativno dočarala njihovu novu duhovnu dimenziju.',
+                                    ENG: 'Thinking about that scene, from the start I knew I needed to present a multitude of characters, as well as emphasize their monumental nature, in order to give them great significance and thus figuratively portray their new spiritual dimension.'
                                 },
                             }
                         },
                         {
                             ID: 3,
+                            TYPE: 'vertical',
                             SRC: {
-                                FULL: orlandoRealisationGraph,
-                                PREVIEW: orlandoRealisationGraphThumb,
+                                FULL: fragment02GraphFull,
+                                PREVIEW: fragment02GraphPreview,
                             },
-                            ALT: "orlando-realisation-lithography",
+                            ALT: "fragment-02-graph",
                             GRID_PLACES: 1,
                             DETAILS: {
-                                CREATED_AT: '2019',
-                                DIMENSIONS: '50 x 50 cm',
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '33 x 70 cm',
                                 NAME: {
-                                    SER: 'ORLANDO / REALIZACIJA',
-                                    ENG: 'ORLANDO / REALISATION'
+                                    SER: 'Deca Sunca',
+                                    ENG: 'Children of the Sun'
+                                },
+                                SUBTITLE: {
+                                    SER: 'Zašto baš ovih 14 likova?',
+                                    ENG: 'Why these 14 characters?'
                                 },
                                 TECHNIQUE: {
                                     SER: 'Litografija',
                                     ENG: 'Lithography'
                                 },
                                 DESCRIPTION: {
-                                    SER: 'Orlando je glavna ličnost u filmu Orlando, režiserke Seli Poter, koji je nastao po istoimenom romanu Virdžinije Vulf, a čiju ulogu u filmu tumači glumica Tilda Svinton, koju sam naslikala kao desetu snagu. Orlando je princ. Orlando je princeza. Orlando se realizuje kao princ. Orlando se realizuje kao princeza. Orlando to radi hrabro i lako.',
-                                    ENG: 'Orlando is the main character in the film Orlando, directed by Sally Potter, which was based on Virginia Woolf\'s novel of the same name, and whose role in the film is played by actress Tilda Swinton, whom I painted as the tenth force. Orlando is a prince. Orlando is a princess. Orlando realizes himself as a prince. Orlando realizes herself as a princess. Orlando does it boldly and easily.'
+                                    SER: 'Razmišljajući o toj sceni, u startu sam znala da treba da predstavim mnoštvo likova, kao i da je važno da oni budu monumentalni, kako bih im predala veliki značaj i time figurativno dočarala njihovu novu duhovnu dimenziju.',
+                                    ENG: 'Thinking about that scene, from the start I knew I needed to present a multitude of characters, as well as emphasize their monumental nature, in order to give them great significance and thus figuratively portray their new spiritual dimension.'
                                 },
                             }
                         },
@@ -1585,153 +1652,185 @@ export const SUBPAGE_CONTENT = Object.freeze({
                     [
                         {
                             ID: 4,
+                            TYPE: 'vertical',
                             SRC: {
-                                FULL: ivonaCompassionGraph,
-                                PREVIEW: ivonaCompassionGraphThumb,
+                                FULL: fragment03GraphFull,
+                                PREVIEW: fragment03GraphPreview,
                             },
-                            ALT: "ivona-compassion-lithography",
+                            ALT: "fragment-03-graph",
                             GRID_PLACES: 1,
                             DETAILS: {
-                                CREATED_AT: '2019',
-                                DIMENSIONS: '50 x 50 cm',
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '33 x 70 cm',
                                 NAME: {
-                                    SER: 'IVONA / SAOSEĆAJONST',
-                                    ENG: 'IVONA / COMPASSION'
+                                    SER: 'Deca Sunca',
+                                    ENG: 'Children of the Sun'
+                                },
+                                SUBTITLE: {
+                                    SER: 'Zašto baš ovih 14 likova?',
+                                    ENG: 'Why these 14 characters?'
                                 },
                                 TECHNIQUE: {
                                     SER: 'Litografija',
                                     ENG: 'Lithography'
                                 },
                                 DESCRIPTION: {
-                                    SER: 'Gledam te tvojim očima. Osećam te tvojim srcem. Ti si ja. Ja sam ti. Gledaš me mojim očima. Osećaš me mojim srcem. Svi smo jedno.',
-                                    ENG: 'I look at you with your eyes. I feel you with your heart. You are me. I am you. You look at me with my eyes. You feel me with my heart. We are all one.'
+                                    SER: 'Razmišljajući o toj sceni, u startu sam znala da treba da predstavim mnoštvo likova, kao i da je važno da oni budu monumentalni, kako bih im predala veliki značaj i time figurativno dočarala njihovu novu duhovnu dimenziju.',
+                                    ENG: 'Thinking about that scene, from the start I knew I needed to present a multitude of characters, as well as emphasize their monumental nature, in order to give them great significance and thus figuratively portray their new spiritual dimension.'
                                 },
                             }
                         },
                         {
                             ID: 5,
+                            TYPE: 'vertical',
                             SRC: {
-                                FULL: gabrielCreationGraph,
-                                PREVIEW: gabrielCreationGraphThumb,
+                                FULL: fragment04GraphFull,
+                                PREVIEW: fragment04GraphPreview,
                             },
-                            ALT: "gabriel-creation-lithography",
+                            ALT: "fragment-04-graph",
                             GRID_PLACES: 1,
                             DETAILS: {
-                                CREATED_AT: '2019',
-                                DIMENSIONS: '50 x 50 cm',
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '33 x 70 cm',
                                 NAME: {
-                                    SER: 'GABRIEL / STVARANJE',
-                                    ENG: 'GABRIEL / CREATION'
+                                    SER: 'Deca Sunca',
+                                    ENG: 'Children of the Sun'
+                                },
+                                SUBTITLE: {
+                                    SER: 'Zašto baš ovih 14 likova?',
+                                    ENG: 'Why these 14 characters?'
                                 },
                                 TECHNIQUE: {
                                     SER: 'Litografija',
                                     ENG: 'Lithography'
                                 },
                                 DESCRIPTION: {
-                                    SER: 'Gabrielova radost nas pokreće na igru. Radost i igra su najave da će se stvoriti nešto novo, nešto što svet još nije video. Novostvoreno budi novu radost koja nas opet dalje pokreće na novo stvaranje. Hvala ti Gabriele!',
-                                    ENG: 'Gabriel\'s joy drives us to play. Joy and play are announcements that something new will be created, something the world has not yet seen. The newly created awakens a new joy that moves us further to new creation. Thank you Gabriel!'
-                                },
-                            }
-                        },
-                        {
-                            ID: 6,
-                            SRC: {
-                                FULL: tasjaHappinessGraph,
-                                PREVIEW: tasjaHappinessGraphThumb,
-                            },
-                            ALT: "tasja-happiness-lithography",
-                            GRID_PLACES: 1,
-                            DETAILS: {
-                                CREATED_AT: '2019',
-                                DIMENSIONS: '50 x 50 cm',
-                                NAME: {
-                                    SER: 'TASJA / SREĆA',
-                                    ENG: 'TASJA / HAPPINESS'
-                                },
-                                TECHNIQUE: {
-                                    SER: 'Litografija',
-                                    ENG: 'Lithography'
-                                },
-                                DESCRIPTION: {
-                                    SER: 'Sreća je lepa, nežna, mudra, dobro organizovana. Sreća je prijatelj. Sreća je prijatna i nasmejana. Sreća je moja najveća sreća u životu. Sreća sluša muziku, voli veselu muziku sa radija. Sreća voli ljubav. Sreća voli dom. Sreća radi na sebi. Sreća ne prepušta sebe slučajnostima. Sreća je veoma dobro organizovana, organizovana Srećom.',
-                                    ENG: 'Happiness is beautiful, gentle, wise, well organized. Happiness is a friend. Happiness is pleasant and smiling. Happiness is my greatest happiness in life. Happiness listens to music, likes cheerful music from the radio. Happiness loves love. Happiness loves home. Happiness works on itself. Happiness does not leave itself to chance. Happiness is very well organized, organized Luckily.'
+                                    SER: 'Razmišljajući o toj sceni, u startu sam znala da treba da predstavim mnoštvo likova, kao i da je važno da oni budu monumentalni, kako bih im predala veliki značaj i time figurativno dočarala njihovu novu duhovnu dimenziju.',
+                                    ENG: 'Thinking about that scene, from the start I knew I needed to present a multitude of characters, as well as emphasize their monumental nature, in order to give them great significance and thus figuratively portray their new spiritual dimension.'
                                 },
                             }
                         },
                     ],
                     [
                         {
-                            ID: 7,
+                            ID: 6,
+                            TYPE: 'vertical',
                             SRC: {
-                                FULL: rankoTheMindGraph,
-                                PREVIEW: rankoTheMindGraphThumb,
+                                FULL: fragment05GraphFull,
+                                PREVIEW: fragment05GraphPreview,
                             },
-                            ALT: "ranko-the-mind-lithography",
+                            ALT: "fragment-05-graph",
                             GRID_PLACES: 1,
                             DETAILS: {
-                                CREATED_AT: '2019',
-                                DIMENSIONS: '50 x 50 cm',
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '33 x 70 cm',
                                 NAME: {
-                                    SER: 'RANKO / UM',
-                                    ENG: 'RANKO / THE MIND'
+                                    SER: 'Deca Sunca',
+                                    ENG: 'Children of the Sun'
+                                },
+                                SUBTITLE: {
+                                    SER: 'Zašto baš ovih 14 likova?',
+                                    ENG: 'Why these 14 characters?'
                                 },
                                 TECHNIQUE: {
                                     SER: 'Litografija',
                                     ENG: 'Lithography'
                                 },
                                 DESCRIPTION: {
-                                    SER: 'Um je bistar. Rankov um je Univerzum. Rankov um radi sa svetlostima koje isijavaju beskonačno mnogo boja. Boje se u svetlostima međusobno kombinuju i stvaraju nove spektre. Ranko otvara fotonske pakete i svojim rukama širi spektre po našem nebeskom svodu, po inteligenciji planete Zemlje. Ranko mi je pokazao kako to radi. Sada svima pokazuje kako um radi.',
-                                    ENG: 'The mind is clear. Ranko\'s mind is the Universe. Ranko\'s mind works with lights that glow an infinite number of colors. Colors in light combine with each other and create new spectra. Ranko opens the photon packets and with his hands spreads the spectra across our firmament, according to the intelligence of the planet Earth. Ranko showed me how to do it. Now he\'s showing everyone how the mind works.'
+                                    SER: 'Razmišljajući o toj sceni, u startu sam znala da treba da predstavim mnoštvo likova, kao i da je važno da oni budu monumentalni, kako bih im predala veliki značaj i time figurativno dočarala njihovu novu duhovnu dimenziju.',
+                                    ENG: 'Thinking about that scene, from the start I knew I needed to present a multitude of characters, as well as emphasize their monumental nature, in order to give them great significance and thus figuratively portray their new spiritual dimension.'
                                 },
                             }
                         },
                         {
-                            ID: 8,
+                            ID: 7,
+                            TYPE: 'vertical',
                             SRC: {
-                                FULL: srkiPersistenceGraph,
-                                PREVIEW: srkiPersistenceGraphThumb,
+                                FULL: fragment06GraphFull,
+                                PREVIEW: fragment06GraphPreview,
                             },
-                            ALT: "srki-persistence-lithography",
+                            ALT: "fragment-06-graph",
                             GRID_PLACES: 1,
                             DETAILS: {
-                                CREATED_AT: '2019',
-                                DIMENSIONS: '50 x 50 cm',
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '33 x 70 cm',
                                 NAME: {
-                                    SER: 'SRKI / ISTRAJNOST',
-                                    ENG: 'SRKI / PERSISTENCE'
+                                    SER: 'Deca Sunca',
+                                    ENG: 'Children of the Sun'
+                                },
+                                SUBTITLE: {
+                                    SER: 'Zašto baš ovih 14 likova?',
+                                    ENG: 'Why these 14 characters?'
                                 },
                                 TECHNIQUE: {
                                     SER: 'Litografija',
-                                    ENG: 'Lithography',
+                                    ENG: 'Lithography'
                                 },
                                 DESCRIPTION: {
-                                    SER: '“Moja najveća snaga je istrajnost.”, kaže Srki. Srki je moj učitelj aikidoa. Srki je dete Save. Savom plove šleperi na kojima piše njegovo ime, Istrajni 1 i Istrajni 2. I ja sam dete Save. Zbog toga je Srki moj brat. Sava nas uči da budemo istrajni kao voda koja teče. Istrajni tok u jednom smeru omogućava ogromnom broju čestica informisanje tokom kretanja, informisanje i prenošenje informacija tamo gde su informacije potrebne. U procesu kretanja i informisanja, čestice dobijaju veliku snagu koju koriste za dalje kretanje. Tako funkcioniše istrajnost. Istrajnost je potrebna u životnim misijama i dugoročnim ciljevima. Istrajnost nas dovodi do ispunjenja misije. Hvala ti Istrajnosti! Hvala ti Srki, učitelju moj!',
-                                    ENG: '"My greatest strength is perseverance," says Srki. Srki is my aikido teacher. Srki is Sava\'s child. Sava is sailed by tugboats with his name written on them, Istrajni 1 and Istrajni 2. I am also a child of Sava. That\'s why Srki is my brother. Sava teaches us to be persistent like flowing water. A continuous flow in one direction allows a huge number of particles to be informed while moving, informing and transmitting information where information is needed. In the process of movement and information, the particles get a lot of power, which they use for further movement. That\'s how perseverance works. Perseverance is needed in life\'s missions and long-term goals. Perseverance leads us to the fulfillment of the mission. Thank you Perseverance! Thank you Srki, my teacher!'
+                                    SER: 'Razmišljajući o toj sceni, u startu sam znala da treba da predstavim mnoštvo likova, kao i da je važno da oni budu monumentalni, kako bih im predala veliki značaj i time figurativno dočarala njihovu novu duhovnu dimenziju.',
+                                    ENG: 'Thinking about that scene, from the start I knew I needed to present a multitude of characters, as well as emphasize their monumental nature, in order to give them great significance and thus figuratively portray their new spiritual dimension.'
+                                },
+                            }
+                        },
+                    ],
+                    [
+                        {
+                            ID: 8,
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: fragment07GraphFull,
+                                PREVIEW: fragment07GraphPreview,
+                            },
+                            ALT: "fragment-07-graph",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '33 x 70 cm',
+                                NAME: {
+                                    SER: 'Deca Sunca',
+                                    ENG: 'Children of the Sun'
+                                },
+                                SUBTITLE: {
+                                    SER: 'Zašto baš ovih 14 likova?',
+                                    ENG: 'Why these 14 characters?'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Litografija',
+                                    ENG: 'Lithography'
+                                },
+                                DESCRIPTION: {
+                                    SER: 'Razmišljajući o toj sceni, u startu sam znala da treba da predstavim mnoštvo likova, kao i da je važno da oni budu monumentalni, kako bih im predala veliki značaj i time figurativno dočarala njihovu novu duhovnu dimenziju.',
+                                    ENG: 'Thinking about that scene, from the start I knew I needed to present a multitude of characters, as well as emphasize their monumental nature, in order to give them great significance and thus figuratively portray their new spiritual dimension.'
                                 },
                             }
                         },
                         {
                             ID: 9,
+                            TYPE: 'vertical',
                             SRC: {
-                                FULL: veronaGentlenessGraph,
-                                PREVIEW: veronaGentlenessGraphThumb,
+                                FULL: fragment08GraphFull,
+                                PREVIEW: fragment08GraphPreview,
                             },
-                            ALT: "verona-gentleness-lithography",
+                            ALT: "fragment-08-graph",
                             GRID_PLACES: 1,
                             DETAILS: {
-                                CREATED_AT: '2019',
-                                DIMENSIONS: '50 x 50 cm',
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '33 x 70 cm',
                                 NAME: {
-                                    SER: 'VERONA / BLAGOST',
-                                    ENG: 'VERONA / GENTLENESS'
+                                    SER: 'Deca Sunca',
+                                    ENG: 'Children of the Sun'
+                                },
+                                SUBTITLE: {
+                                    SER: 'Zašto baš ovih 14 likova?',
+                                    ENG: 'Why these 14 characters?'
                                 },
                                 TECHNIQUE: {
                                     SER: 'Litografija',
                                     ENG: 'Lithography'
                                 },
                                 DESCRIPTION: {
-                                    SER: 'Blagost kaže : “Nisam ni znala kako se nosi šešir.” Blagost, nežnost, ljubaznost, razumevanje... izviru iz nevinosti i čistote duše, izviru i prenose se osmehom dalje na ceo svet.',
-                                    ENG: 'Gentleness says: "I didn\'t even know how to wear a hat." Gentleness, tenderness, kindness, understanding... spring from the innocence and purity of the soul, spring and spread with a smile to the whole world.'
+                                    SER: 'Razmišljajući o toj sceni, u startu sam znala da treba da predstavim mnoštvo likova, kao i da je važno da oni budu monumentalni, kako bih im predala veliki značaj i time figurativno dočarala njihovu novu duhovnu dimenziju.',
+                                    ENG: 'Thinking about that scene, from the start I knew I needed to present a multitude of characters, as well as emphasize their monumental nature, in order to give them great significance and thus figuratively portray their new spiritual dimension.'
                                 },
                             }
                         },
@@ -1739,51 +1838,93 @@ export const SUBPAGE_CONTENT = Object.freeze({
                     [
                         {
                             ID: 10,
+                            TYPE: 'vertical',
                             SRC: {
-                                FULL: lazarChangeGraph,
-                                PREVIEW: lazarChangeGraphThumb,
+                                FULL: fragment09GraphFull,
+                                PREVIEW: fragment09GraphPreview,
                             },
-                            ALT: "lazar-change-lithography",
+                            ALT: "fragment-09-graph",
                             GRID_PLACES: 1,
                             DETAILS: {
-                                CREATED_AT: '2019',
-                                DIMENSIONS: '50 x 50 cm',
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '33 x 70 cm',
                                 NAME: {
-                                    SER: 'LAZAR / PROMENA',
-                                    ENG: 'LAZAR / CHANGE'
+                                    SER: 'Deca Sunca',
+                                    ENG: 'Children of the Sun'
+                                },
+                                SUBTITLE: {
+                                    SER: 'Zašto baš ovih 14 likova?',
+                                    ENG: 'Why these 14 characters?'
                                 },
                                 TECHNIQUE: {
                                     SER: 'Litografija',
                                     ENG: 'Lithography'
                                 },
                                 DESCRIPTION: {
-                                    SER: 'Lazar je bokser koji pleše u ritmu celog sveta, gipko pleše kroz vreme. U svakom novom momentu je novi pokret i novi Lazar. On menja sebe u svetu koji se menja. On pleše sa promenama. Zbog toga mu je lepo.',
-                                    ENG: 'Lazar is a boxer who dances to the rhythm of the whole world, gracefully dances through time. In every new moment there is a new movement and a new Lazar. He changes himself in a changing world. He dances with change. That\'s why he likes it.'
+                                    SER: 'Razmišljajući o toj sceni, u startu sam znala da treba da predstavim mnoštvo likova, kao i da je važno da oni budu monumentalni, kako bih im predala veliki značaj i time figurativno dočarala njihovu novu duhovnu dimenziju.',
+                                    ENG: 'Thinking about that scene, from the start I knew I needed to present a multitude of characters, as well as emphasize their monumental nature, in order to give them great significance and thus figuratively portray their new spiritual dimension.'
                                 },
                             }
                         },
                         {
                             ID: 11,
+                            TYPE: 'vertical',
                             SRC: {
-                                FULL: palWorkGraph,
-                                PREVIEW: palWorkGraphThumb,
+                                FULL: fragment10GraphFull,
+                                PREVIEW: fragment10GraphPreview,
                             },
-                            ALT: "pal-work",
+                            ALT: "fragment-10-graph",
                             GRID_PLACES: 1,
                             DETAILS: {
-                                CREATED_AT: '2019',
-                                DIMENSIONS: '50 x 50 cm',
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '33 x 70 cm',
                                 NAME: {
-                                    SER: 'PAL / RAD',
-                                    ENG: 'PAL / RAD'
+                                    SER: 'Deca Sunca',
+                                    ENG: 'Children of the Sun'
+                                },
+                                SUBTITLE: {
+                                    SER: 'Zašto baš ovih 14 likova?',
+                                    ENG: 'Why these 14 characters?'
                                 },
                                 TECHNIQUE: {
                                     SER: 'Litografija',
                                     ENG: 'Lithography'
                                 },
                                 DESCRIPTION: {
-                                    SER: 'Pal je sagradio pola Sente. Pal je sagradio i svoju kuću. Sam je naučio da zida. Učio je i druge kako da zidaju. Pal je sve stvorio svojim radom!',
-                                    ENG: 'Pal built half of Senta. Pal also built his own house. He taught himself to build. He also taught others how to build. Pal created everything with his work!'
+                                    SER: 'Razmišljajući o toj sceni, u startu sam znala da treba da predstavim mnoštvo likova, kao i da je važno da oni budu monumentalni, kako bih im predala veliki značaj i time figurativno dočarala njihovu novu duhovnu dimenziju.',
+                                    ENG: 'Thinking about that scene, from the start I knew I needed to present a multitude of characters, as well as emphasize their monumental nature, in order to give them great significance and thus figuratively portray their new spiritual dimension.'
+                                },
+                            }
+                        },
+                    ],
+                    [
+                        {
+                            ID: 12,
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: fragment11GraphFull,
+                                PREVIEW: fragment11GraphPreview,
+                            },
+                            ALT: "fragment-11-graph",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2011 2012 2013 2014',
+                                DIMENSIONS: '33 x 70 cm',
+                                NAME: {
+                                    SER: 'Deca Sunca',
+                                    ENG: 'Children of the Sun'
+                                },
+                                SUBTITLE: {
+                                    SER: 'Zašto baš ovih 14 likova?',
+                                    ENG: 'Why these 14 characters?'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Litografija',
+                                    ENG: 'Lithography'
+                                },
+                                DESCRIPTION: {
+                                    SER: 'Razmišljajući o toj sceni, u startu sam znala da treba da predstavim mnoštvo likova, kao i da je važno da oni budu monumentalni, kako bih im predala veliki značaj i time figurativno dočarala njihovu novu duhovnu dimenziju.',
+                                    ENG: 'Thinking about that scene, from the start I knew I needed to present a multitude of characters, as well as emphasize their monumental nature, in order to give them great significance and thus figuratively portray their new spiritual dimension.'
                                 },
                             }
                         },
@@ -1802,5 +1943,5 @@ export const SUBPAGE_CONTENT = Object.freeze({
 });
 
 export function getSubPageContentById(id: string): IMyWorks | undefined {
-    return Object.values(SUBPAGE_CONTENT).find((PAGE) => PAGE.ID === id);
+    return Object.values(SUBPAGE_CONTENT).find((PAGE) => PAGE.ID === id) as IMyWorks;
 }

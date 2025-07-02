@@ -48,18 +48,13 @@ type TSrc = {
 interface IDescription {
     CREATED_AT: string;
     DIMENSIONS: string;
-    NAME: {
-        SER: string;
-        ENG: string;
-    };
-    TECHNIQUE: {
-        SER: string;
-        ENG: string;
-    };
-    DESCRIPTION: {
-        SER: string;
-        ENG: string;
-    };
+    NAME: ITranslations;
+    SUBTITLE?: ITranslations;
+    TECHNIQUE: ITranslations;
+    DESCRIPTION: ITranslations;
+    FRAGMENT_DIMENSIONS?: string;
+    ALTERNATIVE_NAME?: ITranslations;
+    ADDITIONAL_DIMENSIONS_INFO?: ITranslations;
 }
 
 export interface IGalleryRowItem {
@@ -68,6 +63,7 @@ export interface IGalleryRowItem {
     GRID_PLACES: number;
     SRC: TSrc | null;
     DETAILS: IDescription | null;
+    TYPE?: 'vertical' | 'horizontal' | undefined;
 }
 
 export interface IArticleCover {

@@ -1,10 +1,10 @@
 'use client';
+import { cn } from "@/lib/utils";
 import {useIsMobile} from "@/hooks/useIsMobile";
 import { ArticleCover } from '@/components/articles/ArticleCover';
 import { SubNavBredCrumbs } from '@/components/subnav-bredcrumbs/SubNavBredCrumbs';
 import { getSectionComponentByType } from '@/components/articles/sectionComponentMap';
 import { getExhibitionById } from '@/app/[locale]/(marketing)/articles/[slug]/pageContent';
-import {cn} from "@/lib/utils";
 
 export default function ExhibitionDetails({ params: { locale, slug } }: { params: { locale: string, slug: string }}) {
     const isMobile = useIsMobile();

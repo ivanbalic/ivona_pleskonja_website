@@ -29,37 +29,45 @@ export function DesktopGallery({ locale, gallery, exhibitionId }: { locale: stri
         };
     }, []);
 
+    const yearLabel = locale === 'ser' ? 'Godina' : 'Year';
+    const techniqueLabel = locale === 'ser' ? 'Tehnika' : 'Technique';
+    const dimensionsLabel = locale === 'ser' ? 'Dimenzije' : 'Dimensions';
+    const nameLabel = locale === 'ser' ? 'Naziv dela' : 'Title of the work';
     const articleLinkLabel = locale === 'ser' ? 'ODVEDI ME NA IZLOŽBU' : 'TAKE ME TO EXIBITION';
+    const fragmentDimensionsLabel = locale === 'ser' ? 'Dimenzije svakog fragmenta' : 'Dimensions of each fragment';
 
     if(!selected) return null;
 
     return (
         <Container
             className={cn(
+                "flex md:flex-row gap-[72px]",
+                selected.TYPE === 'vertical' ? 'flex-col' : 'flex-row',
                 "max-md:hidden",
                 "h-full mt-20 pb-20 px-0 relative",
-                "flex flex-col md:flex-row gap-[72px]",
             )}>
             <LeftArrow width="40px" height="40px" className="absolute left-[-40px]" onClick={onPrev} />
-            <div className={cn(
+            {selected.TYPE !== 'vertical' && <div className={cn(
                 "flex justify-center items-center bg-white",
                 "min-h-[200px] xl:h-[715px] max-h-full w-full xl:w-[739px] max-w-full md:max-w-[60%] xl:max-w-full"
-
             )}>
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={selectedImageIdRef.current}
-                        initial={{ opacity: 0, filter: "blur(10px)" }}
-                        animate={{ opacity: 1, filter: "blur(0px)" }}
-                        exit={{ opacity: 0, filter: "blur(10px)" }}
-                        transition={{ duration: 1, ease: "easeInOut" }}
+                        initial={{opacity: 0, filter: "blur(10px)"}}
+                        animate={{opacity: 1, filter: "blur(0px)"}}
+                        exit={{opacity: 0, filter: "blur(10px)"}}
+                        transition={{duration: 1, ease: "easeInOut"}}
                         className="w-full h-full flex items-center justify-center"
                     >
                         <Image src={selected.SRC?.FULL ?? ''} alt={selected.ALT} className="max-h-full object-cover" placeholder="blur"/>
                     </motion.div>
                 </AnimatePresence>
-            </div>
-            <div className="flex flex-1 justify-between flex-col">
+            </div>}
+            <div className={cn(
+                "flex flex-1 justify-between flex-col",
+                selected.TYPE === 'vertical' ? 'text-center' : 'text-left',
+            )}>
                 <div className={cn("flex flex-1 flex-col justify-end items-start text-primaryBlue tracking-[.15em]")}>
                     <AnimatePresence mode="wait">
                         <motion.div
@@ -69,14 +77,45 @@ export function DesktopGallery({ locale, gallery, exhibitionId }: { locale: stri
                             exit={{ opacity: 0, x: -50 }}
                             transition={{ duration: 0.5, ease: "easeInOut" }}
                         >
-                            <div className="text-[32px] leading-[100%] font-bold font-roboto-serif mb-[5px]">{selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}</div>
-                            <div className="flex flex-col text-[22px] leading-[100%] tracking-[.05em] font-bold mb-5">
-                                <div>{selected.DETAILS?.CREATED_AT} | {selected.DETAILS?.DIMENSIONS}</div>
-                                <div>{selected.DETAILS?.TECHNIQUE[locale.toUpperCase() as keyof ITranslations]}</div>
-                            </div>
-                            <div className="text-black font-helvetica text-[16px] leading-[24px] tracking-[.05em] mb-20">{selected.DETAILS?.DESCRIPTION[locale.toUpperCase() as keyof ITranslations]}</div>
+                            <div className="text-[36px] leading-[100%] font-bold font-roboto-serif mb-[5px] uppercase">„{selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}“</div>
+                            {selected.TYPE === 'vertical' && <div className="text-[32px] leading-[100%] font-bold font-roboto-serif mt-[5px]">{selected.DETAILS?.SUBTITLE?.[locale.toUpperCase() as keyof ITranslations]}</div>}
+                            {selected.TYPE !== 'vertical' &&
+                                <div className="flex flex-col text-[22px] leading-[100%] tracking-[.05em] font-bold mb-5">
+                                    <div>{selected.DETAILS?.CREATED_AT} | {selected.DETAILS?.DIMENSIONS}</div>
+                                    <div>{selected.DETAILS?.TECHNIQUE[locale.toUpperCase() as keyof ITranslations]}</div>
+                                </div>
+                            }
+                            <div className={cn(
+                                selected.TYPE === 'vertical' ? 'my-10': 'mb-20',
+                                "text-black font-helvetica text-[16px] leading-[24px] tracking-[.05em]")}>{selected.DETAILS?.DESCRIPTION[locale.toUpperCase() as keyof ITranslations]}</div>
+                            {selected.TYPE === 'vertical' && <div className={cn(
+                                "flex justify-center items-center bg-white",
+                                "min-h-[200px] xl:h-[715px] max-h-full w-full max-w-full"
+                            )}>
+                                <AnimatePresence mode="wait">
+                                    <motion.div
+                                        key={selectedImageIdRef.current}
+                                        initial={{opacity: 0, filter: "blur(10px)"}}
+                                        animate={{opacity: 1, filter: "blur(0px)"}}
+                                        exit={{opacity: 0, filter: "blur(10px)"}}
+                                        transition={{duration: 1, ease: "easeInOut"}}
+                                        className="w-full h-full flex items-center justify-center"
+                                    >
+                                        <Image src={selected.SRC?.FULL ?? ''} alt={selected.ALT} className="max-h-full object-cover" placeholder="blur"/>
+                                    </motion.div>
+                                </AnimatePresence>
+                            </div>}
                         </motion.div>
                     </AnimatePresence>
+                    {selected.TYPE === 'vertical' && (
+                        <div className="flex flex-col text-[26px] leading-[100%] tracking-[.15em] italic my-10 text-left gap-1">
+                            <div>{nameLabel}: {selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}</div>
+                            <div>{dimensionsLabel}: {selected.DETAILS?.DIMENSIONS} {selected.DETAILS?.ADDITIONAL_DIMENSIONS_INFO ? selected.DETAILS?.ADDITIONAL_DIMENSIONS_INFO?.[locale.toUpperCase() as keyof ITranslations] : ''}</div>
+                            <div>{fragmentDimensionsLabel}: {selected.DETAILS?.FRAGMENT_DIMENSIONS}</div>
+                            <div>{techniqueLabel}: {selected.DETAILS?.TECHNIQUE[locale.toUpperCase() as keyof ITranslations]}</div>
+                            <div>{yearLabel}: {selected.DETAILS?.CREATED_AT}</div>
+                        </div>
+                    )}
                     <Link href={`/${locale}/articles/${exhibitionId}`} className="text-[16px] leading-[100%] tracking-[.15em] font-bold">{articleLinkLabel}</Link>
                 </div>
             </div>

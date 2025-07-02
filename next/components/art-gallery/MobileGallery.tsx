@@ -34,7 +34,12 @@ export function MobileGallery({ locale, gallery, exhibitionId }: { locale: strin
         trackMouse: true,
     });
 
+    const yearLabel = locale === 'ser' ? 'Godina' : 'Year';
+    const techniqueLabel = locale === 'ser' ? 'Tehnika' : 'Technique';
+    const dimensionsLabel = locale === 'ser' ? 'Dimenzije' : 'Dimensions';
+    const nameLabel = locale === 'ser' ? 'Naziv dela' : 'Title of the work';
     const articleLinkLabel = locale === 'ser' ? 'ODVEDI ME NA IZLOŽBU' : 'TAKE ME TO EXIBITION';
+    const fragmentDimensionsLabel = locale === 'ser' ? 'Dimenzije svakog fragmenta' : 'Dimensions of each fragment';
 
     if(!selected) return null;
 
@@ -62,10 +67,23 @@ export function MobileGallery({ locale, gallery, exhibitionId }: { locale: strin
                         <div className="flex flex-1 justify-between flex-col">
                             <div className={cn("flex flex-1 flex-col justify-end items-start text-primaryBlue")}>
                                 <div className="text-[32px] leading-[100%] tracking-[.15em] font-bold font-roboto-serif pb-[5px]">{selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}</div>
-                                <div className="flex flex-col gap-[5px] py-0.5 text-[16px] leading-[100%] tracking-[.05em] font-bold mb-5">
-                                    <div>{selected.DETAILS?.CREATED_AT} | {selected.DETAILS?.DIMENSIONS}</div>
-                                    <div>{selected.DETAILS?.TECHNIQUE[locale.toUpperCase() as keyof ITranslations]}</div>
-                                </div>
+                                {selected.TYPE === 'vertical'
+                                    ? (
+                                        <div className="flex flex-col font-helvetica text-[16px] leading-[100%] tracking-[.15em] italic my-5 text-left gap-1">
+                                            <div>{nameLabel}: {selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}</div>
+                                            <div>{dimensionsLabel}: {selected.DETAILS?.DIMENSIONS} {selected.DETAILS?.ADDITIONAL_DIMENSIONS_INFO ? selected.DETAILS?.ADDITIONAL_DIMENSIONS_INFO?.[locale.toUpperCase() as keyof ITranslations] : ''}</div>
+                                            <div>{fragmentDimensionsLabel}: {selected.DETAILS?.FRAGMENT_DIMENSIONS}</div>
+                                            <div>{techniqueLabel}: {selected.DETAILS?.TECHNIQUE[locale.toUpperCase() as keyof ITranslations]}</div>
+                                            <div>{yearLabel}: {selected.DETAILS?.CREATED_AT}</div>
+                                        </div>
+                                    )
+                                    : (
+                                        <div className="flex flex-col gap-[5px] py-0.5 text-[16px] leading-[100%] tracking-[.05em] font-bold mb-5">
+                                            <div>{selected.DETAILS?.CREATED_AT} | {selected.DETAILS?.DIMENSIONS}</div>
+                                            <div>{selected.DETAILS?.TECHNIQUE[locale.toUpperCase() as keyof ITranslations]}</div>
+                                        </div>
+                                    )
+                                }
                                 <div className="text-black font-helvetica text-[16px] leading-[24px] tracking-[.05em] mb-10">{selected.DETAILS?.DESCRIPTION[locale.toUpperCase() as keyof ITranslations]}</div>
                                 <Link href={`/${locale}/articles/${exhibitionId}`} className="text-[16px] leading-[100%] tracking-[.15em] font-bold">{articleLinkLabel}</Link>
                             </div>

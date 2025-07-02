@@ -26,6 +26,24 @@ const ADDITIONAL_BREADCRUMBS_MAP_MOBILE = Object.freeze({
             },
             LINK: 'works/11_snaga',
         }
+    },
+    children_of_the_sun: {
+        1: {
+            ID: 'paintings',
+            TITLE: {
+                SER: 'Deca Sunca Slike',
+                ENG: 'Children of the Sun Paintings'
+            },
+            LINK: 'works/children_of_the_sun',
+        },
+        2: {
+            ID: 'Lithographs',
+            TITLE: {
+                SER: 'Deca Sunca Litografije',
+                ENG: 'Children of the Sun Lithographs'
+            },
+            LINK: 'works/children_of_the_sun',
+        }
     }
 });
 const ADDITIONAL_BREADCRUMBS_MAP_DESKTOP = Object.freeze({
@@ -36,7 +54,7 @@ const ADDITIONAL_BREADCRUMBS_MAP_DESKTOP = Object.freeze({
                 SER: 'Slike',
                 ENG: 'Paintings'
             },
-            LINK: 'works/11_snaga?gallery=1',
+            LINK: 'works/children_of_the_sun?gallery=1',
         },
         2: {
             ID: 'Lithographs',
@@ -44,7 +62,25 @@ const ADDITIONAL_BREADCRUMBS_MAP_DESKTOP = Object.freeze({
                 SER: 'Litografije',
                 ENG: 'Lithographs'
             },
-            LINK: 'works/11_snaga?gallery=2',
+            LINK: 'works/children_of_the_sun?gallery=2',
+        }
+    },
+    children_of_the_sun: {
+        1: {
+            ID: 'paintings',
+            TITLE: {
+                SER: 'Slike',
+                ENG: 'Paintings'
+            },
+            LINK: 'works/children_of_the_sun?gallery=1',
+        },
+        2: {
+            ID: 'Lithographs',
+            TITLE: {
+                SER: 'Litografije',
+                ENG: 'Lithographs'
+            },
+            LINK: 'works/children_of_the_sun?gallery=2',
         }
     }
 });
