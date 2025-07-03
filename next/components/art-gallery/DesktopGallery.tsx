@@ -90,7 +90,7 @@ export function DesktopGallery({ locale, gallery, exhibitionId }: { locale: stri
                                 "text-black font-helvetica text-[16px] leading-[24px] tracking-[.05em]")}>{selected.DETAILS?.DESCRIPTION[locale.toUpperCase() as keyof ITranslations]}</div>
                             {selected.TYPE === 'vertical' && <div className={cn(
                                 "flex justify-center items-center bg-white",
-                                "min-h-[200px] xl:h-[715px] max-h-full w-full max-w-full"
+                                "min-h-[200px] xl:max-h-[715px] max-h-full w-full max-w-full"
                             )}>
                                 <AnimatePresence mode="wait">
                                     <motion.div
@@ -105,17 +105,21 @@ export function DesktopGallery({ locale, gallery, exhibitionId }: { locale: stri
                                     </motion.div>
                                 </AnimatePresence>
                             </div>}
+                            {selected.TYPE === 'vertical' && (
+                                <div className={cn(
+                                    "flex flex-col font-helvetica text-[26px] leading-[100%] tracking-[.15em] italic my-5 text-left gap-1",
+                                    selected.DETAILS?.CLASS_NAME
+                                )}
+                                >
+                                    <div>{nameLabel}: {selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}</div>
+                                    <div>{dimensionsLabel}: {selected.DETAILS?.DIMENSIONS} {selected.DETAILS?.ADDITIONAL_DIMENSIONS_INFO ? selected.DETAILS?.ADDITIONAL_DIMENSIONS_INFO?.[locale.toUpperCase() as keyof ITranslations] : ''}</div>
+                                    <div>{fragmentDimensionsLabel}: {selected.DETAILS?.FRAGMENT_DIMENSIONS}</div>
+                                    <div>{techniqueLabel}: {selected.DETAILS?.TECHNIQUE[locale.toUpperCase() as keyof ITranslations]}</div>
+                                    <div>{yearLabel}: {selected.DETAILS?.CREATED_AT}</div>
+                                </div>
+                            )}
                         </motion.div>
                     </AnimatePresence>
-                    {selected.TYPE === 'vertical' && (
-                        <div className="flex flex-col text-[26px] leading-[100%] tracking-[.15em] italic my-10 text-left gap-1">
-                            <div>{nameLabel}: {selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}</div>
-                            <div>{dimensionsLabel}: {selected.DETAILS?.DIMENSIONS} {selected.DETAILS?.ADDITIONAL_DIMENSIONS_INFO ? selected.DETAILS?.ADDITIONAL_DIMENSIONS_INFO?.[locale.toUpperCase() as keyof ITranslations] : ''}</div>
-                            <div>{fragmentDimensionsLabel}: {selected.DETAILS?.FRAGMENT_DIMENSIONS}</div>
-                            <div>{techniqueLabel}: {selected.DETAILS?.TECHNIQUE[locale.toUpperCase() as keyof ITranslations]}</div>
-                            <div>{yearLabel}: {selected.DETAILS?.CREATED_AT}</div>
-                        </div>
-                    )}
                     <Link href={`/${locale}/articles/${exhibitionId}`} className="text-[16px] leading-[100%] tracking-[.15em] font-bold">{articleLinkLabel}</Link>
                 </div>
             </div>

@@ -1148,6 +1148,8 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "children-of-the-sun",
                             GRID_PLACES: 4,
                             DETAILS: {
+                                HOVER_DISABLED: true,
+                                CLASS_NAME: 'text-[14px] md:text-[26px]',
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '2 x 19 m',
                                 FRAGMENT_DIMENSIONS: '2 x 1.05 m',
@@ -1156,7 +1158,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                                     ENG: '/ polyptych / 18 parts'
                                 },
                                 NAME: {
-                                    SER: 'Deca Sunca' ,
+                                    SER: 'Deca Sunca',
                                     ENG: 'Children of the Sun'
                                 },
                                 SUBTITLE: {
@@ -1184,6 +1186,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-01",
                             GRID_PLACES: 1,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '2 x 1.05 m',
                                 NAME: {
@@ -1213,6 +1216,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-02",
                             GRID_PLACES: 0,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '2 x 1.05 m',
                                 NAME: {
@@ -1238,6 +1242,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-03",
                             GRID_PLACES: 2,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '2 x 1.05 m',
                                 NAME: {
@@ -1267,6 +1272,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-04",
                             GRID_PLACES: 0,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '2 x 1.05 m',
                                 NAME: {
@@ -1292,6 +1298,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-05",
                             GRID_PLACES: 0,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '2 x 1.05 m',
                                 NAME: {
@@ -1319,6 +1326,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-06",
                             GRID_PLACES: 7,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '2 x 1.05 m',
                                 NAME: {
@@ -1348,6 +1356,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-07",
                             GRID_PLACES: 0,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '2 x 1.05 m',
                                 NAME: {
@@ -1373,6 +1382,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-08",
                             GRID_PLACES: 0,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '2 x 1.05 m',
                                 NAME: {
@@ -1398,6 +1408,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-09",
                             GRID_PLACES: 2,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '2 x 1.05 m',
                                 NAME: {
@@ -1425,6 +1436,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-10",
                             GRID_PLACES: 1,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '2 x 1.05 m',
                                 NAME: {
@@ -1450,6 +1462,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-11",
                             GRID_PLACES: 3,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '2 x 1.05 m',
                                 NAME: {
@@ -1479,6 +1492,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-12",
                             GRID_PLACES: 0,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '2 x 1.05 m',
                                 NAME: {
@@ -1504,6 +1518,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-13",
                             GRID_PLACES: 0,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '2 x 1.05 m',
                                 NAME: {
@@ -1529,6 +1544,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-14",
                             GRID_PLACES: 0,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '2 x 1.05 m',
                                 NAME: {
@@ -1566,6 +1582,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "children-of-the-sun-graph-full",
                             GRID_PLACES: 1,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '33 x 70 cm',
                                 NAME: {
@@ -1598,6 +1615,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-01-graph",
                             GRID_PLACES: 1,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '33 x 70 cm',
                                 NAME: {
@@ -1628,6 +1646,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-02-graph",
                             GRID_PLACES: 1,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '33 x 70 cm',
                                 NAME: {
@@ -1660,6 +1679,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-03-graph",
                             GRID_PLACES: 1,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '33 x 70 cm',
                                 NAME: {
@@ -1690,6 +1710,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-04-graph",
                             GRID_PLACES: 1,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '33 x 70 cm',
                                 NAME: {
@@ -1722,6 +1743,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-05-graph",
                             GRID_PLACES: 1,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '33 x 70 cm',
                                 NAME: {
@@ -1752,6 +1774,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-06-graph",
                             GRID_PLACES: 1,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '33 x 70 cm',
                                 NAME: {
@@ -1784,6 +1807,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-07-graph",
                             GRID_PLACES: 1,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '33 x 70 cm',
                                 NAME: {
@@ -1814,6 +1838,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-08-graph",
                             GRID_PLACES: 1,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '33 x 70 cm',
                                 NAME: {
@@ -1846,6 +1871,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-09-graph",
                             GRID_PLACES: 1,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '33 x 70 cm',
                                 NAME: {
@@ -1876,6 +1902,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-10-graph",
                             GRID_PLACES: 1,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '33 x 70 cm',
                                 NAME: {
@@ -1908,6 +1935,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ALT: "fragment-11-graph",
                             GRID_PLACES: 1,
                             DETAILS: {
+                                HOVER_DISABLED: true,
                                 CREATED_AT: '2011 2012 2013 2014',
                                 DIMENSIONS: '33 x 70 cm',
                                 NAME: {

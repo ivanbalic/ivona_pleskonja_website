@@ -48,8 +48,10 @@ type TSrc = {
 interface IDescription {
     CREATED_AT: string;
     DIMENSIONS: string;
+    CLASS_NAME?: string;
     NAME: ITranslations;
     SUBTITLE?: ITranslations;
+    HOVER_DISABLED?: boolean;
     TECHNIQUE: ITranslations;
     DESCRIPTION: ITranslations;
     FRAGMENT_DIMENSIONS?: string;

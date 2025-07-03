@@ -66,10 +66,14 @@ export function MobileGallery({ locale, gallery, exhibitionId }: { locale: strin
                         </div>
                         <div className="flex flex-1 justify-between flex-col">
                             <div className={cn("flex flex-1 flex-col justify-end items-start text-primaryBlue")}>
-                                <div className="text-[32px] leading-[100%] tracking-[.15em] font-bold font-roboto-serif pb-[5px]">{selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}</div>
+                                <div className="text-[32px] leading-[100%] tracking-[.15em] font-bold font-roboto-serif pb-[5px] uppercase">„{selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}“</div>
+                                {selected.TYPE === 'vertical' && <div className="text-[32px] leading-[100%] tracking-[.15em] font-bold font-roboto-serif mt-[5px]">{selected.DETAILS?.SUBTITLE?.[locale.toUpperCase() as keyof ITranslations]}</div>}
                                 {selected.TYPE === 'vertical'
                                     ? (
-                                        <div className="flex flex-col font-helvetica text-[16px] leading-[100%] tracking-[.15em] italic my-5 text-left gap-1">
+                                        <div className={cn(
+                                            "flex flex-col font-helvetica text-[16px] leading-[100%] tracking-[.15em] italic my-5 text-left gap-1",
+                                            selected.DETAILS?.CLASS_NAME
+                                        )}>
                                             <div>{nameLabel}: {selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}</div>
                                             <div>{dimensionsLabel}: {selected.DETAILS?.DIMENSIONS} {selected.DETAILS?.ADDITIONAL_DIMENSIONS_INFO ? selected.DETAILS?.ADDITIONAL_DIMENSIONS_INFO?.[locale.toUpperCase() as keyof ITranslations] : ''}</div>
                                             <div>{fragmentDimensionsLabel}: {selected.DETAILS?.FRAGMENT_DIMENSIONS}</div>

@@ -94,9 +94,9 @@ export function ArticleCover({ cover, locale }: { cover: IArticleCover, locale: 
                     </div>}
                     {cover?.EXTERNAL_LINK.URL &&
                         <Link style={{ marginTop: `-${isMobile ? coverImageOffset : 0}px`}} className={cn(
-                            'z-[2] left-[calc(100%-152px)]',
-                            'block fixed md:absolute w-fit',
-                            'md:top-[calc(50%-80px)] md:left-[calc(100%-146px)]'
+                            'block fixed w-fit',
+                            'z-[2] top-[50%] left-[calc(100%-152px)]',
+                            'md:top-[70%] md:left-[calc(100%-146px)]'
                         )}
                               href={cover?.EXTERNAL_LINK.URL ?? '#'}
                               target="_blank"
