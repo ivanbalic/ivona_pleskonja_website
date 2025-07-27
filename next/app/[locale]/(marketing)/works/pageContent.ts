@@ -1079,7 +1079,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
     },
     CHILDREN_OF_THE_SUN: {
         ID: 'children_of_the_sun',
-        EXHIBITION_ID: 3,
+        EXHIBITION_ID: 7,
         TEMPLATE_ID: 'TEMPLATE_ID',
         HISTORY: [
             {

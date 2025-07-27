@@ -144,6 +144,26 @@ import psychodrama93 from '@/public/assets/psychodrama/93.jpg';
 import psychodrama94 from '@/public/assets/psychodrama/94.jpg';
 import psychodrama95 from '@/public/assets/psychodrama/95.jpg';
 import psychodrama96 from '@/public/assets/psychodrama/96.jpg';
+// CHILDREN OF THE SUN
+import childrenOfTheSun1 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-1.webp';
+import childrenOfTheSun2 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-2.webp';
+import childrenOfTheSun3 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-3.webp';
+import childrenOfTheSun4 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-4.webp';
+import childrenOfTheSun5 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-5.webp';
+import childrenOfTheSun6 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-6.webp';
+import childrenOfTheSunCover from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-cover.webp';
+import exhibitionChildrenOfTheSunSlide1 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-slide-1.webp';
+import exhibitionChildrenOfTheSunSlide2 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-slide-2.webp';
+import exhibitionChildrenOfTheSunSlide3 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-slide-3.webp';
+import exhibitionChildrenOfTheSunSlide4 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-slide-4.webp';
+import exhibitionChildrenOfTheSunSlide5 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-slide-5.webp';
+import exhibitionChildrenOfTheSunSlide6 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-slide-6.webp';
+import exhibitionChildrenOfTheSunSlide7 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-slide-7.webp';
+import exhibitionChildrenOfTheSunSlide8 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-slide-8.webp';
+import exhibitionChildrenOfTheSunSlide9 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-slide-9.webp';
+import exhibitionChildrenOfTheSunSlide10 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-slide-10.webp';
+import exhibitionChildrenOfTheSunSlide11 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-slide-11.webp';
+import exhibitionChildrenOfTheSunSlide12 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-slide-12.webp';
 
 export const PAGE_CONTENT = Object.freeze({
     CREATING_LIFE: {
@@ -1005,7 +1025,6 @@ export const PAGE_CONTENT = Object.freeze({
                 },
                 {
                     TYPE: 'image_grid',
-                    CLASS_NAME: '-mt-10',
                     CONTENT: [
                         [
                             {
@@ -2968,6 +2987,592 @@ export const PAGE_CONTENT = Object.freeze({
                         ]
                     ]
                 },
+            ]
+        }
+    },
+    CHILDREN_OF_THE_SUN: {
+        ID: 7,
+        HISTORY: [
+            {
+                ID: 'home',
+                TITLE: {
+                    SER: 'Početna',
+                    ENG: 'Home',
+                },
+                LINK: ''
+            },
+            {
+                ID: 'works',
+                TITLE: {
+                    SER: "Radovi",
+                    ENG: 'Works',
+                },
+                LINK: 'works'
+            },
+            {
+                ID: 'children_of_the_sun',
+                TITLE: {
+                    SER: 'Deca Sunca',
+                    ENG: 'Children of the Sun'
+                },
+                LINK: 'works/children_of_the_sun'
+            },
+            {
+                ID: 'exhibitions',
+                TITLE: {
+                    SER: 'O izložbi',
+                    ENG: 'About Exhibition'
+                },
+                LINK: 'articles/7'
+            },
+        ],
+        COVER: {
+            TITLE: {
+                SER: '„DECA SUNCA“',
+                ENG: '„CHILDREN OF THE SUN“',
+            },
+            AUTHOR: {
+                SER: 'Aleksandra Mirčić',
+                ENG: 'Aleksandra Mirčić'
+            },
+            YEAR: 2014,
+            TEXT: {
+                SER: 'Ostajući verna portretu, Ivona Pleskonja nastavlja svoje istraživanje sveta i čoveka kroz sopstveno iskustvo. I ranije, kao i sad, umetnost je za Ivonu poligon istraživanja sebe i drugih, pronalaženja izlaza iz haosa svakodnevice.',
+                ENG: 'Ivona Pleskonja continues her investigation of the world and the man through her personal experience given that she remains devoted to the genre of portrait. As before, the art for Ivona is a ground for exploring herself and others, for finding a way out of the everyday life chaos.'
+            },
+            MEDIA: {
+                MOBILE: {
+                    TYPE: 'image',
+                    ALT: 'exhibition-cover',
+                    SRC: childrenOfTheSunCover,
+                },
+                DESKTOP: {
+                    TYPE: 'image',
+                    ALT: 'exhibition-cover',
+                    SRC: childrenOfTheSunCover,
+                }
+            },
+            EXTERNAL_LINK: {
+                URL: '',
+                LABEL: {
+                    SER: 'POGLEDAJ VIDEO OVDE',
+                    ENG: 'WATCH VIDEO HERE'
+                }
+            },
+        },
+        SECTIONS: {
+            MOBILE: [
+                {
+                    TYPE: 'text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Proučavajući različite aspekte savremenog života i ljudi u njemu, pronalazeći različite puteve i izlaze, kao i na svojim ranijim slikama heroja, Ivona se vraća, ponovo i ponovo, poput antropologa u prošlost, nalazeći rešenja za budućnost. Njena velika želja da predstavi ljude kao pozitivna bića, kao bića koja prevazilaze sve svakodnevne probleme i kao heroje svoga vremena, sada je kulminirala u predstavljanju portreta u trenutku spoznaje, prosvetljenja, uzvišenosti, trenutku ushićenja ali i smirenja, sklada.',
+                                    ENG: 'By means of studying different aspects of modern life and people in it and finding out different paths and ways out, like in her earlier paintings of heroes, Ivona goes back, over and over, like an anthropologist into the past, in order to discover some new solutions for the future. Her great desire to represent people as positive beings, as beings that transcend everyday life problems and as heroes of their time, is culminating now in the presentation of portraits created at the moment of revelation, enlightenment, apogee, thrill as well as equanimity and harmony.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Na 20 metara dugom frizu portreta u natprirodnoj veličini, ona čisti pozadinu, briše joj vremensku i prostornu komponentu. Slika likove iz prošlosti ali i iz svog života, poznate i nepoznate i na taj način spaja prošlost i sadašnjost u budućnosti, u ostvarenju večne čovekove želje da dosegne sunce, da dosegne nedostižno.',
+                                    ENG: 'On a 20 meters long frieze with supernatural portraits, she cleared the background, wiped out its temporal and spatial component. She painted the people from the past as well as from his own life, known and unknown, and thus she connected the past and the present in the future in the pursuit of the human being’s eternal desire to reach the Sun, to reach the unreachable. When she designed and painted this frieze, Ivona applied the theory of Pavel Florensky (Iconostasis, translation into Serbian, Belgrade, 2007).'
+                                },
+                            },
+                        ],
+                    ],
+                },
+                {
+                    TYPE: 'image_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'image',
+                                ALT: 'exhibition-view',
+                                SRC: childrenOfTheSun1,
+                            },
+                        ],
+                    ]
+                },
+                {
+                    TYPE: 'text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Prilikom koncipiranja i slikanja ovog friza, Ivona koristi teoriju Pavla Florenskog koji prilikom analize ikona, subjekta na njoj (svetitelja) vidi kao materijalizaciju unutrašnjeg, duhovnog sveta. Ikona je za njega objekat koji isijava metafizičku svetlost nevidljivog, duhovnog sveta. Tako i umetnica kroz portret ističe duhovno stanje čoveka i podvlači ga belinom pozadine koja materijalizuje jaku sunčevu svetlost. Na taj način ona ističe paralelizam duhovnog i materijalnog sveta. U ranijim radovima Ivona nam je dodatnim simbolima ukazivala na karakter i osobenosti portretisanog, ali sada potpuno briše bilo kakva dodatna obeležja i insistira isključivo na čistom duhovnom stanju spoznaje. Razliku u prihvatanju tog uzvišenog trenutka ona ističe u samom fizičkom stavu portretisanih. Neki nas gledaju direktno u oči, neki nam okreću pogled zagledani u sebe krijući svoje lice ili su obuzeti trenutkom potpuno odsutni.',
+                                    ENG: 'According to Florensky, the subject on an icon (usually a saint) represents materialisation of the inner, spiritual world. The icon for him is an object that emanates the metaphysical light of the invisible world. In the similar way, Ivona emphasizes the man’s spirituality through the genre of portrait and accentuates the whiteness of the background which materializes the bright light.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: '',
+                                    ENG: 'She highlights thus the juxtaposition of the spiritual and material worlds. In her earlier works, Ivona had pointed to the character and distinctive features of the portrayed thanks to some additional symbols. Now she erased completely any additional features and insisted only on that pure spiritual state of recognition. She emphasized difference in the acceptance of that sublime moment in the very physical posture of the portrayed. Some of the portrayed look the observer directly into the eyes; some look away and hide their faces because they are completely preoccupied with their introspection or they are completely absent and overwhelmed by here and now.'
+                                },
+                            },
+                        ]
+                    ]
+                },
+                {
+                    TYPE: 'image_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'image',
+                                ALT: 'exhibition-view-wide',
+                                SRC: childrenOfTheSun2,
+                            },
+                        ]
+                    ]
+                },
+                {
+                    TYPE: 'read_more',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'inverted_quote',
+                                CLASS_NAME: 'mt-5',
+                                TEXT: {
+                                    SER: 'Istražujući predstavljanje čovekovog lika u trenutku spoznaje ona koristi dva medija – slikarstvo i grafiku. U oba medija ponavlja gotovo identičan prizor i iste likove ali sa njima želi da postigne različite efekte. Kroz istraživanje ona dolazi do maksimalne iskorišćenosti karaktera samog medija.',
+                                    ENG: 'While Ivona was exploring how the human image was being represented at the moment of revelation, she used two media - painting and printmaking. In both media she repeated almost an identical scene and changed the faces because she wished to achieve different effects with them. During the process of research, she exploited to maximum the very nature of the medium she uses.',
+                                },
+                            },
+                            {
+                                TYPE: 'image_grid',
+                                CLASS_NAME: 'w-full',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'image',
+                                            ALT: 'exhibition-view-wide',
+                                            SRC: childrenOfTheSun3,
+                                        },
+                                    ]
+                                ]
+                            },
+                            {
+                                TYPE: 'text_grid',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Slikarstvo joj omogućava monumentalnost, naslikana lica deluju zastašujuće, čime se izaziva neka vrsta strahopoštovanja kod posmatrača. Na taj način posmatrač biva probuđen iz sna svakodnevice i nateran da razmisli i preispita svoje stavove prema svetu oko sebe. Sa druge strane, grafika omogućava jedan daleko suptilniji i intimniji prikaz, gde se isti likovi stavljaju u poziciju posmatrača i obrnutoi ističe umetnicin lični i emotivni odnos prema portretisanima. Spajanjem monumentalnog i intimnog, Ivona postiže da se svako od nas može videti u poziciji višeg bića ali i običnog čoveka.',
+                                                ENG: 'The art of painting allowed her to get the air of the monumental. The painted faces look frightening, which causes a sort of awe in the observer. In this way, the observer will be awoken from the lull of everyday life and forced to ponder and reconsider her/his attitudes towards the world around her/him. On the other hand, the art of printmaking allowed her to have a far more subtle and intimate approach, where the artist added new faces and her self-portrait among others in order to put them in the observer’s shoes, and vice versa, and she emphasized her personal and emotional attitude towards the portrayed. By means of merging the monumental and the intimate, Ivona ensured that each of us could see her/himself both in the position of a supreme being and an ordinary person.'
+                                            },
+                                        },
+                                    ],
+                                ],
+                            },
+                            {
+                                TYPE: 'image_grid',
+                                CLASS_NAME: 'w-full',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'image',
+                                            ALT: 'exhibition-view-wide',
+                                            SRC: childrenOfTheSun4,
+                                        },
+                                    ]
+                                ]
+                            },
+                            {
+                                TYPE: 'text_grid',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'U oba slučaja na frizovima je predstavljena ljudska potreba da se izađe iz sveta materijalnih stvari, prevaziđe svakodnevica i dosegne nešto drugo, neopipljivo i drugačije, da se zakorači u jedan duhovni svet u kome nema dilema!',
+                                                ENG: 'In both cases, the human need to step outside the world of material things, to overcome everyday life, to reach something intangible and different, to step into a spiritual world where there is no dilemma is represented on the frieze.'
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Naučno odgonetanje raznih pitanja vezanih za prirodu sveta i čoveka, u našim očima (u našoj psihi), nije dovelo opipljivi svet u red ali je učinilo da nestanu osnovni mehanizmi koji su do tada činili taj red. Svet nauke je zamenio svet mita ali nije uneo harmoniju i hijerarhiju u čovekovo viđenje materijalni svet, več je doveo do potpunog disbalansa u čoveku. Mirče Elijade to objašnjava na sledeći način:',
+                                                ENG: 'Resolving various issues related to the nature of the world and the man within the world of science has not brought an order into the tangible world, from the human being’s point of view (in the human being’s psyche). It has merely made the basic mechanisms, as constituents of that order up to that point, disappear. The world of science has replaced the world of myth, but it has not brought any harmony and hierarchy in the human perception of the material world; its ways have led rather to a complete imbalance in human being. Mircea Eliade explained it as follows:'
+                                            },
+                                        },
+                                    ],
+                                ],
+                            },
+                            {
+                                TYPE: 'inverted_quote',
+                                TEXT: {
+                                    SER: '„…iskustvo (svetog prostora) podrazumeva da ispoljavanje svetog prostora omogućava zadobijanje “tačke oslonca”, orjentisanje u haotičnoj homogenosti… profano iskustvo podrazumeva homogenost i, dakle, relativnost prostora. Iščezava svaka prava orijentacija, jer “tačka oslonca” nema više jedinstven ontološki status, ona se javlja i nestaje prema potrebama svakodnevnog života. Istinu govoreći, nema više ni “Sveta”, već samo fragmenata jednog skrhanog univerzuma, amorfne mase jedne beskonačnosti “mesta”, više-manje neodređenih, gde se čovek kreće upravljan zahtevima egzistencije uklopljene u industrijsko društvo.“',
+                                    ENG: '"[....] Revelation of a sacred space makes it possible to obtain a fixed point and hence to acquire orientation in the chaos of homogeneity, to “found world” and to live in a real sense. The profane experience, on the contrary, maintains the homogeneity and hence the relativity of space. No true orientation is now possible, for the fixed point no longer enjoys a unique ontological status; it appears and disappears in accordance with the needs of the day. Properly speaking, there is no longer any world, there are only fragments of a shattered universe, an amorphous mass consisting of an infinite number of more or less neutral places in which man moves, governed and driven by the obligations of an existence incorporated into an industrial society "(The Sacred And The Profane: The Nature of Religion, translated from the French language by William R. Trask, New York, Harcourt, Brace and World Inc., 1987, p. 23 -24)',
+                                },
+                            },
+                            {
+                                TYPE: 'carousel',
+                                SLIDES: [
+                                    {
+                                        SRC: exhibitionChildrenOfTheSunSlide1,
+                                        ALT: 'children-of-the-sun-slide-1',
+                                    },
+                                    {
+                                        SRC: exhibitionChildrenOfTheSunSlide2,
+                                        ALT: 'children-of-the-sun-slide-2',
+                                    },
+                                    {
+                                        SRC: exhibitionChildrenOfTheSunSlide3,
+                                        ALT: 'children-of-the-sun-slide-3',
+                                    },
+                                    {
+                                        SRC: exhibitionChildrenOfTheSunSlide4,
+                                        ALT: 'children-of-the-sun-slide-4',
+                                    },
+                                    {
+                                        SRC: exhibitionChildrenOfTheSunSlide5,
+                                        ALT: 'children-of-the-sun-slide-5',
+                                    },
+                                    {
+                                        SRC: exhibitionChildrenOfTheSunSlide6,
+                                        ALT: 'children-of-the-sun-slide-6',
+                                    },
+                                    {
+                                        SRC: exhibitionChildrenOfTheSunSlide7,
+                                        ALT: 'children-of-the-sun-slide-7',
+                                    },
+                                    {
+                                        SRC: exhibitionChildrenOfTheSunSlide8,
+                                        ALT: 'children-of-the-sun-slide-8',
+                                    },
+                                    {
+                                        SRC: exhibitionChildrenOfTheSunSlide9,
+                                        ALT: 'children-of-the-sun-slide-9',
+                                    },
+                                    {
+                                        SRC: exhibitionChildrenOfTheSunSlide10,
+                                        ALT: 'children-of-the-sun-slide-10',
+                                    },
+                                    {
+                                        SRC: exhibitionChildrenOfTheSunSlide11,
+                                        ALT: 'children-of-the-sun-slide-11',
+                                    },
+                                    {
+                                        SRC: exhibitionChildrenOfTheSunSlide12,
+                                        ALT: 'children-of-the-sun-slide-12',
+                                    },
+                                ]
+                            },
+                            {
+                                TYPE: 'text_grid',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Te tačke oslonca sada su se premestile u sveru privatnog i ličnog iz nekada javne svere religioznog ispoljavanja. Potreba za ritualnim uporištima ljudske psihe sada su prepuštena snalažljivosti pojedinaca, što je dovelo do potpunog haosa i izgubljenosti savremenog čoveka. Ivona svoje tačke oslonca nalazi u svojim slikama u svojoj umetnosi. Ovi frizovi su njeno „sveto mesto“ i ona ga deli sa nama, ona nas podseća na to što nam je potrebno da bi našli ustrojstvo sveta oko nas.',
+                                                ENG: 'These "fixed points" have moved now from the former public sphere of religious expression to the sphere of private and personal. The need for rite strongholds in the human psyche is now left to the ingenuity of an individual; this has led to a complete chaos and disorientation in modern human being. Ivona finds her fixed points in her paintings, in her art. Her friezes are her "holy place", and she is sharing them with us now and reminding us that we need to find structure of the world around us.'
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Upravo potreba čoveka da dosegne nemoguće, da doživi nesvakidašnje, na kraju se pretvara u pobedu nad samim sobom, pri savladavanju sopstvenih mana i nagona, u pobedu nad svakodnevicom. Mešajuči sveto i profano, stanje prosvetljenja sa stanjem pobede nad svakodnevnim problemima, ona zapravo slika svakog čoveka sa svojim sopstvenim putovanjem kroz život.',
+                                                ENG: 'That very human need to attain the impossible, to experience the extraordinary, eventually turns into a victory over oneself, in dealing with one’s own flaws and instincts, in winning a victory over everyday life. By means of fusing the sacred and the profane, the state of enlightenment with winning a victory over everyday problems, the author actually represents every human being and her/his own journey through life.'
+                                            },
+                                        },
+                                    ],
+                                ],
+                            },
+                            {
+                                TYPE: 'image_grid',
+                                CLASS_NAME: 'w-full',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'image',
+                                            ALT: 'exhibition-view-wide',
+                                            SRC: childrenOfTheSun5,
+                                        },
+                                    ]
+                                ]
+                            },
+                            {
+                                TYPE: 'text_grid',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Iako svoje figure postavlja u vanvremenski pejsaž, u potencijalnu budućnost, ona aludira na moguće stanje saznanja svakog od nas. Ivonin izrazito humanistički pogled na čoveka izražen je izborom likova na slici. Insistirajući na likovima iz starih i „primitivnih“ civilizacija, ona podvlači ono iskonsko u čovekovoj prirodi, sklad čoveka sa svojom okolinom.',
+                                                ENG: 'Although she set her characters in a timeless landscape, in a potential future, she alluded to a possible state of revelation any of us can experience.'
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Sa druge strane, tehnološki napredak omogućio je čoveku da u materijalnom svetu prevaziđe svoja ograničenja i bukvalno se vine ka suncu, poput astronauta. Te dve krajnosti fokusiraju disbalans i pocepanost današnjeg čoveka koji niti ima oslonac u religioznom prostoru niti ima mogućnost da dosegne neopipljivo visokom tehnologijom. U tom prostoru se nalaze likovi iz umetnicinog života.',
+                                                ENG: 'Ivona’s very humanistic view of human being is expressed in her choice of the characters represented in her work. Insisting on the characters from those old and "primitive" civilizations, she underlines the primordial in human nature, harmony of human being with her/his environment. On the other hand, technological progress has enabled human being to overcome her/his limitations in the physical world and literally to reach, like an astronaut, the Sun. These two extremes are focused on imbalance and modern human being’s sense of being torn apart because she/ he has neither a fixed point in religion nor a possibility to reach the intangible with the help of high technology. Characters from the artistic life populate this space.'
+                                            },
+                                        },
+                                    ],
+                                ],
+                            },
+                            {
+                                TYPE: 'image_grid',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'image',
+                                            ALT: 'exhibition-view-wide',
+                                            SRC: childrenOfTheSun6,
+                                        },
+                                    ]
+                                ]
+                            },
+                            {
+                                TYPE: 'inverted_text_grid',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Ivona kroz svoj rad kritikuje savremeno društvo, ali ne kroz konkretne probleme, već kroz isticanje nedostajućeg mesta koje bi ovom svetu donelo malo reda,a to su one prave duhovne vrednosti oličene u ljubavi prema životu. ( a to je balans između čoveka i tog sveta.) Ističući humani i pozitivistički odnos prema čoveku ona podcrtava prave vrednosti koje bi trebalo da ponovo postanu mesta oslonca za izgubljenog čoveka sadašnjice. Ako friz sa natprirodnim portretima iz prošlosti i sadašnjosti ima nekakav apokaliptični prizvuk i svojom impozantnom veličinom on deluje zastrašujuće na posmatrača, to je u cilju ukazivanja na mogući „kraj“ koji možemo sami uzeti u svoje ruke. Umetnica nas njime poziva da svoj život ne prepuštamo slučaju već da proneđemo u sebi one najhumanije vrednosti koje nas sve čine jednakima i daju nam onaj najvažniji oslonac u životu. Ivonin umetnički svet nam daje nadu da smo svi mi na kraju ipak Deca sunca.',
+                                                ENG: 'Ivona Pleskonja criticizes modern society in her work, not via actual problems, but by emphasizing what is missing and what would bring some order into this world: true spiritual values ​​embodied in the love of life.  By means of her emphasis on a human and positivistic attitude towards human being, she underlines those true values which should become again fixed points for today’s lost human being. If her frieze with supernatural portraits from the past and the present has some apocalyptic overtones, and its imposing size seems frightening to the observer, it is for the purpose of point to a possible "course" that we can take. The artist invites us not to leave our lives to a chance. She encourages us to find in our souls the most humane values ​​that make us all equal and that give us the most important pillar of support in our lives. Ivona’s world of art gives us hope that we all are, at the end of the day, Children of the Sun.'
+                                            },
+                                        },
+                                    ]
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ],
+            DESKTOP: [
+                {
+                    TYPE: 'text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Proučavajući različite aspekte savremenog života i ljudi u njemu, pronalazeći različite puteve i izlaze, kao i na svojim ranijim slikama heroja, Ivona se vraća, ponovo i ponovo, poput antropologa u prošlost, nalazeći rešenja za budućnost. Njena velika želja da predstavi ljude kao pozitivna bića, kao bića koja prevazilaze sve svakodnevne probleme i kao heroje svoga vremena, sada je kulminirala u predstavljanju portreta u trenutku spoznaje, prosvetljenja, uzvišenosti, trenutku ushićenja ali i smirenja, sklada.',
+                                    ENG: 'By means of studying different aspects of modern life and people in it and finding out different paths and ways out, like in her earlier paintings of heroes, Ivona goes back, over and over, like an anthropologist into the past, in order to discover some new solutions for the future. Her great desire to represent people as positive beings, as beings that transcend everyday life problems and as heroes of their time, is culminating now in the presentation of portraits created at the moment of revelation, enlightenment, apogee, thrill as well as equanimity and harmony.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Na 20 metara dugom frizu portreta u natprirodnoj veličini, ona čisti pozadinu, briše joj vremensku i prostornu komponentu. Slika likove iz prošlosti ali i iz svog života, poznate i nepoznate i na taj način spaja prošlost i sadašnjost u budućnosti, u ostvarenju večne čovekove želje da dosegne sunce, da dosegne nedostižno.',
+                                    ENG: 'On a 20 meters long frieze with supernatural portraits, she cleared the background, wiped out its temporal and spatial component. She painted the people from the past as well as from his own life, known and unknown, and thus she connected the past and the present in the future in the pursuit of the human being’s eternal desire to reach the Sun, to reach the unreachable. When she designed and painted this frieze, Ivona applied the theory of Pavel Florensky (Iconostasis, translation into Serbian, Belgrade, 2007).'
+                                },
+                            },
+                        ],
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Prilikom koncipiranja i slikanja ovog friza, Ivona koristi teoriju Pavla Florenskog koji prilikom analize ikona, subjekta na njoj (svetitelja) vidi kao materijalizaciju unutrašnjeg, duhovnog sveta. Ikona je za njega objekat koji isijava metafizičku svetlost nevidljivog, duhovnog sveta. Tako i umetnica kroz portret ističe duhovno stanje čoveka i podvlači ga belinom pozadine koja materijalizuje jaku sunčevu svetlost. Na taj način ona ističe paralelizam duhovnog i materijalnog sveta. U ranijim radovima Ivona nam je dodatnim simbolima ukazivala na karakter i osobenosti portretisanog, ali sada potpuno briše bilo kakva dodatna obeležja i insistira isključivo na čistom duhovnom stanju spoznaje. Razliku u prihvatanju tog uzvišenog trenutka ona ističe u samom fizičkom stavu portretisanih. Neki nas gledaju direktno u oči, neki nam okreću pogled zagledani u sebe krijući svoje lice ili su obuzeti trenutkom potpuno odsutni.',
+                                    ENG: 'According to Florensky, the subject on an icon (usually a saint) represents materialisation of the inner, spiritual world. The icon for him is an object that emanates the metaphysical light of the invisible world. In the similar way, Ivona emphasizes the man’s spirituality through the genre of portrait and accentuates the whiteness of the background which materializes the bright light.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: '',
+                                    ENG: 'She highlights thus the juxtaposition of the spiritual and material worlds. In her earlier works, Ivona had pointed to the character and distinctive features of the portrayed thanks to some additional symbols. Now she erased completely any additional features and insisted only on that pure spiritual state of recognition. She emphasized difference in the acceptance of that sublime moment in the very physical posture of the portrayed. Some of the portrayed look the observer directly into the eyes; some look away and hide their faces because they are completely preoccupied with their introspection or they are completely absent and overwhelmed by here and now.'
+                                },
+                            },
+                        ],
+                    ],
+                },
+                {
+                    TYPE: 'contained_image_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'inverted_quote',
+                                WIDTH: 59,
+                                TEXT: {
+                                    SER: 'Istražujući predstavljanje čovekovog lika u trenutku spoznaje ona koristi dva medija – slikarstvo i grafiku. U oba medija ponavlja gotovo identičan prizor i iste likove ali sa njima želi da postigne različite efekte. Kroz istraživanje ona dolazi do maksimalne iskorišćenosti karaktera samog medija.',
+                                    ENG: 'While Ivona was exploring how the human image was being represented at the moment of revelation, she used two media - painting and printmaking. In both media she repeated almost an identical scene and changed the faces because she wished to achieve different effects with them. During the process of research, she exploited to maximum the very nature of the medium she uses.',
+                                },
+                            },
+                            {
+                                TYPE: 'image',
+                                WIDTH: 41,
+                                ALT: 'exhibition-view',
+                                SRC: childrenOfTheSun1,
+                            },
+                        ],
+                    ]
+                },
+                {
+                    TYPE: 'image_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'image',
+                                MAX_HEIGHT: 561,
+                                ALT: 'exhibition-view-wide',
+                                SRC: childrenOfTheSun2,
+                            },
+                        ]
+                    ]
+                },
+                {
+                    TYPE: 'text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Slikarstvo joj omogućava monumentalnost, naslikana lica deluju zastašujuće, čime se izaziva neka vrsta strahopoštovanja kod posmatrača. Na taj način posmatrač biva probuđen iz sna svakodnevice i nateran da razmisli i preispita svoje stavove prema svetu oko sebe. Sa druge strane, grafika omogućava jedan daleko suptilniji i intimniji prikaz, gde se isti likovi stavljaju u poziciju posmatrača i obrnutoi ističe umetnicin lični i emotivni odnos prema portretisanima. Spajanjem monumentalnog i intimnog, Ivona postiže da se svako od nas može videti u poziciji višeg bića ali i običnog čoveka.',
+                                    ENG: 'The art of painting allowed her to get the air of the monumental. The painted faces look frightening, which causes a sort of awe in the observer. In this way, the observer will be awoken from the lull of everyday life and forced to ponder and reconsider her/his attitudes towards the world around her/him. On the other hand, the art of printmaking allowed her to have a far more subtle and intimate approach, where the artist added new faces and her self-portrait among others in order to put them in the observer’s shoes, and vice versa, and she emphasized her personal and emotional attitude towards the portrayed. By means of merging the monumental and the intimate, Ivona ensured that each of us could see her/himself both in the position of a supreme being and an ordinary person.'
+                                },
+                            },
+                        ],
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'U oba slučaja na frizovima je predstavljena ljudska potreba da se izađe iz sveta materijalnih stvari, prevaziđe svakodnevica i dosegne nešto drugo, neopipljivo i drugačije, da se zakorači u jedan duhovni svet u kome nema dilema!',
+                                    ENG: 'In both cases, the human need to step outside the world of material things, to overcome everyday life, to reach something intangible and different, to step into a spiritual world where there is no dilemma is represented on the frieze.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Naučno odgonetanje raznih pitanja vezanih za prirodu sveta i čoveka, u našim očima (u našoj psihi), nije dovelo opipljivi svet u red ali je učinilo da nestanu osnovni mehanizmi koji su do tada činili taj red. Svet nauke je zamenio svet mita ali nije uneo harmoniju i hijerarhiju u čovekovo viđenje materijalni svet, več je doveo do potpunog disbalansa u čoveku. Mirče Elijade to objašnjava na sledeći način:',
+                                    ENG: 'Resolving various issues related to the nature of the world and the man within the world of science has not brought an order into the tangible world, from the human being’s point of view (in the human being’s psyche). It has merely made the basic mechanisms, as constituents of that order up to that point, disappear. The world of science has replaced the world of myth, but it has not brought any harmony and hierarchy in the human perception of the material world; its ways have led rather to a complete imbalance in human being. Mircea Eliade explained it as follows:'
+                                },
+                            },
+                        ],
+                    ],
+                },
+                {
+                    TYPE: 'inverted_quote',
+                    CLASS_NAME: 'md:py-10 mb-10',
+                    TEXT: {
+                        SER: '„…iskustvo (svetog prostora) podrazumeva da ispoljavanje svetog prostora omogućava zadobijanje “tačke oslonca”, orjentisanje u haotičnoj homogenosti… profano iskustvo podrazumeva homogenost i, dakle, relativnost prostora. Iščezava svaka prava orijentacija, jer “tačka oslonca” nema više jedinstven ontološki status, ona se javlja i nestaje prema potrebama svakodnevnog života. Istinu govoreći, nema više ni “Sveta”, već samo fragmenata jednog skrhanog univerzuma, amorfne mase jedne beskonačnosti “mesta”, više-manje neodređenih, gde se čovek kreće upravljan zahtevima egzistencije uklopljene u industrijsko društvo.“',
+                        ENG: '"[....] Revelation of a sacred space makes it possible to obtain a fixed point and hence to acquire orientation in the chaos of homogeneity, to “found world” and to live in a real sense. The profane experience, on the contrary, maintains the homogeneity and hence the relativity of space. No true orientation is now possible, for the fixed point no longer enjoys a unique ontological status; it appears and disappears in accordance with the needs of the day. Properly speaking, there is no longer any world, there are only fragments of a shattered universe, an amorphous mass consisting of an infinite number of more or less neutral places in which man moves, governed and driven by the obligations of an existence incorporated into an industrial society "(The Sacred And The Profane: The Nature of Religion, translated from the French language by William R. Trask, New York, Harcourt, Brace and World Inc., 1987, p. 23 -24)',
+                    },
+                },
+                {
+                    TYPE: 'carousel',
+                    SLIDES: [
+                        {
+                            SRC: exhibitionChildrenOfTheSunSlide1,
+                            ALT: 'children-of-the-sun-slide-1',
+                        },
+                        {
+                            SRC: exhibitionChildrenOfTheSunSlide2,
+                            ALT: 'children-of-the-sun-slide-2',
+                        },
+                        {
+                            SRC: exhibitionChildrenOfTheSunSlide3,
+                            ALT: 'children-of-the-sun-slide-3',
+                        },
+                        {
+                            SRC: exhibitionChildrenOfTheSunSlide4,
+                            ALT: 'children-of-the-sun-slide-4',
+                        },
+                        {
+                            SRC: exhibitionChildrenOfTheSunSlide5,
+                            ALT: 'children-of-the-sun-slide-5',
+                        },
+                        {
+                            SRC: exhibitionChildrenOfTheSunSlide6,
+                            ALT: 'children-of-the-sun-slide-6',
+                        },
+                        {
+                            SRC: exhibitionChildrenOfTheSunSlide7,
+                            ALT: 'children-of-the-sun-slide-7',
+                        },
+                        {
+                            SRC: exhibitionChildrenOfTheSunSlide8,
+                            ALT: 'children-of-the-sun-slide-8',
+                        },
+                        {
+                            SRC: exhibitionChildrenOfTheSunSlide9,
+                            ALT: 'children-of-the-sun-slide-9',
+                        },
+                        {
+                            SRC: exhibitionChildrenOfTheSunSlide10,
+                            ALT: 'children-of-the-sun-slide-10',
+                        },
+                        {
+                            SRC: exhibitionChildrenOfTheSunSlide11,
+                            ALT: 'children-of-the-sun-slide-11',
+                        },
+                        {
+                            SRC: exhibitionChildrenOfTheSunSlide12,
+                            ALT: 'children-of-the-sun-slide-12',
+                        },
+                    ]
+                },
+                {
+                    TYPE: 'text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Te tačke oslonca sada su se premestile u sveru privatnog i ličnog iz nekada javne svere religioznog ispoljavanja. Potreba za ritualnim uporištima ljudske psihe sada su prepuštena snalažljivosti pojedinaca, što je dovelo do potpunog haosa i izgubljenosti savremenog čoveka. Ivona svoje tačke oslonca nalazi u svojim slikama u svojoj umetnosi. Ovi frizovi su njeno „sveto mesto“ i ona ga deli sa nama, ona nas podseća na to što nam je potrebno da bi našli ustrojstvo sveta oko nas.',
+                                    ENG: 'These "fixed points" have moved now from the former public sphere of religious expression to the sphere of private and personal. The need for rite strongholds in the human psyche is now left to the ingenuity of an individual; this has led to a complete chaos and disorientation in modern human being. Ivona finds her fixed points in her paintings, in her art. Her friezes are her "holy place", and she is sharing them with us now and reminding us that we need to find structure of the world around us.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Upravo potreba čoveka da dosegne nemoguće, da doživi nesvakidašnje, na kraju se pretvara u pobedu nad samim sobom, pri savladavanju sopstvenih mana i nagona, u pobedu nad svakodnevicom. Mešajuči sveto i profano, stanje prosvetljenja sa stanjem pobede nad svakodnevnim problemima, ona zapravo slika svakog čoveka sa svojim sopstvenim putovanjem kroz život.',
+                                    ENG: 'That very human need to attain the impossible, to experience the extraordinary, eventually turns into a victory over oneself, in dealing with one’s own flaws and instincts, in winning a victory over everyday life. By means of fusing the sacred and the profane, the state of enlightenment with winning a victory over everyday problems, the author actually represents every human being and her/his own journey through life.'
+                                },
+                            },
+                        ],
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Iako svoje figure postavlja u vanvremenski pejsaž, u potencijalnu budućnost, ona aludira na moguće stanje saznanja svakog od nas. Ivonin izrazito humanistički pogled na čoveka izražen je izborom likova na slici. Insistirajući na likovima iz starih i „primitivnih“ civilizacija, ona podvlači ono iskonsko u čovekovoj prirodi, sklad čoveka sa svojom okolinom.',
+                                    ENG: 'Although she set her characters in a timeless landscape, in a potential future, she alluded to a possible state of revelation any of us can experience.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Sa druge strane, tehnološki napredak omogućio je čoveku da u materijalnom svetu prevaziđe svoja ograničenja i bukvalno se vine ka suncu, poput astronauta. Te dve krajnosti fokusiraju disbalans i pocepanost današnjeg čoveka koji niti ima oslonac u religioznom prostoru niti ima mogućnost da dosegne neopipljivo visokom tehnologijom. U tom prostoru se nalaze likovi iz umetnicinog života.',
+                                    ENG: 'Ivona’s very humanistic view of human being is expressed in her choice of the characters represented in her work. Insisting on the characters from those old and "primitive" civilizations, she underlines the primordial in human nature, harmony of human being with her/his environment. On the other hand, technological progress has enabled human being to overcome her/his limitations in the physical world and literally to reach, like an astronaut, the Sun. These two extremes are focused on imbalance and modern human being’s sense of being torn apart because she/ he has neither a fixed point in religion nor a possibility to reach the intangible with the help of high technology. Characters from the artistic life populate this space.'
+                                },
+                            },
+                        ],
+                    ],
+                },
+                {
+                    TYPE: 'image_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'image',
+                                MAX_HEIGHT: 561,
+                                ALT: 'exhibition-view-wide',
+                                SRC: childrenOfTheSun6,
+                            },
+                        ]
+                    ]
+                },
+                {
+                    TYPE: 'inverted_text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Ivona kroz svoj rad kritikuje savremeno društvo, ali ne kroz konkretne probleme, već kroz isticanje nedostajućeg mesta koje bi ovom svetu donelo malo reda,a to su one prave duhovne vrednosti oličene u ljubavi prema životu. ( a to je balans između čoveka i tog sveta.) Ističući humani i pozitivistički odnos prema čoveku ona podcrtava prave vrednosti koje bi trebalo da ponovo postanu mesta oslonca za izgubljenog čoveka sadašnjice. Ako friz sa natprirodnim portretima iz prošlosti i sadašnjosti ima nekakav apokaliptični prizvuk i svojom impozantnom veličinom on deluje zastrašujuće na posmatrača, to je u cilju ukazivanja na mogući „kraj“ koji možemo sami uzeti u svoje ruke. Umetnica nas njime poziva da svoj život ne prepuštamo slučaju već da proneđemo u sebi one najhumanije vrednosti koje nas sve čine jednakima i daju nam onaj najvažniji oslonac u životu. Ivonin umetnički svet nam daje nadu da smo svi mi na kraju ipak Deca sunca.',
+                                    ENG: 'Ivona Pleskonja criticizes modern society in her work, not via actual problems, but by emphasizing what is missing and what would bring some order into this world: true spiritual values ​​embodied in the love of life.  By means of her emphasis on a human and positivistic attitude towards human being, she underlines those true values which should become again fixed points for today’s lost human being. If her frieze with supernatural portraits from the past and the present has some apocalyptic overtones, and its imposing size seems frightening to the observer, it is for the purpose of point to a possible "course" that we can take. The artist invites us not to leave our lives to a chance. She encourages us to find in our souls the most humane values ​​that make us all equal and that give us the most important pillar of support in our lives. Ivona’s world of art gives us hope that we all are, at the end of the day, Children of the Sun.'
+                                },
+                            },
+                        ]
+                    ]
+                }
             ]
         }
     },
