@@ -124,7 +124,7 @@ const config: Config = {
           sm: '640px',
           md: '1024px',
           lg: '1280px',
-          xl: '1536px',
+          xl: '1440px',
     },
     extend: {
       colors: {

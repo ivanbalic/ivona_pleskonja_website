@@ -45,7 +45,7 @@ export const ArticleCarousel: React.FC<PropType> = ( { section }) => {
     } = usePrevNextButtons(emblaApi, onNavButtonClick);
 
     return (
-        <div className="mt-5 md:mt-10">
+        <div>
             <section className="embla article-carousel">
                 <div className="embla__viewport" ref={emblaRef}>
                     <div className="embla__container">

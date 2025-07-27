@@ -19,15 +19,16 @@ export function ArticleInvertedTextGrid({ locale = 'ser', section }: {locale: st
     },[]);
     return (
         <Container className={cn(
+            'py-5 md:py-10',
             'flex flex-col gap-5',
             'px-4 md:px-[135px]',
-            'py-5 md:py-10 mt-5 md:mt-10',
-            'text-[16px] leading-[24px] md:leading-[100%]',
+            'font-helvetica tracking-[.05em]',
             'bg-articleBgBlue font-helvetica tracking-[.05em]',
             section.CLASS_NAME
         )}>
             <div className={cn(
-                'flex flex-col md:flex-row gap-5 md:gap-[90px] items-center justify-between w-full'
+                'text-[16px] leading-[24px] md:leading-[100%]',
+                'flex flex-col md:flex-row gap-5 md:gap-[90px]'
             )}>
                 {section.CONTENT.map((row: Record<string, any>[], rowKey: number) =>
                     <div key={`${section.TYPE}_${rowKey}`} className="flex flex-col gap-5">

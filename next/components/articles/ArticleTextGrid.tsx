@@ -6,7 +6,7 @@ export function ArticleTextGrid({ locale = 'ser', section }: {locale: string, se
 
     return (
         <Container className={cn(
-            'pt-5 md:pt-10',
+            'py-5 md:py-10',
             'flex flex-col gap-5',
             'px-4 md:px-[135px]',
             'text-black font-helvetica tracking-[.05em]',

@@ -25,7 +25,7 @@ export function ArticleContainedImageGrid({ locale, section }: {
 
     return (
         <Container containerStyle={section.STYLE} className={cn(
-            "flex flex-col md:px-10 pt-5 md:pt-10",
+            "flex flex-col md:px-10",
             section.CLASS_NAME,
         )}>
             {section.CONTENT.map((row: Record<string, any>[], rowKey: number) =>
