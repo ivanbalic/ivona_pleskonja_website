@@ -62,6 +62,7 @@ interface IDescription {
 export interface IGalleryRowItem {
     ID: number | null;
     ALT: string;
+    CLASS_NAME?: string;
     GRID_PLACES: number;
     SRC: TSrc | null;
     DETAILS: IDescription | null;

@@ -109,6 +109,19 @@ import fragment11GraphPreview from '@/public/assets/children-of-the-sun/fragment
 import childrenOfTheSunPreview from '@/public/assets/children-of-the-sun/children-of-the-sun-preview.webp';
 import childrenOfTheSunGraphFull from '@/public/assets/children-of-the-sun/children-of-the-sun-graph-full.webp';
 import childrenOfTheSunGraphPreview from '@/public/assets/children-of-the-sun/children-of-the-sun-graph-preview.webp';
+// STOPS IN TIME
+import tasjaFull from '@/public/assets/stops-in-time/tasja-full.webp';
+import ivonaFull from '@/public/assets/stops-in-time/ivona-full.webp';
+import tasjaPreview from '@/public/assets/stops-in-time/tasja-preview.webp';
+import ivonaPreview from '@/public/assets/stops-in-time/ivona-preview.webp';
+import veronaIvonaFull from '@/public/assets/stops-in-time/verona-ivona-full.webp';
+import terezaIvonaFull from '@/public/assets/stops-in-time/tereza-ivona-full.webp';
+import veraVeronaPalFull from '@/public/assets/stops-in-time/vera-verona-pal-full.webp';
+import veronaIvonaPreview from '@/public/assets/stops-in-time/verona-ivona-preview.webp';
+import terezaIvonaPreview from '@/public/assets/stops-in-time/tereza-ivona-preview.webp';
+import veraJulijaTerezaFull from '@/public/assets/stops-in-time/vera-julija-treza-full.webp';
+import veraVeronaPalPreview from '@/public/assets/stops-in-time/vera-verona-pal-preview.webp';
+import veraJulijaTerezaPreview from '@/public/assets/stops-in-time/vera-julija-tereza-preview.webp';
 
 export const PAGE_CONTENT = Object.freeze({
     TITLE: {
@@ -121,7 +134,7 @@ export const PAGE_CONTENT = Object.freeze({
         { ID: 'mural_life', TITLE: { SER: { YEAR: '2020', TEXT: 'Mural Life' }, ENG: { YEAR: '2020', TEXT: 'Mural Life' } }, DISABLED: false, LINK:'articles/3' },
         { ID: '11_snaga', TITLE: { SER: { YEAR: '2019', TEXT: '11 Snaga' }, ENG: { YEAR: '2019', TEXT: '11 Snaga' } }, DISABLED: false, LINK: null },
         { ID: 'strong_people', TITLE: { SER: { YEAR: '2016', TEXT: 'Jaki ljudi' }, ENG: { YEAR: '2016', TEXT: 'Strong People' } }, DISABLED: false, LINK: 'articles/5' },
-        { ID: 'stops_in_time', TITLE: { SER: { YEAR: '2015', TEXT: 'Vremenske stanice' }, ENG: { YEAR: '2015', TEXT: 'Stops In Time' } }, DISABLED: true, LINK: null },
+        { ID: 'stops_in_time', TITLE: { SER: { YEAR: '2015', TEXT: 'Vremenske stanice' }, ENG: { YEAR: '2015', TEXT: 'Stops In Time' } }, DISABLED: false, LINK: null },
         { ID: 'children_of_the_sun', TITLE: { SER: { YEAR: '2014', TEXT: 'Deca Sunca' }, ENG: { YEAR: '2014', TEXT: 'Children of the Sun' } }, DISABLED: false, LINK: null },
         { ID: 'spirit', TITLE: { SER: { YEAR: '2011', TEXT: 'Duh' }, ENG: { YEAR: '2011', TEXT: 'Spirit' } }, DISABLED: true, LINK: null },
         { ID: 'one_world', TITLE: { SER: { YEAR: '2009', TEXT: 'Jedan Svet' }, ENG: { YEAR: '2009', TEXT: 'One World' } }, DISABLED: true, LINK: null },
@@ -1966,6 +1979,235 @@ export const SUBPAGE_CONTENT = Object.freeze({
                     ]
                 ]
             },
+        ],
+    },
+    STOPS_IN_TIME: {
+        ID: 'stops_in_time',
+        EXHIBITION_ID: 8,
+        TEMPLATE_ID: 'TEMPLATE_ID',
+        HISTORY: [
+            {
+                ID: 'home',
+                TITLE: {
+                    SER: 'Početna',
+                    ENG: 'Home',
+                },
+                LINK: ''
+            },
+            {
+                ID: 'works',
+                TITLE: {
+                    SER: "Radovi",
+                    ENG: 'Works',
+                },
+                LINK: 'works'
+            },
+            {
+                ID: 'stops_in_time',
+                TITLE: {
+                    SER: 'Vremenske stanice',
+                    ENG: 'Stops in Time'
+                },
+                LINK: 'works/stops_in_time'
+            },
+        ],
+        TITLE: {
+            SER: '„Vremenske stanice“',
+            ENG: '„Stops in Time“'
+        },
+        DESCRIPTION: [
+            {
+                SER: 'Izložbu crteža „Vremenske stanice“ čini 6 crteža porodičnih portreta većeg formata.',
+                ENG: 'The drawing exhibition “Stops in time” consists of 6 large-format family portrait drawings.'
+            },
+        ],
+        GALLERY: [
+            {
+                ID: 1,
+                TITLE: null,
+                CONTENT: [
+                    [
+                        {
+                            ID: 1,
+                            TYPE: 'vertical',
+                            SRC: {
+                                COLOR: 'transparent',
+                                FULL: tasjaFull,
+                                PREVIEW: tasjaPreview,
+                            },
+                            ALT: "tasja-2001",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2015.',
+                                DIMENSIONS: '1 x 0.7 m',
+                                NAME: {
+                                    SER: 'TASJA 2001.' ,
+                                    ENG: 'TASJA 2001.'
+                                },
+                                TECHNIQUE: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                        {
+                            ID: 2,
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: ivonaFull,
+                                PREVIEW: ivonaPreview,
+                            },
+                            ALT: "ivona-1979",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2015.',
+                                DIMENSIONS: '1 x 0.7 m',
+                                NAME: {
+                                    SER: 'IVONA 1979.',
+                                    ENG: 'IVONA 1979.'
+                                },
+                                TECHNIQUE: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                    ],
+                    [
+                        {
+                            ID: 3,
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: veraJulijaTerezaFull,
+                                PREVIEW: veraJulijaTerezaPreview,
+                            },
+                            ALT: "vera-julija-tereza-1940",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2015.',
+                                DIMENSIONS: '1 x 1.5 m',
+                                ADDITIONAL_DIMENSIONS_INFO: {
+                                    SER: '/ poliptih',
+                                    ENG: '/ polyptych'
+                                },
+                                NAME: {
+                                    SER: 'VERA JULIJA TEREZA 1940.',
+                                    ENG: 'VERA JULIJA TEREZA 1940.'
+                                },
+                                TECHNIQUE: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: '',
+                                }
+                            }
+                        },
+                        {
+                            ID: 4,
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: terezaIvonaFull,
+                                PREVIEW: terezaIvonaPreview
+                            },
+                            ALT: "tereza-ivona-1975",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2015.',
+                                DIMENSIONS: '1 x 1.5 m',
+                                ADDITIONAL_DIMENSIONS_INFO: {
+                                    SER: '/ triptih',
+                                    ENG: '/ triptych'
+                                },
+                                NAME: {
+                                    SER: 'TEREZA IVONA 1975.',
+                                    ENG: 'TEREZA IVONA 1975.'
+                                },
+                                TECHNIQUE: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            ID: 5,
+                            TYPE: 'vertical',
+                            CLASS_NAME: 'object-contain',
+                            SRC: {
+                                FULL: veronaIvonaFull,
+                                PREVIEW: veronaIvonaPreview,
+                            },
+                            ALT: "verona-ivona-1979",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2015.',
+                                DIMENSIONS: '1.4 x 1 m',
+                                ADDITIONAL_DIMENSIONS_INFO: {
+                                    SER: '/ diptih',
+                                    ENG: '/ diptych'
+                                },
+                                NAME: {
+                                    SER: 'VERONA IVONA 1979.',
+                                    ENG: 'VERONA IVONA 1979.'
+                                },
+                                TECHNIQUE: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                }
+                            }
+                        },
+                        {
+                            ID: 6,
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: veraVeronaPalFull,
+                                PREVIEW: veraVeronaPalFull,
+                            },
+                            ALT: "vera-verona-pal",
+                            GRID_PLACES: 2,
+                            DETAILS: {
+                                CREATED_AT: '2015.',
+                                DIMENSIONS: '1 x 1.5 m',
+                                ADDITIONAL_DIMENSIONS_INFO: {
+                                    SER: '/ triptih',
+                                    ENG: '/ triptych'
+                                },
+                                NAME: {
+                                    SER: 'VERA VERONA PAL 1950.',
+                                    ENG: 'VERA VERONA PAL 1950.'
+                                },
+                                TECHNIQUE: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                }
+                            }
+                        },
+                    ]
+                ]
+            }
         ],
     },
 });

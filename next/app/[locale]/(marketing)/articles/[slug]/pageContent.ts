@@ -164,6 +164,14 @@ import exhibitionChildrenOfTheSunSlide9 from '@/public/assets/children-of-the-su
 import exhibitionChildrenOfTheSunSlide10 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-slide-10.webp';
 import exhibitionChildrenOfTheSunSlide11 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-slide-11.webp';
 import exhibitionChildrenOfTheSunSlide12 from '@/public/assets/children-of-the-sun/exhibition-children-of-the-sun-slide-12.webp';
+// STOPS IN TIME
+import stopsInTimeCover from '@/public/assets/stops-in-time/exhibition-stops-in-time-cover.webp';
+import stopsInTimeSlide1 from '@/public/assets/stops-in-time/exhibtion-stops-in-time-slide-1.webp';
+import stopsInTimeSlide2 from '@/public/assets/stops-in-time/exhibtion-stops-in-time-slide-2.webp';
+import stopsInTimeSlide3 from '@/public/assets/stops-in-time/exhibtion-stops-in-time-slide-3.webp';
+import stopsInTimeSlide4 from '@/public/assets/stops-in-time/exhibtion-stops-in-time-slide-4.webp';
+import stopsInTimeSlide5 from '@/public/assets/stops-in-time/exhibtion-stops-in-time-slide-5.webp';
+import stopsInTimeSlide6 from '@/public/assets/stops-in-time/exhibtion-stops-in-time-slide-6.webp';
 
 export const PAGE_CONTENT = Object.freeze({
     CREATING_LIFE: {
@@ -3568,6 +3576,283 @@ export const PAGE_CONTENT = Object.freeze({
                                 TEXT: {
                                     SER: 'Ivona kroz svoj rad kritikuje savremeno društvo, ali ne kroz konkretne probleme, već kroz isticanje nedostajućeg mesta koje bi ovom svetu donelo malo reda,a to su one prave duhovne vrednosti oličene u ljubavi prema životu. ( a to je balans između čoveka i tog sveta.) Ističući humani i pozitivistički odnos prema čoveku ona podcrtava prave vrednosti koje bi trebalo da ponovo postanu mesta oslonca za izgubljenog čoveka sadašnjice. Ako friz sa natprirodnim portretima iz prošlosti i sadašnjosti ima nekakav apokaliptični prizvuk i svojom impozantnom veličinom on deluje zastrašujuće na posmatrača, to je u cilju ukazivanja na mogući „kraj“ koji možemo sami uzeti u svoje ruke. Umetnica nas njime poziva da svoj život ne prepuštamo slučaju već da proneđemo u sebi one najhumanije vrednosti koje nas sve čine jednakima i daju nam onaj najvažniji oslonac u životu. Ivonin umetnički svet nam daje nadu da smo svi mi na kraju ipak Deca sunca.',
                                     ENG: 'Ivona Pleskonja criticizes modern society in her work, not via actual problems, but by emphasizing what is missing and what would bring some order into this world: true spiritual values ​​embodied in the love of life.  By means of her emphasis on a human and positivistic attitude towards human being, she underlines those true values which should become again fixed points for today’s lost human being. If her frieze with supernatural portraits from the past and the present has some apocalyptic overtones, and its imposing size seems frightening to the observer, it is for the purpose of point to a possible "course" that we can take. The artist invites us not to leave our lives to a chance. She encourages us to find in our souls the most humane values ​​that make us all equal and that give us the most important pillar of support in our lives. Ivona’s world of art gives us hope that we all are, at the end of the day, Children of the Sun.'
+                                },
+                            },
+                        ]
+                    ]
+                }
+            ]
+        }
+    },
+    STOPS_IN_TIME: {
+        ID: 8,
+        HISTORY: [
+            {
+                ID: 'home',
+                TITLE: {
+                    SER: 'Početna',
+                    ENG: 'Home',
+                },
+                LINK: ''
+            },
+            {
+                ID: 'works',
+                TITLE: {
+                    SER: "Radovi",
+                    ENG: 'Works',
+                },
+                LINK: 'works'
+            },
+            {
+                ID: 'stops_in_time',
+                TITLE: {
+                    SER: 'Vremenske stanice',
+                    ENG: 'Stops In Time'
+                },
+                LINK: 'works/stops_in_time'
+            },
+            {
+                ID: 'exhibitions',
+                TITLE: {
+                    SER: 'O izložbi',
+                    ENG: 'About Exhibition'
+                },
+                LINK: 'articles/8'
+            },
+        ],
+        COVER: {
+            TITLE: {
+                SER: '„VREMENSKE STANICE“',
+                ENG: '„STOPS IN TIME“',
+            },
+            AUTHOR: {
+                SER: 'Ivona Pleskonja',
+                ENG: 'Ivona Pleskonja'
+            },
+            YEAR: 2015,
+            TEXT: {
+                SER: 'Razmišljajući o sopstvenom identitetu kroz dimenziju vremena, pronalazim inspiraciju u starim porodičnim fotografijama.',
+                ENG: 'When I think about my identity, through the dimension of time, I find inspiration in my old family photographs.'
+            },
+            MEDIA: {
+                MOBILE: {
+                    TYPE: 'image',
+                    ALT: 'exhibition-cover',
+                    SRC: stopsInTimeCover,
+                },
+                DESKTOP: {
+                    TYPE: 'image',
+                    ALT: 'exhibition-cover',
+                    SRC: stopsInTimeCover,
+                }
+            },
+            EXTERNAL_LINK: {
+                URL: 'https://www.youtube.com/watch?v=HEmwtcBfewM',
+                LABEL: {
+                    SER: 'POGLEDAJ VIDEO OVDE',
+                    ENG: 'WATCH VIDEO HERE'
+                }
+            },
+        },
+        SECTIONS: {
+            MOBILE: [
+                {
+                    TYPE: 'contained_image_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text_grid',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Tragajući za odgovorima i vremenskim stanicama još jedno od polazišta bio je i beogradski Blok 45, lokacija Galerije BLOK u kojoj izlažem ovaj novi ciklus crteža. Od rođenja do svoje šeste godine rasla sam u Bloku 45 i živela u jednoj kasnijoj fazi svog života, kao mlada majka.',
+                                                ENG: 'In my search for the answers and for these stops in time, one of the starting points was Belgrade\'s Block 45, the location of the Blok gallery in which I am exhibiting my new series of drawings. I had lived in Block 45 from the day I was born until the age of six. I also lived there some years later as a young mother. The drawings from this series are inspired by the original photographs of my family made during the period 1940 – 2001. They present  monochromatic portraits of my ancestors as well as that of younger family members.'
+                                            },
+                                        },
+                                    ],
+                                ],
+                            }
+                        ],
+                        [
+                            {
+                                TYPE: 'inverted_quote',
+                                CLASS_NAME: 'md:py-0 md:px-10',
+                                TEXT: {
+                                    SER: 'Ove porodične fotografije, u sebi nose misteriju starih vremena i za mene predstavljaju spontano nastale vremenske stanice u kojima je moguće iščitati odgovore na pitanja koja sebi postavljam: ko sam ja? ko smo mi? koji sled događaja je bio neophodan da bih ja danas postojala / da bi bilo ko postojao? da li je moj život sličan životima mojih predaka?',
+                                    ENG: 'To me, these photographs are holding the mystery of old times. They become spontaneous stops in time at which it is possible to get the answers to the questions I am asking myself: Who am I? Who are we? Which sequence of events was needed for my existence / for anyone\'s existence? Is my life similar to the lives of my ancestors?',
+                                },
+                            },
+                        ],
+                        [
+                            {
+                                TYPE: 'text_grid',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Crteži iz ovog ciklusa su nadahnuti originalnim fotografijama moje porodice iz perioda od 1940. do 2001. godine i predstavljaju monohromatske portrete mojih predaka, kao i mlađe članove porodice. Rad „Tereza Ivona 1975.“ je direktno vezan za moje najranije uspomene iz Bloka 45 i predstavlja scenu u kojoj me moja tetka Tereza nosi na svom ramenu. Tu imam godinu dana. Stojimo na rubu Bloka 45 i posmatramo spuštanje aviona na tadašnji aerodrom Surčin.',
+                                                ENG: 'The work Teresa and Ivona 1975 is directly connected to my earliest memories from Block 45. It presents the scene in which my aunt Theresa is holding me on her shoulders. I was one year old then. We were standing on the outskirts of Block 45 and watching an airplane land at the former airport Surcin.'
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Ispred nas je beskrajni predeo, kraj Beograda i horizont u kome se u daljini „dodiruju“ suva letnja trava i nebo. U ovaj rad ulivam sećanja na ovu situaciju. koja u meni bude prijatnost, bliskost, slobodu i osećaj da je budućnost koja dolazi uzbudljiva i puna raznih životnih mogućnosti.',
+                                                ENG: 'In front of us we could see a never-ending landscape and the rim of Belgrade City, while on the horizon the dry summer grass was touching the sky. I instilled into this work my memories of that situation, awakening the sense of pleasantness, intimacy, and freedom in me, and the feeling that the upcoming future would be exciting and full of various life opportunities.'
+                                            },
+                                        },
+                                    ],
+                                ],
+                            }
+                        ]
+                    ]
+                },
+                {
+                    TYPE: 'carousel',
+                    SLIDES: [
+                        {
+                            SRC: stopsInTimeSlide1,
+                            ALT: 'stops-in-time-slide-1',
+                        },
+                        {
+                            SRC: stopsInTimeSlide2,
+                            ALT: 'stops-in-time-slide-2',
+                        },
+                        {
+                            SRC: stopsInTimeSlide3,
+                            ALT: 'stops-in-time-slide-3',
+                        },
+                        {
+                            SRC: stopsInTimeSlide4,
+                            ALT: 'stops-in-time-slide-4',
+                        },
+                        {
+                            SRC: stopsInTimeSlide5,
+                            ALT: 'stops-in-time-slide-5',
+                        },
+                        {
+                            SRC: stopsInTimeSlide6,
+                            ALT: 'stops-in-time-slide-6',
+                        },
+                    ]
+                },
+                {
+                    TYPE: 'inverted_text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Putujući kroz vreme zaustavila sam se nekoliko puta, najčešće u scenama u kojima majka u naručju drži dete. Pravim vremenske preskoke od oko dve decenije i koristim fotografijom zaustavljeni momenat kao inspiraciju za sledeći crtež, na kome predstavljam ponovo majku sa detetom, majku, koja je u prethodnom crtežu predstavljena kao dete. Portret moje ćerke Tasje iz doba kada je imala pet godina postavljam uz svoj autoportret, na kome ja imam takođe pet godina. Na ovaj način upoređujem i povezujem proživljene istorije i živote, a koji se u ovom ciklusu crteža povezuju u jedinstveni sadašnji trenutak, emitujući svo proživljeno iskustvo na posmatrača.',
+                                    ENG: 'In my journey through time, I stopped several times, most often at the scenes in which a mother holds a baby in her arms. Then I would jump about twenty years in time and use a moment caught by camera as an inspiration for my next drawing. In that drawing, I would again present the scene of mother with child, but the mother who was herself the child in my previous drawing. In my next work I am juxtaposing a portrait of my daughter Tasja when she was five years old with a portrait of myself, in which I am also five years old. In this way I have compared and linked the lived histories with the lives which are, in this series of works, connected in a unique present moment which is transmitting all the lived experience on the viewer.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Energija emocija i lične istorije prenose se sa generacije na generaciju. Nasleđem se stvaraju snažne povezanosti, bliskost i jedinstvo članova porodice, čak i onih koji se nikada u životu nisu sreli.',
+                                    ENG: 'Energy, emotions and personal histories are transferred from generation to generation. Through heritage, powerful sense of connection, intimacy and unity is maintained, even between family members who have never met one another.'
+                                },
+                            },
+                        ]
+                    ]
+                }
+            ],
+            DESKTOP: [
+                {
+                    TYPE: 'contained_image_grid',
+                    CLASS_NAME: 'flex-row md:py-10',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'inverted_quote',
+                                WIDTH: 54,
+                                CLASS_NAME: 'md:py-0 md:px-10',
+                                TEXT: {
+                                    SER: 'Ove porodične fotografije, u sebi nose misteriju starih vremena i za mene predstavljaju spontano nastale vremenske stanice u kojima je moguće iščitati odgovore na pitanja koja sebi postavljam: ko sam ja? ko smo mi? koji sled događaja je bio neophodan da bih ja danas postojala / da bi bilo ko postojao? da li je moj život sličan životima mojih predaka?',
+                                    ENG: 'To me, these photographs are holding the mystery of old times. They become spontaneous stops in time at which it is possible to get the answers to the questions I am asking myself: Who am I? Who are we? Which sequence of events was needed for my existence / for anyone\'s existence? Is my life similar to the lives of my ancestors?',
+                                },
+                            },
+                            {
+                                TYPE: 'text_grid',
+                                CLASS_NAME: 'w-[46%] md:mx-5 md:px-5',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Tragajući za odgovorima i vremenskim stanicama još jedno od polazišta bio je i beogradski Blok 45, lokacija Galerije BLOK u kojoj izlažem ovaj novi ciklus crteža. Od rođenja do svoje šeste godine rasla sam u Bloku 45 i živela u jednoj kasnijoj fazi svog života, kao mlada majka.',
+                                                ENG: 'In my search for the answers and for these stops in time, one of the starting points was Belgrade\'s Block 45, the location of the Blok gallery in which I am exhibiting my new series of drawings. I had lived in Block 45 from the day I was born until the age of six. I also lived there some years later as a young mother. The drawings from this series are inspired by the original photographs of my family made during the period 1940 – 2001. They present  monochromatic portraits of my ancestors as well as that of younger family members.'
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Crteži iz ovog ciklusa su nadahnuti originalnim fotografijama moje porodice iz perioda od 1940. do 2001. godine i predstavljaju monohromatske portrete mojih predaka, kao i mlađe članove porodice. Rad „Tereza Ivona 1975.“ je direktno vezan za moje najranije uspomene iz Bloka 45 i predstavlja scenu u kojoj me moja tetka Tereza nosi na svom ramenu. Tu imam godinu dana. Stojimo na rubu Bloka 45 i posmatramo spuštanje aviona na tadašnji aerodrom Surčin.',
+                                                ENG: 'The work Teresa and Ivona 1975 is directly connected to my earliest memories from Block 45. It presents the scene in which my aunt Theresa is holding me on her shoulders. I was one year old then. We were standing on the outskirts of Block 45 and watching an airplane land at the former airport Surcin.'
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            TEXT: {
+                                                SER: 'Ispred nas je beskrajni predeo, kraj Beograda i horizont u kome se u daljini „dodiruju“ suva letnja trava i nebo. U ovaj rad ulivam sećanja na ovu situaciju. koja u meni bude prijatnost, bliskost, slobodu i osećaj da je budućnost koja dolazi uzbudljiva i puna raznih životnih mogućnosti.',
+                                                ENG: 'In front of us we could see a never-ending landscape and the rim of Belgrade City, while on the horizon the dry summer grass was touching the sky. I instilled into this work my memories of that situation, awakening the sense of pleasantness, intimacy, and freedom in me, and the feeling that the upcoming future would be exciting and full of various life opportunities.'
+                                            },
+                                        },
+                                    ],
+                                ],
+                            }
+                        ],
+                    ]
+                },
+                {
+                    TYPE: 'carousel',
+                    SLIDES: [
+                        {
+                            SRC: stopsInTimeSlide1,
+                            ALT: 'stops-in-time-slide-1',
+                        },
+                        {
+                            SRC: stopsInTimeSlide2,
+                            ALT: 'stops-in-time-slide-2',
+                        },
+                        {
+                            SRC: stopsInTimeSlide3,
+                            ALT: 'stops-in-time-slide-3',
+                        },
+                        {
+                            SRC: stopsInTimeSlide4,
+                            ALT: 'stops-in-time-slide-4',
+                        },
+                        {
+                            SRC: stopsInTimeSlide5,
+                            ALT: 'stops-in-time-slide-5',
+                        },
+                        {
+                            SRC: stopsInTimeSlide6,
+                            ALT: 'stops-in-time-slide-6',
+                        },
+                    ]
+                },
+                {
+                    TYPE: 'inverted_text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Putujući kroz vreme zaustavila sam se nekoliko puta, najčešće u scenama u kojima majka u naručju drži dete. Pravim vremenske preskoke od oko dve decenije i koristim fotografijom zaustavljeni momenat kao inspiraciju za sledeći crtež, na kome predstavljam ponovo majku sa detetom, majku, koja je u prethodnom crtežu predstavljena kao dete. Portret moje ćerke Tasje iz doba kada je imala pet godina postavljam uz svoj autoportret, na kome ja imam takođe pet godina. Na ovaj način upoređujem i povezujem proživljene istorije i živote, a koji se u ovom ciklusu crteža povezuju u jedinstveni sadašnji trenutak, emitujući svo proživljeno iskustvo na posmatrača.',
+                                    ENG: 'In my journey through time, I stopped several times, most often at the scenes in which a mother holds a baby in her arms. Then I would jump about twenty years in time and use a moment caught by camera as an inspiration for my next drawing. In that drawing, I would again present the scene of mother with child, but the mother who was herself the child in my previous drawing. In my next work I am juxtaposing a portrait of my daughter Tasja when she was five years old with a portrait of myself, in which I am also five years old. In this way I have compared and linked the lived histories with the lives which are, in this series of works, connected in a unique present moment which is transmitting all the lived experience on the viewer.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Energija emocija i lične istorije prenose se sa generacije na generaciju. Nasleđem se stvaraju snažne povezanosti, bliskost i jedinstvo članova porodice, čak i onih koji se nikada u životu nisu sreli.',
+                                    ENG: 'Energy, emotions and personal histories are transferred from generation to generation. Through heritage, powerful sense of connection, intimacy and unity is maintained, even between family members who have never met one another.'
                                 },
                             },
                         ]

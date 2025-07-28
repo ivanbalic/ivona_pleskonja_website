@@ -60,7 +60,7 @@ export function DesktopGallery({ locale, gallery, exhibitionId }: { locale: stri
                         transition={{duration: 1, ease: "easeInOut"}}
                         className="w-full h-full flex items-center justify-center"
                     >
-                        <Image src={selected.SRC?.FULL ?? ''} alt={selected.ALT} className="max-h-full object-cover" placeholder="blur"/>
+                        <Image src={selected.SRC?.FULL ?? ''} alt={selected.ALT} className={cn("max-h-full object-cover", selected.CLASS_NAME)} placeholder="blur"/>
                     </motion.div>
                 </AnimatePresence>
             </div>}
@@ -76,21 +76,31 @@ export function DesktopGallery({ locale, gallery, exhibitionId }: { locale: stri
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: -50 }}
                             transition={{ duration: 0.5, ease: "easeInOut" }}
+                            className={cn(
+                                "w-full h-full flex flex-col",
+                                selected.TYPE === 'vertical' ? 'items-center justify-center' : 'justify-end items-start'
+                            )}
                         >
-                            <div className="text-[36px] leading-[100%] font-bold font-roboto-serif mb-[5px] uppercase">„{selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}“</div>
+                            <div className={cn(
+                                selected.TYPE === 'vertical' ? 'justify-center items-center' : 'justify-end items-start',
+                                "w-full flex flex-col text-[36px] leading-[100%] font-bold font-roboto-serif mb-[5px] uppercase"
+                            )}>
+                                „{selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}“
+                            </div>
                             {selected.TYPE === 'vertical' && <div className="text-[32px] leading-[100%] font-bold font-roboto-serif mt-[5px]">{selected.DETAILS?.SUBTITLE?.[locale.toUpperCase() as keyof ITranslations]}</div>}
                             {selected.TYPE !== 'vertical' &&
-                                <div className="flex flex-col text-[22px] leading-[100%] tracking-[.05em] font-bold mb-5">
+                                <div className="w-full flex flex-col justify-end items-start text-[22px] leading-[100%] tracking-[.05em] font-bold mb-5">
                                     <div>{selected.DETAILS?.CREATED_AT} | {selected.DETAILS?.DIMENSIONS}</div>
                                     <div>{selected.DETAILS?.TECHNIQUE[locale.toUpperCase() as keyof ITranslations]}</div>
                                 </div>
                             }
                             <div className={cn(
                                 selected.TYPE === 'vertical' ? 'my-10': 'mb-20',
-                                "text-black font-helvetica text-[16px] leading-[24px] tracking-[.05em]")}>{selected.DETAILS?.DESCRIPTION[locale.toUpperCase() as keyof ITranslations]}</div>
+                                "text-black font-helvetica text-[16px] leading-[24px] tracking-[.05em]")}>{selected.DETAILS?.DESCRIPTION[locale.toUpperCase() as keyof ITranslations]}
+                            </div>
                             {selected.TYPE === 'vertical' && <div className={cn(
                                 "flex justify-center items-center bg-white",
-                                "min-h-[200px] xl:max-h-[715px] max-h-full w-full max-w-full"
+                                "min-h-[200px] max-h-full xl:max-h-[715px] w-full max-w-full"
                             )}>
                                 <AnimatePresence mode="wait">
                                     <motion.div
@@ -101,21 +111,23 @@ export function DesktopGallery({ locale, gallery, exhibitionId }: { locale: stri
                                         transition={{duration: 1, ease: "easeInOut"}}
                                         className="w-full h-full flex items-center justify-center"
                                     >
-                                        <Image src={selected.SRC?.FULL ?? ''} alt={selected.ALT} className="max-h-full object-cover" placeholder="blur"/>
+                                        <Image src={selected.SRC?.FULL ?? ''} alt={selected.ALT} className={cn("max-h-full object-cover", selected.CLASS_NAME)} placeholder="blur"/>
                                     </motion.div>
                                 </AnimatePresence>
                             </div>}
                             {selected.TYPE === 'vertical' && (
                                 <div className={cn(
-                                    "flex flex-col font-helvetica text-[26px] leading-[100%] tracking-[.15em] italic my-5 text-left gap-1",
+                                    "flex flex-col justify-start w-full font-helvetica text-[26px] leading-[100%] tracking-[.15em] italic my-5 text-left gap-1",
                                     selected.DETAILS?.CLASS_NAME
                                 )}
                                 >
-                                    <div>{nameLabel}: {selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}</div>
-                                    <div>{dimensionsLabel}: {selected.DETAILS?.DIMENSIONS} {selected.DETAILS?.ADDITIONAL_DIMENSIONS_INFO ? selected.DETAILS?.ADDITIONAL_DIMENSIONS_INFO?.[locale.toUpperCase() as keyof ITranslations] : ''}</div>
-                                    <div>{fragmentDimensionsLabel}: {selected.DETAILS?.FRAGMENT_DIMENSIONS}</div>
-                                    <div>{techniqueLabel}: {selected.DETAILS?.TECHNIQUE[locale.toUpperCase() as keyof ITranslations]}</div>
-                                    <div>{yearLabel}: {selected.DETAILS?.CREATED_AT}</div>
+                                    {selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations] && <div>{nameLabel}: {selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}</div>}
+                                    {selected.DETAILS?.DIMENSIONS &&<div>{dimensionsLabel}: {selected.DETAILS?.DIMENSIONS} {selected.DETAILS?.ADDITIONAL_DIMENSIONS_INFO ? selected.DETAILS?.ADDITIONAL_DIMENSIONS_INFO?.[locale.toUpperCase() as keyof ITranslations] : ''}</div>}
+                                    {selected.DETAILS?.FRAGMENT_DIMENSIONS && <div>{fragmentDimensionsLabel}: {selected.DETAILS?.FRAGMENT_DIMENSIONS}</div>}
+                                    {selected.DETAILS?.TECHNIQUE[locale.toUpperCase() as keyof ITranslations] &&
+                                        <div>{techniqueLabel}: {selected.DETAILS?.TECHNIQUE[locale.toUpperCase() as keyof ITranslations]}</div>
+                                    }
+                                    {selected.DETAILS?.CREATED_AT && <div>{yearLabel}: {selected.DETAILS?.CREATED_AT}</div>}
                                 </div>
                             )}
                         </motion.div>
