@@ -52,7 +52,7 @@ export function MyWorkDetails({ data, locale }: { data: IMyWorks, locale: string
             </div>
             <div className='flex flex-col-reverse md:flex-col max-md:mb-10 text-left md:text-center'>
                 <div
-                    className="flex flex-col gap-3 sm:gap-5 font-helvetica text-[16px] leading-[24px] md:leading-[100%] tracking-[.05em] md:tracking-[.15em]">
+                    className="flex flex-col gap-3 sm:gap-5 font-helvetica text-[16px] leading-[24px] md:leading-[100%] tracking-[.05em]">
                     {description.map((text, index) => <span key={`description-section-${index}`}>{text}</span>)}
                 </div>
                 <div className="w-full mb-6 md:my-10">

@@ -63,8 +63,9 @@ export function ArticleCover({ cover, locale }: { cover: IArticleCover, locale: 
                     </div>}
                     {cover.YEAR && cover.AUTHOR[locale.toUpperCase() as keyof ITranslations] && <div
                         className="flex flex-row md:flex-col gap-2 font-helvetica text-[16px] leading-[10px] md:leading-[100%] tracking-[.05em] md:tracking-[.15em] max-md:text-externalLink">
-                        <div
-                            className="font-normal md:font-medium max-md:border-r border-externalLink max-md:pr-2">{cover.YEAR}</div>
+                        <div className="font-normal md:font-medium max-md:border-r border-externalLink max-md:pr-2">
+                            {cover.YEAR}
+                        </div>
                         <div className="font-normal md:font-bold">
                             {cover.AUTHOR[locale.toUpperCase() as keyof ITranslations]}
                         </div>

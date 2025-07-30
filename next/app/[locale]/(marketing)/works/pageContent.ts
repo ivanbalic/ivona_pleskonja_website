@@ -122,6 +122,19 @@ import terezaIvonaPreview from '@/public/assets/stops-in-time/tereza-ivona-previ
 import veraJulijaTerezaFull from '@/public/assets/stops-in-time/vera-julija-treza-full.webp';
 import veraVeronaPalPreview from '@/public/assets/stops-in-time/vera-verona-pal-preview.webp';
 import veraJulijaTerezaPreview from '@/public/assets/stops-in-time/vera-julija-tereza-preview.webp';
+// SPIRIT
+import faithFull from '@/public/assets/spirit/faith-full.webp';
+import teslaFull from '@/public/assets/spirit/tesla-full.webp';
+import jean1Full from '@/public/assets/spirit/jean-1-full.webp';
+import jean2Full from '@/public/assets/spirit/jean-2-full.webp';
+import acrobatFull from '@/public/assets/spirit/acrobat-full.webp';
+import athletesFull from '@/public/assets/spirit/athletes-full.webp';
+import faithPreview from '@/public/assets/spirit/faith-preview.webp';
+import teslaPreview from '@/public/assets/spirit/tesla-preview.webp';
+import jean1Preview from '@/public/assets/spirit/jean-1-preview.webp';
+import jean2Preview from '@/public/assets/spirit/jean-2-preview.webp';
+import acrobatPreview from '@/public/assets/spirit/acrobat-preview.webp';
+import athletesPreview from '@/public/assets/spirit/athletes-preview.webp';
 
 export const PAGE_CONTENT = Object.freeze({
     TITLE: {
@@ -136,7 +149,7 @@ export const PAGE_CONTENT = Object.freeze({
         { ID: 'strong_people', TITLE: { SER: { YEAR: '2016', TEXT: 'Jaki ljudi' }, ENG: { YEAR: '2016', TEXT: 'Strong People' } }, DISABLED: false, LINK: 'articles/5' },
         { ID: 'stops_in_time', TITLE: { SER: { YEAR: '2015', TEXT: 'Vremenske stanice' }, ENG: { YEAR: '2015', TEXT: 'Stops In Time' } }, DISABLED: false, LINK: null },
         { ID: 'children_of_the_sun', TITLE: { SER: { YEAR: '2014', TEXT: 'Deca Sunca' }, ENG: { YEAR: '2014', TEXT: 'Children of the Sun' } }, DISABLED: false, LINK: null },
-        { ID: 'spirit', TITLE: { SER: { YEAR: '2011', TEXT: 'Duh' }, ENG: { YEAR: '2011', TEXT: 'Spirit' } }, DISABLED: true, LINK: null },
+        { ID: 'spirit', TITLE: { SER: { YEAR: '2011', TEXT: 'Duh' }, ENG: { YEAR: '2011', TEXT: 'Spirit' } }, DISABLED: false, LINK: null },
         { ID: 'one_world', TITLE: { SER: { YEAR: '2009', TEXT: 'Jedan Svet' }, ENG: { YEAR: '2009', TEXT: 'One World' } }, DISABLED: true, LINK: null },
         { ID: 'psychodrama', TITLE: { SER: { YEAR: '2008', TEXT: 'Psihodrama' }, ENG: { YEAR: '2008', TEXT: 'Psychodrama' } }, DISABLED: false, LINK: 'articles/6' },
         { ID: 'origin', TITLE: { SER: { YEAR: '2007', TEXT: 'Izvor' }, ENG: { YEAR: '2007', TEXT: 'Origin' } }, DISABLED: true, LINK: null },
@@ -2031,7 +2044,6 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             ID: 1,
                             TYPE: 'vertical',
                             SRC: {
-                                COLOR: 'transparent',
                                 FULL: tasjaFull,
                                 PREVIEW: tasjaPreview,
                             },
@@ -2180,7 +2192,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             TYPE: 'vertical',
                             SRC: {
                                 FULL: veraVeronaPalFull,
-                                PREVIEW: veraVeronaPalFull,
+                                PREVIEW: veraVeronaPalPreview,
                             },
                             ALT: "vera-verona-pal",
                             GRID_PLACES: 2,
@@ -2206,6 +2218,227 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             }
                         },
                     ]
+                ]
+            }
+        ],
+    },
+    SPIRIT: {
+        ID: 'spirit',
+        EXHIBITION_ID: 9,
+        TEMPLATE_ID: 'TEMPLATE_ID',
+        HISTORY: [
+            {
+                ID: 'home',
+                TITLE: {
+                    SER: 'Početna',
+                    ENG: 'Home',
+                },
+                LINK: ''
+            },
+            {
+                ID: 'works',
+                TITLE: {
+                    SER: "Radovi",
+                    ENG: 'Works',
+                },
+                LINK: 'works'
+            },
+            {
+                ID: 'spirit',
+                TITLE: {
+                    SER: 'Duh',
+                    ENG: 'Spirit'
+                },
+                LINK: 'works/spirit'
+            },
+        ],
+        TITLE: {
+            SER: '„Duh“',
+            ENG: '„Spirit“'
+        },
+        DESCRIPTION: [
+            {
+                SER: '“Slikam ljude koji su u stanju duboke koncentracije, fokusirani na ostvarenje svog zadatka, spremni da idu i dalje od svog "kraja" da bi postigli željeni rezultat, pomeraju svoje granice, otvoraju nove svetove. Zadržavam pažnju na tom posebnom stanju (jedinstva tela uma i duha) čoveka. Novi ciklus slika "DUH" se prirodno nastavlja na moje prethodne teme o herojima. Ljudi / ličnosti koje sada predstavljam su veliki posvećenici, borci i heroji takodje.',
+                ENG: '“I make paintings of people who are in a state of deep concentration, focused on their tasks and the ways of achieving them, ready to go beyond the “edge” in order to achieve the desired result, to move the boundaries, to open new worlds.” My attention is concentrated on that particular state (the harmony of body, mind and spirit) of man. The new cycles of paintings entitled SPIRIT is a logical continuation of my earlier works whose theme was heroes. People/individuals that I present now are great enthusiasts, fighters and heroes, too.',
+            },
+            {
+                SER: 'Na primer: rad "VERA" predstavlja mladu devojku (moju baku) pred odlazak na rad u Nemačku. Na njenom licu se vidi potpuna, svesna spremnost na ogromnu promenu koja će uslediti u njenom životu. Rad "AKROBATA" predstavlja italijanskog akrobatu iz cirkusa Soleil, iz predstave "Quidam", neposredno pred neverovatni skok koji će izvesti. "ATLETE" takođe iz cirkusa Soleil, nakon izvedenog neverovatno-savršenog balansa, sinergije dva tela, koji radeći tačku, nikada ne gube kontakt, pomerajući se gotovo neprimetno. "TESLA" je u bliskom kontaktu sa svojim izumom. "ŽAN1" i "ŽAN2" Žan Mark Bar koji predstavlja Žaka Majola u filmu "The Big Blue", u trenutku neposredno pred uron u more na, do tada, neverovatnu dubinu i vreme provedeno pod vodom.”',
+                ENG: 'FAITH (VERA), for example, represents a young girl (my grandmother) before she went to work in Germany. Her face reveals readiness, complete and conscious acceptance of enormous changes that were to take place in her life. ACROBAT is about an Italian acrobat from the Cirque de Soleil as he appeared in the show Quidam just before an amazing jump that he was about to make. ATHLETES, are also from the Cirque de Soleil, are seen after their incredibly perfect balancing act; two bodies in synergy which never lose contact during the act, while moving almost invisible. TESLA has a close connection with his inventions. JEAN1 and JEAN2 show Jean-Marc Barr in the movie The Big Blue playing Jacques Mayol just before he plunged into the sea, the depths and the duration of which were unheard of until then.”'
+            },
+        ],
+        GALLERY: [
+            {
+                ID: 1,
+                TITLE: null,
+                CONTENT: [
+                    [
+                        {
+                            ID: 1,
+                            CLASS_NAME: 'object-contain',
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: acrobatFull,
+                                PREVIEW: acrobatPreview,
+                            },
+                            ALT: "acrobat",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2011.',
+                                DIMENSIONS: '2 x 1.5 m',
+                                NAME: {
+                                    SER: 'AKROBATA' ,
+                                    ENG: 'ACROBAT'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Ulje na platnu / diptih',
+                                    ENG: 'Oil on canvas / diptych'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                        {
+                            ID: 2,
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: athletesFull,
+                                PREVIEW: athletesPreview,
+                            },
+                            ALT: "athletes",
+                            GRID_PLACES: 2,
+                            DETAILS: {
+                                CREATED_AT: '2011.',
+                                DIMENSIONS: '2 x 3 m',
+                                NAME: {
+                                    SER: 'ATLETE',
+                                    ENG: 'ATHLETES'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Ulje na platnu / poliptih',
+                                    ENG: 'Oil on canvas / polyptych'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                        {
+                            ID: 3,
+                            CLASS_NAME: 'object-contain',
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: jean1Full,
+                                PREVIEW: jean1Preview,
+                            },
+                            ALT: "jean-1",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2011.',
+                                DIMENSIONS: '2 x 1.5 m',
+                                NAME: {
+                                    SER: 'JEAN 1' ,
+                                    ENG: 'JEAN 1'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Ulje na platnu / diptih',
+                                    ENG: 'Oil on canvas / diptych'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                    ],
+                    [
+                        {
+                            ID: 4,
+                            CLASS_NAME: 'object-contain',
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: teslaFull,
+                                PREVIEW: teslaPreview,
+                            },
+                            ALT: "tesla",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2011.',
+                                DIMENSIONS: '1 x 1.5 m',
+                                ADDITIONAL_DIMENSIONS_INFO: {
+                                    SER: '/ poliptih',
+                                    ENG: '/ polyptych'
+                                },
+                                NAME: {
+                                    SER: 'TESLA',
+                                    ENG: 'TESLA'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Ulje na platnu / diptih',
+                                    ENG: 'Oil on canvas / diptych'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: '',
+                                }
+                            }
+                        },
+                        {
+                            ID: 5,
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: jean2Full,
+                                PREVIEW: jean2Preview,
+                            },
+                            ALT: "jean-2",
+                            GRID_PLACES: 2,
+                            DETAILS: {
+                                CREATED_AT: '2011.',
+                                DIMENSIONS: '2 x 3 m',
+                                NAME: {
+                                    SER: 'JEAN 2',
+                                    ENG: 'JEAN 2'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Ulje na platnu / poliptih',
+                                    ENG: 'Oil on canvas / polyptych'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                        {
+                            ID: 6,
+                            CLASS_NAME: 'object-contain',
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: faithFull,
+                                PREVIEW: faithPreview,
+                            },
+                            ALT: "faith-1",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2011.',
+                                DIMENSIONS: '2 x 1.5 m',
+                                NAME: {
+                                    SER: 'VERA' ,
+                                    ENG: 'FAITH'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Ulje na platnu / diptih',
+                                    ENG: 'Oil on canvas / diptych'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                    ],
                 ]
             }
         ],
