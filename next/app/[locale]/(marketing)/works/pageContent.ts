@@ -135,6 +135,17 @@ import jean1Preview from '@/public/assets/spirit/jean-1-preview.webp';
 import jean2Preview from '@/public/assets/spirit/jean-2-preview.webp';
 import acrobatPreview from '@/public/assets/spirit/acrobat-preview.webp';
 import athletesPreview from '@/public/assets/spirit/athletes-preview.webp';
+// ONE WORLD
+import milkyWayFull from '@/public/assets/one-world/milky-way-full.webp';
+import goldenBoyFull from '@/public/assets/one-world/golden-boy-full.webp';
+import milkyWayPreview from '@/public/assets/one-world/milky-way-preview.webp';
+import goldenBoyPreview from '@/public/assets/one-world/golden-boy-preview.webp';
+import theRevolutionariesFull from '@/public/assets/one-world/the-Revolutionaries-full.webp';
+import theRevolutionariesPreview from '@/public/assets/one-world/the-Revolutionaries-preview.webp';
+import revolutionForTheEvolutionFull from '@/public/assets/one-world/revolution-for-the-evolution-full.webp';
+import closeEncounterOfThirdKindFull from '@/public/assets/one-world/close-encounter-of-third-kind-full.webp';
+import revolutionForTheEvolutionPreview from '@/public/assets/one-world/revolution-for-the-evolution-preview.webp';
+import closeEncounterOfThirdKindPreview from '@/public/assets/one-world/close-encounter-of-third-kind-preview.webp';
 
 export const PAGE_CONTENT = Object.freeze({
     TITLE: {
@@ -150,7 +161,7 @@ export const PAGE_CONTENT = Object.freeze({
         { ID: 'stops_in_time', TITLE: { SER: { YEAR: '2015', TEXT: 'Vremenske stanice' }, ENG: { YEAR: '2015', TEXT: 'Stops In Time' } }, DISABLED: false, LINK: null },
         { ID: 'children_of_the_sun', TITLE: { SER: { YEAR: '2014', TEXT: 'Deca Sunca' }, ENG: { YEAR: '2014', TEXT: 'Children of the Sun' } }, DISABLED: false, LINK: null },
         { ID: 'spirit', TITLE: { SER: { YEAR: '2011', TEXT: 'Duh' }, ENG: { YEAR: '2011', TEXT: 'Spirit' } }, DISABLED: false, LINK: null },
-        { ID: 'one_world', TITLE: { SER: { YEAR: '2009', TEXT: 'Jedan Svet' }, ENG: { YEAR: '2009', TEXT: 'One World' } }, DISABLED: true, LINK: null },
+        { ID: 'one_world', TITLE: { SER: { YEAR: '2009', TEXT: 'Jedan Svet' }, ENG: { YEAR: '2009', TEXT: 'One World' } }, DISABLED: false, LINK: null },
         { ID: 'psychodrama', TITLE: { SER: { YEAR: '2008', TEXT: 'Psihodrama' }, ENG: { YEAR: '2008', TEXT: 'Psychodrama' } }, DISABLED: false, LINK: 'articles/6' },
         { ID: 'origin', TITLE: { SER: { YEAR: '2007', TEXT: 'Izvor' }, ENG: { YEAR: '2007', TEXT: 'Origin' } }, DISABLED: true, LINK: null },
         { ID: 'heroes', TITLE: { SER: { YEAR: '2007', TEXT: 'Heroji' }, ENG: { YEAR: '2007', TEXT: 'Heroes' } }, DISABLED: true, LINK: null },
@@ -2436,6 +2447,185 @@ export const SUBPAGE_CONTENT = Object.freeze({
                                     SER: '',
                                     ENG: ''
                                 },
+                            }
+                        },
+                    ],
+                ]
+            }
+        ],
+    },
+    ONE_WORLD: {
+        ID: 'one_world',
+        EXHIBITION_ID: 10,
+        TEMPLATE_ID: 'TEMPLATE_ID',
+        HISTORY: [
+            {
+                ID: 'home',
+                TITLE: {
+                    SER: 'Početna',
+                    ENG: 'Home',
+                },
+                LINK: ''
+            },
+            {
+                ID: 'works',
+                TITLE: {
+                    SER: "Radovi",
+                    ENG: 'Works',
+                },
+                LINK: 'works'
+            },
+            {
+                ID: 'one_world',
+                TITLE: {
+                    SER: 'Jedan svet',
+                    ENG: 'One World'
+                },
+                LINK: 'works/one_world'
+            },
+        ],
+        TITLE: {
+            SER: '„Jedan Svet“',
+            ENG: '„One World“'
+        },
+        DESCRIPTION: [
+            {
+                SER: 'Mahatma Gandhi je rekao : “Jedna sila prožima sve.” Za mene JEDAN SVET predstavlja jedinstvo svih bića na svetu, ili jedinstvenu silu koja živi u svima nama. Ova izložba predstavlja borbu ili put ka osvešćivanju tog jedinstva. Taj put za mene predstavlja novu evoluciju u kojoj će nadam se doći do razvoja čoveka, koji bi postao novi čovek, čista vrlina, harmonija, univerzalna ljubav i radost.',
+                ENG: 'Mahatma Gandhi once said: “One power permeates all.” For me, ONE WORLD represents the unity of all beings on Earth, or the unique force that lives within each of us. This exhibition represents the struggle—or the journey—toward becoming aware of that unity. To me, that journey signifies a new evolution, in which, I hope, humanity will develop into a new kind of human being: one of pure virtue, harmony, universal love, and joy.',
+            },
+        ],
+        GALLERY: [
+            {
+                ID: 1,
+                TITLE: null,
+                CONTENT: [
+                    [
+                        {
+                            ID: 1,
+                            CLASS_NAME: 'object-contain',
+                            SRC: {
+                                FULL: milkyWayFull,
+                                PREVIEW: milkyWayPreview,
+                            },
+                            ALT: "milky-way",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2009.',
+                                DIMENSIONS: '155 x 125 cm',
+                                NAME: {
+                                    SER: 'MLEČNI PUT' ,
+                                    ENG: 'MILKY WAY'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovana tehnika na lanenom stolnjaku/diptih',
+                                    ENG: 'Combined technique on a linen tablecloth/diptych'
+                                },
+                                DESCRIPTION: {
+                                    SER: 'Devojka, hrabra junakinja iz savremene Srbije.',
+                                    ENG: 'A girl, a brave heroine from modern-day Serbia.'
+                                },
+                            }
+                        },
+                        {
+                            ID: 2,
+                            SRC: {
+                                FULL: revolutionForTheEvolutionFull,
+                                PREVIEW: revolutionForTheEvolutionPreview,
+                            },
+                            ALT: "revolution-for-evolution",
+                            GRID_PLACES: 2,
+                            DETAILS: {
+                                CREATED_AT: '2009.',
+                                DIMENSIONS: '2 x 3 m',
+                                NAME: {
+                                    SER: 'REVOLUCIJA ZA EVOLUCIJU',
+                                    ENG: 'REVOLUTION FOR EVOLUTION'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Akril na platnu / poliptih',
+                                    ENG: 'Acrylic on canvas / polyptych'
+                                },
+                                DESCRIPTION: {
+                                    SER: 'Monumentalna slika na kojoj su predstavljena dva smirena, neustrasiva, hrabra borca ovog vremena. U pozadini je povorka istorijske nenasilne revolucije Mahatme Gandhija. Ova kompozicija u celini simbolicno predstavlja revoluciju za evoluciju coveka.',
+                                    ENG: 'A monumental painting depicting two calm, fearless, brave fighters of our time. In the background is the procession of Mahatma Gandhi’s historic nonviolent revolution. This composition as a whole symbolically represents the revolution for the evolution of mankind.'
+                                },
+                            }
+                        },
+                        {
+                            ID: 3,
+                            SRC: {
+                                FULL: goldenBoyFull,
+                                PREVIEW: goldenBoyPreview,
+                            },
+                            ALT: "golden-boy",
+                            GRID_PLACES: 2,
+                            DETAILS: {
+                                CREATED_AT: '2009.',
+                                DIMENSIONS: '1.5 x 2 m',
+                                NAME: {
+                                    SER: 'ZLATNI DEČKO' ,
+                                    ENG: 'GOLDEN BOY'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovana tehnika na platnu',
+                                    ENG: 'Combined technique on canvas'
+                                },
+                                DESCRIPTION: {
+                                    SER: 'Predstavlja savremenog marokanskog kik-boxera, Badr Harija, kome se divim zbog nepobedive elegancije koju poseduje tokom borbi.',
+                                    ENG: 'It represents the contemporary Moroccan kickboxer, Badr Hari, whom I admire for the unbeatable elegance he displays during fights.'
+                                },
+                            }
+                        },
+                    ],
+                    [
+                        {
+                            ID: 4,
+                            SRC: {
+                                FULL: theRevolutionariesFull,
+                                PREVIEW: theRevolutionariesPreview,
+                            },
+                            ALT: "the-revolutionaries",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2009.',
+                                DIMENSIONS: '2 x 2.5 m',
+                                NAME: {
+                                    SER: 'REVOLUCIONARI',
+                                    ENG: 'THE REVOLUTIONARIES'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Akril na platnu / poliptih',
+                                    ENG: 'Acrylic on canvas / polyptych '
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: '',
+                                }
+                            }
+                        },
+                        {
+                            ID: 5,
+                            SRC: {
+                                FULL: closeEncounterOfThirdKindFull,
+                                PREVIEW: closeEncounterOfThirdKindPreview,
+                            },
+                            ALT: "the-revolutionaries",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2009.',
+                                DIMENSIONS: '2 x 2 m',
+                                NAME: {
+                                    SER: 'BLISKI SUSRET 3. VRSTE',
+                                    ENG: 'CLOSE ENCOUNTER OF THE THIRD KIND'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovana tehnika na platnu',
+                                    ENG: 'Combined technique on canvas'
+                                },
+                                DESCRIPTION: {
+                                    SER: 'Monumentalni, velicanstveni likovi kadrirani u trenutku susreta sa novom civilizacijom.',
+                                    ENG: 'Monumental, magnificent figures captured at the moment of encounter with a new civilization.',
+                                }
                             }
                         },
                     ],

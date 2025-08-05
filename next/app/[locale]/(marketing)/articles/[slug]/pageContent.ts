@@ -1801,8 +1801,8 @@ export const PAGE_CONTENT = Object.freeze({
                                 TYPE: 'text',
                                 CLASS_NAME: 'w-[173px] -mt-[18px]',
                                 TEXT: {
-                                    SER: "Teodora Rkidžić",
-                                    ENG: "Teodora Rkidžić",
+                                    SER: "Teodora Rakidžić",
+                                    ENG: "Teodora Rakidžić",
                                 },
                             },
                             {
@@ -1861,12 +1861,12 @@ export const PAGE_CONTENT = Object.freeze({
                                     SER: "Asistenti slikari:  <br/>" +
                                         "<br />" +
                                         "Sofija Rakidžić  <br/>" +
-                                        "Teodora Rkidžić  <br/>" +
+                                        "Teodora Rakidžić  <br/>" +
                                         "Sofija Vujić  <br/>",
                                     ENG: "Assistant painters:  <br/>" +
                                         "<br />" +
                                         "Sofija Rakidžić  <br/>" +
-                                        "Teodora Rkidžić  <br/>" +
+                                        "Teodora Rakidžić  <br/>" +
                                         "Sofija Vujić  <br/>"
                                 },
                             },
@@ -3876,6 +3876,262 @@ export const PAGE_CONTENT = Object.freeze({
     },
     SPIRIT: {
         ID: 9,
+        HISTORY: [
+            {
+                ID: 'home',
+                TITLE: {
+                    SER: 'Početna',
+                    ENG: 'Home',
+                },
+                LINK: ''
+            },
+            {
+                ID: 'works',
+                TITLE: {
+                    SER: "Radovi",
+                    ENG: 'Works',
+                },
+                LINK: 'works'
+            },
+            {
+                ID: 'spirit',
+                TITLE: {
+                    SER: 'Duh',
+                    ENG: 'Spirit'
+                },
+                LINK: 'works/spirit'
+            },
+            {
+                ID: 'exhibitions',
+                TITLE: {
+                    SER: 'O izložbi',
+                    ENG: 'About Exhibition'
+                },
+                LINK: 'articles/9'
+            },
+        ],
+        COVER: {
+            TITLE: {
+                SER: '„DUH“',
+                ENG: '„SPIRIT',
+            },
+            AUTHOR: {
+                SER: ' ',
+                ENG: ' '
+            },
+            YEAR: '5. - 19. januara 2011.',
+            TEXT: {
+                SER: 'U Galeriji ULUS 5. januara 2011. otvorila se izložba Ivone Pleskonje pod nazivom "Duh". Ivona je predstavila deo radova iz novog ciklusa monumentalnih dimenzija i majestetičke portretske koncepcije. Radovi sugerišu na proces brižljivo konstruisanog \'spremišta\' za lik.',
+                ENG: 'On January 5th 2011, an exhibition by Ivona Pleskonja titled "Spirit" was open at the ULUS Gallery. Ivona presented a selection of works from a new cycle of monumental dimensions and majestic portrait conception. The artworks suggest a process of carefully constructed \'storage space\' for the figure.'
+            },
+            MEDIA: {
+                MOBILE: {
+                    TYPE: 'image',
+                    ALT: 'exhibition-cover',
+                    SRC: spiritCover,
+                },
+                DESKTOP: {
+                    TYPE: 'image',
+                    ALT: 'exhibition-cover',
+                    SRC: spiritCover,
+                }
+            },
+            EXTERNAL_LINK: {
+                URL: '',
+                LABEL: {
+                    SER: 'POGLEDAJ VIDEO OVDE',
+                    ENG: 'WATCH VIDEO HERE'
+                }
+            },
+        },
+        SECTIONS: {
+            MOBILE: [
+                {
+                    TYPE: 'text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: '“Kadrirani” u radikalnoj frontalnosti, intoniranoj hijeratici stava, njeni likovi uspostavljaju bezuslovnu pozornost posmatrača. Oni predstavljaju harmoniju tela uma i duha, milosrđe prema ljudskom rodu, individue iz autorkinog najbližeg okruženja ili odabrane ličnosti “drugog”, uzore alternativnog univerzuma i svojevrsna alter-ega umetnika.',
+                                    ENG: '“Framed” in radical frontality, with a hieratic posture, her figures command the viewer’s full attention. They represent the harmony of body, mind, and spirit, compassion for humankind—individuals from the artist\'s closest environment or selected figures of “the other,” role models of an alternative universe, and in a way, the artist’s alter egos.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Iz ciklusa "Heroji" 2007, Jelena Krivokapić piše: "... Lica koja defiluju pred našim pogledom su individue iz autorkinog najbližeg okruženja, ona sama ili odabrane ličnosti , uzori alternativnog urbanog univerzuma i svojevrsna alter-ega umetnika ... sa porukom koju prati meditativni postupak građenja slike svetaca (heroja), odnosno ispisivanje prisustva svesti o sebi tokom samog stvaralačkog akta (umetnika), najupadljivija je u seriji (auto)portreta Heroji..."',
+                                    ENG: 'From the "Heroes" cycle, 2007, Jelena Krivokapić writes: "...The faces that parade before our eyes are individuals from the artist\'s immediate surroundings, herself, or selected figures—role models from an alternative urban universe and in a way, alter egos of the artist... with a message accompanied by a meditative process of painting saints (heroes), or inscribing the presence of self-awareness during the very act of creation (by the artist), most prominent in the series of (self)portraits Heroes..."'
+                                },
+                            },
+                        ],
+                    ],
+                },
+                {
+                    TYPE: 'carousel',
+                    SLIDES: [
+                        {
+                            SRC: spiritSlide1,
+                            ALT: 'spirit-slide-1',
+                        },
+                        {
+                            SRC: spiritSlide3,
+                            ALT: 'spirit-slide-3',
+                        },
+                        {
+                            SRC: spiritSlide4,
+                            ALT: 'spirit-slide-4',
+                        },
+                        {
+                            SRC: spiritSlide5,
+                            ALT: 'spirit-slide-5',
+                        },
+                        {
+                            SRC: spiritSlide6,
+                            ALT: 'spirit-slide-6',
+                        },
+                        {
+                            SRC: spiritSlide7,
+                            ALT: 'spirit-slide-7',
+                        },
+                        {
+                            SRC: spiritSlide8,
+                            ALT: 'spirit-slide-8',
+                        },
+                        {
+                            SRC: spiritSlide9,
+                            ALT: 'spirit-slide-9',
+                        },
+                        {
+                            SRC: spiritSlide10,
+                            ALT: 'spirit-slide-10',
+                        },
+                        {
+                            SRC: spiritSlide11,
+                            ALT: 'spirit-slide-11',
+                        },
+                        {
+                            SRC: spiritSlide2,
+                            ALT: 'spirit-slide-2',
+                        },
+                    ]
+                },
+                {
+                    TYPE: 'text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Iz ciklusa "Izvor" 2007, Aleksandra Mirčić piše: "... Svi likovi iz njenih radova slili su se u jedan, snažan, izražajni lik muškarca. Sa slike veličine bilborda, sa visine nas posmatra poput Boga ... Ivona Pleskonja nas podseća da su čoveka po starim legendama načinili Bogovi od zemlje, ali da ga čine i stvaraju životni problemi koji ga vuku po toj istoj zemlji. Čovek se, međutim, uvek podiže, otresa prašinu sa sebe i hrabro baca pogled u nebo."',
+                                    ENG: 'From the "Source" cycle, 2007, Aleksandra Mirčić writes: "...All the characters in her works have merged into one strong, expressive male figure. From a billboard-sized canvas, he looks down on us like a god... Ivona Pleskonja reminds us that, according to old legends, humans were created by gods from the earth, but are also shaped by life\'s hardships that drag them across that same earth. Yet man always rises, brushes off the dust, and bravely gazes into the sky."'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                CLASS_NAME: 'text-primaryBlue',
+                                TEXT: {
+                                    SER: 'Ivona Pleskonja (1974) pripada najnovijoj generaciji predstavnika \'Nove slike\'. Magistrirala je na FLU 2001. u klasi profesora Anđelke Bojović, odsek slikarstvo. Bila stipendista fonda Madlena Janković kao mladi talenat. Član ULUS-a sa statusom slobodnog umetnika od l998. Godine. Ovo je njena 11. samostalna izložba.',
+                                    ENG: 'Ivona Pleskonja (1974) belongs to the newest generation of New Image representatives. She earned her Master’s degree from the Faculty of Fine Arts (FLU) in 2001 in the class of Professor Anđelka Bojović, painting department. She was a scholarship holder of the Madlena Janković Foundation as a young talent. A member of ULUS with the status of an independent artist since 1998.'
+                                },
+                            },
+                        ],
+                    ],
+                }
+            ],
+            DESKTOP: [
+                {
+                    TYPE: 'text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: '“Kadrirani” u radikalnoj frontalnosti, intoniranoj hijeratici stava, njeni likovi uspostavljaju bezuslovnu pozornost posmatrača. Oni predstavljaju harmoniju tela uma i duha, milosrđe prema ljudskom rodu, individue iz autorkinog najbližeg okruženja ili odabrane ličnosti “drugog”, uzore alternativnog univerzuma i svojevrsna alter-ega umetnika.',
+                                    ENG: '“Framed” in radical frontality, with a hieratic posture, her figures command the viewer’s full attention. They represent the harmony of body, mind, and spirit, compassion for humankind—individuals from the artist\'s closest environment or selected figures of “the other,” role models of an alternative universe, and in a way, the artist’s alter egos.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Iz ciklusa "Heroji" 2007, Jelena Krivokapić piše: "... Lica koja defiluju pred našim pogledom su individue iz autorkinog najbližeg okruženja, ona sama ili odabrane ličnosti , uzori alternativnog urbanog univerzuma i svojevrsna alter-ega umetnika ... sa porukom koju prati meditativni postupak građenja slike svetaca (heroja), odnosno ispisivanje prisustva svesti o sebi tokom samog stvaralačkog akta (umetnika), najupadljivija je u seriji (auto)portreta Heroji..."',
+                                    ENG: 'From the "Heroes" cycle, 2007, Jelena Krivokapić writes: "...The faces that parade before our eyes are individuals from the artist\'s immediate surroundings, herself, or selected figures—role models from an alternative urban universe and in a way, alter egos of the artist... with a message accompanied by a meditative process of painting saints (heroes), or inscribing the presence of self-awareness during the very act of creation (by the artist), most prominent in the series of (self)portraits Heroes..."'
+                                },
+                            },
+                        ],
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Iz ciklusa "Izvor" 2007, Aleksandra Mirčić piše: "... Svi likovi iz njenih radova slili su se u jedan, snažan, izražajni lik muškarca. Sa slike veličine bilborda, sa visine nas posmatra poput Boga ... Ivona Pleskonja nas podseća da su čoveka po starim legendama načinili Bogovi od zemlje, ali da ga čine i stvaraju životni problemi koji ga vuku po toj istoj zemlji. Čovek se, međutim, uvek podiže, otresa prašinu sa sebe i hrabro baca pogled u nebo."',
+                                    ENG: 'From the "Source" cycle, 2007, Aleksandra Mirčić writes: "...All the characters in her works have merged into one strong, expressive male figure. From a billboard-sized canvas, he looks down on us like a god... Ivona Pleskonja reminds us that, according to old legends, humans were created by gods from the earth, but are also shaped by life\'s hardships that drag them across that same earth. Yet man always rises, brushes off the dust, and bravely gazes into the sky."'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                CLASS_NAME: 'text-primaryBlue',
+                                TEXT: {
+                                    SER: 'Ivona Pleskonja (1974) pripada najnovijoj generaciji predstavnika \'Nove slike\'. Magistrirala je na FLU 2001. u klasi profesora Anđelke Bojović, odsek slikarstvo. Bila stipendista fonda Madlena Janković kao mladi talenat. Član ULUS-a sa statusom slobodnog umetnika od l998. Godine. Ovo je njena 11. samostalna izložba.',
+                                    ENG: 'Ivona Pleskonja (1974) belongs to the newest generation of New Image representatives. She earned her Master’s degree from the Faculty of Fine Arts (FLU) in 2001 in the class of Professor Anđelka Bojović, painting department. She was a scholarship holder of the Madlena Janković Foundation as a young talent. A member of ULUS with the status of an independent artist since 1998.'
+                                },
+                            },
+                        ]
+                    ]
+                },
+                {
+                    TYPE: 'carousel',
+                    SLIDES: [
+                        {
+                            SRC: spiritSlide1,
+                            ALT: 'spirit-slide-1',
+                        },
+                        {
+                            SRC: spiritSlide3,
+                            ALT: 'spirit-slide-3',
+                        },
+                        {
+                            SRC: spiritSlide4,
+                            ALT: 'spirit-slide-4',
+                        },
+                        {
+                            SRC: spiritSlide5,
+                            ALT: 'spirit-slide-5',
+                        },
+                        {
+                            SRC: spiritSlide6,
+                            ALT: 'spirit-slide-6',
+                        },
+                        {
+                            SRC: spiritSlide7,
+                            ALT: 'spirit-slide-7',
+                        },
+                        {
+                            SRC: spiritSlide8,
+                            ALT: 'spirit-slide-8',
+                        },
+                        {
+                            SRC: spiritSlide9,
+                            ALT: 'spirit-slide-9',
+                        },
+                        {
+                            SRC: spiritSlide10,
+                            ALT: 'spirit-slide-10',
+                        },
+                        {
+                            SRC: spiritSlide11,
+                            ALT: 'spirit-slide-11',
+                        },
+                        {
+                            SRC: spiritSlide2,
+                            ALT: 'spirit-slide-2',
+                        },
+                    ]
+                },
+            ]
+        }
+    },
+    ONE_WORLD: {
+        ID: 10,
         HISTORY: [
             {
                 ID: 'home',

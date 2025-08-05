@@ -20,7 +20,7 @@ export default function ContactPage() {
                     <span className="font-bold">E-MAIL</span><Link className="tracking-[.08em] underline" href="mailto:ivonapleskonja@hotmail.com">ivonapleskonja@hotmail.com</Link>
                 </div>
                 <Link className="font-bold"
-                      href="https://www.instagram.com/ivonapleskonja?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                      href="https://www.instagram.com/ivonapleskonjafineart?igsh=eTQ5dzhnbnVzNGV1"
                       target="_blank">INSTAGRAM</Link>
                 <Link className="font-bold"
                       href="https://www.facebook.com/share/1AvuPnJMQ2/?mibextid=wwXIfrhttps://facebook.comhttps://www.facebook.com/share/1AvuPnJMQ2/?mibextid=wwXIfr"
