@@ -72,7 +72,7 @@ export interface IGalleryRowItem {
 export interface IArticleCover {
     TITLE: ITranslations;
     AUTHOR: ITranslations,
-    YEAR: number | string | null,
+    YEAR: ITranslations | null,
     TEXT: ITranslations,
     MEDIA: {
         MOBILE: {

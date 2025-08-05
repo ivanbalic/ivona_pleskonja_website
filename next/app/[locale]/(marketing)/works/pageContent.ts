@@ -142,9 +142,9 @@ import milkyWayPreview from '@/public/assets/one-world/milky-way-preview.webp';
 import goldenBoyPreview from '@/public/assets/one-world/golden-boy-preview.webp';
 import theRevolutionariesFull from '@/public/assets/one-world/the-Revolutionaries-full.webp';
 import theRevolutionariesPreview from '@/public/assets/one-world/the-Revolutionaries-preview.webp';
-import revolutionForTheEvolutionFull from '@/public/assets/one-world/revolution-for-the-evolution-full.webp';
+import revolutionForEvolutionFull from '@/public/assets/one-world/revolution-for-evolution-full.webp';
+import revolutionForEvolutionPreview from '@/public/assets/one-world/revolution-for-evolution-preview.webp';
 import closeEncounterOfThirdKindFull from '@/public/assets/one-world/close-encounter-of-third-kind-full.webp';
-import revolutionForTheEvolutionPreview from '@/public/assets/one-world/revolution-for-the-evolution-preview.webp';
 import closeEncounterOfThirdKindPreview from '@/public/assets/one-world/close-encounter-of-third-kind-preview.webp';
 
 export const PAGE_CONTENT = Object.freeze({
@@ -2529,8 +2529,8 @@ export const SUBPAGE_CONTENT = Object.freeze({
                         {
                             ID: 2,
                             SRC: {
-                                FULL: revolutionForTheEvolutionFull,
-                                PREVIEW: revolutionForTheEvolutionPreview,
+                                FULL: revolutionForEvolutionFull,
+                                PREVIEW: revolutionForEvolutionPreview,
                             },
                             ALT: "revolution-for-evolution",
                             GRID_PLACES: 2,

@@ -185,6 +185,15 @@ import spiritSlide8 from '@/public/assets/spirit/exhibition-spirit-slide-8.webp'
 import spiritSlide9 from '@/public/assets/spirit/exhibition-spirit-slide-9.webp';
 import spiritSlide10 from '@/public/assets/spirit/exhibition-spirit-slide-10.webp';
 import spiritSlide11 from '@/public/assets/spirit/exhibition-spirit-slide-11.webp';
+// ONE WORLD
+import oneWorldSlide1 from '@/public/assets/one-world/exhibition-one-world-slide-1.webp';
+import oneWorldSlide2 from '@/public/assets/one-world/exhibition-one-world-slide-2.webp';
+import oneWorldSlide3 from '@/public/assets/one-world/exhibition-one-world-slide-3.webp';
+import oneWorldSlide4 from '@/public/assets/one-world/exhibition-one-world-slide-4.webp';
+import oneWorldSlide5 from '@/public/assets/one-world/exhibition-one-world-slide-5.webp';
+import oneWorldSlide6 from '@/public/assets/one-world/exhibition-one-world-slide-6.webp';
+import oneWorldCoverMobile from '@/public/assets/one-world/exhibition-one-world-cover-mobile.webp';
+import oneWorldCoverDesktop from '@/public/assets/one-world/exhibition-one-world-cover-desktop.webp';
 
 export const PAGE_CONTENT = Object.freeze({
     CREATING_LIFE: {
@@ -232,7 +241,10 @@ export const PAGE_CONTENT = Object.freeze({
                 SER: 'Ana Kršljanin, istoričar umetnosti',
                 ENG: 'Ana Kršljanin, art historian'
             },
-            YEAR: 2023,
+            YEAR: {
+                SER: '2023',
+                ENG: '2023',
+            },
             TEXT: {
                 SER: 'Nakon momenta prosvetljenja sledi iskonsko buđenje bića. Ovo je priča o svetlosti iz dubine Svemira, svetlosti koja nas obasjava - rastvarajući dubine mraka, ona donosi anđele. Pre buđenja ovih stvorenja moramo se zapitati ko je onaj ko ih je stvorio?',
                 ENG: 'A primordial awakening of the being follows the moment of enlightenment. This is a story of a light from the depths of Universe. It is the light that illuminates us - dissolving the deptlis of darkness. It brings out angels. Before awakening these creatures, we must ask ourselves - who created them?'
@@ -762,7 +774,10 @@ export const PAGE_CONTENT = Object.freeze({
                 SER: 'Nataša Radojević',
                 ENG: 'Nataša Radojević'
             },
-            YEAR: 2019,
+            YEAR: {
+                SER: '2019',
+                ENG: '2019',
+            },
             TEXT: {
                 SER: 'Serija slika i grafika 11 SNAGA nastavak je rada započetog u okviru doktorskog umetničkog projekta Ivone Pleskonje, predstavljenog na izložbi Deca Sunca.',
                 ENG: 'The series of paintings and graphics 11 STRENGTH is a continuation of the work started within the doctoral art project of Ivona Pleskonje, presented at the Children of the Sun exhibition.'
@@ -1218,7 +1233,10 @@ export const PAGE_CONTENT = Object.freeze({
                 SER: 'Autor murala: Ivona Pleskonja',
                 ENG: 'Mural author: Ivona Pleskonja'
             },
-            YEAR: 2020,
+            YEAR: {
+                SER: '2020',
+                ENG: '2020',
+            },
             TEXT: {
                 SER: 'Mural LIFE posvećen je vremenu u kome živimo. Ove monumentalne slike jedinstva ljudi, životinja i biljaka u urbanoj sredini pozivaju na našu povezanost sa prirodom i duboki značaj našeg jedinstva.',
                 ENG: 'Mural LIFE is dedicated to the time we live in. These vivid monumental assets of the unity of humans, animals and plants in the urban environment call for our connection with nature and the profound importance of our collectiveness.'
@@ -1686,7 +1704,10 @@ export const PAGE_CONTENT = Object.freeze({
                 SER: 'Autor murala: Ivona Pleskonja',
                 ENG: 'Mural author: Ivona Pleskonja'
             },
-            YEAR: 2024,
+            YEAR: {
+                SER: '2024',
+                ENG: '2024',
+            },
             TEXT: {
                 SER: 'U mnoštvu betona, jedan prozor u beskraj i zvuk perja na vetru.',
                 ENG: 'In the middle of concrete, one window into infinity and the sound of feathers in the wind'
@@ -1919,7 +1940,10 @@ export const PAGE_CONTENT = Object.freeze({
                 SER: 'Miloš Milošević istoričar umetnosti',
                 ENG: 'Miloš Milošević art historian'
             },
-            YEAR: 2016,
+            YEAR: {
+                SER:'2016',
+                ENG: '2016'
+            },
             TEXT: {
                 SER: 'U slikarstvu Ivone Pleskonje dominira ljudska figura. Izložba pod nazivom "Jaki ljudi" se može pohvaliti jasnom idejom umetnice koja se očitava kroz izražajne portrete, poze i bogat kolorit. Umetnica daje prikaz, kako unutrašnjeg stanja, tako i pogleda na svet oko sebe. ',
                 ENG: 'In Ivona Pleskonja\'s painting, the human figure dominates. The exhibition titled "Strong People" boasts a clear artistic vision, evident through expressive portraits, poses, and rich colors. The artist presents both an inner state and a perspective on the world around her.'
@@ -3056,7 +3080,10 @@ export const PAGE_CONTENT = Object.freeze({
                 SER: 'Aleksandra Mirčić',
                 ENG: 'Aleksandra Mirčić'
             },
-            YEAR: 2014,
+            YEAR: {
+                SER: '2014',
+                ENG: '2014',
+            },
             TEXT: {
                 SER: 'Ostajući verna portretu, Ivona Pleskonja nastavlja svoje istraživanje sveta i čoveka kroz sopstveno iskustvo. I ranije, kao i sad, umetnost je za Ivonu poligon istraživanja sebe i drugih, pronalaženja izlaza iz haosa svakodnevice.',
                 ENG: 'Ivona Pleskonja continues her investigation of the world and the man through her personal experience given that she remains devoted to the genre of portrait. As before, the art for Ivona is a ground for exploring herself and others, for finding a way out of the everyday life chaos.'
@@ -3642,7 +3669,10 @@ export const PAGE_CONTENT = Object.freeze({
                 SER: 'Ivona Pleskonja',
                 ENG: 'Ivona Pleskonja'
             },
-            YEAR: 2015,
+            YEAR: {
+                SER: '2015',
+                ENG: '2015'
+            },
             TEXT: {
                 SER: 'Razmišljajući o sopstvenom identitetu kroz dimenziju vremena, pronalazim inspiraciju u starim porodičnim fotografijama.',
                 ENG: 'When I think about my identity, through the dimension of time, I find inspiration in my old family photographs.'
@@ -3919,7 +3949,10 @@ export const PAGE_CONTENT = Object.freeze({
                 SER: ' ',
                 ENG: ' '
             },
-            YEAR: '5. - 19. januara 2011.',
+            YEAR: {
+                SER: '5. - 19. januara 2011.',
+                ENG: 'January 5 – 19, 2011'
+            },
             TEXT: {
                 SER: 'U Galeriji ULUS 5. januara 2011. otvorila se izložba Ivone Pleskonje pod nazivom "Duh". Ivona je predstavila deo radova iz novog ciklusa monumentalnih dimenzija i majestetičke portretske koncepcije. Radovi sugerišu na proces brižljivo konstruisanog \'spremišta\' za lik.',
                 ENG: 'On January 5th 2011, an exhibition by Ivona Pleskonja titled "Spirit" was open at the ULUS Gallery. Ivona presented a selection of works from a new cycle of monumental dimensions and majestic portrait conception. The artworks suggest a process of carefully constructed \'storage space\' for the figure.'
@@ -4150,12 +4183,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: 'works'
             },
             {
-                ID: 'spirit',
+                ID: 'one_world',
                 TITLE: {
-                    SER: 'Duh',
-                    ENG: 'Spirit'
+                    SER: 'Jedan Svet',
+                    ENG: 'One World'
                 },
-                LINK: 'works/spirit'
+                LINK: 'works/one_world'
             },
             {
                 ID: 'exhibitions',
@@ -4163,33 +4196,36 @@ export const PAGE_CONTENT = Object.freeze({
                     SER: 'O izložbi',
                     ENG: 'About Exhibition'
                 },
-                LINK: 'articles/9'
+                LINK: 'articles/10'
             },
         ],
         COVER: {
             TITLE: {
-                SER: '„DUH“',
-                ENG: '„SPIRIT',
+                SER: '„JEDAN SVET“',
+                ENG: '„ONE WORLD',
             },
             AUTHOR: {
-                SER: ' ',
-                ENG: ' '
+                SER: 'Galerija Art Media',
+                ENG: 'Galerija Art Media'
             },
-            YEAR: '5. - 19. januara 2011.',
+            YEAR: {
+                SER: '21. oktbra - 4. novembra 2009.',
+                ENG: 'October 21 – November 4, 2009'
+            },
             TEXT: {
-                SER: 'U Galeriji ULUS 5. januara 2011. otvorila se izložba Ivone Pleskonje pod nazivom "Duh". Ivona je predstavila deo radova iz novog ciklusa monumentalnih dimenzija i majestetičke portretske koncepcije. Radovi sugerišu na proces brižljivo konstruisanog \'spremišta\' za lik.',
-                ENG: 'On January 5th 2011, an exhibition by Ivona Pleskonja titled "Spirit" was open at the ULUS Gallery. Ivona presented a selection of works from a new cycle of monumental dimensions and majestic portrait conception. The artworks suggest a process of carefully constructed \'storage space\' for the figure.'
+                SER: 'Ivona Pleskonja (1974) pripada najnovijoj generaciji predstavnika \'Nove slike\'. Izlozba pod nazivom "JEDAN SVET" predstavice deo iz novog ciklusa slika. Monumentalnih dimenzija i majesteticke portretske koncepcije, ovi radovi sugerisu proces brizljivo konstruisanog \'spremista\' za lik, svetacki lik ili imaginarnog ratnika ovog vremena.',
+                ENG: 'Ivona Pleskonja (1974) belongs to the newest generation of representatives of the “New Image” movement. The exhibition titled “ONE WORLD” will present a selection from her new cycle of paintings. Monumental in scale and majestic in their portrait-like conception, these works suggest a process of carefully constructed “vessels” for a figure—a saintly image or an imaginary warrior of our time.'
             },
             MEDIA: {
                 MOBILE: {
                     TYPE: 'image',
                     ALT: 'exhibition-cover',
-                    SRC: spiritCover,
+                    SRC: oneWorldCoverMobile,
                 },
                 DESKTOP: {
                     TYPE: 'image',
                     ALT: 'exhibition-cover',
-                    SRC: spiritCover,
+                    SRC: oneWorldCoverDesktop,
                 }
             },
             EXTERNAL_LINK: {
@@ -4209,13 +4245,6 @@ export const PAGE_CONTENT = Object.freeze({
                             {
                                 TYPE: 'text',
                                 TEXT: {
-                                    SER: '“Kadrirani” u radikalnoj frontalnosti, intoniranoj hijeratici stava, njeni likovi uspostavljaju bezuslovnu pozornost posmatrača. Oni predstavljaju harmoniju tela uma i duha, milosrđe prema ljudskom rodu, individue iz autorkinog najbližeg okruženja ili odabrane ličnosti “drugog”, uzore alternativnog univerzuma i svojevrsna alter-ega umetnika.',
-                                    ENG: '“Framed” in radical frontality, with a hieratic posture, her figures command the viewer’s full attention. They represent the harmony of body, mind, and spirit, compassion for humankind—individuals from the artist\'s closest environment or selected figures of “the other,” role models of an alternative universe, and in a way, the artist’s alter egos.'
-                                },
-                            },
-                            {
-                                TYPE: 'text',
-                                TEXT: {
                                     SER: 'Iz ciklusa "Heroji" 2007, Jelena Krivokapić piše: "... Lica koja defiluju pred našim pogledom su individue iz autorkinog najbližeg okruženja, ona sama ili odabrane ličnosti , uzori alternativnog urbanog univerzuma i svojevrsna alter-ega umetnika ... sa porukom koju prati meditativni postupak građenja slike svetaca (heroja), odnosno ispisivanje prisustva svesti o sebi tokom samog stvaralačkog akta (umetnika), najupadljivija je u seriji (auto)portreta Heroji..."',
                                     ENG: 'From the "Heroes" cycle, 2007, Jelena Krivokapić writes: "...The faces that parade before our eyes are individuals from the artist\'s immediate surroundings, herself, or selected figures—role models from an alternative urban universe and in a way, alter egos of the artist... with a message accompanied by a meditative process of painting saints (heroes), or inscribing the presence of self-awareness during the very act of creation (by the artist), most prominent in the series of (self)portraits Heroes..."'
                                 },
@@ -4227,48 +4256,28 @@ export const PAGE_CONTENT = Object.freeze({
                     TYPE: 'carousel',
                     SLIDES: [
                         {
-                            SRC: spiritSlide1,
-                            ALT: 'spirit-slide-1',
+                            SRC: oneWorldSlide1,
+                            ALT: 'one-world-slide-1',
                         },
                         {
-                            SRC: spiritSlide3,
-                            ALT: 'spirit-slide-3',
+                            SRC: oneWorldSlide2,
+                            ALT: 'one-world-slide-2',
                         },
                         {
-                            SRC: spiritSlide4,
-                            ALT: 'spirit-slide-4',
+                            SRC: oneWorldSlide3,
+                            ALT: 'one-world-slide-3',
                         },
                         {
-                            SRC: spiritSlide5,
-                            ALT: 'spirit-slide-5',
+                            SRC: oneWorldSlide4,
+                            ALT: 'one-world-slide-4',
                         },
                         {
-                            SRC: spiritSlide6,
-                            ALT: 'spirit-slide-6',
+                            SRC: oneWorldSlide5,
+                            ALT: 'one-world-slide-5',
                         },
                         {
-                            SRC: spiritSlide7,
-                            ALT: 'spirit-slide-7',
-                        },
-                        {
-                            SRC: spiritSlide8,
-                            ALT: 'spirit-slide-8',
-                        },
-                        {
-                            SRC: spiritSlide9,
-                            ALT: 'spirit-slide-9',
-                        },
-                        {
-                            SRC: spiritSlide10,
-                            ALT: 'spirit-slide-10',
-                        },
-                        {
-                            SRC: spiritSlide11,
-                            ALT: 'spirit-slide-11',
-                        },
-                        {
-                            SRC: spiritSlide2,
-                            ALT: 'spirit-slide-2',
+                            SRC: oneWorldSlide6,
+                            ALT: 'one-world-slide-6',
                         },
                     ]
                 },
@@ -4281,14 +4290,6 @@ export const PAGE_CONTENT = Object.freeze({
                                 TEXT: {
                                     SER: 'Iz ciklusa "Izvor" 2007, Aleksandra Mirčić piše: "... Svi likovi iz njenih radova slili su se u jedan, snažan, izražajni lik muškarca. Sa slike veličine bilborda, sa visine nas posmatra poput Boga ... Ivona Pleskonja nas podseća da su čoveka po starim legendama načinili Bogovi od zemlje, ali da ga čine i stvaraju životni problemi koji ga vuku po toj istoj zemlji. Čovek se, međutim, uvek podiže, otresa prašinu sa sebe i hrabro baca pogled u nebo."',
                                     ENG: 'From the "Source" cycle, 2007, Aleksandra Mirčić writes: "...All the characters in her works have merged into one strong, expressive male figure. From a billboard-sized canvas, he looks down on us like a god... Ivona Pleskonja reminds us that, according to old legends, humans were created by gods from the earth, but are also shaped by life\'s hardships that drag them across that same earth. Yet man always rises, brushes off the dust, and bravely gazes into the sky."'
-                                },
-                            },
-                            {
-                                TYPE: 'text',
-                                CLASS_NAME: 'text-primaryBlue',
-                                TEXT: {
-                                    SER: 'Ivona Pleskonja (1974) pripada najnovijoj generaciji predstavnika \'Nove slike\'. Magistrirala je na FLU 2001. u klasi profesora Anđelke Bojović, odsek slikarstvo. Bila stipendista fonda Madlena Janković kao mladi talenat. Član ULUS-a sa statusom slobodnog umetnika od l998. Godine. Ovo je njena 11. samostalna izložba.',
-                                    ENG: 'Ivona Pleskonja (1974) belongs to the newest generation of New Image representatives. She earned her Master’s degree from the Faculty of Fine Arts (FLU) in 2001 in the class of Professor Anđelka Bojović, painting department. She was a scholarship holder of the Madlena Janković Foundation as a young talent. A member of ULUS with the status of an independent artist since 1998.'
                                 },
                             },
                         ],
@@ -4300,13 +4301,7 @@ export const PAGE_CONTENT = Object.freeze({
                     TYPE: 'text_grid',
                     CONTENT: [
                         [
-                            {
-                                TYPE: 'text',
-                                TEXT: {
-                                    SER: '“Kadrirani” u radikalnoj frontalnosti, intoniranoj hijeratici stava, njeni likovi uspostavljaju bezuslovnu pozornost posmatrača. Oni predstavljaju harmoniju tela uma i duha, milosrđe prema ljudskom rodu, individue iz autorkinog najbližeg okruženja ili odabrane ličnosti “drugog”, uzore alternativnog univerzuma i svojevrsna alter-ega umetnika.',
-                                    ENG: '“Framed” in radical frontality, with a hieratic posture, her figures command the viewer’s full attention. They represent the harmony of body, mind, and spirit, compassion for humankind—individuals from the artist\'s closest environment or selected figures of “the other,” role models of an alternative universe, and in a way, the artist’s alter egos.'
-                                },
-                            },
+
                             {
                                 TYPE: 'text',
                                 TEXT: {
@@ -4323,14 +4318,6 @@ export const PAGE_CONTENT = Object.freeze({
                                     ENG: 'From the "Source" cycle, 2007, Aleksandra Mirčić writes: "...All the characters in her works have merged into one strong, expressive male figure. From a billboard-sized canvas, he looks down on us like a god... Ivona Pleskonja reminds us that, according to old legends, humans were created by gods from the earth, but are also shaped by life\'s hardships that drag them across that same earth. Yet man always rises, brushes off the dust, and bravely gazes into the sky."'
                                 },
                             },
-                            {
-                                TYPE: 'text',
-                                CLASS_NAME: 'text-primaryBlue',
-                                TEXT: {
-                                    SER: 'Ivona Pleskonja (1974) pripada najnovijoj generaciji predstavnika \'Nove slike\'. Magistrirala je na FLU 2001. u klasi profesora Anđelke Bojović, odsek slikarstvo. Bila stipendista fonda Madlena Janković kao mladi talenat. Član ULUS-a sa statusom slobodnog umetnika od l998. Godine. Ovo je njena 11. samostalna izložba.',
-                                    ENG: 'Ivona Pleskonja (1974) belongs to the newest generation of New Image representatives. She earned her Master’s degree from the Faculty of Fine Arts (FLU) in 2001 in the class of Professor Anđelka Bojović, painting department. She was a scholarship holder of the Madlena Janković Foundation as a young talent. A member of ULUS with the status of an independent artist since 1998.'
-                                },
-                            },
                         ]
                     ]
                 },
@@ -4338,48 +4325,28 @@ export const PAGE_CONTENT = Object.freeze({
                     TYPE: 'carousel',
                     SLIDES: [
                         {
-                            SRC: spiritSlide1,
-                            ALT: 'spirit-slide-1',
+                            SRC: oneWorldSlide1,
+                            ALT: 'one-world-slide-1',
                         },
                         {
-                            SRC: spiritSlide3,
-                            ALT: 'spirit-slide-3',
+                            SRC: oneWorldSlide2,
+                            ALT: 'one-world-slide-2',
                         },
                         {
-                            SRC: spiritSlide4,
-                            ALT: 'spirit-slide-4',
+                            SRC: oneWorldSlide3,
+                            ALT: 'one-world-slide-3',
                         },
                         {
-                            SRC: spiritSlide5,
-                            ALT: 'spirit-slide-5',
+                            SRC: oneWorldSlide4,
+                            ALT: 'one-world-slide-4',
                         },
                         {
-                            SRC: spiritSlide6,
-                            ALT: 'spirit-slide-6',
+                            SRC: oneWorldSlide5,
+                            ALT: 'one-world-slide-5',
                         },
                         {
-                            SRC: spiritSlide7,
-                            ALT: 'spirit-slide-7',
-                        },
-                        {
-                            SRC: spiritSlide8,
-                            ALT: 'spirit-slide-8',
-                        },
-                        {
-                            SRC: spiritSlide9,
-                            ALT: 'spirit-slide-9',
-                        },
-                        {
-                            SRC: spiritSlide10,
-                            ALT: 'spirit-slide-10',
-                        },
-                        {
-                            SRC: spiritSlide11,
-                            ALT: 'spirit-slide-11',
-                        },
-                        {
-                            SRC: spiritSlide2,
-                            ALT: 'spirit-slide-2',
+                            SRC: oneWorldSlide6,
+                            ALT: 'one-world-slide-6',
                         },
                     ]
                 },
