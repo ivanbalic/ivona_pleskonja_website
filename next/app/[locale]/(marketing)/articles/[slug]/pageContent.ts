@@ -194,6 +194,16 @@ import oneWorldSlide5 from '@/public/assets/one-world/exhibition-one-world-slide
 import oneWorldSlide6 from '@/public/assets/one-world/exhibition-one-world-slide-6.webp';
 import oneWorldCoverMobile from '@/public/assets/one-world/exhibition-one-world-cover-mobile.webp';
 import oneWorldCoverDesktop from '@/public/assets/one-world/exhibition-one-world-cover-desktop.webp';
+// ORIGIN
+import originCover from '@/public/assets/origin/exhibition-origin-cover.webp';
+import originSlide1 from '@/public/assets/origin/exhibition-origin-slide-1.webp';
+import originSlide2 from '@/public/assets/origin/exhibition-origin-slide-2.webp';
+import originSlide3 from '@/public/assets/origin/exhibition-origin-slide-3.webp';
+import originSlide4 from '@/public/assets/origin/exhibition-origin-slide-4.webp';
+import originSlide5 from '@/public/assets/origin/exhibition-origin-slide-5.webp';
+import originSlide6 from '@/public/assets/origin/exhibition-origin-slide-6.webp';
+import originSlide7 from '@/public/assets/origin/exhibition-origin-slide-7.webp';
+import originSlide8 from '@/public/assets/origin/exhibition-origin-slide-8.webp';
 
 export const PAGE_CONTENT = Object.freeze({
     CREATING_LIFE: {
@@ -4350,6 +4360,295 @@ export const PAGE_CONTENT = Object.freeze({
                         },
                     ]
                 },
+            ]
+        }
+    },
+    ORIGIN: {
+        ID: 11,
+        HISTORY: [
+            {
+                ID: 'home',
+                TITLE: {
+                    SER: 'Početna',
+                    ENG: 'Home',
+                },
+                LINK: ''
+            },
+            {
+                ID: 'works',
+                TITLE: {
+                    SER: "Radovi",
+                    ENG: 'Works',
+                },
+                LINK: 'works'
+            },
+            {
+                ID: 'one_world',
+                TITLE: {
+                    SER: 'Izvor',
+                    ENG: 'Origin'
+                },
+                LINK: 'works/origin'
+            },
+            {
+                ID: 'exhibitions',
+                TITLE: {
+                    SER: 'O izložbi',
+                    ENG: 'About Exhibition'
+                },
+                LINK: 'articles/11'
+            },
+        ],
+        COVER: {
+            TITLE: {
+                SER: '„IZVOR“',
+                ENG: '„ORIGIN',
+            },
+            AUTHOR: {
+                SER: 'Novinarka Marija Đorđević',
+                ENG: 'Journalist Marija Đorđević'
+            },
+            YEAR: {
+                SER: '2007',
+                ENG: '2007'
+            },
+            TEXT: {
+                SER: 'Doslednost figuraciji i portretu likovna umetnica Ivona Pleskonja(1974) pokazala je i na nedavnoj izložbi u beogradskoj Nacionalnoj galeriji naslovljenoj „Izvor“. Na monumentalnim portretima i autoportretu ostvarenim tehnikama akrilika i ugljena na platnu i papiru, Ivona Pleskonja govori o malim-velikim ljudima, o veličini humanog bića, o emancipaciji, prevazilaženju straha...',
+                ENG: 'The adherence to figurative and portrait presentations of Ivona Pleskonja (1974) has recently become evident once again in her exhibition The Source at the Belgrade National Gallery. She makes monumental portraits and self-portraits, using acrylic and coal on canvas and paper, to talk about little-big people, the greatness of human beings, emancipation, fears and ways of overcoming them…'
+            },
+            MEDIA: {
+                MOBILE: {
+                    TYPE: 'image',
+                    ALT: 'exhibition-cover',
+                    SRC: originCover,
+                },
+                DESKTOP: {
+                    TYPE: 'image',
+                    ALT: 'exhibition-cover',
+                    SRC: originCover,
+                }
+            },
+            EXTERNAL_LINK: {
+                URL: '',
+                LABEL: {
+                    SER: 'POGLEDAJ VIDEO OVDE',
+                    ENG: 'WATCH VIDEO HERE'
+                }
+            },
+        },
+        SECTIONS: {
+            MOBILE: [
+                {
+                    TYPE: 'text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Reprezentativni kadrirani likovi na platnima svedenog kolorita i na ovoj izložbi pokazuju da je stvaralaštvo Ivone Pleskonje i dalje u znaku urbanog ikoničnog slikarstva. Baš kao i prethodna izložba „Heroji“ održana u martu ove godine u galeriji „Beograd“ na Kosančićevom vencu.',
+                                    ENG: 'The portraits, reduced in colour and representatively framed on canvas, demonstrate urban iconographic artistry of Ivona’s works in much the same manner as the works from her previous exhibition Heroes, held last March in Beograd Gallery in Kosančićev Venac Street, did.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Verna sam figuraciji iz prostog razloga što mi apstrakcija nije tako bliska. Oduvek sam imala potrebu da izrazim ljudski lik, i da posmatrač koji gleda moje radove primi neku poruku i na svoj način doživi ono što sam želela da kažem. Na ovoj izložbi moja likovna traganja fokusiraju se oko porekla čoveka, njegove prirode, suštine, puteva saznanja. Otuda naziv „Izvor“, mada na početku nisam imala jasnu viziju o tome da li bi izložba uopšte trebalo da ima nekakav naslov.',
+                                    ENG: 'I stick to figuration simply because abstract art isn’t close to my heart. I’ve always wanted to make human portraits and also wanted the observer to interpret my messages in his or her own way. This exhibition shows that the focus my artistic search is on the origins of the man, his nature, his essence, ways of gaining knowledge which also explains the title although at first I didn’t have a very clear idea whether to give the exhibition any name at all. Wanting to be in harmony with my own self, and while figuring out what it was I wanted to do, I came up with this particular name.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'U nastojanju da se uskladim sa samom sobom, u tom procesu osvešćivanja šta želim zapravo da uradim, došla sam do naziva. Prva varijanta naziva bila je „Faraoni“, kaže Ivona Pleskonja. Naime, mladoliki Rom sa beogradskog asfalta, jedan je od umetnicinih modela koji dominra na monumentalnm platnima kao što su „Earth-Born King“, „Cleaner“ i „New World King“, umetnicu je asocirao na faraona.',
+                                    ENG: 'Originally, I wanted to name the exhibition the Pharaohs, says Ivona because a young Romany boy from Belgrade streets, and one of Ivona’s models who figures prominently on her canvases, such as Earth-Born King, Cleaner and New World King, has reminded her of a pharaoh.'
+                                },
+                            },
+                        ],
+                    ],
+                },
+                {
+                    TYPE: 'carousel',
+                    SLIDES: [
+                        {
+                            SRC: originSlide1,
+                            ALT: 'origin-slide-1',
+                        },
+                        {
+                            SRC: originSlide2,
+                            ALT: 'origin-slide-2',
+                        },
+                        {
+                            SRC: originSlide3,
+                            ALT: 'origin-slide-3',
+                        },
+                        {
+                            SRC: originSlide4,
+                            ALT: 'origin-slide-4',
+                        },
+                        {
+                            SRC: originSlide5,
+                            ALT: 'origin-slide-5',
+                        },
+                        {
+                            SRC: originSlide6,
+                            ALT: 'origin-slide-6',
+                        },
+                        {
+                            SRC: originSlide7,
+                            ALT: 'origin-slide-7',
+                        },
+                        {
+                            SRC: originSlide8,
+                            ALT: 'origin-slide-8',
+                        },
+                    ]
+                },
+                {
+                    TYPE: 'text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: '„Njegova životna opuštenost i smirenost koju emituje, njegov život čistača ulične prašine, bili su moja snažna inspiracija za ova platna. Namera mi je bila da kažem koliko svi ljudi mogu biti moćni i značajni, kako svi mi imamo oreol nad glavom i kako smo svi sveti i od Boga dati“, objašnjava umetnica.',
+                                    ENG: 'His relaxed manner and calm which he emanates, his life as a street dust- cleaner, produced a very strong motive for this particular piece of work. My idea was to show that all people can be impressive and important and that we all have halos over our heads, and are all blessed and God-given, explains the artist.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Ivona Pleskonja je protagonista mlade i ambiciozne generacije slikara koja se potvrdila na značajnim izložbama kao što su Oktobarski salon ili Vršačko Bijenale mladih (1998). Još za vreme studija u svoju biografiju ubeležila je nekoliko nagrada iz fonda FLU-za najbolju studiju i najbolji crtež, kao i nagradu za fotografiju iz fonda BC procesor. Tražeći odgovore na pitanja identiteta, Ivona neguje i autoportret i taj segment svog rada poredi sa dvoseklim mačem.',
+                                    ENG: 'Ivona Pleskonja belongs to the generation of young and ambitious artists. She has received acclaim for her works at exhibitions such as the October Salon and the Vršac Youth Biennale (1998). As a student, she won several awards from the FLU (Faculty of Fine Arts) fund for the best study and drawing, and another award for the best photography from the BC processor fund. In her quest for answers regarding identity, Ivona also cultivates self-portrait, the area of work which she compares to a two-blade sword.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: '„Potreba ka slikanju autoportreta čini mi se ponekad kao hermetični, začarani krug. Možda je reč o egocentričnoj fazi iz koje, rekla bih, polako izlazim. Dobro je kada inspiracija nalazi uporište u intimnom, ličnom, ali umetnost ne sme biti sasvim hermetična. Iz intime bi valjalo da se iznedri nešto univerzalno“, objašnjava Ivona Pleskonja.',
+                                    ENG: 'The need to make self-portraits seems at times like a hermetic, mesmerized circle but it may also be an egocentric phase that I thing I am gradually leaving now. It is good to find inspiration in one’s intimate, personal life, but art must not be totally hermetic. Intimacy should be used to breed something universal, explain Ivona Pleskonja.'
+                                },
+                            },
+                        ],
+                    ],
+                },
+                {
+                    TYPE: 'inverted_text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Analitičari Ivoninog slikarstva skloni su da u njenim platnima traže  asocijacije na savremene kompjuterske kolažne tehnike, iako ova umetnica, kako kaže, ne pokazuje nikakvu ličnu sklonost ka stripu ili kompjuterskoj umetnosti. Redukovani kolorit je odraz potrebe da pokaže kako svet izgleda danas i sada. „Ako bi bića sa drugih planeta želela da vide kako izgledaju Zemljani, ja bih im pokazala moje slike“, kaže umetnica. Ivona Pleskonja učila je u klasi Anđelke Bojović, slikarke i pedagoga čije su joj kritike, sugestije i pomoć i danas veoma dragoceni.',
+                                    ENG: 'Analysts of Ivona’s art are inclined to compare her works with the contemporary computerized collages although she herself denies having a penchant for the comic strip or computer art. The reduced colouring reflects Ivona’s need to show what the world looks like today. “Should beings from other planets wish to see what the Earthlings are like, I would present them my paintings”, says Ivona. Ivona Pleskonja studied under Anđelka Bojović, the painter and pedagogue, whose advice, guidance and appraisal she continues to receive and appreciate.'
+                                },
+                            },
+                        ],
+                    ],
+                }
+            ],
+            DESKTOP: [
+                {
+                    TYPE: 'text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Reprezentativni kadrirani likovi na platnima svedenog kolorita i na ovoj izložbi pokazuju da je stvaralaštvo Ivone Pleskonje i dalje u znaku urbanog ikoničnog slikarstva. Baš kao i prethodna izložba „Heroji“ održana u martu ove godine u galeriji „Beograd“ na Kosančićevom vencu.',
+                                    ENG: 'The portraits, reduced in colour and representatively framed on canvas, demonstrate urban iconographic artistry of Ivona’s works in much the same manner as the works from her previous exhibition Heroes, held last March in Beograd Gallery in Kosančićev Venac Street, did.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Verna sam figuraciji iz prostog razloga što mi apstrakcija nije tako bliska. Oduvek sam imala potrebu da izrazim ljudski lik, i da posmatrač koji gleda moje radove primi neku poruku i na svoj način doživi ono što sam želela da kažem. Na ovoj izložbi moja likovna traganja fokusiraju se oko porekla čoveka, njegove prirode, suštine, puteva saznanja. Otuda naziv „Izvor“, mada na početku nisam imala jasnu viziju o tome da li bi izložba uopšte trebalo da ima nekakav naslov.',
+                                    ENG: 'I stick to figuration simply because abstract art isn’t close to my heart. I’ve always wanted to make human portraits and also wanted the observer to interpret my messages in his or her own way. This exhibition shows that the focus my artistic search is on the origins of the man, his nature, his essence, ways of gaining knowledge which also explains the title although at first I didn’t have a very clear idea whether to give the exhibition any name at all. Wanting to be in harmony with my own self, and while figuring out what it was I wanted to do, I came up with this particular name.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'U nastojanju da se uskladim sa samom sobom, u tom procesu osvešćivanja šta želim zapravo da uradim, došla sam do naziva. Prva varijanta naziva bila je „Faraoni“, kaže Ivona Pleskonja. Naime, mladoliki Rom sa beogradskog asfalta, jedan je od umetnicinih modela koji dominra na monumentalnm platnima kao što su „Earth-Born King“, „Cleaner“ i „New World King“, umetnicu je asocirao na faraona.',
+                                    ENG: 'Originally, I wanted to name the exhibition the Pharaohs, says Ivona because a young Romany boy from Belgrade streets, and one of Ivona’s models who figures prominently on her canvases, such as Earth-Born King, Cleaner and New World King, has reminded her of a pharaoh.'
+                                },
+                            },
+                        ],
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: '„Njegova životna opuštenost i smirenost koju emituje, njegov život čistača ulične prašine, bili su moja snažna inspiracija za ova platna. Namera mi je bila da kažem koliko svi ljudi mogu biti moćni i značajni, kako svi mi imamo oreol nad glavom i kako smo svi sveti i od Boga dati“, objašnjava umetnica.',
+                                    ENG: 'His relaxed manner and calm which he emanates, his life as a street dust- cleaner, produced a very strong motive for this particular piece of work. My idea was to show that all people can be impressive and important and that we all have halos over our heads, and are all blessed and God-given, explains the artist.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Ivona Pleskonja je protagonista mlade i ambiciozne generacije slikara koja se potvrdila na značajnim izložbama kao što su Oktobarski salon ili Vršačko Bijenale mladih (1998). Još za vreme studija u svoju biografiju ubeležila je nekoliko nagrada iz fonda FLU-za najbolju studiju i najbolji crtež, kao i nagradu za fotografiju iz fonda BC procesor. Tražeći odgovore na pitanja identiteta, Ivona neguje i autoportret i taj segment svog rada poredi sa dvoseklim mačem.',
+                                    ENG: 'Ivona Pleskonja belongs to the generation of young and ambitious artists. She has received acclaim for her works at exhibitions such as the October Salon and the Vršac Youth Biennale (1998). As a student, she won several awards from the FLU (Faculty of Fine Arts) fund for the best study and drawing, and another award for the best photography from the BC processor fund. In her quest for answers regarding identity, Ivona also cultivates self-portrait, the area of work which she compares to a two-blade sword.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: '„Potreba ka slikanju autoportreta čini mi se ponekad kao hermetični, začarani krug. Možda je reč o egocentričnoj fazi iz koje, rekla bih, polako izlazim. Dobro je kada inspiracija nalazi uporište u intimnom, ličnom, ali umetnost ne sme biti sasvim hermetična. Iz intime bi valjalo da se iznedri nešto univerzalno“, objašnjava Ivona Pleskonja.',
+                                    ENG: 'The need to make self-portraits seems at times like a hermetic, mesmerized circle but it may also be an egocentric phase that I thing I am gradually leaving now. It is good to find inspiration in one’s intimate, personal life, but art must not be totally hermetic. Intimacy should be used to breed something universal, explain Ivona Pleskonja.'
+                                },
+                            },
+                        ],
+                    ],
+                },
+                {
+                    TYPE: 'carousel',
+                    SLIDES: [
+                        {
+                            SRC: originSlide1,
+                            ALT: 'origin-slide-1',
+                        },
+                        {
+                            SRC: originSlide2,
+                            ALT: 'origin-slide-2',
+                        },
+                        {
+                            SRC: originSlide3,
+                            ALT: 'origin-slide-3',
+                        },
+                        {
+                            SRC: originSlide4,
+                            ALT: 'origin-slide-4',
+                        },
+                        {
+                            SRC: originSlide5,
+                            ALT: 'origin-slide-5',
+                        },
+                        {
+                            SRC: originSlide6,
+                            ALT: 'origin-slide-6',
+                        },
+                        {
+                            SRC: originSlide7,
+                            ALT: 'origin-slide-7',
+                        },
+                        {
+                            SRC: originSlide8,
+                            ALT: 'origin-slide-8',
+                        },
+                    ]
+                },
+                {
+                    TYPE: 'inverted_text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Analitičari Ivoninog slikarstva skloni su da u njenim platnima traže  asocijacije na savremene kompjuterske kolažne tehnike, iako ova umetnica, kako kaže, ne pokazuje nikakvu ličnu sklonost ka stripu ili kompjuterskoj umetnosti. Redukovani kolorit je odraz potrebe da pokaže kako svet izgleda danas i sada. „Ako bi bića sa drugih planeta želela da vide kako izgledaju Zemljani, ja bih im pokazala moje slike“, kaže umetnica. Ivona Pleskonja učila je u klasi Anđelke Bojović, slikarke i pedagoga čije su joj kritike, sugestije i pomoć i danas veoma dragoceni.',
+                                    ENG: 'Analysts of Ivona’s art are inclined to compare her works with the contemporary computerized collages although she herself denies having a penchant for the comic strip or computer art. The reduced colouring reflects Ivona’s need to show what the world looks like today. “Should beings from other planets wish to see what the Earthlings are like, I would present them my paintings”, says Ivona. Ivona Pleskonja studied under Anđelka Bojović, the painter and pedagogue, whose advice, guidance and appraisal she continues to receive and appreciate.'
+                                },
+                            },
+                        ],
+                    ],
+                }
             ]
         }
     },

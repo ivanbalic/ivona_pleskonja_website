@@ -146,6 +146,25 @@ import revolutionForEvolutionFull from '@/public/assets/one-world/revolution-for
 import revolutionForEvolutionPreview from '@/public/assets/one-world/revolution-for-evolution-preview.webp';
 import closeEncounterOfThirdKindFull from '@/public/assets/one-world/close-encounter-of-third-kind-full.webp';
 import closeEncounterOfThirdKindPreview from '@/public/assets/one-world/close-encounter-of-third-kind-preview.webp';
+//ORIGIN
+import wifeFull from '@/public/assets/origin/wife-full.webp';
+import natureFull from '@/public/assets/origin/nature-full.webp';
+import shadowFull from '@/public/assets/origin/shadow-full.webp';
+import wifePreview from '@/public/assets/origin/wife-preview.webp';
+import cleanerFull from '@/public/assets/origin/cleaner-full.webp';
+import guardianFull from '@/public/assets/origin/guardian-full.webp';
+import naturePreview from '@/public/assets/origin/nature-preview.webp';
+import shadowPreview from '@/public/assets/origin/shadow-preview.webp';
+import cleanerPreview from '@/public/assets/origin/cleaner-preview.webp';
+import apocalyptoFull from '@/public/assets/origin/apocalypto-full.webp';
+import guardianPreview from '@/public/assets/origin/guardian-preview.webp';
+import cosmopolitanFull from '@/public/assets/origin/cosmopolitan-full.webp';
+import apocalyptoPreview from '@/public/assets/origin/apocalypto-preview.webp';
+import earthBornKingFull from '@/public/assets/origin/earth-born-king-full.webp';
+import cosmopolitanPreview from '@/public/assets/origin/cosmopolitan-preview.webp';
+import theNewWorldKingFull from '@/public/assets/origin/the-new-world-king-full.webp';
+import earthBornKingPreview from '@/public/assets/origin/earth-born-king-preview.webp';
+import theNewWorldKingPreview from '@/public/assets/origin/the-new-world-king-preview.webp';
 
 export const PAGE_CONTENT = Object.freeze({
     TITLE: {
@@ -163,7 +182,7 @@ export const PAGE_CONTENT = Object.freeze({
         { ID: 'spirit', TITLE: { SER: { YEAR: '2011', TEXT: 'Duh' }, ENG: { YEAR: '2011', TEXT: 'Spirit' } }, DISABLED: false, LINK: null },
         { ID: 'one_world', TITLE: { SER: { YEAR: '2009', TEXT: 'Jedan Svet' }, ENG: { YEAR: '2009', TEXT: 'One World' } }, DISABLED: false, LINK: null },
         { ID: 'psychodrama', TITLE: { SER: { YEAR: '2008', TEXT: 'Psihodrama' }, ENG: { YEAR: '2008', TEXT: 'Psychodrama' } }, DISABLED: false, LINK: 'articles/6' },
-        { ID: 'origin', TITLE: { SER: { YEAR: '2007', TEXT: 'Izvor' }, ENG: { YEAR: '2007', TEXT: 'Origin' } }, DISABLED: true, LINK: null },
+        { ID: 'origin', TITLE: { SER: { YEAR: '2007', TEXT: 'Izvor' }, ENG: { YEAR: '2007', TEXT: 'Origin' } }, DISABLED: false, LINK: null },
         { ID: 'heroes', TITLE: { SER: { YEAR: '2007', TEXT: 'Heroji' }, ENG: { YEAR: '2007', TEXT: 'Heroes' } }, DISABLED: true, LINK: null },
         { ID: 'le_soleil', TITLE: { SER: { YEAR: '2003', TEXT: 'Le Soleil' }, ENG: { YEAR: '2003', TEXT: 'Le Soleil' } }, DISABLED: true, LINK: null },
         { ID: 'first_light', TITLE: { SER: { YEAR: '2000', TEXT: 'Prvo Svetlo' }, ENG: { YEAR: '2000', TEXT: 'First Light' } }, DISABLED: true, LINK: null },
@@ -2629,6 +2648,291 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             }
                         },
                     ],
+                ]
+            }
+        ],
+    },
+    ORIGIN: {
+        ID: 'origin',
+        EXHIBITION_ID: 11,
+        TEMPLATE_ID: 'TEMPLATE_ID',
+        HISTORY: [
+            {
+                ID: 'home',
+                TITLE: {
+                    SER: 'Početna',
+                    ENG: 'Home',
+                },
+                LINK: ''
+            },
+            {
+                ID: 'works',
+                TITLE: {
+                    SER: "Radovi",
+                    ENG: 'Works',
+                },
+                LINK: 'works'
+            },
+            {
+                ID: 'origin',
+                TITLE: {
+                    SER: 'Izvor',
+                    ENG: 'Origin'
+                },
+                LINK: 'works/origin'
+            },
+        ],
+        TITLE: {
+            SER: '„Izvor“',
+            ENG: '„Origin“'
+        },
+        DESCRIPTION: [
+            {
+                SER: 'Izvor ili smisao bivstvovanja ljudske rase sadrži univerzalnu istinu čovečanstva i prenosi je dalje. Bića koja otkriju večni izvor te istine prosvetljuju se.',
+                ENG: 'The origin or entity of human being contains the universal truth of humanity and transmit it along. Those beings who discoverd the eternal source of that truth are rising.',
+            },
+        ],
+        GALLERY: [
+            {
+                ID: 1,
+                TITLE: null,
+                CONTENT: [
+                    [
+                        {
+                            ID: 1,
+                            SRC: {
+                                FULL: apocalyptoFull,
+                                PREVIEW: apocalyptoPreview,
+                            },
+                            ALT: "apocalypto",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2007.',
+                                DIMENSIONS: '0.5 x 1.5 m',
+                                NAME: {
+                                    SER: 'APOKALIPTO' ,
+                                    ENG: 'APOCALYPTO'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Akril na platnu',
+                                    ENG: 'Acrylic on canvas'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                    ],
+                    [
+                        {
+                            ID: 2,
+                            SRC: {
+                                FULL: guardianFull,
+                                PREVIEW: guardianPreview,
+                            },
+                            ALT: "guardian",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2007.',
+                                DIMENSIONS: '2 x 2 m',
+                                NAME: {
+                                    SER: 'ČUVAR',
+                                    ENG: 'GUARDIAN'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Ulje na platnu / diptih',
+                                    ENG: 'Oli on canvas / diptych'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: '',
+                                }
+                            }
+                        },
+                        {
+                            ID: 3,
+                            SRC: {
+                                FULL: theNewWorldKingFull,
+                                PREVIEW: theNewWorldKingPreview,
+                            },
+                            ALT: "the-new-world-king",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2007.',
+                                DIMENSIONS: '2 x 2 m',
+                                NAME: {
+                                    SER: 'KRALJ NOVOG SVETA',
+                                    ENG: 'THE NEW WORLD KING'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovana tehnika na papiru kaširanom na drvo / poliptih',
+                                    ENG: 'Mixed technique on paper laminated on wood / polyptych'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: '',
+                                }
+                            }
+                        },
+                        {
+                            ID: 4,
+                            SRC: {
+                                FULL: earthBornKingFull,
+                                PREVIEW: earthBornKingPreview,
+                            },
+                            ALT: "earth-born-king",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2007.',
+                                DIMENSIONS: '2 x 2.5 m',
+                                NAME: {
+                                    SER: 'RODJEN IZ PRAŠINE KRALJ',
+                                    ENG: 'EARTH - BORN KING'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovana tehnika na papiru kaširanom na drvo / poliptih',
+                                    ENG: 'Mixed technique on paper laminated on wood / polyptych'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: '',
+                                }
+                            }
+                        },
+                    ],
+                    [
+                        {
+                            ID: 5,
+                            CLASS_NAME: 'object-contain',
+                            SRC: {
+                                FULL: cosmopolitanFull,
+                                PREVIEW: cosmopolitanPreview,
+                            },
+                            ALT: "cosmopolitan",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2007.',
+                                DIMENSIONS: '2.1 x 0.7 m',
+                                NAME: {
+                                    SER: 'KOSMOPOLITAN',
+                                    ENG: 'COSMOPOLITAN'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Ugljen i akril na papiru kaširanom na drvo / triptih',
+                                    ENG: 'Charcoal and acrylic on paper laminated on wood / triptych'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                        {
+                            ID: 6,
+                            CLASS_NAME: 'object-contain',
+                            SRC: {
+                                FULL: natureFull,
+                                PREVIEW: naturePreview,
+                            },
+                            ALT: "nature",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2007.',
+                                DIMENSIONS: '2.5 x 2 m',
+                                NAME: {
+                                    SER: 'PRIRODA' ,
+                                    ENG: 'NATURE'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovana tehnika na papiru kaširanom na drvo / poliptih',
+                                    ENG: 'Mixed technique on paper laminated on wood / polyptych'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                        {
+                            ID: 7,
+                            CLASS_NAME: 'object-contain',
+                            SRC: {
+                                FULL: wifeFull,
+                                PREVIEW: wifePreview,
+                            },
+                            ALT: "wife",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2007.',
+                                DIMENSIONS: '2 x 1.5 m',
+                                NAME: {
+                                    SER: 'SUPRUGA' ,
+                                    ENG: 'WIFE'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Akril na platnu',
+                                    ENG: 'Acrylic on canvas'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                        {
+                            ID: 8,
+                            CLASS_NAME: 'object-contain',
+                            SRC: {
+                                FULL: shadowFull,
+                                PREVIEW: shadowPreview,
+                            },
+                            ALT: "shadow",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2007.',
+                                DIMENSIONS: '1 x 0.7 m',
+                                NAME: {
+                                    SER: 'SENKA' ,
+                                    ENG: 'SHADOW'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovana tehnika na papiru kaširanom na drvo',
+                                    ENG: 'Mixed technique on paper laminated to wood',
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                        {
+                            ID: 9,
+                            CLASS_NAME: 'object-contain',
+                            SRC: {
+                                FULL: cleanerFull,
+                                PREVIEW: cleanerPreview,
+                            },
+                            ALT: "cleaner",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2007.',
+                                DIMENSIONS: '2 x 1.5 m',
+                                NAME: {
+                                    SER: 'ČISTAČ' ,
+                                    ENG: 'CLEANER'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Akril na platnu',
+                                    ENG: 'Acrylic on canvas'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                    ]
                 ]
             }
         ],
