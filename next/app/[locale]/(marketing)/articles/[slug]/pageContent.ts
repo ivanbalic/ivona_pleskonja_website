@@ -1410,6 +1410,24 @@ export const PAGE_CONTENT = Object.freeze({
                                     [
                                         {
                                             TYPE: 'text',
+                                            CLASS_NAME: 'text-[20px]',
+                                            TEXT: {
+                                                SER: "Autor murala:",
+                                                ENG: "Mural author:"
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'text-[20px] font-bold -mt-[18px]',
+                                            TEXT: {
+                                                SER: "Ivona Pleskonja",
+                                                ENG: "Ivona Pleskonja"
+                                            },
+                                        },
+                                    ],
+                                    [
+                                        {
+                                            TYPE: 'text',
                                             CLASS_NAME: '',
                                             TEXT: {
                                                 SER: "Asistenti slikari:",
@@ -1623,35 +1641,124 @@ export const PAGE_CONTENT = Object.freeze({
                     CONTENT: [
                         [
                             {
-                                TYPE: 'inverted_quote',
-                                WIDTH: 38,
-                                CLASS_NAME: 'md:text-[26px] font-light tracking-[.15em]',
-                                TEXT: {
-                                    SER: "Asistenti slikari:  <br/>" +
-                                        "<br />" +
-                                        "Bojan Dimić <br/>" +
-                                        "Relja Banović  <br/>" +
-                                        "David Radonjić  <br/>" +
-                                        "Leonora Ćormarković  <br/>" +
-                                        "Ananije Bešović  <br/>" +
-                                        "Jovan Ivanov  <br/>" +
-                                        "Milica Ljubić  <br/>" +
-                                        "Sofija Vujić  <br/>" +
-                                        "Marija Solujić  <br/>" +
-                                        "Ljubica Jovanović",
-                                    ENG: "Assistant painters:  <br/>" +
-                                        "<br />" +
-                                        "Bojan Dimić <br/>" +
-                                        "Relja Banović  <br/>" +
-                                        "David Radonjić  <br/>" +
-                                        "Leonora Ćormarković  <br/>" +
-                                        "Ananije Bešović  <br/>" +
-                                        "Jovan Ivanov  <br/>" +
-                                        "Milica Ljubić  <br/>" +
-                                        "Sofija Vujić  <br/>" +
-                                        "Marija Solujić  <br/>" +
-                                        "Ljubica Jovanović",
-                                },
+                                TYPE: 'inverted_text_grid',
+                                CLASS_NAME: 'w-[38%] md:text-[24px] font-light tracking-[.15em] justify-center items-center',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'font-light text-[28px] leading-[28px] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: "Autor murala:",
+                                                ENG: "Mural author:"
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: '-mt-[18px] text-[28px] leading-[28px] tracking-[.15em] font-bold',
+                                            TEXT: {
+                                                SER: "Ivona Pleskonja",
+                                                ENG: "Ivona Pleskonja"
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'font-light text-[24px] leading-[28px] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: " ",
+                                                ENG: " "
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'font-light text-[24px] leading-[28px] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: "Asistenti slikari:",
+                                                ENG: "Assistant painters:"
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'text-[24px] leading-[28px] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: "Bojan Dimić",
+                                                ENG: "Bojan Dimić",
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: '-mt-[18px] text-[24px] leading-[28px] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: "Relja Banović",
+                                                ENG: "Relja Banović",
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: '-mt-[18px] text-[24px] leading-[28px] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: "David Radonjić",
+                                                ENG: "David Radonjić",
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: '-mt-[18px] text-[24px] leading-[28px] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: "Leonora Ćormarković",
+                                                ENG: "Leonora Ćormarković",
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: '-mt-[18px] text-[24px] leading-[28px] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: "Ananije Bešović",
+                                                ENG: "Ananije Bešović",
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: '-mt-[18px] text-[24px] leading-[28px] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: "Jovan Ivanov",
+                                                ENG: "Jovan Ivanov",
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: '-mt-[18px] text-[24px] leading-[28px] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: "Milica Ljubić",
+                                                ENG: "Milica Ljubić",
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: '-mt-[18px] text-[24px] leading-[28px] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: "Sofija Vujić",
+                                                ENG: "Sofija Vujić",
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: '-mt-[18px] text-[24px] leading-[28px] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: "Marija Solujić",
+                                                ENG: "Marija Solujić",
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: '-mt-[18px] text-[24px] leading-[28px] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: "Ljubica Jovanović",
+                                                ENG: "Ljubica Jovanović",
+                                            },
+                                        },
+                                    ],
+                                ]
                             },
                             {
                                 TYPE: 'image',
@@ -1863,12 +1970,12 @@ export const PAGE_CONTENT = Object.freeze({
                 },
                 {
                     TYPE: 'inverted_text_grid',
-                    CLASS_NAME: 'w-full flex flex-row justify-between text-[16px] leading-[24px] tracking-[.15em] italic -mt-0 article-special',
+                    CLASS_NAME: 'w-full flex flex-row justify-between text-[16px] leading-[16px] tracking-[.15em] italic -mt-0 article-special',
                     CONTENT: [
                         [
                             {
                                 TYPE: 'text',
-                                CLASS_NAME: 'font-light text-[20px]',
+                                CLASS_NAME: 'font-light text-[20px] leading-[20px]',
                                 TEXT: {
                                     SER: "Autor murala:",
                                     ENG: "Mural author:"
@@ -1876,10 +1983,18 @@ export const PAGE_CONTENT = Object.freeze({
                             },
                             {
                                 TYPE: 'text',
-                                CLASS_NAME: 'font-bold text-[28px] -mt-[18px]',
+                                CLASS_NAME: 'font-bold text-[20px] leading-[20px] -mt-[18px]',
                                 TEXT: {
                                     SER: "Ivona Pleskonja",
                                     ENG: "Ivona Pleskonja"
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                CLASS_NAME: 'font-bold text-[28px] leading-[28px]   ',
+                                TEXT: {
+                                    SER: " ",
+                                    ENG: " "
                                 },
                             },
                             {
@@ -1956,7 +2071,7 @@ export const PAGE_CONTENT = Object.freeze({
                         [
                             {
                                 TYPE: 'inverted_text_grid',
-                                CLASS_NAME: 'w-[42%] flex flex-row justify-center items-center text-[28px] leading-[28px] tracking-[.15em] italic -mt-0 article-special',
+                                CLASS_NAME: 'w-[42%] flex flex-row justify-center items-center italic -mt-0 article-special',
                                 CONTENT: [
                                     [
                                         {
@@ -1985,7 +2100,7 @@ export const PAGE_CONTENT = Object.freeze({
                                         },
                                         {
                                             TYPE: 'text',
-                                            CLASS_NAME: 'font-light text-[28px] leading-[28px] tracking-[.15em]',
+                                            CLASS_NAME: 'font-light text-[24px] leading-[24px] tracking-[.15em]',
                                             TEXT: {
                                                 SER: "Asistenti slikari:",
                                                 ENG: "Assistant painters:"
@@ -1993,7 +2108,7 @@ export const PAGE_CONTENT = Object.freeze({
                                         },
                                         {
                                             TYPE: 'text',
-                                            CLASS_NAME: '-mt-[18px] text-[28px] leading-[28px] tracking-[.15em]',
+                                            CLASS_NAME: '-mt-[18px] text-[24px] leading-[24px] tracking-[.15em]',
                                             TEXT: {
                                                 SER: "Sofija Rakidžić",
                                                 ENG: "Sofija Rakidžić",
@@ -2001,7 +2116,7 @@ export const PAGE_CONTENT = Object.freeze({
                                         },
                                         {
                                             TYPE: 'text',
-                                            CLASS_NAME: '-mt-[18px] text-[28px] leading-[28px] tracking-[.15em]',
+                                            CLASS_NAME: '-mt-[18px] text-[24px] leading-[24px] tracking-[.15em]',
                                             TEXT: {
                                                 SER: "Teodora Rakidžić",
                                                 ENG: "Teodora Rakidžić",
@@ -2009,7 +2124,7 @@ export const PAGE_CONTENT = Object.freeze({
                                         },
                                         {
                                             TYPE: 'text',
-                                            CLASS_NAME: '-mt-[18px] text-[28px] leading-[28px] tracking-[.15em]',
+                                            CLASS_NAME: '-mt-[18px] text-[24px] leading-[24px] tracking-[.15em]',
                                             TEXT: {
                                                 SER: "Sofija Vujić",
                                                 ENG: "Sofija Vujić",
