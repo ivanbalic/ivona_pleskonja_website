@@ -215,7 +215,6 @@ import oneWorldSlide6 from '@/public/assets/one-world/exhibition-one-world-slide
 import oneWorldCoverMobile from '@/public/assets/one-world/exhibition-one-world-cover-mobile.webp';
 import oneWorldCoverDesktop from '@/public/assets/one-world/exhibition-one-world-cover-desktop.webp';
 // ORIGIN
-import originCover from '@/public/assets/origin/exhibition-origin-cover.webp';
 import originSlide1 from '@/public/assets/origin/exhibition-origin-slide-1.webp';
 import originSlide2 from '@/public/assets/origin/exhibition-origin-slide-2.webp';
 import originSlide3 from '@/public/assets/origin/exhibition-origin-slide-3.webp';
@@ -224,6 +223,8 @@ import originSlide5 from '@/public/assets/origin/exhibition-origin-slide-5.webp'
 import originSlide6 from '@/public/assets/origin/exhibition-origin-slide-6.webp';
 import originSlide7 from '@/public/assets/origin/exhibition-origin-slide-7.webp';
 import originSlide8 from '@/public/assets/origin/exhibition-origin-slide-8.webp';
+import originCoverMobile from '@/public/assets/origin/exhibition-origin-cover-mobile.webp';
+import originCoverDesktop from '@/public/assets/origin/exhibition-origin-cover-desktop.webp';
 
 export const PAGE_CONTENT = Object.freeze({
     CREATING_LIFE: {
@@ -4773,12 +4774,12 @@ export const PAGE_CONTENT = Object.freeze({
                 MOBILE: {
                     TYPE: 'image',
                     ALT: 'exhibition-cover',
-                    SRC: originCover,
+                    SRC: originCoverMobile,
                 },
                 DESKTOP: {
                     TYPE: 'image',
                     ALT: 'exhibition-cover',
-                    SRC: originCover,
+                    SRC: originCoverDesktop,
                 }
             },
             EXTERNAL_LINK: {

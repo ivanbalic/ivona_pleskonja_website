@@ -2864,8 +2864,8 @@ export const SUBPAGE_CONTENT = Object.freeze({
                                     ENG: 'Charcoal and acrylic on paper laminated on wood / triptych'
                                 },
                                 DESCRIPTION: {
-                                    SER: '',
-                                    ENG: ''
+                                    SER: 'Rad Kosmopolitan je u seriji MOČVARA, I taj rad je inspirisao Milenu Marković za scenario tog serijala.',
+                                    ENG: 'The work Cosmopolitan is part of the Swamp series, and that piece inspired Milena Marković for the script of that series.'
                                 },
                             }
                         },
