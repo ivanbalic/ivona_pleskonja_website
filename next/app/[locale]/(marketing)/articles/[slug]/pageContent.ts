@@ -4620,6 +4620,7 @@ export const PAGE_CONTENT = Object.freeze({
                         {
                             SRC: oneWorldSlide1,
                             ALT: 'one-world-slide-1',
+                            CLASS_NAME: '!object-contain',
                         },
                         {
                             SRC: oneWorldSlide2,

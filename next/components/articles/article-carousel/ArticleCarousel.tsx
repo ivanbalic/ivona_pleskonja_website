@@ -11,6 +11,7 @@ import {
     usePrevNextButtons
 } from '@/components/articles/article-carousel/ArticleCarousleArrowButtons';
 import { DotButton, useDotButton } from '@/components/articles/article-carousel/ArticleCarouselDotButtons';
+import {cn} from "@/lib/utils";
 
 type PropType = {
     section: Record<string, any>,
@@ -49,9 +50,9 @@ export const ArticleCarousel: React.FC<PropType> = ( { section }) => {
             <section className="embla article-carousel">
                 <div className="embla__viewport" ref={emblaRef}>
                     <div className="embla__container">
-                        {section.SLIDES.map((s: { SRC: string, ALT: string }, key: number) => (
+                        {section.SLIDES.map((s: { SRC: string, ALT: string, CLASS_NAME?: string }, key: number) => (
                             <div key={key} className="embla__slide">
-                                <Image src={s.SRC} alt={s.ALT} className='embla__slide__number w-full full object-cover md:object-contain' placeholder='blur' />
+                                <Image src={s.SRC} alt={s.ALT} className={cn('embla__slide__number w-full full object-cover md:object-contain', s.CLASS_NAME)} placeholder='blur' />
                             </div>
                         ))}
                     </div>
