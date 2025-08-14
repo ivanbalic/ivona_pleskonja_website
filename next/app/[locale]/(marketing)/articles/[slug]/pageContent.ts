@@ -40,6 +40,14 @@ import muralLifeSlide6 from '@/public/assets/mural-life/mural-life-slide-6.webp'
 import muralLifeSlide7 from '@/public/assets/mural-life/mural-life-slide-7.webp';
 import muralLifeSlide8 from '@/public/assets/mural-life/mural-life-slide-8.webp';
 import muralLifeSlide9 from '@/public/assets/mural-life/mural-life-slide-9.webp';
+import muralLifeSlide10 from '@/public/assets/mural-life/mural-life-slide-10.webp';
+import muralLifeSlide11 from '@/public/assets/mural-life/mural-life-slide-11.webp';
+import muralLifeSlide12 from '@/public/assets/mural-life/mural-life-slide-12.webp';
+import muralLifeSlide13 from '@/public/assets/mural-life/mural-life-slide-13.webp';
+import muralLifeSlide14 from '@/public/assets/mural-life/mural-life-slide-14.webp';
+import muralLifeSlide15 from '@/public/assets/mural-life/mural-life-slide-15.webp';
+import muralLifeSlide16 from '@/public/assets/mural-life/mural-life-slide-16.webp';
+import muralLifeSlide17 from '@/public/assets/mural-life/mural-life-slide-17.webp';
 // STRONG PEOPLE
 import strongPeople1 from '@/public/assets/strong-people/strong-people-1.webp';
 import strongPeople2 from '@/public/assets/strong-people/strong-people-2.webp';
@@ -1337,6 +1345,38 @@ export const PAGE_CONTENT = Object.freeze({
                             SRC: muralLifeSlide9,
                             ALT: 'mural-life-slide-9',
                         },
+                        {
+                            SRC: muralLifeSlide10,
+                            ALT: 'mural-life-slide-10',
+                        },
+                        {
+                            SRC: muralLifeSlide11,
+                            ALT: 'mural-life-slide-11',
+                        },
+                        {
+                            SRC: muralLifeSlide12,
+                            ALT: 'mural-life-slide-12',
+                        },
+                        {
+                            SRC: muralLifeSlide13,
+                            ALT: 'mural-life-slide-13',
+                        },
+                        {
+                            SRC: muralLifeSlide14,
+                            ALT: 'mural-life-slide-14',
+                        },
+                        {
+                            SRC: muralLifeSlide15,
+                            ALT: 'mural-life-slide-15',
+                        },
+                        {
+                            SRC: muralLifeSlide16,
+                            ALT: 'mural-life-slide-16',
+                        },
+                        {
+                            SRC: muralLifeSlide17,
+                            ALT: 'mural-life-slide-17',
+                        },
                     ]
                 },
                 {
@@ -1542,6 +1582,38 @@ export const PAGE_CONTENT = Object.freeze({
                         {
                             SRC: muralLifeSlide9,
                             ALT: 'mural-life-slide-9',
+                        },
+                        {
+                            SRC: muralLifeSlide10,
+                            ALT: 'mural-life-slide-10',
+                        },
+                        {
+                            SRC: muralLifeSlide11,
+                            ALT: 'mural-life-slide-11',
+                        },
+                        {
+                            SRC: muralLifeSlide12,
+                            ALT: 'mural-life-slide-12',
+                        },
+                        {
+                            SRC: muralLifeSlide13,
+                            ALT: 'mural-life-slide-13',
+                        },
+                        {
+                            SRC: muralLifeSlide14,
+                            ALT: 'mural-life-slide-14',
+                        },
+                        {
+                            SRC: muralLifeSlide15,
+                            ALT: 'mural-life-slide-15',
+                        },
+                        {
+                            SRC: muralLifeSlide16,
+                            ALT: 'mural-life-slide-16',
+                        },
+                        {
+                            SRC: muralLifeSlide17,
+                            ALT: 'mural-life-slide-17',
                         },
                     ]
                 },
