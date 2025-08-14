@@ -11,6 +11,7 @@ import { IGalleryRowItem, ITranslations } from "@/types/types";
 import { LeftArrow } from "@/components/art-gallery/LeftArrow";
 import { RightArrow } from "@/components/art-gallery/RightArrow";
 import { useGalleryNavigation } from "@/components/art-gallery/hooks/useGalleryNavigation";
+import {section} from "framer-motion/m";
 
 export function MobileGallery({ locale, gallery, exhibitionId }: { locale: string, gallery?: IGalleryRowItem[][], exhibitionId: number }) {
     const [swipeDirection, setSwipeDirection] = useState<"LEFT" | "RIGHT">("LEFT");
@@ -88,7 +89,7 @@ export function MobileGallery({ locale, gallery, exhibitionId }: { locale: strin
                                         </div>
                                     )
                                 }
-                                <div className="text-black font-helvetica text-[16px] leading-[24px] tracking-[.05em] mb-10">{selected.DETAILS?.DESCRIPTION[locale.toUpperCase() as keyof ITranslations]}</div>
+                                <div className="text-black font-helvetica text-[16px] leading-[24px] tracking-[.05em] mb-10" dangerouslySetInnerHTML={{ __html: selected.DETAILS?.DESCRIPTION[locale.toUpperCase() as keyof ITranslations] ?? '' }}/>
                                 <Link href={`/${locale}/articles/${exhibitionId}`} className="text-[16px] leading-[100%] tracking-[.15em] font-bold">{articleLinkLabel}</Link>
                             </div>
                         </div>

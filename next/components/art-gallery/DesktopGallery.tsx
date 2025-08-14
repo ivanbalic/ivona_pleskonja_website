@@ -85,7 +85,7 @@ export function DesktopGallery({ locale, gallery, exhibitionId }: { locale: stri
                                 selected.TYPE === 'vertical' ? 'justify-center items-center' : 'justify-end items-start',
                                 "w-full flex flex-col text-[36px] leading-[100%] font-bold font-roboto-serif mb-[5px] uppercase"
                             )}>
-                                „{selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}“
+                                {`„${selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}“`}
                             </div>
                             {selected.TYPE === 'vertical' && <div className="text-[32px] leading-[100%] font-bold font-roboto-serif mt-[5px]">{selected.DETAILS?.SUBTITLE?.[locale.toUpperCase() as keyof ITranslations]}</div>}
                             {selected.TYPE !== 'vertical' &&
@@ -96,8 +96,9 @@ export function DesktopGallery({ locale, gallery, exhibitionId }: { locale: stri
                             }
                             <div className={cn(
                                 selected.TYPE === 'vertical' ? 'my-10': 'mb-20',
-                                "text-black font-helvetica text-[16px] leading-[24px] tracking-[.05em]")}>{selected.DETAILS?.DESCRIPTION[locale.toUpperCase() as keyof ITranslations]}
-                            </div>
+                                "text-black font-helvetica text-[16px] leading-[24px] tracking-[.05em]")}
+                                 dangerouslySetInnerHTML={{__html: selected.DETAILS?.DESCRIPTION[locale.toUpperCase() as keyof ITranslations] ?? ''}}
+                            />
                             {selected.TYPE === 'vertical' && <div className={cn(
                                 "flex justify-center items-center bg-white",
                                 "min-h-[200px] max-h-full xl:max-h-[715px] w-full max-w-full"

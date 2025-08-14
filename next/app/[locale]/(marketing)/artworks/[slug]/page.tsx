@@ -33,7 +33,7 @@ export default function WorkDetailsPage({ params: { locale, slug } }: { params: 
 
     return (
         <SelectedImageProvider>
-            <Container className={cn('pt-[85px] md:pt-[125px] px-4 md:px-[135px] text-black min-h-screen', showGallery && 'bg-backgroundSecondary max-w-full')}>
+            <Container className={cn('pt-[85px] md:pt-[125px] px-4 md:px-[80px] text-black min-h-screen', showGallery && 'bg-backgroundSecondary max-w-full')}>
                 <SubNavBredCrumbs compact={showGallery && isMobile} navItems={page.HISTORY ?? []} locale={locale} page={slug} />
                 { showGallery
                     ? <ArtGallery locale={locale} gallery={gallery?.CONTENT} exhibitionId={page.EXHIBITION_ID} galleryTitle={gallery?.TITLE?.[locale.toUpperCase() as keyof ITranslations] ?? null} />

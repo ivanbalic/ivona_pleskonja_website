@@ -3,6 +3,7 @@ import { IArtWorks } from "@/types/types";
 import IVFull from "@/public/assets/creating-light/IV-full.webp";
 import IVPreview from "@/public/assets/creating-light/IV-preview.webp";
 import holyDustFull from "@/public/assets/creating-light/holy-dust-full.webp";
+import smallWorksFull from "@/public/assets/creating-light/small-works-full.webp";
 import holyDustPreview from "@/public/assets/creating-light/holy-dust-preview.webp";
 import creatingLifeFull from "@/public/assets/creating-light/creating-life-full.webp";
 import creatingAngelFull from "@/public/assets/creating-light/creating-angel-full.webp";
@@ -425,6 +426,46 @@ export const SUBPAGE_CONTENT = Object.freeze({
                                 DESCRIPTION: {
                                     SER: 'Svetim prahom posuto lice upravo stvorenog Anđela, koji dolazi u ovaj svet da bude među ljudima.',
                                     ENG: 'The holy dust on the face of the newly created Angel, who comes to this world to be among people.'
+                                }
+                            }
+                        },
+                    ],
+                    [
+                        {
+                            ID: 8,
+                            SRC: {
+                                COLOR: '#000000',
+                                FULL: smallWorksFull,
+                                PREVIEW: smallWorksFull,
+                            },
+                            ALT: "small-works",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2023.',
+                                DIMENSIONS: '70 x 50 cm',
+                                NAME: {
+                                    SER: 'MALI RADOVI',
+                                    ENG: 'SMALL WORKS'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovana tehnika na papiru',
+                                    ENG: 'Mixed media on paper'
+                                },
+                                DESCRIPTION: {
+                                    SER: "<span class='font-bold'>1. LIVE LONG AND PROPSER <br/>" +
+                                        "2. BOGORODICA <br/>" +
+                                        "3. ANÐEOSKI SAN  <br/>" +
+                                        "4. PERO SOKOLA  <br/>" +
+                                        "5. BRAĆA PO VETRU  <br/>" +
+                                        "6. VIDA  <br/>" +
+                                        "7. SVETLOST ME JE DONELA  <br/></span>",
+                                   ENG: "<span class='font-bold'>1. LIVE LONG AND PROPSER <br/>" +
+                                       "2. MOTHER OF GOD <br/>" +
+                                       "3. ANGEL'S DREAM  <br/>" +
+                                       "4. FALCON FEATHER  <br/>" +
+                                       "5. WIND BROTHERS  <br/>" +
+                                       "6. VIDA  <br/>" +
+                                       "7. BROUGHT BY LIGHT  <br/></span>"
                                 }
                             }
                         },
