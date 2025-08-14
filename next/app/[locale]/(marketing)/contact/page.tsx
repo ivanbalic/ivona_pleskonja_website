@@ -19,12 +19,34 @@ export default function ContactPage() {
                 <div className="flex gap-1">
                     <span className="font-bold">E-MAIL</span><Link className="tracking-[.08em] underline" href="mailto:ivonapleskonja@hotmail.com">ivonapleskonja@hotmail.com</Link>
                 </div>
-                <Link className="font-bold"
-                      href="https://www.instagram.com/ivonapleskonjafineart?igsh=eTQ5dzhnbnVzNGV1"
-                      target="_blank">INSTAGRAM</Link>
-                <Link className="font-bold"
-                      href="https://www.facebook.com/share/1AvuPnJMQ2/?mibextid=wwXIfrhttps://facebook.comhttps://www.facebook.com/share/1AvuPnJMQ2/?mibextid=wwXIfr"
-                      target="_blank">FACEBOOK</Link>
+                <Link
+                    className="font-bold"
+                    href="https://www.instagram.com/ivonapleskonjafineart?igsh=eTQ5dzhnbnVzNGV1"
+                    target="_blank"
+                >
+                    INSTAGRAM
+                </Link>
+                <Link
+                    className="font-bold"
+                    href="https://www.facebook.com/share/1AvuPnJMQ2/?mibextid=wwXIfrhttps://facebook.comhttps://www.facebook.com/share/1AvuPnJMQ2/?mibextid=wwXIfr"
+                    target="_blank"
+                >
+                    FACEBOOK
+                </Link>
+                <Link
+                    className="font-bold"
+                    href="https://www.tiktok.com/@ivonapleskonja?_t=ZM-8ySKKdS4hRG&_r=1"
+                    target="_blank"
+                >
+                    TIK TOK
+                </Link>
+                <Link
+                    className="font-bold"
+                    href="https://www.youtube.com/@ivonapleskonja"
+                    target="_blank"
+                >
+                    YOUTUBE
+                </Link>
             </div>
         </div>
     );
