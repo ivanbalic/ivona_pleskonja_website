@@ -2,8 +2,8 @@
 import React, { useMemo } from "react";
 
 import { cn } from "@/lib/utils";
-import { GridImage } from "@/components/my-works/GridImage";
-import { IGalleryRowItem, ITranslations, IMyWorks } from "@/types/types";
+import { GridImage } from "@/components/artworks/GridImage";
+import { IGalleryRowItem, ITranslations, IArtWorks } from "@/types/types";
 
 type GalleryRowMap = Record<string, IGalleryRowItem[]>;
 
@@ -19,7 +19,7 @@ function getGridColumns(row: IGalleryRowItem[]){
     return `${columnConfig.join(" ")}`;
 }
 
-export function MyWorkDetails({ data, locale }: { data: IMyWorks, locale: string }) {
+export function ArtworkDetails({ data, locale }: { data: IArtWorks, locale: string }) {
     const title = useMemo(() => data?.TITLE?.[locale.toUpperCase() as keyof ITranslations], [data?.TITLE, locale]);
 
     const description = useMemo(() => data?.DESCRIPTION?.map(

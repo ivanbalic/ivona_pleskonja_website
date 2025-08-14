@@ -1,4 +1,4 @@
-import { IMyWorks } from "@/types/types";
+import { IArtWorks } from "@/types/types";
 // CREATING LIGHT
 import IVFull from "@/public/assets/creating-light/IV-full.webp";
 import IVPreview from "@/public/assets/creating-light/IV-preview.webp";
@@ -169,7 +169,7 @@ import theNewWorldKingPreview from '@/public/assets/origin/the-new-world-king-pr
 export const PAGE_CONTENT = Object.freeze({
     TITLE: {
         SER: "RADOVI",
-        ENG: "WORKS"
+        ENG: "ARTWORKS"
     },
     CONTENT: [
         { ID: 'mural_freedom', TITLE: { SER: { YEAR: '2024', TEXT: 'Mural Freedom' },  ENG: { YEAR: '2024', TEXT: 'Mural Freedom' } }, DISABLED: false, LINK: 'articles/4' },
@@ -206,12 +206,12 @@ export const SUBPAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'works',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Radovi",
-                    ENG: 'Works',
+                    ENG: 'Artworks',
                 },
-                LINK: 'works'
+                LINK: 'artworks'
             },
             {
                 ID: 'creating_light',
@@ -219,7 +219,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                     SER: 'Stvaranje svetla / Nežni smo rođeni',
                     ENG: 'Creating Light / We Are Born Gentle'
                 },
-                LINK: 'works/creating_light'
+                LINK: 'artworks/creating_light'
             },
         ],
         TITLE: {
@@ -447,12 +447,12 @@ export const SUBPAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'works',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Radovi",
-                    ENG: 'Works',
+                    ENG: 'Artworks',
                 },
-                LINK: 'works'
+                LINK: 'artworks'
             },
             {
                 ID: '11_snaga',
@@ -460,7 +460,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                     SER: '„11 snaga“',
                     ENG: '„11 snaga“'
                 },
-                LINK: 'works/11_snaga'
+                LINK: 'artworks/11_snaga'
             },
         ],
         TITLE: {
@@ -1147,12 +1147,12 @@ export const SUBPAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'works',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Radovi",
-                    ENG: 'Works',
+                    ENG: 'Artworks',
                 },
-                LINK: 'works'
+                LINK: 'artworks'
             },
             {
                 ID: 'children_of_the_sun',
@@ -1160,7 +1160,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                     SER: 'Deca Sunca',
                     ENG: 'Children of the Sun'
                 },
-                LINK: 'works/children_of_the_sun'
+                LINK: 'artworks/children_of_the_sun'
             },
         ],
         TITLE: {
@@ -2038,12 +2038,12 @@ export const SUBPAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'works',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Radovi",
-                    ENG: 'Works',
+                    ENG: 'Artworks',
                 },
-                LINK: 'works'
+                LINK: 'artworks'
             },
             {
                 ID: 'stops_in_time',
@@ -2051,7 +2051,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                     SER: 'Vremenske stanice',
                     ENG: 'Stops in Time'
                 },
-                LINK: 'works/stops_in_time'
+                LINK: 'artworks/stops_in_time'
             },
         ],
         TITLE: {
@@ -2266,12 +2266,12 @@ export const SUBPAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'works',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Radovi",
-                    ENG: 'Works',
+                    ENG: 'Artworks',
                 },
-                LINK: 'works'
+                LINK: 'artworks'
             },
             {
                 ID: 'spirit',
@@ -2279,7 +2279,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                     SER: 'Duh',
                     ENG: 'Spirit'
                 },
-                LINK: 'works/spirit'
+                LINK: 'artworks/spirit'
             },
         ],
         TITLE: {
@@ -2487,12 +2487,12 @@ export const SUBPAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'works',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Radovi",
-                    ENG: 'Works',
+                    ENG: 'Artworks',
                 },
-                LINK: 'works'
+                LINK: 'artworks'
             },
             {
                 ID: 'one_world',
@@ -2500,7 +2500,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                     SER: 'Jedan svet',
                     ENG: 'One World'
                 },
-                LINK: 'works/one_world'
+                LINK: 'artworks/one_world'
             },
         ],
         TITLE: {
@@ -2666,12 +2666,12 @@ export const SUBPAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'works',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Radovi",
-                    ENG: 'Works',
+                    ENG: 'Artworks',
                 },
-                LINK: 'works'
+                LINK: 'artworks'
             },
             {
                 ID: 'origin',
@@ -2679,7 +2679,7 @@ export const SUBPAGE_CONTENT = Object.freeze({
                     SER: 'Izvor',
                     ENG: 'Origin'
                 },
-                LINK: 'works/origin'
+                LINK: 'artworks/origin'
             },
         ],
         TITLE: {
@@ -2939,6 +2939,6 @@ export const SUBPAGE_CONTENT = Object.freeze({
     },
 });
 
-export function getSubPageContentById(id: string): IMyWorks | undefined {
-    return Object.values(SUBPAGE_CONTENT).find((PAGE) => PAGE.ID === id) as IMyWorks;
+export function getSubPageContentById(id: string): IArtWorks | undefined {
+    return Object.values(SUBPAGE_CONTENT).find((PAGE) => PAGE.ID === id) as IArtWorks;
 }

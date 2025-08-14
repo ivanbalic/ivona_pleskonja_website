@@ -218,12 +218,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'works',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Radovi",
-                    ENG: 'Works',
+                    ENG: 'Artworks',
                 },
-                LINK: 'works'
+                LINK: 'artworks'
             },
             {
                 ID: 'creating_light',
@@ -231,7 +231,7 @@ export const PAGE_CONTENT = Object.freeze({
                     SER: 'Stvaranje svetla / Nežni smo rođeni',
                     ENG: 'Creating Light / We Are Born Gentle'
                 },
-                LINK: 'works/creating_light'
+                LINK: 'artworks/creating_light'
             },
             {
                 ID: 'exhibition',
@@ -751,12 +751,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'works',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Radovi",
-                    ENG: 'Works',
+                    ENG: 'Artworks',
                 },
-                LINK: 'works'
+                LINK: 'artworks'
             },
             {
                 ID: '11-snaga',
@@ -764,7 +764,7 @@ export const PAGE_CONTENT = Object.freeze({
                     SER: '„11 snaga“',
                     ENG: '„11 snaga“'
                 },
-                LINK: 'works/11_snaga'
+                LINK: 'artworks/11_snaga'
             },
             {
                 ID: 'exhibition',
@@ -1218,12 +1218,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'works',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Radovi",
-                    ENG: 'Works',
+                    ENG: 'Artworks',
                 },
-                LINK: 'works'
+                LINK: 'artworks'
             },
             {
                 ID: 'exhibition',
@@ -1689,12 +1689,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'works',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Radovi",
-                    ENG: 'Works',
+                    ENG: 'Artworks',
                 },
-                LINK: 'works'
+                LINK: 'artworks'
             },
             {
                 ID: 'exhibition',
@@ -1925,12 +1925,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'works',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Radovi",
-                    ENG: 'Works',
+                    ENG: 'Artworks',
                 },
-                LINK: 'works'
+                LINK: 'artworks'
             },
             {
                 ID: 'exhibitions',
@@ -2103,12 +2103,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'works',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Radovi",
-                    ENG: 'Works',
+                    ENG: 'Artworks',
                 },
-                LINK: 'works'
+                LINK: 'artworks'
             },
             {
                 ID: 'exhibitions',
@@ -3057,12 +3057,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'works',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Radovi",
-                    ENG: 'Works',
+                    ENG: 'Artworks',
                 },
-                LINK: 'works'
+                LINK: 'artworks'
             },
             {
                 ID: 'children_of_the_sun',
@@ -3070,7 +3070,7 @@ export const PAGE_CONTENT = Object.freeze({
                     SER: 'Deca Sunca',
                     ENG: 'Children of the Sun'
                 },
-                LINK: 'works/children_of_the_sun'
+                LINK: 'artworks/children_of_the_sun'
             },
             {
                 ID: 'exhibitions',
@@ -3646,12 +3646,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'works',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Radovi",
-                    ENG: 'Works',
+                    ENG: 'Artworks',
                 },
-                LINK: 'works'
+                LINK: 'artworks'
             },
             {
                 ID: 'stops_in_time',
@@ -3659,7 +3659,7 @@ export const PAGE_CONTENT = Object.freeze({
                     SER: 'Vremenske stanice',
                     ENG: 'Stops In Time'
                 },
-                LINK: 'works/stops_in_time'
+                LINK: 'artworks/stops_in_time'
             },
             {
                 ID: 'exhibitions',
@@ -3926,12 +3926,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'works',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Radovi",
-                    ENG: 'Works',
+                    ENG: 'Artworks',
                 },
-                LINK: 'works'
+                LINK: 'artworks'
             },
             {
                 ID: 'spirit',
@@ -3939,7 +3939,7 @@ export const PAGE_CONTENT = Object.freeze({
                     SER: 'Duh',
                     ENG: 'Spirit'
                 },
-                LINK: 'works/spirit'
+                LINK: 'artworks/spirit'
             },
             {
                 ID: 'exhibitions',
@@ -4115,7 +4115,7 @@ export const PAGE_CONTENT = Object.freeze({
                                 CLASS_NAME: 'text-primaryBlue',
                                 TEXT: {
                                     SER: 'Ivona Pleskonja (1974) pripada najnovijoj generaciji predstavnika \'Nove slike\'. Magistrirala je na FLU 2001. u klasi profesora Anđelke Bojović, odsek slikarstvo. Bila stipendista fonda Madlena Janković kao mladi talenat. Član ULUS-a sa statusom slobodnog umetnika od l998. Godine. Ovo je njena 11. samostalna izložba.',
-                                    ENG: 'Ivona Pleskonja (1974) belongs to the newest generation of New Image representatives. She earned her Master’s degree from the Faculty of Fine Arts (FLU) in 2001 in the class of Professor Anđelka Bojović, painting department. She was a scholarship holder of the Madlena Janković Foundation as a young talent. A member of ULUS with the status of an independent artist since 1998.'
+                                    ENG: 'Ivona Pleskonja (1974) belongs to the newest generation of New Image representatives. She earned her Master’s degree from the Faculty of Fine Arts (FLU) in 2001 in the class of Professor Anđelka Bojović, painting department. She was a scholarship holder of the Madlena Janković Foundation as a young talent. A member of ULUS with the status of an independent artist since 1998.'
                                 },
                             },
                         ]
@@ -4185,12 +4185,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'works',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Radovi",
-                    ENG: 'Works',
+                    ENG: 'Artworks',
                 },
-                LINK: 'works'
+                LINK: 'artworks'
             },
             {
                 ID: 'one_world',
@@ -4198,7 +4198,7 @@ export const PAGE_CONTENT = Object.freeze({
                     SER: 'Jedan Svet',
                     ENG: 'One World'
                 },
-                LINK: 'works/one_world'
+                LINK: 'artworks/one_world'
             },
             {
                 ID: 'exhibitions',
@@ -4375,12 +4375,12 @@ export const PAGE_CONTENT = Object.freeze({
                 LINK: ''
             },
             {
-                ID: 'works',
+                ID: 'artworks',
                 TITLE: {
                     SER: "Radovi",
-                    ENG: 'Works',
+                    ENG: 'Artworks',
                 },
-                LINK: 'works'
+                LINK: 'artworks'
             },
             {
                 ID: 'one_world',
@@ -4388,7 +4388,7 @@ export const PAGE_CONTENT = Object.freeze({
                     SER: 'Izvor',
                     ENG: 'Origin'
                 },
-                LINK: 'works/origin'
+                LINK: 'artworks/origin'
             },
             {
                 ID: 'exhibitions',

@@ -29,7 +29,7 @@ export interface IGallery {
     CONTENT: IGalleryRowItem[][];
 }
 
-export interface IMyWorks {
+export interface IArtWorks {
     ID: string;
     TEMPLATE_ID: string;
     GALLERY: IGallery[];

@@ -17,7 +17,7 @@ const WHITE = '#FFFFFF';
 const BRAND_COLOR = '#3769E6';
 
 const NAVBAR_COLORS_MAP = Object.freeze({
-    WORKS: {
+    ARTWORKS: {
         DESKTOP:  WHITE,
         MOBILE:  WHITE,
     },
@@ -33,7 +33,7 @@ const NAVBAR_COLORS_MAP = Object.freeze({
         DESKTOP:  BRAND_COLOR,
         MOBILE:  WHITE,
     },
-    WORK_DETAILS: {
+    ARTWORK_DETAILS: {
         DESKTOP:  BRAND_COLOR,
         MOBILE:  BRAND_COLOR,
     },

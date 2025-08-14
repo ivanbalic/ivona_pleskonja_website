@@ -16,7 +16,7 @@ const ADDITIONAL_BREADCRUMBS_MAP_MOBILE = Object.freeze({
                 SER: '11 Snaga Slike',
                 ENG: '11 Snaga Paintings'
             },
-            LINK: 'works/11_snaga',
+            LINK: 'artworks/11_snaga',
         },
         2: {
             ID: 'Lithographs',
@@ -24,7 +24,7 @@ const ADDITIONAL_BREADCRUMBS_MAP_MOBILE = Object.freeze({
                 SER: '11 Snaga Litografije',
                 ENG: '11 Snaga Lithographs'
             },
-            LINK: 'works/11_snaga',
+            LINK: 'artworks/11_snaga',
         }
     },
     children_of_the_sun: {
@@ -34,7 +34,7 @@ const ADDITIONAL_BREADCRUMBS_MAP_MOBILE = Object.freeze({
                 SER: 'Deca Sunca Slike',
                 ENG: 'Children of the Sun Paintings'
             },
-            LINK: 'works/children_of_the_sun',
+            LINK: 'artworks/children_of_the_sun',
         },
         2: {
             ID: 'Lithographs',
@@ -42,7 +42,7 @@ const ADDITIONAL_BREADCRUMBS_MAP_MOBILE = Object.freeze({
                 SER: 'Deca Sunca Litografije',
                 ENG: 'Children of the Sun Lithographs'
             },
-            LINK: 'works/children_of_the_sun',
+            LINK: 'artworks/children_of_the_sun',
         }
     }
 });
@@ -54,7 +54,7 @@ const ADDITIONAL_BREADCRUMBS_MAP_DESKTOP = Object.freeze({
                 SER: 'Slike',
                 ENG: 'Paintings'
             },
-            LINK: 'works/children_of_the_sun?gallery=1',
+            LINK: 'artworks/children_of_the_sun?gallery=1',
         },
         2: {
             ID: 'Lithographs',
@@ -62,7 +62,7 @@ const ADDITIONAL_BREADCRUMBS_MAP_DESKTOP = Object.freeze({
                 SER: 'Litografije',
                 ENG: 'Lithographs'
             },
-            LINK: 'works/children_of_the_sun?gallery=2',
+            LINK: 'artworks/children_of_the_sun?gallery=2',
         }
     },
     children_of_the_sun: {
@@ -72,7 +72,7 @@ const ADDITIONAL_BREADCRUMBS_MAP_DESKTOP = Object.freeze({
                 SER: 'Slike',
                 ENG: 'Paintings'
             },
-            LINK: 'works/children_of_the_sun?gallery=1',
+            LINK: 'artworks/children_of_the_sun?gallery=1',
         },
         2: {
             ID: 'Lithographs',
@@ -80,7 +80,7 @@ const ADDITIONAL_BREADCRUMBS_MAP_DESKTOP = Object.freeze({
                 SER: 'Litografije',
                 ENG: 'Lithographs'
             },
-            LINK: 'works/children_of_the_sun?gallery=2',
+            LINK: 'artworks/children_of_the_sun?gallery=2',
         }
     }
 });

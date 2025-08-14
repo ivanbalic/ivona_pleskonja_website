@@ -7,10 +7,10 @@ import { cn } from '@/lib/utils';
 import { ITranslations } from "@/types/types";
 import { Container } from '@/components/container';
 import { ArtGallery } from '@/components/art-gallery/ArtGallery';
-import { MyWorkDetails } from '@/components/my-works/MyWorkDetails';
+import { ArtworkDetails } from '@/components/artworks/ArtworkDetails';
 import { SelectedImageProvider } from '@/context/SelectedImageContext';
 import { SubNavBredCrumbs } from '@/components/subnav-bredcrumbs/SubNavBredCrumbs';
-import { getSubPageContentById } from '@/app/[locale]/(marketing)/works/pageContent';
+import { getSubPageContentById } from '@/app/[locale]/(marketing)/artworks/pageContent';
 
 export default function WorkDetailsPage({ params: { locale, slug } }: { params: { locale: string, slug: string } }) {
     const [isMobile, setIsMobile] = useState(false);
@@ -37,7 +37,7 @@ export default function WorkDetailsPage({ params: { locale, slug } }: { params: 
                 <SubNavBredCrumbs compact={showGallery && isMobile} navItems={page.HISTORY ?? []} locale={locale} page={slug} />
                 { showGallery
                     ? <ArtGallery locale={locale} gallery={gallery?.CONTENT} exhibitionId={page.EXHIBITION_ID} galleryTitle={gallery?.TITLE?.[locale.toUpperCase() as keyof ITranslations] ?? null} />
-                    : <MyWorkDetails data={page} locale={locale} />
+                    : <ArtworkDetails data={page} locale={locale} />
                 }
             </Container>
         </SelectedImageProvider>

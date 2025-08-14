@@ -6,7 +6,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { ITranslations } from "@/types/types";
 import { Container } from "@/components/container";
-import { PAGE_CONTENT } from "@/app/[locale]/(marketing)/works/pageContent";
+import { PAGE_CONTENT } from "@/app/[locale]/(marketing)/artworks/pageContent";
 
 const getTitle = ( locale: string) => {
     return PAGE_CONTENT?.TITLE[locale.toUpperCase() as keyof ITranslations];
@@ -27,7 +27,7 @@ export default function MyWorksPage({ params: { locale } }: { params: { locale: 
                         return (
                             <Link
                                 key={item.ID}
-                                href={`/${locale}/${item.LINK ?? `works/${item.ID}`}`}
+                                href={`/${locale}/${item.LINK ?? `artworks/${item.ID}`}`}
                                 className={cn(
                                     "flex gap-4",
                                     "hover:font-bold",
