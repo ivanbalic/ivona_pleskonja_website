@@ -1791,38 +1791,36 @@ export const PAGE_CONTENT = Object.freeze({
                 },
                 {
                     TYPE: 'inverted_text_grid',
-                    CLASS_NAME: 'w-full flex flex-row justify-between text-[16px] leading-[24px] tracking-[.05em] italic -mt-0 article-special',
+                    CLASS_NAME: 'w-full flex flex-row justify-between text-[16px] leading-[24px] tracking-[.15em] italic -mt-0 article-special',
                     CONTENT: [
                         [
                             {
                                 TYPE: 'text',
-                                CLASS_NAME: 'w-[173px]',
+                                CLASS_NAME: 'font-light text-[20px]',
                                 TEXT: {
-                                    SER: " ",
-                                    ENG: " "
+                                    SER: "Autor murala:",
+                                    ENG: "Mural author:"
                                 },
                             },
                             {
                                 TYPE: 'text',
-                                CLASS_NAME: 'w-[173px]',
+                                CLASS_NAME: 'font-bold text-[28px] -mt-[18px]',
                                 TEXT: {
-                                    SER: " ",
-                                    ENG: " "
+                                    SER: "Ivona Pleskonja",
+                                    ENG: "Ivona Pleskonja"
                                 },
                             },
                             {
                                 TYPE: 'text',
-                                CLASS_NAME: 'w-[173px]',
+                                CLASS_NAME: 'w-[173px] font-light',
                                 TEXT: {
                                     SER: "Asistenti slikari:",
                                     ENG: "Assistant painters:"
                                 },
                             },
-                        ],
-                        [
                             {
                                 TYPE: 'text',
-                                CLASS_NAME: 'w-[173px]',
+                                CLASS_NAME: 'w-[173px] -mt-[18px]',
                                 TEXT: {
                                     SER: "Sofija Rakidžić",
                                     ENG: "Sofija Rakidžić",
@@ -1844,7 +1842,7 @@ export const PAGE_CONTENT = Object.freeze({
                                     ENG: "Sofija Vujić",
                                 },
                             },
-                        ]
+                        ],
                     ]
                 },
                 {
@@ -1885,21 +1883,68 @@ export const PAGE_CONTENT = Object.freeze({
                     CONTENT: [
                         [
                             {
-                                TYPE: 'inverted_quote',
-                                WIDTH: 42,
-                                CLASS_NAME: 'md:text-[28px] font-light tracking-[.15em]',
-                                TEXT: {
-                                    SER: "Asistenti slikari:  <br/>" +
-                                        "<br />" +
-                                        "Sofija Rakidžić  <br/>" +
-                                        "Teodora Rakidžić  <br/>" +
-                                        "Sofija Vujić  <br/>",
-                                    ENG: "Assistant painters:  <br/>" +
-                                        "<br />" +
-                                        "Sofija Rakidžić  <br/>" +
-                                        "Teodora Rakidžić  <br/>" +
-                                        "Sofija Vujić  <br/>"
-                                },
+                                TYPE: 'inverted_text_grid',
+                                CLASS_NAME: 'w-[42%] flex flex-row justify-center items-center text-[28px] leading-[28px] tracking-[.15em] italic -mt-0 article-special',
+                                CONTENT: [
+                                    [
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'font-light text-[28px] leading-[28px] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: "Autor murala:",
+                                                ENG: "Mural author:"
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: '-mt-[18px] text-[28px] leading-[28px] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: "Ivona Pleskonja",
+                                                ENG: "Ivona Pleskonja"
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'font-light text-[28px] leading-[28px] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: " ",
+                                                ENG: " "
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: 'font-light text-[28px] leading-[28px] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: "Asistenti slikari:",
+                                                ENG: "Assistant painters:"
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: '-mt-[18px] text-[28px] leading-[28px] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: "Sofija Rakidžić",
+                                                ENG: "Sofija Rakidžić",
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: '-mt-[18px] text-[28px] leading-[28px] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: "Teodora Rakidžić",
+                                                ENG: "Teodora Rakidžić",
+                                            },
+                                        },
+                                        {
+                                            TYPE: 'text',
+                                            CLASS_NAME: '-mt-[18px] text-[28px] leading-[28px] tracking-[.15em]',
+                                            TEXT: {
+                                                SER: "Sofija Vujić",
+                                                ENG: "Sofija Vujić",
+                                            },
+                                        },
+                                    ],
+                                ]
                             },
                             {
                                 TYPE: 'image',
