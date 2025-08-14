@@ -5,6 +5,7 @@ import Link from "next/link";
 import { MetaIcon } from "@/components/icons/MetaIcon";
 import { useSlideConfig } from "@/components/home/useSlideConfig";
 import { InstagramIcon } from "@/components/icons/InstagramIcon";
+import {TikTokIcon} from "@/components/icons/TikTokIcon";
 
 export function SocialMedias() {
     const activeSlideConfig = useSlideConfig();
@@ -18,6 +19,9 @@ export function SocialMedias() {
             </Link>
             <Link href="https://www.facebook.com/share/1AvuPnJMQ2/?mibextid=wwXIfr" target="_blank" >
                 <MetaIcon color={color} className="transition duration-200 w-6 lg:w-10 max-w-[40px]" />
+            </Link>
+            <Link href="https://www.tiktok.com/@ivonapleskonja?_t=ZM-8ySKKdS4hRG&_r=1" target="_blank" >
+                <TikTokIcon color={color} className="transition duration-200 w-6 lg:w-10 max-w-[40px]" />
             </Link>
         </div>
     );
