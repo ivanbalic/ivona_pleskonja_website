@@ -26,6 +26,18 @@ import exhibition11SnagaSlide4 from '@/public/assets/11-snaga/exhibition-11-snag
 import exhibition11SnagaSlide5 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-5.webp';
 import exhibition11SnagaSlide6 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-6.webp';
 import exhibition11SnagaSlide7 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-7.webp';
+import exhibition11SnagaSlide8 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-8.webp';
+import exhibition11SnagaSlide9 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-9.webp';
+import exhibition11SnagaSlide10 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-10.webp';
+import exhibition11SnagaSlide11 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-11.webp';
+import exhibition11SnagaSlide12 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-12.webp';
+import exhibition11SnagaSlide13 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-13.webp';
+import exhibition11SnagaSlide14 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-14.webp';
+import exhibition11SnagaSlide15 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-15.webp';
+import exhibition11SnagaSlide16 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-16.webp';
+import exhibition11SnagaSlide17 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-17.webp';
+import exhibition11SnagaSlide18 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-18.webp';
+import exhibition11SnagaSlide19 from '@/public/assets/11-snaga/exhibition-11-snaga-slide-19.webp';
 // MURAL LIFE
 import muralLife2 from '@/public/assets/mural-life/mural-life-2.webp';
 import muralLife3 from '@/public/assets/mural-life/mural-life-3.webp';
@@ -989,21 +1001,81 @@ export const PAGE_CONTENT = Object.freeze({
                                 TYPE: 'carousel',
                                 SLIDES: [
                                     {
-                                        SRC: exhibition11SnagaSlide6,
-                                        ALT: '11-snaga-slide-6',
-                                    },
-                                    {
                                         SRC: exhibition11SnagaSlide1,
                                         ALT: '11-snaga-slide-1',
+                                    },
+                                    {
+                                        SRC: exhibition11SnagaSlide2,
+                                        ALT: '11-snaga-slide-2',
+                                    },
+                                    {
+                                        SRC: exhibition11SnagaSlide3,
+                                        ALT: '11-snaga-slide-3',
                                     },
                                     {
                                         SRC: exhibition11SnagaSlide4,
                                         ALT: '11-snaga-slide-4',
                                     },
                                     {
+                                        SRC: exhibition11SnagaSlide5,
+                                        ALT: '11-snaga-slide-5',
+                                    },
+                                    {
+                                        SRC: exhibition11SnagaSlide6,
+                                        ALT: '11-snaga-slide-6',
+                                    },
+                                    {
                                         SRC: exhibition11SnagaSlide7,
                                         ALT: '11-snaga-slide-7',
-                                    }
+                                    },
+                                    {
+                                        SRC: exhibition11SnagaSlide8,
+                                        ALT: '11-snaga-slide-8',
+                                    },
+                                    {
+                                        SRC: exhibition11SnagaSlide9,
+                                        ALT: '11-snaga-slide-9',
+                                    },
+                                    {
+                                        SRC: exhibition11SnagaSlide10,
+                                        ALT: '11-snaga-slide-10',
+                                    },
+                                    {
+                                        SRC: exhibition11SnagaSlide11,
+                                        ALT: '11-snaga-slide-11',
+                                    },
+                                    {
+                                        SRC: exhibition11SnagaSlide12,
+                                        ALT: '11-snaga-slide-12',
+                                    },
+                                    {
+                                        SRC: exhibition11SnagaSlide13,
+                                        ALT: '11-snaga-slide-13',
+                                    },
+                                    {
+                                        SRC: exhibition11SnagaSlide14,
+                                        ALT: '11-snaga-slide-14',
+                                    },
+                                    {
+                                        SRC: exhibition11SnagaSlide15,
+                                        ALT: '11-snaga-slide-15',
+                                    },
+                                    {
+                                        SRC: exhibition11SnagaSlide16,
+                                        ALT: '11-snaga-slide-16',
+                                    },
+                                    {
+                                        SRC: exhibition11SnagaSlide17,
+                                        ALT: '11-snaga-slide-17',
+                                    },
+                                    {
+                                        SRC: exhibition11SnagaSlide18,
+                                        ALT: '11-snaga-slide-18',
+                                    },
+                                    {
+                                        SRC: exhibition11SnagaSlide19,
+                                        ALT: '11-snaga-slide-19',
+                                    },
                                 ]
                             },
                             {
@@ -1150,7 +1222,55 @@ export const PAGE_CONTENT = Object.freeze({
                         {
                             SRC: exhibition11SnagaSlide7,
                             ALT: '11-snaga-slide-7',
-                        }
+                        },
+                        {
+                            SRC: exhibition11SnagaSlide8,
+                            ALT: '11-snaga-slide-8',
+                        },
+                        {
+                            SRC: exhibition11SnagaSlide9,
+                            ALT: '11-snaga-slide-9',
+                        },
+                        {
+                            SRC: exhibition11SnagaSlide10,
+                            ALT: '11-snaga-slide-10',
+                        },
+                        {
+                            SRC: exhibition11SnagaSlide11,
+                            ALT: '11-snaga-slide-11',
+                        },
+                        {
+                            SRC: exhibition11SnagaSlide12,
+                            ALT: '11-snaga-slide-12',
+                        },
+                        {
+                            SRC: exhibition11SnagaSlide13,
+                            ALT: '11-snaga-slide-13',
+                        },
+                        {
+                            SRC: exhibition11SnagaSlide14,
+                            ALT: '11-snaga-slide-14',
+                        },
+                        {
+                            SRC: exhibition11SnagaSlide15,
+                            ALT: '11-snaga-slide-15',
+                        },
+                        {
+                            SRC: exhibition11SnagaSlide16,
+                            ALT: '11-snaga-slide-16',
+                        },
+                        {
+                            SRC: exhibition11SnagaSlide17,
+                            ALT: '11-snaga-slide-17',
+                        },
+                        {
+                            SRC: exhibition11SnagaSlide18,
+                            ALT: '11-snaga-slide-18',
+                        },
+                        {
+                            SRC: exhibition11SnagaSlide19,
+                            ALT: '11-snaga-slide-19',
+                        },
                     ]
                 },
                 {
