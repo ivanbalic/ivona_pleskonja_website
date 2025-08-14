@@ -367,22 +367,36 @@ body {
       height: 24px;
     }
   }
-  .embla__button--prev {
-    left: 0;
-    bottom: 282px;
+    
+    .embla__button--prev,
+    .embla__button--next {
+        position: absolute;
+        bottom: 20px;
+        transform: translateY(0);
+
     @media(max-width: 1023px) {
-      left: 16px;
-      bottom: 119px;
+        bottom: 16px;
+        top: auto;
+        height: 24px;
+        width: 24px;
     }
-  }
-  .embla__button--next {
-    bottom: 282px;
-    left: calc(1440px - 595px);
-    @media(max-width: 1023px) {
-      bottom: 119px;
-      left: calc(100vw - 74px);
     }
-  }
+
+    .embla__button--prev {
+        left: 16px;
+
+        @media(max-width: 1023px) {
+            left: 16px;
+        }
+    }
+
+    .embla__button--next {
+        right: 16px;
+
+        @media(max-width: 1023px) {
+            right: 16px;
+        }
+    }
 
   .embla__button:disabled {
     color: var(--detail-high-contrast);
