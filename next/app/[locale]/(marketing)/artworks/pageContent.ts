@@ -166,6 +166,37 @@ import cosmopolitanPreview from '@/public/assets/origin/cosmopolitan-preview.web
 import theNewWorldKingFull from '@/public/assets/origin/the-new-world-king-full.webp';
 import earthBornKingPreview from '@/public/assets/origin/earth-born-king-preview.webp';
 import theNewWorldKingPreview from '@/public/assets/origin/the-new-world-king-preview.webp';
+// HEROES
+import ivanaFull from '@/public/assets/heroes/ivana-full.webp';
+import tasjaHFull from '@/public/assets/heroes/tasja-full.webp';
+import karateFull from '@/public/assets/heroes/karate-full.webp';
+import oxygenFull from '@/public/assets/heroes/oxygen-full.webp';
+import dragonFull from '@/public/assets/heroes/dragon-full.webp';
+import saveMeFull from '@/public/assets/heroes/save-me-full.webp';
+import pianistFull from '@/public/assets/heroes/pianist-full.webp';
+import djordjeFull from '@/public/assets/heroes/djordje-full.webp';
+import amazonsFull from '@/public/assets/heroes/amazons-full.webp';
+import ivanaPreview from '@/public/assets/heroes/ivana-preview.webp';
+import tasjaHPreview from '@/public/assets/heroes/tasja-preview.webp';
+import dragonPreview from '@/public/assets/heroes/dragon-preview.webp';
+import karatePreview from '@/public/assets/heroes/karate-preview.webp';
+import oxygenPreview from '@/public/assets/heroes/oxygen-preview.webp';
+import saveMePreview from '@/public/assets/heroes/save-me-preview.webp';
+import amazonsPreview from '@/public/assets/heroes/amazons-preview.webp';
+import pianistPreview from '@/public/assets/heroes/pianist-preview.webp';
+import djordjePreview from '@/public/assets/heroes/djordje-preview.webp';
+import isThatYouFull from '@/public/assets/heroes/is-that-you-full.webp';
+import straightenUpFull from '@/public/assets/heroes/straighten-up-full.webp';
+import niceDayTodayFull from '@/public/assets/heroes/nice-day-today-full.webp';
+import isThatYouPreview from '@/public/assets/heroes/is-that-you-preview.webp';
+import iAmNotTypicalFull from '@/public/assets/heroes/i-am-not-typical-full.webp';
+import straightenUpPreview from '@/public/assets/heroes/straighten-up-preview.webp';
+import niceDayTodayPreview from '@/public/assets/heroes/nice-day-today-preview.webp';
+import iAmNotTypicalPreview from '@/public/assets/heroes/i-am-not-typical-preview.webp';
+import sheSurvivedTheYearFull from '@/public/assets/heroes/she-survived-the-year-full.webp';
+import theEndOfPlanetEarthFull from '@/public/assets/heroes/the-end-of-planet-earth-full.webp';
+import sheSurvivedTheYearPreview from '@/public/assets/heroes/she-survived-the-year-preview.webp';
+import theEndOfPlanetEarthPreview from '@/public/assets/heroes/the-end-of-planet-earth-preview.webp';
 
 export const PAGE_CONTENT = Object.freeze({
     TITLE: {
@@ -184,7 +215,7 @@ export const PAGE_CONTENT = Object.freeze({
         { ID: 'one_world', TITLE: { SER: { YEAR: '2009', TEXT: 'Jedan Svet' }, ENG: { YEAR: '2009', TEXT: 'One World' } }, DISABLED: false, LINK: null },
         { ID: 'psychodrama', TITLE: { SER: { YEAR: '2008', TEXT: 'Psihodrama' }, ENG: { YEAR: '2008', TEXT: 'Psychodrama' } }, DISABLED: false, LINK: 'articles/6' },
         { ID: 'origin', TITLE: { SER: { YEAR: '2007', TEXT: 'Izvor' }, ENG: { YEAR: '2007', TEXT: 'Origin' } }, DISABLED: false, LINK: null },
-        { ID: 'heroes', TITLE: { SER: { YEAR: '2007', TEXT: 'Heroji' }, ENG: { YEAR: '2007', TEXT: 'Heroes' } }, DISABLED: false, LINK: 'coming_soon' },
+        { ID: 'heroes', TITLE: { SER: { YEAR: '2007', TEXT: 'Heroji' }, ENG: { YEAR: '2007', TEXT: 'Heroes' } }, DISABLED: false, LINK: null },
         { ID: 'le_soleil', TITLE: { SER: { YEAR: '2003', TEXT: 'Le Soleil' }, ENG: { YEAR: '2003', TEXT: 'Le Soleil' } }, DISABLED: false, LINK: 'coming_soon' },
         { ID: 'first_light', TITLE: { SER: { YEAR: '2000', TEXT: 'Prvo Svetlo' }, ENG: { YEAR: '2000', TEXT: 'First Light' } }, DISABLED: false, LINK: 'coming_soon' },
         { ID: 'taki', TITLE: { SER: { YEAR: '2000', TEXT: 'Taki' }, ENG: { YEAR: '2000', TEXT: 'Taki' } }, DISABLED: false, LINK: 'coming_soon' },
@@ -2974,6 +3005,468 @@ export const SUBPAGE_CONTENT = Object.freeze({
                             }
                         },
                     ]
+                ]
+            }
+        ],
+    },
+    HEROES: {
+        ID: 'heroes',
+        EXHIBITION_ID: 12,
+        TEMPLATE_ID: 'TEMPLATE_ID',
+        HISTORY: [
+            {
+                ID: 'home',
+                TITLE: {
+                    SER: 'Početna',
+                    ENG: 'Home',
+                },
+                LINK: ''
+            },
+            {
+                ID: 'artworks',
+                TITLE: {
+                    SER: "Radovi",
+                    ENG: 'Artworks',
+                },
+                LINK: 'artworks'
+            },
+            {
+                ID: 'heroes',
+                TITLE: {
+                    SER: 'Heroji',
+                    ENG: 'Heroes'
+                },
+                LINK: 'artworks/heroes'
+            },
+        ],
+        TITLE: {
+            SER: '„Heroji“',
+            ENG: '„Heroes“'
+        },
+        DESCRIPTION: [
+            {
+                SER: 'Heroji su tu. Heroji nas čuvaju. Neprijatelje gledaju direktno u oči i energičnim pogledom, sa naizgled sigurnim izrazom na licu, snagom u stavu ih zaustavljaju u vremenu, prostoru i delanju! Heroji su jaki u borbi protiv zla! Heroji poseduju mir i snagu. Heroji su bića koja se hrabro bore za pravdu u kosmosu. Ja im se divim i njima posvećujem ovu izložbu.',
+                ENG: 'The heroes are here. The heroes protect us. They look the enemy straight in the eyes, and with an energetic gaze, a seemingly confident expression on their faces, and strength in their stance, they stop them in time, space, and action! Heroes are strong in the fight against evil! Heroes possess peace and strength. Heroes are beings who bravely fight for justice in the cosmos. I admire them and dedicate this exhibition to them.',
+            },
+        ],
+        GALLERY: [
+            {
+                ID: 1,
+                TITLE: null,
+                CONTENT: [
+                    [
+                        {
+                            ID: 1,
+                            CLASS_NAME: 'object-contain',
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: isThatYouFull,
+                                PREVIEW: isThatYouPreview,
+                            },
+                            ALT: "is-that-you",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2004.',
+                                DIMENSIONS: '130 x 95 cm',
+                                NAME: {
+                                    SER: 'DA LI SI TO TI' ,
+                                    ENG: 'IS THAT YOU'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovana tehnika na papiru kaširanom na drvo',
+                                    ENG: 'Mixed media on paper mounted on wood'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                        {
+                            ID: 2,
+                            CLASS_NAME: 'object-contain',
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: djordjeFull,
+                                PREVIEW: djordjePreview,
+                            },
+                            ALT: "djordje",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2004.',
+                                DIMENSIONS: '130 x 95 cm',
+                                NAME: {
+                                    SER: 'DJORDJE',
+                                    ENG: 'DJORDJE'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovana tehnika na papiru kaširanom na drvo',
+                                    ENG: 'Mixed media on paper mounted on wood'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                        {
+                            ID: 3,
+                            CLASS_NAME: 'object-contain',
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: tasjaHFull,
+                                PREVIEW: tasjaHPreview,
+                            },
+                            ALT: "tasja",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2004.',
+                                DIMENSIONS: '130 x 95 m',
+                                NAME: {
+                                    SER: 'TASJA' ,
+                                    ENG: 'TASJA'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovna tehnika na papiru kaširanom na drvetu',
+                                    ENG: 'Mixed media on paper mounted on wood'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                        {
+                            ID: 4,
+                            CLASS_NAME: 'object-contain',
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: straightenUpFull,
+                                PREVIEW: straightenUpPreview,
+                            },
+                            ALT: "straighten-up",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2004.',
+                                DIMENSIONS: '130 x 95 m',
+                                NAME: {
+                                    SER: 'ISPRAVI SE' ,
+                                    ENG: 'STRAIGHTEN UP'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovna tehnika na papiru kaširanom na drvetu',
+                                    ENG: 'Mixed media on paper mounted on wood'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                    ],
+                    [
+                        {
+                            ID: 5,
+                            CLASS_NAME: 'object-contain',
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: ivanaFull,
+                                PREVIEW: ivanaPreview,
+                            },
+                            ALT: "ivana",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2004.',
+                                DIMENSIONS: '130 x 95 cm',
+                                NAME: {
+                                    SER: 'IVANA' ,
+                                    ENG: 'IVANA'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovana tehnika na papiru kaširanom na drvo',
+                                    ENG: 'Mixed media on paper mounted on wood'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                        {
+                            ID: 6,
+                            CLASS_NAME: 'object-contain',
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: niceDayTodayFull,
+                                PREVIEW: niceDayTodayPreview,
+                            },
+                            ALT: "nice-day-today",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2001.',
+                                DIMENSIONS: '130 x 95 cm',
+                                NAME: {
+                                    SER: 'LEP DAN DANAS',
+                                    ENG: 'NICE DAY TODAY'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovana tehnika na papiru kaširanom na drvo',
+                                    ENG: 'Mixed media on paper mounted on wood'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                        {
+                            ID: 7,
+                            CLASS_NAME: 'object-contain',
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: oxygenFull,
+                                PREVIEW: oxygenPreview,
+                            },
+                            ALT: "oxygen",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2001.',
+                                DIMENSIONS: '130 x 95 m',
+                                NAME: {
+                                    SER: 'KISEONIK' ,
+                                    ENG: 'OXYGEN'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovna tehnika na papiru kaširanom na drvetu',
+                                    ENG: 'Mixed media on paper mounted on wood'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                        {
+                            ID: 8,
+                            CLASS_NAME: 'object-contain',
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: karateFull,
+                                PREVIEW: karatePreview,
+                            },
+                            ALT: "karate",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2007.',
+                                DIMENSIONS: '130 x 95 m',
+                                NAME: {
+                                    SER: 'KARATE',
+                                    ENG: 'KARATE'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovna tehnika na papiru kaširanom na drvetu',
+                                    ENG: 'Mixed media on paper mounted on wood'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                    ],
+                    [
+                        {
+                            ID: 9,
+                            CLASS_NAME: 'object-contain',
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: iAmNotTypicalFull,
+                                PREVIEW: iAmNotTypicalPreview,
+                            },
+                            ALT: "i-am-not-typical",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2000.',
+                                DIMENSIONS: '130 x 95 cm',
+                                NAME: {
+                                    SER: 'JA NISAM TIPIČNA' ,
+                                    ENG: "I'M NOT TYPICAL"
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovana tehnika na papiru kaširanom na drvo',
+                                    ENG: 'Mixed media on paper mounted on wood'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                        {
+                            ID: 10,
+                            CLASS_NAME: 'object-contain',
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: pianistFull,
+                                PREVIEW: pianistPreview,
+                            },
+                            ALT: "pianist",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2007.',
+                                DIMENSIONS: '130 x 95 cm',
+                                NAME: {
+                                    SER: 'PIJANISTA',
+                                    ENG: 'PIANIST'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovana tehnika na papiru kaširanom na drvo',
+                                    ENG: 'Mixed media on paper mounted on wood'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                        {
+                            ID: 11,
+                            CLASS_NAME: 'object-contain',
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: sheSurvivedTheYearFull,
+                                PREVIEW: sheSurvivedTheYearPreview,
+                            },
+                            ALT: "she-survived-the-year",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2007.',
+                                DIMENSIONS: '130 x 95 m',
+                                NAME: {
+                                    SER: 'PREŽIVELA JE GODINU' ,
+                                    ENG: 'SHE SURVIVED THE YEAR'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovna tehnika na papiru kaširanom na drvetu',
+                                    ENG: 'Mixed media on paper mounted on wood'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                        {
+                            ID: 12,
+                            CLASS_NAME: 'object-contain',
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: saveMeFull,
+                                PREVIEW: saveMePreview,
+                            },
+                            ALT: "save-me",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2004.',
+                                DIMENSIONS: '130 x 95 m',
+                                NAME: {
+                                    SER: 'SPASI ME',
+                                    ENG: 'SAVE ME'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovna tehnika na papiru kaširanom na drvetu',
+                                    ENG: 'Mixed media on paper mounted on wood'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                    ],
+                    [
+                        {
+                            ID: 13,
+                            CLASS_NAME: 'object-contain',
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: amazonsFull,
+                                PREVIEW: amazonsPreview,
+                            },
+                            ALT: "amazons",
+                            GRID_PLACES: 2,
+                            DETAILS: {
+                                CREATED_AT: '2004.',
+                                DIMENSIONS: '2 x 2.5 m',
+                                NAME: {
+                                    SER: 'AMAZONKE' ,
+                                    ENG: "AMAZONS"
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovana tehnika na papiru kaširanom na drvo',
+                                    ENG: 'Mixed media on paper mounted on wood'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                        {
+                            ID: 14,
+                            CLASS_NAME: 'object-contain',
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: dragonFull,
+                                PREVIEW: dragonPreview,
+                            },
+                            ALT: "dragon",
+                            GRID_PLACES: 1,
+                            DETAILS: {
+                                CREATED_AT: '2004.',
+                                DIMENSIONS: '130 x 95 cm',
+                                NAME: {
+                                    SER: 'ZMAJ',
+                                    ENG: 'DRAGON'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovana tehnika na papiru kaširanom na drvo',
+                                    ENG: 'Mixed media on paper mounted on wood'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                        {
+                            ID: 15,
+                            CLASS_NAME: 'object-contain',
+                            TYPE: 'vertical',
+                            SRC: {
+                                FULL: theEndOfPlanetEarthFull,
+                                PREVIEW: theEndOfPlanetEarthPreview,
+                            },
+                            ALT: "the-end-of-planet-earth",
+                            GRID_PLACES: 2,
+                            DETAILS: {
+                                CREATED_AT: '2004.',
+                                DIMENSIONS: '1.3 x 2 m',
+                                NAME: {
+                                    SER: 'KRAJ PLANETE ZEMLJE' ,
+                                    ENG: 'THE END OF PLANET EARTH'
+                                },
+                                TECHNIQUE: {
+                                    SER: 'Kombinovna tehnika na papiru kaširanom na drvetu',
+                                    ENG: 'Mixed media on paper mounted on wood'
+                                },
+                                DESCRIPTION: {
+                                    SER: '',
+                                    ENG: ''
+                                },
+                            }
+                        },
+                    ],
                 ]
             }
         ],
