@@ -37,6 +37,10 @@ const NAVBAR_COLORS_MAP = Object.freeze({
         DESKTOP:  BRAND_COLOR,
         MOBILE:  BRAND_COLOR,
     },
+    COMING_SOON: {
+        DESKTOP:  WHITE,
+        MOBILE:  WHITE,
+    }
 });
 
 function getColor(page: string, isMobile: boolean): string {

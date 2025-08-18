@@ -184,11 +184,11 @@ export const PAGE_CONTENT = Object.freeze({
         { ID: 'one_world', TITLE: { SER: { YEAR: '2009', TEXT: 'Jedan Svet' }, ENG: { YEAR: '2009', TEXT: 'One World' } }, DISABLED: false, LINK: null },
         { ID: 'psychodrama', TITLE: { SER: { YEAR: '2008', TEXT: 'Psihodrama' }, ENG: { YEAR: '2008', TEXT: 'Psychodrama' } }, DISABLED: false, LINK: 'articles/6' },
         { ID: 'origin', TITLE: { SER: { YEAR: '2007', TEXT: 'Izvor' }, ENG: { YEAR: '2007', TEXT: 'Origin' } }, DISABLED: false, LINK: null },
-        { ID: 'heroes', TITLE: { SER: { YEAR: '2007', TEXT: 'Heroji' }, ENG: { YEAR: '2007', TEXT: 'Heroes' } }, DISABLED: true, LINK: null },
-        { ID: 'le_soleil', TITLE: { SER: { YEAR: '2003', TEXT: 'Le Soleil' }, ENG: { YEAR: '2003', TEXT: 'Le Soleil' } }, DISABLED: true, LINK: null },
-        { ID: 'first_light', TITLE: { SER: { YEAR: '2000', TEXT: 'Prvo Svetlo' }, ENG: { YEAR: '2000', TEXT: 'First Light' } }, DISABLED: true, LINK: null },
-        { ID: 'taki', TITLE: { SER: { YEAR: '2000', TEXT: 'Taki' }, ENG: { YEAR: '2000', TEXT: 'Taki' } }, DISABLED: true, LINK: null },
-        { ID: 'portraits', TITLE: { SER: { YEAR: null, TEXT: 'Portreti' }, ENG: { YEAR: null, TEXT: 'Portraits' } }, DISABLED: true, LINK: null },
+        { ID: 'heroes', TITLE: { SER: { YEAR: '2007', TEXT: 'Heroji' }, ENG: { YEAR: '2007', TEXT: 'Heroes' } }, DISABLED: false, LINK: 'coming_soon' },
+        { ID: 'le_soleil', TITLE: { SER: { YEAR: '2003', TEXT: 'Le Soleil' }, ENG: { YEAR: '2003', TEXT: 'Le Soleil' } }, DISABLED: false, LINK: 'coming_soon' },
+        { ID: 'first_light', TITLE: { SER: { YEAR: '2000', TEXT: 'Prvo Svetlo' }, ENG: { YEAR: '2000', TEXT: 'First Light' } }, DISABLED: false, LINK: 'coming_soon' },
+        { ID: 'taki', TITLE: { SER: { YEAR: '2000', TEXT: 'Taki' }, ENG: { YEAR: '2000', TEXT: 'Taki' } }, DISABLED: false, LINK: 'coming_soon' },
+        { ID: 'portraits', TITLE: { SER: { YEAR: null, TEXT: 'Portreti' }, ENG: { YEAR: null, TEXT: 'Portraits' } }, DISABLED: false, LINK: 'coming_soon' },
     ],
 });
 
