@@ -225,6 +225,14 @@ import originSlide7 from '@/public/assets/origin/exhibition-origin-slide-7.webp'
 import originSlide8 from '@/public/assets/origin/exhibition-origin-slide-8.webp';
 import originCoverMobile from '@/public/assets/origin/exhibition-origin-cover-mobile.webp';
 import originCoverDesktop from '@/public/assets/origin/exhibition-origin-cover-desktop.webp';
+// HEROES
+import heroesCover from '@/public/assets/heroes/exhibition-heroes-cover.webp';
+import heroesSlide1 from '@/public/assets/heroes/exhibition-heroes-slide-1.webp';
+import heroesSlide2 from '@/public/assets/heroes/exhibition-heroes-slide-2.webp';
+import heroesSlide3 from '@/public/assets/heroes/exhibition-heroes-slide-3.webp';
+import heroesSlide4 from '@/public/assets/heroes/exhibition-heroes-slide-4.webp';
+import heroesSlide5 from '@/public/assets/heroes/exhibition-heroes-slide-5.webp';
+import heroesSlide6 from '@/public/assets/heroes/exhibition-heroes-slide-6.webp';
 
 export const PAGE_CONTENT = Object.freeze({
     CREATING_LIFE: {
@@ -5002,6 +5010,279 @@ export const PAGE_CONTENT = Object.freeze({
                             },
                         ],
                     ],
+                }
+            ]
+        }
+    },
+    HEROES: {
+        ID: 12,
+        HISTORY: [
+            {
+                ID: 'home',
+                TITLE: {
+                    SER: 'Početna',
+                    ENG: 'Home',
+                },
+                LINK: ''
+            },
+            {
+                ID: 'artworks',
+                TITLE: {
+                    SER: "Radovi",
+                    ENG: 'Artworks',
+                },
+                LINK: 'artworks'
+            },
+            {
+                ID: 'heroes',
+                TITLE: {
+                    SER: 'Heroji',
+                    ENG: 'Heroes'
+                },
+                LINK: 'artworks/heroes'
+            },
+            {
+                ID: 'exhibitions',
+                TITLE: {
+                    SER: 'O izložbi',
+                    ENG: 'About Exhibition'
+                },
+                LINK: 'articles/12'
+            },
+        ],
+        COVER: {
+            TITLE: {
+                SER: '„HEROJI“',
+                ENG: '„HEROES',
+            },
+            AUTHOR: {
+                SER: 'Jelena Krivokapić',
+                ENG: 'Jelena Krivokapić'
+            },
+            YEAR: {
+                SER: '2004',
+                ENG: '2004'
+            },
+            TEXT: {
+                SER: 'Za termin Nova slika vezujemo inauguraciju figurativnih i narativnih principa jednog posebnog reda u temama srpske umetnosti poslednje četvrtine 20. veka do danas. Pojam Nove slike iz današnje perspektive moguće je razumeti kao različite oblike uprizoravanja i komunikacije umetnikovog subjektivnog sveta koji otpočinje sa postmodernom estetikom.',
+                ENG: 'The term New image painting is related to the inauguration of figurative and narrative principles of a particular order into the themes of art made in Serbia in the last quarter of the 20th century. From the present perspective, its is possible to understand the term new image painting as different forms of imaging and communication of the artist’s subjective world that begins with postmodern aesthetics.'
+            },
+            MEDIA: {
+                MOBILE: {
+                    TYPE: 'image',
+                    ALT: 'exhibition-cover',
+                    SRC: heroesCover,
+                },
+                DESKTOP: {
+                    TYPE: 'image',
+                    ALT: 'exhibition-cover',
+                    SRC: heroesCover,
+                }
+            },
+            EXTERNAL_LINK: {
+                URL: '',
+                LABEL: {
+                    SER: 'POGLEDAJ VIDEO OVDE',
+                    ENG: 'WATCH VIDEO HERE'
+                }
+            },
+        },
+        SECTIONS: {
+            MOBILE: [
+                {
+                    TYPE: 'text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Po pravilu ekscentričan, decentrirani i hedonistički nastrojeni svet, lišen interesovanja za velike istorijske teme modernizma i emancipaciju univerzalnog subjekta, postavljen je u samo središte umetnikovog rada 80-tih i inaugurisan kao njegov ekskluzivni kredo.',
+                                    ENG: 'The representatives of the New image(s) of the 90s developed forms of expression based on the experience of the previous generation of artists, profiled the postmodern aesthetics by a furtherer subjectivization of the artistic statements and some of them developed a form of image that the critics of the time called monumental intimisme.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Predstavnici Nove predstave 90-tih godina razvijaju govore koji počivaju na ovom iskustvu prethodne generacije umetnika, postmodernu estetiku profilišu u daljoj subjektivizaciji umetničke predstave i kod jednog njenog dela beleži tip predstave koju je kritika tog vremena nazivala monumentalnim intimizmom. U osnovi radilo bi se o postupku zasnovanom na transponovanju krajnje ličnih, gotovo intimističkih motiva i narativa, u monumentalne i reprezentativne vizuelne celine. Kod monumentalizacije portretske i autoportretske koncepcije - bilo da se radi o slikarstvu, fotografiji, skulpturi, umetničkom objektu ili performansu - vidljivo prisustvo hipertrofije ljudskog lika i umetnikovog Ja, ne govori, međutim, više samo u prilog jednog egocentričnog i hedonistički nastrojenog subjekta, zamišljenog u vrsti vanvremenog ambijentalizovanog prostora umetničke igre.',
+                                    ENG: 'Basically it had to do with a procedure based on transposing very personal, almost intimate motives and narratives into monumental and representative visual wholes. In the monumental portrait and self-portrait conception, whether it is a painting, photograph, sculpture, object or performance – the visible presence of a hypertrophy of the human face and the artist’s self does not, however, any longer speak only in favor of an egocentrically inclined subject, reflecting in a kind of timeless ambientalized space of artistic play.'
+                                },
+                            },
+                        ],
+                    ],
+                },
+                {
+                    TYPE: 'carousel',
+                    SLIDES: [
+                        {
+                            SRC: heroesSlide1,
+                            ALT: 'heroes-slide-1',
+                        },
+                        {
+                            SRC: heroesSlide2,
+                            ALT: 'heroes-slide-2',
+                        },
+                        {
+                            SRC: heroesSlide3,
+                            ALT: 'heroes-slide-3',
+                        },
+                        {
+                            SRC: heroesSlide4,
+                            ALT: 'heroes-slide-4',
+                        },
+                        {
+                            SRC: heroesSlide5,
+                            ALT: 'heroes-slide-5',
+                        },
+                        {
+                            SRC: heroesSlide6,
+                            ALT: 'heroes-slide-6',
+                        },
+                    ]
+                },
+                {
+                    TYPE: 'text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Ljudska figura ili samo telo umetnika postaju središte svojevrsne vivisekcije socijalnog ambijenta i memento geneze njegovih urbanih identiteta. Česta multiplikacija autorovog lika predstavlja pokušaj oštro kontrastirane «ambijentalizacije» krhkih egzistencija i introspektivnih zapisa svakodnevice, u odnosu na što čini linearni hiperaktivni rad istorijskog vremena i njegova rušilačka inercija.',
+                                    ENG: 'The human figure or the artist’s very body has become the center of a unique vivisection of the social environment and the memento of the genesis of its urban identities. The frequent multiplication of the artist’s face represents an attempt to achieve a sharply contrasted “ambientalization” of fragile existences and introspective inscriptions of the every day in regards to the linear hyperactive agency of historical time and its destructive inertia. Our attention is immediately drawn to the works of Ivona Pleskonja by the images that are a unique echoes of urban narratives told by a monumental elaboration of the portrait concept.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Ono što već u prvom trenutku privlači našu pažnju u radovima Ivone Pleskonje, je da su gotovo sve predstave svojevrsni recidivi urbanih narativa ispričani kroz monumentalistički razrađivanu koncepciju portreta. Autorka preuzima ikoničku strukturu dvodimenzionalnog plana slika iz sveta popularne kulture, preciznije plakatsku i kompoziciju kadra u stripu, svedenu, sa širokim planovima i dominantnim prisustvom lika u prvom planu, imaginarnim akterom koji poziva na akciju ili uspostavlja bezuslovnu pozornost posmatrača.',
+                                    ENG: 'The artist borrows the iconic structure of the two-dimensional picture plan from popular culture, more precisely the plastic and composition of the frame from the comic strip, streamlined, with broad planes and the dominant presence of the human figure in the foreground, the imaginary actor calling for action or establishing the unconditional attention of the observer.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'U ciklusu pod nazivom Heroji prvi plan definisan je najčešće dopojasnim portretom «kadriranim» u radikalnoj frontalnosti i intoniranoj hijeratici stava, koji se oštro odvaja od pozadine naznačene kroz svedenu bojenu amblematiku zamišljenog prostornog ambijenta portretisanog lika. Lica koja defiluju pred našim pogledom su individue iz autorkinog najbližeg okruženja, ona sama ili odabrane ličnosti «drugog», uzori alternativnog urbanog univerzuma i svojevrsna alter-ega umetnika (Frida Kalo, Brus Li, Spajdermen...). Za samu autorku oni predstavljaju «vanserijske borce...sa borbenim osobinama vrhunske veštine, regeneracije, izdržljivosti, snage i hrabrosti». Slikana ravan organizuje se u nastavku kao prostor ikone u kome se prisustvom svetačkog lika ili heroja novoarbitrirane realnosti samog umetnika, istovremeno meditira i zvanična (svetačka) pred-istorija i individualni herojski akt, evocira (ovozemaljska) biografija i objavljuje prospekcija jedne supra-ljudske realnosti.',
+                                    ENG: 'The foreground in the cycle Heroes is most frequently defined by a portrait-bust “framed” in radical frontality and intoned hieratic posture, sharply separated from the background marked by the reduced colored emblematic of the imagined milieu of the portrayed face. The faces that parade before us are individuals from the artist’s closest surroundings, her friends, she herself or selected individuals of the “Other”, role models from the alternative urban universe representing the special alter ego of the artist (Frida Kahlo, Bruce Lee, Spiderman...).'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: '',
+                                    ENG: 'For the artist they represent “out of the ordinary fighters ... with the highest fighting skills, ability to regenerate themselves, stamina, strength and courage”. The painted surface is organized as an icon where the presence of the holy personage or hero of the newly arbitrated reality of the artist him/herself, is simultaneously mediated by the official (saintly) pre-history and the individual heroic act, which evokes the (the earthly) biography and revels a farsightedness of a supra-human reality.'
+                                },
+                            },
+                        ],
+                    ],
+                },
+                {
+                    TYPE: 'inverted_text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Ova upadljiva sličnost i istovremeno razlika sa porukom koju prati meditativni postupak građenja slike svetaca (heroja), odnosno ispisivanje prisustva svesti o sebi tokom samog stvaralačkog akta (umetnika), najupadljivija je u seriji (auto)portreta Heroji i radovima poput Ja nisam tipična (Vijetnamka), Spasi me, Ispravi se (Brus Li), Autoportret (Lep dan danas), Kiseonik (Pod gas maskom). Centralni lik novostvorene «priče» pomalja se iz prvog plana slike i komunikaciju transcendira s one strane istorijskog vremena u kome su i prošlost i budućnost jednako virtuelne kategorije.Hod individue kroz kazamate društvenih mitova, kulturnih kodova i ličnih sećanja, sugerisan je kroz pseudo-mitsku alegoriju tradicionalnog hodočasničkog napredovanja. Amazonke i Kraj planete zemlje su poput zaustavljenih sekvenci jednom življenog sna ili virtuelnih prostora odvojenih od korupcije i tiranije dehumanizovanog društva.',
+                                    ENG: 'This conspicuous similarity and at the same time difference with a message that follows the meditative process of constructing an image of a saint (hero), that is, recording the presence of one’s awareness of oneself during the very creative act (artist), is most noticeable in the serial of (self) portraits Heroes and in the works like I’m not a Typical (Vietnamese Girl), Save Me, Sit Up (Bruce Lee) Self-portraits (Nice Day Today), Oxygen (Wearing a Gas Mask). The central face of the newly created “story” appears from the foreground and transcends the communication to the other side of historical time where the past and future are equally virtual categories. The passage of the individual through the casemates of social myths, cultural codes and personal memories is suggested through a pseudo-mythical allegory of a traditional pilgrimage. The Amazons and the End of Planet Earth seem like frozen frames of a once lived dream or a virtual spaces detached from the corruption and tyranny of a dehumanized society.'
+                                }
+                            }
+                        ]
+                    ]
+                }
+            ],
+            DESKTOP: [
+                {
+                    TYPE: 'text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Po pravilu ekscentričan, decentrirani i hedonistički nastrojeni svet, lišen interesovanja za velike istorijske teme modernizma i emancipaciju univerzalnog subjekta, postavljen je u samo središte umetnikovog rada 80-tih i inaugurisan kao njegov ekskluzivni kredo.',
+                                    ENG: 'The representatives of the New image(s) of the 90s developed forms of expression based on the experience of the previous generation of artists, profiled the postmodern aesthetics by a furtherer subjectivization of the artistic statements and some of them developed a form of image that the critics of the time called monumental intimisme.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Predstavnici Nove predstave 90-tih godina razvijaju govore koji počivaju na ovom iskustvu prethodne generacije umetnika, postmodernu estetiku profilišu u daljoj subjektivizaciji umetničke predstave i kod jednog njenog dela beleži tip predstave koju je kritika tog vremena nazivala monumentalnim intimizmom. U osnovi radilo bi se o postupku zasnovanom na transponovanju krajnje ličnih, gotovo intimističkih motiva i narativa, u monumentalne i reprezentativne vizuelne celine. Kod monumentalizacije portretske i autoportretske koncepcije - bilo da se radi o slikarstvu, fotografiji, skulpturi, umetničkom objektu ili performansu - vidljivo prisustvo hipertrofije ljudskog lika i umetnikovog Ja, ne govori, međutim, više samo u prilog jednog egocentričnog i hedonistički nastrojenog subjekta, zamišljenog u vrsti vanvremenog ambijentalizovanog prostora umetničke igre.',
+                                    ENG: 'Basically it had to do with a procedure based on transposing very personal, almost intimate motives and narratives into monumental and representative visual wholes. In the monumental portrait and self-portrait conception, whether it is a painting, photograph, sculpture, object or performance – the visible presence of a hypertrophy of the human face and the artist’s self does not, however, any longer speak only in favor of an egocentrically inclined subject, reflecting in a kind of timeless ambientalized space of artistic play.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Ljudska figura ili samo telo umetnika postaju središte svojevrsne vivisekcije socijalnog ambijenta i memento geneze njegovih urbanih identiteta. Česta multiplikacija autorovog lika predstavlja pokušaj oštro kontrastirane «ambijentalizacije» krhkih egzistencija i introspektivnih zapisa svakodnevice, u odnosu na što čini linearni hiperaktivni rad istorijskog vremena i njegova rušilačka inercija.',
+                                    ENG: 'The human figure or the artist’s very body has become the center of a unique vivisection of the social environment and the memento of the genesis of its urban identities. The frequent multiplication of the artist’s face represents an attempt to achieve a sharply contrasted “ambientalization” of fragile existences and introspective inscriptions of the every day in regards to the linear hyperactive agency of historical time and its destructive inertia. Our attention is immediately drawn to the works of Ivona Pleskonja by the images that are a unique echoes of urban narratives told by a monumental elaboration of the portrait concept.'
+                                },
+                            },
+                        ],
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Ono što već u prvom trenutku privlači našu pažnju u radovima Ivone Pleskonje, je da su gotovo sve predstave svojevrsni recidivi urbanih narativa ispričani kroz monumentalistički razrađivanu koncepciju portreta. Autorka preuzima ikoničku strukturu dvodimenzionalnog plana slika iz sveta popularne kulture, preciznije plakatsku i kompoziciju kadra u stripu, svedenu, sa širokim planovima i dominantnim prisustvom lika u prvom planu, imaginarnim akterom koji poziva na akciju ili uspostavlja bezuslovnu pozornost posmatrača.',
+                                    ENG: 'The artist borrows the iconic structure of the two-dimensional picture plan from popular culture, more precisely the plastic and composition of the frame from the comic strip, streamlined, with broad planes and the dominant presence of the human figure in the foreground, the imaginary actor calling for action or establishing the unconditional attention of the observer.'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'U ciklusu pod nazivom Heroji prvi plan definisan je najčešće dopojasnim portretom «kadriranim» u radikalnoj frontalnosti i intoniranoj hijeratici stava, koji se oštro odvaja od pozadine naznačene kroz svedenu bojenu amblematiku zamišljenog prostornog ambijenta portretisanog lika. Lica koja defiluju pred našim pogledom su individue iz autorkinog najbližeg okruženja, ona sama ili odabrane ličnosti «drugog», uzori alternativnog urbanog univerzuma i svojevrsna alter-ega umetnika (Frida Kalo, Brus Li, Spajdermen...). Za samu autorku oni predstavljaju «vanserijske borce...sa borbenim osobinama vrhunske veštine, regeneracije, izdržljivosti, snage i hrabrosti». Slikana ravan organizuje se u nastavku kao prostor ikone u kome se prisustvom svetačkog lika ili heroja novoarbitrirane realnosti samog umetnika, istovremeno meditira i zvanična (svetačka) pred-istorija i individualni herojski akt, evocira (ovozemaljska) biografija i objavljuje prospekcija jedne supra-ljudske realnosti.',
+                                    ENG: 'The foreground in the cycle Heroes is most frequently defined by a portrait-bust “framed” in radical frontality and intoned hieratic posture, sharply separated from the background marked by the reduced colored emblematic of the imagined milieu of the portrayed face. The faces that parade before us are individuals from the artist’s closest surroundings, her friends, she herself or selected individuals of the “Other”, role models from the alternative urban universe representing the special alter ego of the artist (Frida Kahlo, Bruce Lee, Spiderman...).'
+                                },
+                            },
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: '',
+                                    ENG: 'For the artist they represent “out of the ordinary fighters ... with the highest fighting skills, ability to regenerate themselves, stamina, strength and courage”. The painted surface is organized as an icon where the presence of the holy personage or hero of the newly arbitrated reality of the artist him/herself, is simultaneously mediated by the official (saintly) pre-history and the individual heroic act, which evokes the (the earthly) biography and revels a farsightedness of a supra-human reality.'
+                                },
+                            },
+                        ]
+                    ]
+                },
+                {
+                    TYPE: 'carousel',
+                    SLIDES: [
+                        {
+                            SRC: heroesSlide1,
+                            ALT: 'heroes-slide-1',
+                        },
+                        {
+                            SRC: heroesSlide2,
+                            ALT: 'heroes-slide-2',
+                        },
+                        {
+                            SRC: heroesSlide3,
+                            ALT: 'heroes-slide-3',
+                        },
+                        {
+                            SRC: heroesSlide4,
+                            ALT: 'heroes-slide-4',
+                        },
+                        {
+                            SRC: heroesSlide5,
+                            ALT: 'heroes-slide-5',
+                        },
+                        {
+                            SRC: heroesSlide6,
+                            ALT: 'heroes-slide-6',
+                        },
+                    ]
+                },
+                {
+                    TYPE: 'inverted_text_grid',
+                    CONTENT: [
+                        [
+                            {
+                                TYPE: 'text',
+                                TEXT: {
+                                    SER: 'Ova upadljiva sličnost i istovremeno razlika sa porukom koju prati meditativni postupak građenja slike svetaca (heroja), odnosno ispisivanje prisustva svesti o sebi tokom samog stvaralačkog akta (umetnika), najupadljivija je u seriji (auto)portreta Heroji i radovima poput Ja nisam tipična (Vijetnamka), Spasi me, Ispravi se (Brus Li), Autoportret (Lep dan danas), Kiseonik (Pod gas maskom). Centralni lik novostvorene «priče» pomalja se iz prvog plana slike i komunikaciju transcendira s one strane istorijskog vremena u kome su i prošlost i budućnost jednako virtuelne kategorije.Hod individue kroz kazamate društvenih mitova, kulturnih kodova i ličnih sećanja, sugerisan je kroz pseudo-mitsku alegoriju tradicionalnog hodočasničkog napredovanja. Amazonke i Kraj planete zemlje su poput zaustavljenih sekvenci jednom življenog sna ili virtuelnih prostora odvojenih od korupcije i tiranije dehumanizovanog društva.',
+                                    ENG: 'This conspicuous similarity and at the same time difference with a message that follows the meditative process of constructing an image of a saint (hero), that is, recording the presence of one’s awareness of oneself during the very creative act (artist), is most noticeable in the serial of (self) portraits Heroes and in the works like I’m not a Typical (Vietnamese Girl), Save Me, Sit Up (Bruce Lee) Self-portraits (Nice Day Today), Oxygen (Wearing a Gas Mask). The central face of the newly created “story” appears from the foreground and transcends the communication to the other side of historical time where the past and future are equally virtual categories. The passage of the individual through the casemates of social myths, cultural codes and personal memories is suggested through a pseudo-mythical allegory of a traditional pilgrimage. The Amazons and the End of Planet Earth seem like frozen frames of a once lived dream or a virtual spaces detached from the corruption and tyranny of a dehumanized society.'
+                                }
+                            }
+                        ]
+                    ]
                 }
             ]
         }
