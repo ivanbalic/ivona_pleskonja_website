@@ -210,7 +210,7 @@ export const PAGE_CONTENT = Object.freeze({
         { ID: '11_snaga', TITLE: { SER: { YEAR: '2019', TEXT: '11 Snaga' }, ENG: { YEAR: '2019', TEXT: '11 Snaga' } }, DISABLED: false, LINK: null },
         { ID: 'strong_people', TITLE: { SER: { YEAR: '2016', TEXT: 'Jaki ljudi' }, ENG: { YEAR: '2016', TEXT: 'Strong People' } }, DISABLED: false, LINK: 'articles/5' },
         { ID: 'stops_in_time', TITLE: { SER: { YEAR: '2015', TEXT: 'Vremenske stanice' }, ENG: { YEAR: '2015', TEXT: 'Stops In Time' } }, DISABLED: false, LINK: null },
-        { ID: 'children_of_the_sun', TITLE: { SER: { YEAR: '2014', TEXT: 'Deca Sunca' }, ENG: { YEAR: '2014', TEXT: 'Children of the Sun' } }, DISABLED: false, LINK: null },
+        { ID: 'children_of_the_sun', TITLE: { SER: { YEAR: '2014', TEXT: 'Deca Sunca' }, ENG: { YEAR: '2014', TEXT: 'Children of the Sun' } }, DISABLED: false, LINK: 'coming_soon' },
         { ID: 'spirit', TITLE: { SER: { YEAR: '2011', TEXT: 'Duh' }, ENG: { YEAR: '2011', TEXT: 'Spirit' } }, DISABLED: false, LINK: null },
         { ID: 'one_world', TITLE: { SER: { YEAR: '2009', TEXT: 'Jedan Svet' }, ENG: { YEAR: '2009', TEXT: 'One World' } }, DISABLED: false, LINK: null },
         { ID: 'psychodrama', TITLE: { SER: { YEAR: '2008', TEXT: 'Psihodrama' }, ENG: { YEAR: '2008', TEXT: 'Psychodrama' } }, DISABLED: false, LINK: 'articles/6' },
@@ -255,8 +255,8 @@ export const SUBPAGE_CONTENT = Object.freeze({
             },
         ],
         TITLE: {
-            SER: '„Stvaranje svetla / Nežni smo rođeni“',
-            ENG: '„Creating Light / We Are Born Gentle“'
+            SER: 'Stvaranje svetla / Nežni smo rođeni',
+            ENG: 'Creating Light / We Are Born Gentle'
         },
         DESCRIPTION: [
             {
@@ -529,15 +529,15 @@ export const SUBPAGE_CONTENT = Object.freeze({
             {
                 ID: '11_snaga',
                 TITLE: {
-                    SER: '„11 snaga“',
-                    ENG: '„11 snaga“'
+                    SER: '11 snaga',
+                    ENG: '11 snaga'
                 },
                 LINK: 'artworks/11_snaga'
             },
         ],
         TITLE: {
-            SER: '„11 Snaga“',
-            ENG: '„11 Snaga“'
+            SER: '11 Snaga',
+            ENG: '11 Snaga'
         },
         DESCRIPTION: [
             {
@@ -1236,8 +1236,8 @@ export const SUBPAGE_CONTENT = Object.freeze({
             },
         ],
         TITLE: {
-            SER: '„DECA SUNCA“',
-            ENG: '„CHILDREN OF THE SUN“'
+            SER: 'DECA SUNCA',
+            ENG: 'CHILDREN OF THE SUN'
         },
         DESCRIPTION: [
             {
@@ -2127,8 +2127,8 @@ export const SUBPAGE_CONTENT = Object.freeze({
             },
         ],
         TITLE: {
-            SER: '„Vremenske stanice“',
-            ENG: '„Stops in Time“'
+            SER: 'Vremenske stanice',
+            ENG: 'Stops in Time'
         },
         DESCRIPTION: [
             {
@@ -2355,8 +2355,8 @@ export const SUBPAGE_CONTENT = Object.freeze({
             },
         ],
         TITLE: {
-            SER: '„Duh“',
-            ENG: '„Spirit“'
+            SER: 'Duh',
+            ENG: 'Spirit'
         },
         DESCRIPTION: [
             {
@@ -2576,8 +2576,8 @@ export const SUBPAGE_CONTENT = Object.freeze({
             },
         ],
         TITLE: {
-            SER: '„Jedan Svet“',
-            ENG: '„One World“'
+            SER: 'Jedan Svet',
+            ENG: 'One World'
         },
         DESCRIPTION: [
             {
@@ -2755,8 +2755,8 @@ export const SUBPAGE_CONTENT = Object.freeze({
             },
         ],
         TITLE: {
-            SER: '„Izvor“',
-            ENG: '„Origin“'
+            SER: 'Izvor',
+            ENG: 'Origin'
         },
         DESCRIPTION: [
             {
@@ -3040,8 +3040,8 @@ export const SUBPAGE_CONTENT = Object.freeze({
             },
         ],
         TITLE: {
-            SER: '„Heroji“',
-            ENG: '„Heroes“'
+            SER: 'Heroji',
+            ENG: 'Heroes'
         },
         DESCRIPTION: [
             {
@@ -3473,6 +3473,14 @@ export const SUBPAGE_CONTENT = Object.freeze({
     },
 });
 
+const workInProgressExhibitions = ['children_of_the_sun'];
+
 export function getSubPageContentById(id: string): IArtWorks | undefined {
-    return Object.values(SUBPAGE_CONTENT).find((PAGE) => PAGE.ID === id) as IArtWorks;
+    const pageContnet = Object.values(SUBPAGE_CONTENT).find((PAGE) => PAGE.ID === id) as IArtWorks;
+
+    if(workInProgressExhibitions.includes(pageContnet?.ID)) {
+        return;
+    }
+
+    return pageContnet;
 }

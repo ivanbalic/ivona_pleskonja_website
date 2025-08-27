@@ -85,7 +85,7 @@ export function DesktopGallery({ locale, gallery, exhibitionId }: { locale: stri
                                 selected.TYPE === 'vertical' ? 'justify-center items-center' : 'justify-end items-start',
                                 "w-full flex flex-col text-[36px] leading-[100%] font-bold font-roboto-serif mb-[5px] uppercase"
                             )}>
-                                {`„${selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}“`}
+                                {`${selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}`}
                             </div>
                             {selected.TYPE === 'vertical' && <div className="text-[32px] leading-[100%] font-bold font-roboto-serif mt-[5px]">{selected.DETAILS?.SUBTITLE?.[locale.toUpperCase() as keyof ITranslations]}</div>}
                             {selected.TYPE !== 'vertical' &&

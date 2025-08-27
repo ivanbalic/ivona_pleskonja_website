@@ -28,7 +28,7 @@ export default function AboutMePage({ params: { locale } }: { params: { locale: 
                     <span>{getTextBySectionName('graduated')}</span><span className="font-bold text-primaryBlue">{getTextBySectionName('faculty')}</span>{getTextBySectionName('graduated_at')}<span className="font-bold text-primaryBlue">{getTextBySectionName('department')}</span>
 
                     <span className='block my-4 md:my-6'>
-                        <span className="font-bold">{getTextBySectionName('ma_degree')}</span>{getTextBySectionName('ma_degree_details')}
+                        <span>{getTextBySectionName('ma_degree')}</span>{getTextBySectionName('ma_degree_details')}
                     </span>
 
                     <span className="block"><span className="font-bold">{getTextBySectionName('phd')}</span>{getTextBySectionName('phd_details')}</span>

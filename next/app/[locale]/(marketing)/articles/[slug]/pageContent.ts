@@ -790,8 +790,8 @@ export const PAGE_CONTENT = Object.freeze({
             {
                 ID: '11-snaga',
                 TITLE: {
-                    SER: '„11 snaga“',
-                    ENG: '„11 snaga“'
+                    SER: '11 snaga',
+                    ENG: '11 snaga'
                 },
                 LINK: 'artworks/11_snaga'
             },
@@ -806,8 +806,8 @@ export const PAGE_CONTENT = Object.freeze({
         ],
         COVER: {
             TITLE: {
-                SER: '„11 SNAGA“',
-                ENG: '„11 SNAGA“',
+                SER: '11 SNAGA',
+                ENG: '11 SNAGA',
             },
             AUTHOR: {
                 SER: 'Nataša Radojević',
@@ -2015,8 +2015,8 @@ export const PAGE_CONTENT = Object.freeze({
         ],
         COVER: {
             TITLE: {
-                SER: '„MURAL FREEDOM“',
-                ENG: '„MURAL FREEDOM“',
+                SER: 'MURAL FREEDOM',
+                ENG: 'MURAL FREEDOM',
             },
             AUTHOR: {
                 SER: 'Autor murala: Ivona Pleskonja',
@@ -2304,8 +2304,8 @@ export const PAGE_CONTENT = Object.freeze({
         ],
         COVER: {
             TITLE: {
-                SER: '„JAKI LJUDI“',
-                ENG: '„STRONG PEOPLE“',
+                SER: 'JAKI LJUDI',
+                ENG: 'STRONG PEOPLE',
             },
             AUTHOR: {
                 SER: 'Miloš Milošević istoričar umetnosti',
@@ -2482,8 +2482,8 @@ export const PAGE_CONTENT = Object.freeze({
         ],
         COVER: {
             TITLE: {
-                SER: '„PSIHODRAMA“',
-                ENG: '„PSYCHODRAMA“',
+                SER: 'PSIHODRAMA',
+                ENG: 'PSYCHODRAMA',
             },
             AUTHOR: {
                 SER: '',
@@ -3420,7 +3420,7 @@ export const PAGE_CONTENT = Object.freeze({
             {
                 ID: 'artworks',
                 TITLE: {
-                    SER: "Radovi",
+                    SER: 'Radovi',
                     ENG: 'Artworks',
                 },
                 LINK: 'artworks'
@@ -3444,8 +3444,8 @@ export const PAGE_CONTENT = Object.freeze({
         ],
         COVER: {
             TITLE: {
-                SER: '„DECA SUNCA“',
-                ENG: '„CHILDREN OF THE SUN“',
+                SER: 'DECA SUNCA',
+                ENG: 'CHILDREN OF THE SUN',
             },
             AUTHOR: {
                 SER: 'Aleksandra Mirčić',
@@ -4009,7 +4009,7 @@ export const PAGE_CONTENT = Object.freeze({
             {
                 ID: 'artworks',
                 TITLE: {
-                    SER: "Radovi",
+                    SER: 'Radovi',
                     ENG: 'Artworks',
                 },
                 LINK: 'artworks'
@@ -4033,8 +4033,8 @@ export const PAGE_CONTENT = Object.freeze({
         ],
         COVER: {
             TITLE: {
-                SER: '„VREMENSKE STANICE“',
-                ENG: '„STOPS IN TIME“',
+                SER: 'VREMENSKE STANICE',
+                ENG: 'STOPS IN TIME',
             },
             AUTHOR: {
                 SER: 'Ivona Pleskonja',
@@ -4289,7 +4289,7 @@ export const PAGE_CONTENT = Object.freeze({
             {
                 ID: 'artworks',
                 TITLE: {
-                    SER: "Radovi",
+                    SER: 'Radovi',
                     ENG: 'Artworks',
                 },
                 LINK: 'artworks'
@@ -4313,8 +4313,8 @@ export const PAGE_CONTENT = Object.freeze({
         ],
         COVER: {
             TITLE: {
-                SER: '„DUH“',
-                ENG: '„SPIRIT',
+                SER: 'DUH',
+                ENG: 'SPIRIT',
             },
             AUTHOR: {
                 SER: ' ',
@@ -4572,8 +4572,8 @@ export const PAGE_CONTENT = Object.freeze({
         ],
         COVER: {
             TITLE: {
-                SER: '„JEDAN SVET“',
-                ENG: '„ONE WORLD',
+                SER: 'JEDAN SVET',
+                ENG: 'ONE WORLD',
             },
             AUTHOR: {
                 SER: 'Galerija Art Media',
@@ -4763,8 +4763,8 @@ export const PAGE_CONTENT = Object.freeze({
         ],
         COVER: {
             TITLE: {
-                SER: '„IZVOR“',
-                ENG: '„ORIGIN',
+                SER: 'IZVOR',
+                ENG: 'ORIGIN',
             },
             AUTHOR: {
                 SER: 'Novinarka Marija Đorđević',
@@ -5052,8 +5052,8 @@ export const PAGE_CONTENT = Object.freeze({
         ],
         COVER: {
             TITLE: {
-                SER: '„HEROJI“',
-                ENG: '„HEROES',
+                SER: 'HEROJI',
+                ENG: 'HEROES',
             },
             AUTHOR: {
                 SER: 'Jelena Krivokapić',
@@ -5290,5 +5290,7 @@ export const PAGE_CONTENT = Object.freeze({
 });
 
 export function getExhibitionById(id: number) {
+    if(id === 7) return;
+
     return Object.values(PAGE_CONTENT).find((exhibition) => exhibition.ID === id);
 }

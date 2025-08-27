@@ -43,15 +43,15 @@ export const PAGE_CONTENT = Object.freeze({
     },
     MA_DEGREE_DETAILS: {
         SER: 'na Fakultetu likovnih umetnosti u Beogradu, Odsek slikarstvo, kod iste profesorke.',
-        ENG: 'Painting department, class of professor Andjelka Bojovic. Received her PhD in 2017 at the Faculty of Fine Arts in Belgrade, Painting Department, under the mentorship of professor Dimitrije Pecić. '
+        ENG: 'Painting department, class of professor Andjelka Bojovic. '
     },
     PHD: {
         SER: 'Doktorirala 2017. ',
-        ENG: '',
+        ENG: 'Received her PhD in 2017 ',
     },
     PHD_DETAILS: {
         SER: 'na Fakultetu likovnih umetnosti u Beogradu, odsek slikarstvo, kod profesora Dimitrija Pecića',
-        ENG: '',
+        ENG: 'at the Faculty of Fine Arts in Belgrade, Painting Department, under the mentorship of professor Dimitrije Pecić. ',
     },
     SCHOLARSHIP_START: {
         SER: 'Bila ',

@@ -67,7 +67,7 @@ export function MobileGallery({ locale, gallery, exhibitionId }: { locale: strin
                         </div>
                         <div className="flex flex-1 justify-between flex-col">
                             <div className={cn("flex flex-1 flex-col justify-end items-start text-primaryBlue")}>
-                                <div className="text-[32px] leading-[100%] tracking-[.15em] font-bold font-roboto-serif pb-[5px] uppercase">„{selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}“</div>
+                                <div className="text-[32px] leading-[100%] tracking-[.15em] font-bold font-roboto-serif pb-[5px] uppercase">{selected.DETAILS?.NAME[locale.toUpperCase() as keyof ITranslations]}</div>
                                 {selected.TYPE === 'vertical' && <div className="text-[32px] leading-[100%] tracking-[.15em] font-bold font-roboto-serif mt-[5px]">{selected.DETAILS?.SUBTITLE?.[locale.toUpperCase() as keyof ITranslations]}</div>}
                                 {selected.TYPE === 'vertical'
                                     ? (

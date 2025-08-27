@@ -1,4 +1,6 @@
 'use client';
+import {useRouter} from "next/navigation";
+
 import { cn } from "@/lib/utils";
 import {useIsMobile} from "@/hooks/useIsMobile";
 import { ArticleCover } from '@/components/articles/ArticleCover';
@@ -8,9 +10,13 @@ import { getExhibitionById } from '@/app/[locale]/(marketing)/articles/[slug]/pa
 
 export default function ExhibitionDetails({ params: { locale, slug } }: { params: { locale: string, slug: string }}) {
     const isMobile = useIsMobile();
+    const router = useRouter();
     const exhibition = getExhibitionById(parseInt(slug));
 
-    if(!exhibition) return null;
+    if (!exhibition) {
+        router.push('/coming_soon');
+        return null;
+    }
 
     return (
         <div className={cn(

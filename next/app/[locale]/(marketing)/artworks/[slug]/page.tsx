@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useMemo, useState } from 'react';
 
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useRouter } from 'next/navigation';
 
 import { cn } from '@/lib/utils';
 import { ITranslations } from "@/types/types";
@@ -13,6 +13,8 @@ import { SubNavBredCrumbs } from '@/components/subnav-bredcrumbs/SubNavBredCrumb
 import { getSubPageContentById } from '@/app/[locale]/(marketing)/artworks/pageContent';
 
 export default function WorkDetailsPage({ params: { locale, slug } }: { params: { locale: string, slug: string } }) {
+    const router = useRouter();
+
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
@@ -29,7 +31,10 @@ export default function WorkDetailsPage({ params: { locale, slug } }: { params: 
 
     const gallery = useMemo(() => page?.GALLERY.find((g) => g.ID === parseInt(galleryId || '')), [galleryId, page?.GALLERY]);
 
-    if (!page) return null;
+    if (!page) {
+        router.push('/coming_soon');
+        return null;
+    }
 
     return (
         <SelectedImageProvider>
