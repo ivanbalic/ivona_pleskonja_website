@@ -28,7 +28,7 @@ export default function ContactPage() {
                 </Link>
                 <Link
                     className="font-bold"
-                    href="https://www.facebook.com/share/1AvuPnJMQ2/?mibextid=wwXIfrhttps://facebook.comhttps://www.facebook.com/share/1AvuPnJMQ2/?mibextid=wwXIfr"
+                    href="https://www.facebook.com/share/1AvuPnJMQ2/?mibextid=wwXIfr"
                     target="_blank"
                 >
                     FACEBOOK
