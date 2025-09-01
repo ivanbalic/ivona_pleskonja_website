@@ -1,23 +1,12 @@
 "use client";
 import React from "react";
-import { Metadata } from "next";
-
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
 import { ITranslations } from "@/types/types";
 import { Container } from "@/components/container";
-import { getArtworksMetadata } from "../metadata.config";
 import { generateBreadcrumbSchema } from "@/lib/schema-generator";
 import { PAGE_CONTENT } from "@/app/[locale]/(marketing)/artworks/pageContent";
-
-export async function generateMetadata({
-  params,
-}: {
-  params: { locale: string };
-}): Promise<Metadata> {
-  return getArtworksMetadata(params);
-}
 
 const getTitle = (locale: string) => {
   return PAGE_CONTENT?.TITLE[locale.toUpperCase() as keyof ITranslations];

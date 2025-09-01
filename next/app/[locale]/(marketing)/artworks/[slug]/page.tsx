@@ -1,5 +1,4 @@
 "use client";
-import { Metadata } from "next";
 import React, { useEffect, useMemo, useState } from "react";
 
 import { useSearchParams, useRouter } from "next/navigation";
@@ -16,25 +15,6 @@ import { ArtworkDetails } from "@/components/artworks/ArtworkDetails";
 import { SelectedImageProvider } from "@/context/SelectedImageContext";
 import { SubNavBredCrumbs } from "@/components/subnav-bredcrumbs/SubNavBredCrumbs";
 import { getSubPageContentById } from "@/app/[locale]/(marketing)/artworks/pageContent";
-
-export async function generateMetadata({
-  params,
-}: {
-  params: { locale: string; slug: string };
-}): Promise<Metadata> {
-  const page = getSubPageContentById(params.slug);
-  return {
-    title: `${page?.TITLE} | Ivona Pleskonja`,
-    description: page?.DESCRIPTION[0].ENG,
-    alternates: {
-      canonical: `https://ivonapleskonja.com/${params.locale}/artworks/${params.slug}`,
-      languages: {
-        en: `https://ivonapleskonja.com/en/artworks/${params.slug}`,
-        sr: `https://ivonapleskonja.com/sr/artworks/${params.slug}`,
-      },
-    },
-  };
-}
 
 export default function ArtworkDetailsPage({
   params: { locale, slug },
