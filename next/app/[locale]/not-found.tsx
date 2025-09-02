@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import comingSoonBackground from "@/public/assets/coming-soon/coming-soon-background.webp";
+import { usePathname } from "next/navigation";
 
 const translations = {
   en: {
@@ -18,11 +19,9 @@ const translations = {
   },
 };
 
-export default function NotFound({
-  params: { locale = "en" },
-}: {
-  params: { locale: "en" | "sr" };
-}) {
+export default function NotFound() {
+  const pathName = usePathname();
+  const locale = pathName?.split("/")[1] as keyof typeof translations;
   const t = translations[locale];
 
   return (
