@@ -25,7 +25,7 @@ export const viewport: Viewport = {
   maximumScale: 1,
 };
 
-export function RootLayout({
+export default function RootLayout({
   children,
   params: { lang },
 }: {
