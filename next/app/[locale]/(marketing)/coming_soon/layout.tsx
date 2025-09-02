@@ -14,13 +14,14 @@ export async function generateMetadata({
   };
   const descriptions = {
     EN: "This page is under construction. Please check back soon for new content from Ivona Pleskonja.",
-    SR:
-      "Ova stranica je u izradi. Uskoro očekujte novi sadržaj od Ivone Pleskonje.",
+    SR: "Ova stranica je u izradi. Uskoro očekujte novi sadržaj od Ivone Pleskonje.",
   };
 
   return {
-    title: titles[locale as keyof ITranslations] || titles.EN,
-    description: descriptions[locale as keyof ITranslations] || descriptions.EN,
+    title: titles[locale.toUpperCase() as keyof ITranslations] || titles.EN,
+    description:
+      descriptions[locale.toUpperCase() as keyof ITranslations] ||
+      descriptions.EN,
     alternates: {
       canonical: `https://ivona-pleskonja.com/${locale}/coming_soon`,
       languages: {
