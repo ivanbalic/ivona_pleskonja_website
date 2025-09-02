@@ -23,7 +23,6 @@ const translations = {
 export default function NotFound() {
   const pathName = usePathname();
   const locale = pathName?.split("/")[1] as keyof typeof translations;
-
   const t = translations[locale];
 
   return (
