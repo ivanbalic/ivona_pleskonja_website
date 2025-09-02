@@ -70,11 +70,6 @@ export const seoConfig: SeoConfig = {
       apple: "/apple-touch-icon.png",
       shortcut: "/favicon-32x32.png",
     },
-    viewport: {
-      width: "device-width",
-      initialScale: 1,
-      maximumScale: 1,
-    },
     verification: {
       google: "your-google-site-verification", // Add your Google verification code
     },

@@ -1,28 +1,41 @@
 import React from "react";
-
-import { Locale, i18n } from '@/i18n.config';
-
+import { Roboto_Serif } from "next/font/google";
+import { Locale, i18n } from "@/i18n.config";
 import { ActiveSlideProvider } from "@/context/ActiveSlideContext";
 
 import "./globals.css";
 
+const roboto_serif = Roboto_Serif({
+  display: "swap",
+  style: ["normal"],
+  subsets: ["latin-ext"],
+  weight: ["400", "700"],
+  variable: "--font-roboto-serif",
+});
+
 export async function generateStaticParams() {
-  return i18n.locales.map(locale => ({ lang: locale }))
+  return i18n.locales.map((locale) => ({ lang: locale }));
 }
 
-export default function RootLayout({
+import { Viewport } from "next";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
+export function RootLayout({
   children,
-  params
+  params: { lang },
 }: {
-  children: React.ReactNode
-  params: { lang: Locale }
+  children: React.ReactNode;
+  params: { lang: Locale };
 }) {
   return (
-    <html lang={params.lang}>
+    <html lang={lang} className={`${roboto_serif.variable} antialiased`}>
       <body>
-      <ActiveSlideProvider>
-        {children}
-      </ActiveSlideProvider>
+        <ActiveSlideProvider>{children}</ActiveSlideProvider>
       </body>
     </html>
   );
