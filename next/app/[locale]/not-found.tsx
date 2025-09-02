@@ -25,6 +25,8 @@ export default function NotFound() {
   const locale = pathName?.split("/")[1] as keyof typeof translations;
   const t = translations[locale];
 
+  if (!t) return null;
+
   return (
     <div className="relative w-full h-dvh">
       <Image
