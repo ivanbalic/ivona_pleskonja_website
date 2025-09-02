@@ -1,350 +1,660 @@
-import awardsEng from '@/public/assets/about-me/awards-eng.webp';
-import awardsSer from '@/public/assets/about-me/awards-ser.webp';
-import collectionsSer from '@/public/assets/about-me/collections-ser.webp';
-import collectionsEng from '@/public/assets/about-me/collections-eng.webp';
-import soloExhibitionsSer from '@/public/assets/about-me/solo-exhibitions-ser.webp';
-import soloExhibitionsEng from '@/public/assets/about-me/solo-exhibitions-eng.webp';
-import groupExhibitionsSer from '@/public/assets/about-me/group-exhibitions-ser.webp';
-import groupExhibitionsEng from '@/public/assets/about-me/group-exhibitions-eng.webp';
-
+import awardsEng from "@/public/assets/about-me/awards-eng.webp";
+import awardsSer from "@/public/assets/about-me/awards-ser.webp";
+import collectionsSer from "@/public/assets/about-me/collections-ser.webp";
+import collectionsEng from "@/public/assets/about-me/collections-eng.webp";
+import soloExhibitionsSer from "@/public/assets/about-me/solo-exhibitions-ser.webp";
+import soloExhibitionsEng from "@/public/assets/about-me/solo-exhibitions-eng.webp";
+import groupExhibitionsSer from "@/public/assets/about-me/group-exhibitions-ser.webp";
+import groupExhibitionsEng from "@/public/assets/about-me/group-exhibitions-eng.webp";
 
 export const PAGE_CONTENT = Object.freeze({
-    TITLE: {
-        SER: 'UMETNIČKA BIOGRAFIJA',
-        ENG: 'CV',
-    },
-    NAME: {
-        SER: 'Ivona Pleskonja, ',
-        ENG: '',
-    },
-    BORN: {
-        SER: 'rođena 16.10.1974. godine u Beogradu, Jugoslavija.',
-        ENG: 'Born on 16 October 1974 in Belgrade, Yugoslavia.'
-    },
-    GRADUATED: {
-        SER: '',
-        ENG: 'Graduated from the '
-    },
-    FACULTY: {
-        SER: 'Fakultet likovnih umetnosti',
-        ENG: 'Faculty of Fine Arts',
-    },
-    GRADUATED_AT: {
-        SER: ' u Beogradu upisala 1993. kao redovan students u klasi profesorke Anđelke Bojović, ',
-        ENG: ' in Belgrade in 1998 as a full-time student in the class of professor Anđelka Bojović, ',
-    },
-    DEPARTMENT: {
-        SER: 'Odsek slikarstvo.',
-        ENG: 'Painting department.',
-    },
-    MA_DEGREE: {
-        SER: 'Diplomirala 1998. Magistrirala 2001. ',
-        ENG: 'Holds an MA degree from the same Faculty since 2001, '
-    },
-    MA_DEGREE_DETAILS: {
-        SER: 'na Fakultetu likovnih umetnosti u Beogradu, Odsek slikarstvo, kod iste profesorke.',
-        ENG: 'Painting department, class of professor Andjelka Bojovic. '
-    },
-    PHD: {
-        SER: 'Doktorirala 2017. ',
-        ENG: 'Received her PhD in 2017 ',
-    },
-    PHD_DETAILS: {
-        SER: 'na Fakultetu likovnih umetnosti u Beogradu, odsek slikarstvo, kod profesora Dimitrija Pecića',
-        ENG: 'at the Faculty of Fine Arts in Belgrade, Painting Department, under the mentorship of professor Dimitrije Pecić. ',
-    },
-    SCHOLARSHIP_START: {
-        SER: 'Bila ',
-        ENG: '',
-    },
-    SCHOLARSHIP_HOLDER: {
-        SER: 'stipendista fonda ',
-        ENG: '',
-    },
-    SCHOLARSHIP_AND_ASSOCIATIONS_DETAILS: {
-        SER: 'Madlena Janković kao ',
-        ENG: 'She was a scholarship holder of the "Madlena Janković" Foundation as a young talent. She is a member of the ULUS artists\' association, with the status of a freelance artist since 1998. The work "Amazons" has been in the collection of The Belgrade City Museum since 2006. Participated in many solo and group articles in Serbia and abroad.'
-    },
-    SCHOLARSHIP_END: {
-        SER: 'mladi talenat.',
-        ENG: '',
-    },
-    ULUS_DETAILS: {
-        SER: 'Član ULUS-a sa statusom slobodnog umetnika od 1998. godine.',
-        ENG: '',
-    }
+  TITLE: {
+    SR: "UMETNIČKA BIOGRAFIJA",
+    EN: "CV",
+  },
+  NAME: {
+    SR: "Ivona Pleskonja, ",
+    EN: "",
+  },
+  BORN: {
+    SR: "rođena 16.10.1974. godine u Beogradu, Jugoslavija.",
+    EN: "Born on 16 October 1974 in Belgrade, Yugoslavia.",
+  },
+  GRADUATED: {
+    SR: "",
+    EN: "Graduated from the ",
+  },
+  FACULTY: {
+    SR: "Fakultet likovnih umetnosti",
+    EN: "Faculty of Fine Arts",
+  },
+  GRADUATED_AT: {
+    SR: " u Beogradu upisala 1993. kao redovan students u klasi profesorke Anđelke Bojović, ",
+    EN: " in Belgrade in 1998 as a full-time student in the class of professor Anđelka Bojović, ",
+  },
+  DEPARTMENT: {
+    SR: "Odsek slikarstvo.",
+    EN: "Painting department.",
+  },
+  MA_DEGREE: {
+    SR: "Diplomirala 1998. Magistrirala 2001. ",
+    EN: "Holds an MA degree from the same Faculty since 2001, ",
+  },
+  MA_DEGREE_DETAILS: {
+    SR: "na Fakultetu likovnih umetnosti u Beogradu, Odsek slikarstvo, kod iste profesorke.",
+    EN: "Painting department, class of professor Andjelka Bojovic. ",
+  },
+  PHD: {
+    SR: "Doktorirala 2017. ",
+    EN: "Received her PhD in 2017 ",
+  },
+  PHD_DETAILS: {
+    SR: "na Fakultetu likovnih umetnosti u Beogradu, odsek slikarstvo, kod profesora Dimitrija Pecića",
+    EN: "at the Faculty of Fine Arts in Belgrade, Painting Department, under the mentorship of professor Dimitrije Pecić. ",
+  },
+  SCHOLARSHIP_START: {
+    SR: "Bila ",
+    EN: "",
+  },
+  SCHOLARSHIP_HOLDER: {
+    SR: "stipendista fonda ",
+    EN: "",
+  },
+  SCHOLARSHIP_AND_ASSOCIATIONS_DETAILS: {
+    SR: "Madlena Janković kao ",
+    EN: 'She was a scholarship holder of the "Madlena Janković" Foundation as a young talent. She is a member of the ULUS artists\' association, with the status of a freelance artist since 1998. The work "Amazons" has been in the collection of The Belgrade City Museum since 2006. Participated in many solo and group articles in Serbia and abroad.',
+  },
+  SCHOLARSHIP_END: {
+    SR: "mladi talenat.",
+    EN: "",
+  },
+  ULUS_DETAILS: {
+    SR: "Član ULUS-a sa statusom slobodnog umetnika od 1998. godine.",
+    EN: "",
+  },
 });
 
 export const MENU_ITEMS_CONFIG = Object.freeze({
-    AWARDS: {
-        ID: 'awards',
-        BUTTON: {
-            SER: awardsSer,
-            ENG: awardsEng,
-        },
-        ALT: 'awards',
-        LINK: 'about_me/awards',
-        TITLE: {
-            SER: "Nagrade",
-            ENG: "Awards",
-        },
-        CONTENT: {
-            SER: [
-                { YEAR: '2016.', AWARD: 'III nagrada Novembarskog Salona, Kraljevo' },
-                { YEAR: '2007.', AWARD: 'Telenorova nagrada za idejno rešenje' },
-                { YEAR: '2002.', AWARD: 'III nagrada za fotografiju, iz Fonda BS Procesor, Beograd' },
-                { YEAR: '1997.', AWARD: 'Nagrada za najbolji crtež iz Fonda FLU' },
-                { YEAR: '1994.', AWARD: 'Nagrada za najbolju studiju iz Fonda FLU' }
-            ],
-            ENG: [
-                { YEAR: '2016.', AWARD: 'III. prize of the November Salon, Kraljevo' },
-                { YEAR: '2007.', AWARD: 'Belgrade, Telenor Award' },
-                { YEAR: '2002.', AWARD: 'Belgrade, BS Processor III Award for Photography' },
-                { YEAR: '1997.', AWARD: 'Belgrade, Academy of Fine Arts Award for the Best Drawing' },
-                { YEAR: '1994.', AWARD: 'Belgrade, Academy of Fine Arts Award for the Best Drawing Study' },
-            ]
-        },
+  AWARDS: {
+    ID: "awards",
+    BUTTON: {
+      SR: awardsSer,
+      EN: awardsEng,
     },
-    SOLO_EXHIBITIONS: {
-        ID: 'solo_exhibitions',
-        BUTTON: {
-            SER: soloExhibitionsSer,
-            ENG: soloExhibitionsEng,
-        },
-        ALT: 'solo articles',
-        LINK: 'about_me/solo_exhibitions',
-        TITLE: {
-            SER: "Samostalne Izložbe",
-            ENG: "Solo Exhibitions",
-        },
-        CONTENT: {
-            SER: [
-                { YEAR: '2024.', AWARD: 'SkyLine kula / spoljna fasada / mural, Freedom, Beograd' },
-                { YEAR: "2023.", AWARD: "Galerija Štab, Stvaranje svetla / Nežni smo rodjeni, Beograd" },
-                { YEAR: "2022.", AWARD: "Galerija Štab, 11 Snaga, Beograd" },
-                { YEAR: "2020.", AWARD: "Zgrada Sky Line / spoljna fasada / mural, Life, Beograd" },
-                { YEAR: "2019.", AWARD: "Nacinalna Galerija, 11 Snaga, Beograd" },
-                { YEAR: "2019.", AWARD: "Izlog FLU, 11 Snaga, Beograd" },
-                { YEAR: "2019.", AWARD: "Galerija Centra za grafiku FLU, 11 Snaga, Beograd" },
-                { YEAR: "2018.", AWARD: "Muzej i Galerija Tivat, Deca Sunca, Tivat" },
-                { YEAR: "2016.", AWARD: "Likovna Galerija Doma Kulture, Jaki ljudi, Prijepolje" },
-                { YEAR: "2015.", AWARD: "Galerija Kulturnog centra, Deca Sunca, Požega" },
-                { YEAR: "2015.", AWARD: "BLOK Galerija, Vremenske stanice, Beograd" },
-                { YEAR: "2014.", AWARD: "Likovna galerija Kulturnog centra, Deca Sunca, Beograd" },
-                { YEAR: "2014.", AWARD: "Galerija Centra za grafiku FLU, Deca Sunca, Beograd" },
-                { YEAR: "2012.", AWARD: "Likovni Salon Kulturnog Centra, Duh, Novi Sad" },
-                { YEAR: "2011.", AWARD: "Galerija ULUS, Duh, Beograd" },
-                { YEAR: "2009.", AWARD: "Galerija Arte, Jedan Svet, Beograd" },
-                { YEAR: "2007.", AWARD: "Galerija Rothamel, Belgrade Double, Erfurt, Nemačka" },
-                { YEAR: "2007.", AWARD: "Nacionalna Galerija, Izvor, Beograd" },
-                { YEAR: "2007.", AWARD: "Galerija Beograd, Heroji, Beograd" },
-                { YEAR: "2003.", AWARD: "Galerija školskog internacionalnog centra “Jelena Anžujska”, Le Soleil, Pariz" },
-                { YEAR: "2002.", AWARD: "Galerija Pesak, Zimska Čarolija, Beograd" },
-                { YEAR: "2000.", AWARD: "Galerija FLU, Prvo Svetlo, Beograd" },
-                { YEAR: "1998.", AWARD: "Izlog FLU, Taki, Beograd" },
-            ],
-            ENG: [
-                { YEAR: '2024.', AWARD: 'SkyLine building / outer facade / mural, Freedom, Belgrade' },
-                { YEAR: '2023.', AWARD: 'Štab Gallery, Creating Light, We Are Born Gentle, Belgrade' },
-                { YEAR: '2022.', AWARD: 'Štab Gallery, 11 Snaga, Belgrade' },
-                { YEAR: '2020.', AWARD: 'SkyLine building / outer facade / mural, Life, Belgrade' },
-                { YEAR: '2019.', AWARD: 'National Gallery, 11 Snaga, Belgrade' },
-                { YEAR: '2019.', AWARD: 'Izlog Gallery FLU, 11 Snaga, Belgrade' },
-                { YEAR: '2019.', AWARD: 'FLU Graphics Center Gallery, 11 Snaga, Belgrade' },
-                { YEAR: '2018.', AWARD: 'Tivat Museum and Gallery, Children of the Sun, Tivat' },
-                { YEAR: '2016.', AWARD: 'Dom Kulture Art Gallery, Strong People, Prijepolje' },
-                { YEAR: '2015.', AWARD: 'Cultural Center Gallery, Children of the Sun, Požega' },
-                { YEAR: '2015.', AWARD: 'BLOK Gallery, Weather stations, Belgrade' },
-                { YEAR: '2014.', AWARD: 'Children of the Sun, Art Gallery of the Cultural Centre, Belgrade' },
-                { YEAR: '2014.', AWARD: 'Children of the Sun, Center for Graphic Arts and Visual Researches, Belgrade' },
-                { YEAR: '2012.', AWARD: 'Spirit, Art Salon of the Cultural Centre, Novi Sad' },
-                { YEAR: '2011.', AWARD: 'Spirit, ULUS Gllery, Belgrade' },
-                { YEAR: '2009.', AWARD: 'One World, Arte Gallery, Belgrade' },
-                { YEAR: '2007.', AWARD: 'Belgrade Double, Rothamel Gallery, Erfurt, Germany' },
-                { YEAR: '2007.', AWARD: 'Origin, National Gallery, Belgrade' },
-                { YEAR: '2007.', AWARD: 'Heroes, Belgrade Gallery, Belgrade' },
-                { YEAR: '2003.', AWARD: 'Le Soleil, Centre scolaire international “Hélène d’Anjou”, Paris' },
-                { YEAR: '2002.', AWARD: 'Winter Magic, Sand Gallery, Belgrade' },
-                { YEAR: '2001.', AWARD: 'Look, Academy of Fine Arts Gallery, Belgrade' },
-                { YEAR: '2000.', AWARD: 'First Light, Academy of Fine Arts Gallery, Belgrade' },
-                { YEAR: '1998.', AWARD: 'Taki, Window of Academy of Fine Arts, Belgrade' },
-            ]
-        },
+    ALT: "awards",
+    LINK: "about_me/awards",
+    TITLE: {
+      SR: "Nagrade",
+      EN: "Awards",
     },
-    GROUP_EXHIBITIONS: {
-        ID: "group_exhibitions",
-        BUTTON: {
-            SER: groupExhibitionsSer,
-            ENG: groupExhibitionsEng,
+    CONTENT: {
+      SR: [
+        { YEAR: "2016.", AWARD: "III nagrada Novembarskog Salona, Kraljevo" },
+        { YEAR: "2007.", AWARD: "Telenorova nagrada za idejno rešenje" },
+        {
+          YEAR: "2002.",
+          AWARD: "III nagrada za fotografiju, iz Fonda BS Procesor, Beograd",
         },
-        ALT: 'group articles',
-        LINK: 'about_me/group_exhibitions',
-        TITLE: {
-            SER: "Grupne Izložbe",
-            ENG: "Group Exhibitions",
+        { YEAR: "1997.", AWARD: "Nagrada za najbolji crtež iz Fonda FLU" },
+        { YEAR: "1994.", AWARD: "Nagrada za najbolju studiju iz Fonda FLU" },
+      ],
+      EN: [
+        { YEAR: "2016.", AWARD: "III. prize of the November Salon, Kraljevo" },
+        { YEAR: "2007.", AWARD: "Belgrade, Telenor Award" },
+        {
+          YEAR: "2002.",
+          AWARD: "Belgrade, BS Processor III Award for Photography",
         },
-        CONTENT: {
-            SER: [
-                { YEAR: "2023.", AWARD: "Susreti, Paviljon Cvijeta Zuzorić, Beograd" },
-                { YEAR: "2022.", AWARD: "Jesenji Salon, Paviljon Cvijeta Zuzorić, Beograd" },
-                { YEAR: "2020.", AWARD: "Čukarički likovni salon, Galerija 73, Beograd" },
-                { YEAR: "2020.", AWARD: "Akt, Galerija X Vitamin, Beograd" },
-                { YEAR: "2019.", AWARD: "Majska izložba grafika beogradskog kruga, ULUS Galerija, Beograd" },
-                { YEAR: "2018.", AWARD: "INTERBIFEP, Tuzla" },
-                { YEAR: "2018.", AWARD: "Bijenale Minijature, Gornji Milanovac" },
-                { YEAR: "2017.", AWARD: "OUTSIDE THE LINES, New Moment Galerija, Beograd" },
-                { YEAR: "2017.", AWARD: "Jesenji Salon, Paviljon Cvijeta Zuzorić, Beograd" },
-                { YEAR: "2017.", AWARD: "Akvizicije Ministarstva kulture, Sportsko – kulturni centar, Obrenovac" },
-                { YEAR: "2016.", AWARD: "Novembarski salon, Kraljevo" },
-                { YEAR: "2016.", AWARD: "ART MARKET, Budimpešta" },
-                { YEAR: "2015.", AWARD: "ART MARKET, Budimpešta" },
-                { YEAR: "2015.", AWARD: "Kolonija Mileševa, Dom Kulture, Prijepolje" },
-                { YEAR: "2014.", AWARD: "EX YU Grafika, Nacionalna Galerija, Beograd" },
-                { YEAR: "2013.", AWARD: "Dani Mađarskog Slikarstva, Srpki Paviljon / srpsko savremeno slikarstvo, Budimpešta" },
-                { YEAR: "2013.", AWARD: "Izložba 2, Galerija opštine Vračar, Beograd" },
-                { YEAR: "2013.", AWARD: "Majska izložba grafika beogradskog kruga, Galerija Grafički kolektiv, Beograd" },
-                { YEAR: "2013.", AWARD: "Sopoćnska viđenja, Mala Galerija Medija Centra Odbrana, Beograd" },
-                { YEAR: "2012.", AWARD: "Kolonija Sopoćanska viđenja, Novi Pazar" },
-                { YEAR: "2012.", AWARD: "Jesenja izložba, Paviljon Cvijeta Zuzorić, Beograd" },
-                { YEAR: "2011.", AWARD: "Umetnost Prvi Dah Života, Narodni Muzej, Beograd" },
-                { YEAR: "2011.", AWARD: "Objekti i Radovi na Papiru III, Galerija Beograd, Beograd" },
-                { YEAR: "2010.", AWARD: "NAF, Niš" },
-                { YEAR: "2008.", AWARD: "Balkan Art Fluxion, Amsterdam" },
-                { YEAR: "2007.", AWARD: "Objekti i Radovi na Papiru II, Galerija Beograd, Beograd" },
-                { YEAR: "2007.", AWARD: "Bijenale Crteža i Male Plastike, Paviljon Cvijeta Zuzorić, Beograd" },
-                { YEAR: "2006.", AWARD: "Kolonija Sv. Rafailo Deronjski, Deronje" },
-                { YEAR: "2005.", AWARD: "Revijalna izložba članova ULUS-a, Paviljon Cvijeta Zuzorić Kalemegdan, Beograd" },
-                { YEAR: "2005.", AWARD: "Izmeštanje, Galerija Zvono, Beograd" },
-                { YEAR: "2005.", AWARD: "“Aukcija” u organizaciji Madl’Art, Paviljon Cvijeta Zuzorić Kalemegda, Beograd" },
-                { YEAR: "2005.", AWARD: "Amazonke, Galerija SKC, Beograd" },
-                { YEAR: "2005.", AWARD: "Total Art Sale, Galerija SULUJ, Beograd" },
-                { YEAR: "2005.", AWARD: "Vino, Paviljon Cvijeta Zuzorić Kalemegdan, Beograd" },
-                { YEAR: "2004.", AWARD: "Imaginarni Grad, Reed Collage, Portland, USA" },
-                { YEAR: "2004.", AWARD: "BELEF, Kalemegdan, Beograd" },
-                { YEAR: "2004.", AWARD: "Izmeštanje, Kolonija Kalenić" },
-                { YEAR: "2004.", AWARD: "Jesenji Salon, Paviljon Cvijeta Zuzorić Kalemegdan, Beograd" },
-                { YEAR: "2003.", AWARD: "BELEF, Kalemegdan, Beograd" },
-                { YEAR: "2002.", AWARD: "Vaterpolo, Galerija ULUS, Beograd" },
-                { YEAR: "2002.", AWARD: "Evinost, Galerija “Pesak”, Beograd" },
-                { YEAR: "2002.", AWARD: "Voda Vazduh, Klub “Skalar”, Beograd" },
-                { YEAR: "2002.", AWARD: "V jugoslovenski likovni bijenale mladih, Vršac" },
-                { YEAR: "2002.", AWARD: "Izložba fotografija, galerija ARTGET KCB, Beograd" },
-                { YEAR: "2001.", AWARD: "aukcija slika, Skupština grada Beograda, Beograd" },
-                { YEAR: "2001.", AWARD: "prodajna izložba članova ULUS-a, Galerija ULUS, Beograd" },
-                { YEAR: "2001.", AWARD: "Novembarsko Proleće, Galerija “Paleta” KCB, Beograd" },
-                { YEAR: "2001.", AWARD: "majska izložba Sartid, Galerija muzeja, Smederevo" },
-                { YEAR: "2000.", AWARD: "Insomnija, Galerija SULUJ, Beograd" },
-                { YEAR: "2000.", AWARD: "IV jugoslovenski likovni bijenale mladih, Vršac" },
-                { YEAR: "1999.", AWARD: "Paviljon Cvijeta Zuzorić, Beograd" },
-                { YEAR: "1999.", AWARD: "XXXII Hercegnovski Zimski Salon, Herceg Novi" },
-                { YEAR: "1999.", AWARD: "Portret, NU Braća Stamenković, Beograd" },
-                { YEAR: "1999.", AWARD: "novoprimljeni članovi ULUS-a, Paviljon Cvijeta Zuzorić, Beograd" },
-                { YEAR: "1999.", AWARD: "izložba u okviru slikarske kolonije, Pinakoteka, Lamia, Grčka" },
-                { YEAR: "1998.", AWARD: "27. izložba crteža studenata FLU, Galerija Doma Omladine, Beograd" },
-                { YEAR: "1998.", AWARD: "III Jugoslovenski Likovni Bijenale Mladih, Vršac" },
-                { YEAR: "1998.", AWARD: "XXXIX OKTOBARSKI SALON, Beograd" },
-                { YEAR: "1997.", AWARD: "26. izložba crteža studenata FLU, Galerija Doma Omladine, Beograd" },
-                { YEAR: "1997.", AWARD: "izložba nagrađenih studenata FLU, Galerija FLU, Beograd" },
-                { YEAR: "1996.", AWARD: "Telo, Galerija FLU, Beograd" },
-                { YEAR: "1996.", AWARD: "25. izložba crteža studenata FLU, Galerija Doma Omladine, Beograd" },
-                { YEAR: "1996.", AWARD: "Matićevi Dani, Dom VJ, Ćuprija" },
-                { YEAR: "1995.", AWARD: "Izložba u okviru Međunarodne slikarske kolonije, Didimoteihon, Grčka" },
-                { YEAR: "1995.", AWARD: "24. izložba crteža studenata FLU, Galerija Doma Omladine, Beograd" },
-                { YEAR: "1994.", AWARD: "izložba nagrađenih studenata FLU, Galerija FLU, Beograd" },
-                { YEAR: "1994.", AWARD: "Kolonija akvarela, Ečka" },
-            ],
-            ENG: [
-                { YEAR: '2024.', AWARD: 'ART AND HOME, ARTOGET Penthouse Skyline, Belgrade' },
-                { YEAR: '2024.', AWARD: 'ART FOR THE MIND, ARTOGET and Karanović an Partners, Belgrade' },
-                { YEAR: '2023.', AWARD: 'Encounters, Paviljon Cvijeta Zuzorić, Belgrade' },
-                { YEAR: '2022.', AWARD: 'Autumn Salon, Paviljon Cvijeta Zuzorić, Belgrade' },
-                { YEAR: '2020.', AWARD: 'Gallery 73, Čukarički likovni salon, Belgrade' },
-                { YEAR: '2020.', AWARD: 'Vitamin X Gallery, Nude, Belgrade' },
-                { YEAR: '2019.', AWARD: 'May exhibition of prints by Belgrade circle, ULUS Gallery, Belgrade' },
-                { YEAR: '2018.', AWARD: 'INTERBIFEP, Tuzla' },
-                { YEAR: '2018.', AWARD: 'Miniatures Biennial, Gornji Milanovac' },
-                { YEAR: '2017.', AWARD: 'OUTSIDE THE LINES, New Moment Gallery, Belgrade' },
-                { YEAR: '2017.', AWARD: 'Autumn Salon, Cvijeta Zuzorić Pavillion, Belgrade' },
-                { YEAR: '2017.', AWARD: 'Acquisitions by the Ministry of Culture, Sports and Cultural Center, Obrenovac' },
-                { YEAR: '2016.', AWARD: 'November Art Salon, Kraljevo' },
-                { YEAR: '2016.', AWARD: 'ART MARKET, Budapest' },
-                { YEAR: '2015.', AWARD: 'ART MARKET, Budapest' },
-                { YEAR: '2015.', AWARD: 'AiR Mileseva Monastery, Dom kulture Gallery, Prijepolje' },
-                { YEAR: '2013.', AWARD: 'Hungarian Painting Days, Budapest' },
-                { YEAR: '2013.', AWARD: 'Exhibition 2, Vracar Gallery, Belgrade' },
-                { YEAR: '2013.', AWARD: 'May Exhibition of the Print Art, Graficki kolektiv Gallery, Belgrade' },
-                { YEAR: '2013.', AWARD: 'Sopocani, The Media Centre “Odbrana” Gallery, Belgrade' },
-                { YEAR: '2012.', AWARD: 'Art Colony Sopocani, Novi Pazar' },
-                { YEAR: '2011.', AWARD: 'L’ArteIl Primo Soffio Di Vita, National Museum, Belgrade' },
-                { YEAR: '2011.', AWARD: 'Objects and Works On Paper III, Belgrade Gallery, Belgrade' },
-                { YEAR: '2010.', AWARD: 'NAF, Nis' },
-                { YEAR: '2008.', AWARD: 'Balkan Art Fluxion, Amsterdam' },
-                { YEAR: '2007.', AWARD: 'Objects and Works on Paper II, Belgrade Gallery, Belgrade' },
-                { YEAR: '2007.', AWARD: 'Biennial of Drawings and Small Plastics, Cvijeta Zuzoric Pavilion, Kalemegdan, Belgrade' },
-                { YEAR: '2006.', AWARD: 'Colony St. Rafailo Deronjski, Deronje' },
-                { YEAR: '2005.', AWARD: 'Dislocation, Zvono Gallery, Belgrade' },
-                { YEAR: '2005.', AWARD: 'Amazons, SKC Gallery, Belgrade' },
-                { YEAR: '2005.', AWARD: 'Total Art Sale, SULUJ Gallery, Belgrade' },
-                { YEAR: '2004.', AWARD: 'BELEF- Belgrade Summer Festival, Kalemegdan, Belgrade' },
-                { YEAR: '2004.', AWARD: 'Imaginary City, Reed College, Portland, Oregon' },
-                { YEAR: '2004.', AWARD: 'Dislocation, Colony Kalenic' },
-                { YEAR: '2003.', AWARD: 'BELEF- Belgrade Summer Festival, Kalemegdan, Belgrade' },
-                { YEAR: '2002.', AWARD: 'Evinost, Sand Gallery, Belgrade' },
-                { YEAR: '2002.', AWARD: '5th Yugoslav Biennial of Young Artists, Concordia, Vrsac' },
-                { YEAR: '2002.', AWARD: 'Exhibition of photographs, ARTGET KCB Gallery, Belgrade' },
-                { YEAR: '2001.', AWARD: 'Auction of paintings, Assembly of the City Belgrade, Belgrade' },
-                { YEAR: '2001.', AWARD: 'Sartid, Gallery of Museum, Smederevo' },
-                { YEAR: '2000.', AWARD: 'Insomnia, SULUJ Gallery, Belgrade' },
-                { YEAR: '2000.', AWARD: '4th Yugoslav Biennial of Young Artists, Concordia, Vrsac' },
-                { YEAR: '1999.', AWARD: '32nd Winter Saloon, Herceg Novi' },
-                { YEAR: '1999.', AWARD: 'Art Colony, Pinakotheke, Lamia, Greece' },
-                { YEAR: '1998.', AWARD: '3rd Yugoslav Biennial of Young Artists, Concordia, Vrsac' },
-                { YEAR: '1998.', AWARD: '39th October Salon, 25th May Museum, Belgrade' },
-                { YEAR: '1996.', AWARD: 'The Body, Academy of Fine Arts Gallery, Belgrade' },
-                { YEAR: '1995.', AWARD: 'International Art Colony, Didimoticho, Greece' },
-                { YEAR: '1994.', AWARD: 'Art Colony, Ecka, Serbia' },
-            ]
+        {
+          YEAR: "1997.",
+          AWARD: "Belgrade, Academy of Fine Arts Award for the Best Drawing",
         },
+        {
+          YEAR: "1994.",
+          AWARD:
+            "Belgrade, Academy of Fine Arts Award for the Best Drawing Study",
+        },
+      ],
     },
-    COLLECTIONS: {
-        ID: 'collections',
-        BUTTON: {
-            SER: collectionsSer,
-            ENG: collectionsEng,
+  },
+  SOLO_EXHIBITIONS: {
+    ID: "solo_exhibitions",
+    BUTTON: {
+      SR: soloExhibitionsSer,
+      EN: soloExhibitionsEng,
+    },
+    ALT: "solo articles",
+    LINK: "about_me/solo_exhibitions",
+    TITLE: {
+      SR: "Samostalne Izložbe",
+      EN: "Solo Exhibitions",
+    },
+    CONTENT: {
+      SR: [
+        {
+          YEAR: "2024.",
+          AWARD: "SkyLine kula / spoljna fasada / mural, Freedom, Beograd",
         },
-        ALT: 'collections',
-        LINK: 'about_me/collections',
-        TITLE: {
-            SER: "Kolekcije",
-            ENG: "Collections",
+        {
+          YEAR: "2023.",
+          AWARD: "Galerija Štab, Stvaranje svetla / Nežni smo rodjeni, Beograd",
         },
-        CONTENT: {
-            SER: [
-                { YEAR: "2020.", AWARD: "Privatna kolekcija Aleksić" },
-                { YEAR: "2020.", AWARD: "Privatna kolekcija porodica Medan" },
-                { YEAR: "2018.", AWARD: "Privatna kolekcija Beko" },
-                { YEAR: "2017.", AWARD: "Narodni muzej Zaječar" },
-                { YEAR: "2016.", AWARD: "Kulturni centar Obrenovac" },
-                { YEAR: "2015.", AWARD: "Kolekcija hotel Marriott, Beograd" },
-                { YEAR: "2015.", AWARD: "Kulturni centar Požega" },
-                { YEAR: "2009.", AWARD: "Kolekcija Galerije Arte, Beograd" },
-                { YEAR: "2007.", AWARD: "Kolekcija FITEX, Beograd" },
-                { YEAR: "2006.", AWARD: "Kolekcija Muzeja grada Beograda, Beograd" },
-                { YEAR: "1999.", AWARD: "Kolekcija Pinakoteke, Lamia, Grčka" },
-            ],
-            ENG: [
-                { YEAR: "2020.", AWARD: "Aleksić private collection" },
-                { YEAR: "2020.", AWARD: "Uroš Medan private collection" },
-                { YEAR: "2018.", AWARD: "Milan Beko private collection" },
-                { YEAR: "2017.", AWARD: "National Museum of Zaječar" },
-                { YEAR: "2016.", AWARD: "Cultural Centre Obrenovac" },
-                { YEAR: "2015.", AWARD: "Marriott Hotel Collection" },
-                { YEAR: "2015.", AWARD: "Požega Cultural Center" },
-                { YEAR: "2009.", AWARD: "Collection of the Arte Gallery, Belgrade" },
-                { YEAR: "2007.", AWARD: "Collection FITEX, Belgrade" },
-                { YEAR: "2006.", AWARD: "Collection of the Museum of Belgrade City" },
-                { YEAR: "1999.", AWARD: "Collection of the Pinakotheke, Lamia, Greece" },
-            ]
+        { YEAR: "2022.", AWARD: "Galerija Štab, 11 Snaga, Beograd" },
+        {
+          YEAR: "2020.",
+          AWARD: "Zgrada Sky Line / spoljna fasada / mural, Life, Beograd",
         },
-    }
+        { YEAR: "2019.", AWARD: "Nacinalna Galerija, 11 Snaga, Beograd" },
+        { YEAR: "2019.", AWARD: "Izlog FLU, 11 Snaga, Beograd" },
+        {
+          YEAR: "2019.",
+          AWARD: "Galerija Centra za grafiku FLU, 11 Snaga, Beograd",
+        },
+        { YEAR: "2018.", AWARD: "Muzej i Galerija Tivat, Deca Sunca, Tivat" },
+        {
+          YEAR: "2016.",
+          AWARD: "Likovna Galerija Doma Kulture, Jaki ljudi, Prijepolje",
+        },
+        {
+          YEAR: "2015.",
+          AWARD: "Galerija Kulturnog centra, Deca Sunca, Požega",
+        },
+        { YEAR: "2015.", AWARD: "BLOK Galerija, Vremenske stanice, Beograd" },
+        {
+          YEAR: "2014.",
+          AWARD: "Likovna galerija Kulturnog centra, Deca Sunca, Beograd",
+        },
+        {
+          YEAR: "2014.",
+          AWARD: "Galerija Centra za grafiku FLU, Deca Sunca, Beograd",
+        },
+        {
+          YEAR: "2012.",
+          AWARD: "Likovni Salon Kulturnog Centra, Duh, Novi Sad",
+        },
+        { YEAR: "2011.", AWARD: "Galerija ULUS, Duh, Beograd" },
+        { YEAR: "2009.", AWARD: "Galerija Arte, Jedan Svet, Beograd" },
+        {
+          YEAR: "2007.",
+          AWARD: "Galerija Rothamel, Belgrade Double, Erfurt, Nemačka",
+        },
+        { YEAR: "2007.", AWARD: "Nacionalna Galerija, Izvor, Beograd" },
+        { YEAR: "2007.", AWARD: "Galerija Beograd, Heroji, Beograd" },
+        {
+          YEAR: "2003.",
+          AWARD:
+            "Galerija školskog internacionalnog centra “Jelena Anžujska”, Le Soleil, Pariz",
+        },
+        { YEAR: "2002.", AWARD: "Galerija Pesak, Zimska Čarolija, Beograd" },
+        { YEAR: "2000.", AWARD: "Galerija FLU, Prvo Svetlo, Beograd" },
+        { YEAR: "1998.", AWARD: "Izlog FLU, Taki, Beograd" },
+      ],
+      EN: [
+        {
+          YEAR: "2024.",
+          AWARD: "SkyLine building / outer facade / mural, Freedom, Belgrade",
+        },
+        {
+          YEAR: "2023.",
+          AWARD: "Štab Gallery, Creating Light, We Are Born Gentle, Belgrade",
+        },
+        { YEAR: "2022.", AWARD: "Štab Gallery, 11 Snaga, Belgrade" },
+        {
+          YEAR: "2020.",
+          AWARD: "SkyLine building / outer facade / mural, Life, Belgrade",
+        },
+        { YEAR: "2019.", AWARD: "National Gallery, 11 Snaga, Belgrade" },
+        { YEAR: "2019.", AWARD: "Izlog Gallery FLU, 11 Snaga, Belgrade" },
+        {
+          YEAR: "2019.",
+          AWARD: "FLU Graphics Center Gallery, 11 Snaga, Belgrade",
+        },
+        {
+          YEAR: "2018.",
+          AWARD: "Tivat Museum and Gallery, Children of the Sun, Tivat",
+        },
+        {
+          YEAR: "2016.",
+          AWARD: "Dom Kulture Art Gallery, Strong People, Prijepolje",
+        },
+        {
+          YEAR: "2015.",
+          AWARD: "Cultural Center Gallery, Children of the Sun, Požega",
+        },
+        { YEAR: "2015.", AWARD: "BLOK Gallery, Weather stations, Belgrade" },
+        {
+          YEAR: "2014.",
+          AWARD:
+            "Children of the Sun, Art Gallery of the Cultural Centre, Belgrade",
+        },
+        {
+          YEAR: "2014.",
+          AWARD:
+            "Children of the Sun, Center for Graphic Arts and Visual Researches, Belgrade",
+        },
+        {
+          YEAR: "2012.",
+          AWARD: "Spirit, Art Salon of the Cultural Centre, Novi Sad",
+        },
+        { YEAR: "2011.", AWARD: "Spirit, ULUS Gllery, Belgrade" },
+        { YEAR: "2009.", AWARD: "One World, Arte Gallery, Belgrade" },
+        {
+          YEAR: "2007.",
+          AWARD: "Belgrade Double, Rothamel Gallery, Erfurt, Germany",
+        },
+        { YEAR: "2007.", AWARD: "Origin, National Gallery, Belgrade" },
+        { YEAR: "2007.", AWARD: "Heroes, Belgrade Gallery, Belgrade" },
+        {
+          YEAR: "2003.",
+          AWARD:
+            "Le Soleil, Centre scolaire international “Hélène d’Anjou”, Paris",
+        },
+        { YEAR: "2002.", AWARD: "Winter Magic, Sand Gallery, Belgrade" },
+        {
+          YEAR: "2001.",
+          AWARD: "Look, Academy of Fine Arts Gallery, Belgrade",
+        },
+        {
+          YEAR: "2000.",
+          AWARD: "First Light, Academy of Fine Arts Gallery, Belgrade",
+        },
+        {
+          YEAR: "1998.",
+          AWARD: "Taki, Window of Academy of Fine Arts, Belgrade",
+        },
+      ],
+    },
+  },
+  GROUP_EXHIBITIONS: {
+    ID: "group_exhibitions",
+    BUTTON: {
+      SR: groupExhibitionsSer,
+      EN: groupExhibitionsEng,
+    },
+    ALT: "group articles",
+    LINK: "about_me/group_exhibitions",
+    TITLE: {
+      SR: "Grupne Izložbe",
+      EN: "Group Exhibitions",
+    },
+    CONTENT: {
+      SR: [
+        { YEAR: "2023.", AWARD: "Susreti, Paviljon Cvijeta Zuzorić, Beograd" },
+        {
+          YEAR: "2022.",
+          AWARD: "Jesenji Salon, Paviljon Cvijeta Zuzorić, Beograd",
+        },
+        {
+          YEAR: "2020.",
+          AWARD: "Čukarički likovni salon, Galerija 73, Beograd",
+        },
+        { YEAR: "2020.", AWARD: "Akt, Galerija X Vitamin, Beograd" },
+        {
+          YEAR: "2019.",
+          AWARD:
+            "Majska izložba grafika beogradskog kruga, ULUS Galerija, Beograd",
+        },
+        { YEAR: "2018.", AWARD: "INTERBIFEP, Tuzla" },
+        { YEAR: "2018.", AWARD: "Bijenale Minijature, Gornji Milanovac" },
+        {
+          YEAR: "2017.",
+          AWARD: "OUTSIDE THE LINES, New Moment Galerija, Beograd",
+        },
+        {
+          YEAR: "2017.",
+          AWARD: "Jesenji Salon, Paviljon Cvijeta Zuzorić, Beograd",
+        },
+        {
+          YEAR: "2017.",
+          AWARD:
+            "Akvizicije Ministarstva kulture, Sportsko – kulturni centar, Obrenovac",
+        },
+        { YEAR: "2016.", AWARD: "Novembarski salon, Kraljevo" },
+        { YEAR: "2016.", AWARD: "ART MARKET, Budimpešta" },
+        { YEAR: "2015.", AWARD: "ART MARKET, Budimpešta" },
+        { YEAR: "2015.", AWARD: "Kolonija Mileševa, Dom Kulture, Prijepolje" },
+        { YEAR: "2014.", AWARD: "EX YU Grafika, Nacionalna Galerija, Beograd" },
+        {
+          YEAR: "2013.",
+          AWARD:
+            "Dani Mađarskog Slikarstva, Srpki Paviljon / srpsko savremeno slikarstvo, Budimpešta",
+        },
+        { YEAR: "2013.", AWARD: "Izložba 2, Galerija opštine Vračar, Beograd" },
+        {
+          YEAR: "2013.",
+          AWARD:
+            "Majska izložba grafika beogradskog kruga, Galerija Grafički kolektiv, Beograd",
+        },
+        {
+          YEAR: "2013.",
+          AWARD:
+            "Sopoćnska viđenja, Mala Galerija Medija Centra Odbrana, Beograd",
+        },
+        { YEAR: "2012.", AWARD: "Kolonija Sopoćanska viđenja, Novi Pazar" },
+        {
+          YEAR: "2012.",
+          AWARD: "Jesenja izložba, Paviljon Cvijeta Zuzorić, Beograd",
+        },
+        {
+          YEAR: "2011.",
+          AWARD: "Umetnost Prvi Dah Života, Narodni Muzej, Beograd",
+        },
+        {
+          YEAR: "2011.",
+          AWARD: "Objekti i Radovi na Papiru III, Galerija Beograd, Beograd",
+        },
+        { YEAR: "2010.", AWARD: "NAF, Niš" },
+        { YEAR: "2008.", AWARD: "Balkan Art Fluxion, Amsterdam" },
+        {
+          YEAR: "2007.",
+          AWARD: "Objekti i Radovi na Papiru II, Galerija Beograd, Beograd",
+        },
+        {
+          YEAR: "2007.",
+          AWARD:
+            "Bijenale Crteža i Male Plastike, Paviljon Cvijeta Zuzorić, Beograd",
+        },
+        { YEAR: "2006.", AWARD: "Kolonija Sv. Rafailo Deronjski, Deronje" },
+        {
+          YEAR: "2005.",
+          AWARD:
+            "Revijalna izložba članova ULUS-a, Paviljon Cvijeta Zuzorić Kalemegdan, Beograd",
+        },
+        { YEAR: "2005.", AWARD: "Izmeštanje, Galerija Zvono, Beograd" },
+        {
+          YEAR: "2005.",
+          AWARD:
+            "“Aukcija” u organizaciji Madl’Art, Paviljon Cvijeta Zuzorić Kalemegda, Beograd",
+        },
+        { YEAR: "2005.", AWARD: "Amazonke, Galerija SKC, Beograd" },
+        { YEAR: "2005.", AWARD: "Total Art Sale, Galerija SULUJ, Beograd" },
+        {
+          YEAR: "2005.",
+          AWARD: "Vino, Paviljon Cvijeta Zuzorić Kalemegdan, Beograd",
+        },
+        {
+          YEAR: "2004.",
+          AWARD: "Imaginarni Grad, Reed Collage, Portland, USA",
+        },
+        { YEAR: "2004.", AWARD: "BELEF, Kalemegdan, Beograd" },
+        { YEAR: "2004.", AWARD: "Izmeštanje, Kolonija Kalenić" },
+        {
+          YEAR: "2004.",
+          AWARD: "Jesenji Salon, Paviljon Cvijeta Zuzorić Kalemegdan, Beograd",
+        },
+        { YEAR: "2003.", AWARD: "BELEF, Kalemegdan, Beograd" },
+        { YEAR: "2002.", AWARD: "Vaterpolo, Galerija ULUS, Beograd" },
+        { YEAR: "2002.", AWARD: "Evinost, Galerija “Pesak”, Beograd" },
+        { YEAR: "2002.", AWARD: "Voda Vazduh, Klub “Skalar”, Beograd" },
+        {
+          YEAR: "2002.",
+          AWARD: "V jugoslovenski likovni bijenale mladih, Vršac",
+        },
+        {
+          YEAR: "2002.",
+          AWARD: "Izložba fotografija, galerija ARTGET KCB, Beograd",
+        },
+        {
+          YEAR: "2001.",
+          AWARD: "aukcija slika, Skupština grada Beograda, Beograd",
+        },
+        {
+          YEAR: "2001.",
+          AWARD: "prodajna izložba članova ULUS-a, Galerija ULUS, Beograd",
+        },
+        {
+          YEAR: "2001.",
+          AWARD: "Novembarsko Proleće, Galerija “Paleta” KCB, Beograd",
+        },
+        {
+          YEAR: "2001.",
+          AWARD: "majska izložba Sartid, Galerija muzeja, Smederevo",
+        },
+        { YEAR: "2000.", AWARD: "Insomnija, Galerija SULUJ, Beograd" },
+        {
+          YEAR: "2000.",
+          AWARD: "IV jugoslovenski likovni bijenale mladih, Vršac",
+        },
+        { YEAR: "1999.", AWARD: "Paviljon Cvijeta Zuzorić, Beograd" },
+        {
+          YEAR: "1999.",
+          AWARD: "XXXII Hercegnovski Zimski Salon, Herceg Novi",
+        },
+        { YEAR: "1999.", AWARD: "Portret, NU Braća Stamenković, Beograd" },
+        {
+          YEAR: "1999.",
+          AWARD:
+            "novoprimljeni članovi ULUS-a, Paviljon Cvijeta Zuzorić, Beograd",
+        },
+        {
+          YEAR: "1999.",
+          AWARD:
+            "izložba u okviru slikarske kolonije, Pinakoteka, Lamia, Grčka",
+        },
+        {
+          YEAR: "1998.",
+          AWARD:
+            "27. izložba crteža studenata FLU, Galerija Doma Omladine, Beograd",
+        },
+        {
+          YEAR: "1998.",
+          AWARD: "III Jugoslovenski Likovni Bijenale Mladih, Vršac",
+        },
+        { YEAR: "1998.", AWARD: "XXXIX OKTOBARSKI SALON, Beograd" },
+        {
+          YEAR: "1997.",
+          AWARD:
+            "26. izložba crteža studenata FLU, Galerija Doma Omladine, Beograd",
+        },
+        {
+          YEAR: "1997.",
+          AWARD: "izložba nagrađenih studenata FLU, Galerija FLU, Beograd",
+        },
+        { YEAR: "1996.", AWARD: "Telo, Galerija FLU, Beograd" },
+        {
+          YEAR: "1996.",
+          AWARD:
+            "25. izložba crteža studenata FLU, Galerija Doma Omladine, Beograd",
+        },
+        { YEAR: "1996.", AWARD: "Matićevi Dani, Dom VJ, Ćuprija" },
+        {
+          YEAR: "1995.",
+          AWARD:
+            "Izložba u okviru Međunarodne slikarske kolonije, Didimoteihon, Grčka",
+        },
+        {
+          YEAR: "1995.",
+          AWARD:
+            "24. izložba crteža studenata FLU, Galerija Doma Omladine, Beograd",
+        },
+        {
+          YEAR: "1994.",
+          AWARD: "izložba nagrađenih studenata FLU, Galerija FLU, Beograd",
+        },
+        { YEAR: "1994.", AWARD: "Kolonija akvarela, Ečka" },
+      ],
+      EN: [
+        {
+          YEAR: "2024.",
+          AWARD: "ART AND HOME, ARTOGET Penthouse Skyline, Belgrade",
+        },
+        {
+          YEAR: "2024.",
+          AWARD:
+            "ART FOR THE MIND, ARTOGET and Karanović an Partners, Belgrade",
+        },
+        {
+          YEAR: "2023.",
+          AWARD: "Encounters, Paviljon Cvijeta Zuzorić, Belgrade",
+        },
+        {
+          YEAR: "2022.",
+          AWARD: "Autumn Salon, Paviljon Cvijeta Zuzorić, Belgrade",
+        },
+        {
+          YEAR: "2020.",
+          AWARD: "Gallery 73, Čukarički likovni salon, Belgrade",
+        },
+        { YEAR: "2020.", AWARD: "Vitamin X Gallery, Nude, Belgrade" },
+        {
+          YEAR: "2019.",
+          AWARD:
+            "May exhibition of prints by Belgrade circle, ULUS Gallery, Belgrade",
+        },
+        { YEAR: "2018.", AWARD: "INTERBIFEP, Tuzla" },
+        { YEAR: "2018.", AWARD: "Miniatures Biennial, Gornji Milanovac" },
+        {
+          YEAR: "2017.",
+          AWARD: "OUTSIDE THE LINES, New Moment Gallery, Belgrade",
+        },
+        {
+          YEAR: "2017.",
+          AWARD: "Autumn Salon, Cvijeta Zuzorić Pavillion, Belgrade",
+        },
+        {
+          YEAR: "2017.",
+          AWARD:
+            "Acquisitions by the Ministry of Culture, Sports and Cultural Center, Obrenovac",
+        },
+        { YEAR: "2016.", AWARD: "November Art Salon, Kraljevo" },
+        { YEAR: "2016.", AWARD: "ART MARKET, Budapest" },
+        { YEAR: "2015.", AWARD: "ART MARKET, Budapest" },
+        {
+          YEAR: "2015.",
+          AWARD: "AiR Mileseva Monastery, Dom kulture Gallery, Prijepolje",
+        },
+        { YEAR: "2013.", AWARD: "Hungarian Painting Days, Budapest" },
+        { YEAR: "2013.", AWARD: "Exhibition 2, Vracar Gallery, Belgrade" },
+        {
+          YEAR: "2013.",
+          AWARD:
+            "May Exhibition of the Print Art, Graficki kolektiv Gallery, Belgrade",
+        },
+        {
+          YEAR: "2013.",
+          AWARD: "Sopocani, The Media Centre “Odbrana” Gallery, Belgrade",
+        },
+        { YEAR: "2012.", AWARD: "Art Colony Sopocani, Novi Pazar" },
+        {
+          YEAR: "2011.",
+          AWARD: "L’ArteIl Primo Soffio Di Vita, National Museum, Belgrade",
+        },
+        {
+          YEAR: "2011.",
+          AWARD: "Objects and Works On Paper III, Belgrade Gallery, Belgrade",
+        },
+        { YEAR: "2010.", AWARD: "NAF, Nis" },
+        { YEAR: "2008.", AWARD: "Balkan Art Fluxion, Amsterdam" },
+        {
+          YEAR: "2007.",
+          AWARD: "Objects and Works on Paper II, Belgrade Gallery, Belgrade",
+        },
+        {
+          YEAR: "2007.",
+          AWARD:
+            "Biennial of Drawings and Small Plastics, Cvijeta Zuzoric Pavilion, Kalemegdan, Belgrade",
+        },
+        { YEAR: "2006.", AWARD: "Colony St. Rafailo Deronjski, Deronje" },
+        { YEAR: "2005.", AWARD: "Dislocation, Zvono Gallery, Belgrade" },
+        { YEAR: "2005.", AWARD: "Amazons, SKC Gallery, Belgrade" },
+        { YEAR: "2005.", AWARD: "Total Art Sale, SULUJ Gallery, Belgrade" },
+        {
+          YEAR: "2004.",
+          AWARD: "BELEF- Belgrade Summer Festival, Kalemegdan, Belgrade",
+        },
+        {
+          YEAR: "2004.",
+          AWARD: "Imaginary City, Reed College, Portland, Oregon",
+        },
+        { YEAR: "2004.", AWARD: "Dislocation, Colony Kalenic" },
+        {
+          YEAR: "2003.",
+          AWARD: "BELEF- Belgrade Summer Festival, Kalemegdan, Belgrade",
+        },
+        { YEAR: "2002.", AWARD: "Evinost, Sand Gallery, Belgrade" },
+        {
+          YEAR: "2002.",
+          AWARD: "5th Yugoslav Biennial of Young Artists, Concordia, Vrsac",
+        },
+        {
+          YEAR: "2002.",
+          AWARD: "Exhibition of photographs, ARTGET KCB Gallery, Belgrade",
+        },
+        {
+          YEAR: "2001.",
+          AWARD:
+            "Auction of paintings, Assembly of the City Belgrade, Belgrade",
+        },
+        { YEAR: "2001.", AWARD: "Sartid, Gallery of Museum, Smederevo" },
+        { YEAR: "2000.", AWARD: "Insomnia, SULUJ Gallery, Belgrade" },
+        {
+          YEAR: "2000.",
+          AWARD: "4th Yugoslav Biennial of Young Artists, Concordia, Vrsac",
+        },
+        { YEAR: "1999.", AWARD: "32nd Winter Saloon, Herceg Novi" },
+        { YEAR: "1999.", AWARD: "Art Colony, Pinakotheke, Lamia, Greece" },
+        {
+          YEAR: "1998.",
+          AWARD: "3rd Yugoslav Biennial of Young Artists, Concordia, Vrsac",
+        },
+        {
+          YEAR: "1998.",
+          AWARD: "39th October Salon, 25th May Museum, Belgrade",
+        },
+        {
+          YEAR: "1996.",
+          AWARD: "The Body, Academy of Fine Arts Gallery, Belgrade",
+        },
+        {
+          YEAR: "1995.",
+          AWARD: "International Art Colony, Didimoticho, Greece",
+        },
+        { YEAR: "1994.", AWARD: "Art Colony, Ecka, Serbia" },
+      ],
+    },
+  },
+  COLLECTIONS: {
+    ID: "collections",
+    BUTTON: {
+      SR: collectionsSer,
+      EN: collectionsEng,
+    },
+    ALT: "collections",
+    LINK: "about_me/collections",
+    TITLE: {
+      SR: "Kolekcije",
+      EN: "Collections",
+    },
+    CONTENT: {
+      SR: [
+        { YEAR: "2020.", AWARD: "Privatna kolekcija Aleksić" },
+        { YEAR: "2020.", AWARD: "Privatna kolekcija porodica Medan" },
+        { YEAR: "2018.", AWARD: "Privatna kolekcija Beko" },
+        { YEAR: "2017.", AWARD: "Narodni muzej Zaječar" },
+        { YEAR: "2016.", AWARD: "Kulturni centar Obrenovac" },
+        { YEAR: "2015.", AWARD: "Kolekcija hotel Marriott, Beograd" },
+        { YEAR: "2015.", AWARD: "Kulturni centar Požega" },
+        { YEAR: "2009.", AWARD: "Kolekcija Galerije Arte, Beograd" },
+        { YEAR: "2007.", AWARD: "Kolekcija FITEX, Beograd" },
+        { YEAR: "2006.", AWARD: "Kolekcija Muzeja grada Beograda, Beograd" },
+        { YEAR: "1999.", AWARD: "Kolekcija Pinakoteke, Lamia, Grčka" },
+      ],
+      EN: [
+        { YEAR: "2020.", AWARD: "Aleksić private collection" },
+        { YEAR: "2020.", AWARD: "Uroš Medan private collection" },
+        { YEAR: "2018.", AWARD: "Milan Beko private collection" },
+        { YEAR: "2017.", AWARD: "National Museum of Zaječar" },
+        { YEAR: "2016.", AWARD: "Cultural Centre Obrenovac" },
+        { YEAR: "2015.", AWARD: "Marriott Hotel Collection" },
+        { YEAR: "2015.", AWARD: "Požega Cultural Center" },
+        { YEAR: "2009.", AWARD: "Collection of the Arte Gallery, Belgrade" },
+        { YEAR: "2007.", AWARD: "Collection FITEX, Belgrade" },
+        { YEAR: "2006.", AWARD: "Collection of the Museum of Belgrade City" },
+        {
+          YEAR: "1999.",
+          AWARD: "Collection of the Pinakotheke, Lamia, Greece",
+        },
+      ],
+    },
+  },
 });

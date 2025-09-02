@@ -62,7 +62,7 @@ export default function ArtworkDetailsPage({
             generateBreadcrumbSchema([
               { name: "Home", url: `/${locale}` },
               { name: "Artworks", url: `/${locale}/artworks` },
-              { name: page?.TITLE.ENG, url: `/${locale}/artworks/${slug}` },
+              { name: page?.TITLE.EN, url: `/${locale}/artworks/${slug}` },
             ]),
           ),
         }}

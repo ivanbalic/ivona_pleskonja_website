@@ -5,8 +5,8 @@ export const getHomeMetadata = async () => ({
   alternates: {
     canonical: "https://ivonapleskonja.com",
     languages: {
-      en: "https://ivonapleskonja.com/eng",
-      sr: "https://ivonapleskonja.com/ser",
+      en: "https://ivonapleskonja.com/en",
+      sr: "https://ivonapleskonja.com/sr",
     },
   },
   openGraph: {
@@ -24,8 +24,8 @@ export const getArtworksMetadata = async (params: { locale: string }) => ({
   alternates: {
     canonical: `https://ivonapleskonja.com/${params.locale}/artworks`,
     languages: {
-      en: "https://ivonapleskonja.com/eng/artworks",
-      sr: "https://ivonapleskonja.com/ser/artworks",
+      en: "https://ivonapleskonja.com/en/artworks",
+      sr: "https://ivonapleskonja.com/sr/artworks",
     },
   },
 });
@@ -38,8 +38,8 @@ export const getAboutMetadata = async (params: { locale: string }) => ({
   alternates: {
     canonical: `https://ivonapleskonja.com/${params.locale}/about_me`,
     languages: {
-      en: "https://ivonapleskonja.com/eng/about_me",
-      sr: "https://ivonapleskonja.com/ser/about_me",
+      en: "https://ivonapleskonja.com/en/about_me",
+      sr: "https://ivonapleskonja.com/sr/about_me",
     },
   },
 });
@@ -52,8 +52,8 @@ export const getContactMetadata = async (params: { locale: string }) => ({
   alternates: {
     canonical: `https://ivonapleskonja.com/${params.locale}/contact`,
     languages: {
-      en: "https://ivonapleskonja.com/eng/contact",
-      sr: "https://ivonapleskonja.com/ser/contact",
+      en: "https://ivonapleskonja.com/en/contact",
+      sr: "https://ivonapleskonja.com/sr/contact",
     },
   },
 });

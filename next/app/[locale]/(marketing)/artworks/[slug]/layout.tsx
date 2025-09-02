@@ -10,7 +10,7 @@ export async function generateMetadata({
   const page = getSubPageContentById(params.slug);
   return {
     title: `${page?.TITLE} | Ivona Pleskonja`,
-    description: page?.DESCRIPTION[0].ENG,
+    description: page?.DESCRIPTION[0].EN,
     alternates: {
       canonical: `https://ivonapleskonja.com/${params.locale}/artworks/${params.slug}`,
       languages: {

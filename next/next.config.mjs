@@ -16,8 +16,8 @@ const nextConfig = {
     ],
   },
   i18n: {
-    locales: ["eng", "ser"],
-    defaultLocale: "eng",
+    locales: ["en", "sr"],
+    defaultLocale: "sr",
   },
   pageExtensions: ["ts", "tsx"],
   async headers() {

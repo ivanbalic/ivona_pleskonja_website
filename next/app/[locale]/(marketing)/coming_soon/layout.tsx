@@ -9,18 +9,18 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = params;
   const titles = {
-    ENG: "Coming Soon | Ivona Pleskonja",
-    SER: "Izrada u toku | Ivona Pleskonja",
+    EN: "Coming Soon | Ivona Pleskonja",
+    SR: "Izrada u toku | Ivona Pleskonja",
   };
   const descriptions = {
-    ENG: "This page is under construction. Please check back soon for new content from Ivona Pleskonja.",
-    SER: "Ova stranica je u izradi. Uskoro očekujte novi sadržaj od Ivone Pleskonje.",
+    EN: "This page is under construction. Please check back soon for new content from Ivona Pleskonja.",
+    SR:
+      "Ova stranica je u izradi. Uskoro očekujte novi sadržaj od Ivone Pleskonje.",
   };
 
   return {
-    title: titles[locale as keyof ITranslations] || titles.ENG,
-    description:
-      descriptions[locale as keyof ITranslations] || descriptions.ENG,
+    title: titles[locale as keyof ITranslations] || titles.EN,
+    description: descriptions[locale as keyof ITranslations] || descriptions.EN,
     alternates: {
       canonical: `https://ivona-pleskonja.com/${locale}/coming_soon`,
       languages: {

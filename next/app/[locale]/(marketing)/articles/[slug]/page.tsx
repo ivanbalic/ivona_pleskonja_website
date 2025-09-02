@@ -5,9 +5,9 @@ import { ITranslations } from "@/types/types";
 import { useIsMobile } from "@/hooks/useIsMobile";
 import { getExhibitionById } from "./pageContent";
 import { ArticleCover } from "@/components/articles/ArticleCover";
+import { generateBreadcrumbSchema } from "@/lib/schema-generator";
 import { SubNavBredCrumbs } from "@/components/subnav-bredcrumbs/SubNavBredCrumbs";
 import { getSectionComponentByType } from "@/components/articles/sectionComponentMap";
-import { generateBreadcrumbSchema } from "@/lib/schema-generator";
 
 export default function ExhibitionDetails({
   params: { locale, slug },

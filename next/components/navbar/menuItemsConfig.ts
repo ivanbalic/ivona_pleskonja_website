@@ -1,42 +1,42 @@
 export const MENU_ITEMS_CONFIG = Object.freeze({
-    ABOUT_ME: {
-        LABEL: {
-            SER: 'O MENI',
-            ENG: 'ABOUT ME'
-        },
-        LINK: 'about_me',
-        HIDE: false,
+  ABOUT_ME: {
+    LABEL: {
+      SR: "O MENI",
+      EN: "ABOUT ME",
     },
-    MY_WORK: {
-        LABEL: {
-            SER: 'RADOVI',
-            ENG: 'ARTWORKS'
-        },
-        LINK: 'artworks',
-        HIDE: false,
+    LINK: "about_me",
+    HIDE: false,
+  },
+  MY_WORK: {
+    LABEL: {
+      SR: "RADOVI",
+      EN: "ARTWORKS",
     },
-    NEWS: {
-        LABEL: {
-            SER: 'NOVOSTI',
-            ENG: 'NEWS'
-        },
-        LINK: 'news',
-        HIDE: true,
+    LINK: "artworks",
+    HIDE: false,
+  },
+  NEWS: {
+    LABEL: {
+      SR: "NOVOSTI",
+      EN: "NEWS",
     },
-    PRESS: {
-        LABEL: {
-            SER: 'PRESS',
-            ENG: 'PRESS'
-        },
-        LINK: 'press',
-        HIDE: true,
+    LINK: "news",
+    HIDE: true,
+  },
+  PRESS: {
+    LABEL: {
+      SR: "PRESS",
+      EN: "PRESS",
     },
-    CONTACT: {
-        LABEL: {
-            SER: 'KONTAKT',
-            ENG: 'CONTACT'
-        },
-        LINK: 'contact',
-        HIDE: false,
+    LINK: "press",
+    HIDE: true,
+  },
+  CONTACT: {
+    LABEL: {
+      SR: "KONTAKT",
+      EN: "CONTACT",
     },
+    LINK: "contact",
+    HIDE: false,
+  },
 });
