@@ -13,7 +13,7 @@ export default function ComingSoonPage({
   params: { locale: string };
 }) {
   const comingSoonText =
-    locale === "ser" ? "Izrada u toku..." : "Work in progress...";
+    locale === "sr" ? "Izrada u toku..." : "Work in progress...";
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: `/${locale}` },

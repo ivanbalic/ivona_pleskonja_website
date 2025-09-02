@@ -51,7 +51,7 @@ export const seoConfig: SeoConfig = {
       canonical: baseUrl,
       languages: {
         en: `${baseUrl}/en`,
-        sr: `${baseUrl}/ser`,
+        sr: `${baseUrl}/sr`,
       },
     },
     robots: {

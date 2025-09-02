@@ -28,7 +28,7 @@ const seoData = {
     site: "https://ivonapleskonja.com/_next/static/media/contact-background.94c95d3c.svg",
   },
   altLang: {
-    eng: {
+    en: {
       title: "Ivona Pleskonja",
       description:
         "Ivona Pleskonja – A contemporary Serbian artist specializing in mixed media, murals, and installations. Her work blends traditional craftsmanship with modern techniques, creating powerful visual narratives that explore identity, culture, and space.",
@@ -43,7 +43,7 @@ const seoData = {
         locale: "en_EN",
       },
     },
-    ser: {
+    sr: {
       title: "Ivona Pleskonja",
       description:
         "Ivona Pleskonja – Savremena srpska umetnica koja se specijalizovala za mešovite tehnike, murale i instalacije. Njen rad spaja tradicionalnu izradu sa modernim tehnikama, stvarajući snažne vizuelne narative koji istražuju identitet, kulturu i prostor.",

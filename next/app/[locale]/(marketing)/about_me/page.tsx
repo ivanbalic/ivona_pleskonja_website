@@ -59,7 +59,7 @@ export default function AboutMePage({
             </span>
           </div>
           <div className="text-base md:text-[24px] md:leading-[30px] tracking-[.05em] text-black font-helvetica">
-            <span className={locale === "ser" ? "block" : "inline"}>
+            <span className={locale === "sr" ? "block" : "inline"}>
               <span className="font-bold">{getTextBySectionName("name")}</span>
               {getTextBySectionName("born")}
             </span>

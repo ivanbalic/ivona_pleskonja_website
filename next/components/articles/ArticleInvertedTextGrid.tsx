@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { useEffect, useState } from "react";
 
 import { cn } from "@/lib/utils";
@@ -7,39 +7,63 @@ import { getSectionComponentByType } from "@/components/articles/sectionComponen
 
 const MAX_GRID_WIDTH = 1440;
 
-export function ArticleInvertedTextGrid({ locale = 'ser', section }: {locale: string, section: { TYPE: 'inverted_text_grid', CLASS_NAME: string, CONTENT: Record<string, any>[][]}}) {
-    const [containerWidth, setContainerWidth] = useState<number>();
+export function ArticleInvertedTextGrid({
+  locale = "sr",
+  section,
+}: {
+  locale: string;
+  section: {
+    TYPE: "inverted_text_grid";
+    CLASS_NAME: string;
+    CONTENT: Record<string, any>[][];
+  };
+}) {
+  const [containerWidth, setContainerWidth] = useState<number>();
 
-    useEffect(() => {
-        let width = MAX_GRID_WIDTH;
+  useEffect(() => {
+    let width = MAX_GRID_WIDTH;
 
-        if(window.innerWidth < MAX_GRID_WIDTH) width = window.innerWidth;
+    if (window.innerWidth < MAX_GRID_WIDTH) width = window.innerWidth;
 
-        setContainerWidth(width);
-    },[]);
-    return (
-        <Container className={cn(
-            'py-5 md:py-10',
-            'flex flex-col gap-5',
-            'px-4 md:px-[135px]',
-            'font-helvetica tracking-[.05em]',
-            'bg-articleBgBlue font-helvetica tracking-[.05em]',
-            section.CLASS_NAME
-        )}>
-            <div className={cn(
-                'text-[16px] leading-[24px] md:leading-[100%]',
-                'flex flex-col md:flex-row gap-5 md:gap-[90px]'
-            )}>
-                {section.CONTENT.map((row: Record<string, any>[], rowKey: number) =>
-                    <div key={`${section.TYPE}_${rowKey}`} className="flex flex-col gap-5">
-                        {row.map((col: Record<string, any>, columnKey) => {
-                            const Component = getSectionComponentByType(col.TYPE);
-                            // @ts-ignore
-                            return <Component key={`${section.TYPE}_${rowKey}_${col.TYPE}_${columnKey}`} section={col} locale={locale} containerWidth={containerWidth} />
-                        })}
-                    </div>
-                )}
-            </div>
-        </Container>
-    )
+    setContainerWidth(width);
+  }, []);
+  return (
+    <Container
+      className={cn(
+        "py-5 md:py-10",
+        "flex flex-col gap-5",
+        "px-4 md:px-[135px]",
+        "font-helvetica tracking-[.05em]",
+        "bg-articleBgBlue font-helvetica tracking-[.05em]",
+        section.CLASS_NAME,
+      )}
+    >
+      <div
+        className={cn(
+          "text-[16px] leading-[24px] md:leading-[100%]",
+          "flex flex-col md:flex-row gap-5 md:gap-[90px]",
+        )}
+      >
+        {section.CONTENT.map((row: Record<string, any>[], rowKey: number) => (
+          <div
+            key={`${section.TYPE}_${rowKey}`}
+            className="flex flex-col gap-5"
+          >
+            {row.map((col: Record<string, any>, columnKey) => {
+              const Component = getSectionComponentByType(col.TYPE);
+              return (
+                <Component
+                  key={`${section.TYPE}_${rowKey}_${col.TYPE}_${columnKey}`}
+                  // @ts-ignore
+                  section={col}
+                  locale={locale}
+                  containerWidth={containerWidth}
+                />
+              );
+            })}
+          </div>
+        ))}
+      </div>
+    </Container>
+  );
 }
